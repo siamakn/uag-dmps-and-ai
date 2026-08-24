@@ -1,0 +1,195 @@
+{
+  "contact" : {
+    "contact_id" : {
+      "identifier" : "0000-0002-7159-1448",
+      "type" : "orcid"
+    },
+    "mbox" : "samah.jaber@tuwien.ac.at",
+    "name" : "Samah Jaber"
+  },
+  "contributor" : [ {
+    "contributor_id" : {
+      "identifier" : "0000-0002-7159-1448",
+      "type" : "orcid"
+    },
+    "mbox" : "samah.jaber@tuwien.ac.at",
+    "name" : "Samah Jaber",
+    "role" : [ "Data Manager" ]
+  } ],
+  "cost" : [ ],
+  "created" : 1651402484158,
+  "dataset" : [ {
+    "description" : "Main Data Source",
+    "distribution" : [ {
+      "access_url" : "https://github.com",
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Main Data Source",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : {
+        "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+        "pid_system" : [ null ],
+        "storage_type" : "other",
+        "support_versioning" : "yes",
+        "title" : "GitHub",
+        "url" : "https://github.com"
+      },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "Global Innovation Index (GII):  2013 - 2021"
+    }, {
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Main Data Source",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : { },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "Global Innovation Index (GII):  2013 - 2021"
+    } ],
+    "personal_data" : "no",
+    "security_and_privacy" : [ ],
+    "sensitive_data" : "no",
+    "title" : "Global Innovation Index (GII):  2013 - 2021",
+    "type" : "STANDARD_OFFICE_DOCUMENTS"
+  }, {
+    "description" : "Alternative Sources for comparison:",
+    "distribution" : [ {
+      "access_url" : "https://github.com",
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : {
+        "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+        "pid_system" : [ null ],
+        "storage_type" : "other",
+        "support_versioning" : "yes",
+        "title" : "GitHub",
+        "url" : "https://github.com"
+      },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "Bloomberg Innovation Index (BII):  2016 - 2021"
+    }, {
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : { },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "Bloomberg Innovation Index (BII):  2016 - 2021"
+    } ],
+    "personal_data" : "no",
+    "security_and_privacy" : [ ],
+    "sensitive_data" : "no",
+    "title" : "Bloomberg Innovation Index (BII):  2016 - 2021",
+    "type" : "STANDARD_OFFICE_DOCUMENTS"
+  }, {
+    "description" : "Alternative Sources for comparison:",
+    "distribution" : [ {
+      "access_url" : "https://github.com",
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : {
+        "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+        "pid_system" : [ null ],
+        "storage_type" : "other",
+        "support_versioning" : "yes",
+        "title" : "GitHub",
+        "url" : "https://github.com"
+      },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "European Innovation Scoreboard (EIS):  2014 - 2021"
+    }, {
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : { },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "European Innovation Scoreboard (EIS):  2014 - 2021"
+    } ],
+    "personal_data" : "no",
+    "security_and_privacy" : [ ],
+    "sensitive_data" : "no",
+    "title" : "European Innovation Scoreboard (EIS):  2014 - 2021",
+    "type" : "STANDARD_OFFICE_DOCUMENTS"
+  }, {
+    "description" : "Alternative Sources for comparison:",
+    "distribution" : [ {
+      "access_url" : "https://github.com",
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : {
+        "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+        "pid_system" : [ null ],
+        "storage_type" : "other",
+        "support_versioning" : "yes",
+        "title" : "GitHub",
+        "url" : "https://github.com"
+      },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "OECD Business Innovation Statistics:  2013 - 2019"
+    }, {
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Alternative Sources for comparison:",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : { },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      } ],
+      "title" : "OECD Business Innovation Statistics:  2013 - 2019"
+    } ],
+    "personal_data" : "no",
+    "security_and_privacy" : [ ],
+    "sensitive_data" : "no",
+    "title" : "OECD Business Innovation Statistics:  2013 - 2019",
+    "type" : "STANDARD_OFFICE_DOCUMENTS"
+  }, {
+    "description" : "Produced dataset",
+    "distribution" : [ {
+      "access_url" : "https://github.com",
+      "byte_size" : 100000000,
+      "data_access" : "open",
+      "description" : "Produced dataset",
+      "format" : [ "STANDARD_OFFICE_DOCUMENTS" ],
+      "host" : {
+        "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+        "pid_system" : [ null ],
+        "storage_type" : "other",
+        "support_versioning" : "yes",
+        "title" : "GitHub",
+        "url" : "https://github.com"
+      },
+      "license" : [ {
+        "license_ref" : "https://creativecommons.org/licenses/by/4.0/"
+      } ],
+      "title" : "OUTPUT"
+    } ],
+    "personal_data" : "no",
+    "security_and_privacy" : [ ],
+    "sensitive_data" : "no",
+    "title" : "OUTPUT",
+    "type" : "STANDARD_OFFICE_DOCUMENTS"
+  } ],
+  "ethical_issues_exist" : "no",
+  "modified" : 1651441190377,
+  "project" : [ ]
+}

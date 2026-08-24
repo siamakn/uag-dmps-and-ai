@@ -1,0 +1,113 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "39525ba9-70a0-4af0-9943-ff5f2d917fcf",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "constance.dami@studio.unibo.it",
+      "name" : "Constance Dami",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4037-1175",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Chiara Manca (orcid:0000-0003-4037-1175)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4819-3975",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Constance Dami (orcid:0000-0003-4819-3975)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0933-4640",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Alessandro Bertozzi (orcid:0000-0003-0933-4640)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6352-2215",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Umut Kucuk (orcid:0000-0002-6352-2215)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2022-07-25T09:30:07Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "1a56bb5c-6756-44db-b1b0-39671311d724",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The dataset contains the results of our research on the coverage of DOAJ journals' citations through OpenCitations. M<span>ore specifically, it contains JSON files extracted from operations at each step of the workflow.&#160;</span><div><div>The dataset contains:&#160;</div><div><ul><li><b>by_journal.json</b><span>: a file containing all information extracted by Open Citations about DOAJ journals divide by year and journal name. Inside the file, the metadata about the journal are:&#160;</span></li><ul><li><span>ISSN</span></li><li><span>EISSN</span></li><li><span>number of articles overall in the journal</span></li><li><span>subject(s)&#160;</span></li><li><span>number of citations received</span></li><li><span>number of citations done</span></li><li><span>ratio between citations done and received</span></li><li><span>number of citations received from DOAJ journals</span></li><li><span>number of citations done to DOAJ journals</span></li><li><span>ratio between citations done to and received from DOAJ journals.</span></li></ul></ul></div><div><ul><li><b>normal.json</b>: a file containing all information extracted from Open Citations about DOAJ journals divided only by year. Inside the file, the data by year are:</li><ul><li><span>number of citations received.</span></li><li>number of citations done.</li><li>ratio between citations done and received.</li><li>number of self-citations made by DOAJ inside Open Citations.</li><li>ratio between the self-citation and the total citations received and done by DOAJ.</li></ul></ul><ul><li><b>errors.json</b>: a file containing the count of all errors obtained from computations. Inside the file:</li><ul><li>errors about records that don't have any specified date (null dates).</li><li>errors about records that have impossible dates (wrong dates).</li><li>errors about articles that don't have any specified Dois.</li><li>errors about Open Citations records that don't have any Dois in the citing or cited fields.</li></ul><li><b>DOAJ_metrics.json</b>: a file containing metrics about DOAJ and Open Citations, obtained by computations. Inside the file are these fields:</li><ul><li>number of journals with dois.</li><li>number of articles which have been processed during computations.</li><li>number of used Dois. All dois (with no repetition) which are used for the adding journal operation.</li><li>number of repeated Dois. All dois which are repeated inside the same or in another journal.</li><li>number of accepted Dois. All articles (with repetition) which have both a defined journal and a defined doi.</li></ul></ul><div><br></div></div></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Dataset for Coverage of DOAJ journals' citations through OpenCitations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "b088397d-f51c-46d4-a4ec-98c5f7910343",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>This dataset contains the software used for our research.</div><div><span>This code processes the public data dumps from&#160;</span><a href=\"https://doaj.org/docs/public-data-dump/\" target=\"_blank\">DOAJ</a><span>&#160;and&#160;</span><a href=\"https://opencitations.net/download#coci\" target=\"_blank\">OpenCitations</a><span>. We used the data dump of DOAJ articles of May 01, 2022, and the data dump of DOAJ journals of May 07, 2022.&#160;</span><span>For Open Citations data, we used the COCI dump of March 2022.</span></div><div>The&#160;<a href=\"https://www.python.org/\" target=\"_blank\">Python</a>&#160;script uses libraries such as&#160;<a href=\"https://pandas.pydata.org/\" target=\"_blank\">Pandas</a>,&#160;<a href=\"https://docs.python.org/3/library/tarfile.html\" target=\"_blank\">Tarfile</a>, and&#160;<a href=\"https://plotly.com/python/\" target=\"_blank\">Plotly</a>&#160;for gathering, manipulating, analyzing, and visualizing the data of this research.</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Software for Coverage of DOAJ journals' citations through OpenCitations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    } ],
+    "description" : "<div>This is the Data Management Plan for the research &#34;Coverage of DOAJ journals' citations through OpenCitations&#34; made in the context of the Open Science course of 21/22 of University of Bologna held by professor Silvio Peroni.</div><div><br></div><div>The purpose of this research was to scrutinize the citations made and received by the journals published in the DOAJ open access journal database, the change in these citations over the years and the scope of these citations.</div><div><br></div><div><span>This DMP will help outline the ways in which we collected, generated and processed the data for our research. But not only that, it will also ensure the availability and utility of this data, showing the compliance with the FAIR principles.</span></div>",
+    "dmp_id" : {
+      "identifier" : "14d2525f-66d8-48c7-a8aa-6a866b0150fa",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2022-12-09T11:56:17Z",
+    "project" : [ {
+      "description" : "None",
+      "end" : "Sat Mar 04 21:47:23 UTC 2023",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "None",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "None",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Mar 04 21:47:23 UTC 2022",
+      "title" : "None",
+      "additional_properties" : { }
+    } ],
+    "title" : "Coverage of DOAJ journals' citations through OpenCitations (Data Management Plan)",
+    "additional_properties" : {
+      "templates" : [ "a9ae7573-5c99-434c-939e-639098c49bf9" ]
+    }
+  }
+}

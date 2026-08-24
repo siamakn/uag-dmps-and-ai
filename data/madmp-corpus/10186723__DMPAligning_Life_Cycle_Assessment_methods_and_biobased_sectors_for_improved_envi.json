@@ -1,0 +1,120 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "599ae0ab-36d9-42cb-aa5c-c930805ebe51",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "agneta@plan.aau.dk",
+      "name" : "Agneta Ghose",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7462-2668",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Massimo Pizzol (orcid:0000-0002-7462-2668)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4544-1788",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Søren Løkke (orcid:0000-0002-4544-1788)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1972-1433",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agneta Ghose (orcid:0000-0003-1972-1433)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2022-11-21T14:12:22Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "0bdd571b-1380-4283-b443-365276d84b07",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><span>The ALIGNED project aims to improve, harmonize and align LCA methodology for bio-based industries. The project's first work package (WP1) will develop a framework and harmonized models such as integrated assessment models to develop scenarios, impact assessment including dynamic and time dependent carbon accounting,&#160; guide to uncertainty analysis, socio-economic assessment etc.</span></div><div><span>The following sections will outline how the models developed in this study will be shared and how they will be made accessible for re-use during the project and upon the closure of the project.&#160;</span></div><div><br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ALIGNED_he_WP1 Models and data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d"
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "3522d85d-3874-47d0-a557-20b40f5a529d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><span>The ALIGNED project has collaborated with six industry partners that provide primary data to develop case studies in work packages (WP 2-6)</span></div><div><span>The following sections will outline the type of data that will be collected and generated from specific case studies and how this data will be made accessible for re-use during the project and upon the closure of the project.&#160;</span></div><div><span>The data currently collected has not been used in any publication or research output. This will change during the course of the project. The DMP is a living document, where research outputs related to the data will also be updated.</span></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Data storage (long term) security - Long term data storage to be made on Aalborg University (AAU) server or by partners with whom an AAU-approved data processing agreement for the storage of confidential data has been made.",
+      "title" : "ALIGNED_he_Case study data collection",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d"
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "0a302774-7a45-4f27-ac75-28fd31284302",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><span>The ALIGNED project focusses in work packages (WP 2-6) on five industrial sectors which use bio-based materials. These sectors are: construction, wood working, textile, pulp and paper,&#160; and biochemicals.</span></div><div><span>The following sections will outline the type of data that will be collected and generated from each sector and how this data will be made accessible for re-use during the project and upon the closure of the project.&#160;</span></div><div><span>The data currently collected has not been used in any publication or research output. This will change during the course of the project. The DMP is a living document, where research outputs related to the data will also be updated.</span></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ALIGNED_he_Sector data collection",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d"
+      }
+    } ],
+    "description" : "The ALIGNED project will deliver a modelling framework to assess and optimize the environmental and socio-economic performance of bio-based industries. The project will collaborate with industries and representatives from five bio-based sectors: construction, woodworking, textile, pulp and paper, and bio-chemicals. This document provides the first version of data management plan (DMP) for the data collected from case studies and the sectors for the ALIGNED project. The structure of this document is based on the guidelines and template provided for data management in Horizon Europe. This document was generated by&#160;<a href=\"https://argos.openaire.eu/\" target=\"_blank\">ARGOS</a>&#160;which is an online tool, supported by OpenAire and EUDAT that address and recommend the use of FAIR and Open best practices. The DMP is a living document and will be continuously updated during the project.<div>The ALIGNED project consists of 8 work packages (WP).The first work package (WP 1) will develop harmonized models and and tools to be applied to the different bio-based sectors .The five work packages (WP 2- 6)  cover each bio-based sector  and case study analyzed in this project. Work packages (WP 7 and 8) cover the communication, dissemination and management of the project respectively.&#160;<span>In the first version of the DMP, we envision two key types of datasets:</span></div><div><span>1) WP 1 - dataset developed to generate models to be used to perform LCA in all sectors and related case studies.</span></div><div><span>2) WP 2- 6 (Case Studies)- datasets generated using primary data collected from case&#160;</span><span>studies</span><br></div><div><span>3) WP 2- 6 (Sector specific)- datasets generated using data collected from the specific bio-based sectors addressed in this study.</span></div>",
+    "dmp_id" : {
+      "identifier" : "1806c6fe-bf4b-4eaa-9c4d-8aa14994e12c",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-09-05T08:25:37Z",
+    "project" : [ {
+      "end" : "Tue Nov 21 14:12:22 UTC 2023",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "5daccc8b-be5f-47c7-b68f-827e7e09e00b",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101059430",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Nov 21 14:12:22 UTC 2022",
+      "title" : "Aligning Life Cycle Assessment methods and bio-based sectors for improved environmental performance",
+      "additional_properties" : { }
+    } ],
+    "title" : "ALIGNED",
+    "additional_properties" : {
+      "templates" : [ "3d43ba45-25fa-4815-81b4-9bf22ecd8316" ]
+    }
+  }
+}

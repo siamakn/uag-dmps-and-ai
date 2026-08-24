@@ -1,0 +1,114 @@
+{
+  "dmp": {
+    "title": "ECRAID-Prime Data Management Plan (Zenodo-Optimized)",
+    "dmp_id": {
+      "identifier": "10.5281/zenodo.TBD",
+      "type": "doi"
+    },
+    "version": "1.0",
+    "publicationYear": "2026",
+    "language": "en",
+    "resourceType": {
+      "resourceTypeGeneral": "Other",
+      "resourceType": "Machine-actionable Data Management Plan"
+    },
+    "project": {
+      "title": "European Clinical Research Alliance on Infectious Diseases",
+      "acronym": "ECRAID-Prime",
+      "description": "Adaptive platform trial for pandemics.",
+      "identifier": [
+        {
+          "type": "clinical-trial",
+          "identifier": "TBD_NCT"
+        }
+      ],
+      "funding": [
+        {
+          "funder_id": "TBD",
+          "grant_id": "TBD"
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Frank Leus",
+          "role": "data_manager",
+          "contact_id": {
+            "type": "orcid",
+            "identifier": "0009-0003-9605-9057"
+          }
+        }
+      ]
+    },
+    "dataset": [
+      {
+        "title": "Participant-level clinical data",
+        "type": "clinical",
+        "personal_data": "pseudonymized",
+        "distribution": [
+          {
+            "access": "controlled",
+            "license": "CC-BY-4.0",
+            "host": {
+              "title": "UMCU CDR",
+              "url": "TBD",
+              "pid_system": "doi"
+            },
+            "related_identifier": [
+              {
+                "identifier": "10.5281/zenodo.TBD_DMP",
+                "type": "doi",
+                "relation_type": "isDocumentedBy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Protocols and SAP",
+        "type": "documentation",
+        "distribution": [
+          {
+            "access": "open",
+            "license": "CC-BY-4.0",
+            "host": {
+              "title": "Zenodo",
+              "url": "https://zenodo.org",
+              "pid_system": "doi"
+            },
+            "related_identifier": [
+              {
+                "identifier": "10.5281/zenodo.TBD_protocol",
+                "type": "doi",
+                "relation_type": "isDocumentedBy"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "security_and_privacy": {
+      "data_security": [
+        "TLS",
+        "RBAC"
+      ],
+      "privacy": [
+        "GDPR pseudonymization"
+      ]
+    },
+    "ethical_issues_exist": true,
+    "cost": [
+      {
+        "title": "FAIR setup",
+        "value": 50000,
+        "currency": "EUR"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Leus, Frank",
+        "orcid": "0009-0003-9605-9057",
+        "affiliation": "UMC Utrecht – Julius Center"
+      }
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "5ca3ff51-3904-4232-a346-97847baa3fa4",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ance.kristala@lka.edu.lv",
+      "name" : "Ance Kristāla",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "dmp:@",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Liene Valdmane",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "dmp:§",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Sabīne  Ozola",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1472-0813",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anda Laķe (orcid:0000-0002-1472-0813)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0770-3377",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Baiba Tjarve (orcid:0000-0003-0770-3377)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2979-5463",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Gints Klāsons (orcid:0000-0002-2979-5463)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0770-3377",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Baiba Tjarve (orcid:0000-0003-0770-3377)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0770-3377",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Baiba Tjarve (orcid:0000-0003-0770-3377)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-06-20T10:22:42Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The data collection method is a quantitative online survey among representatives of student self-governments in educational institutions (pupils and students) and youth councils at the municipalities.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "To obtain and analyse empirical data on the prerequisites for civic participation of young people (13-25 years) and the dominant forms of civic participation in formal education settings, non-formal education settings and outside education settings (a quantitative survey will be conducted among young people aged 13-25 who study in formal and non-formal secondary and higher education institutions in Latvia. The planned sample size is approximately 1000. Data will be analysed in IBM SPSS Statistics, with the aim of identifying correlations between education level, type of educational institution (formal/non-formal), age group of young people, fields of interest education and preconditions for civic participation, dominant forms of civic participation, and signs/indicators of authentic and meaningful civic participation)&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Survey data obtained in the project on the formal and non-formal educational environment as an institutional framework for civic participation (including decision-making, trust).",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "The project coordinator is responsible for data handling, and the data management officer is responsible for deposition",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Internationally recognised licence, applicable to data produced within the scope of national research programmes",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Online surveys will include a consent form for publishing data in an open archive",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "8b942bf4-af34-ba41-ffd7-473af2003cb2" : "SPSS",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "This type of data has not been collected before",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Researchers in youth sociology, civic participation and other social scientists",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "CSV and SAV formats",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Anonymized survey data will be published in open access repository Zenodo and can be used by third parties, indicating the origin of the data.Where appropriate (in relation to data-protection issues), researchers will upload files comprising raw data for sharing and reuse by academic and stakeholder communities.&#160;",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-12-21",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "SPPS or similar",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Baiba Tjarve (orcid:0000-0003-0770-3377)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0770-3377\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repository is managed by CERN, ensuring lifetime access as well as data security",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The data collection method is a analytical cross-sectional quantitative survey among young people aged 13-25 who study in formal and non-formal secondary and higher education institutions in Latvia.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "To obtain and analyse empirical data on the prerequisites for civic participation of young people (13-25 years) and the dominant forms of civic participation in formal education settings, non-formal education settings and outside education settings (a quantitative survey will be conducted among young people aged 13-25 who study in formal and non-formal secondary and higher education institutions in Latvia. The planned sample size is approximately 1000. Data will be analysed in IBM SPSS Statistics, with the aim of identifying correlations between education level, type of educational institution (formal/non-formal), age group of young people, fields of interest education and preconditions for civic participation, dominant forms of civic participation, and signs/indicators of authentic and meaningful civic participation)&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Survey data obtained in the project on the prerequisites for civic participation of young people (13-25 years) and the dominant forms of civic participation in formal education settings, non-formal education settings and outside education settings.",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "The project coordinator is responsible for data handling, and the data management officer is responsible for deposition",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Internationally recognised licence, applicable to data produced within the scope of national research programmes",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Any work with minors will be subject to clearance and informed consent from parents and guardians.&#160;",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "8b942bf4-af34-ba41-ffd7-473af2003cb2" : "SPSS",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "This type of data has not been collected before",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Researchers in youth sociology, civic participation and other social scientists",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "CSV and SAV formats",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Anonymized survey data will be published in open access repository Zenodo and can be used by third parties, indicating the origin of the data.Where appropriate (in relation to data-protection issues), researchers will upload files comprising raw data for sharing and reuse by academic and stakeholder communities.&#160;",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-12-21",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "SPPS or similar",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Baiba Tjarve (orcid:0000-0003-0770-3377)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0770-3377\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repository is managed by CERN, ensuring lifetime access as well as data security",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false"
+      }
+    } ],
+    "description" : "The objective of the project is to create new knowledge on the factors and expressions of young people&#8217;s (13-25 years old) participation, its authenticity in formal and non-formal education settings, as well as in extracurricular activities; develop strategies and practical solutions for the promotion of authentic and meaningful participation both on individual level and in the interaction of involved stakeholders; make an epistemological and practical contribution to the development of a youth-centred participatory approach.<div><br></div><div>A methodology in which the boundary between researchers, educators and young people is made permeable has been chosen: design-based implementation research, participatory action research, and participatory evaluation research. Visual methods, including digital storytelling and photovoice, will be used to explore young people's experiences. The research project will be implemented by the Latvian Academy of Culture and its interdisciplinary researchers&#8217; team experienced in research on democratic and participatory processes, as well as on the youth sector. Testing and validating new forms of civic participation will contribute to an open and democratic learning environment. Apart from scientific publications, a range of applied results are planned aimed at recommendations for youth and education policy makers. The impact of the project is planned on the field of education sciences, as well as youth sociology, and their research community in Latvia un abroad.</div>",
+    "dmp_id" : {
+      "identifier" : "95896200-ba19-4899-b8ae-355c8cac6faf",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-06-20T10:59:30Z",
+    "project" : [ {
+      "description" : "",
+      "end" : "Fri Jun 20 10:22:42 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "#",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "VPP-IZM-Izglītība-2023/6-0002",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Thu Jun 20 10:22:42 UTC 2024",
+      "title" : "The State Research Programme ‘Education’ (2023-2026)",
+      "additional_properties" : { }
+    } ],
+    "title" : "VPP UNFRAMED DPP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{\"3b63e447-d5f6-f016-0cb5-c451e0ca228e\":\"2024-06-20\"}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "5ca3ff51-3904-4232-a346-97847baa3fa4",
+      "publicDate" : "2024-06-20T09:57:55.452Z",
+      "blueprintId" : "eb02f2ae-69fd-456d-8143-6b0a98af64c4"
+    }
+  }
+}

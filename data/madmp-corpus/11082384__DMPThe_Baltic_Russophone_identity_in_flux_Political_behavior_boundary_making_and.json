@@ -1,0 +1,237 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "799c632f-9f2e-4aa6-8580-7cc85befc0dd",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "janis.juzefovics@rsu.lv",
+      "name" : "Jānis Juzefovičs",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8397-1800",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inta Mierina (orcid:0000-0002-8397-1800)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4938-1601",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Mārtiņš Kaprāns (orcid:0000-0003-4938-1601)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6188-970X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Oksana Žabko (orcid:0000-0002-6188-970X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8707-0092",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anastasija Tetarenko (orcid:0000-0001-8707-0092)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7285-1806",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jānis Juzefovičs (orcid:0000-0001-7285-1806)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-29T13:46:14Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "RSU research data manager will check the consistency and completeness of the data prior to archiving." ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Dataset contains survey data (2 waves).&#160;",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The aim of a representative quantitative survey of Russophones in Latvia and Estonia is to collect data on their attitudes towards Latvia/Estonia, Russia and the EU, media practices and political engagement.",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "keyword" : [ "survey data" ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Survey data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "RSU research data manager will check the consistency and completeness of the data prior to archiving.",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "RSU research data manager will check the consistency and completeness of the data prior to archiving." ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Dataset contains transcripts of focus group discussions (2 waves) and individual interviews (5 waves).",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The aim of the first phase of focus group discussions is to identify and contextualize major topics, frames, and motifs relevant to the further research of identity boundary making, political behavior and media practices. The aim of the second round of focus group discussions, which will be organized in the last year of the project, is to understand the nature of particular boundary-making claims, media practices and forms of political behavior identified in other data obtained in the first and second year of the project.&#160;",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Focus group and interview transcripts",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "RSU research data manager will check the consistency and completeness of the data prior to archiving.",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "RSU research data manager will check the consistency and completeness of the data prior to archiving." ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Dataset contains data from the online open-ended multimedia diary study and online ethnography study (5 waves).",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The aim of the diary study is to obtain nuanced, bottom-up understanding about the mundane cross-media news use practices of Latvia's and Estonia's Russian-speakers and their dynamics over a longer period of time. The diary study is conducted in conjunction with online ethnography to delve deeper into the public manifestations of the Baltic Russophone identity.",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "keyword" : [ "media diaries", "online ethnography" ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Diary study and social media monitoring data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "RSU research data manager will check the consistency and completeness of the data prior to archiving.",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "DMP describes the management of data from the Baltic Russophone identity in flux project. The project's&#160;<span>research strategy is built on a complex set of methods which include focus group discussions and individual interviews, media diaries and online ethnography, as well as survey research. The dynamic research design is set to explore identity dynamics of the sizeable Russian-speaking minority in the Baltic countries of Latvia and Estonia in the light of Russia&#8217;s full-scale invasion of Ukraine. The project asks (1) how Russia&#8217;s invasion of Ukraine has affected their identity strategies, (2) has Russia&#8217;s invasion led to further disenchantment and political alienation of the Russophone minority and (3) how has the war changed their practices of media use.&#160;</span><span>DMP is organised around three data sets: (1) transcripts of focus group discussions and individual interviews, (2) data from the diary study and social media monitoring and (3) survey data.&#160;</span><div><div><div><br></div></div></div>",
+    "dmp_id" : {
+      "identifier" : "e8e93ea4-e983-4299-a1ea-fd3a75c95ef5",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-29T07:23:30Z",
+    "project" : [ {
+      "description" : "Latvia and Estonia are countries with the largest share of Russian-speaking minorities in the European Union. Russia's full-scale invasion of Ukraine on February 24, 2022 has created unprecedented existential challenges for these linguistic communities. But for scholars this has illuminated many unknowns regarding Russian-speakers identity. Cultural identification with Russia has never been a clear-cut choice to Baltic Russophones, but now it also becomes a morally constrained choice. Moreover, the upheaval caused by the war has enabled symbolic violence against the Russophone community. The aim of the research project is to study the identity dynamics of Latvian and Estonian Russophones in the light of Russia’s invasion. “Identity dynamics” is understood as the process in which permanent social positions and collective self-image are constructed and situated. In particular, the project focuses on boundary making, political behavior, and media practices. The project research strategy is built on a complex set of methods which include focus groups, surveys, media diaries and online ethnography. The dynamic research design is set to explore the transformation of the Russian-speakers’ identity over time, shedding light on socio-political developments within and outside Latvia and Estonia.",
+      "end" : "Tue Jan 28 13:46:14 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "LCS, LZP",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "lzp-2023/1-0239",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Jan 29 13:46:14 UTC 2024",
+      "title" : "The Baltic Russophone identity in flux: Political behavior, boundary making, and media practices after Russia’s full-scale invasion of Ukraine",
+      "additional_properties" : { }
+    } ],
+    "title" : "Data from the The Baltic Russophone identity in flux project",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Other (Public Domain)",
+        "modified" : null,
+        "pid" : "other-pd",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : ""
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "6f3b613b-1db1-4452-beb8-e95d2c292040" ],
+      "contact" : "799c632f-9f2e-4aa6-8580-7cc85befc0dd",
+      "publicDate" : "2024-04-01T00:00:00.000Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

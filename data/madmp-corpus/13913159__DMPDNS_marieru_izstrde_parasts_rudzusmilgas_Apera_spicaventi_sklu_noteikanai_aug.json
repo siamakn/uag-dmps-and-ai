@@ -1,0 +1,154 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "bf20243d-601e-4b62-b682-4d7aa828bd7c",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "jevgenija.necajeva@lu.lv",
+      "name" : "Jevgenija Necajeva",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0077-9811",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anete Boroduske (orcid:0000-0003-0077-9811)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5596-6895",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Brandon Sinn (orcid:0000-0002-5596-6895)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0008-5745-6160",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Elza Kaktiņa (orcid:0009-0008-5745-6160)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0828-9721",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jevgenija Necajeva (orcid:0000-0002-0828-9721)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0828-9721",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jevgenija Necajeva (orcid:0000-0002-0828-9721)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-10-10T13:21:11Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "To test the selected markers, DNA isolated from up to 300 individual Apera spica-venti plants and at least 20 other species that are most widespread in the region will be used. A selection of samples will be used for Sanger sequencing of the amplified fragments.",
+      "distribution" : [ {
+        "format" : [ "FASTA" ],
+        "title" : "To test whether the markers are selective for the target species and non-selective for individual genotypes of the target species",
+        "additional_properties" : {
+          "formatId" : "14369148-aac3-bb55-6b0a-810bc8f66d88",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "keyword" : [ "DNA" ],
+      "language" : "eng",
+      "metadata" : [ ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Sequencing data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Collection of data, creation of metadata, and deposition&#160;",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "There are no relevant datasets",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "plant biologists, evolutionary biologists, weed scientists",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "txt",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "false",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "false",
+        "9ef93479-4310-9882-becc-2c11a957c3f7" : "Scientific names of the plants and standard place coordinates will be used.",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2025-12-31",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "no licenced software is required.",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "98b2e9c0-8050-0c72-471e-c5f2b0a9ec7b" : "Sample collection sites (georeferenced) and dates, species names.",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "true",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Jevgenija Necajeva (orcid:0000-0002-0828-9721)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-0828-9721\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "The data will be available for an indefinite period of time",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "false",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false"
+      }
+    } ],
+    "description" : "Creation, backup, storage and availability of the dataset of candidate selective DNA markers for Apera spica-venti",
+    "dmp_id" : {
+      "identifier" : "a2af5e24-0302-4a67-9c4e-8c04787b028d",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-10-10T13:38:28Z",
+    "project" : [ {
+      "description" : "Development of new, molecular marker-based method of detecting seeds of plant species in the soil seed bank can become a tool useful for fundamental and applied research of plant populations. This research is aimed at a practical problem: detection of Apera spica-venti, a weed species that has potential to reduce yield of important cereal crops in Europe and other cereal-growing areas. Conventional methods of soil seed bank analysis are extremely labor-intensive or time-consuming, which is an important limitation to soil seed bank research. The aim of the project is to develop a set of molecular markers for detecting seeds of A. spica-venti in soil samples. To achieve this aim, first, in silico design and selection of primers useful for selective amplification of target species A. spica-venti will be performed. Publicly available datasets with A. spica-venti sequence data will be used for this purpose. Specificity of the designed primers will be tested using DNA isolated from several target weed individuals as well as DNA of other weed and crop species. The performance of the selected primers will be validated using soil samples spiked with A. spica-venti seeds. Two different methods, qPCR and KASP will be used at this stage. This research will extend the use of molecular detection methods in soil seed bank research beyond parasitic weed species and include a Poaceae family species which is an economically important arable weed.",
+      "end" : "Fri Oct 10 13:21:11 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "LCS_LV",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "lzp-2023/1-0265",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Thu Oct 10 13:21:11 UTC 2024",
+      "title" : "DNS marķieru izstrāde parastās rudzusmilgas (Apera spica-venti) sēklu noteikšanai augsnes sēklu bankā",
+      "additional_properties" : { }
+    } ],
+    "title" : "Selective DNA markers for Apera spica-venti",
+    "additional_properties" : {
+      "license" : null,
+      "visible" : true,
+      "dmpProperties" : "{\"3b63e447-d5f6-f016-0cb5-c451e0ca228e\":\"2024-10-10\"}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "bf20243d-601e-4b62-b682-4d7aa828bd7c",
+      "publicDate" : "2024-10-10T13:08:32.965Z",
+      "blueprintId" : "eb02f2ae-69fd-456d-8143-6b0a98af64c4"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "1143f1e2-10f8-4b57-94a8-397931c4effc",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "anca.hienola@fmi.fi",
+      "name" : "Anca Hienola",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1404-6670",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Harri Kokkola (orcid:0000-0002-1404-6670)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3294-7405",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Paul Connolly (orcid:0000-0002-3294-7405)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "dmp:0000-0002-3264-1713",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Hugh Coe",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-17T13:42:12Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "d2baea89-6c3a-4d1d-9027-e8c7af2fbc23",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Data gathered to quantify secondary ice production by the freezing of raindrops during collisions with existing ice crystals. This dataset will consist of:<div>1. Video analysis of individual collisions between drops and ice crystals and the resulting fragments</div><div>2. Metadata quantifying the experimental conditions</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "We will store on Figshare and local servers. if this becomes non persistent we will store on Zenodo and potentially Github.",
+      "title" : "University of Manchester Laboratory Data on Secondary Ice Mechanisms",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification" ],
+      "dataset_id" : {
+        "identifier" : "e19f13c9-c074-4119-91f4-8c44d71812bb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "UK FAAM aircraft data collected during a number of missions across different regions and cloud types:<div><br></div><div>1. In-cloud droplet size distributions and ice size distributions and habits.</div><div>2. Aerosol physical and chemical properties</div><div>3. meteorological, physical state and aircraft data</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "more than 20 years",
+      "title" : "FAAM aircraft aerosol and cloud data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for data created at the UNIMAN is developed in the context of effectively managing and preserving valuable data generated for CERTAINTY project.&#160;<div><br></div><div><br></div><div>The DMP for UNIMAN data is designed to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "17f54cfc-cc34-4c11-8453-92b338cd3a1d",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-24T13:49:32Z",
+    "project" : [ {
+      "description" : "Cloud, aerosols and their interactions are key regulators of climate. However, uncertainties in the magnitude of the net cooling impact of aerosols on\nclimate and in the cloud response to evolving anthropogenic emissions and climate change induced feedbacks on natural emissions are major\nchallenges that limit our understanding of how global and regional climate, including extremes, respond to changes in greenhouse gases. It is of\nparamount importance to better understand aerosol-cloud processes and their role in the Earth System, from regional to global scales, and over\ndifferent time scales, from days to decades. Over the last decade, extensive research networks, infrastructures, satellite instruments, and atmospheric\nmodels have been developed, making it possible to obtain a holistic view of the effects of clouds and aerosols on climate and weather. CERTAINTY\nwill capitalise on this available data together with advanced algorithms, machine learning and data assimilation methods, high resolution models, and\nEarth system models to bring the fundamental knowledge of interactions between clouds, aerosols, and radiation to a new level. The consortium\npartners are in key roles as operators, data originators, developers, providers, and users of European aerosol and cloud data and ESMs/high resolution\nmodels. The consortium leads the activities of next generation satellite missions (such as EarthCARE), and the development of new satellite products,\nto facilitate their scientific use in CERTAINTY by preparing tools for early adoption of data. CERTAINTY will bring the observation-based\nknowledge to be used in modeling frameworks to improve predictive models and knowledge of processes controlling aerosols, clouds, and their\ninteractions from hours to decades. The ultimate outcome will be better understanding and predictions of extreme events that facilitates planning of\nclimate mitigation/adaptation strategies for the good of European citizens and global society.",
+      "end" : "Sat Nov 16 11:12:03 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Nov 17 11:12:03 UTC 2023",
+      "title" : "CERTAINTY",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY UMANCHESTER's DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "1143f1e2-10f8-4b57-94a8-397931c4effc",
+      "publicDate" : "2023-11-17T11:08:59.124Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

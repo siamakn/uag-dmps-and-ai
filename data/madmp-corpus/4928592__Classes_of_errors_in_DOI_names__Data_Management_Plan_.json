@@ -1,0 +1,91 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "86d7f0c5-87aa-49a4-adb2-8bc14b0e063f",
+        "type" : "other"
+      },
+      "mbox" : "deniz.tural@studio.unibo.it",
+      "name" : "Deniz Tural"
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7363-6737",
+        "type" : "orcid"
+      },
+      "name" : "Cristian Santini (orcid:0000-0001-7363-6737)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6391-4198",
+        "type" : "orcid"
+      },
+      "name" : "Deniz Tural (orcid:0000-0002-6391-4198)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8420-0696",
+        "type" : "orcid"
+      },
+      "name" : "Arcangelo Massari (orcid:0000-0002-8420-0696)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2133-8735",
+        "type" : "orcid"
+      },
+      "name" : "Ricarda Boente (orcid:0000-0002-2133-8735)"
+    } ],
+    "cost" : [ ],
+    "created" : "2021-06-08T16:22:59Z",
+    "dataset" : [ {
+      "dataset_id" : {
+        "identifier" : "f1b00f7c-6c32-4417-8044-a4a990e9d4ba",
+        "type" : "other"
+      },
+      "description" : "This dataset contains a seven-column CSV file, where the first column (\"Valid_citing_DOI\") contains\nthe DOI of a citing entity retrieved in Crossref, the second column (\"Invalid_cited_DOI\") contains the invalid DOI of a cited entity identified by looking at the field \"reference\" in the JSON document returned by querying the Crossref API with the citing DOI, and the third column (\"Valid_DOI\"), contains the corrected DOI if it has been identified, an empty string otherwise. Finally, the last four columns (\"Already_valid\", \"Prefix_error\", \"Suffix_error\", \"Other-type_error\"), contain a 1 if the error in the DOI was related to that class, 0 otherwise.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Classes of errors in DOI names: output dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "701de436-2127-43ac-95a6-7edffe801449"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "1bce690b-2b3e-43dd-8eea-a19710dedc79",
+        "type" : "other"
+      },
+      "description" : "This dataset contains the source code used to clean a CSV list of invalid DOI names and to output\nthe correct ones, the classes of errors, and the ones that were not possible to fix automatically. In particular, four classes of errors are addressed: previously invalid DOIs become valid, prefix errors, suffix errors, and other type errors.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Classes of errors in DOI names: code",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "701de436-2127-43ac-95a6-7edffe801449"
+      }
+    } ],
+    "description" : "The data involved in this project are used to answer the following research questions: what are the classes of errors that characterize invalid DOIs? Which classes of errors can be addressed through automatic processes so as to get the correct DOIs? How many correct DOIs and, consequently, citations have been obtained by applying such automatic processing?",
+    "dmp_id" : {
+      "identifier" : "32b6f580-59c7-46d5-8ad6-428add057996",
+      "type" : "other"
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2021-06-08T17:06:29Z",
+    "project" : [ {
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "a49f0d77-ceb1-40f8-b5e0-c9aacac58a3c",
+          "type" : "other"
+        },
+        "grant_id" : {
+          "identifier" : "f75c3659-d77b-4f5d-a341-efd9f3ae511d",
+          "type" : "other"
+        }
+      } ],
+      "title" : "Open Science Project 2020/2021"
+    } ],
+    "title" : "Classes of errors in DOI names (Data Management Plan)",
+    "additional_properties" : {
+      "templates" : [ "701de436-2127-43ac-95a6-7edffe801449" ]
+    }
+  }
+}

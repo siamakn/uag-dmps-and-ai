@@ -1,0 +1,107 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "06ee2f02-935e-4972-993e-fdf8711eaa9f",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "up201804854@g.uporto.pt",
+      "name" : "Júlio de São José da Silva Oliveira",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0951-9995",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jose Guilherme Boura de Matos (orcid:0000-0003-0951-9995)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3936-5109",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "João Manuel Viana Parente Lopes (orcid:0000-0002-3936-5109)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-6446-8938",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Júlio Oliveira (orcid:0000-0001-6446-8938)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-09-17T17:32:59Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "0de750b9-7877-4698-9e1f-20d4476df90b",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The data is stored at https://zenodo.org/records/13774122.<div><br></div><div><br></div>",
+      "language" : "por",
+      "metadata" : [ ],
+      "title" : "Main Data",
+      "type" : "Dados numéricos",
+      "additional_properties" : {
+        "template" : "1ab5aa24-4302-4d23-a3bf-889d8f6e044f",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "Data obtained, using INCD_Cirrus, during the project Numerical Tests of a Superfluid Effective Field Theory in the 3d O(2)-model. Code: 2022.15885.CPCA.A2",
+    "dmp_id" : {
+      "identifier" : "0e2e75a6-15de-4438-9ffc-bffcd7092bac",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-17T17:33:37Z",
+    "project" : [ {
+      "end" : "Wed Sep 17 16:19:07 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "fct_________::FCT||Fundação para a Ciência e a Tecnologia, I.P.||FCT",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "2022.15885.CPCA.A2",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Sep 17 16:19:07 UTC 2024",
+      "title" : "Advanced Computing Projects",
+      "additional_properties" : { }
+    } ],
+    "title" : "Data from Project: Numerical Tests of a Superfluid Effective Field Theory in the 3d O(2)-model.",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Academic Free License 3.0",
+        "modified" : null,
+        "pid" : "AFL-3.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://opensource.org/licenses/AFL-3.0"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "1ab5aa24-4302-4d23-a3bf-889d8f6e044f" ],
+      "contact" : "06ee2f02-935e-4972-993e-fdf8711eaa9f",
+      "publicDate" : "2024-09-17T16:06:25.988Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

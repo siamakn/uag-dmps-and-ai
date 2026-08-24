@@ -1,0 +1,108 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "c3c95069-a4aa-4829-850d-1a7338492b11",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "jennie.thomas@univ-grenoble-alpes.fr",
+      "name" : "Jennie Thomas",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3552-2437",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jean-Christophe Raut (orcid:0000-0002-3552-2437)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2243-8137",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jennie Thomas (orcid:0000-0003-2243-8137)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4925-0046",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Louis Marelle (orcid:0000-0003-4925-0046)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-02-26T14:19:27Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "4bb48783-d138-4b32-98d1-05b73134aa8d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "WRF-Chem is the Weather Research and Forecasting (WRF) model coupled with Chemistry (https://github.com/wrf-model/WRF) is a public, community developed model distributed by NCAR and NOAA. In CERTAINTY, WRF-Chem is used to understand aerosols, clouds and their interactions for regional case studies including weather and climate extremes.&#160;&#160;<div><br></div><div>This data will be used to:</div><div>1. model specify cases of realistic aerosol and cloud properties, including aerosol cloud interactions including remote sensing from satellites</div><div>2. Understand how ACI controls and is modified by climate and weather extremes</div><div>3. Test new / existing INP parameterizations and their influence on ice and mixed phase clouds</div><div>4. Study test cases of polar aerosols and their role in controlling polar cloud properties</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Zenodo ensures data perservation.",
+      "title" : "WRF-Chem output",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for WRF-Chem input data and output for CNRS (IGE/LATMOS) in order to effectively manage/preserve data used and generated within the CERTAINTY project.&#160;<div><br></div><div><br></div><div>The DMP for WRF-Chem data at CNRS (IGE/LATMOS) is designed to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "fd1d8207-c1b3-476e-a374-4dfa037f3d51",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-03-04T16:25:51Z",
+    "project" : [ {
+      "end" : "Tue Feb 25 14:19:27 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Feb 26 14:19:27 UTC 2024",
+      "title" : "Cloud-aERosol inTeractions & their impActs IN The earth sYstem",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY CNRS DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "c3c95069-a4aa-4829-850d-1a7338492b11",
+      "publicDate" : "2024-01-31T00:00:00.000Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

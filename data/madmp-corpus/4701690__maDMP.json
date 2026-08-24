@@ -1,0 +1,88 @@
+{
+	"dmp": {
+        "title": "Predicting influenza infections in Vienna based on weather",
+        "description": "Main objective of this project is to exercise data visualization, preprocessing and simple modeling options. For visualizations, multiple techniques were shown, whereas in modeling phase only Linear Regression was used.",
+        "created": "2021-04-12T14:00:00.000Z",
+        "modified": "2021-04-18T12:54:00.000Z",
+        "dmp_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.4699172",
+            "type": "doi"
+        },
+        "contact": {
+          "contact_id": {
+            "identifier": "https://orcid.org/0000-0001-7446-3874",
+            "type": "orcid"
+          },
+          "mbox": "e11828912@student.tuwien.ac.at",
+          "name": "Alex Marksfeld"
+        },
+        "language": "eng",
+        "cost": [],
+        "dataset": [
+            {
+                "title": "Katalog Grippemeldedienst der Stadt Wien",
+                "dataset_id": {
+                    "identifier": "https://www.data.gv.at/katalog/dataset/grippemeldedienst-stadt-wien/resource/fa5edf7a-4236-45d4-a81e-c803eb4450fc",
+                    "type": "url"
+                },
+                "description": "Occurencies of influenza infections in the city of Vienna",
+                "issued": "2018-09-18",
+                "language": "eng",
+                "personal_data": "no",
+                "sensitive_data": "no",
+                "target_audience": "Target audience are students interested in machine learning and data analysis.",
+                "type": "software",
+                "is_reused": "reused",
+                "keyword": ["influenza", "dmp", "python", "jupyter notebook"],
+                "distribution": [
+                    {
+                        "title": "Influenza data",
+                        "data_access": "open",
+                        "format": ["text/csv"],
+                        "license": [
+                            {
+                                "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/",
+                                "start_date": "2021-04-12"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                  "title": "Source Code",
+                  "description": "Proof of concept implementation of the predictions",
+                  "type": "source-code",
+                  "issued": "2021-04-12",
+                  "dataset_id": {
+                      "identifier": "https://doi.org/10.5281/zenodo.4701613",
+                      "type": "doi"
+                  },
+                  "personal_data": "no",
+                  "sensitive_data": "no",
+                  "data_quality_assurance": ["The code has been reviewed by... and follows naming convention..."],
+                  "distribution": [
+                      {
+                          "title": "Python code in Jupyter notebook",
+                          "description": "Implementation of simple preprocessing, outlier detection and prediction modeling on top of influenza and weather data.",
+                          "access_url": "https://github.com/glion14/data-stewardship-assignment1-influenza",
+                          "data_access": "open",
+                          "license": [
+                              {
+                                  "license_ref": "https://creativecommons.org/licenses/by/4.0/",
+                                  "start_date": "2019-06-30"
+                              }
+                          ]
+                      }
+                  ]
+              }
+        ],
+        "project": [
+            {
+                "start": "2021-04-05",
+                "end": "2021-04-19",
+                "title": "Predicting influenza occurrences based on weather"
+            }
+        ],
+        "ethical_issues_exist": "no"
+    }
+}

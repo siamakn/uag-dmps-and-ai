@@ -1,0 +1,368 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "cf2d2ad7-4cc0-4170-9594-739bd8b8203e",
+        "type" : "other"
+      },
+      "mbox" : "marek.horst@gmail.com",
+      "name" : "Marek Horst"
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7291-3210",
+        "type" : "orcid"
+      },
+      "name" : "Paolo Manghi (orcid:0000-0001-7291-3210)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4406-428X",
+        "type" : "orcid"
+      },
+      "name" : "MICHELE ARTINI (orcid:0000-0002-4406-428X)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0893-8509",
+        "type" : "orcid"
+      },
+      "name" : "Elli Papadopoulou"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0458-1004",
+        "type" : "orcid"
+      },
+      "name" : "Jochen Schirrwagen (orcid:0000-0002-0458-1004)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3883-4169",
+        "type" : "orcid"
+      },
+      "name" : "Andreas Czerniak (orcid:0000-0003-3883-4169)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4483-1976",
+        "type" : "orcid"
+      },
+      "name" : "Antonis Lempesis (orcid:0000-0003-4483-1976)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1244-0823",
+        "type" : "orcid"
+      },
+      "name" : "Raphaël Tournoy (orcid:0000-0003-1244-0823)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4606-7422",
+        "type" : "orcid"
+      },
+      "name" : "Enrico Ottonello (orcid:0000-0003-4606-7422)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2785-946X",
+        "type" : "orcid"
+      },
+      "name" : "Yannis Foufoulas (orcid:0000-0002-2785-946X)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9038-9333",
+        "type" : "orcid"
+      },
+      "name" : "Marek Horst (orcid:0000-0002-9038-9333)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9791-587X",
+        "type" : "orcid"
+      },
+      "name" : "Harry Dimitropoulos (orcid:0000-0001-9791-587X)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8588-4196",
+        "type" : "orcid"
+      },
+      "name" : "Pedro Príncipe (orcid:0000-0002-8588-4196)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1112-1292",
+        "type" : "orcid"
+      },
+      "name" : "Alessia Bardi (orcid:0000-0002-1112-1292)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2855-1245",
+        "type" : "orcid"
+      },
+      "name" : "Sandro La Bruzzo (orcid:0000-0003-2855-1245)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2347-6012",
+        "type" : "orcid"
+      },
+      "name" : "Michele De Bonis (orcid:0000-0003-2347-6012)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0530-4305",
+        "type" : "orcid"
+      },
+      "name" : "Silvio Peroni (orcid:0000-0003-0530-4305)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1972-7587",
+        "type" : "orcid"
+      },
+      "name" : "Christoph Broschinski (orcid:0000-0003-1972-7587)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2273-9004",
+        "type" : "orcid"
+      },
+      "name" : "Miriam Baglioni (orcid:0000-0002-2273-9004)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9613-6639",
+        "type" : "orcid"
+      },
+      "name" : "Claudio Atzori (orcid:0000-0001-9613-6639)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3477-3082",
+        "type" : "orcid"
+      },
+      "name" : "Natalia Manola (orcid:0000-0002-3477-3082)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-6015-2063",
+        "type" : "orcid"
+      },
+      "name" : "Amelie Bäcker (orcid:0000-0001-6015-2063)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5193-7851",
+        "type" : "orcid"
+      },
+      "name" : "Andrea Mannocci (orcid:0000-0002-5193-7851)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3880-0244",
+        "type" : "orcid"
+      },
+      "name" : "Argiro Kokogiannaki (orcid:0000-0002-3880-0244)"
+    } ],
+    "cost" : [ ],
+    "created" : "2021-06-14T10:58:00Z",
+    "dataset" : [ {
+      "dataset_id" : {
+        "identifier" : "3b3b59b2-b7e3-4782-a86e-4e03c46f9805",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the OpenAPC research data.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "GitHub",
+        "metadata_standard_id" : {
+          "identifier" : "https://github.com/OpenAPC/openapc-de/wiki/Data-Submission-Handout",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "location211",
+          "identifierId" : "url211",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "OpenAPC",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "2ef88374-f1a3-46eb-a05d-edaaeddcce56",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the Argos research data.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Argos-data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "620ee8d2-f5fe-4ff8-9860-f7295f27b4ae",
+        "type" : "other"
+      },
+      "description" : "OpenAIRE Research Graph is an open resource that aggregates a collection of research data properties (metadata, links) available within the OpenAIRE Open Science infrastructure for funders, organizations, researchers, research communities and publishers to interlink information by using a semantic graph database approach.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "Zenodo",
+        "metadata_standard_id" : {
+          "identifier" : "https://zenodo.org/record/4723403",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "location211",
+          "identifierId" : "url211"
+        }
+      }, {
+        "description" : "Zenodo",
+        "metadata_standard_id" : {
+          "identifier" : "https://doi.org/10.5281/zenodo.3974225",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "multiple_urllocation211_e6e24c08-c840-0cc6-0f54-6514ed348045_location211",
+          "identifierId" : "multiple_urllocation211_e6e24c08-c840-0cc6-0f54-6514ed348045_url211"
+        }
+      }, {
+        "description" : "OpenAIRE vocabularies",
+        "metadata_standard_id" : {
+          "identifier" : "https://api.openaire.eu/vocabularies/",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "desc211a",
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "OpenAIRE Research Graph",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "2e91bd73-b501-4a5a-b101-d8dc91cb5ea9",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the Episciences research data. The data is related to the activity of publishing scientific open access articles as an overlay service, operating on top of open access repositories.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Episciences",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "268ee954-2a47-482a-936e-2c05ca91efe3",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the ScholExplorer research data.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ScholExplorer",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "eb502e80-e0de-4eda-99a7-35153d9ef5fa",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the ScholExplorer research data.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "Zenodo",
+        "metadata_standard_id" : {
+          "identifier" : "https://zenodo.org/record/4723403",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "location211",
+          "identifierId" : "url211"
+        }
+      }, {
+        "description" : "OpenAIRE Format Vocabularies",
+        "metadata_standard_id" : {
+          "identifier" : "https://api.openaire.eu/vocabularies/",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "desc211a",
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "Scholexplorer (based on Graph)",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "bed7ab60-993c-42a1-b7ce-f18eb9dd6e62",
+        "type" : "other"
+      },
+      "description" : "This dataset contains the GZ-compressed dump of the Scholix links (schema Version 3) exposed by the OpenAIRE ScholeXplorer service. The dataset consists of 445+Mi bi-directional links (i.e. 890+Mi directed links) between literature-dataset and dataset-dataset involving 17+ Mi literature objects and 50+ Mi datasets. Links were collected from publishers (CrossRef, EventData), data centers (DataCite and data centers), institutional/thematic repositories (OpenAIRE), and life-science databases (EMBL-EBI). The links are organized in 12 compressed files, each of at most 25.1Gb, for a total of ~300GB.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ScholExplorer Data Dump",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "1a8821f3-1324-4471-8f09-d07eeeed9478",
+        "type" : "other"
+      },
+      "description" : "This dataset describes the bibliographic and citation data that are made available by OpenCitations. The data mainly concerns one main collection, i.e. the OpenCitations Indexes, which comprises several subcollections including COCI, the OpenCitations Index of Crossref open DOI-to-DOI citations.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "Figshare",
+        "metadata_standard_id" : {
+          "identifier" : "https://doi.org/10.6084/m9.figshare.3443876.v7",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "location211",
+          "identifierId" : "url211",
+          "languageId" : "voc231"
+        }
+      }, {
+        "description" : "The Semantic Publishing and Referencing Ontologies, a.k.a. SPAR Ontologies, form a suite of orthogonal and complementary OWL 2 DL ontology modules for the creation of comprehensive machine-readable RDF metadata for every aspect of semantic publishing and referencing: document description, bibliographic resource identifiers, types of citations and related contexts, bibliographic references, document parts and status, agents' roles and contributions, bibliometric data and workflow processes.",
+        "metadata_standard_id" : {
+          "identifier" : "http://www.sparontologies.net",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "desc211a",
+          "identifierId" : "url211a"
+        }
+      } ],
+      "title" : "OpenCitations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "444133f4-346c-4140-a12f-8e7607a60b5e"
+      }
+    } ],
+    "description" : "OpenAIRE-Nexus brings in Europe, EOSC and the world a set of services to implement and accelerate Open Science. \nThe Data Management Plan for OpenAIRE-Nexus was developed in line with the Guidelines on FAIR Data Management in Horizon 2020, as requested by the EC Data Pilot. It was prepared for each installation that requires such a plan: OpenAIRE Research Graph (CNR, ICM), OpenCitations (UNIBO),  Argos (CITE), episciences.org (CNRS), OpenAPC (UNIBI), ScholExplorer (CNR, ICM).  The policies define data archiving, preservation, and sharing (i.e. access rights) practices to be adopted. ",
+    "dmp_id" : {
+      "identifier" : "ece5cb88-4b2a-4a04-a257-c591041165f2",
+      "type" : "other"
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2021-07-02T08:49:00Z",
+    "project" : [ {
+      "description" : "OpenAIRE-Nexus brings in Europe, EOSC and the world a set of services to implement and accelerate Open Science. To embed in researchers workflows, making it easier for them to accept and uptake Open Science practices of openness and FAIRness. To give the tools to libraries, research communities to make their content more visible and discoverable. To assist policy makers to better understand the environment and ramifications of Open Science into new incentives, scientific reward criteria, impact indicators, so as to increase research and innovation potential. To foster innovation, by providing SMEs with open data about scientific production. To this aim, OpenAIRE-Nexus onboards to the EOSC fourteen services, provided by public institutions, einfrastructures, and companies, structured in three portfolios: PUBLISH (catch all repository; Open Access overlay journal platform; data anonymization; Data Management Plans), MONITOR (Open Science and research impact monitoring; open citation indexes for article-article, article-dataset links; European monitoring of Article Processing Charges, publication usage statistics), and DISCOVER (open catalogue and APIs to the OpenAIRE Research Graph of interlinked publications, data, software, projects; discovery portals for communities; validation and brokering services for data sources to improve their metadata). The services are widely used in Europe and beyond and integrated in OpenAIRE-Nexus to assemble a uniform Open Science Scholarly Communication package for the EOSC. The project aims at forming synergies with other INFRAEOSC-07 awarded projects, the INFRAEOSC-03 project, research infrastructures, einfrastructures, and scholarly communication services define a common Open Science interoperability framework for the EOSC, to facilitate sharing, monitoring, and discovery of EOSC resources across disciplines.",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref"
+        },
+        "grant_id" : {
+          "identifier" : "Code: 101017452",
+          "type" : "other"
+        }
+      } ],
+      "title" : "OpenAIRE NEXUS"
+    } ],
+    "title" : "OpenAIRE-Nexus",
+    "additional_properties" : {
+      "templates" : [ "444133f4-346c-4140-a12f-8e7607a60b5e" ]
+    }
+  }
+}

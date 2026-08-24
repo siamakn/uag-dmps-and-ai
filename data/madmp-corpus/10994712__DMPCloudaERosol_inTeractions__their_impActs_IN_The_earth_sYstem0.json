@@ -1,0 +1,171 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "c58c6a78-2a4d-4100-8918-cf76c265a0d6",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "savenetsm@gmail.com",
+      "name" : "Mykhailo Savenets",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2885-0213",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Larysa Pysarenko (orcid:0000-0002-2885-0213)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0195-751X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anastasiia Chyhareva (orcid:0000-0003-0195-751X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9972-0937",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Svitlana Krakovska (orcid:0000-0001-9972-0937)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3038-5960",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Liudmyla Nadtochii (orcid:0000-0003-3038-5960)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9429-6209",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Mykhailo Savenets (orcid:0000-0001-9429-6209)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-15T09:44:25Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Use of tools for automatic checks" ],
+      "dataset_id" : {
+        "identifier" : "867ca7ee-f1ae-42ba-b5dd-050845d72dbd",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>Modeling for studying aerosol-cloud interactions and cloud microphysics during extreme weather events</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "WRF output",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Use of tools for automatic checks" ],
+      "dataset_id" : {
+        "identifier" : "8b79a15b-2d1a-47f1-ac34-330650488760",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Online-integrated modeling on a regional scale for studying aerosol-cloud interactions, direct and indirect aerosol effects during extreme weather events",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Enviro-HIRLAM output",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "15856b9d-8997-4ee2-a12e-bb454c1d1f2b",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><span>Input data required to run the Weather Research and Forecast (WRF) model, set atmospheric and surface layer conditions.</span></div><div>These data include:&#10;</div><div>-&#9;Meteorological fields,&#10;</div><div>-&#9;Land use/ land cover parameters,&#10;</div><div>-&#9;Surface layer fields,&#10;</div><div>-&#9;Topographic data.</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Input for WRF model",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "2186e03f-0c31-463b-8a79-d58a990add83",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Input data required to run the Enviro-HIRLAM model, set chemical &amp; meteorological initial and boundary conditions; initialize assimilation procedure.<div>These data include:</div><div>- meteorological fields,</div><div>- land use/ land cover parameters,</div><div>- atmospheric composition;</div><div>- antropogenic and natural emissions.&#160;</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Input for Enviro-HIRLAM model",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for the Enviro-HIRLAM and WRF data created at the UHMI is developed in the context of effective management and processing data generated for CERTAINTY project.<div>The DMP for the Enviro-HIRLAM and WRF data at the UHMI is designed to maximize value, accessability and impact of the data produced supporting the institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "4d388463-7908-4a36-a922-fd01645dd470",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-02-23T19:53:43Z",
+    "project" : [ {
+      "end" : "Tue Feb 25 14:19:27 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Feb 26 14:19:27 UTC 2024",
+      "title" : "Cloud-aERosol inTeractions & their impActs IN The earth sYstem",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY UHMI's DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : null,
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "c58c6a78-2a4d-4100-8918-cf76c265a0d6",
+      "publicDate" : "2024-01-15T09:37:17.902Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

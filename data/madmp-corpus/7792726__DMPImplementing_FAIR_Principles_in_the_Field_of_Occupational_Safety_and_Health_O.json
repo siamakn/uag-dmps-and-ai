@@ -1,0 +1,98 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "6612ac0d-3a07-4420-82ab-95256e644cd8",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ingmars.kreismanis@gmail.com",
+      "name" : "Ingmārs Kreišmanis",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8707-1359",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Svetlana Lakisa (orcid:0000-0002-8707-1359)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3408-7365",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ingmars Kreismanis (orcid:0000-0002-3408-7365)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2205-6676",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Linda Paegle (orcid:0000-0002-2205-6676)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5391-1583",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ivars Vanadziņš (orcid:0000-0002-5391-1583)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-04-02T08:50:47Z",
+    "dataset" : [ {
+      "description" : "The aim of the research is to clarify the current situation in the field of occupational safety and health in Latvia, to analyze the dynamics of the obtained data and to develop proposals for improving the practical implementation of the legal framework. The study is necessary in order to implement a high quality and targeted policy in the field of labor relations and occupational safety and health, to monitor and understand the current situation and to identify the causes of the existing problems.",
+      "title" : "Working conditions and risks in Latvia - focus group interviews",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040"
+      }
+    }, {
+      "description" : "The Work conditions and risks in Latvia national surveys were conducted in Latvia in 2006, 2010, 2013, 2018 and 2021. The aim of these surveys is to gather evidence on situations related to occupational risk factors, occupational health, safety and to analyze the dynamics of the data obtained and identify the causes of the existing problems. This data serves as a basis to develop proposals for improving the practical implementation of the legal framework and foundation for effective decision making. &#10;<div>&#10;</div><div>Study &#34;Working conditions and risks in Latvia&#34; surveys of employees, employers, Latvian residents aged 15-74 (except for the 2nd study), occupational health and safety specialists (except for the 3rd study) and patients with registered occupational diseases (except for the 2nd and 3rd study) have been conducted periodically five times since 2006.&#160;</div><div>The Work conditions and risks in Latvia national surveys data are collected for the research purpose and it relates to the project aim to implement FAIR principles in practice by transforming collected research data in the field of Occupational safety and health (OSH), and to create an openly accessible research data platform.&#160;</div>",
+      "title" : "The work conditions and risks in Latvia national surveys",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040"
+      }
+    }, {
+      "description" : "This dataset consists of laboratory-performed occupational risk factors measurements data (such as occupational noise, whole body, and hand-arm vibration, indoor lighting, air temperature, relative humidity, airflow (indoor), chemicals concentration in work environment air, etc.) during the period from 1995 to 2021.",
+      "title" : "Laboratory-performed occupational risk factors measurements data",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040"
+      }
+    } ],
+    "description" : "The datasets described in this DMP consist of historically obtained survey, measurement and focus group interview data by Institute of Occupational Safety and Environmental Health of the Riga Stradins University. These data sets will be processed and storaged according to FAIR principles and best practices provided by RDA and EOSC communities/project outputs. This activity is funded by EOSC-Future and supervised by RDA. All datasets, once published, will be a valuable resource for other researchers and students in Latvia, but not limited to that, datasets could be valuable also for a wider occupational safety and health community in Europe for different studies. Project team hopes that survey data and measurements could be interesting to other disciplines as they cover rich information.&#160;",
+    "dmp_id" : {
+      "identifier" : "ebe48894-0918-4061-8f58-9ccdcb7928a4",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-04-02T10:49:17Z",
+    "project" : [ {
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101017536",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "title" : "EOSC Future",
+      "additional_properties" : { }
+    } ],
+    "title" : "Increasing FAIRness of data processing in Occupational Health and Safety (OHS) ",
+    "additional_properties" : {
+      "templates" : [ "6f3b613b-1db1-4452-beb8-e95d2c292040" ]
+    }
+  }
+}

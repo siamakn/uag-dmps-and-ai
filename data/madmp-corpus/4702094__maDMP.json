@@ -1,0 +1,158 @@
+{
+	"dmp": {
+		"title": "DMP: Analysis of herd immunity gain through mass vaccination against SARS-CoV-2",
+		"description": "DMP data that shows the progress of vaccinations in Israel and the consequences regarding the decrease in the daily number of new cases.",
+		"created": "2021-04-18T10:04:09.5",
+		"modified": "2021-04-19T20:13:45.1",
+		"project": [
+			{
+				"title": "Analysis of herd immunity gain through mass vaccination against SARS-CoV-2",
+				"description": "Data that shows the progress of vaccinations in Israel and the consequences regarding the decrease in the daily number of new cases." 
+			}
+		],
+		"contact": {
+			"mbox": "andrei_brasoveanu1997@yahoo.com",
+			"name": "Dragos - Andrei Brasoveanu",
+			"contact_id": {
+				"identifier": "https://orcid.org/0000-0003-1064-1496",
+				"type": "orcid"
+			}
+		},
+		"language": "eng",
+		"ethical_issues_exist": "no",
+		"dmp_id": {
+			"identifier": "http://doi.org/10.5281/zenodo.4701922",
+			"type": "doi"
+		},
+		"dataset": [
+			{
+				"title": "Vaccinations against SARS-CoV-2 and changes in daily new cases in Israel",
+				"description": "Data that shows the progress of vaccinations in Israel and the consequences regarding the decrease in the daily number of new cases.",
+				"type": "document",
+				"issued": "2021-04-19",
+				"dataset_id": {
+					"identifier": "10.5281/zenodo.4702020",
+					"type": "doi"
+				},
+				"personal_data": "no",
+				"sensitive_data": "no",
+				"distribution": [
+					{
+						"title": "Raw data",
+						"description": "CSV file containing the effects of the vaccinations against SARS-CoV-2 during the first three months of 2021.",
+						"format": ["text/csv"],
+						"byte_size": 48000,
+						"data_access": "open",
+						"license": [
+							{
+								"license_ref": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+								"start_date": "2021-04-19"
+							}
+						]
+					}
+				]
+			},
+			{
+				"title": "First release.",
+				"description": "First release including all the files needed in order to run the jupyter notebook script.",
+				"type": "source-code",
+				"issued": "2021-04-19",
+				"dataset_id": {
+					"identifier": "10.5281/zenodo.4701991",
+					"type": "doi"
+				},
+				"personal_data": "no",
+				"sensitive_data": "no",
+				"data_quality_assurance": ["The code has been reviewed by the author and follows standard naming conventions"],
+				"distribution": [
+					{
+						"title": "First release.",
+						"description": "First release including all the files needed in order to run the jupyter notebook script.                        ",
+						"access_url": "https://github.com/andreibrasoveanu97/DS-Exercise1",
+						"data_access": "open",
+						"license": [
+							{
+								"license_ref": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+								"start_date": "2019-06-30"
+							}
+						]
+					}
+				]
+			}
+		],
+		"data_collection":[
+			{
+				"title": "What data will you collect or create?",
+				"description": "The data has been collected from Our World in Data, a site containing completely open access data and visualizations, coordinated by the University of Oxford. The two data sets used for input are: share of the population of Israel fully vaccinated, represented by a .csv file and describing the percentage of population vaccinated every day, and daily new confirmed cases for Israel, which describes the statistics regarding each day's new cases for this country. The volume of the files are 158 KB and 20.5 MB respectively. The data is open-source.
+
+                I chose to work with .csv files since they are easily read using Python libraries such as pandas and can be visualized with ease. 
+                
+                I have created based on these given data sets new features, such as: the change in the new number of cases (day-to-day), average for the number of new cases over the last 7 days and how much does the fully-vaccinated percentage of population increase each day. These are later used to observe in how much time does the vaccine immunity reach its full potential. The created dataset has a volume of 48 KB.
+                
+                There are two visualizations generated, of type .png, used to show the respective correlations.
+                
+                The data is available for long term access and stored in the cloud using GitHub."
+			},
+			{
+				"title": "How will the data be collected or created?",
+				"description": "The two datasets will be downloaded as .csv files, available in the root folder, together with the Jupyter notebook. The generated dataset will be created using dataframes, it will be of type .csv as well and can be found in the same root folder. The version control will be managed by GitHub. The data quality will be managed using basic filtering techniques applied as well when the aggregated dataset was processed. "
+			}
+		],
+		"documentation_and_metadata":[
+			{
+				"title": "What documentation and metadata will accompany the data?",
+				"description": "The metadata is contained within the input datasets. The dataset will be read as dataframes and thus the header of these frames will have all the information regarding the data contained by them, such as data type and name of each feature.  There will also be a Readme file which contains any further information a user may need to perform the experiment."
+			}
+		],
+		"ethics_and_legal_compliance":[
+			{
+				"title": "How will you manage any ethical issues?",
+				"description": "The data has been anonymised prior to downloading it and it has been put together using information from public sources. "
+			},
+			{
+				"title": "How will you manage copyright and Intellectual Property Rights (IPR) issues?",
+				"description": "All the data produced by Our World in Data is completely open access under the Creative Commons BY license. The created data and the code will be open access as well, using a CC-0 license."
+			}
+		],
+		"storage_and_backup":[
+			{
+				"title": "How will the data be stored and backed up during the research?",
+				"description": "The data will be stored and backed up on the cloud, using GitHub. There will be no extra charges as the data occupies a relatively small space."
+			},
+			{
+				"title": "How will you manage access and security?",
+				"description": "Since the data will be publicly available to anyone, no security risks will be involved."
+			}
+		],
+		"selection_and_preservation":[
+			{
+				"title": "Which data are of long-term value and should be retained, shared, and/or preserved?",
+				"description": "The .csv generated file and the code should be preserved, since the .png files are the results of the experiment and little to no general value. The generated data may be used in order to extract further informations regarding this area of expertise, whether it is in an academic environment or for individual purposes."
+			},
+			{
+				"title": "What is the long-term preservation plan for the dataset?",
+				"description": "The data will be preserved indefinitely on the GitHub repository cost-free, with all the files stored in the root folder."
+			}
+		],
+		"data_sharing":[
+			{
+				"title": "How will you share the data?",
+				"description": "The data will be shared using the repository's link. It may also be found using a search engine or using its DOI."
+			},
+			{
+				"title": "Are any restrictions on data sharing required?",
+				"description": "There are no restrictions on data sharing required."
+			}
+		],
+		"responsabilities_and_resources":[
+			{
+				"title": "Who will be responsible for data management?",
+				"description": "The experiment's creator will be responsible for data management."
+			},
+			{
+				"title": "What resources will you require to deliver your plan?",
+				"description": "The only resources required are getting a researcher ORCID and DOI for the data and thecode."
+			}
+		]
+	}
+}

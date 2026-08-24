@@ -1,0 +1,113 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "39525ba9-70a0-4af0-9943-ff5f2d917fcf",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "constance.dami@studio.unibo.it",
+      "name" : "Constance Dami",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0933-4640",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Alessandro Bertozzi (orcid:0000-0003-0933-4640)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4819-3975",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Constance Dami (orcid:0000-0003-4819-3975)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4037-1175",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Chiara Manca (orcid:0000-0003-4037-1175)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6352-2215",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Umut Kucuk (orcid:0000-0002-6352-2215)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2022-04-06T07:37:06Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "17997e4c-d2cb-479d-a58e-d46efa8ea5db",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The software used for gathering, manipulating and analyzing data of this research",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Software for coverage of open citations in DOAJ journals",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "e2f4f215-6ecd-42ea-9018-a4be8d4e5304",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The dataset contains the results for our research on the coverage of open citations in DOAJ journals. More specifically, a JSON file containing statistical informations for journals and the citations they do and receive.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Dataset for the coverage of open citations in DOAJ journals",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    } ],
+    "description" : "The purpose of this research is finding out the coverage of DOAJ articles in terms of citations, according to OpenCitations indexes: how many citations DOAJ journals receive and do; how many of these involve open access articles; and finally, the presence of trends over time of the availability of citations involving these articles.",
+    "dmp_id" : {
+      "identifier" : "12d0cab3-21ca-4023-ab21-98b9b63a909a",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2022-04-06T09:30:47Z",
+    "project" : [ {
+      "description" : "None",
+      "end" : "Sat Mar 04 21:47:23 UTC 2023",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "None",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "None",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Mar 04 21:47:23 UTC 2022",
+      "title" : "None",
+      "additional_properties" : { }
+    } ],
+    "title" : "Coverage of open citations in DOAJ journals",
+    "additional_properties" : {
+      "templates" : [ "9d27b27b-7df3-4003-8ee4-020cf28c82a5", "a9ae7573-5c99-434c-939e-639098c49bf9" ]
+    }
+  }
+}

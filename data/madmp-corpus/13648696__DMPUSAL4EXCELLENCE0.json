@@ -1,0 +1,101 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "b6763e21-f252-4744-8e85-68fd6d65ac03",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "mistryhemendra2015@gmail.com",
+      "name" : "Hemendra Mistry",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "dmp:https://orcid.org/0000-0003-4726-7143",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Maria Cruz Sanchez Gomez",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "dmp:0000-0002-9074-0111",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Hemendra Mistry",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-09-01T12:36:00Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Use of tools for automatic checks" ],
+      "dataset_id" : {
+        "identifier" : "734c61b0-012a-4d51-8d3e-9b9501383806",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The study falls into three broad objectives, viz., 1) to identify strategies for paying attention to student diversity and inclusion in higher education; 2) to develop and validate the INSTADINE scale; and 3) to determine diverse student perceptions of university practices on student diversity and inclusion in higher education, covered under the seven work packages (WPs).<div><br></div><div>The following work packages are associated with data generation:&#10;</div><div>WP1: To identify university strategies for paying attention to student diversity and inclusion in higher education. &#10;</div><div>This phase involved an online survey of universities in four European countries (France, Spain, Sweden, and the UK), which was associated with survey data. We collected quantitative data in the online survey using the Qualtrics tool. The main purpose of this phase was to collect data on the universities&#8217; strategies, policies, and practices for student diversity and inclusion in higher education. We provided the universities with an e-rubric consisting of a variety of close-ended items related to their strategies and practices on student diversity and inclusion in higher education. The universities had to select the appropriate answer(s) from the options given with each item. The university authorities' responses generated the survey data.&#10;</div><div>WP2: To develop and validate the INSTADINE scale to assess students&#8217; perceptions of attention to diversity and inclusion in higher education.&#10;</div><div>This phase's data generation has the goal of involving students from diverse backgrounds in the exploration of their perceptions of diversity and inclusion practices in universities. Therefore, this phase involves an online survey of students from diverse backgrounds, which encourages them to reflect on their university's policies and practices related to student diversity and inclusion in higher education.&#10;</div><div>WP2 will also include pilot testing of a draft scale and data analysis, including psychometric analysis by the PI, with the goal of developing a reliable and valid scale.&#10;</div><div>WP3: To determine students&#8217; perceptions with regard to demographic variables. &#10;</div><div>This phase entails a variable-wise analysis of the data (gender, age, level of education, type of diverse category, and disability), reflecting how the diverse students perceive the university's practices in fostering diversity and inclusion in higher education. The results of this data will assist universities in understanding the extent to which they are meeting the diverse needs of students in higher education, the progress and growth they have made in addressing student diversity and inclusion, and the areas that still need further attention. Contributing to higher educational development in general and policy dialogues in particular, the results will provide valuable insights on how the students perceive university practices on diversity and inclusion in higher education, help in developing new policies and practices for attending to student diversity, and contribute to effective inclusive higher education for all.&#10;</div><div>WP4: Utilize the findings from WP1 to WP3, and ensure the dissemination and communication of the results.&#10;</div><div>After collecting and analysing the data is complete, WP4 involves the creation of a rubric for the universities and a perception scale for students with diverse backgrounds in higher education. Conference presentations, journal publications, and secondments at a collaborating research centre and a non-academic organization will facilitate this phase, which draws on pseudonymized and anonymized data to generate Open Access publications and presentations. We will make both the developed instruments (rubric and perception scale) and all the research-generated publications available in an Open Access repository at USAL.</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Salamanca University's research repository (GREDOS) ensures long-term data and metadata preservation The project will end after 30 months, destroying the original data and retaining only the anonymized data in the two repositories (GREDOS and Zenodo).&#160;",
+      "title" : "INSTADINE",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "Institutionalization of attention to student diversity and inclusion in higher education: Diverse students&#8217; voices",
+    "dmp_id" : {
+      "identifier" : "78e2b166-fde4-46dc-90df-7de3a79721c8",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-03T14:42:22Z",
+    "project" : [ {
+      "description" : "European Union's Horizon 2020 research and innovation programme under the MSCA Cofund grant ",
+      "end" : "Mon Sep 01 12:36:00 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "378 188903",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Sun Sep 01 12:36:00 UTC 2024",
+      "title" : "USAL4EXCELLENCE",
+      "additional_properties" : { }
+    } ],
+    "title" : "INSTADINE",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Academic Free License 3.0",
+        "modified" : null,
+        "pid" : "AFL-3.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://opensource.org/licenses/AFL-3.0"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "b6763e21-f252-4744-8e85-68fd6d65ac03",
+      "publicDate" : "2024-09-01T12:04:48.534Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

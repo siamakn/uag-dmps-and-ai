@@ -1,0 +1,133 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "05bfea82-fcd3-486b-8692-cf60ffd0e26a",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "chiara.parravicini@studio.unibo.it",
+      "name" : "Chiara Parravicini",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0006-9417-2648",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Nicole Liggeri (orcid:0009-0006-9417-2648)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0006-3139-1667",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Matteo Guenci (orcid:0009-0006-3139-1667)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0002-8965-3480",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Daniele Spedicati (orcid:0009-0002-8965-3480)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0006-7501-6789",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Chiara Parravicini (orcid:0009-0006-7501-6789)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-04-05T08:58:52Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "c052d185-020d-45ea-981b-aa0f8c794846",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The purpuse of the software is to combine data from Open Citation Meta and Crossref to create an output dataset that answers the following research question: &#34;Is that possible to create a new index of citations which contains typed citations where a peer review (citing entity) reviews (specific citation function) a publication (cited entity)? What is the necessary transformation of the Crossref dump necessary to create such an index to be compliant with the OpenCitations Data Model? What are the top publication venues in terms of the number of peer reviews received? How many peer reviews in Crossref are included in OpenCitations Meta? How many articles that have been reviewed by a peer review are included in OpenCitations Meta?&#34;<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Doi",
+      "title" : "Description of the software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "7c5c3c4a-65f0-42b4-af9c-453f67c7ac80",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>Index of citations which contains typed citations where a peer review (citing entity) reviews (specific citation function) a publication (cited entity) obtained combining data from Crossref and OpenCitations Meta.</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "With a doi.",
+      "title" : "Description of the dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "DMP of the project for the Open Science course of the Digital Humanities and Digital Knowledge Master's Degree.<br>The projects aims at addressing the following research questions:<br>&#160;&#160;&#160; 1. Is that possible to create a new index of citations which contains typed citations where a peer review (citing entity) reviews (specific citation function) a publication (cited entity)? <br>&#160;&#160; &#160;2. What is the necessary transformation of the <a href=\"https://www.crossref.org/\" target=\"_blank\">Crossref </a>dump necessary to create such an index to be compliant with the OpenCitations Data Model? <br>&#160;&#160; &#160;3. What are the top publication venues in terms of the number of peer reviews received? <br>&#160;&#160; &#160;4. How many peer reviews in Crossref are included in&#160;<a href=\"https://opencitations.net/meta\" target=\"_blank\">OpenCitations Meta</a>? <br>How many articles that have been reviewed by a peer review are included in OpenCitations Meta? <br>",
+    "dmp_id" : {
+      "identifier" : "830cd389-04fb-4656-8339-a61a05cb5a14",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-09T17:36:58Z",
+    "project" : [ {
+      "end" : "Sat Apr 05 08:58:52 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "https://ror.org/01111rn36",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "00017",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Apr 05 08:58:52 UTC 2024",
+      "title" : "Open Science course 2023-24",
+      "additional_properties" : { }
+    } ],
+    "title" : "Open Science Project 2024  - Harkonnen",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "05bfea82-fcd3-486b-8692-cf60ffd0e26a",
+      "publicDate" : "2024-04-05T08:42:44.070Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

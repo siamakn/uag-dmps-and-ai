@@ -1,0 +1,89 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "e661c258-c9f0-425f-a050-4842044c2831",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "stelios.kazadzis@pmodwrc.ch",
+      "name" : "Stelios Kazadzis",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1031-0216",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Stelios Kazadzis (orcid:0000-0003-1031-0216)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8000-5714",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kyriakoula Papachristopoulou (orcid:0000-0001-8000-5714)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-22T08:11:04Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards", "We will compare the simulated data with available measurements." ],
+      "dataset_id" : {
+        "identifier" : "c9a8ab10-8fd9-4aae-94b1-e120ebadddc6",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Radiative transfer calculations to estimate aerosol and clouds radiative effect using real datasets from past campaigns and Earth Care and also simulated scenes. <br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Items will be retained for the lifetime of the repository in Zenodo. This is currently the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.",
+      "title" : "Radiative transfer simulations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "We will compare the simulated data with available measurements.",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for radiative transfer calculations&#160; at the PMODWRC is developed in the context of effectively managing and preserving valuable data generated for CERTAINTY project.&#160;<div><br></div><div>The DMP&#160; is designed to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "594dcf3e-8a65-46c4-8001-21a8a3d2b6ab",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-10T09:43:11Z",
+    "project" : [ {
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : ":ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : ":101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "title" : "101137680",
+      "additional_properties" : { }
+    } ],
+    "title" : "PMODWRC CERTAINTY",
+    "additional_properties" : {
+      "license" : null,
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "e661c258-c9f0-425f-a050-4842044c2831",
+      "publicDate" : "2024-02-15T08:46:30.977Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

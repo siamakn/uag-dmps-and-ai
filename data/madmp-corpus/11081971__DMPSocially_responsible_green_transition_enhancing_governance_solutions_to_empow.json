@@ -1,0 +1,304 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8d5f3c37-26db-4ee2-b9c7-dff81f561b81",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "dina.bite@rsu.lv",
+      "name" : "Dina Bite",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0620-1949",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Martins Daugulis (orcid:0000-0003-0620-1949)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2688-652X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Olga Veilande (orcid:0000-0002-2688-652X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1589-3676",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dina Bite (orcid:0000-0003-1589-3676)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8944-3403",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Liga Sileniece (orcid:0000-0001-8944-3403)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0492-1336",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kristaps Zarins (orcid:0000-0003-0492-1336)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9411-7212",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dzintra Atstaja (orcid:0000-0002-9411-7212)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7819-5790",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Vineta Kleinberga (orcid:0000-0001-7819-5790)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8896-0297",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agita Lūse (orcid:0000-0002-8896-0297)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "openaire:0000000121739398",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Riga Stradiņš University",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3408-7365",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ingmars Kreismanis (orcid:0000-0002-3408-7365)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1589-3676",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dina Bite (orcid:0000-0003-1589-3676)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7819-5790",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Vineta Kleinberga (orcid:0000-0001-7819-5790)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8896-0297",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agita Lūse (orcid:0000-0002-8896-0297)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ {
+      "title" : "storage, archiving, security, processing",
+      "additional_properties" : { }
+    } ],
+    "created" : "2024-01-25T08:50:20Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data will be processed and published according to FAIR principles and best practice guidelines. After the project RSU will ensure periodic quality assessment procedures (in case of necessity, new versions of the datasets will be published). Quality improvements may be made also when the dataset is re-used by third parties, taking into account their recommendations. Quality assurance will be ensured according to internal policy and procedure which is developed at the moment." ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "A nationally representative public opinion survey of 1000 respondents will be carried out to get the initial evaluation of green transition in the healthcare sector by the Latvian population.&#160;",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The data will be collected with the purpose to get initial evaluation of green transition in the healthcare sector by the Latvian population. The data will reveal public opinion about respondents` reflection on the reforms in the health care sector that accompany green transition, their experiences with solutions that aim to reduce the GHG emissions in the healthcare sector, their everyday routines in health preservation, their expectations regarding other actors. As the result, the data would help to understand current situation and draw some perspectives of enabling&#160;<i>Homo Climaticus</i>.&#160;",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "GreenCare National Survey",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "Data will be processed and published according to FAIR principles and best practice guidelines. After the project RSU will ensure periodic quality assessment procedures (in case of necessity, new versions of the datasets will be published). Quality improvements may be made also when the dataset is re-used by third parties, taking into account their recommendations. Quality assurance will be ensured according to internal policy and procedure which is developed at the moment.",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data will be processed and published according to FAIR principles and best practice guidelines. After the project RSU will ensure periodic quality assessment procedures (in case of necessity, new versions of the datasets will be published). Quality improvements may be made also when the dataset is reused by third parties, taking into account their recommendations. Quality assurance will be ensured according to internal policy and procedure which is developed at the moment.&#160;" ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "With the purpose to examine 4 case studies (hospitals) in Latvia, individual interviews (n=40) will be carried out. Examining experiences of the green transition, hospital administration and employees (including healthcare practitioners) as well as representatives of patients' organizations will be interviewed in order to map the users` knowledge and experience with green reforms introduced in the healthcare sector. These interviews will provide in-depth knowledge on the inequalities that might be brought about or exacerbated by the EGD in the sector.&#160;<div>In addition, focus group discussions with the involved stakeholders will address the opportunities and limitations of healthcare in the circumstances of green transition, with the aim to sketch a map of inequalities in the healthcare sector, which should be taken into account to enable and empower a Homo Climaticus.</div>",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Data are collected to achieve the objectives and prepare the deliverables of the project, i.e. to map inequalities in the healthcare sector brought about or exacerbated by green transition, and to provide recommendations to overcome them. For this, 4 case studies (hospitals) in Latvia have been proposed, in which individual interviews (n=40) will be carried out. Hospital administrations and employees (including healthcare practitioners) as well as representatives of patients' organizations will be interviewed in order to map the users' knowledge and experience with green reforms introduced in the health care sector.&#160;<div>In addition, focus group discussions with the involved stakeholders&#160; will address the opportunities and limitations of healthcare in the circumstances of green transition, aiming at providing a map of inequalities in the healthcare sector, which should be taken into account for to enable and empower a Homo Climaticus.&#160;</div>",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "GreenCare experiences of the green transition - interviews & focus group discussions",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "663a6cb6-8449-59a9-bde2-dda2e5b70a84" : "true",
+        "5441c61a-43e6-b66f-cd68-d39a289c6a7f" : "false",
+        "005d2a00-be9b-83ea-fa15-7463b7b4725a" : "The dataset will be in Latvian.",
+        "67b56746-2805-9f5d-f3b0-29914159f015" : "RSU Dataverse is based on Dataverse code which is applicable for long term preservation of the data. University will administer and update the repository on regular basis, as well as ensure data curation.",
+        "8e6210a6-f2aa-2f0b-e19a-7bbb4f59fb0a" : "Ingmars Kreismanis (RDM manager) will be responsible for overseeing the process (consulted by Dina Bite (project manager)), guidance and alignment with other activities. Data description and processing will be done by Vineta Kleinberga and Agita L&#363;se (researchers of the project).",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "1f1de328-eb57-c9b1-4790-acb56411c07e" : "true",
+        "f975c9c5-7bcb-108d-55a0-e6216608603c" : "true",
+        "93e22159-2cd3-f761-5dd1-815eb95cc36b" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "aebd52f4-3158-10ab-ce3f-586c6a2498ac" : "Costs for processing and archiving data will be covered by the project &#34;Socially responsible green transition: enhancing governance solutions to empower Homo Climaticus in the healthcare sector (GreenCare)&#34;. Only costs for human resources (remuneration) will be covered within this project, because other costs (such as licences, workplaces) are covered by the university. Costs for reuse and long-term preservation of data after the project will be covered by university or other projects",
+        "9d2a4804-7119-6d2e-332d-56dc06fd8b45" : "false",
+        "374a7f26-872e-1f0d-dbcc-d10e42c3ebbf" : "true",
+        "1eacbf8b-cc6b-dac4-7020-a6804423d3c1" : "true",
+        "99d55043-e858-ad46-a425-29d25c5133de" : "Data will be anonymized, as well as information which could be sensitive will be excluded from the transcripts. It will be evaluated by project team members according to best practice guidelines provided by CESSDA.&#160;",
+        "0e139947-83a7-dea6-b586-7e542f992d6a" : "Data will be stored in TXT and PDF formats which are appropriate for many software tools for textual data.",
+        "d90fb379-0b39-0ece-059c-733f9ecae861" : "Data will be stored only in the infrastructure described above during research.",
+        "926edf06-cf66-3877-9c7c-2298a5f99537" : "Data might be useful to the researchers of the healthcare sector and/or green transition, as well as practitioners, public health specialists, students, non-governmental organizations.&#160;",
+        "1d008a76-a927-6122-e178-bb95cc32992b" : "The embargo period will last until the end of the project (31.12.2026.) and/or the date when the data are published.",
+        "47a22703-0d56-c178-f379-7226187ec501" : "true",
+        "a48d6250-33b9-6562-40d7-adf2923fcabf" : "true",
+        "dmpSectionIndex" : 3,
+        "13540173-4074-68db-a1e5-cbd458e3ae92" : "Dataset will be shared upon request to other researchers or students who are aiming to use it for research purposes. Dataset may be shared also to state institutions for policy planning or monitoring purposes.",
+        "ea863caf-378d-2385-7daf-0c4717773d7f" : "true",
+        "ee663cc3-5eca-e89e-cb69-803205942eb6" : "NVIVO",
+        "f7c33ceb-1fca-f11b-c03b-38930f01dc95" : "true",
+        "9e061c39-843b-8820-a5e8-6d673b63b8dc" : "Data is made by efforts of researchers at RSU Faculty of Social Sciences, therefore it will be appreciated that the dataset is cited in other studies.",
+        "c91f4074-4c92-699b-7550-23b21144416b" : "The project collects unique data, which has not been collected in Latvia before. The project aims to make these datasets reusable in the future.",
+        "984212b5-ae86-996e-b6af-9c2f04fe5c51" : "All data during the project is stored on university data storage, which is protected by passwords and centralized and local firewalls. Access is given only to responsible employees to the respective files.",
+        "2c44f283-ef5c-521f-1d4b-be481317f62b" : "true",
+        "3af31a14-6ecb-9151-3fe0-f9442a4c9645" : "In this activity only Riga Stradi&#326;&#353; University will be involved.",
+        "9fdcacc8-9771-ce19-ab3e-3da7db202d2b" : "true",
+        "336c53c2-8e68-b897-7046-072df25fae11" : "true",
+        "499feb0c-815c-f0aa-ef6f-b35c406c2345" : "[\"anonymising data\"]",
+        "1c46ed0e-9877-44a9-2326-d0b937d8cf4d" : "<div>Participation of respondents in research activities will be fully voluntary. When invited to participate in interviews or focus groups, respondents will be informed about the purpose of the research, its content as well as the data necessary for the study and its use in project's deliverables. As interviewing and focus groups involve personal data, respondents will be asked to sign the informed consent form, in which they will be informed of the anonymization of data and the rights of respondents, including the suspension of their participation in the study.</div><div>It is planned to organize interviews and focus groups in person, however, it may possible that they are conducted online. Face-to-face interviews will be recorded using a portable audio recorder; later audio recordings will be transferred to RSU computers and deleted from the audio recorder. Online interviews and focus groups will be recorded via RSU MS Teams or Zoom platform; recordings will be stored on RSU computers.&#160;<span>Interview and focus group records will be used to prepare transcripts.</span></div><div>To prepare the deliverables of the project, personal data will be anonymized. Each participant in interviews and focus groups will be assigned a code - a number/a letter - that will be used in the project deliverables if it will be necessary to identify or use a quote from a particular respondent, as it is typical in social science research conducted with qualitative research methods.&#10;</div><div>Respondents' data will only be stored during the project to ensure the quality of the data. Each researcher will carefully store only the personal data at their disposal, it will not be transferred or copied. Interview and focus group records will be stored on RSU computers and destroyed as the project closes. Informed consent forms will be stored in the RSU Department of Science, with prior agreement on the length of storage.</div><div>&#10;</div><div>&#10;</div><div>&#10;</div>",
+        "9099ec2e-a6e5-7bd5-d8aa-3ec666cb1e5f" : "[\"storage\",\"archiving\",\"security\",\"processing\"]",
+        "56792485-557e-82f5-518a-347221a3b411" : "MAXQDA",
+        "05d3403d-fc70-45df-4aeb-408238648a24" : "false",
+        "9ddc0da6-b0b4-524e-af6e-ea55ca0636dd" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Riga Stradiņš University\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000000121739398\\\",\\\"status\\\":0,\\\"tag\\\":\\\"OpenAIRE\\\",\\\"key\\\":\\\"openaire\\\",\\\"hint\\\":null}\"]",
+        "otherDQA" : "Data will be processed and published according to FAIR principles and best practice guidelines. After the project RSU will ensure periodic quality assessment procedures (in case of necessity, new versions of the datasets will be published). Quality improvements may be made also when the dataset is reused by third parties, taking into account their recommendations. Quality assurance will be ensured according to internal policy and procedure which is developed at the moment.&#160;",
+        "0057a30a-072e-2c78-321b-b9093e59f6c3" : "Data will be accessible with most of the software tools, including MS Word, NVIVO, MAXQDA etc.",
+        "8d2d2876-939f-64be-0bf5-46f336b4022f" : "[\"readme file\",\"questionnaire\",\"methodology description\"]",
+        "60097f6c-e6bc-2d6c-6dd8-326cf3896c46" : "true",
+        "d6e805ec-d54a-8cbe-738b-ecfc422c595a" : "true",
+        "949b56d0-3579-73e1-84da-0ad040fea0c1" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ingmars Kreismanis (orcid:0000-0002-3408-7365)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-3408-7365\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Dina Bite (orcid:0000-0003-1589-3676)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-1589-3676\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Vineta Kleinberga (orcid:0000-0001-7819-5790)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-7819-5790\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Agita Lūse (orcid:0000-0002-8896-0297)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-8896-0297\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "66b288c3-79ac-d204-0338-3390fe6dcc22" : "Data will be available for re-use for at least 10 years (further researchers will assess necessity for longer preservation).&#160;",
+        "72928f79-c0ca-dafd-60d2-386ed77ee6ee" : "[\"Encryption\",\"Firewall\",\"Passwords\",\"Physical access control\"]"
+      }
+    } ],
+    "description" : "The project aims to study inequalities created or facilitated by the European Green Deal (EGD) in the healthcare sector, identifying the impact of climate policy on healthcare practitioners and socially vulnerable groups, as well as proposing recommendations for governance solutions to promote a socially responsible green transition.<div>Through a co-creation design, recommendations to policy makers for ensuring a socially responsible green transition in the healthcare sector will be elaborated, and a road-map for a pilot project for further implementation will be provided. The project is based on a mixed research design. By analysis of scientific literature and documents, and conducting a public opinion survey, semi-structured interviews and focus groups, the research team will identify key inequalities created or facilitated by green transition in the health care, and investigate perceptions and experiences with reforms with primary focus on hospitals. For that, case studies in four hospitals will be carried out. Recommendations for the socially responsible green transition in the healthcare will be developed, involving all stakeholders in the co-creation process.</div><div>The Data Management Plan of the project describes the data management life cycle including specific standards of the databases in terms of formats, metadata, sharing, archiving and preservation. The DMP will clarify which data will be open access, and the procedure to gain access to them.&#160;</div>",
+    "dmp_id" : {
+      "identifier" : "15e2c0ce-e65a-4c4b-9dfc-1393f042081c",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-29T05:41:59Z",
+    "project" : [ {
+      "description" : "GrewenCare aims to study the inequalities created or facilitated by the EGD in the healthcare, identifying the impact of climate change mitigation measures on socially responsible green transition in the healthcare. ",
+      "end" : "Fri Jan 24 08:50:20 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "Latvian Council of Science",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "lzp-2023/1-0341",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Thu Jan 25 08:50:20 UTC 2024",
+      "title" : "Socially responsible green transition: enhancing governance solutions to empower Homo Climaticus in the healthcare sector (GreenCare)",
+      "additional_properties" : { }
+    } ],
+    "title" : "Socially responsible green transition: enhancing governance solutions to empower Homo Climaticus in the healthcare sector (GreenCare)",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Other (Public Domain)",
+        "modified" : null,
+        "pid" : "other-pd",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : ""
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "6f3b613b-1db1-4452-beb8-e95d2c292040" ],
+      "contact" : "8d5f3c37-26db-4ee2-b9c7-dff81f561b81",
+      "publicDate" : "2024-03-01T00:00:00.000Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "c8a71cf1-08a6-4303-b811-7c7ce2d51996",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "marija_skvorcova@osi.lv",
+      "name" : "Marija Skvorcova",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0009-0081-426X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Marija Skvorcova (orcid:0009-0009-0081-426X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0009-0081-426X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Marija Skvorcova (orcid:0009-0009-0081-426X)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-09-23T12:15:26Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "NMR data, general procedures, biological activity data",
+      "distribution" : [ {
+        "byte_size" : 18,
+        "format" : [ ],
+        "title" : "<div><span>The purpose of the data collection is to identify and optimize inhibitors of plasmepsin V for the development of novel antimalarial drugs. Data will be generated through computational modeling, organic synthesis, and enzymatic assays to evaluate compound efficacy and selectivity. The results aim to contribute to advancements in antimalarial treatment and support future drug development projects.</span><br></div>",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Focused library comprising bioisosteres of hydrolytic transition state of aspartic protease, supporting information",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "false",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "true",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "false",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "false",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "true",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "false",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Marija Skvorcova (orcid:0009-0009-0081-426X)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0009-0009-0081-426X\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Physical access control\"]"
+      }
+    } ],
+    "description" : "This Data Management Plan outlines the processes for collecting, storing, managing, and sharing data generated during the project titled &#34;Focused Library Comprising Bioisosteres of Hydrolytic Transition State of Aspartic Protease &#8211; A Study on Novel Selective Antimalarial Drug Development.&#34;<div><br></div><div>The project integrates experimental and computational techniques, including computer-aided drug design (CADD), organic synthesis, and structural biology, to develop new inhibitors of plasmepsin V (plm V) for antimalarial drugs. The DMP will ensure that all research data is handled in accordance with FAIR principles (Findable, Accessible, Interoperable, and Reusable), promoting open access to scientific findings.</div><div><br></div><div>Key components of the DMP include:</div><div><br></div><div>Data Collection: Data generated from computational drug design, organic synthesis, enzymatic assays, and structural studies will be systematically collected and documented.</div><div>Data Storage and Backup: All data will be securely stored in institutional databases, and backed up regularly on secure servers provided by the Latvian Institute of Organic Synthesis (LIOS) to prevent data loss.</div><div>Data Sharing: Research data, including structural data (e.g., Protein Data Bank [PDB] entries) and experimental results, will be shared via public repositories such as Zenodo for general data, PDB for structural data, and GitHub for any software/code generated during the project. Open-access publishing will be pursued for scientific publications.</div><div>Metadata and Documentation: All datasets will be accompanied by comprehensive metadata describing experimental conditions, data formats, and methodologies to ensure reusability.</div><div>Ethics and Intellectual Property: The project will follow LIOS guidelines for intellectual property management, ensuring proper licensing and ethical considerations in data use.</div><div>Data Retention: Data will be stored for at least five years after the project&#8217;s conclusion to allow for further use and validation.</div><div>This DMP aims to enhance research transparency, facilitate collaboration, and contribute to advancements in antimalarial drug discovery.</div>",
+    "dmp_id" : {
+      "identifier" : "89846e71-4383-4697-abb3-830f445dc28a",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-23T12:31:46Z",
+    "project" : [ {
+      "end" : "Tue Sep 23 12:15:26 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "90000812928",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "ANM_OSI_PG_05",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Sep 23 12:15:26 UTC 2024",
+      "title" : "Focused library comprising bioisosteres of hydrolytic transition state of aspartic protease",
+      "additional_properties" : { }
+    } ],
+    "title" : "Data Management Plan for the Focused library comprising bioisosteres of hydrolytic transition state of aspartic protease",
+    "additional_properties" : {
+      "license" : null,
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "c8a71cf1-08a6-4303-b811-7c7ce2d51996",
+      "publicDate" : "2024-09-23T11:53:10.776Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

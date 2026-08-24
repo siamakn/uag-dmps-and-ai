@@ -1,0 +1,84 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "b54f11d4-ae46-4a60-9d7f-12f2189d9ccb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "stelios.didaskalou@athenarc.gr",
+      "name" : "Stylianos Didaskalou",
+      "additional_properties" : { }
+    },
+    "contributor" : [ ],
+    "cost" : [ ],
+    "created" : "2024-04-06T14:11:12Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Use of tools for automatic checks", "Data conform to format specification" ],
+      "dataset_id" : {
+        "identifier" : "59d0e027-4b62-4779-8921-b69700478845",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Ultrasound images and video clips collected from patients referred on suspicion of DVT. The dataset also contains patient demographics, biometrics and related medical history data and diagnosis. Finally image/video data is accompanying by the output of labelling by experts to identify structures relevant to DVT diagnosis. Data sets from 3000 patients (with or without DVT) are planned.&#160;&#160;",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Via publication in Zenodo",
+      "title" : "ThrombUS+ Clinical Study A Dataset: Conventional ultrasound image/video sets collected from patients referred on suspicion of DVT of lower limb. ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "ThrombUS+ brings together an interdisciplinary team of industrial, technology, regulatory, social science and clinical trial experts to develop a novel wearable diagnostic device for point-of-care, operator free, continuous monitoring in patients with high DVT risk. The device will combine autonomous, AI driven DVT detection based on a novel wearable ultrasound hardware, impedance plethysmography and light reflection rheography for immediate detection of blood clot formation in the lower limb. Activity and other physiological measurements will be used to provide a continuous assessment of DVT risk and support DVT prevention via serious gaming. The aggregated data will drive an intelligence decision support unit that will provide accurate monitoring and alerts. Extended reality will be used to guide experts to design exercises and patients to use the device optimally. Various data sets, including ultrasound images from five clinical studies will be collected during the ThrombUS+. This document serves as the Data Managment Plan for all these data sets.&#160;<div><br></div><div>ThrombUS+ project:</div><div>Grant Agreement: 101137227<br>Start date: January 1st, 2024<br>End date: June 30th, 2027<br></div>",
+    "dmp_id" : {
+      "identifier" : "35c20f3b-5237-41b1-acf5-f5b44af562dd",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-25T17:33:12Z",
+    "project" : [ {
+      "end" : "Sun Apr 06 14:11:12 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101137227",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Sat Apr 06 14:11:12 UTC 2024",
+      "title" : "ThrombUS+: Wearable Continuous Point-of-Care Monitoring, Risk Estimation and Prevention for Deep Vein Thrombosis",
+      "additional_properties" : { }
+    } ],
+    "title" : "ThrombUS+ Data Management Plan",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "b54f11d4-ae46-4a60-9d7f-12f2189d9ccb",
+      "publicDate" : "2024-04-06T13:54:09.236Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

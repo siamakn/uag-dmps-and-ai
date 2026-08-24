@@ -1,0 +1,243 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "41bc9f1b-ff7e-4860-bd46-c2530eaee700",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "kitija.mironcuka@lu.lv",
+      "name" : "Kitija Mirončuka",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6253-9023",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Māris Kūlis (orcid:0000-0002-6253-9023)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0708-1977",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kitija Mirončuka (orcid:0000-0003-0708-1977)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0708-1977",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kitija Mirončuka (orcid:0000-0003-0708-1977)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0708-1977",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kitija Mirončuka (orcid:0000-0003-0708-1977)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-10-30T10:31:41Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "https://zenodo.org/communities/srp-vectorsofsocietalcohesion",
+        "type" : "url",
+        "additional_properties" : { }
+      },
+      "description" : "The &#34;Conference presentations and abstracts&#34; section pertains to the dissemination of research findings and insights at academic or professional conferences, summarising pre-publication presentations. These presentations and abstracts are used to share research findings with a broader audience, including peers, stakeholders, and the academic community, promoting scholarly discourse and collaboration. The primary objective is to ensure that all relevant data and findings are presented clearly and made available for further discussion and validation by the community, However, the authors reserve the right to alter or change the content of the presentations.",
+      "distribution" : [ {
+        "available_until" : "2028-10-10T00:00:00.000Z",
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "This data collection records conference presentations and abstracts of project participants, promoting knowledge sharing and supporting future referencing, collaboration, and knowledge exchange. It also enables the project to monitor the impact and reach of its research results within the academic community.&#160;<div>This data helps validate and share insights on how cohesion and civic engagement can be effectively studied, measured, and promoted. It aligns with the project's goal of advancing knowledge and developing practical strategies in these areas. By documenting and disseminating research findings presented at conferences, the project contributes to a broader conversation on these topics within academic and professional communities.</div><div>The data (conference presentations and abstracts) originates from a combination of primary sources (e.g., experiments, surveys, interviews) and secondary sources (e.g., existing datasets, literature review findings) collected throughout the research process.</div>",
+        "additional_properties" : {
+          "availableUtilId" : "f2c8a9d7-0fde-110b-50f8-ec1d50a9672c",
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "keyword" : [ "poster", "presentations", "conference abstracts", "presentations", "conference abstracts" ],
+      "language" : "eng",
+      "metadata" : [ ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Conference presentations and abstracts",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "aefcbad1-8f50-32b0-58e0-521e8099f24a" : "Yes, the data generated during the project will be usable by third parties even after the project concludes. By employing the Creative Commons Attribution 4.0 license, we ensure that the data, including conference presentations and abstracts, can be accessed, utilized, and built upon by researchers, policymakers, and practitioners in the field.",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "The CC BY 4.0 license provides a flexible yet open framework that allows others to freely access, use, and build upon the research, provided they credit the original authors. By choosing this license, we maximize the impact and reach of our work, supporting transparency and collaboration in research on cohesion and civic activity.&#160;",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Digital access will be further protected by strong passwords, ensuring that only authorized users can view or manipulate the data.",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "false",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "true",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "The data (conference presentations and abstracts) can be valuable for researchers, policymakers, community organizers, educators, and practitioners in sociology, political science, urban studies, and public policy. Researchers can use this information to build upon existing findings. Policymakers and community organizers may leverage the insights to develop strategies that promote social cohesion and civic engagement. Additionally, educators and students can find this data useful for understanding the real-world applications of civic activity theories.",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"https://zenodo.org/communities/srp-vectorsofsocietalcohesion\",\"type\":\"url\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "The data generated, specifically conference presentations and abstracts, will have restricted access. Access will be limited to project collaborators and authorized stakeholders to protect any sensitive information or preliminary findings that may not be ready for full public release. Yet most of the data will be open access.",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "false",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "false",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2024-10-30",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "Word, Adobe, Foxit, Web",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/communities/srp-vectorsofsocietalcohesion",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Kitija Mirončuka (orcid:0000-0003-0708-1977)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0708-1977\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "The data generated during the project will be available for a minimum of four years or as long as necessary, ensuring continued access to preliminary findings and insights. Although the project is scheduled to conclude in one year, we are dedicated to making the data publicly accessible.",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Repositories typically prioritize final, peer-reviewed publications, but this repository will allow us to store and share preliminary materials, such as conference presentations, that are not yet finalized.",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "false",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]",
+        "3063d3a5-5cca-6e0c-75a9-74820bd7bdf2" : "The data consists of conference presentations and abstracts, primarily designed for quick sharing within conference settings. These contexts provide essential details, such as summaries, author information, and conference specifics. Each presentation and abstract is self-contained, making additional metadata unnecessary. Since these formats are typically intended for brief communication rather than deep analysis or reuse, formal metadata is unlikely to significantly enhance their usability or value."
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "0730af3d-d380-49e5-b608-0b3becaec702",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Data fields will include personal information (age, nationality), demographic data,&#160;<span>opinions on topics such as civic activity, social engagement, state policy, language,&#160;</span><span>and media use.</span>",
+      "distribution" : [ {
+        "available_until" : "2031-01-01T00:00:00.000Z",
+        "byte_size" : 20,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The collection of survey data is intended to enhance theoretical research by providing practical insights into the views of different demographic groups on perspectives on meaning of national identity, sense of belonging,  civic&#160;togetherness, as well as their experiences and views on social and geographical mobility and mutual trust.",
+        "additional_properties" : {
+          "availableUtilId" : "f2c8a9d7-0fde-110b-50f8-ec1d50a9672c",
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Sociological survey",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "The individual or group assigned to this task will have three main&#160;<span>responsibilities. First, they will oversee the management and use of the data&#160;</span><span>received. Second, they will handle any unforeseen requirements related to the&#160;</span><span>data that are not covered in the Data Management Plan. And finally, they will&#160;</span><span>work with other researchers to determine the specific purposes and methods of&#160;</span><span>processing individual data.</span>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "aefcbad1-8f50-32b0-58e0-521e8099f24a" : "The aim is to distribute files and data to researchers and policy makers",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "This licence lets others distribute, remix, tweak, and build upon the data, as long&#10;<div>as they credit the project and the original data sourse.</div>",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "<div>Maris Kulis will see who can access data.</div>",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "One primary ethical concern revolves around privacy and consent. Participants&#160;<span>must be fully informed about the data being collected, how it will be used, and&#160;</span><span>any potential risks involved. Additionally, ensuring that the data collected is&#160;</span><span>anonymized and securely stored is crucial to protect individuals' identities and&#160;</span><span>prevent unauthorized access.</span>",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "true",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "A researcher will be allocated to manage data plan.",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Project website https://vppsaliedetiba.lu.lv/en/",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Latvian policymakers, social cohesion and inclusion researchers, as well as&#10;<div>comparative data researchers.</div>",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLSM can be opened via different softwares if necessary",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":null,\"type\":null}",
+        "commentFieldValue05214089-0d46-e32e-2e37-21990888d7e2" : "The plan is to provide the survey data only after 3 years of project&#160;<span>implementation.</span>",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "<div>The plan is to provide the survey data only after 3 years of project&#160;<span>implementation. This will ensure that project members have sufficient time to&#160;</span><span>finalize the research. However, possible collaborations will be reviewed, and the&#160;</span><span>person in charge will be the project lead, Maris Kulis. He will review the usage&#160;</span><span>and distribution of the data if there is a need to share it during the project.</span></div>",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "false",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "false",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "Exel",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://vppsaliedetiba.lu.lv/en/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "false",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Kitija Mirončuka (orcid:0000-0003-0708-1977)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0708-1977\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "A survey data repository will be defined after the survey is finalized and the interviews are conducted. The data will be accessible via the project website and other repositories deemed fit.",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Physical access control\"]",
+        "3063d3a5-5cca-6e0c-75a9-74820bd7bdf2" : "If metadata is deemed important for creating a social profile (e.g. language used&#10;<div>for survey, time taken to complete), it will be provided.</div>"
+      }
+    } ],
+    "description" : "The aim of the SRP project is to conduct a comprehensive analysis of Latvia's<span>&#160;cohesion policy since 1991, in an interdisciplinary way combining philosophical</span><span>&#160;reflections on basic concepts, sociological analysis and data, legal, geographical,&#160;</span><span>economic, social, cultural, ideological and other aspects. This DMP will be used to&#160;</span><span>store survey data and bibliography used to convey the project. DMP is made within</span><span>&#160;State Research Programme &#34;Development of a cohesive and civically active society&#34;</span><span>&#160;project &#34;Vectors of societal cohesion: from cohesion around the nation-state (2012-</span><span>2018) to a cohesive civic community for the security of the state, society and</span><span>&#160;individuals (2024-2025)&#34; (VPP-KM-SPASA-2023/1-0002).</span>",
+    "dmp_id" : {
+      "identifier" : "77da89e7-ed09-4c15-8d6f-344b7fb95f63",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-10-30T11:23:33Z",
+    "project" : [ {
+      "description" : "State Research Programme \"Development of a cohesive and civically active society\" project \"Vectors of Societal Cohesion: from cohesion around the nation-state (2012 2018) to a cohesive civic community for the security of the state, society and  individuals (2024-2025)\". Implementation period: 21.12.2023.–20.12.2025.",
+      "end" : "Wed Oct 01 09:03:05 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "Ministry of Culture",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "VPP-KM-SPASA-2023/1-0002",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Oct 01 09:03:05 UTC 2024",
+      "title" : "Vectors of Societal Cohesion: from cohesion around the nation-state (2012 2018) to a cohesive civic community for the security of the state, society and  individuals (2024-2025)",
+      "additional_properties" : { }
+    } ],
+    "title" : "State Research Programme \"Vectors of  societal cohesion\" (VPP-KM-SPASA-2023/1 0002)",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{\"3b63e447-d5f6-f016-0cb5-c451e0ca228e\":\"2025-02-03\"}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "41bc9f1b-ff7e-4860-bd46-c2530eaee700",
+      "publicDate" : "2024-10-01T08:52:09.537Z",
+      "blueprintId" : "eb02f2ae-69fd-456d-8143-6b0a98af64c4"
+    }
+  }
+}

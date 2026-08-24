@@ -1,0 +1,146 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "77a81fe1-fbf8-4975-866c-e4bd29e2eb00",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "teodors.pantelejevs@osi.lv",
+      "name" : "Teodors Pantelejevs",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2220-6379",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Teodors Pantelejevs (orcid:0000-0003-2220-6379)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2220-6379",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Teodors Pantelejevs (orcid:0000-0003-2220-6379)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-09-24T05:42:47Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This data includes the processed structure factors for diffraction images collected on protein crystals relevant to the project, as well as the refined structural models.<div><br></div><div>The data will be deposited on the protein data bank (PDB, https://www.rcsb.org/). Data will be made accessible together with a pre-print manuscript pertinent to the project results.&#160;</div>",
+      "distribution" : [ {
+        "byte_size" : 1,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "The data is generated to elucidated the structural level of the biomolecular system being studied. In the connect of the project, this involves determining the structure of STAT1 in complex with designed peptides. The data improves our understanding of how biological molecules interact.&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m30",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "X-ray crystallographic diffraction data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "PDB uses a password system.&#160;",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "Open access fees for the relevant manuscript will be covered by the project budget.",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "It is impossible to re use previous data sets, as the project generates completely novel data.",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Other scientists investigating peptide drugs.",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "commentFieldValue05214089-0d46-e32e-2e37-21990888d7e2" : "Until publication of manuscript pre-print.",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-01-01",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "Structure visualisation software, such as coot, ChimeraX or pymol.",
+        "2a445658-6507-f329-cecf-e4965ed078d2" : "[\"{\\\"id\\\":null,\\\"name\\\":\\\"Protein Data Bank in Europe\\\",\\\"pid\\\":\\\"fairsharing_::1860\\\",\\\"abbreviation\\\":null,\\\"uri\\\":null,\\\"created\\\":null,\\\"modified\\\":null,\\\"tag\\\":\\\"OpenAIRE\\\",\\\"source\\\":null,\\\"hint\\\":null}\"]",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Teodors Pantelejevs (orcid:0000-0003-2220-6379)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-2220-6379\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    } ],
+    "description" : "The DMP outlines the various kinds of data that will be generated in the project <i>Pathogen-inspired peptide macrocycles as STAT1 antagonists</i> and describes how the data is collected, stored and made accessible.",
+    "dmp_id" : {
+      "identifier" : "1cac1fc8-8173-43b8-bce8-af861ae6991c",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-24T06:01:06Z",
+    "project" : [ {
+      "end" : "Wed Sep 24 05:42:47 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "90000812928",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "ANM_PA_01",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Sep 24 05:42:47 UTC 2024",
+      "title" : "Pathogen-inspired peptide macrocycles as STAT1 antagonists.",
+      "additional_properties" : { }
+    } ],
+    "title" : "Pathogen-inspired peptide macrocycles as STAT1 antagonists. ANM_PA_01",
+    "additional_properties" : {
+      "license" : null,
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "77a81fe1-fbf8-4975-866c-e4bd29e2eb00",
+      "publicDate" : "2024-09-24T05:35:09.865Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "312c6ca4-b730-4972-a83e-6b5232516490",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "miguel@det.uvigo.gal",
+      "name" : "Miguel Rodríguez Pérez",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8402-9825",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Andrés Suárez-González (orcid:0000-0002-8402-9825)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7285-1993",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Francisco Poza (orcid:0000-0002-7285-1993)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3510-4574",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Fernando Machado (orcid:0000-0003-3510-4574)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1728-6194",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Vicente Pastoriza Santos (orcid:0000-0002-1728-6194)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3417-5821",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Sergio Herrería-Alonso (orcid:0000-0003-3417-5821)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5965-1076",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Miguel Rodríguez Pérez (orcid:0000-0001-5965-1076)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0783-7562",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Fernando Perez Fontan (orcid:0000-0002-0783-7562)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3963-0451",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "María Estrella Sousa Vieira (orcid:0000-0002-3963-0451)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5338-6734",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Cándido López-García (orcid:0000-0001-5338-6734)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3390-0035",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jose Carlos Lopez-Ardao (orcid:0000-0002-3390-0035)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3299-150X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "RAÚL RODRÍGUEZ RUBIO (orcid:0000-0003-3299-150X)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-10-24T12:06:21Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "5fa610ab-f016-4306-ade9-b704e362ef43",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This is the data produced by all the experiments and the measurement campaign part of the project.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Use of tools for automatic checks" ],
+      "dataset_id" : {
+        "identifier" : "6168c5c2-5bc6-482a-a055-15918e369f96",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This is the software developed and published as part of the project.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "<div>The DMP will guide all data collection, processing, production, and storage of the Proyectos I+D+i 2020 ICARUS project (Grant No. PID2020-113240RB-I00). The DMP in ARGOS describes all datasets that will be created, managed, and curated in the context of the project. All datasets will be stored in the project's community in Zenodo (https://zenodo.org/communities/icarus-ndn) and linked to the DMP in ARGOS. <br></div><div><br></div><div><h6 class=\"\">About the project</h6><div>The core goal of the ICARUS project is to enable solutions for high bandwidth SatComs in under-served areas for fleets of vehicles. The design of a comprehensive solution in this context requires close cooperation between multiple knowledge areas, going from the physical substrate to the more abstract technologies dealing with application logic. Thus, the proposed system could leverage the high capacity of the Ka frequency band in the radio link, employ advanced medium access control (MAC) protocols with improved efficiency, exploit the existence of inter-satellite-links (ISL), and take advantage of the resiliency and native multicast capabilities of the information centric networking (ICN) paradigm.<br></div></div>",
+    "dmp_id" : {
+      "identifier" : "5d3ffa59-b981-475d-9986-9bf9aaf55a8e",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-10-24T14:01:30Z",
+    "project" : [ {
+      "end" : "Fri Apr 18 08:52:11 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "MCIN/ AEI/10.13039/501100011033",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "PID2020-113240RB-I00",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Thu Apr 18 08:52:11 UTC 2024",
+      "title" : "Information-Centric sAtellite-netwoRk for vehicUlar communicationS",
+      "additional_properties" : { }
+    } ],
+    "title" : "ICARUS — Information-Centric sAtellite-netwoRk for vehicUlar communicationS Data Management",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution-NonCommercial 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-NC-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "312c6ca4-b730-4972-a83e-6b5232516490",
+      "publicDate" : "2024-04-18T08:39:17.247Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

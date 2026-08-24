@@ -1,0 +1,114 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "5a4e9823-635e-4aab-995f-72d2530c5d83",
+        "type" : "other"
+      },
+      "mbox" : "ale97cioffi@icloud.com",
+      "name" : "Alessia"
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9812-4065",
+        "type" : "orcid"
+      },
+      "name" : "Alessia null (orcid:0000-0002-9812-4065)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4114-074X",
+        "type" : "orcid"
+      },
+      "name" : "Nooshin Shahidzadeh Asadi (orcid:0000-0003-4114-074X)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6279-3830",
+        "type" : "orcid"
+      },
+      "name" : "Sara Coppini (orcid:0000-0002-6279-3830)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5486-7070",
+        "type" : "orcid"
+      },
+      "name" : "Arianna Moretti (orcid:0000-0001-5486-7070)"
+    } ],
+    "cost" : [ ],
+    "created" : "2021-04-28T08:49:14Z",
+    "dataset" : [ {
+      "dataset_id" : {
+        "identifier" : "e8bec192-dd81-4a44-9b64-d03f46ff6b73",
+        "type" : "other"
+      },
+      "description" : "This dataset contains the results of our investigation on the missing citation data in COCI. Specifically, it includes, in JSON format: the names and identifiers of the publishers involved in the citations (either as the publishers of the citing DOI or the publisher of the cited DOIs); the numbers of the valid and invalid citations they are responsible for as the publishers of the valid citing DOI; the number of the valid and invalid citations they are involved in as publishers of the cited DOI; the total number of DOIs now valid; the list of still invalid citations and the list of now valid citations.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "Through Zenodo, we implicitly use DataCite Metadata Schema.",
+        "metadata_standard_id" : {
+          "identifier" : "https://schema.datacite.org/",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "desc211a",
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "Missing Citations in COCI: Publishers Analytics Result",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "701de436-2127-43ac-95a6-7edffe801449"
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "6469aa33-1640-40b1-89dd-cbefd3f21696",
+        "type" : "other"
+      },
+      "description" : "This dataset contains the complete source code for the investigative research applied to the COCI\nmissing citation data. The source code includes the processes to study citations sent and received by\neach publisher.",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "Through Zenodo, we implicitly use DataCite Metadata Schema.",
+        "metadata_standard_id" : {
+          "identifier" : "https://schema.datacite.org/",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "descriptionId" : "desc211a",
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "Code for Missing Citations Analysis in COCI",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "701de436-2127-43ac-95a6-7edffe801449"
+      }
+    } ],
+    "description" : "The purpose of this research is to find the publishers responsible for the missing citations in COCI (the OpenCitations Index of Crossref open DOI-to-DOI citations) by sending incorrect metadata to Crossref, the publishers to whom such invalid citations point to, and the number of previously invalid citations which are currently valid.",
+    "dmp_id" : {
+      "identifier" : "083efd2f-e58f-4a9f-bebe-50157a03bc89",
+      "type" : "other"
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2021-07-05T10:01:13Z",
+    "project" : [ {
+      "description" : "Grant provided by the DHDK source Open Science 2020/2021.",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "a9933a75-440d-4f0e-b2a4-e84df1b957bf",
+          "type" : "fundref"
+        },
+        "grant_id" : {
+          "identifier" : "dad0be31-a0ed-4af0-81c3-e839250e1c70",
+          "type" : "other"
+        }
+      } ],
+      "title" : "Open Science Project 2020/2021"
+    } ],
+    "title" : "Investigating Missing Citations in COCI",
+    "additional_properties" : {
+      "templates" : [ "701de436-2127-43ac-95a6-7edffe801449" ]
+    }
+  }
+}

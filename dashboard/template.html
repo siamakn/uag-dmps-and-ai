@@ -1,0 +1,1064 @@
+<title>DMP Selection Bench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --paper:#F5F7F9; --surface:#FFFFFF; --surface-2:#EDF0F4; --surface-3:#E3E8EE;
+  --ink:#161A21; --ink-2:#404A59; --ink-3:#6C7685;
+  --line:#DBE0E7; --line-2:#C3CBD6;
+  --accent:#3C46C8; --accent-soft:#E7E9FA; --accent-ink:#2A32A4;
+  --good:#0E7350; --good-soft:#DDF0E8;
+  --warn:#8F5D00; --warn-soft:#F8EBD6;
+  --alert:#A82F4A; --alert-soft:#F9E2E8;
+  --on-accent:#FFFFFF; --tip-bg:#1E2430; --tip-fg:#F2F5F9;
+  --shadow:0 1px 2px rgba(22,26,33,.06),0 6px 20px -12px rgba(22,26,33,.25);
+  --r:8px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1116; --surface:#161A21; --surface-2:#1D222B; --surface-3:#252B36;
+    --ink:#E6EAF1; --ink-2:#AAB4C3; --ink-3:#78828F;
+    --line:#252B35; --line-2:#353D4B;
+    --accent:#8A92FF; --accent-soft:#20243B; --accent-ink:#B2B8FF;
+    --good:#49C79A; --good-soft:#10261E;
+    --warn:#D89B45; --warn-soft:#2A2013;
+    --alert:#EE7690; --alert-soft:#2C161D;
+    --on-accent:#0E1116; --tip-bg:#2C3542; --tip-fg:#EAEEF4;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1116; --surface:#161A21; --surface-2:#1D222B; --surface-3:#252B36;
+  --ink:#E6EAF1; --ink-2:#AAB4C3; --ink-3:#78828F;
+  --line:#252B35; --line-2:#353D4B;
+  --accent:#8A92FF; --accent-soft:#20243B; --accent-ink:#B2B8FF;
+  --good:#49C79A; --good-soft:#10261E;
+  --warn:#D89B45; --warn-soft:#2A2013;
+  --alert:#EE7690; --alert-soft:#2C161D;
+  --on-accent:#0E1116; --tip-bg:#2C3542; --tip-fg:#EAEEF4;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+h1{font-family:Archivo,"IBM Plex Sans",sans-serif; margin:0; text-wrap:balance}
+a{color:var(--accent-ink); text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+
+/* ---------- header ---------- */
+header{
+  position:sticky; top:0; z-index:40; background:var(--surface);
+  border-bottom:1px solid var(--line); padding:9px 18px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+header h1{font-size:16px; font-weight:700; letter-spacing:-.015em}
+header .sub{color:var(--ink-3); font-size:12px; max-width:56ch}
+.stats{display:flex; gap:16px; margin-left:auto; flex-wrap:wrap}
+.stat{text-align:right; line-height:1.15}
+.stat b{font-family:"IBM Plex Mono",monospace; font-size:17px; font-weight:500; display:block}
+.stat span{font-size:10px; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-3)}
+.stat.hit b{color:var(--accent)}
+#railtoggle{display:none}
+
+/* ---------- shell ---------- */
+.shell{
+  display:grid; grid-template-columns:264px minmax(0,1fr) 330px;
+  gap:14px; padding:14px 18px 60px; align-items:start; max-width:1780px; margin:0 auto;
+}
+@media (max-width:1300px){ .shell{grid-template-columns:250px minmax(0,1fr)} .tray{grid-column:1/-1} }
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static; max-height:none}
+  .rail.hide{display:none}
+  #railtoggle{display:inline-block}
+}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow)}
+.rail{position:sticky; top:60px; max-height:calc(100vh - 76px); overflow:auto; padding:13px}
+.tray{position:sticky; top:60px; max-height:calc(100vh - 76px); overflow:auto; padding:13px}
+.main{overflow:hidden}
+
+/* ---------- rail ---------- */
+.grp{margin-bottom:15px}
+.grp:last-child{margin-bottom:0}
+.lbl{font-size:10px; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-3);
+     font-weight:600; margin-bottom:7px; display:flex; justify-content:space-between; align-items:baseline; gap:8px}
+.lbl .aux{text-transform:none; letter-spacing:0; font-weight:400; font-size:10.5px}
+.lbl button{border:0; background:none; color:var(--accent-ink); font:inherit; font-size:10.5px;
+            text-transform:none; letter-spacing:0; cursor:pointer; padding:0}
+.lbl button:hover{text-decoration:underline}
+.chips{display:flex; flex-wrap:wrap; gap:5px}
+.chip{
+  font-size:11.5px; padding:3px 8px; border-radius:99px; border:1px solid var(--line-2);
+  background:var(--surface); color:var(--ink-2); cursor:pointer; font-family:inherit; line-height:1.45;
+}
+.chip:hover{border-color:var(--accent); color:var(--accent-ink)}
+.chip[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:500}
+.chip .n{opacity:.65; font-size:10px; margin-left:3px; font-family:"IBM Plex Mono",monospace}
+
+input[type=search],select{
+  width:100%; padding:6px 9px; border:1px solid var(--line-2); border-radius:6px;
+  background:var(--surface); color:var(--ink); font-family:inherit; font-size:13px;
+}
+.yr{display:flex; gap:6px; align-items:center; font-size:12px; color:var(--ink-3)}
+.yr select{width:auto; flex:1}
+
+.btn{
+  font-family:inherit; font-size:12px; padding:5px 10px; border-radius:6px; cursor:pointer;
+  border:1px solid var(--line-2); background:var(--surface-2); color:var(--ink-2);
+}
+.btn:hover{border-color:var(--accent); color:var(--accent-ink)}
+.btn.pri{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.btn.pri:hover{color:var(--on-accent); filter:brightness(1.08)}
+
+/* column editor */
+.colist{display:flex; flex-direction:column; gap:3px}
+.colrow{display:grid; grid-template-columns:16px 1fr 22px 22px; gap:6px; align-items:center;
+        padding:3px 5px; border-radius:5px; font-size:12px; border:1px solid transparent}
+.colrow:hover{background:var(--surface-2); border-color:var(--line)}
+.colrow.off{color:var(--ink-3)}
+.colrow input{margin:0; width:14px; height:14px; accent-color:var(--accent); cursor:pointer}
+.colrow .nm{cursor:pointer; user-select:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.colrow .mv{border:1px solid var(--line-2); background:var(--surface); color:var(--ink-3);
+            border-radius:4px; font-size:10px; line-height:1; padding:3px 0; cursor:pointer}
+.colrow .mv:hover:not(:disabled){border-color:var(--accent); color:var(--accent-ink)}
+.colrow .mv:disabled{opacity:.3; cursor:default}
+.colrow.locked .nm{color:var(--ink-3); font-style:italic}
+
+/* ---------- table ---------- */
+.tablewrap{overflow-x:auto}
+.thead{
+  display:grid; gap:10px; padding:8px 12px; position:sticky; top:0; z-index:10;
+  background:var(--surface-2); border-bottom:1px solid var(--line-2);
+  font-size:10px; text-transform:uppercase; letter-spacing:.08em; font-weight:600; color:var(--ink-3);
+}
+.th{display:flex; align-items:center; gap:4px; cursor:pointer; user-select:none; background:none;
+    border:0; font:inherit; color:inherit; text-transform:inherit; letter-spacing:inherit; padding:0; text-align:left}
+.th:hover{color:var(--accent-ink)}
+.th.static{cursor:default}
+.th.static:hover{color:var(--ink-3)}
+.th .dir{font-size:9px; color:var(--accent)}
+.th.on{color:var(--accent-ink)}
+
+.row{display:grid; gap:10px; padding:8px 12px; border-bottom:1px solid var(--line); align-items:start}
+.row:hover{background:var(--surface-2)}
+.row.sel{background:var(--accent-soft)}
+.row input[type=checkbox]{margin-top:2px; width:15px; height:15px; accent-color:var(--accent); cursor:pointer}
+.cell{min-width:0; font-size:12px; color:var(--ink-2); line-height:1.35; overflow-wrap:anywhere}
+.ttl{font-weight:500; color:var(--ink); font-size:13px; line-height:1.35; cursor:pointer;
+     display:block; background:none; border:0; font-family:inherit; padding:0; text-align:left; width:100%}
+.ttl:hover{color:var(--accent-ink)}
+.sub2{font-size:11px; color:var(--ink-3); margin-top:2px}
+
+.tag{font-size:10.5px; padding:1.5px 6px; border-radius:4px; white-space:nowrap; font-weight:500;
+     display:inline-block; margin:1px 3px 1px 0}
+.t-he{background:var(--accent-soft); color:var(--accent-ink)}
+.t-h2020,.t-eu{background:var(--surface-3); color:var(--ink-2)}
+.t-dfg{background:var(--warn-soft); color:var(--warn)}
+.t-oth{background:var(--surface-2); color:var(--ink-3)}
+.t-ma{background:var(--good-soft); color:var(--good)}
+.t-pdf{background:var(--surface-2); color:var(--ink-3)}
+.t-ch{background:var(--alert-soft); color:var(--alert)}
+.t-ok{background:var(--good-soft); color:var(--good)}
+.t-part{background:var(--warn-soft); color:var(--warn)}
+
+.track{height:4px; background:var(--surface-3); border-radius:99px; margin-top:5px; position:relative}
+.track u{position:absolute; top:0; bottom:0; left:0; background:var(--line-2); opacity:.6; border-radius:99px}
+.track i{position:absolute; top:-1px; bottom:-1px; width:3px; background:var(--accent); border-radius:99px}
+.links{display:flex; flex-direction:column; gap:2px; font-size:11.5px}
+
+.det{grid-column:1/-1; background:var(--surface-2); border-radius:6px; padding:10px 12px;
+     margin-top:6px; font-size:12.5px; color:var(--ink-2)}
+.det dl{display:grid; grid-template-columns:auto minmax(0,1fr); gap:3px 12px; margin:8px 0 0}
+.det dt{color:var(--ink-3); font-size:11px}
+.det dd{margin:0; font-size:12px; overflow-wrap:anywhere}
+
+.bar{display:flex; align-items:center; gap:10px; padding:8px 12px; border-bottom:1px solid var(--line);
+     flex-wrap:wrap; font-size:12px; color:var(--ink-3)}
+.bar b{color:var(--ink); font-family:"IBM Plex Mono",monospace}
+
+/* ---------- tray ---------- */
+.count{display:flex; align-items:baseline; gap:6px; margin-bottom:10px}
+.count b{font-family:Archivo,sans-serif; font-size:26px; font-weight:700; letter-spacing:-.02em}
+.count span{color:var(--ink-3); font-size:12px}
+table.mx{width:100%; border-collapse:collapse; font-size:11px; margin-top:4px}
+table.mx th{font-weight:600; color:var(--ink-3); font-size:10px; text-transform:uppercase;
+            letter-spacing:.07em; padding:3px 4px; text-align:center}
+table.mx th.rh{text-align:left; font-size:10.5px; text-transform:none; letter-spacing:0;
+               color:var(--ink-2); font-weight:500; max-width:108px}
+table.mx td{padding:2px}
+.cellbox{height:26px; border-radius:5px; border:1px dashed var(--line-2); display:flex;
+         align-items:center; justify-content:center; font-family:"IBM Plex Mono",monospace;
+         font-size:11px; color:var(--ink-3)}
+.cellbox.on{background:var(--good-soft); border:1px solid var(--good); color:var(--good); font-weight:500}
+.cellbox.over{background:var(--warn-soft); border:1px solid var(--warn); color:var(--warn)}
+.slot{display:flex; align-items:center; gap:8px; padding:7px 9px; border-radius:6px;
+      border:1px dashed var(--line-2); margin-top:8px; font-size:12px; color:var(--ink-3)}
+.slot.on{border:1px solid var(--alert); background:var(--alert-soft); color:var(--alert)}
+.picked{list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:5px}
+.picked li{display:grid; grid-template-columns:minmax(0,1fr) 20px; gap:6px; align-items:start;
+           font-size:12px; padding:6px 8px; background:var(--surface-2); border-radius:6px; border:1px solid var(--line)}
+.picked li.empty{display:block; background:none; border:0; color:var(--ink-3); text-align:center; padding:12px 0}
+.picked .x{border:0; background:none; color:var(--ink-3); cursor:pointer; font-size:15px; line-height:1; padding:0}
+.picked .x:hover{color:var(--alert)}
+.picked em{display:block; font-style:normal; color:var(--ink-3); font-size:10.5px; margin-top:2px}
+.note{font-size:11.5px; color:var(--warn); background:var(--warn-soft); padding:6px 8px; border-radius:6px; margin-top:8px}
+.exp{display:flex; gap:6px; margin-top:10px; flex-wrap:wrap}
+textarea{width:100%; height:110px; margin-top:8px; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+         border:1px solid var(--line-2); border-radius:6px; background:var(--surface-2); color:var(--ink-2);
+         padding:8px; resize:vertical}
+.savestate{font-size:11px; color:var(--ink-3); margin-top:7px; min-height:15px}
+.savestate.ok{color:var(--good)}
+.savestate.bad{color:var(--alert)}
+.tip{position:fixed; z-index:100; max-width:330px; background:var(--tip-bg); color:var(--tip-fg);
+     font-size:12px; line-height:1.45; padding:7px 10px; border-radius:6px; pointer-events:none;
+     box-shadow:0 6px 22px -8px rgba(0,0,0,.5)}
+[data-tip]{cursor:help}
+button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
+.colrow[data-tip]{cursor:default}
+
+#guide{border-bottom:1px solid var(--line); padding:15px 16px; background:var(--surface-2);
+       font-size:12.5px; color:var(--ink-2); line-height:1.55}
+#guide h2{font-family:Archivo,sans-serif; font-size:13px; margin:0 0 6px; color:var(--ink)}
+#guide h3{font-family:Archivo,sans-serif; font-size:11.5px; margin:13px 0 3px; color:var(--ink)}
+#guide p{margin:0 0 6px; max-width:80ch}
+#guide ul{margin:0; padding-left:17px; max-width:80ch}
+#guide li{margin-bottom:2px}
+#guide code{font-family:"IBM Plex Mono",monospace; font-size:11px; background:var(--surface-3);
+            padding:1px 4px; border-radius:3px}
+.empty{color:var(--ink-3); font-size:12.5px; padding:18px 0; text-align:center}
+.foot{padding:14px 18px 40px; color:var(--ink-3); font-size:11.5px; max-width:1780px; margin:0 auto}
+.foot code{font-family:"IBM Plex Mono",monospace; background:var(--surface-2); padding:1px 4px; border-radius:3px}
+#testlog{white-space:pre-wrap; font-family:"IBM Plex Mono",monospace; font-size:11px;
+         padding:12px 18px; color:var(--ink-2)}
+@media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
+</style>
+
+<header>
+  <div>
+    <h1>DMP Selection Bench</h1>
+    <div class="sub">__COUNT__ data management plans from Zenodo, joined to CORDIS project timelines and EuroSciVoc disciplines.</div>
+  </div>
+  <button class="btn" id="railtoggle" type="button" data-tip="Show or hide the filter rail. Only appears on narrow screens.">Filters</button>
+  <button class="btn" id="guidebtn" type="button" aria-expanded="false" data-tip="A short guide to the pool, the columns and the 3 x 3 target.">Guide</button>
+  <div class="stats">
+    <div class="stat hit" data-tip="DMP records passing the current filters."><b id="s-hits">0</b><span>matching</span></div>
+    <div class="stat" data-tip="How many of the matching records are machine-actionable RDA-DCS files."><b id="s-ma">0</b><span>maDMP</span></div>
+    <div class="stat" data-tip="Distinct funded projects among the matching records. Lower than the record count when one project deposited several DMPs."><b id="s-proj">0</b><span>projects</span></div>
+    <div class="stat" data-tip="How many DMPs you have ticked. The target is 10."><b id="s-sel">0</b><span>selected</span></div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="panel rail" id="rail">
+    <div class="grp">
+      <div class="lbl" data-tip="One click sets every filter below to a sensible combination.">Presets</div>
+      <div class="chips" id="f-preset">
+        <button class="chip" type="button" data-preset="he-ma" data-tip="Strictest reading of the criteria: Horizon Europe, published 2024 or later, machine-actionable only. About 47 records.">HE · 2024+ · maDMP</button>
+        <button class="chip" type="button" data-preset="he24" data-tip="Horizon Europe published 2024 or later: about 574 records across 445 projects. The practical starting point, since maDMPs alone cannot fill all nine matrix cells.">HE · 2024+</button>
+        <button class="chip" type="button" data-preset="eu" data-tip="Adds Horizon 2020 and other EU funding to the Horizon Europe pool.">Any EU · 2024+</button>
+        <button class="chip" type="button" data-preset="reset" data-tip="Clears every filter and shows the full pool of 2 650 records.">Everything</button>
+      </div>
+    </div>
+    <div class="grp">
+      <div class="lbl">Search</div>
+      <input type="search" id="q" placeholder="title, project, grant, DOI" autocomplete="off" data-tip="Matches the record title, project acronym and title, grant number, DOI, CORDIS call id and the description text.">
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Who funded the project. Matched from the Zenodo record and from the grant id inside the maDMP file.">Funding <button type="button" data-clear="tiers" data-tip="Untick every funding chip.">clear</button></div>
+      <div class="chips" id="f-tier"></div>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Zenodo publication date of the DMP record itself, not the project start date.">Published</div>
+      <div class="yr"><select id="y0" aria-label="From year" data-tip="Earliest publication year to include."></select><span>to</span><select id="y1" aria-label="To year" data-tip="Latest publication year to include."></select></div>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="What kind of file the record actually carries.">Format <button type="button" data-clear="fmt" data-tip="Untick every format chip.">clear</button></div>
+      <div class="chips" id="f-fmt"></div>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Top-level OECD field of science, from the project EuroSciVoc terms in CORDIS. Turning any of these on also hides records with no CORDIS project match.">Discipline <span class="aux">EuroSciVoc</span></div>
+      <div class="chips" id="f-disc"></div>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Where the DMP was published within the project run, computed from the CORDIS start and end dates.">Lifecycle stage <button type="button" data-clear="stage" data-tip="Untick every stage chip.">clear</button></div>
+      <div class="chips" id="f-stage"></div>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Signals for the challenging case and for record quality.">Flags <button type="button" data-clear="flag" data-tip="Untick every flag chip.">clear</button></div>
+      <div class="chips" id="f-flag"></div>
+    </div>
+    <div class="grp">
+      <div class="lbl">Sort</div>
+      <select id="sort" aria-label="Sort rows" data-tip="Same as clicking a column header. Clicking the active header again reverses the direction."></select>
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Choose which columns the table shows and in what order. Your choice is remembered in this browser.">Columns <button type="button" id="colreset" data-tip="Restore the default eight columns and their order.">reset</button></div>
+      <div class="colist" id="f-cols"></div>
+    </div>
+  </aside>
+
+  <main class="panel main">
+    <div id="guide" hidden>
+      <h2>What this is</h2>
+      <p>Every data management plan on Zenodo that could be found by five different queries, joined to
+      CORDIS so each one carries a discipline and a position in its project's life. The job is to pick
+      <b>10</b>: nine filling a 3 &times; 3 discipline &times; lifecycle matrix, plus one challenging case.</p>
+
+      <h3>How the two axes are derived</h3>
+      <ul>
+        <li><b>Discipline</b> is the top-level OECD field from the project's EuroSciVoc terms in CORDIS, not
+        a judgement about the DMP. Records with no CORDIS match show <em>no CORDIS match</em> and are hidden
+        as soon as a discipline filter is on.</li>
+        <li><b>Lifecycle stage</b> is where the publication date falls between the project's CORDIS start and
+        end dates: <code>early</code> up to 34&nbsp;%, <code>mid</code> up to 70&nbsp;%, <code>late</code> above.
+        The bar in the column shows the exact position.</li>
+      </ul>
+
+      <h3>Reading a row</h3>
+      <p>Click a title to expand the description, project dates, call id and DOI. A green
+      <b>maDMP</b> tag means the record carries a real RDA DMP Common Standard JSON file;
+      <b>schema clean</b> means it has no missing required field, which only 25 of 377 manage. Red tags mark
+      sensitive-data signals &mdash; the pool for the challenging case.</p>
+
+      <h3>Choosing well</h3>
+      <p>Selection is meant to run off metadata, not off how good a plan looks. Filter down to a defensible
+      pool, then take what falls in the cell you still need. The tray warns when two picks come from the same
+      project, when a fourth discipline creeps in, or when a pick has no lifecycle stage.</p>
+
+      <h3>Where your selection goes</h3>
+      <p>Served locally it is written to <code>data/selection.json</code> on every change. Opened as a
+      standalone file it lives in this browser only. Either way the three Copy buttons put it on the
+      clipboard.</p>
+
+      <p style="margin-top:10px"><em>Hover anything &mdash; every filter, column header and tag explains
+      itself.</em></p>
+    </div>
+    <div class="bar"><b id="n-shown">0</b>&nbsp;shown of&nbsp;<b id="n-tot">0</b>&nbsp;matching
+      <span style="margin-left:auto" id="sortnote"></span></div>
+    <div class="tablewrap">
+      <div class="thead" id="thead"></div>
+      <div id="list"></div>
+    </div>
+    <div style="padding:12px; text-align:center">
+      <button class="btn" id="more" type="button" hidden>Show 100 more</button>
+    </div>
+  </main>
+
+  <aside class="panel tray">
+    <div class="count" data-tip="Nine DMPs fill the 3 x 3 matrix, plus one challenging case."><b id="t-n">0</b><span>of 10 selected</span></div>
+    <div class="lbl" data-tip="Every DMP you tick lands in one cell. The goal is three disciplines by three stages with one DMP in each. Green means filled, amber means you have doubled up.">Discipline × lifecycle coverage</div>
+    <table class="mx" id="mx"></table>
+    <div class="slot" id="slot-ch"><b>0</b> challenging case</div>
+    <div id="notes"></div>
+    <ul class="picked" id="picked"></ul>
+    <div class="exp">
+      <button class="btn pri" type="button" data-exp="md" data-tip="Copies the selection as a Markdown table, ready to paste into the repo README.">Copy table</button>
+      <button class="btn" type="button" data-exp="csv" data-tip="Copies the selection as CSV for a spreadsheet.">Copy CSV</button>
+      <button class="btn" type="button" data-exp="json" data-tip="Copies the selection as JSON, including the lifecycle position and the schema result.">Copy JSON</button>
+      <button class="btn" type="button" data-exp="clear" data-tip="Removes every pick. This cannot be undone.">Clear</button>
+    </div>
+    <textarea id="out" readonly data-tip="The copied text also lands here, in case the clipboard is blocked." placeholder="Your selection appears here in the chosen format, ready to paste into the repo."></textarea>
+    <div id="savestate" class="savestate"></div>
+  </aside>
+</div>
+
+<pre id="testlog" hidden></pre>
+
+<div class="foot">
+  Sources — records: Zenodo REST API. Project timeline, call and discipline: CORDIS bulk datasets for
+  Horizon Europe and H2020, joined on grant number. maDMP structure: every <code>.json</code> file downloaded
+  and checked against the RDA DMP Common Standard 1.2 schema.
+  Lifecycle stage is the publication date's position in the project's CORDIS start–end window:
+  early ≤ 34 %, mid ≤ 70 %, late above.
+</div>
+
+__BOOT__
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+"use strict";
+
+/* Two ways to run this page:
+   - standalone build: the dataset is embedded in the #data block above and the
+     selection lives in browser storage
+   - local server (scripts/serve.py): #data is null, rows arrive from the API and
+     the selection is written to data/selection.json */
+var API = window.DMP_API || null;
+var ROWS = [], INDEX = {}, DISCS = [];
+var LIMIT_STEP = 100;
+
+var TIERS = ["Horizon Europe","Horizon 2020","Other EU","DFG","Other funder","No funder metadata"];
+var TIER_CLS = {"Horizon Europe":"t-he","Horizon 2020":"t-h2020","Other EU":"t-eu",
+                "DFG":"t-dfg","Other funder":"t-oth","No funder metadata":"t-oth"};
+var TIER_SHORT = {"Horizon Europe":"Horizon Europe","Horizon 2020":"H2020","Other EU":"other EU",
+                  "DFG":"DFG","Other funder":"other funder","No funder metadata":"no funder data"};
+var STAGES = ["early","mid","late","unknown"];
+var DISC_SHORT = {"engineering and technology":"engineering + tech",
+                  "medical and health sciences":"medical + health"};
+
+/* Hover documentation. Every control and tag carries a one-line explanation. */
+var TIER_TIP = {
+  "Horizon Europe":"EU framework programme 2021-2027. Matched through CORDIS or the grant id inside the maDMP file.",
+  "Horizon 2020":"The previous EU framework programme, 2014-2020.",
+  "Other EU":"European Commission funding that is neither Horizon Europe nor Horizon 2020.",
+  "DFG":"Deutsche Forschungsgemeinschaft. Only a handful of records on Zenodo, and none machine-actionable.",
+  "Other funder":"A national or private funder - mostly the Latvian Council of Science and FCT Portugal.",
+  "No funder metadata":"The Zenodo record names no funder. Many are EU deliverables that were simply never tagged."
+};
+var FMT_TIP = {
+  madmp:"Only records whose .json file was downloaded and confirmed to be an RDA DMP Common Standard file.",
+  pdf:"Records carrying at least one PDF.",
+  valid:"maDMPs with no missing required field against RDA schema 1.2. Only 25 of 377 qualify."
+};
+var STAGE_TIP = {
+  early:"Published in the first 34% of the project run.",
+  mid:"Published between 34% and 70% of the project run.",
+  late:"Published after 70% of the run, including anything after the project ended.",
+  unknown:"No CORDIS project dates, so the position cannot be computed."
+};
+var FLAG_TIP = {
+  ch:"Anything with a sensitive-data signal, whether from maDMP fields or from wording in the title and description.",
+  chmeta:"Stricter: personal_data, sensitive_data, security_and_privacy or ethical_issues_exist actually set inside the maDMP.",
+  open:"The Zenodo record is openly accessible.",
+  typed:"Zenodo's own resource type is data management plan, rather than a deliverable that merely mentions one."
+};
+var COL_TIP = {
+  pick:"Tick to add this DMP to your selection.",
+  title:"Record title, with the CORDIS project title underneath. Click a title to expand the full description.",
+  project:"Project acronym from CORDIS, with the project status underneath.",
+  funder:"Which funding tier the record was matched to.",
+  disc:"Top-level EuroSciVoc field of science, with the more specific sub-fields underneath.",
+  stage:"Where the DMP sits in the project run. The bar shows the position between start and end.",
+  date:"Zenodo publication date of the record.",
+  format:"Whether the record carries a real maDMP or only a PDF, and how that maDMP scored against the RDA schema.",
+  datasets:"How many datasets the maDMP describes, and how many distribution blocks are actually filled in.",
+  flags:"Sensitive-data and ethics signals - the pool for the challenging case.",
+  grant:"EU grant agreement number.",
+  call:"CORDIS master call identifier, for example HORIZON-CL5-2023-D1-01.",
+  links:"Open the Zenodo record, or the maDMP JSON file itself."
+};
+
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+function num(v){ return v==null?-1:v; }
+function cmpStr(a,b){ return String(a||"~~~").localeCompare(String(b||"~~~")); }
+
+/* ---------------- columns ---------------- */
+var ALLCOLS = [
+  {k:"pick",    t:"",                 w:26,  locked:true},
+  {k:"title",   t:"DMP",              w:300, min:240, grow:true, locked:true,
+   sort:function(a,b){ return cmpStr(a.title,b.title); }},
+  {k:"project", t:"Project",          w:120, sort:function(a,b){ return cmpStr(a.acronym,b.acronym); }},
+  {k:"funder",  t:"Funder",           w:120, sort:function(a,b){ return cmpStr(a.tier,b.tier); }},
+  {k:"disc",    t:"Discipline",       w:150, sort:function(a,b){ return cmpStr(a.disc,b.disc); }},
+  {k:"stage",   t:"Lifecycle stage",  w:140,
+   sort:function(a,b){ return (a.stage_frac==null?9:a.stage_frac)-(b.stage_frac==null?9:b.stage_frac); }},
+  {k:"date",    t:"Published",        w:96,  sort:function(a,b){ return cmpStr(a.date,b.date); }},
+  {k:"format",  t:"Format",           w:150,
+   sort:function(a,b){ return (b.madmp?1:0)-(a.madmp?1:0) || num(b.n_datasets)-num(a.n_datasets); }},
+  {k:"datasets",t:"Datasets",         w:90,
+   sort:function(a,b){ return num(b.n_datasets)-num(a.n_datasets) || num(b.n_dist)-num(a.n_dist); }},
+  {k:"flags",   t:"Flags",            w:120,
+   sort:function(a,b){ return (b.challenging?1:0)-(a.challenging?1:0) || num(b.sensitive)-num(a.sensitive); }},
+  {k:"grant",   t:"Grant",            w:100, sort:function(a,b){ return cmpStr(a.grant,b.grant); }},
+  {k:"call",    t:"Call",             w:170, sort:function(a,b){ return cmpStr(a.call,b.call); }},
+  {k:"links",   t:"Open",             w:104}
+];
+var COLDEF = {};
+ALLCOLS.forEach(function(c){ COLDEF[c.k]=c; });
+var DEFAULT_ORDER = ["pick","title","project","disc","stage","date","format","links"];
+
+var colState = {order:DEFAULT_ORDER.slice(), hidden:{}};
+(function(){
+  ALLCOLS.forEach(function(c){
+    if(DEFAULT_ORDER.indexOf(c.k)<0){ colState.order.push(c.k); colState.hidden[c.k]=1; }
+  });
+  try{
+    var raw=localStorage.getItem("dmpbench.cols");
+    if(raw){
+      var s=JSON.parse(raw);
+      if(s && s.order && s.order.length){
+        var seen={}, order=[];
+        s.order.forEach(function(k){ if(COLDEF[k] && !seen[k]){ seen[k]=1; order.push(k); } });
+        ALLCOLS.forEach(function(c){ if(!seen[c.k]) order.push(c.k); });
+        colState.order=order; colState.hidden=s.hidden||{};
+      }
+    }
+  }catch(e){}
+  colState.hidden.pick=0; colState.hidden.title=0;   /* never hide the essentials */
+})();
+function saveCols(){
+  try{ localStorage.setItem("dmpbench.cols", JSON.stringify(colState)); }catch(e){}
+}
+function visibleCols(){
+  return colState.order.filter(function(k){ return COLDEF[k] && !colState.hidden[k]; })
+                       .map(function(k){ return COLDEF[k]; });
+}
+function gridTemplate(cols){
+  return cols.map(function(c){
+    return c.grow ? ("minmax("+c.min+"px,"+c.w+"fr)") : (c.w+"px");
+  }).join(" ");
+}
+function gridMin(cols){
+  var t=0; cols.forEach(function(c){ t += (c.grow?c.min:c.w)+10; });
+  return t+14;
+}
+
+/* ---------------- state ---------------- */
+var state = {q:"", tiers:{"Horizon Europe":1}, y0:2024, y1:2026,
+             fmt:{}, disc:{}, stage:{}, flag:{}, sort:"date", dir:-1,
+             limit:LIMIT_STEP, open:{}};
+var sel = [], saveTimer=null;
+
+function localLoad(){
+  try{ var raw=localStorage.getItem("dmpbench.sel"); if(raw) sel=JSON.parse(raw)||[]; }catch(e){}
+}
+function setSaveState(txt,cls){
+  var el=document.getElementById("savestate"); if(!el) return;
+  el.textContent=txt; el.className="savestate "+(cls||"");
+}
+function save(){
+  try{ localStorage.setItem("dmpbench.sel", JSON.stringify(sel)); }catch(e){}
+  if(!API) return;
+  clearTimeout(saveTimer);
+  setSaveState("saving…","");
+  saveTimer=setTimeout(function(){
+    fetch(API+"/selection",{method:"PUT",headers:{"Content-Type":"application/json"},
+                            body:JSON.stringify({ids:sel})})
+      .then(function(r){ if(!r.ok) throw new Error(r.status);
+                         setSaveState("saved to data/selection.json","ok"); })
+      .catch(function(){ setSaveState("could not save — is serve.py still running?","bad"); });
+  },300);
+}
+function byId(id){ return INDEX[id]||null; }
+
+/* ---------------- filtering ---------------- */
+function anyOn(o){ for(var k in o) if(o[k]) return true; return false; }
+function matches(r){
+  if(anyOn(state.tiers) && !state.tiers[r.tier]) return false;
+  var y=parseInt(r.year,10)||0;
+  if(y<state.y0 || y>state.y1) return false;
+  if(state.fmt.madmp && !r.madmp) return false;
+  if(state.fmt.pdf && !(r.n_pdf>0)) return false;
+  if(state.fmt.valid && !r.schema_ok) return false;
+  if(anyOn(state.disc) && !state.disc[r.disc]) return false;
+  if(anyOn(state.stage) && !state.stage[r.stage]) return false;
+  if(state.flag.ch && !r.challenging) return false;
+  if(state.flag.chmeta && !r.ch_meta) return false;
+  if(state.flag.open && r.access!=="public") return false;
+  if(state.flag.typed && r.type!=="publication-datamanagementplan") return false;
+  if(state.q){
+    var q=state.q.toLowerCase();
+    var hay=(r.title+" "+(r.acronym||"")+" "+(r.grant||"")+" "+(r.doi||"")+" "+
+             (r.proj_title||"")+" "+(r.call||"")+" "+(r.desc||"")).toLowerCase();
+    if(hay.indexOf(q)<0) return false;
+  }
+  return true;
+}
+function sortRows(list){
+  var col=COLDEF[state.sort];
+  var fn=(col&&col.sort)||COLDEF.date.sort;
+  var dir=state.dir;
+  return list.slice().sort(function(a,b){
+    var v=fn(a,b);
+    if(v) return v*dir;
+    return cmpStr(b.date,a.date);
+  });
+}
+
+/* ---------------- cell renderers ---------------- */
+var CELL = {
+  pick:function(r,on){
+    return '<div><input type="checkbox" '+(on?'checked':'')+' data-pick="'+esc(r.id)+
+      '" aria-label="Select '+esc(r.title.slice(0,60))+'"></div>';
+  },
+  title:function(r){
+    return '<div class="cell"><button class="ttl" type="button" data-open="'+esc(r.id)+'">'+
+      esc(r.title)+'</button>'+
+      (r.proj_title?'<div class="sub2">'+esc(r.proj_title)+'</div>':'')+'</div>';
+  },
+  project:function(r){
+    return '<div class="cell">'+(r.acronym?'<span class="mono">'+esc(r.acronym)+'</span>':
+      '<span style="color:var(--ink-3)">—</span>')+
+      (r.proj_status?'<div class="sub2">'+esc(r.proj_status.toLowerCase())+'</div>':'')+'</div>';
+  },
+  funder:function(r){
+    return '<div class="cell"><span class="tag '+TIER_CLS[r.tier]+'" data-tip="'+
+      esc(TIER_TIP[r.tier]||"")+'">'+esc(TIER_SHORT[r.tier])+'</span></div>';
+  },
+  disc:function(r){
+    return '<div class="cell">'+(r.disc?esc(r.disc):'<span style="color:var(--ink-3)">no CORDIS match</span>')+
+      (r.disc2&&r.disc2.length?'<div class="sub2">'+esc(r.disc2.join(", "))+'</div>':'')+'</div>';
+  },
+  stage:function(r){
+    if(r.stage==="unknown"||r.stage_frac==null)
+      return '<div class="cell" style="color:var(--ink-3)">no project dates</div>';
+    var pct=Math.max(0,Math.min(1,r.stage_frac))*100;
+    return '<div class="cell" data-tip="'+esc("Project ran "+r.proj_start+" to "+r.proj_end+
+      ". This DMP was published "+Math.round(r.stage_frac*100)+"% of the way through, which is "+
+      r.stage+".")+'">'+esc(r.stage)+' <span class="mono" style="color:var(--ink-3)">'+
+      Math.round(r.stage_frac*100)+'%</span>'+
+      '<div class="track">'+
+      '<u style="width:'+pct+'%"></u><i style="left:calc('+pct+'% - 1px)"></i></div></div>';
+  },
+  date:function(r){ return '<div class="cell mono">'+esc(r.date)+'</div>'; },
+  format:function(r){
+    var t=[];
+    if(r.madmp){
+      t.push('<span class="tag t-ma" data-tip="Machine-actionable: the record carries an RDA DMP Common Standard JSON file.">maDMP</span>');
+      t.push(r.schema_ok
+        ? '<span class="tag t-ok" data-tip="No missing required field against RDA schema 1.2.">schema clean</span>'
+        : '<span class="tag t-part" data-tip="'+esc(num(r.n_findings)+" required fields are absent against RDA schema 1.2, usually empty distribution blocks. Incomplete, not invalid.")+'">'+
+          num(r.n_findings)+' gaps</span>');
+    } else if(r.n_pdf>0) t.push('<span class="tag t-pdf" data-tip="Only a PDF - nothing machine-readable to parse.">PDF'+
+      (r.n_pdf>1?' ×'+r.n_pdf:'')+'</span>');
+    else t.push('<span class="tag t-oth" data-tip="The record has no downloadable file attached.">no file</span>');
+    return '<div class="cell">'+t.join("")+'</div>';
+  },
+  datasets:function(r){
+    if(!r.madmp) return '<div class="cell" style="color:var(--ink-3)">—</div>';
+    return '<div class="cell mono">'+num(r.n_datasets)+
+      '<div class="sub2">'+num(r.n_dist)+' dist.</div></div>';
+  },
+  flags:function(r){
+    var t=[];
+    if(r.ch_meta) t.push('<span class="tag t-ch" data-tip="Personal or sensitive data is flagged in the maDMP fields themselves.">sensitive</span>');
+    else if(r.challenging) t.push('<span class="tag t-ch" data-tip="Sensitive-data wording in the title or description, not a structured flag. Worth reading before trusting.">wording</span>');
+    if(r.ethics==="yes") t.push('<span class="tag t-ch" data-tip="ethical_issues_exist is set to yes in the maDMP.">ethics</span>');
+    return '<div class="cell">'+(t.length?t.join(""):'<span style="color:var(--ink-3)">—</span>')+'</div>';
+  },
+  grant:function(r){
+    return '<div class="cell mono">'+(r.grant?esc(r.grant):'<span style="color:var(--ink-3)">—</span>')+'</div>';
+  },
+  call:function(r){
+    return '<div class="cell" style="font-size:11px">'+
+      (r.call?esc(r.call):'<span style="color:var(--ink-3)">—</span>')+'</div>';
+  },
+  links:function(r){
+    var h='<div class="cell links"><a href="'+esc(r.url)+'" target="_blank" rel="noopener">Zenodo ↗</a>';
+    if(API && r.madmp_file)
+      h+='<a href="'+esc(API+"/madmp/"+encodeURIComponent(r.madmp_file))+'" target="_blank" rel="noopener">JSON (local)</a>';
+    else if(r.dl) h+='<a href="'+esc(r.dl)+'" target="_blank" rel="noopener">JSON ↗</a>';
+    return h+'</div>';
+  }
+};
+
+/* ---------------- rendering ---------------- */
+var filtered=[];
+
+function renderHead(cols,tpl,minw){
+  var h='';
+  cols.forEach(function(c){
+    var tip=COL_TIP[c.k]||"";
+    if(!c.sort){ h+='<div class="th static" data-tip="'+esc(tip)+'">'+esc(c.t)+'</div>'; return; }
+    var on=state.sort===c.k;
+    h+='<button class="th'+(on?' on':'')+'" type="button" data-sort="'+esc(c.k)+'" '+
+       'data-tip="'+esc(tip+" Click to sort.")+'" '+
+       'aria-label="Sort by '+esc(c.t)+'">'+esc(c.t)+
+       (on?'<span class="dir">'+(state.dir<0?'▼':'▲')+'</span>':'')+'</button>';
+  });
+  var el=document.getElementById("thead");
+  el.style.gridTemplateColumns=tpl;
+  el.style.minWidth=minw+"px";
+  el.innerHTML=h;
+}
+function rowHTML(r,cols,tpl,minw){
+  var on=sel.indexOf(r.id)>=0;
+  var h='<div class="row'+(on?' sel':'')+'" data-id="'+esc(r.id)+
+        '" style="grid-template-columns:'+tpl+';min-width:'+minw+'px">';
+  cols.forEach(function(c){ h+=CELL[c.k](r,on); });
+  if(state.open[r.id]){
+    h+='<div class="det">'+(r.desc?esc(r.desc)+(r.desc.length>=318?'…':'')
+                                 :'<em>No description in the record.</em>')+'<dl>'+
+      (r.proj_title?'<dt>Project</dt><dd>'+esc(r.proj_title)+'</dd>':'')+
+      (r.proj_start?'<dt>Runs</dt><dd class="mono">'+esc(r.proj_start)+' → '+esc(r.proj_end)+
+        ' ('+esc((r.proj_status||"").toLowerCase())+')</dd>':'')+
+      (r.legal?'<dt>Programme</dt><dd class="mono">'+esc(r.legal)+'</dd>':'')+
+      (r.call?'<dt>Call</dt><dd class="mono">'+esc(r.call)+'</dd>':'')+
+      (r.disc_all&&r.disc_all.length?'<dt>Fields</dt><dd>'+esc(r.disc_all.join(", "))+'</dd>':'')+
+      (r.madmp?'<dt>maDMP</dt><dd>'+num(r.n_datasets)+' datasets · '+num(r.n_dist)+
+        ' populated distributions · '+num(r.personal)+' personal · '+num(r.sensitive)+
+        ' sensitive · ethical issues: '+esc(r.ethics||"unstated")+'</dd>':'')+
+      '<dt>DOI</dt><dd class="mono">'+esc(r.doi||"—")+'</dd></dl></div>';
+  }
+  return h+'</div>';
+}
+function render(){
+  var cols=visibleCols(), tpl=gridTemplate(cols), minw=gridMin(cols);
+  filtered=sortRows(ROWS.filter(matches));
+  var shown=filtered.slice(0,state.limit);
+  renderHead(cols,tpl,minw);
+  document.getElementById("list").innerHTML = shown.length
+    ? shown.map(function(r){ return rowHTML(r,cols,tpl,minw); }).join("")
+    : '<div class="empty">Nothing matches these filters. Loosen the funding tier or widen the year range.</div>';
+  document.getElementById("n-shown").textContent=shown.length;
+  document.getElementById("n-tot").textContent=filtered.length;
+  document.getElementById("s-hits").textContent=filtered.length;
+  document.getElementById("s-ma").textContent=filtered.filter(function(r){return r.madmp;}).length;
+  var ps={}; filtered.forEach(function(r){ if(r.grant) ps[r.grant]=1; });
+  document.getElementById("s-proj").textContent=Object.keys(ps).length;
+  var col=COLDEF[state.sort];
+  document.getElementById("sortnote").textContent=
+    "sorted by "+((col&&col.t)||state.sort).toLowerCase()+(state.dir<0?" ↓":" ↑");
+  var m=document.getElementById("more");
+  m.hidden=shown.length>=filtered.length;
+  m.textContent="Show "+Math.min(LIMIT_STEP,filtered.length-shown.length)+" more";
+  renderTray();
+}
+
+/* ---------------- tray ---------------- */
+function renderTray(){
+  var rows=sel.map(byId).filter(Boolean);
+  document.getElementById("t-n").textContent=rows.length;
+  document.getElementById("s-sel").textContent=rows.length;
+
+  var discs=[], seen={};
+  rows.forEach(function(r){ var d=r.disc||"unclassified"; if(!seen[d]){seen[d]=1; discs.push(d);} });
+  if(!discs.length) discs=["—"];
+  var mx='<tr><th class="rh"></th><th>early</th><th>mid</th><th>late</th></tr>';
+  discs.forEach(function(d){
+    mx+='<tr><th class="rh">'+esc(d)+'</th>';
+    ["early","mid","late"].forEach(function(st){
+      var n=rows.filter(function(r){ return (r.disc||"unclassified")===d && r.stage===st; }).length;
+      mx+='<td><div class="cellbox'+(n===1?" on":n>1?" over":"")+'">'+(n||"")+'</div></td>';
+    });
+    mx+='</tr>';
+  });
+  document.getElementById("mx").innerHTML=mx;
+
+  var chAny=rows.filter(function(r){ return r.challenging; });
+  var chMeta=rows.filter(function(r){ return r.ch_meta; });
+  var slot=document.getElementById("slot-ch");
+  slot.className="slot"+(chAny.length?" on":"");
+  slot.innerHTML=chAny.length
+    ? '<b>'+chAny.length+'</b> challenging case'+(chAny.length>1?'s':'')+
+      (chMeta.length?' ('+chMeta.length+' flagged inside the maDMP)':' (from wording only)')
+    : '<b>0</b> challenging case — one is required';
+
+  var notes=[], gs={}, dup=0;
+  rows.forEach(function(r){ if(r.grant){ if(gs[r.grant]) dup++; gs[r.grant]=1; } });
+  if(dup) notes.push(dup+" DMP"+(dup>1?"s":"")+" from a project already in the set.");
+  if(discs.length>3 && rows.length) notes.push(discs.length+" disciplines covered — the target is 3.");
+  var unk=rows.filter(function(r){ return r.stage==="unknown"; }).length;
+  if(unk) notes.push(unk+" selected DMP"+(unk>1?"s have":" has")+" no project dates, so no lifecycle stage.");
+  if(rows.length>10) notes.push(rows.length+" selected — the target is 10.");
+  document.getElementById("notes").innerHTML=notes.length
+    ? '<div class="note">'+notes.map(esc).join("<br>")+'</div>' : '';
+
+  document.getElementById("picked").innerHTML = rows.length ? rows.map(function(r){
+    return '<li><div><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+
+      esc(r.title.slice(0,70))+'</a><em>'+esc(r.acronym||r.tier)+' · '+esc(r.disc||"unclassified")+
+      ' · '+esc(r.stage)+' · '+esc(r.year)+(r.madmp?' · maDMP':'')+'</em></div>'+
+      '<button class="x" type="button" data-drop="'+esc(r.id)+'" aria-label="Remove">×</button></li>';
+  }).join("") : '<li class="empty">Tick rows to build the set.</li>';
+}
+
+/* ---------------- export ---------------- */
+function exportAs(kind){
+  var rows=sel.map(byId).filter(Boolean);
+  if(kind==="json") return JSON.stringify(rows.map(function(r){
+    return {doi:r.doi, zenodo:r.url, title:r.title, published:r.date, funder:r.tier,
+            grant:r.grant, project:r.acronym, discipline:r.disc, stage:r.stage,
+            stage_position:r.stage_frac, madmp:r.madmp, datasets:r.n_datasets,
+            schema_clean:r.schema_ok, challenging:r.challenging};
+  }),null,2);
+  var cols=["doi","title","published","funder","grant","project","discipline","stage",
+            "madmp","challenging","zenodo"];
+  var vals=function(r){ return [r.doi,r.title,r.date,r.tier,r.grant,r.acronym,r.disc,
+                                r.stage,r.madmp?"yes":"no",r.challenging?"yes":"no",r.url]; };
+  if(kind==="csv") return cols.join(",")+"\n"+rows.map(function(r){
+    return vals(r).map(function(v){ v=String(v==null?"":v);
+      return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }).join(",");
+  }).join("\n");
+  return "| "+cols.join(" | ")+" |\n|"+cols.map(function(){return "---";}).join("|")+"|\n"+
+    rows.map(function(r){ return "| "+vals(r).map(function(v){
+      return String(v==null?"":v).replace(/\|/g,"\\|"); }).join(" | ")+" |"; }).join("\n");
+}
+
+/* ---------------- controls ---------------- */
+function chipHTML(v,label,on,n,tip){
+  return '<button class="chip" type="button" aria-pressed="'+(on?"true":"false")+
+    '" data-v="'+esc(v)+'"'+(tip?' data-tip="'+esc(tip)+'"':'')+'>'+esc(label)+
+    (n!=null?'<span class="n">'+n+'</span>':'')+'</button>';
+}
+function countBy(fn){
+  var c={}; ROWS.forEach(function(r){ var k=fn(r); if(k!=null) c[k]=(c[k]||0)+1; }); return c;
+}
+function buildChips(){
+  var tc=countBy(function(r){ return r.tier; });
+  document.getElementById("f-tier").innerHTML=TIERS.map(function(t){
+    return chipHTML(t,TIER_SHORT[t],!!state.tiers[t],tc[t]||0,TIER_TIP[t]); }).join("");
+  document.getElementById("f-fmt").innerHTML=
+    chipHTML("madmp","maDMP JSON",!!state.fmt.madmp,null,FMT_TIP.madmp)+
+    chipHTML("pdf","has PDF",!!state.fmt.pdf,null,FMT_TIP.pdf)+
+    chipHTML("valid","schema clean",!!state.fmt.valid,null,FMT_TIP.valid);
+  var dc=countBy(function(r){ return r.disc||null; });
+  document.getElementById("f-disc").innerHTML=DISCS.map(function(d){
+    return chipHTML(d,DISC_SHORT[d]||d,!!state.disc[d],dc[d]||0,
+      "EuroSciVoc field: "+d+". "+(dc[d]||0)+" records in the whole pool."); }).join("");
+  var sc=countBy(function(r){ return r.stage; });
+  document.getElementById("f-stage").innerHTML=STAGES.map(function(s){
+    return chipHTML(s,s,!!state.stage[s],sc[s]||0,STAGE_TIP[s]); }).join("");
+  document.getElementById("f-flag").innerHTML=
+    chipHTML("ch","challenging",!!state.flag.ch,null,FLAG_TIP.ch)+
+    chipHTML("chmeta","sensitive in maDMP",!!state.flag.chmeta,null,FLAG_TIP.chmeta)+
+    chipHTML("open","open access",!!state.flag.open,null,FLAG_TIP.open)+
+    chipHTML("typed","typed as DMP",!!state.flag.typed,null,FLAG_TIP.typed);
+}
+function buildSort(){
+  var s=document.getElementById("sort");
+  s.innerHTML=ALLCOLS.filter(function(c){ return c.sort; }).map(function(c){
+    return '<option value="'+esc(c.k)+'">'+esc(c.t)+'</option>'; }).join("");
+  s.value=state.sort;
+}
+function buildCols(){
+  var h='';
+  colState.order.forEach(function(k,i){
+    var c=COLDEF[k]; if(!c) return;
+    var off=!!colState.hidden[k];
+    h+='<div class="colrow'+(off?" off":"")+(c.locked?" locked":"")+'" data-col="'+esc(k)+
+      '" data-tip="'+esc((COL_TIP[k]||"")+(c.locked?" This column cannot be hidden.":""))+'">'+
+      '<input type="checkbox" '+(off?"":"checked")+(c.locked?" disabled":"")+
+        ' data-colcheck="'+esc(k)+'" aria-label="Show column '+esc(c.t||"select")+'">'+
+      '<span class="nm">'+esc(c.t||"select")+'</span>'+
+      '<button class="mv" type="button" data-mv="up" data-k="'+esc(k)+'" '+(i===0?"disabled":"")+
+        ' aria-label="Move '+esc(c.t||"select")+' left">▲</button>'+
+      '<button class="mv" type="button" data-mv="down" data-k="'+esc(k)+'" '+
+        (i===colState.order.length-1?"disabled":"")+' aria-label="Move '+esc(c.t||"select")+' right">▼</button>'+
+      '</div>';
+  });
+  document.getElementById("f-cols").innerHTML=h;
+}
+function toggleCol(k){
+  var c=COLDEF[k]; if(!c || c.locked) return false;
+  colState.hidden[k]=colState.hidden[k]?0:1;
+  saveCols(); buildCols(); render(); return true;
+}
+function moveCol(k,delta){
+  var i=colState.order.indexOf(k), j=i+delta;
+  if(i<0 || j<0 || j>=colState.order.length) return false;
+  colState.order.splice(j,0,colState.order.splice(i,1)[0]);
+  saveCols(); buildCols(); render(); return true;
+}
+function setSort(k){
+  if(!COLDEF[k] || !COLDEF[k].sort) return false;
+  if(state.sort===k) state.dir=-state.dir;
+  else { state.sort=k; state.dir=(k==="date")?-1:1; }
+  document.getElementById("sort").value=state.sort;
+  render(); return true;
+}
+function applyPreset(p){
+  state.q=""; document.getElementById("q").value="";
+  state.fmt={}; state.disc={}; state.stage={}; state.flag={}; state.limit=LIMIT_STEP;
+  if(p==="he-ma"){ state.tiers={"Horizon Europe":1}; state.fmt={madmp:1}; state.y0=2024; state.y1=2026; }
+  else if(p==="he24"){ state.tiers={"Horizon Europe":1}; state.y0=2024; state.y1=2026; }
+  else if(p==="eu"){ state.tiers={"Horizon Europe":1,"Horizon 2020":1,"Other EU":1}; state.y0=2024; state.y1=2026; }
+  else { state.tiers={}; state.y0=YEARS[0]; state.y1=YEARS[YEARS.length-1]; }
+  document.getElementById("y0").value=String(state.y0);
+  document.getElementById("y1").value=String(state.y1);
+  buildChips(); render();
+}
+
+var YEARS=[];
+function buildYears(){
+  var ys={}; ROWS.forEach(function(r){ var y=parseInt(r.year,10); if(y) ys[y]=1; });
+  YEARS=Object.keys(ys).map(Number).sort(function(a,b){return a-b;});
+  var a=document.getElementById("y0"), b=document.getElementById("y1");
+  a.innerHTML=YEARS.map(function(y){ return '<option value="'+y+'">'+y+'</option>'; }).join("");
+  b.innerHTML=a.innerHTML;
+  if(YEARS.indexOf(state.y0)<0) state.y0=YEARS[0];
+  if(YEARS.indexOf(state.y1)<0) state.y1=YEARS[YEARS.length-1];
+  a.value=String(state.y0); b.value=String(state.y1);
+}
+
+/* ---------------- events ---------------- */
+/* Look the bucket up by name on every click. Presets and the clear buttons
+   REPLACE these objects, so capturing one at bind time would leave the chips
+   mutating a detached object and silently doing nothing. */
+function bindChipGroup(id,key){
+  document.getElementById(id).addEventListener("click",function(e){
+    var b=e.target.closest(".chip"); if(!b) return;
+    var v=b.getAttribute("data-v");
+    var bucket=state[key];
+    bucket[v]=bucket[v]?0:1;
+    state.limit=LIMIT_STEP; buildChips(); render();
+  });
+}
+function wire(){
+  bindChipGroup("f-tier","tiers");
+  bindChipGroup("f-fmt","fmt");
+  bindChipGroup("f-disc","disc");
+  bindChipGroup("f-stage","stage");
+  bindChipGroup("f-flag","flag");
+
+  document.getElementById("f-preset").addEventListener("click",function(e){
+    var b=e.target.closest("[data-preset]"); if(!b) return;
+    applyPreset(b.getAttribute("data-preset"));
+  });
+  document.getElementById("rail").addEventListener("click",function(e){
+    var c=e.target.closest("[data-clear]"); if(!c) return;
+    var which=c.getAttribute("data-clear");
+    state[which]={}; state.limit=LIMIT_STEP; buildChips(); render();
+  });
+  document.getElementById("f-cols").addEventListener("click",function(e){
+    var mv=e.target.closest("[data-mv]");
+    if(mv){ moveCol(mv.getAttribute("data-k"), mv.getAttribute("data-mv")==="up"?-1:1); return; }
+    var box=e.target.closest("[data-colcheck]");
+    if(box){ toggleCol(box.getAttribute("data-colcheck")); return; }
+    var nm=e.target.closest(".colrow");
+    if(nm && !nm.classList.contains("locked")) toggleCol(nm.getAttribute("data-col"));
+  });
+  document.getElementById("colreset").addEventListener("click",function(){
+    colState={order:DEFAULT_ORDER.slice(),hidden:{}};
+    ALLCOLS.forEach(function(c){
+      if(DEFAULT_ORDER.indexOf(c.k)<0){ colState.order.push(c.k); colState.hidden[c.k]=1; } });
+    saveCols(); buildCols(); render();
+  });
+  document.getElementById("thead").addEventListener("click",function(e){
+    var th=e.target.closest("[data-sort]"); if(th) setSort(th.getAttribute("data-sort"));
+  });
+  var qt;
+  document.getElementById("q").addEventListener("input",function(e){
+    clearTimeout(qt); var v=e.target.value;
+    qt=setTimeout(function(){ state.q=v.trim(); state.limit=LIMIT_STEP; render(); },130);
+  });
+  document.getElementById("sort").addEventListener("change",function(e){
+    state.sort=e.target.value; state.dir=(state.sort==="date")?-1:1; render();
+  });
+  document.getElementById("y0").addEventListener("change",function(e){
+    state.y0=+e.target.value; state.limit=LIMIT_STEP; render(); });
+  document.getElementById("y1").addEventListener("change",function(e){
+    state.y1=+e.target.value; state.limit=LIMIT_STEP; render(); });
+  document.getElementById("more").addEventListener("click",function(){
+    state.limit+=LIMIT_STEP; render(); });
+  document.getElementById("railtoggle").addEventListener("click",function(){
+    document.getElementById("rail").classList.toggle("hide"); });
+
+  document.getElementById("list").addEventListener("click",function(e){
+    var pick=e.target.closest("[data-pick]");
+    if(pick){
+      var id=pick.getAttribute("data-pick"), i=sel.indexOf(id);
+      if(i>=0) sel.splice(i,1); else sel.push(id);
+      save(); render(); return;
+    }
+    var op=e.target.closest("[data-open]");
+    if(op){ var oid=op.getAttribute("data-open"); state.open[oid]=!state.open[oid]; render(); }
+  });
+  document.getElementById("picked").addEventListener("click",function(e){
+    var d=e.target.closest("[data-drop]"); if(!d) return;
+    var i=sel.indexOf(d.getAttribute("data-drop")); if(i>=0) sel.splice(i,1);
+    save(); render();
+  });
+  document.querySelector(".exp").addEventListener("click",function(e){
+    var b=e.target.closest("[data-exp]"); if(!b) return;
+    var k=b.getAttribute("data-exp");
+    if(k==="clear"){ sel=[]; save(); document.getElementById("out").value=""; render(); return; }
+    var txt=exportAs(k), out=document.getElementById("out");
+    out.value=txt; out.select();
+    var done=function(){ var t=b.textContent; b.textContent="Copied";
+                         setTimeout(function(){ b.textContent=t; },1200); };
+    if(navigator.clipboard&&navigator.clipboard.writeText)
+      navigator.clipboard.writeText(txt).then(done,done);
+    else done();
+  });
+}
+
+/* ---------------- hover documentation ---------------- */
+var tipEl=null;
+function tipNode(){
+  if(!tipEl){
+    tipEl=document.createElement("div");
+    tipEl.className="tip"; tipEl.setAttribute("role","tooltip"); tipEl.hidden=true;
+    document.body.appendChild(tipEl);
+  }
+  return tipEl;
+}
+function showTip(target){
+  var txt=target.getAttribute("data-tip");
+  if(!txt) return hideTip();
+  var el=tipNode();
+  el.textContent=txt; el.hidden=false;
+  el.style.left="0px"; el.style.top="0px";          /* measure before placing */
+  var r=target.getBoundingClientRect(), w=el.offsetWidth, h=el.offsetHeight, pad=8;
+  var left=Math.max(pad, Math.min(r.left, window.innerWidth-w-pad));
+  var top=r.bottom+6;
+  if(top+h > window.innerHeight-pad) top=Math.max(pad, r.top-h-6);
+  el.style.left=left+"px"; el.style.top=top+"px";
+}
+function hideTip(){ if(tipEl) tipEl.hidden=true; }
+function bindTips(){
+  document.addEventListener("mouseover",function(e){
+    var t=e.target.closest?e.target.closest("[data-tip]"):null;
+    if(t) showTip(t);
+  });
+  document.addEventListener("mouseout",function(e){
+    var t=e.target.closest?e.target.closest("[data-tip]"):null;
+    if(!t) return;
+    /* moving onto a child of the same element is not a leave */
+    if(e.relatedTarget && t.contains(e.relatedTarget)) return;
+    hideTip();
+  });
+  document.addEventListener("focusin",function(e){
+    var t=e.target.closest?e.target.closest("[data-tip]"):null;
+    if(t) showTip(t); else hideTip();
+  });
+  document.addEventListener("focusout",hideTip);
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") hideTip(); });
+  window.addEventListener("scroll",hideTip,true);
+  var btn=document.getElementById("guidebtn"), panel=document.getElementById("guide");
+  btn.addEventListener("click",function(){
+    var open=panel.hidden;
+    panel.hidden=!open;
+    btn.setAttribute("aria-expanded", open?"true":"false");
+    btn.textContent = open ? "Hide guide" : "Guide";
+  });
+}
+
+/* ---------------- boot ---------------- */
+function fail(msg){ document.getElementById("list").innerHTML='<div class="empty">'+esc(msg)+'</div>'; }
+function init(){
+  INDEX={}; ROWS.forEach(function(r){ INDEX[r.id]=r; });
+  var s={}; ROWS.forEach(function(r){ if(r.disc) s[r.disc]=(s[r.disc]||0)+1; });
+  DISCS=Object.keys(s).sort(function(a,b){ return s[b]-s[a]; });
+  sel=sel.filter(function(id){ return INDEX[id]; });
+  buildYears(); buildChips(); buildSort(); buildCols(); wire(); bindTips(); render();
+  if(API) setSaveState("selection saved to data/selection.json","ok");
+  window.__APP__={ROWS:ROWS,state:state,colState:colState,ALLCOLS:ALLCOLS,COLDEF:COLDEF,
+                  sel:function(){return sel;}, setSel:function(v){ sel=v; save(); render(); },
+                  filtered:function(){return filtered;}, render:render, byId:byId,
+                  exportAs:exportAs, toggleCol:toggleCol, moveCol:moveCol, setSort:setSort,
+                  applyPreset:applyPreset, visibleCols:visibleCols, buildChips:buildChips,
+                  showTip:showTip, hideTip:hideTip,
+                  ready:true};
+  if(window.__ONREADY__) window.__ONREADY__();
+}
+function boot(){
+  var embedded=null;
+  try{ embedded=JSON.parse(document.getElementById("data").textContent); }catch(e){}
+  if(embedded && embedded.length){ ROWS=embedded; localLoad(); init(); return; }
+  if(!API){ fail("No dataset in this page and no local API configured. Rebuild with scripts/05_build_dashboard.py, or start scripts/serve.py."); return; }
+  fail("Loading the dataset from the local server…");
+  fetch(API+"/dmps")
+    .then(function(r){ if(!r.ok) throw new Error("API returned "+r.status); return r.json(); })
+    .then(function(d){
+      ROWS=d.rows||d;
+      return fetch(API+"/selection")
+        .then(function(r){ return r.ok?r.json():null; })
+        .then(function(s){ sel=(s&&s.ids)||[]; })
+        .catch(function(){ localLoad(); });
+    })
+    .then(init)
+    .catch(function(e){ fail("Could not reach the local server: "+e.message+
+      ". Start it with: python scripts/serve.py"); });
+}
+boot();
+})();
+</script>

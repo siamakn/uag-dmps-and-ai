@@ -1,0 +1,108 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "a2bc3fae-150c-4af8-8d23-2d8348de4166",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "georgios.makrides@gmail.com",
+      "name" : "George Makrides",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0327-0386",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "George Makrides (orcid:0000-0002-0327-0386)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2932-6445",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Katerina L. Maxouti (orcid:0000-0003-2932-6445)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4163-4507",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Maria Hadjipanayi (orcid:0000-0002-4163-4507)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-03-14T06:48:13Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "510f44cc-937e-439f-a0a1-5e15840daece",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Data generated/collected by the PHAETHON Teaming project.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "PHAETHON Teaming Project data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The data management plan (DMP) of the PHAETHON project is a comprehensive document outlining how research data will be collected, organized, stored, shared, and preserved throughout the project's lifecycle. It provides a systematic approach to managing data, ensuring its integrity, security, and accessibility while adhering to ethical and legal standards. The DMP addresses key aspects such as data collection methods, metadata standards, storage and backup procedures, data sharing and access policies, long-term preservation strategies, roles and responsibilities of project team members, and compliance with relevant regulations and guidelines. By establishing clear guidelines and protocols for data management, the DMP helps researchers maximize the value and impact of their data, promote transparency and reproducibility, and facilitate collaboration and knowledge exchange within the research community.",
+    "dmp_id" : {
+      "identifier" : "1eef08ed-b02b-412f-89bb-19584e02b130",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-03-14T09:35:28Z",
+    "project" : [ {
+      "description" : "Creating a centre of excellence for sustainable energy solutions in Cyprus\nTo mitigate climate change, the EU has taken a proactive approach: setting ambitious goals to reduce greenhouse gas emissions, and promoting renewable energy sources through numerous initiatives and policies. Meeting these goals requires involvement and cooperation across the scientific community, industries and governments. The EU-funded PHAETHON project is supporting this effort by establishing new state-of-the-art research and innovation facilities at the University of Cyprus. The project intends to revitalise the existing FOSS Research Centre for Sustainable Energy, turning it into a world-class Centre of Excellence for Intelligent, Efficient and Sustainable Energy Solutions that will host extensive research and educational activities and foster networks of international collaboration.",
+      "end" : "Fri Mar 14 06:48:13 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "HORIZON-CSA",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "Grant agreement ID: 101059898",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Thu Mar 14 06:48:13 UTC 2024",
+      "title" : "PHAETHON Research and Innovation Centre of Excellence for Intelligent, Efficient and Sustainable Energy Solutions",
+      "additional_properties" : { }
+    } ],
+    "title" : "PHAETHON Teaming Project",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "a2bc3fae-150c-4af8-8d23-2d8348de4166",
+      "publicDate" : "2024-03-14T06:24:17.203Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

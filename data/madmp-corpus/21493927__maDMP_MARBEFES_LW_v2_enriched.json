@@ -1,0 +1,220 @@
+{
+  "dmp": {
+    "alternate_identifier": [],
+    "contact": {
+      "contact_id": [
+        {
+          "identifier": "https://orcid.org/0000-0001-9697-7710",
+          "type": "orcid"
+        }
+      ],
+      "mbox": "joaquin.lopez@lifewatch.eu",
+      "name": "Joaquín López Lérida"
+    },
+    "contributor": [
+      {
+        "contributor_id": [
+          {
+            "identifier": "https://orcid.org/0000-0001-9697-7710",
+            "type": "orcid"
+          }
+        ],
+        "name": "Joaquín López Lérida",
+        "role": [
+          "Researcher"
+        ]
+      },
+      {
+        "contributor_id": [
+          {
+            "identifier": "https://orcid.org/0000-0003-2660-4649",
+            "type": "orcid"
+          }
+        ],
+        "name": "CRISTINA ISABEL HUERTAS OLIVARES",
+        "role": [
+          "Researcher"
+        ]
+      },
+      {
+        "contributor_id": [
+          {
+            "identifier": "https://orcid.org/0000-0002-6924-5255",
+            "type": "orcid"
+          }
+        ],
+        "name": "Christos Arvanitidis",
+        "role": [
+          "Researcher"
+        ]
+      },
+      {
+        "name": "Joaquin Lopez",
+        "mbox": "joaquin.lopez@lifewatch.eu",
+        "role": [
+          "DataCurator"
+        ]
+      },
+      {
+        "contributor_id": [
+          {
+            "identifier": "https://ror.org/01bj3aw27",
+            "type": "ror"
+          }
+        ],
+        "name": "LifeWatch ERIC",
+        "role": [
+          "HostingInstitution"
+        ]
+      }
+    ],
+    "created": "2026-07-22T11:15:06.394088Z",
+    "dataset": [
+      {
+        "title": "Coastal imagery set – Cádiz 2025",
+        "description": "UAV RGB imagery and derived segmentation masks of coastal habitats in Cádiz Bay, collected during MARBEFES field campaigns in 2025. Includes orthomosaics and classified land-cover layers produced via U-Net deep learning pipeline. Supports coastal biodiversity monitoring and ecosystem service assessment.",
+        "dataset_id": {
+          "identifier": "placeholder-doi-to-be-assigned",
+          "type": "other"
+        },
+        "type": "dataset",
+        "language": "eng",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "data_quality_assurance": [
+          "QA/QC following ISO 19157. Minimum image overlap >80%, cloud/shadow <10%, sharpness threshold applied. Expert annotation validated against field survey ground-truth points."
+        ],
+        "metadata": [
+          {
+            "description": "Metadata follows DataCite Metadata Schema 4.5 and Darwin Core. Fields include title, abstract, keywords, creators (ORCID), DOI, license, spatial coverage (WKT/EPSG:4326), temporal coverage, format, and related outputs.",
+            "metadata_standard_id": {
+              "identifier": "https://schema.datacite.org/meta/kernel-4/",
+              "type": "url"
+            },
+            "language": "eng"
+          }
+        ],
+        "distribution": [
+          {
+            "title": "LifeBlock deposit – Coastal imagery set – Cádiz 2025",
+            "access_url": "https://www.lifeblock.eu",
+            "data_access": "open",
+            "format": [
+              "GeoTIFF",
+              "GeoJSON",
+              "CSV",
+              "PNG"
+            ],
+            "license": [
+              {
+                "license_ref": "https://spdx.org/licenses/CC-BY-4.0.html",
+                "start_date": "2026-01-01"
+              }
+            ],
+            "host": {
+              "title": "LifeBlock – LifeWatch ERIC Repository",
+              "url": "https://www.lifeblock.eu",
+              "certified_with": "coretrustseal",
+              "pid_system": [
+                "doi"
+              ],
+              "storage_type": "institutional"
+            }
+          }
+        ],
+        "extension": {
+          "ostrails": {
+            "documentation": "README, field campaign protocol EURODRONE-2025-01, processing pipeline description, EUNIS habitat codebook, QC report (ISO 19157).",
+            "methodology": "UAV RGB imagery at low altitude over Cádiz Bay. U-Net segmentation pipeline for orthomosaics and classified land-cover. Classification follows EUNIS habitat typology.",
+            "target_audience": "Coastal biodiversity researchers, marine ecosystem service assessment community, remote sensing practitioners",
+            "naming_convention": "YYYYMMDD_site_instrument_layer_v1 (e.g. 20250615_cadiz_uav_ortho_v1.tif)"
+          },
+          "lifeblock": {
+            "deposit_status": "planned",
+            "retention_years": 10,
+            "oai_pmh_enabled": true,
+            "blockchain_verified": true,
+            "dark_archive": true
+          },
+          "rocrate": {
+            "packaged": true,
+            "conforms_to": [
+              "Workflow RO-Crate",
+              "RO-Crate 1.2"
+            ],
+            "has_part": [
+              "Coastal imagery set – Cádiz 2025 (GeoTIFF)",
+              "UAV Coastal Habitat Classification Pipeline (Python/U-Net)",
+              "Field campaign protocol EURODRONE-2025-01",
+              "QC report ISO 19157"
+            ],
+            "workflow": {
+              "name": "UAV Coastal Habitat Classification Pipeline",
+              "language": "Python",
+              "version": "1.0.0",
+              "description": "Deep learning pipeline for automated classification of coastal habitat types from UAV RGB imagery using U-Net architecture trained on EUNIS habitat classes."
+            }
+          }
+        }
+      }
+    ],
+    "description": "Machine-actionable DMP for the MARBEFES Horizon Europe project (grant ukri________::10048815), covering coastal biodiversity monitoring datasets collected via UAV remote sensing in C&#225;diz Bay. Produced as part of OSTrails Thematic Pilot 7 (ENVRI/LifeWatch ERIC).",
+    "dmp_id": {
+      "identifier": "d6743a6b-a570-4680-8aee-8f04ca50415e",
+      "type": "OTHER"
+    },
+    "ethical_issues_description": "No ethical issues identified for MARBEFES coastal biodiversity datasets. Data consist entirely of environmental remote sensing observations (UAV imagery of coastal habitats) with no involvement of human subjects, personal data, or sensitive information. No animal experimentation involved. Data collection complies with applicable regulations for UAV operations in Spain (AESA regulations).",
+    "ethical_issues_exist": "no",
+    "language": "eng",
+    "modified": "2026-07-22T11:35:45.598370Z",
+    "project": [
+      {
+        "title": "MARBEFES – MARine Biodiversity and Ecosystem Functioning leading to Ecosystem Services",
+        "description": "MARBEFES investigates marine biodiversity and ecosystem functioning in coastal habitats using UAV remote sensing and deep learning. Field campaigns in Cádiz Bay (2025) produce UAV RGB imagery processed via U-Net segmentation pipelines.",
+        "start": "2023-09-01",
+        "end": "2026-08-31",
+        "funding": [
+          {
+            "funder_id": {
+              "identifier": "https://doi.org/10.13039/501100000780",
+              "type": "fundref"
+            },
+            "grant_id": {
+              "identifier": "ukri________::10048815",
+              "type": "other"
+            },
+            "funding_status": "granted"
+          }
+        ]
+      }
+    ],
+    "related_identifier": [],
+    "title": "maDMP – MARBEFES LifeWatch ERIC/ENVRI Thematic Pilot 7 v2",
+    "cost": [
+      {
+        "title": "LifeBlock repository storage",
+        "description": "Long-term storage and dark archive backup for UAV imagery dataset and RO-Crate package. 10-year post-project retention. Includes CoreTrustSeal certified infrastructure, blockchain integrity verification, OAI-PMH, and DOI minting.",
+        "value": 15000.0,
+        "currency_code": "EUR",
+        "extension": {
+          "ostrails": {
+            "unit": "EUR",
+            "type": "storage"
+          }
+        }
+      }
+    ],
+    "extension": {
+      "ostrails": {
+        "version": "v2.0",
+        "data_access": "open"
+      }
+    },
+    "license": [
+      {
+        "license_ref": "https://spdx.org/licenses/CC-BY-4.0.html",
+        "start_date": "2026-07-22"
+      }
+    ]
+  }
+}

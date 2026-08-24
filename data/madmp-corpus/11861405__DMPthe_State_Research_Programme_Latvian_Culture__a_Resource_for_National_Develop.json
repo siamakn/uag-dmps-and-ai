@@ -1,0 +1,1579 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "5ca3ff51-3904-4232-a346-97847baa3fa4",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ance.kristala@lka.edu.lv",
+      "name" : "Ance Kristāla",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3349-859X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Pauls Daija (orcid:0000-0003-3349-859X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0000-2789-4903",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dina Suhanova (orcid:0009-0000-2789-4903)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8779-7758",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inese Sirica (orcid:0000-0002-8779-7758)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4841-1610",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilona Kunda (orcid:0000-0003-4841-1610)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1472-0813",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anda Laķe (orcid:0000-0002-1472-0813)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5366-4298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agita Gritane (orcid:0000-0001-5366-4298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8997-3228",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Goldberga (orcid:0000-0001-8997-3228)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4841-1610",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilona Kunda (orcid:0000-0003-4841-1610)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5366-4298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agita Gritane (orcid:0000-0001-5366-4298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3349-859X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Pauls Daija (orcid:0000-0003-3349-859X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8997-3228",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Goldberga (orcid:0000-0001-8997-3228)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8779-7758",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inese Sirica (orcid:0000-0002-8779-7758)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4841-1610",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilona Kunda (orcid:0000-0003-4841-1610)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5366-4298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Agita Gritane (orcid:0000-0001-5366-4298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7519-5450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Līga Vinogradova (orcid:0000-0002-7519-5450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0000-2789-4903",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dina Suhanova (orcid:0009-0000-2789-4903)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4841-1610",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilona Kunda (orcid:0000-0003-4841-1610)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4841-1610",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilona Kunda (orcid:0000-0003-4841-1610)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0644-3737",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ance Kristāla (orcid:0000-0003-0644-3737)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8779-7758",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inese Sirica (orcid:0000-0002-8779-7758)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-05-21T11:54:47Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Interneta aptaujas dati, kas ieg&#363;ti ar m&#275;r&#311;i identific&#275;t nodarbin&#257;t&#299;bas izaicin&#257;jumus kult&#363;ras un rado&#353;aj&#257; sektor&#257;, ietverot rado&#353;&#257;s personas statusa, soci&#257;l&#257;s aizsardz&#299;bas, taisn&#299;gas samaksas un m&#257;ksliniecisk&#257;s br&#299;v&#299;bas aspektus (rado&#353;ajiem profesion&#257;&#316;iem un absolventiem), k&#257; ar&#299; identific&#275;t darba tirgus un kult&#363;rizgl&#299;t&#299;bas savstarp&#275;jo atbilst&#299;bu (darba dev&#275;jiem).&#160; &#160;",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Interneta aptaujas dati, kas ieg&#363;ti ar m&#275;r&#311;i identific&#275;t nodarbin&#257;t&#299;bas izaicin&#257;jumus kult&#363;ras un rado&#353;aj&#257; sektor&#257;, ietverot rado&#353;&#257;s personas statusa, soci&#257;l&#257;s aizsardz&#299;bas, taisn&#299;gas samaksas un m&#257;ksliniecisk&#257;s br&#299;v&#299;bas aspektus (rado&#353;ajiem profesion&#257;&#316;iem un absolventiem), k&#257; ar&#299; identific&#275;t darba tirgus un kult&#363;rizgl&#299;t&#299;bas savstarp&#275;jo atbilst&#299;bu (darba dev&#275;jiem).&#160; &#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Aptauja par radošajiem profesionāļiem, kultūras un mākslas izglītības programmu absolventiem un KRI darba devējiem/The survey on creative professionals, arts graduates and CCI employers",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Sensit&#299;vi dati",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Kult&#363;ras un rado&#353;&#257; sektora p&#257;rst&#257;vjiem, m&#257;kslu universit&#257;&#353;u p&#257;rst&#257;vjiem,&#160; soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel, SPSS",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ilona Kunda (orcid:0000-0003-4841-1610)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-4841-1610\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Datu kop&#257; apkopotas liec&#299;bas par 154 iz&#353;&#363;t&#257;m vien&#299;b&#257;m (jostas vai to da&#316;as), kas b&#363;tiski papla&#353;ina priek&#353;statu par iz&#353;&#363;to jostu valk&#257;&#353;anas &#291;eogr&#257;fiju un daudzveid&#299;bu 19. - 20. gadsimta s&#257;kumam Latvij&#257;. Taj&#257; apkopotas zi&#326;as par kr&#257;jumiem (muzejiem un priv&#257;tkolekcij&#257;m), kuros atrodas iz&#353;&#363;to jostu liec&#299;bas (nor&#257;d&#299;ts nosaukums kr&#257;jum&#257;, uzskaites apz&#299;m&#275;jums, kad priek&#353;mets pie&#326;emts kr&#257;jum&#257;, valk&#257;&#353;anas vieta, laiks un izgatavot&#257;js, ja zin&#257;ms). Fiks&#275;ti jostu izm&#275;ri (garums, platums cm), aprakst&#299;ti izmantotie materi&#257;li, kr&#257;sas un raksts. Izdal&#299;tas tr&#299;s iz&#353;&#363;&#353;anas tehnikas &#8211; piln&#299;b&#257; ar p&#275;rl&#299;t&#275;m iz&#353;&#363;tas, piln&#299;b&#257; ar diegiem iz&#353;&#363;tas jostas vai kombin&#275;tas, kur iz&#353;uvums krustd&#363;rien&#257; papildin&#257;ts ar p&#275;rl&#299;&#353;u iz&#353;uvumu. Izdal&#299;ti tr&#299;s tipisk&#257;kie aizdares veidi (regul&#275;jama izm&#275;ra josta ar siksni&#326;u iek&#353;pus&#275;, divda&#316;&#299;ga josta ar spr&#257;dzi aizmugur&#275; uz S veida aizdari priek&#353;pus&#275;, &#299;pa&#353;i izgatavotas met&#257;la vai sudraba aizdares ar regul&#275;jamu va&#382;i&#326;u). Nor&#257;d&#299;ts vai jostas att&#275;ls ir public&#275;ts k&#257;d&#257; izdevum&#257;.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Datu kop&#257; apkopotas liec&#299;bas par 154 iz&#353;&#363;t&#257;m vien&#299;b&#257;m (jostas vai to da&#316;as), kas b&#363;tiski papla&#353;ina priek&#353;statu par iz&#353;&#363;to jostu valk&#257;&#353;anas &#291;eogr&#257;fiju un daudzveid&#299;bu 19. - 20. gadsimta s&#257;kumam Latvij&#257;. Taj&#257; apkopotas zi&#326;as par kr&#257;jumiem (muzejiem un priv&#257;tkolekcij&#257;m), kuros atrodas iz&#353;&#363;to jostu liec&#299;bas (nor&#257;d&#299;ts nosaukums kr&#257;jum&#257;, uzskaites apz&#299;m&#275;jums, kad priek&#353;mets pie&#326;emts kr&#257;jum&#257;, valk&#257;&#353;anas vieta, laiks un izgatavot&#257;js, ja zin&#257;ms). Fiks&#275;ti jostu izm&#275;ri (garums, platums cm), aprakst&#299;ti izmantotie materi&#257;li, kr&#257;sas un raksts. Izdal&#299;tas tr&#299;s iz&#353;&#363;&#353;anas tehnikas &#8211; piln&#299;b&#257; ar p&#275;rl&#299;t&#275;m iz&#353;&#363;tas, piln&#299;b&#257; ar diegiem iz&#353;&#363;tas jostas vai kombin&#275;tas, kur iz&#353;uvums krustd&#363;rien&#257; papildin&#257;ts ar p&#275;rl&#299;&#353;u iz&#353;uvumu. Izdal&#299;ti tr&#299;s tipisk&#257;kie aizdares veidi (regul&#275;jama izm&#275;ra josta ar siksni&#326;u iek&#353;pus&#275;, divda&#316;&#299;ga josta ar spr&#257;dzi aizmugur&#275; uz S veida aizdari priek&#353;pus&#275;, &#299;pa&#353;i izgatavotas met&#257;la vai sudraba aizdares ar regul&#275;jamu va&#382;i&#326;u). Nor&#257;d&#299;ts vai jostas att&#275;ls ir public&#275;ts k&#257;d&#257; izdevum&#257;.",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m99",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopas ar Nīcas kultūrtelpas tradicionālās kultūras elementu vizualizācijām mūsdienu kultūrvidē II \"Izšūtās jostas Latvijas muzeju krājumā\"/ \"Embroidered Belts in Latvian Museum Collections\"",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "&#352;obr&#299;d dati tiek uzglab&#257;ti dator&#257;, piek&#316;uvi aizsarg&#257; parole",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "5ad0e5ed-eb0d-ca2d-ec57-f0234dcbee68" : "Papildu izmaksas nav paredz&#275;tas",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "&#352;obr&#299;d papildu izmaksu nav",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "M&#257;kslas v&#275;sturniekiem, m&#257;kslas zin&#257;tniekiem, folkloras p&#275;tnieki, kult&#363;ras mantojuma p&#275;tnieki, amatnieki<div><br></div>",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Agita Gritane (orcid:0000-0001-5366-4298)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-5366-4298\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "Datiem nav termi&#326;a",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "P&#275;c kult&#363;ras pat&#275;ri&#326;a dienasgr&#257;matu &#299;steno&#353;anas tiks veiktas padzi&#316;in&#257;t&#257;s intervijas par to saturu.&#160;",
+      "distribution" : [ {
+        "byte_size" : 5,
+        "format" : [ "DOC" ],
+        "license" : [ ],
+        "title" : "P&#275;c kult&#363;ras pat&#275;ri&#326;a dienasgr&#257;matu &#299;steno&#353;anas tiks veiktas padzi&#316;in&#257;t&#257;s intervijas par to saturu.&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "14369148-aac3-bb55-6b0a-810bc8f66d88",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Padziļināto interviju transkripcijas ar Latvijas iedzīvotājiem par kultūras patēriņa dienasgrāmatām",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Person&#299;gas inform&#257;cijas izpau&#353;ana",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "Teksta dokuments .doc form&#257;t&#257;, atv&#275;rt ar MS Word vai l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\",\"pseudonymization\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Word vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Vinogradova (orcid:0000-0002-7519-5450)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-7519-5450\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Datu kop&#257; tiks apkopots vizu&#257;lais materi&#257;ls no LNB kolekcijas ar m&#275;r&#311;i veidot sievie&#353;u fotogr&#257;fiju arh&#299;vu, kas b&#363;s analiz&#275;jams ar digit&#257;lo humanit&#257;ro zin&#257;t&#326;u metod&#275;m. Datu kopas pamat&#257; b&#363;s latvie&#353;u fotogr&#257;fes Z. Dzividzinskas arh&#299;vs, kas ar laiku (v&#275;l p&#275;c projekta nosl&#275;guma) tiks papildin&#257;ts neliel&#257;m priv&#257;to arh&#299;vu izlas&#275;m, t&#257;d&#275;j&#257;di veicinot LNB un arh&#299;vu &#299;pa&#353;nieku sadarb&#299;bu, k&#257; ar&#299; sievie&#353;u arh&#299;vu pieejam&#299;bu pla&#353;&#257;kam p&#275;tnieku lokam.",
+      "distribution" : [ {
+        "byte_size" : 500,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Datu kop&#257; tiks apkopots vizu&#257;lais materi&#257;ls no LNB kolekcijas ar m&#275;r&#311;i veidot sievie&#353;u fotogr&#257;fiju arh&#299;vu, kas b&#363;s analiz&#275;jams ar digit&#257;lo humanit&#257;ro zin&#257;t&#326;u metod&#275;m. Datu kopas pamat&#257; b&#363;s latvie&#353;u fotogr&#257;fes Z. Dzividzinskas arh&#299;vs, kas ar laiku (v&#275;l p&#275;c projekta nosl&#275;guma) tiks papildin&#257;ts neliel&#257;m priv&#257;to arh&#299;vu izlas&#275;m, t&#257;d&#275;j&#257;di veicinot LNB un arh&#299;vu &#299;pa&#353;nieku sadarb&#299;bu, k&#257; ar&#299; sievie&#353;u arh&#299;vu pieejam&#299;bu pla&#353;&#257;kam p&#275;tnieku lokam.",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m99",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopa ar attēlu izlasēm no sieviešu fotogrāfu arhīviem 20. gadsimta otrajā pusē",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati tiks uzglab&#257;ti LNB DOM sist&#275;m&#257;, aizsarg&#257;ti atbilsto&#353;i LNB repozit&#257;rija standarta vadl&#299;nij&#257;m (ungunssiena, &#353;ifr&#275;&#353;ana).&#160;",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "5ad0e5ed-eb0d-ca2d-ec57-f0234dcbee68" : "Izmaksas, ja attiecin&#257;ms, tiks segtas no projekta vai instit&#363;cijas (LNB) l&#299;dzek&#316;iem",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Nepiecie&#353;amas at&#316;aujas no priv&#257;to arh&#299;vu tur&#275;t&#257;jiem&#160;",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "Izmaksas, ja attiecin&#257;ms, tiks segtas no projekta vai instit&#363;cijas (LNB) l&#299;dzek&#316;iem",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "LNB DOM",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Datu kopu veido arh&#299;va materi&#257;li",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "TIFF skat&#257;mi ar jebkura att&#275;lu skat&#299;&#353;anas programma",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "Jebkura att&#275;lu skat&#299;&#353;anas programma",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://dom.lndb.lv/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Pauls Daija (orcid:0000-0003-3349-859X)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-3349-859X\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Goldberga (orcid:0000-0001-8997-3228)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-8997-3228\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "Datiem nav termi&#326;a",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Latvijas Nacion&#257;l&#257;s bibliot&#275;kas izveidotais datu repozitorijs darbojas k&#257; instit&#363;cijas galven&#257; datu uzglab&#257;&#353;anas vietne",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Encryption\",\"Firewall\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Dati tiek v&#257;kti akad&#275;miskas publik&#257;cijas izstr&#257;des nepiecie&#353;am&#299;b&#257;m",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Dati tiek v&#257;kti akad&#275;miskas publik&#257;cijas izstr&#257;des nepiecie&#353;am&#299;b&#257;m",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m99",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopa par nemateriālā kultūras mantojuma tēmām padomju okupācijas vizuālajā mākslā un amatniecībā",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "&#352;obr&#299;d dati tiek uzglab&#257;ti dator&#257;, piek&#316;uvi aizsarg&#257; parole",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "5ad0e5ed-eb0d-ca2d-ec57-f0234dcbee68" : "Papildu izmaksas nav paredz&#275;tas",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "&#352;obr&#299;d papildu izmaksu nav",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "M&#257;kslas v&#275;sturniekiem, m&#257;kslas zin&#257;tniekiem, kult&#363;ras mantojuma p&#275;tnieki<div><br></div>",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Inese Sirica (orcid:0000-0002-8779-7758)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-8779-7758\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "Datiem nav termi&#326;a",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "2023. gada novembr&#299;-decembr&#299; 9 Latvijas kinote&#257;tros tika &#299;stenota auditorijas izp&#275;te, izmantojot aptaujas (tie&#353;&#257;s intervijas &#257;rpus m&#257;jas) metodi. Aptauj&#257; tika p&#275;t&#299;ti kinote&#257;tru auditorijas pat&#275;ri&#326;a paradumi, t.sk. digit&#257;lais un Latvijas filmu pat&#275;ri&#326;&#353;. Aptauj&#257;tais respondentu skaits - 650.&#160;",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "2023. gada novembr&#299;-decembr&#299; 9 Latvijas kinote&#257;tros tika &#299;stenota auditorijas izp&#275;te, izmantojot aptaujas (tie&#353;&#257;s intervijas &#257;rpus m&#257;jas) metodi. Aptauj&#257; tika p&#275;t&#299;ti kinote&#257;tru auditorijas pat&#275;ri&#326;a paradumi, t.sk. digit&#257;lais un Latvijas filmu pat&#275;ri&#326;&#353;. Aptauj&#257;tais respondentu skaits - 650.&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Kvantitatīvo datu kopa par kinoteātru auditorijas patērēšanas paradumiem",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati glab&#257;jas aiz paroles person&#299;gaj&#257; dator&#257;",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Kult&#363;ras un rado&#353;&#257; sektora p&#257;rst&#257;vjiem,&#160; soci&#257;lo un humanit&#257;ro zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel, SPSS",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Aptauj&#257; nodro&#353;ni&#257;ta anonimit&#257;te, person&#299;ga inform&#257;cija netiek fiks&#275;ta, aptaujas tiek numur&#275;tas, interv&#275;t&#257;ji instru&#275;ti par anonimit&#257;ti un konfidencialit&#257;ti. Respondentiem iesp&#275;ja atteikties atbild&#275;t uz jaut&#257;jumiem.",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Vinogradova (orcid:0000-0002-7519-5450)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-7519-5450\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Interneta aptaujas dati ar m&#275;r&#311;i analiz&#275;t nodarbin&#257;t&#299;bu laikmet&#299;g&#257;s dejas nozar&#275; k&#257; nedro&#353;as, vienlaikus motiv&#275;tas nodarbin&#257;t&#299;bas piem&#275;ru.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Aptauja par nodarbin&#257;t&#299;bu laikmet&#299;g&#257;s dejas nozar&#275;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Aptauja par nodarbinātību laikmetīgās dejas nozarē",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Sensit&#299;vi dati",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Kult&#363;ras un rado&#353;&#257; sektora p&#257;rst&#257;vjiem, m&#257;kslu universit&#257;&#353;u p&#257;rst&#257;vjiem,&#160; soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel, SPSS",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ilona Kunda (orcid:0000-0003-4841-1610)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-4841-1610\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "",
+      "distribution" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Fokusgrupu diskusiju transkripcijas par digitalizācijas izraisītas ieņēmumu gūšanas (avota) izmaiņām",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "FGD dati var satur&#275;t sensit&#299;vu inform&#257;ciju",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "Teksta dokuments .doc form&#257;t&#257;, atv&#275;rt ar MS Word vai l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\",\"pseudonymization\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Word vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Vinogradova (orcid:0000-0002-7519-5450)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-7519-5450\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Datu kop&#257; apkopotas liec&#299;bas par 154 iz&#353;&#363;t&#257;m vien&#299;b&#257;m (jostas vai to da&#316;as), kas b&#363;tiski papla&#353;ina priek&#353;statu par iz&#353;&#363;to jostu valk&#257;&#353;anas &#291;eogr&#257;fiju un daudzveid&#299;bu 19. - 20. gadsimta s&#257;kumam Latvij&#257;. Taj&#257; apkopotas zi&#326;as par kr&#257;jumiem (muzejiem un priv&#257;tkolekcij&#257;m), kuros atrodas iz&#353;&#363;to jostu liec&#299;bas (nor&#257;d&#299;ts nosaukums kr&#257;jum&#257;, uzskaites apz&#299;m&#275;jums, kad priek&#353;mets pie&#326;emts kr&#257;jum&#257;, valk&#257;&#353;anas vieta, laiks un izgatavot&#257;js, ja zin&#257;ms). Fiks&#275;ti jostu izm&#275;ri (garums, platums cm), aprakst&#299;ti izmantotie materi&#257;li, kr&#257;sas un raksts. Izdal&#299;tas tr&#299;s iz&#353;&#363;&#353;anas tehnikas &#8211; piln&#299;b&#257; ar p&#275;rl&#299;t&#275;m iz&#353;&#363;tas, piln&#299;b&#257; ar diegiem iz&#353;&#363;tas jostas vai kombin&#275;tas, kur iz&#353;uvums krustd&#363;rien&#257; papildin&#257;ts ar p&#275;rl&#299;&#353;u iz&#353;uvumu. Izdal&#299;ti tr&#299;s tipisk&#257;kie aizdares veidi (regul&#275;jama izm&#275;ra josta ar siksni&#326;u iek&#353;pus&#275;, divda&#316;&#299;ga josta ar spr&#257;dzi aizmugur&#275; uz S veida aizdari priek&#353;pus&#275;, &#299;pa&#353;i izgatavotas met&#257;la vai sudraba aizdares ar regul&#275;jamu va&#382;i&#326;u). Nor&#257;d&#299;ts vai jostas att&#275;ls ir public&#275;ts k&#257;d&#257; izdevum&#257;.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Datu kop&#257; apkopotas liec&#299;bas par 154 iz&#353;&#363;t&#257;m vien&#299;b&#257;m (jostas vai to da&#316;as), kas b&#363;tiski papla&#353;ina priek&#353;statu par iz&#353;&#363;to jostu valk&#257;&#353;anas &#291;eogr&#257;fiju un daudzveid&#299;bu 19. - 20. gadsimta s&#257;kumam Latvij&#257;. Taj&#257; apkopotas zi&#326;as par kr&#257;jumiem (muzejiem un priv&#257;tkolekcij&#257;m), kuros atrodas iz&#353;&#363;to jostu liec&#299;bas (nor&#257;d&#299;ts nosaukums kr&#257;jum&#257;, uzskaites apz&#299;m&#275;jums, kad priek&#353;mets pie&#326;emts kr&#257;jum&#257;, valk&#257;&#353;anas vieta, laiks un izgatavot&#257;js, ja zin&#257;ms). Fiks&#275;ti jostu izm&#275;ri (garums, platums cm), aprakst&#299;ti izmantotie materi&#257;li, kr&#257;sas un raksts. Izdal&#299;tas tr&#299;s iz&#353;&#363;&#353;anas tehnikas &#8211; piln&#299;b&#257; ar p&#275;rl&#299;t&#275;m iz&#353;&#363;tas, piln&#299;b&#257; ar diegiem iz&#353;&#363;tas jostas vai kombin&#275;tas, kur iz&#353;uvums krustd&#363;rien&#257; papildin&#257;ts ar p&#275;rl&#299;&#353;u iz&#353;uvumu. Izdal&#299;ti tr&#299;s tipisk&#257;kie aizdares veidi (regul&#275;jama izm&#275;ra josta ar siksni&#326;u iek&#353;pus&#275;, divda&#316;&#299;ga josta ar spr&#257;dzi aizmugur&#275; uz S veida aizdari priek&#353;pus&#275;, &#299;pa&#353;i izgatavotas met&#257;la vai sudraba aizdares ar regul&#275;jamu va&#382;i&#326;u). Nor&#257;d&#299;ts vai jostas att&#275;ls ir public&#275;ts k&#257;d&#257; izdevum&#257;.",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m99",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopas ar Nīcas kultūrtelpas tradicionālās kultūras elementu vizualizācijām mūsdienu kultūrvidē I \"Izšūtās jostas Latvijas muzeju krājumā\"/ \"Embroidered Belts in Latvian Museum Collections\"",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "&#352;obr&#299;d dati tiek uzglab&#257;ti dator&#257;, piek&#316;uvi aizsarg&#257; parole",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "5ad0e5ed-eb0d-ca2d-ec57-f0234dcbee68" : "Izmaksas tiek segtas no VPP CERS l&#299;dzk&#316;iem",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Att&#275;lu public&#275;&#353;anai nepiecie&#353;ama Latvijas Nacion&#257;l&#257; v&#275;stures muzeja at&#316;auja",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "Izmaksas tiek segtas no VPP CERS l&#299;dzk&#316;iem",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "M&#257;kslas v&#275;sturniekiem, m&#257;kslas zin&#257;tniekiem, folkloras p&#275;tnieki, kult&#363;ras mantojuma p&#275;tnieki, amatnieki<div><br></div>",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Agita Gritane (orcid:0000-0001-5366-4298)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-5366-4298\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "Datiem nav termi&#326;a",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "",
+      "distribution" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Ekspertu interviju transkripcijas par transformatīvās izturētspējas labās prakses digitālo inovāciju ieviešanas jomā",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "Teksta dokuments .doc form&#257;t&#257;, atv&#275;rt ar MS Word vai l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\",\"pseudonymization\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Word vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Vinogradova (orcid:0000-0002-7519-5450)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-7519-5450\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Ar Kult&#363;ras pat&#275;rina dienasgr&#257;matu pal&#299;dz&#299;bu tiks kvalitat&#299;vi p&#275;t&#299;ti Latvijas iedz&#299;vot&#257;ju kult&#363;ras (t.sk. digit&#257;l&#257;) pat&#275;ri&#326;a paradumi. Dienasgr&#257;matas dos inform&#257;ciju par &#299;stenotaj&#257;m kult&#363;ras pat&#275;ri&#326;a aktivit&#257;t&#275;m konkr&#275;ta perioda ietvaros, k&#257; ar&#299; to raksturojumu.&#160;",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Ar Kult&#363;ras pat&#275;rina dienasgr&#257;matu pal&#299;dz&#299;bu tiks kvalitat&#299;vi p&#275;t&#299;ti Latvijas iedz&#299;vot&#257;ju kult&#363;ras (t.sk. digit&#257;l&#257;) pat&#275;ri&#326;a paradumi. Dienasgr&#257;matas dos inform&#257;ciju par &#299;stenotaj&#257;m kult&#363;ras pat&#275;ri&#326;a aktivit&#257;t&#275;m konkr&#275;ta perioda ietvaros, k&#257; ar&#299; to raksturojumu.&#160;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Kultūras patēriņa dienasgrāmatas",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : ".xsl - MS Excel vai l&#299;dz&#299;gas",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Līga Vinogradova (orcid:0000-0002-7519-5450)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-7519-5450\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Ar da&#316;&#275;ji struktur&#275;tu interviju pal&#299;dz&#299;bu veidota datu kopa, kas ieg&#363;ta ar m&#275;r&#311;i analiz&#275;t sievie&#353;u profesion&#257;lo reprezent&#257;ciju arhitekt&#363;r&#257;.",
+      "distribution" : [ {
+        "byte_size" : 5,
+        "format" : [ "DOC" ],
+        "license" : [ ],
+        "title" : "Ar da&#316;&#275;ji struktur&#275;tu interviju pal&#299;dz&#299;bu veidota datu kopa, kas ieg&#363;ta ar m&#275;r&#311;i analiz&#275;t sievie&#353;u profesion&#257;lo reprezent&#257;ciju arhitekt&#363;r&#257;.",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "14369148-aac3-bb55-6b0a-810bc8f66d88",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopa par sieviešu profesionālo pārstāvniecību un nodarbinātību arhitektūrā/Women's professional representation and employment in Architecture",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Interviju dati var satur&#275;t sensit&#299;vu inform&#257;ciju",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "Teksta dokuments .doc form&#257;t&#257;, atv&#275;rt ar MS Word vai l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\",\"pseudonymization\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Word vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Dina Suhanova (orcid:0009-0000-2789-4903)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0009-0000-2789-4903\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Interneta aptaujas dati, kas ieg&#363;ti ar m&#275;r&#311;i identific&#275;t kult&#363;ras un m&#257;kslu universit&#257;&#353;u absolventu karjeras trajektorijas.",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Aptauja par nodarbin&#257;t&#299;bu laikmet&#299;g&#257;s dejas nozar&#275;",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopa ar absolventu darba vietām gada laikā pēc studiju programmas absolvēšanas",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Sensit&#299;vi dati",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Kult&#363;ras un rado&#353;&#257; sektora p&#257;rst&#257;vjiem, m&#257;kslu universit&#257;&#353;u p&#257;rst&#257;vjiem,&#160; soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel, SPSS",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ilona Kunda (orcid:0000-0003-4841-1610)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-4841-1610\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Profesion&#257;l&#257;s doktorant&#363;ras stud&#275;jo&#353;o - kult&#363;ras un rado&#353;&#257; sektora profesion&#257;&#316;u - pieredzi dokument&#275;jo&#353;i dati, kuru m&#275;r&#311;is ir sniegt ieskatu profesion&#257;l&#257;s doktorant&#363;ras k&#257; kult&#363;rizgl&#299;t&#299;bas augst&#257;k&#257; l&#299;me&#326;a studiju pienesum&#257; stud&#275;jo&#353;o profesion&#257;lajai pa&#353;realiz&#257;cijai.",
+      "distribution" : [ {
+        "byte_size" : 5,
+        "format" : [ "DOC" ],
+        "license" : [ ],
+        "title" : "Profesion&#257;l&#257;s doktorant&#363;ras stud&#275;jo&#353;o - kult&#363;ras un rado&#353;&#257; sektora profesion&#257;&#316;u - pieredzi dokument&#275;jo&#353;i dati, kuru m&#275;r&#311;is ir sniegt ieskatu profesion&#257;l&#257;s doktorant&#363;ras k&#257; kult&#363;rizgl&#299;t&#299;bas augst&#257;k&#257; l&#299;me&#326;a studiju pienesum&#257; stud&#275;jo&#353;o profesion&#257;lajai pa&#353;realiz&#257;cijai.",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "14369148-aac3-bb55-6b0a-810bc8f66d88",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Profesionālās doktorantūras  studējošo autoetnogrāfiskās pieredzes dienasgrāmatas/ Professional doctoral programme students' autoethnographic diaries",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "Dati pieejami repozitorij&#257; p&#275;c paroles sa&#326;em&#353;anas",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "ef61915e-d6d6-9b5d-8cac-6e69bc9a31fe" : "Dati var satur&#275;t sensit&#299;vu inform&#257;ciju",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "true",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "Humanit&#257;ro un soci&#257;lo zin&#257;t&#326;u p&#275;tniekiem",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "Teksta dokuments .doc form&#257;t&#257;, atv&#275;rt ar MS Word vai l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Pieejami p&#275;c piepras&#299;juma, sazinoties ar datu p&#257;rvald&#299;bas speci&#257;listu",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "160cc288-461f-5811-932a-035c94f7b602" : "[\"anonymising data\",\"data accompanied by informed consent statements\",\"pseudonymization\"]",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Word vai l&#299;dz&#299;gas",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "1f7a3d0b-b683-12b5-1637-bc7ef5cee57a" : "Sensit&#299;vie dati tiks anonimiz&#275;ti&#160;",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "true",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Ilona Kunda (orcid:0000-0003-4841-1610)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-4841-1610\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "true",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "true",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Raksta &#34;Kri&#353;j&#257;&#326;a Barona 150. dzim&#353;anas dienas noz&#299;me korel&#257;cij&#257; ar vizu&#257;lo m&#257;kslu&#34; izstr&#257;des proces&#257; veidota datu kopa: apkopoti Latvijas muzeju kolekciju, periodikas materi&#257;lu, izst&#257;&#382;u katalogu materi&#257;li",
+      "distribution" : [ {
+        "byte_size" : 10,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Dati tiek v&#257;kti akad&#275;miskas publik&#257;cijas izstr&#257;des nepiecie&#353;am&#299;b&#257;m",
+        "additional_properties" : {
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m99",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Datu kopa par Atmodas laika tēmām vizuālajā mākslā",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "ff8d7690-bc84-5186-c469-f19c7d656aa0" : "Tie&#353;ais atbild&#299;gais par datu ieguvi un sagatavo&#353;anu ir apak&#353;projekta vad&#299;t&#257;js, par depon&#275;&#353;anu - datu p&#257;rvald&#299;bas speci&#257;lists<div><br></div>",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "MB",
+        "dbb22d72-4488-a432-1719-8dd6fce1eeb9" : "Starptautiski atz&#299;ta licence, piem&#275;rojama valsts p&#275;t&#299;jumu programmu ietvaros rad&#299;tajiem datiem",
+        "4e8c30f7-a8a0-5054-68b0-af34135adf77" : "&#352;obr&#299;d dati tiek uzglab&#257;ti dator&#257;, piek&#316;uvi aizsarg&#257; parole",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "true",
+        "5ad0e5ed-eb0d-ca2d-ec57-f0234dcbee68" : "Papildu izmaksas nav paredz&#275;tas",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "63c3f77e-f791-8c95-37c1-d027e6170a19" : "&#352;obr&#299;d papildu izmaksu nav",
+        "6b19c0cb-5282-ebcc-770e-c477726f2a03" : "Zenodo",
+        "f421ef94-3e1b-5038-e076-065ab769287d" : "Dati iepriek&#353; nav tiku&#353;i iev&#257;kti<div><br></div>",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "M&#257;kslas v&#275;sturniekiem, m&#257;kslas zin&#257;tniekiem, kult&#363;ras mantojuma p&#275;tnieki<div><br></div>",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "932c9527-3949-9e34-a82f-8ad4d0aa17ed" : "XLS, CSV, atverams ar MS Excel, SPSS un l&#299;dz&#299;g&#257;m programm&#257;m",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "true",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "false",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-09-17",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "MS Excel",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "ef63f445-42be-39f9-0f75-1dab9f30a749" : "https://zenodo.org/",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Ance Kristāla (orcid:0000-0003-0644-3737)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0003-0644-3737\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Inese Sirica (orcid:0000-0002-8779-7758)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-8779-7758\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "false",
+        "f04c5804-64fb-1919-339c-b61de8e54469" : "Datiem nav termi&#326;a",
+        "069dbbd1-1755-c03a-7c9a-4e8003e84e2e" : "Zenodo repozitoriju p&#257;rvalda CERN, nodro&#353;inot m&#363;&#382;a pieeju un ilgstam&#299;bu, k&#257; ar&#299; datu dro&#353;&#299;bu",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Passwords\"]"
+      }
+    } ],
+    "description" : "Projekts &#8220;Latvijas kult&#363;ras ekosist&#275;ma k&#257; resurss valsts iztur&#275;tsp&#275;jai un ilgtsp&#275;jai&#8221;/CERS izstr&#257;d&#257;ts, lai atkl&#257;tu Latvijas ilgtsp&#275;j&#299;gai att&#299;st&#299;bai un iztur&#275;tsp&#275;jai noz&#299;m&#299;g&#257;k&#257;s m&#257;kslas un kult&#363;ras v&#275;rt&#299;bas, k&#257; ar&#299; nov&#275;rt&#275;tu un argument&#275;tu Latvijas kult&#363;ras ekosist&#275;mas resursietilp&#299;bu. Projekt&#257; tiks p&#275;t&#299;ti noz&#299;m&#299;g&#257;kie Latvijas kult&#363;ras aktu&#257;lie un v&#275;sturiskie procesi, kult&#363;ras un rado&#353;&#257;s nozares k&#257; &#353;o procesu &#299;stenot&#257;jas.<div><br></div><div>Izmantojot kvalitat&#299;vas un kvantitat&#299;vas p&#275;tniec&#299;bas metodes, &#353;&#311;&#275;rzgriezuma p&#275;t&#299;jumus un gad&#299;jumu studijas, projekt&#257; tiek analiz&#275;tas kult&#363;ras un rado&#353;o nozaru (literat&#363;ras, m&#363;zikas, te&#257;tra un dejas m&#257;kslas, vizu&#257;l&#257;s m&#257;kslas, dizaina, arhitekt&#363;ras, audiovizu&#257;l&#257;s un filmu m&#257;kslas, tradicion&#257;l&#257;s kult&#363;ras) aktu&#257;l&#257;s att&#299;st&#299;bas tendences: kult&#363;ras pied&#257;v&#257;jums un pieejam&#299;ba; nodarbin&#257;t&#299;ba un ie&#326;&#275;mumu g&#363;&#353;anas mode&#316;i, izgl&#299;t&#299;bas pied&#257;v&#257;juma atbilst&#299;ba darba tirgus piepras&#299;jumam un t&#257; att&#299;st&#299;bas tendenc&#275;m; digit&#257;lo tehnolo&#291;iju ietekme uz kult&#363;ras pat&#275;ri&#326;a paradumiem, kult&#363;ras satura rad&#299;&#353;anas un izplat&#299;&#353;anas procesiem un ie&#326;&#275;mumu g&#363;&#353;anu no rado&#353;&#257;s darb&#299;bas.</div><div><br></div><div>Projekta ievaros tiks att&#299;st&#299;ta jauna zin&#257;&#353;anu b&#257;ze par v&#275;sturisko procesu, tostarp padomju okup&#257;cijas laika, ietekmi uz m&#363;sdienu kult&#363;ras, m&#257;kslas un rado&#353;ajiem procesiem.&#160;</div><div><br></div><div>Tiks p&#275;t&#299;ta un nov&#275;rt&#275;ta ar&#299; kult&#363;ras un rado&#353;o nozaru soci&#257;l&#257; un ekonomisk&#257; ietekme, papla&#353;inot zin&#257;&#353;anas un izpratni par kult&#363;ras un rado&#353;o nozaru eso&#353;o un potenci&#257;lo pienesumu un lomu valsts ilgtsp&#275;j&#299;g&#257; att&#299;st&#299;b&#257;. &#298;pa&#353;a uzman&#299;ba piev&#275;rsta metodolo&#291;ijas, tai skait&#257; soci&#257;l&#257;s un ekonomisk&#257;s ietekmes nov&#275;rt&#275;juma pieeju noteik&#353;anai, m&#257;ksliniecisko p&#275;t&#299;jumu un digit&#257;lo meto&#382;u att&#299;st&#299;bai.&#160;</div><div><br></div><div>Projekta zin&#257;tnisko kvalit&#257;ti, ievie&#353;anu un rezult&#257;tu ietekmi nodro&#353;in&#257;s piecu zin&#257;tnisko instit&#363;ciju konsorcijs (Latvijas Kult&#363;ras akad&#275;mija, J&#257;zepa V&#299;tola Latvijas M&#363;zikas akad&#275;mija, Latvijas M&#257;kslas akad&#275;mija, Latvijas Nacion&#257;l&#257; bibliot&#275;ka, Latvijas Universit&#257;tes Literat&#363;ras, folkloras un m&#257;kslas instit&#363;ts), kura kapacit&#257;ti nosaka zin&#257;tnisk&#257;s darb&#299;bas rezult&#257;ti; iek&#353;&#275;j&#257; un starptautisk&#257; partner&#299;ba; p&#275;tniec&#299;bas, studiju un m&#257;ksliniecisk&#257;s jaunrades siner&#291;ija, cie&#353;a saikne ar kult&#363;ras un m&#257;kslas procesiem. P&#275;t&#299;jums padzi&#316;in&#257;ti un starpdisciplin&#257;ri skata kult&#363;ras un m&#257;kslas vidi, veidojot pla&#353;u ietekmes m&#275;rogu politik&#257;, nozar&#275; un izgl&#299;t&#299;b&#257;.</div><div><br></div><div>P&#275;t&#299;juma ietvaros paredz&#275;ts izveidot 17 datu kopas.</div>",
+    "dmp_id" : {
+      "identifier" : "7a3fcc8b-41f3-49e3-abab-de25476a93a6",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "lav",
+    "modified" : "2024-06-16T19:12:02Z",
+    "project" : [ {
+      "description" : "Projekta mērķis ir radīt jaunas zināšanas, balstoties starpdisciplinārā pētnieciskā pieejā, par: 1) KRS (kultūras un radošā sektora) izturētspējas izpausmēm pašreizējos procesos, īpaši izgaismojot kultūras piedāvājuma un pieejamības dinamiku klātienes un digitālajā vidē, kā arī nozares nodarbinātības un izglītības procesus; 2) saikni ar vēsturiskajiem procesiem, uzsverot un izvērtējot padomju perioda lomu pašreizējās kultūras un mākslas izpratnē; 3) sociālās un ekonomiskās ietekmes izpausmēm sabiedrības ilgtspējīgā attīstībā. Mērķis tiks sasniegts, pielietojot trīs galvenos metateorētiskos jēdzienus: ekosistēma, izturētspēja un ilgtspēja.",
+      "end" : "Wed May 21 11:54:47 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "90000042963",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "VPP-MM-LKRVA-2023/1-0001",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue May 21 11:54:47 UTC 2024",
+      "title" : "the State Research Programme “Latvian Culture – a Resource for National Development” (2023–2026)",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERS ",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{\"3b63e447-d5f6-f016-0cb5-c451e0ca228e\":\"2024-06-16\"}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "5ca3ff51-3904-4232-a346-97847baa3fa4",
+      "publicDate" : "2024-05-21T11:46:31.661Z",
+      "blueprintId" : "eb02f2ae-69fd-456d-8143-6b0a98af64c4"
+    }
+  }
+}

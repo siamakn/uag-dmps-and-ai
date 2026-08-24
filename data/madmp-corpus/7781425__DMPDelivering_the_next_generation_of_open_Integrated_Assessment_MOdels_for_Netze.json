@@ -1,0 +1,65 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "0692564f-70fa-4409-a36c-5e4498c400be",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "gxexakis@holisticsa.gr",
+      "name" : "Georgios Xexakis",
+      "additional_properties" : { }
+    },
+    "contributor" : [ ],
+    "cost" : [ ],
+    "created" : "2023-02-15T11:48:18Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Not available" ],
+      "dataset_id" : {
+        "identifier" : "1af7761d-c696-4dc4-8319-a9f0465ce771",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<p>This dataset aims to collect some initial information on how we plan to develop the new models of the DIAMOND project and link them to other tools and modules.</p>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "DIAMOND D3.1 - Initial development plan: Surveys",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "3d43ba45-25fa-4815-81b4-9bf22ecd8316"
+      }
+    } ],
+    "description" : "<div><b>About this machine-actionable data management plan (maDMP)</b><br></div>The open maDMP will guide all data collection, processing, production, and storage of the Horizon Europe DIAMOND project (Grant Agreement No. 101081179). The maDMP in ARGOS describes all datasets that will be created, managed, and curated in the context of the project. All datasets will be stored in the project's community in Zenodo (<a href=\"https://zenodo.org/communities/diamond/\" target=\"_blank\">https://zenodo.org/communities/diamond/</a>) and linked to the maDMP in ARGOS. In parallel, a report has been published in March 2023 with general guidelines for all project datasets, including a description of expected project data, FAIR data handing, data security, resources, and ethical aspects. This report (Deliverable 6.1 of the project) will be updated every year and will serve as a guide for all consortium partners on how to manage datasets and how to update the maDMP in ARGOS with adequate descriptions and metadata for these datasets.&#160;<div><br></div><div><div><span><b>About the project</b></span></div><div><span>DIAMOND will update, upgrade, and fully open six Integrated Assessment Models (IAMs) that are emblematic in scientific and policy processes, improving their sectoral and technological detail, spatiotemporal resolution, and geographic granularity. It will further enhance modelling capacity to assess the feasibility and desirability of Paris-compliant mitigation pathways, their interplay with adaptation, circular economy, and other SDGs, their distributional and equity effects, and their resilience to extremes, as well as robust risk management and investment strategies. This will be done via integration of tools and insights from psychology, finance research, behavioural and labour economics, operational research, and physical science. The project will develop a transdisciplinary scientific approach to legitimise the implementation process and co-create research questions that stretch the frontiers of climate science, as well as establish vibrant communities of practice to transparently open model enhancements and to develop capacities, thereby lowering the entrance barriers to the established IAM community.</span></div></div>",
+    "dmp_id" : {
+      "identifier" : "de2a89ba-9d7a-48ab-ab64-ecab2bd19674",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-03-29T12:18:31Z",
+    "project" : [ {
+      "end" : "Thu Feb 15 11:48:18 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101081179",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Wed Feb 15 11:48:18 UTC 2023",
+      "title" : "Delivering the next generation of open Integrated Assessment MOdels for Net-zero, sustainable Development",
+      "additional_properties" : { }
+    } ],
+    "title" : "DIAMOND - Machine-Actionable Data Management Plan",
+    "additional_properties" : {
+      "templates" : [ "3d43ba45-25fa-4815-81b4-9bf22ecd8316" ]
+    }
+  }
+}

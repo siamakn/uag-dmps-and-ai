@@ -1,0 +1,316 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "d0ca8cea-e2e8-4b5f-9378-a4db49c9081f",
+        "type" : "other"
+      },
+      "mbox" : "arcangelo.massari@studio.unibo.it",
+      "name" : "Arcangelo Massari"
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6391-4198",
+        "type" : "orcid"
+      },
+      "name" : "Deniz Tural (orcid:0000-0002-6391-4198)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7363-6737",
+        "type" : "orcid"
+      },
+      "name" : "Cristian Santini (orcid:0000-0001-7363-6737)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2133-8735",
+        "type" : "orcid"
+      },
+      "name" : "Ricarda Boente (orcid:0000-0002-2133-8735)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8420-0696",
+        "type" : "orcid"
+      },
+      "name" : "Arcangelo Massari (orcid:0000-0002-8420-0696)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2133-8735",
+        "type" : "orcid"
+      },
+      "name" : "Ricarda Boente (orcid:0000-0002-2133-8735)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8420-0696",
+        "type" : "orcid"
+      },
+      "name" : "Arcangelo Massari (orcid:0000-0002-8420-0696)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6391-4198",
+        "type" : "orcid"
+      },
+      "name" : "Deniz Tural (orcid:0000-0002-6391-4198)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7363-6737",
+        "type" : "orcid"
+      },
+      "name" : "Cristian Santini (orcid:0000-0001-7363-6737)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7363-6737",
+        "type" : "orcid"
+      },
+      "name" : "Cristian Santini (orcid:0000-0001-7363-6737)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2133-8735",
+        "type" : "orcid"
+      },
+      "name" : "Ricarda Boente (orcid:0000-0002-2133-8735)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8420-0696",
+        "type" : "orcid"
+      },
+      "name" : "Arcangelo Massari (orcid:0000-0002-8420-0696)"
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6391-4198",
+        "type" : "orcid"
+      },
+      "name" : "Deniz Tural (orcid:0000-0002-6391-4198)"
+    } ],
+    "cost" : [ ],
+    "created" : "2021-04-26T19:03:26Z",
+    "dataset" : [ {
+      "dataset_id" : {
+        "identifier" : "318ae226-1448-4f3b-81de-b21b17667b7a",
+        "type" : "other"
+      },
+      "description" : "This dataset contains the source code used to clean a CSV list of invalid DOI names and to output the correct ones, the classes of errors, and the ones that were not possible to fix automatically. The data we process is an example of DOI names found in Crossref. In particular, four classes of errors are addressed: previously invalid DOIs become valid, prefix errors, suffix errors, and other type errors.",
+      "distribution" : [ {
+        "access_url" : "[To develop a product, To improve a product]",
+        "additional_properties" : { }
+      } ],
+      "keyword" : [ "research data", "research data", "research data", "research data", "research data", "data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "crossref", "doi", "open citations", "coci", "doi", "open citations", "crossref", "python", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data", "research data" ],
+      "language" : "eng",
+      "metadata" : [ {
+        "metadata_standard_id" : {
+          "identifier" : "http://purl.org/spar/datacite",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "sensitive_data" : "unknown",
+      "title" : "Classes of errors in DOI names: code",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "field-NpLT2" : "true",
+        "metadata" : "true",
+        "commentFieldValuefieldSet-83SiE" : "Zenodo",
+        "other216a" : "false",
+        "supportForDataReuse" : "true",
+        "repositories223" : "[{\"id\":\"datarepo:re3data/r3d100010468\",\"label\":\"Zenodo\",\"source\":\"\",\"uri\":\"https://www.re3data.org/repository/r3d100010468\"}, {\"id\":\"datarepo:re3data/r3d100010375\",\"label\":\"GitHub\",\"source\":\"\",\"uri\":\"https://www.re3data.org/repository/r3d100010375\"}]",
+        "commentFieldValuefieldSet-457zT" : "We will use The Digital Object Identifier (DOI®) System is a managed system for persistent identification of content on digital networks.",
+        "633046ef-1e6f-dbe0-8c5c-43599554943b" : "true",
+        "supportForDataReuseTimeSpan" : "morethantenyears",
+        "openlyaccessibleQ222" : "all",
+        "persistentIdentifiersQ214" : "true",
+        "DatasetSecuritySectionField1" : "Kept on secure, managed storage for limited time",
+        "27555ff8-7d4f-0d90-a925-a9686467ba21" : "true",
+        "commentFieldValuefieldSet-HVgAY" : "We will have keeping 4 copies of our data for each member. We are verifying our access periodically.",
+        "url212" : "https://www.python.org/dev/peps/pep-0008/",
+        "commentFieldValuefieldSet-cf1P1" : "Codes and metadata are kept in online and free of charge.This is one of the highlights of our open science work. It has been developed in accordance with FAIR principles.",
+        "harvestable211a" : "true",
+        "e44e952f-5249-c495-5e84-fa696695849e" : "Datacite",
+        "commentFieldValue6bb1034a-11f3-985e-9101-563a4643827e" : " Our purpose is to correcting errors in DOI names. In doing so, we used the CSV file where valid and invalid citations were collected. This DOI names collected by COCI project from Crossref open citations.",
+        "4f9b157e-484b-f761-cd23-b42fb46fecaa" : "{\"id\":null,\"name\":\"Citations to invalid DOI-identified entities obtained from processing DOI-to-DOI citations to add in COCI\",\"abbreviation\":null,\"reference\":null,\"created\":null,\"modified\":null,\"info\":null,\"type\":null,\"pid\":\"oai:zenodo.org:4625300\",\"uri\":null,\"tag\":\"OpenAIRE\",\"source\":null,\"hint\":null}",
+        "8a963629-3493-4110-e2b1-d9a29f7bbc6d" : "[Other]",
+        "197c2a3e-c92e-beca-acdf-0ecca8bcef94" : "[Other]",
+        "bdb3ee48-1862-d1ce-d90c-94fbe8c4daab" : "Python-based software for cleaning CSV files with invalid DOIs.",
+        "documentedProcedures243" : "false",
+        "field-HVLNZ" : "immediately",
+        "otherField1" : "false",
+        "licences241" : "[{\"id\":\"ISC\",\"label\":\"ISC License\",\"source\":\"\",\"uri\":null}]",
+        "commentFieldValueb8a9af4a-ab43-962a-550b-cf446481ac99" : "Cristian Santini (orcid:0000-0001-7363-6737), Ricarda Boente (orcid:0000-0002-2133- 8735), Arcangelo Massari (orcid:0000-0002-8420-0696), Deniz Tural (orcid:0000-0002-6391-4198). All group members are equally reasonably responsible for the management of the data. Everyone is responsible for the codes developed to clear data management plan, workflow, DOI names error classes.",
+        "boolean-will-metadata-use" : "true",
+        "toolsaccess225" : "false",
+        "to-whom-might-it" : "[Researchers, Other]",
+        "standardiseddataformatsQ216a" : "[{\"id\":\"fileformat:pronom/fmt/1119\",\"label\":\"Jupyter Python Notebook\",\"source\":\"\",\"uri\":\"\"}, {\"id\":\"fileformat:pronom/fmt/1112\",\"label\":\"Python Compiled File\",\"source\":\"\",\"uri\":\"\"}, {\"id\":\"fileformat:pronom/fmt/800\",\"label\":\"CSV Schema\",\"source\":\"\",\"uri\":\"\"}, {\"id\":\"fileformat:pronom/x-fmt/18\",\"label\":\"Comma Separated Values\",\"source\":\"\",\"uri\":\"\"}]",
+        "commentFieldValuefieldSet-rQ8uG" : ": All of our data is stored, including metadata that describes our research data, to validate the results presented in scientific publications.",
+        "9ff90da8-6c74-8757-bdaf-4d25dde46714" : "[Repository of Archive]",
+        "backup224" : "securewithbackupandrecovery",
+        "ethicallegalissuesQ221" : "false",
+        "what-is-the-origin" : "[Primary data]",
+        "notlisted223" : "false",
+        "template" : "701de436-2127-43ac-95a6-7edffe801449",
+        "commentFieldValuefieldSet-a2A0t" : "While conducting our research, some articles about the codes developed attracted our attention, we are ready to share them",
+        "a9baae9c-aef9-efb7-099e-c4f595740ca4" : "Source code",
+        "auxiliarydata226" : "end",
+        "b8a13c2a-ed06-70a3-914c-5d36a5826d90" : "{\"id\":null,\"label\":null,\"name\":\"Zenodo\",\"pid\":\"openaire.zenodo\",\"abbreviation\":null,\"uri\":\"https://www.zenodo.org\",\"created\":null,\"modified\":null,\"reference\":null,\"tag\":\"EOSC Providers\",\"source\":null,\"hint\":null}",
+        "commentFieldValue7ae8b747-cdd2-11c4-7367-3706e72a9829" : "The whole research team is responsible of the data management.",
+        "commentFieldValue8f9132fc-5b4a-65f6-9d63-6b049ab03faf" : "The scale of Python scripts used to address these types of problems is usually calculated in KB.",
+        "qualitydataQ219" : "true",
+        "name212" : "PEP 8",
+        "what-is-the-expected" : "KB (kilobyte)",
+        "commonlyusedformat216b" : "false",
+        "proprietarytools218aforsomedata" : "We use PyCharm, Atom open-source text editor to develop the codes.",
+        "e2d17714-ce45-58fb-d769-15217b250d4f" : "Stakeholders in the Scholarly domain, involved in the collection and reuse of DOIs from secondary sources.",
+        "c20efdf5-a4b3-82f3-524a-b2a692c7b593" : "Our descriptive metadata will describe a resource for purposes such as discovery and identification. It will include elements such as title, abstract, author, and keywords.",
+        "c4f19f13-55d6-379c-a359-349625dd74a5" : "true",
+        "reused-dmp" : "Peroni, S. (2021). Citations to invalid DOI-identified entities obtained from processing DOIto-DOI citations to add in COCI (1.0). Zenodo. https://doi.org/10.5281/ZENODO.4625300",
+        "searchablemetadataQ215" : "false",
+        "f57c4211-aab1-9bd7-65eb-249e79a1e13f" : "[{\"reference\":\"0000-0002-2133-8735\",\"hint\":null,\"name\":\"Ricarda Boente (orcid:0000-0002-2133-8735)\",\"label\":null,\"id\":null,\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"0000-0002-8420-0696\",\"hint\":null,\"name\":\"Arcangelo Massari (orcid:0000-0002-8420-0696)\",\"label\":null,\"id\":null,\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"0000-0002-6391-4198\",\"hint\":null,\"name\":\"Deniz Tural (orcid:0000-0002-6391-4198)\",\"label\":null,\"id\":null,\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"0000-0001-7363-6737\",\"hint\":null,\"name\":\"Cristian Santini (orcid:0000-0001-7363-6737)\",\"label\":null,\"id\":null,\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}]",
+        "1bda2fcb-d63e-16e8-5925-fa2d2df0b923" : "false",
+        "persistentIdentifiersA214" : "Digital Object Identifier",
+        "commentFieldValuefieldSet-KW6q4" : "We are not providing searchable metadata. To do so, we need to organized them in a graph in a uri, but we are not doing this.",
+        "notlistedA211a" : "true",
+        "4177ecce-38c3-93e7-242a-a6535ea2a3d7" : "{\"id\":null,\"name\":\"Zenodo\",\"pid\":\"re3data_____::r3d100010468\",\"abbreviation\":null,\"uri\":null,\"created\":null,\"modified\":null,\"tag\":\"OpenAIRE Alternative\",\"source\":null,\"hint\":null}",
+        "6e47ae6f-a728-94bf-27df-bb7f76872248" : "[Software - Java, C, Python]",
+        "43803a4c-c496-61d4-38e1-23ba1373767e" : "[Not available]",
+        "will-you-re-use-any" : "[To compare and combine with other data, To develop new products/ services]",
+        "field-UmI2l" : "true",
+        "ontologies231anone" : "false",
+        "commentFieldValuefieldSet-MKJLW" : "Researchers and trustworthy repositories are partners in Open and FAIR data",
+        "commentFieldValuefieldSet-WIQGN" : "All file formats are free and enable to re-use. We build free python code that can be reused by anyone.",
+        "4fef6fbe-f539-e8a8-4e34-0844229b9398" : "false",
+        "other211" : "false",
+        "d52ff5f8-9b4b-739f-c215-db1db71e5b99" : "We use catch-all repository Zenodo, maintained by CERN.",
+        "notlisted215a" : "false",
+        "metadataAvailableFreeofcharge" : "true",
+        "clearVersionNumbers" : "true",
+        "commentFieldValuefieldSet-02SRZ" : "Our metadata for a document might include a collection of information like the author, file size, the date the document was created, and keywords to describe the document. "
+      }
+    }, {
+      "dataset_id" : {
+        "identifier" : "e914a773-77a7-4dab-b4e6-27dbf3f5dfe6",
+        "type" : "other"
+      },
+      "description" : "The output dataset consists of a CSV file reporting the classes of errors associated with various DOI names, the correct ones, and the ones that were not possible to fix automatically. We used DOI names that have been collected by the OpenCitations Index Of Crossref Open DOI-To-DOI References (COCI) while processing data provided by Crossref.",
+      "distribution" : [ {
+        "access_url" : "[To obtain information, To improve a product, To combine with other data]",
+        "additional_properties" : { }
+      } ],
+      "keyword" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "metadata_standard_id" : {
+          "identifier" : "http://purl.org/spar/datacite",
+          "type" : "url"
+        },
+        "additional_properties" : {
+          "identifierId" : "url211a",
+          "languageId" : "voc231"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "sensitive_data" : "unknown",
+      "title" : "Classes of errors in DOI names: output dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "field-NpLT2" : "true",
+        "metadata" : "true",
+        "commentFieldValuefieldSet-83SiE" : "Zenodo",
+        "other216a" : "false",
+        "supportForDataReuse" : "true",
+        "repositories223" : "[{\"id\":\"datarepo:re3data/r3d100010375\",\"label\":\"GitHub\",\"source\":\"\",\"uri\":\"https://www.re3data.org/repository/r3d100010375\"}, {\"id\":\"datarepo:re3data/r3d100010468\",\"label\":\"Zenodo\",\"source\":\"\",\"uri\":\"https://www.re3data.org/repository/r3d100010468\"}]",
+        "commentFieldValuefieldSet-457zT" : "We will use The Digital Object Identifier (DOI®) System is a managed system for persistent identification of content on digital networks.",
+        "633046ef-1e6f-dbe0-8c5c-43599554943b" : "true",
+        "supportForDataReuseTimeSpan" : "morethantenyears",
+        "openlyaccessibleQ222" : "all",
+        "persistentIdentifiersQ214" : "true",
+        "DatasetSecuritySectionField1" : "Kept on secure, managed storage for limited time",
+        "27555ff8-7d4f-0d90-a925-a9686467ba21" : "true",
+        "commentFieldValuefieldSet-HVgAY" : "We are storing our data in Github. Github platform is in charge for our storage sufficiently secure for the data. We are verifying our access periodically.",
+        "commentFieldValuefieldSet-cf1P1" : "Both data files and metadata are kept in online and free of charge.This is one of the highlights of our open science work. It has been developed in accordance with FAIR principles.",
+        "harvestable211a" : "true",
+        "commentFieldValue6bb1034a-11f3-985e-9101-563a4643827e" : "The data collected is intended to obtain which DOI names extracted from Crossref are found to be invalid, in order to produce a new dataset that contains the correct data. To do so, it is necessary to combine existing data with other data obtained through the DOI and Crossref APIs.",
+        "4f9b157e-484b-f761-cd23-b42fb46fecaa" : "{\"id\":null,\"name\":\"Citations to invalid DOI-identified entities obtained from processing DOI-to-DOI citations to add in COCI\",\"abbreviation\":null,\"reference\":null,\"created\":null,\"modified\":null,\"info\":null,\"type\":null,\"pid\":\"oai:zenodo.org:4625300\",\"uri\":null,\"tag\":\"OpenAIRE\",\"source\":null,\"hint\":null}",
+        "8a963629-3493-4110-e2b1-d9a29f7bbc6d" : "[Other]",
+        "197c2a3e-c92e-beca-acdf-0ecca8bcef94" : "[Other]",
+        "bdb3ee48-1862-d1ce-d90c-94fbe8c4daab" : "COCI obtain the information for this project in the form of a CSV file containing pairs of correct citing DOIs and invalid citing DOIs.",
+        "documentedProcedures243" : "false",
+        "field-HVLNZ" : "immediately",
+        "otherField1" : "false",
+        "licences241" : "[{\"id\":\"ISC\",\"label\":\"ISC License\",\"source\":\"\",\"uri\":null}]",
+        "commentFieldValueb8a9af4a-ab43-962a-550b-cf446481ac99" : "Cristian Santini (orcid:0000-0001-7363-6737), Ricarda Boente (orcid:0000-0002-2133-8735), Arcangelo Massari (orcid:0000-0002-8420-0696), Deniz Tural (orcid:0000-0002-6391-4198). All group members are equally reasonably responsible for the management of the data. Everyone is responsible for the codes developed to clear data management plan, workflow, DOI names error classes.",
+        "boolean-will-metadata-use" : "true",
+        "toolsaccess225" : "false",
+        "to-whom-might-it" : "[Researchers, Research communities, Education, Industry]",
+        "commentFieldValue29b71ab9-1dd2-156d-dd70-1ee428029a5a" : "The entire workflow will involve the use of open source and free infrastructures, such as GitHub and Zenodo. S.",
+        "standardiseddataformatsQ216a" : "[{\"id\":\"fileformat:pronom/fmt/940\",\"label\":\"Python Compiled File\",\"source\":\"\",\"uri\":\"\"}, {\"id\":\"fileformat:pronom/fmt/800\",\"label\":\"CSV Schema\",\"source\":\"\",\"uri\":\"\"}]",
+        "commentFieldValuefieldSet-rQ8uG" : ": All of our data is stored, including metadata that describes our research data, to validate the results presented in scientific publications.",
+        "9ff90da8-6c74-8757-bdaf-4d25dde46714" : "[Repository of Archive]",
+        "backup224" : "securewithbackupandrecovery",
+        "ethicallegalissuesQ221" : "false",
+        "what-is-the-origin" : "[Secondary data]",
+        "notlisted223" : "false",
+        "template" : "701de436-2127-43ac-95a6-7edffe801449",
+        "commentFieldValuefieldSet-a2A0t" : "While conducting our research, there were some articles that attracted the attention of all members of the group. We are ready to share them.",
+        "a9baae9c-aef9-efb7-099e-c4f595740ca4" : "The processed data is a sample of DOI names present in Crossref that were found to be invalid.",
+        "auxiliarydata226" : "end",
+        "b8a13c2a-ed06-70a3-914c-5d36a5826d90" : "{\"id\":null,\"label\":null,\"name\":\"Zenodo\",\"pid\":\"openaire.zenodo\",\"abbreviation\":null,\"uri\":\"https://www.zenodo.org\",\"created\":null,\"modified\":null,\"reference\":null,\"tag\":\"EOSC Providers\",\"source\":null,\"hint\":null}",
+        "commentFieldValue7ae8b747-cdd2-11c4-7367-3706e72a9829" : "The whole research team is responsible of the data management.",
+        "commentFieldValue8f9132fc-5b4a-65f6-9d63-6b049ab03faf" : "An output of about 70 MB is expected, since the input weighs 60 MB, to which additional data that will be the result of the processing will be added.",
+        "qualitydataQ219" : "true",
+        "what-is-the-expected" : "MB (megabyte)",
+        "commonlyusedformat216b" : "false",
+        "e2d17714-ce45-58fb-d769-15217b250d4f" : "This work is especially useful in the area of Scientometrics. Therefore, it is especially aimed at the world of research and the scientific community, as well as the related publishing industry.",
+        "c20efdf5-a4b3-82f3-524a-b2a692c7b593" : "Our descriptive metadata will describe a resource for purposes such as discovery and identification. It will include elements such as title, abstract, author, and keywords.",
+        "c4f19f13-55d6-379c-a359-349625dd74a5" : "true",
+        "reused-dmp" : "Peroni, S. (2021). Citations to invalid DOI-identified entities obtained from processing DOI-to-DOI citations to add in COCI (1.0). Zenodo. https://doi.org/10.5281/ZENODO.4625300",
+        "searchablemetadataQ215" : "false",
+        "f57c4211-aab1-9bd7-65eb-249e79a1e13f" : "[{\"reference\":\"orcid:0000-0001-7363-6737\",\"hint\":null,\"name\":\"Cristian Santini (orcid:0000-0001-7363-6737)\",\"label\":null,\"id\":\"84f6b42d-df58-49c5-9474-9811b1142b72\",\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"orcid:0000-0002-2133-8735\",\"hint\":null,\"name\":\"Ricarda Boente (orcid:0000-0002-2133-8735)\",\"label\":null,\"id\":\"34a12fe5-8147-4329-a451-3b03c4f9c47f\",\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"orcid:0000-0002-8420-0696\",\"hint\":null,\"name\":\"Arcangelo Massari (orcid:0000-0002-8420-0696)\",\"label\":null,\"id\":\"f3893b8a-fdb9-4db2-a7e7-ca6e5c08071a\",\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}, {\"reference\":\"0000-0002-6391-4198\",\"hint\":null,\"name\":\"Deniz Tural (orcid:0000-0002-6391-4198)\",\"label\":null,\"id\":null,\"tag\":\"ORCID\",\"key\":\"orcid\",\"status\":0}]",
+        "1bda2fcb-d63e-16e8-5925-fa2d2df0b923" : "false",
+        "persistentIdentifiersA214" : "Digital Object Identifier",
+        "notlistedA211a" : "true",
+        "4177ecce-38c3-93e7-242a-a6535ea2a3d7" : "{\"id\":null,\"name\":\"ZENODO\",\"pid\":\"opendoar____::2659\",\"abbreviation\":null,\"uri\":null,\"created\":null,\"modified\":null,\"tag\":\"OpenAIRE Alternative\",\"source\":null,\"hint\":null}",
+        "6e47ae6f-a728-94bf-27df-bb7f76872248" : "[Text files - MS Word docs, .txt files, PDF, RTF, XML (Extensible Markup Language), Other]",
+        "43803a4c-c496-61d4-38e1-23ba1373767e" : "[Not available]",
+        "will-you-re-use-any" : "[To compare and combine with other data, To develop new products/ services]",
+        "field-UmI2l" : "true",
+        "ontologies231anone" : "false",
+        "commentFieldValuefieldSet-MKJLW" : "Researchers and trustworthy repositories are partners in Open and FAIR data.",
+        "commentFieldValuefieldSet-WIQGN" : " Yes, file formats are free and enable to re-use.",
+        "4fef6fbe-f539-e8a8-4e34-0844229b9398" : "false",
+        "other211" : "false",
+        "d52ff5f8-9b4b-739f-c215-db1db71e5b99" : "We use catch-all repository Zenodo, maintained by CERN.",
+        "notlisted215a" : "false",
+        "metadataAvailableFreeofcharge" : "true",
+        "clearVersionNumbers" : "false",
+        "commentFieldValuefieldSet-02SRZ" : "Our metadata for a document might include a collection of information like the author, file size, the date the document was created, and keywords to describe the document. "
+      }
+    } ],
+    "description" : "The data involved in this project are used to answer the following research questions: what are the classes of errors that characterize invalid DOIs? Which classes of errors can be addressed through automatic processes so as to get the correct DOIs? How many correct DOIs and, consequently, citations have been obtained by applying such automatic processing? While searching for answers to these questions, we used DOI names that have been collected by the OpenCitations Index Of Crossref Open DOI-To-DOI References (COCI) while processing data provided by Crossref.",
+    "dmp_id" : {
+      "identifier" : "10.5281/zenodo.4723602",
+      "type" : "doi"
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2021-04-27T15:19:04Z",
+    "project" : [ {
+      "description" : "Grant provided by the Digital Humanities and Digital Knowledge course Open Science 2020/2021. ",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "a49f0d77-ceb1-40f8-b5e0-c9aacac58a3c",
+          "type" : "fundref"
+        },
+        "grant_id" : {
+          "identifier" : "f75c3659-d77b-4f5d-a341-efd9f3ae511d",
+          "type" : "other"
+        }
+      } ],
+      "title" : "Open Science Project 2020/2021"
+    } ],
+    "title" : "Classes of errors in DOI names (Revised Version of Data Management Plan)",
+    "additional_properties" : {
+      "templates" : [ "701de436-2127-43ac-95a6-7edffe801449" ]
+    }
+  }
+}

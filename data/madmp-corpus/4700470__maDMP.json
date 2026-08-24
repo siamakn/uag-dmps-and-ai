@@ -1,0 +1,32 @@
+{
+    "dmp": {
+        "title": "Testing-the-Oswald-Hypothesis-with-European-Country-Level-Data",
+        "contact": {
+            "contact_id": {
+                "identifier": "https://orcid.org/0000-0003-4768-9485",
+                "type": "orcid"
+            },
+            "mbox": "constantin.b@gmx.at",
+            "name": "Constantin Boerner"
+        },
+        "created": "2021-04-19T10:10:23.6",
+        "dmp_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.4699310",
+            "type": "doi"
+        },
+        "dataset": [
+            {
+                "dataset_id": {
+                    "identifier": "https://doi.org/10.5281/zenodo.4679520",
+                    "type": "doi"
+                },
+                "title": "EuroStat Data on Unemployment and Homeownership Filtered",
+                "personal_data": "no",
+                "sensitive_data": "no"
+            }
+        ],
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2021-04-19T15:30:42.1"
+    }
+}

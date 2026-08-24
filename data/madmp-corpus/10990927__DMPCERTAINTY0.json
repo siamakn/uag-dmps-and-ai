@@ -1,0 +1,261 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "9c74b01f-1701-4cf0-b3c5-22770d2f85bb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "togialitaki@noa.gr",
+      "name" : "Anna Gialitaki",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8652-0442",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dimitra Kouklaki (orcid:0000-0001-8652-0442)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8000-5714",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kyriakoula Papachristopoulou (orcid:0000-0001-8000-5714)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0000-1038-4376",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Konstantinos Rizos (orcid:0009-0000-1038-4376)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3745-225X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Alexandra Tsekeri (orcid:0000-0002-3745-225X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9190-4608",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kalliopi Artemis Voudouri (orcid:0000-0002-9190-4608)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1544-7812",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Vassilis Amiridis (orcid:0000-0002-1544-7812)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8568-5114",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "ELENI DRAKAKI (orcid:0000-0001-8568-5114)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9270-8361",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Anna Gialitaki (orcid:0000-0001-9270-8361)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7858-1667",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ioanna Tsikoudi (orcid:0000-0001-7858-1667)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0005-9089-2843",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Maria Tsichla (orcid:0009-0005-9089-2843)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2631-6057",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Eleni Marinou (orcid:0000-0003-2631-6057)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9783-1024",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Peristera Paschou (orcid:0000-0002-9783-1024)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2940-5672",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Athanasios Georgiou (orcid:0000-0002-2940-5672)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-22T08:11:04Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Details of ACTRIS quality control and assurance can be found here:&#10;<div>https://www.actris.eu/catalogue-of-services/services</div>" ],
+      "dataset_id" : {
+        "identifier" : "f7c5a758-8881-4090-a988-4f6f64bbe2a4",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "ACTRIS g<span>round based remote sensing data used to investigate the aerosol effect on cloud and percipitation formation in warm and mixed phase clouds:</span><div><br><div>1. Aerosol profiles from multi-wavelength polarization Raman lidar measurements&#10;</div><div>2. Aerosol optical depth (AOD) and columnar aerosol microphysical information (volume size distribution, refractive index, single scattering albedo, absorption and extinction AOD, asymmetry factor) from multi-wavelength sun-photometer measurements</div></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ACTRIS ground-based remote sensing data to quantify aerosol-cloud interaction processes",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "Details of ACTRIS quality control and assurance can be found here:&#10;<div>https://www.actris.eu/catalogue-of-services/services</div>",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards", "We will compare the simulated data with available measurements." ],
+      "dataset_id" : {
+        "identifier" : "31ed9ee7-fa01-4dc2-98a5-d4c3ffb66ccb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Radiative transfer calculations to estimate aerosol and clouds radiative effect using newly developed scattering datasets&#160;",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Items will be retained for the lifetime of the repository in Zenodo. This is currently the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.",
+      "title" : "Radiative transfer simulations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "We will compare the simulated data with available measurements.",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards", "We will compare the simulated data with aerosol models from the literature and laboratory measurements." ],
+      "dataset_id" : {
+        "identifier" : "4c972632-f20f-401e-bd14-d0cabc7e59f7",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Newly developed aerosol scattering datasets assuming different aerosol types (i.e. dust, smoke, marine aerosols), realistic size (i.e. super-coarse dust) and shape distributions.&#160;",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Items will be retained for the lifetime of the repository in Zenodo. This is currently the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.",
+      "title" : "Scattering datasets",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "We will compare the simulated data with aerosol models from the literature and laboratory measurements.",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "962683dc-1db9-4a12-b2fd-a90e9f7d6568",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Ground based remote sensing data used to investigate the aerosol effect on cloud and percipitation formation in warm and mixed phase clouds&#10;<div>&#10;</div><div>1. Aerosol profiles from multi-wavelength polarization Raman lidar measurements&#10;</div><div>2. Aerosol optical depth (AOD) and columnar aerosol microphysical information (volume size distribution, refractive index, single scattering albedo, absorption      and extinction AOD, asymmetry factor) from multi-wavelength sun-photometer measurements&#10;</div><div>3. Horizontal wind speed and direction, attenuated backscatter coefficient (1.5 um), and vertical velocity from scanning Doppler wind lidar measurements&#10;</div><div>4. Liquid water path (LWP), and integrated water vapor content (IWV) from microwave radiometer measurements&#10;</div><div>5. Doppler velocity, cloud reflectivity, liquid water content (LWC) profiles from cloud radar measurements&#10;</div><div>6. Total (Global), direct and diffuse shortwave irradiances (280-2800 nm), the net shortwave (300-2800 nm) and longwave (4500-42000 nm) radiation, and the upwelling and downwelling irradiance during daytime from actinometric scation measurements</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ASKOS campaign dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "657ba2e5-8f29-44cb-ac6e-ddef776ce4a1",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>This dataset refers to software, specifically the set of &#34;observation operators&#34; that are developed during the project. Often, observations are for physical quantities that are not part of a numerical weather prediction model's state. Thus, these functions calculate the expected observation from the model state and enable assimilation of such observations.<br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Items will be retained for the lifetime of the repository in Zenodo. This is currently the lifetime of the host laboratory CERN, which currently has an experimental programme defined for the next 20 years at least.",
+      "title" : "Assimilation Operators software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for ground based remote sensing observational data, radiative transfer calculations,&#160; as well as scattering datasets created at the National Observatory of Athens (NOA) is developed in the context of effectively managing and preserving valuable data generated for CERTAINTY project.&#160;<div><br></div><div>The DMP for ground based remote sensing observational data, radiative transfer calculations,  as well as scattering datasets at NOA is designed to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "ca47e6e3-2e92-4bbb-9fa9-74a4abeaa81f",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-18T08:35:14Z",
+    "project" : [ {
+      "description" : "Cloud, aerosols and their interactions are key regulators of climate. However, uncertainties in the magnitude of the net cooling impact of aerosols on\nclimate and in the cloud response to evolving anthropogenic emissions and climate change induced feedbacks on natural emissions are major\nchallenges that limit our understanding of how global and regional climate, including extremes, respond to changes in greenhouse gases. It is of\nparamount importance to better understand aerosol-cloud processes and their role in the Earth System, from regional to global scales, and over\ndifferent time scales, from days to decades. Over the last decade, extensive research networks, infrastructures, satellite instruments, and atmospheric\nmodels have been developed, making it possible to obtain a holistic view of the effects of clouds and aerosols on climate and weather. CERTAINTY\nwill capitalise on this available data together with advanced algorithms, machine learning and data assimilation methods, high resolution models, and\nEarth system models to bring the fundamental knowledge of interactions between clouds, aerosols, and radiation to a new level. The consortium\npartners are in key roles as operators, data originators, developers, providers, and users of European aerosol and cloud data and ESMs/high resolution\nmodels. The consortium leads the activities of next generation satellite missions (such as EarthCARE), and the development of new satellite products,\nto facilitate their scientific use in CERTAINTY by preparing tools for early adoption of data. CERTAINTY will bring the observation-based\nknowledge to be used in modeling frameworks to improve predictive models and knowledge of processes controlling aerosols, clouds, and their\ninteractions from hours to decades. The ultimate outcome will be better understanding and predictions of extreme events that facilitates planning of\nclimate mitigation/adaptation strategies for the good of European citizens and global society.",
+      "end" : "Sat Nov 16 11:12:03 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Nov 17 11:12:03 UTC 2023",
+      "title" : "CERTAINTY",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY NOA's DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : null,
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "9c74b01f-1701-4cf0-b3c5-22770d2f85bb",
+      "publicDate" : "2023-11-17T11:08:59.124Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

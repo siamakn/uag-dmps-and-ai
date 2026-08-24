@@ -1,0 +1,268 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "de4783ce-1878-453b-b342-74180613727e",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "uta.koedel@ufz.de",
+      "name" : "Uta Koedel",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0296-6250",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ködel Uta (orcid:0000-0002-0296-6250)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2022-02-08T11:48:22Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "25de80ea-eb69-4984-a847-4ca0da8dc8fc",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "ESA Worldcover datasets as global land cover products of last years",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Worldcover data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "2624d81b-ccba-44ff-a905-655a66ef61bb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The data is produced by operational daily UltraHD model runs for the regions Karlsruhe, Luxembourg and Valencia. It's the result of large eddy model simulations for a 50km domain using real boundary data, obtained by the SuperHD model by Meteologix AG. The runs start 00z every day and provide an forecast for the upcoming day and the day after. The UltraHD was run, except some technical problems, most of the days between June 2023 and October 2024. The binary output ist provided in the lambert conformal conic projection, and can be used by downstream services, like the identification service.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "UltraHD binary output ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "a0dbf325-a11b-4ef7-9593-4386d405bdb5",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This archive containes examples of georeferenced output movies from Large Eddy Simulations using the UltraHD model by Meteologix AG. These movies cover one model run of the operational UltraHD for the Karlsruhe region. Movies for the following parameters are included: Overview-RGB including land use and clouds, 2m temperature (in two colorscales), skin temperature (in two colorscales), 2m dewpoint, wind speed and the airflow parameter (describing advection of relative warm or cold air) and the moist airflow parameter (describing advection of relative moist or dry air). Since these movies were used as mapoverlays within the CityCLIM Webfrontend colorscales are not included in this example movies. During the CityCLIM project such movies were produced from beginning of June 2023 till October 2024 for three different city regions (Luxemburg, Karlsruhe and Valencia).",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "UltraHD LES Example Movies",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "eff4e5b3-9551-4605-a191-e90398cc0b4a",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Multispectral and thermal data of USGS Landsat 8 and 9 satellites",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Landsat 8/9 data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "4c1ac494-456f-4397-adcc-97f328efd819",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Modified urban landcover georeferenced data based on the ESA Worldcover EO product, which is required for the workflows of the CityCLIM simulation services.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Modified Urban Landcover based on ESA Worldcover",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "df40b107-7da8-4ac7-b28d-a5ed68b43cd0",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<p>This sample data was collected with a senseBox home in Valencia, Spain, on October 7, 2023 to obtain data on the variation of meteorological parameters in an urban area and to draw conclusions on the correlations between the dimensions of buildings, green areas and other aspects of urban planning.&nbsp;</p>\n<p>The <strong>senseBox home</strong> by Reedu GmbH &amp; Co. KG (<a href=\"https://sensebox.shop/product/sensebox-home\">https://sensebox.shop/product/sensebox-home</a>) is a device that has been specially designed for flexible use in citizen science projects. As it is mainly developed for educational tasks, the focus is on the learning effect of assembling and programming the device yourself. This means that many different sensors, can be connected via a web-based dashboard platform and an active hobbyist community is constantly developing the platform and supporting the users. SenseBox has an easy to program microcontroller unit to which various sensors (e.g. air quality, air temperature, physical soil/air properties) can be connected.&nbsp;</p>\n<p>Following parameters were sampled and can be found in the datafile:&nbsp;Time in UTC,&nbsp; Lat (WGS64) in <sup>o</sup>(N),&nbsp; Lon (WGS64) in <sup>o</sup>(E), Temperature (T) in <sup>o</sup>C, relative humidity in %,&nbsp;&nbsp;&nbsp; atmospheric pressure_Pa, particle matter (pm25) in &mu;g/cm3, particle matter (pm10) in &mu;g/cm3.</p>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Sensebox data measured in Valencia/ Spain on October 7, 2023",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "26558a24-a5cd-4028-9864-e733f3fe45ca",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Multispectral data of Copernicus Sentinel-2 satellite",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Sentinel-2 data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "bbe1b360-c425-4bee-a081-5fb3a1b2ecb2",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The WIFI Colour Weather Station is a convenient weather station for Citizen Science Projects. It is equipped with sensors to measure wind speed, wind direction, humidity, temperature, rainfall, UV levels and light intensity. The WIFI feature allows users to share their data on weather platforms such as AWEKAS, Weather Underground or Weather Cloud.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Bresser WIFI Weatherstation",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "23f76e12-e127-47c1-bf63-eda18dd01688",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Data from the Air Pollution Monitoring Network, Weather Monitoring Network and Noise Level Monitoring Network<div><br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "VALENCIA MONITORING NETWORK",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "7481c63c-11a2-4ae0-b065-6b66ef584ada",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This archive containes examples of output images from Large Eddy Simulations using the UltraHD model by Meteologix AG. These images cover one arbitrary time step of one model run from the operational UltraHD for the Karlsruhe region. Images for the following parameters are included: Overview-RGB including land use and clouds, 2m temperature (in two colorscales), skin temperature (in two colorscales), 2m dewpoint, wind speed and the airflow parameter (describing advection of relative warm or cold air) and the moist airflow parameter (describing advection of relative moist or dry air). The archive contains images in two projections. The first is the original model projection, a Lambert conformal conic projection (LCC), and the second a standard Lat-Lon projection. Since these Images were used as map overlays within the CityCLIM Webfrontend color scales are not included in this examples. During the CityCLIM project such images were produced with an output time step of five minutes for daily runs from beginning of June 2023 till October 2024 for three different city regions (Luxemburg, Karlsruhe and Valencia).<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "UltraHD LES Example Images",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "856b8125-d60d-44ca-ae16-97561f5590bd",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><b>Land Surface Temperature (LST)</b> is a critical variable in understanding Earth's energy balance, climate patterns, and environmental conditions. LST represents the <b>radiative skin temperature of the land surface</b>, and it plays a crucial role in fields like meteorology, climatology, agriculture, and urban heat studies.</div><div><br></div><div>This dataset provides high spatio-temporal resolution LST data, generated using the <b>ESTARFM (Enhanced Spatial and Temporal Adaptive Reflectance Fusion Model)</b>. The ESTARFM method is employed to fuse data from <b>Sentinel-3</b> and <b>Landsat 8/9</b> satellites, producing LST data with improved temporal frequency and spatial resolution.</div><div><br></div><div>Only scenes that have simultaneous Landsat 8/9 acquisitions are included in this dataset, as these scenes were validated using in situ or other reference data sources. A table with the validation metrics&#8212;R&#178;, bias, and RMSE (Root Mean Square Error)&#8212;is also provided to quantify the accuracy of the generated LST values.</div><div><br></div><div>This dataset is valuable for researchers and professionals requiring detailed, validated LST information for environmental monitoring, land management, and climate studies.</div><div><br><br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "CityCLIM 30m Sharpened LST ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "c86e6d7e-152e-44da-8c58-6215695d4dd8",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This description describe This description describe the dataset used for the Heat wave information and Warning service for Thessaloniki city region. The dataset is generated and processed at Meteologix AG, transferred to the GCCP and used to fulfill the service.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Marcel1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "<div>This Data Management Plan (DMP) refers to exemplary data sets generated by the CityCLIM project as a &#10;basis for the scientific publication of the project results. This includes data generated by various measurements, historical data, remote data, derived data and the associated documentation, and metadata. The &#10;plan is based on the guidelines on FAIR Data Management and the principles of FAIR research &#10;software.</div><div>The strategic objective of CityCLIM contributes significantly to the delivery of the next generation of city climate services based on advanced weather prediction models enriched with data from both existing but under-utilised sources and new data sources such as satellite data (e.g. Copernicus data) or data generated by citizens science approaches to urban climate monitoring etc. The project provides (i) an open platform that allows efficient building of offerings based on access to diverse data, (ii) improved weather models based on data from diverse existing and emerging sources, (iii) a set of city climate offerings that can be adapted to the specific needs of users in cities, and (iv) a generic framework for building the next generation of city climate offerings.<br></div>",
+    "dmp_id" : {
+      "identifier" : "79d84492-af03-4019-a992-cd4d3715fb5d",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-18T05:44:06Z",
+    "project" : [ {
+      "description" : "This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement.",
+      "end" : "Wed Feb 08 11:48:22 UTC 2023",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "de281935-f8c1-48dc-9a44-b543ec2ee4e0",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101036814",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Feb 08 11:48:22 UTC 2022",
+      "title" : "Research and Innovation Actions (RIA)",
+      "additional_properties" : { }
+    } ],
+    "title" : "Data Management Plan for CityCLIM Project",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Attribution Assurance Licenses",
+        "modified" : null,
+        "pid" : "AAL",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://opensource.org/licenses/AAL"
+      },
+      "visible" : false,
+      "dmpProperties" : "{}",
+      "templates" : [ "7ecc93d0-e660-46da-9d46-2798a0afde9d" ],
+      "contact" : "de4783ce-1878-453b-b342-74180613727e",
+      "publicDate" : "2022-02-08T11:32:25.547Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

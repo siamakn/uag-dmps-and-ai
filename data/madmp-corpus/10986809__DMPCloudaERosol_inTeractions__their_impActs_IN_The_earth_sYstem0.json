@@ -1,0 +1,101 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "a9053211-20c8-4321-bb48-fda133200572",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "zamin.kanji@env.ethz.ch",
+      "name" : "Zamin A. Kanji",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2354-4188",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Cuiqi Zhang (orcid:0000-0002-2354-4188)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-8610-3921",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Zamin Kanji (orcid:0000-0001-8610-3921)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-22T15:37:27Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "&#160;A team of scientists has already been working on constructing the data since 2020. The dats is still being collated and then will under go technical checks, format checks and be transformed into the required format.&#160;" ],
+      "dataset_id" : {
+        "identifier" : "1edc26f2-cd34-4833-a73b-69b0cc29eab6",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This data will contain a collection of field observations of ice nucleating particles digitised from the literature since 1940 - present. The digitisation process and collection process was initiated during the EU project BACCHUS. The data collected is presented as a function of latitude, altitude, time, temperature and relative humidity with respect to ice and water. The instrument type used to observe the data, literature reference (for previously published data) and source for unpublished data is also reported.&#160;<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Ice Nucleation Data Base ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "&#160;A team of scientists has already been working on constructing the data since 2020. The dats is still being collated and then will under go technical checks, format checks and be transformed into the required format.&#160;",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "<div><span>This DMP describes the data collected within the BACCHUS and CERTAINTY European Commission projects on ice nucleating particle concentrations. The data presents all reported field measurements of ice nucleating particle concentrations as a function of space, time, temperature and relative humidity. This DMP serves to manage the data that will be used as input and output of the CERTAINTY project in work package 3 and to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing atmospheric physics research activities.&#160;</span><br></div>",
+    "dmp_id" : {
+      "identifier" : "64c97754-0fa3-4405-ba26-1f9cd74ccba9",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-02-22T16:00:32Z",
+    "project" : [ {
+      "end" : "Tue Feb 25 14:19:27 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Feb 26 14:19:27 UTC 2024",
+      "title" : "Cloud-aERosol inTeractions & their impActs IN The earth sYstem",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY ETH's DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "a9053211-20c8-4321-bb48-fda133200572",
+      "publicDate" : "2023-11-17T11:08:59.124Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

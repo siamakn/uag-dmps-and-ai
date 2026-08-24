@@ -1,0 +1,130 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "ec83cfbe-c4cb-4261-806d-b297f61659e7",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "chiara.catizone@studio.unibo.it",
+      "name" : "Chiara Catizone",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2445-2426",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Chiara Catizone (orcid:0000-0003-2445-2426)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9481-5053",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Davide Brembilla (orcid:0000-0002-9481-5053)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7696-7574",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Giulia Venditti (orcid:0000-0001-7696-7574)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2022-04-04T07:50:38Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "847eaf47-ffec-4bd9-ad8d-037871f7cb92",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>This dataset gathers all the DOIs of journals retrieved from DOAJ. The Directory of Open Access Journals (DOAJ, https://doaj.org/) is an independent index containing more than 17,500 peer-reviewed, open access journals covering all areas of science, technology, medicine, social sciences, arts and humanities<br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "DOAJ data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "1a01f6f9-480b-4e97-954e-d6825a896506",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Crossref dois data also present in DOAJ",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "FRBR",
+        "metadata_standard_id" : {
+          "identifier" : "https://vocab.org/frbr/core",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "descriptionId" : "location211",
+          "identifierId" : "url211",
+          "languageId" : "voc231"
+        }
+      } ],
+      "title" : "La Software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "67c4391e-d868-442b-9c34-3fdd84eed60b",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>This dataset gathers all the DOIs of journals retrieved from Crossref in union with DOAJ data.&#160;<br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Crossref data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    } ],
+    "description" : "This DMP has been created fo managing data representative of the Open Publishing&#160; domain.&#160; Starting from our research questions&#160; related to&#160; scientometric studies , we aim at evaluating the management at the-state-of-the-art of data linked to articles (references) and to have an idea of &#8203;&#8203;how much the aggregators communicate with each other in terms of information sharing.<div><br></div><div>Our research involves the articles from Open Access journals in DOAJ and their data on Crossref. The produced datasets will be created combining the manipulation of both datasets retrieved from the above mentioned sources.&#160;</div>",
+    "dmp_id" : {
+      "identifier" : "f82dfa45-b10d-4ac3-a790-4d5aa1530f08",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2022-04-04T09:36:12Z",
+    "project" : [ {
+      "description" : "none",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "None",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "none",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "title" : "none",
+      "additional_properties" : { }
+    } ],
+    "title" : "La Chouffe DMP",
+    "additional_properties" : {
+      "templates" : [ "a9ae7573-5c99-434c-939e-639098c49bf9" ]
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8809f149-cc50-49a9-977f-25c7eabd8356",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ahidalgo@cbm.csic.es",
+      "name" : "Aurelio Hidalgo",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4232-230X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Gabrielle Potocki-Veronese (orcid:0000-0003-4232-230X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0247-4483",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ana Vrsalović Presečki (orcid:0000-0002-0247-4483)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2658-672X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Magali Remaud-Simeon (orcid:0000-0002-2658-672X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9491-1010",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Esther Amstad (orcid:0000-0002-9491-1010)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3117-7779",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Pablo Dominguez de Maria (orcid:0000-0002-3117-7779)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9437-7447",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Bas Vroling (orcid:0000-0001-9437-7447)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5312-8951",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Zvjezdana Findrik Blažević (orcid:0000-0002-5312-8951)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0685-2696",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Uwe Bornscheuer (orcid:0000-0003-0685-2696)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9981-014X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dominique Böttcher (orcid:0000-0001-9981-014X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4573-6463",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Patrick Lorenz (orcid:0000-0002-4573-6463)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8898-4782",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Christian Jäckel (orcid:0000-0002-8898-4782)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1777-2168",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Simon Godehard (orcid:0000-0002-1777-2168)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3138-103X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Henk-Jan Joosten (orcid:0000-0003-3138-103X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5740-5584",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Aurelio Hidalgo (orcid:0000-0001-5740-5584)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7649-3986",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Jennifer Littlechild (orcid:0000-0002-7649-3986)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3235-4105",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Alexander Pelzer (orcid:0000-0003-3235-4105)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6734-1024",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Martina Sudar (orcid:0000-0002-6734-1024)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0604-7224",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Fabrice Gielen (orcid:0000-0003-0604-7224)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0644-8696",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Karsten Siems (orcid:0000-0002-0644-8696)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-07-06T11:58:15Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "7dbe1142-68f3-414f-ac3a-562e26408ef7",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Protein structures based on x-ray diffraction and/or computational modelling.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Protein structures",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "a43f62c8-9913-4b88-836b-1d3756334c18",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Kinetic models of the targeted reaction systems will be developed and used for reaction optimization. Data will be provided in the form of equations in .txt or word format.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Kinetic models of enzyme reactions",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "a1a9bd3a-0bce-4f44-980e-f55857d029b3",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Communication materials of RADICALZ project until Month 24",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Communication materials",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "25a1ced9-9c0f-4382-b780-4f3f1dbef3aa",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Dissemination data of RADICALZ project until Month 24",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Dissemination data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "f4832de3-e8a7-44fb-8299-fb2529e2651f",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Environmental DNA samples from extreme environments will be taken and sequenced to find enzymes relevant to the activities of the project. ",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Metagenomic DNA sequences",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "8a9b1079-9d9a-4c08-92f3-09f01138637e",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Characteristics of enzymes and/or enzyme variants, such as steady state kinetic parameters, Topt, pHopt, thermostability, enantioselectivity, substrate scope",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Enzyme properties",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "7ecc93d0-e660-46da-9d46-2798a0afde9d"
+      }
+    } ],
+    "description" : "3rd version of the RadicalZ DMP (M27)",
+    "dmp_id" : {
+      "identifier" : "926abff5-02e7-4c83-893f-c26e952d7b11",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-07-24T15:37:02Z",
+    "project" : [ {
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "690c686d-e900-4772-a382-8d805af751a4",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda__h2020::101000560",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "title" : "RAPID DISCOVERY AND DEVELOPMENT OF ENZYMES FOR NOVEL AND GREENER CONSUMER PRODUCTS",
+      "additional_properties" : { }
+    } ],
+    "title" : "RADICALZ",
+    "additional_properties" : {
+      "templates" : [ "7ecc93d0-e660-46da-9d46-2798a0afde9d" ]
+    }
+  }
+}

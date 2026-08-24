@@ -1,0 +1,279 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "29f46881-3717-4af2-8b97-7e6ed516994b",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "berta.ibanez.beroiz@navarra.es",
+      "name" : "Berta Ibáñez",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0961-3298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "ENRIQUE BERNAL-DELGADO (orcid:0000-0002-0961-3298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3609-9922",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Javier Gorricho (orcid:0000-0003-3609-9922)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7479-1528",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Oscar Lecea (orcid:0000-0001-7479-1528)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9586-7955",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Natalia Martínez-Lizaga (orcid:0000-0002-9586-7955)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2860-3359",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ibai Tamayo (orcid:0000-0003-2860-3359)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6285-8120",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Francisco Estupiñán Romero (orcid:0000-0002-6285-8120)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-6537-0131",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Conchi Moreno Iribas (orcid:0000-0001-6537-0131)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7789-133X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "LLUÍS FORGA (orcid:0000-0001-7789-133X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2195-4669",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Asier Ballesteros Domínguez (orcid:0000-0002-2195-4669)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9239-657X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Maria Jose Goñi Iriarte (orcid:0000-0002-9239-657X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2721-2700",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Daniel Bejarano-Quisoboni (orcid:0000-0003-2721-2700)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5626-8116",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Lidia García-Pérez (orcid:0000-0002-5626-8116)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-7797-4845",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Berta Ibáñez (orcid:0000-0002-7797-4845)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0004-0387-6056",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ignacio Oscoz (orcid:0009-0004-0387-6056)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6508-5768",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Sara Trujillo-Alemán (orcid:0000-0002-6508-5768)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-4833-7967",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Cristina Valcárcel-Nazco (orcid:0000-0003-4833-7967)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8475-8112",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Isabel Hurtado (orcid:0000-0002-8475-8112)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-2890-1252",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Mónica Enguita-Germán (orcid:0000-0002-2890-1252)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8783-5478",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Javier González Galindo (orcid:0000-0002-8783-5478)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-1711-2466",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Javier Lafita Labacena (orcid:0000-0003-1711-2466)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9688-9304",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Eduardo Millán (orcid:0000-0002-9688-9304)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4859-9054",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Julian Librero (orcid:0000-0002-4859-9054)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7442-3450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ester Angulo-Pueyo (orcid:0000-0001-7442-3450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5902-0351",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Naiara Parraza Diez (orcid:0000-0002-5902-0351)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-04-15T10:11:26Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards", "We have implemented our own data quality assessment and assurance procedures&#160;<span>within the CONCEPT framework, aiming to provide insight into the impact&#160;</span><span>of data quality in interpreting the research outcomes and producing high-quality&#160;</span><span>research. Those procedures include the assessment of the information&#160;</span><span>requirements and the data model specification by a scientific and technical&#160;</span><span>committee, the implementation of an automatic data quality check&#160;</span><span>on the original dataset (linked and transformed&#160;</span><span>data to comply with the requirements captured in the common data model&#160;</span><span>specification, conditional on data availability and access) of each participating&#160;</span><span>node, the implementation of data conformance and consistency checking&#160;</span><span>following the common data model specification, and a final missing values&#160;</span><span>assessment on core variables to inform decisions on imputation requirements.&#160;</span><span>Additionally, algorithms of process discovery and prediction are also shared.</span><div><div>Each quality assessment, checking and analytical procedure<span>&#160;is performed within the secured processing&#160;</span><span>environment (SPE) of each participating node.</span></div></div>" ],
+      "dataset_id" : {
+        "identifier" : "0dc2dfb5-c779-4755-a765-cfea1ed3ec43",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div><br></div>&#10;&#10;<p>The CONCEPT-DIABETES project aims to analyse chronic care effectiveness and efficiency of care pathways in diabetes, assuming the relevance of care pathways as independent factors of health outcomes using data from real life world (RWD) from five Spanish Regional Health System.</p><ul>&#10;</ul>&#10;&#10;<p>The study protocol is available in https://zenodo.org/records/10958692</p><p>The data model is available in&#160; <font color=\"#240000\">https://zenodo.org/records/7778291</font></p><p><br></p><p>Data is provided pseudonymised and in compliance with the baseline use case data model specification by BARDENA and granted by the Ethical Research Committee of Navarra (Project 97/2019, August 28, 2019).&#160;</p><p><br></p><p>The CONCEPT-DIABETES project allows to analyze data obtained from all patients with code of Type 2 Diabetes in the clinical health records of five regional health services of&#160; Spain: Navarre, Aragon, Basque Country, Valencia and Canary Islands using a decentraized structure via dockers,&#160; in a way that there is no need to share the datasets among partners, which facilitate reproducibility.&#160;</p><ul>&#10;</ul>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "Pseudonymized data will be stored locally. Complying with the organic Law on Data Protection, weighted by the Biomedical Research Act, the data will be stored not less than 5 years after finalization of the CONCEPT-Diabetes project, and fully erased after 15 years.",
+      "title" : "CONCEPT-DIABETES DATA MANAGEMENT PLAN TO ANALYSE HEALTHCARE PATHWAYS OF TYPE 2 DIABETES",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "We have implemented our own data quality assessment and assurance procedures&#160;<span>within the CONCEPT framework, aiming to provide insight into the impact&#160;</span><span>of data quality in interpreting the research outcomes and producing high-quality&#160;</span><span>research. Those procedures include the assessment of the information&#160;</span><span>requirements and the data model specification by a scientific and technical&#160;</span><span>committee, the implementation of an automatic data quality check&#160;</span><span>on the original dataset (linked and transformed&#160;</span><span>data to comply with the requirements captured in the common data model&#160;</span><span>specification, conditional on data availability and access) of each participating&#160;</span><span>node, the implementation of data conformance and consistency checking&#160;</span><span>following the common data model specification, and a final missing values&#160;</span><span>assessment on core variables to inform decisions on imputation requirements.&#160;</span><span>Additionally, algorithms of process discovery and prediction are also shared.</span><div><div>Each quality assessment, checking and analytical procedure<span>&#160;is performed within the secured processing&#160;</span><span>environment (SPE) of each participating node.</span></div></div>",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "This publication corresponds to the Data Management Plan (DMP) for the Baseline Use Case proposed in the CONCEPT-DIABETES project for the implementation of a federated network analysis of the healthcare pathway of type 2 diabetes, version v0.2.0.",
+    "dmp_id" : {
+      "identifier" : "bb6a615c-15ea-4c70-99c5-37ea7f550dd0",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-15T10:18:40Z",
+    "project" : [ {
+      "description" : "CONCEPT-DM2 (PI19/00381) has been financed by the Instituto de Salud Carlos III (ISCIIII); (Spain) within the Health Research and Development Strategy (AES), and belongs to the CONCEPT project, which is a coordinated project led by the CONCEPT-STROKE project (PI19/00154).",
+      "end" : "Sat Sep 07 10:25:18 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "PI19/00381",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "PI19/00381",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Sep 08 10:25:18 UTC 2023",
+      "title" : "Health Research and Development Strategy (AES)",
+      "additional_properties" : { }
+    } ],
+    "title" : "CONCEPT-DIABETES DATA MANAGEMENT PLAN TO ANALYSE HEALTHCARE PATHWAYS OF TYPE 2 DIABETES",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "29f46881-3717-4af2-8b97-7e6ed516994b",
+      "publicDate" : "2023-09-08T10:05:42.406Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

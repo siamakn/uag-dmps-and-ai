@@ -1,0 +1,127 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "bf0d7145-1d00-4639-8e30-cddc3a8a428d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "migueldireito@gmail.com",
+      "name" : "Bruno Miguel",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3058-7204",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Cesar Lima (orcid:0000-0003-3058-7204)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0476-9533",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Alexandre Sayal (orcid:0000-0002-0476-9533)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3259-8815",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Bruno Direito (orcid:0000-0002-3259-8815)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9171-9632",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ana Pina Rodrigues (orcid:0000-0001-9171-9632)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-0230-3075",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inês Alexandra Teixeira de Almeida (orcid:0000-0003-0230-3075)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-3123-008X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inês Bernardino (orcid:0000-0003-3123-008X)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2021-11-10T23:44:47Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "f8723e56-348b-4579-be6d-bcfa6178fc73",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Categorization of music excerpts based on the affection model (valence and arousal)<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Questionnaire on a music listening task",
+      "type" : "audio",
+      "additional_properties" : {
+        "template" : "43a3c3b6-2f1e-4eaa-b7f5-c55838b127cf"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "0e17b05c-c450-4ac0-a9a9-09e6d06cdc4d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Raw MRI data, physiological data and metada using BIDS standard acquired during a music listening paradigm.<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Neural correlates of music listening",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "43a3c3b6-2f1e-4eaa-b7f5-c55838b127cf"
+      }
+    } ],
+    "description" : "This DMP describes the data management procedures implement in the \"Playback the music of the brain - decoding emotions elicited by music in the human brain\" project.",
+    "dmp_id" : {
+      "identifier" : "070f85a0-5e9b-4f4f-9f67-31e20a97328e",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-05-25T10:34:43Z",
+    "project" : [ {
+      "description" : "Projetos de Investigação de Caráter Exploratório",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "bda240c1-172d-4d67-a7f8-a1cb03f20773",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "fct_________::EXPL/PSI-GER/0948/2021",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "title" : "Concurso para Projetos de I&D em Todos os Domínios Científicos - 2021",
+      "additional_properties" : { }
+    } ],
+    "title" : "Playback the music of the brain - decoding emotions elicited by music in the human brain",
+    "additional_properties" : {
+      "templates" : [ "43a3c3b6-2f1e-4eaa-b7f5-c55838b127cf" ]
+    }
+  }
+}

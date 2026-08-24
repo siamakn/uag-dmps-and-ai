@@ -1,0 +1,125 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8cdef96f-4be7-4efa-a075-da3a4c103dfe",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "leonardo.zilli@studio.unibo.it",
+      "name" : "Leonardo Zilli",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0007-4127-4875",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Leonardo Zilli (orcid:0009-0007-4127-4875)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0006-0853-1772",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Salvatore Di Marzo (orcid:0009-0006-0853-1772)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0003-7124-9639",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Erica Andreose (orcid:0009-0003-7124-9639)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-03-30T16:15:47Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "f43943c4-0be5-4a0a-bcde-e76f2d43d276",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Software suite for the Open Science project.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "The software will be available on the Github Repository of the Open Science Course of the University of Bologna 2023-2034&#10;<div>https://github.com/open-sci/2023-2024/tree/main?tab=readme-ov-file.</div>",
+      "title" : "Open Science Project Software - Team Atreides",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "fbff7c97-de7b-4b5d-83cb-5c8becbb38b2",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This dataset contains several CSV files detailing the bibliographic data of all the publications by UNIBO scholars as stored in IRIS, which is the national platform for storing bibliographic data.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "UNIBO IRIS bibliographic data dump",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "Data Management Plan for the 2023/2024 Open Science Project work.",
+    "dmp_id" : {
+      "identifier" : "a312177c-c5d9-4b6d-9f55-1b3ed4c4328b",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-04-09T16:26:51Z",
+    "project" : [ {
+      "description" : "Open Science course of the Digital Humanities and Digital Knowledge degree at the University of Bologna.",
+      "end" : "Mon Apr 07 14:04:10 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "https://ror.org/01111rn36",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "https://www.unibo.it/it/studiare/dottorati-master-specializzazioni-e-altra-formazione/insegnamenti/insegnamento/2023/443753",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Sun Apr 07 14:04:10 UTC 2024",
+      "title" : "Open Science Course",
+      "additional_properties" : { }
+    } ],
+    "title" : "Open Science Project DMP - Team Atreides",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "8cdef96f-4be7-4efa-a075-da3a4c103dfe",
+      "publicDate" : "2024-03-30T16:06:22.432Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8cdef96f-4be7-4efa-a075-da3a4c103dfe",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "leonardo.zilli@studio.unibo.it",
+      "name" : "Leonardo Zilli",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0007-4127-4875",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Leonardo Zilli (orcid:0009-0007-4127-4875)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0003-7124-9639",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Erica Andreose (orcid:0009-0003-7124-9639)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0006-0853-1772",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Salvatore Di Marzo (orcid:0009-0006-0853-1772)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-05-21T13:11:32Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "7f0eb8da-7928-4285-93eb-f46d56d99fa2",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Software suite for the Open Science project - version 1.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "The software will be available on the Github Repository of the Open Science Course of the University of Bologna 2023-2034&#10;<div>https://github.com/open-sci/2023-2024/tree/main?tab=readme-ov-file.</div>",
+      "title" : "Open Science Project Software - Team Atreides - version 1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "02c40cb9-b8d6-4a2a-8187-1473137dd70d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Description of the data of the number of entities that are not present in OpenCitations Meta.<div>The dataset is composed of 1 .parquet file.</div><div><span><br></span></div><div><span>DOI: https://doi.org/10.6084/m9.figshare.25897708</span><br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Iris not in meta - Version 1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "ecce35e2-ccc9-47de-9f9b-7fa8400af90e",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Description of the gathered data of the number of entities in Iris that are present inside of OpenCitations Meta.<div>The dataset is composed of 28247 .parquet files.&#160;<br><br>-DOI: https://doi.org/10.6084/m9.figshare.25879420.v1</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Iris in Meta - Version 1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "0d34fe6e-b722-4057-9df0-e45689b9bcea",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Coverage of the entities of OpenCitations index present in Iris.<div>The dataset is composed of 25 folders which contain various .parquet files.&#160;</div><div><br></div><div>-DOI: dx.doi.org/10.6084/m9.figshare.25879441</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Iris in Index - Version 1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "a26df9c5-ac61-4cd7-bbd6-24cebd4ba012",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This dataset contains several CSV files detailing the bibliographic data of all the publications by UNIBO scholars as stored in IRIS, which is the national platform for storing bibliographic data.<div><br></div><div>&#160;In particular, the dataset is made of eight distinct files:</div><div><br></div><div>- &#34;README.txt&#34;: this document</div><div>- &#34;ODS_L1_IR_ITEM_CON_PERSON.csv&#34;: information about the people involved in the publications (authors, editors, etc.)</div><div>- &#34;ODS_L1_IR_ITEM_DESCRIPTION.csv&#34;: the string of the authors and other related metadata of publications</div><div>- &#34;ODS_L1_IR_ITEM_IDENTIFIER.csv&#34;: the identifiers (including DOIs) of publications</div><div>- &#34;ODS_L1_IR_ITEM_LANGUAGE.csv&#34;: the language in which the publication has been written (when applicable)</div><div>- &#34;ODS_L1_IR_ITEM_MASTER_ALL.csv&#34;: basic metadata information of publications (title and date of publication)&#160;</div><div>- &#34;ODS_L1_IR_ITEM_PUBLISHER.csv&#34;: the publishers of publications</div><div>- &#34;ODS_L1_IR_ITEM_RELATION.csv&#34;: additional metadata related to the context of publications (publication venue, editors, etc.)</div><div><br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "The datset will be uploaded on figshare.",
+      "title" : "UNIBO IRIS bibliographic data dump - version 2",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Data conform to format specification", "Consistency verified with data models and standards" ],
+      "dataset_id" : {
+        "identifier" : "486aef66-e3f3-4de6-90ec-bb4761fb650a",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Description of all the entities in Iris that do not have an identifier.&#160;<div>The dataset is composed of two .parquet files.</div><div><br></div><div>DOI: https://doi.org/10.6084/m9.figshare.25897759&#160;</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Iris no Id - Version 1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "Data Management Plan for the 2023/2024 Open Science Project work - version 2.",
+    "dmp_id" : {
+      "identifier" : "c825f3d6-fc93-4dd9-8f63-a0565f90502f",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-05-25T09:18:17Z",
+    "project" : [ {
+      "description" : "Open Science course of the Digital Humanities and Digital Knowledge degree at the University of Bologna.",
+      "end" : "Mon Apr 07 14:04:10 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "https://ror.org/01111rn36",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "https://www.unibo.it/it/studiare/dottorati-master-specializzazioni-e-altra-formazione/insegnamenti/insegnamento/2023/443753",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Sun Apr 07 14:04:10 UTC 2024",
+      "title" : "Open Science Course",
+      "additional_properties" : { }
+    } ],
+    "title" : "Open Science Project DMP - Team Atreides - version 2",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "8cdef96f-4be7-4efa-a075-da3a4c103dfe",
+      "publicDate" : "2024-03-30T16:06:22.432Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

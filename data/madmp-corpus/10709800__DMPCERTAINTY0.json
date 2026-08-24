@@ -1,0 +1,234 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8cbd5ee1-6e4d-4159-8e2e-89fe334b062f",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "e.gryspeerdt@imperial.ac.uk",
+      "name" : "Edward Gryspeerdt",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3815-4756",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Edward Gryspeerdt (orcid:0000-0002-3815-4756)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ {
+      "currency_code" : "EUR",
+      "description" : "Small data products (such as those created here) in natural environment related sciences are archived at CEDA free of charge.",
+      "title" : "Storage",
+      "value" : 0.0,
+      "additional_properties" : { }
+    } ],
+    "created" : "2024-01-17T13:44:01Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "799709ee-f9ac-4a38-b20a-e74362ecaf17",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Gridded cloud and aerosol data from the MODIS instrument. This data is derived from the pixel level (L2) retrievals produced by the MODIS atmopsphere science team, incorporating retrievals of cloud, aerosol, water vapour and the atmospheric profile.<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "MODIS gridded cloud and aerosol data (MOD08_D3) Collection 6.1",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "e93c388e-f8c0-4ca6-bf82-4ede0a8cfefd",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The analysis data from ERA-5 that includes the vertical profile of temperature, wind and humidity<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "ERA5 meteorological data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "ebc8b8e7-abf3-4cb5-b5f2-df541bcdf8f1",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>Radiances from the GOES ABI instrument. These cover a range of visible and infra-red wavelengths, providing inforamtion on cloud, aerosol and land surface properties. The spatial resolution depends on wavelength, varying from 500m to 2km at nadir.</div><div><br></div><div>This data is re-used from publicly available data (via NASA and Google/Amazon clouds)<br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "GOES ABI radiances",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification", "<div>CF compliance will be checked with standard tools</div><div><br></div><div>https://cfchecker.ncas.ac.uk/<br></div>" ],
+      "dataset_id" : {
+        "identifier" : "43cde48a-fb7c-48b5-863f-0cc63cef1d2f",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>Processed satellite data e.g. estimates of radaitive forcing and constraints on aerosol-cloud interactions.</div><div>This product will be designed for comparison with global climate models and provide an uncertainty range based on exisiting estimates of these effects, determined through a comparison of exisiting methods.<br></div>",
+      "distribution" : [ {
+        "byte_size" : 1000000000,
+        "data_access" : "open",
+        "format" : [ "netcdf" ],
+        "license" : [ ],
+        "title" : "processed satellite data",
+        "additional_properties" : {
+          "byteSizeId" : "a91de027-f5e8-96ea-bb84-bf7a3734adbe",
+          "dataAccessId" : "c8621889-4376-7b9a-4a10-b8396f10dcbb",
+          "formatId" : "3c2e8e35-b98b-8974-c4d1-4fb05d0bfbf7",
+          "titleId" : "b1d8db93-3ff9-3771-359f-98b2fd73b467"
+        }
+      } ],
+      "keyword" : [ "clouds", "aerosol " ],
+      "language" : "eng",
+      "metadata" : [ ],
+      "personal_data" : "no",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "no",
+      "technical_resource" : [ ],
+      "title" : "Processed satellite data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "metadata" : "true",
+        "190011a4-9204-1dca-49af-5c1d634805f3" : "true",
+        "06d81c7b-80a5-e63a-dd3a-a0da5a131ff7" : "Data will be used to study processes, evaluate model output and constrain aerosol-cloud interactions. Existing data (such as climatologies of cloud properties) provide poor cosntraints on the aerosol and cloud porcesses necessary for this. This datasets will be created from the linked observational and reanalysis datasets <br>",
+        "669d8e4f-049b-a58e-0f2f-5c8ac858c55d" : "CEDA provides DOIs",
+        "5d43793f-3906-6dd1-02e1-9b2b68118d43" : "true",
+        "27555ff8-7d4f-0d90-a925-a9686467ba21" : "false",
+        "d7e06b73-dbf6-0a7c-2c66-8d0ad947724f" : "<div>Project partners, for evaluating model output in other work packages and tasks.<br></div><div><br></div><div>Other researchers, as new constraints on the strength of aerosol-cloud interactions and the aerosol effective radiative forcing. This will build on the work of the related model-analysis work pacakges.</div><div><br></div><div>Estimates of the aerosol effective radiative forcing are also useful for researchers working in other fields, due to a strong role in the calcualtion of the remaining carbon budget.<br></div>",
+        "4ada96a9-000a-e9e7-9e4f-5af2d2079c1b" : "Throughout the project's duration, the dataset might be subject to an embargo of up to two years. During this period, access to the data will be restricted, but project partners can obtain access. Once the embargo period concludes and the project is completed, the dataset will become publicly available, and accessible to all under the CC BY 4.0 license.",
+        "2a6efc13-d8b5-ec68-76f2-2db0fb4ab623" : "Processed satellite data for constraining aerosol-cloud interactions.&#160; This data is derived from the linked data sources and designed to be used to constrain atmospheric and aerosol-climate models.<br>",
+        "29579832-3c7f-db29-9ff0-4918c354494f" : "Yes. However, we will not have closed datasets",
+        "b3c38861-8e4f-f54b-4800-314f422ec4f5" : "true",
+        "af2cafa7-9591-4148-db06-112652a97ee7" : "true",
+        "5c8b2539-d28a-4f4c-3148-7b0747ad9179" : "[\"Researchers\",\"Research communities\",\"Decision makers\",\"Education\"]",
+        "8a963629-3493-4110-e2b1-d9a29f7bbc6d" : "[\"Use of national infrastructure\",\"Use of institution infrastructure\"]",
+        "197c2a3e-c92e-beca-acdf-0ecca8bcef94" : "true",
+        "6d11aec9-ab89-f35a-07f8-f6ab0d8859ea" : "0",
+        "53ce202a-4a3e-2828-6e7b-d2077b338b53" : "false",
+        "otherField1" : "true",
+        "voc231" : "false",
+        "b016ad5d-8a15-2229-6c63-c1f604500a6d" : "This data will be produced during the project from the linked datasets. <br>",
+        "c6a5b153-1054-8716-225a-c41f18cb72b4" : "false",
+        "a79fca40-dbfc-86eb-f365-83004c36eb00" : "Digital",
+        "d00f6e64-fc1e-25c9-3318-7b7be71d991a" : "[\"Follows repository standards\",\"Details terms of use\",\"Has an open access content policy\",\"Supports retention\"]",
+        "boolean-will-metadata-use" : "false",
+        "14142486-c19e-bb95-f5d0-d27dbda8fc14" : "[\"Storage\"]",
+        "6c2eee81-2ce7-c44e-b4ba-96b1f698202e" : "The dataset will be linked with the related scientific articles and also &#160;with the input data.",
+        "otherField2" : "All the minimum conditions listed in Science Europe Guidance Document are covered by the WP6 Open Science and Data management",
+        "98c66a52-0a39-7b1e-3cb9-d558ecf8d530" : "true",
+        "b863e1f3-358b-14d7-3cc2-71f746a426aa" : "The CEDA catalogue supports the use of keywords<br>",
+        "what-is-the-purpose" : "[\"To obtain information\",\"To share information\",\"To make informed decisions\",\"To combine with other data\"]",
+        "9f05896a-c22c-6ebb-9add-c78ef00ae42b" : "New",
+        "0eced2ec-1a25-0754-4dc2-39c2a08f3e77" : "false",
+        "f81c61e7-6869-8901-c68a-cdf8314f285b" : "true",
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "53b7a232-a900-e946-f5b5-fe3ce18856d2" : "Direct links are provided",
+        "2dd341c2-f076-c712-5a42-2461bbacd67f" : "Research lead<br>",
+        "01a8e144-3beb-7f95-1f92-abc9b8ddbcaa" : "<div>The metadata will be searchable through the CEDA repository, where the output will be submitted.</div><div><br></div><div>https://catalogue.ceda.ac.uk/<br></div>",
+        "da77e3b1-0e92-b597-5767-9e71c568a994" : "true",
+        "10669393-3799-fadb-7f3e-9b414c8fdb37" : "true",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "a606f121-0e5a-b691-ef15-2d39a7af6fb9" : "true",
+        "d4b419e9-80a5-7d72-1ff1-504def41231c" : "The CEDA archive support the use of data beyond the lifetime of the project. This will be supprted with documentation and examples of use provided in related publications. Should the analysis be appropriate, it will be added to community tools, such as Obs4MIP or ESMValTool<br>",
+        "476a9957-dfd9-9cf7-86e1-63c1857efb98" : "[\"Registry/Catalogue\",\"Metadata repository\"]",
+        "084ab678-d86e-d05b-3d3e-fd1497216f55" : "false",
+        "381e5dff-c05e-0bff-a56c-f069257a3600" : "<div><br></div>",
+        "51b204b9-732a-b27b-ffcd-a29ff2a87d50" : "true",
+        "searchablemetadataQ215" : "true",
+        "f4ce34ac-cac2-3aaa-a73d-1d467002090d" : "false",
+        "953a0cdb-2892-3b4a-1e60-ab39de80fe4e" : "Small data products (such as those created here) in natural environment related sciences are archived at CEDA free of charge.",
+        "what-types-and-formats" : "Derived or compiled",
+        "86eb4ffc-be44-7bab-c2a5-17088f951dac" : "Small data products (such as those created here) in natural environment related sciences are archived at CEDA free of charge.",
+        "f57c4211-aab1-9bd7-65eb-249e79a1e13f" : "{\"label\":null,\"name\":\"Edward Gryspeerdt (orcid:0000-0002-3815-4756)\",\"id\":null,\"reference\":\"0000-0002-3815-4756\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}",
+        "19f6f31a-15e3-de10-e88c-58535a885bd8" : "false",
+        "dmpSectionIndex" : 3,
+        "670cd165-79cb-6db0-900b-dfa40238e2a6" : "[\"Readme files\",\"Codebooks\",\"Data cleaning\",\"Analyses\",\"Variable definitions\",\"Units of measurement\",\"Negative results sharing\"]",
+        "2deb01dc-0fbd-7b79-db34-30c48c889ebc" : "The datafiles created will be CF-compliant, a common standard for climate science.<br>",
+        "8239a65e-789e-b101-7d23-54acf0838481" : "Processed/derived from other satellite datasets, e.g. MODIS, GOES, SEVIRI, EarthCare<br>",
+        "ef56a328-dfa1-a105-1392-5835c952e3b6" : "false",
+        "048b17bd-a01d-5625-c8a7-5c1372f4e6e7" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "4fef6fbe-f539-e8a8-4e34-0844229b9398" : "no",
+        "f526cf31-3c7e-8c87-5e40-ef492f4a21c4" : "[\"Data access\",\"Data storage\",\"Data transmission\",\"Data recovery\",\"Data sharing\"]",
+        "otherDQA" : "<div>CF compliance will be checked with standard tools</div><div><br></div><div>https://cfchecker.ncas.ac.uk/<br></div>",
+        "4e104b65-39f7-dfa4-9959-c341405da562" : "false",
+        "d72ce02d-b5eb-c1e8-8915-c643a0cb5616" : "Input data provenance will be linked in the metadata.",
+        "a1b0ed60-9e54-988b-943e-a89d698cb0ef" : "true",
+        "f9e5d25f-cbf0-1359-aab6-29cb8cc7154f" : "false",
+        "20c0a471-7c4f-729d-ef77-4afad8bd162a" : "[\"Descriptive\"]",
+        "b87ab7bf-6987-16b8-12e1-bd9f41ecf703" : "[\"Data identifiers\"]",
+        "a15adc0e-3779-9ad6-aeff-528ba9e2327b" : "Small data products (such as those created here) in natural environment related sciences are archived at CEDA free of charge.",
+        "583d0f8c-58bc-9606-79ff-9fb16cdf0a92" : "Open, although a certain embargo period might be applied",
+        "1c00ac81-5ecd-a245-3fd9-4b2f491afe10" : "Research Data",
+        "b1af6fe8-5899-95d4-68eb-b309e7ada639" : "false"
+      }
+    } ],
+    "description" : "<div>The Data Management Plan (DMP) for processed satellite data is created at Imperial College London to support the effect management and preservation of data generated during the CERTAINTY project.<br></div><br><div>The DMP for the processed data is designed to maximize the value, accessibility, and impact of the data produced, supporting the Grantham Institute's mission to produce research, training and innovation towards effective UK and international action on climate change and the environment<br></div>",
+    "dmp_id" : {
+      "identifier" : "5ae8dfbb-99e8-4a7d-b3c9-98f05b6504de",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "no",
+    "language" : "eng",
+    "modified" : "2024-02-26T15:58:41Z",
+    "project" : [ {
+      "description" : "Cloud, aerosols and their interactions are key regulators of climate. However, uncertainties in the magnitude of the net cooling impact of aerosols on\nclimate and in the cloud response to evolving anthropogenic emissions and climate change induced feedbacks on natural emissions are major\nchallenges that limit our understanding of how global and regional climate, including extremes, respond to changes in greenhouse gases. It is of\nparamount importance to better understand aerosol-cloud processes and their role in the Earth System, from regional to global scales, and over\ndifferent time scales, from days to decades. Over the last decade, extensive research networks, infrastructures, satellite instruments, and atmospheric\nmodels have been developed, making it possible to obtain a holistic view of the effects of clouds and aerosols on climate and weather. CERTAINTY\nwill capitalise on this available data together with advanced algorithms, machine learning and data assimilation methods, high resolution models, and\nEarth system models to bring the fundamental knowledge of interactions between clouds, aerosols, and radiation to a new level. The consortium\npartners are in key roles as operators, data originators, developers, providers, and users of European aerosol and cloud data and ESMs/high resolution\nmodels. The consortium leads the activities of next generation satellite missions (such as EarthCARE), and the development of new satellite products,\nto facilitate their scientific use in CERTAINTY by preparing tools for early adoption of data. CERTAINTY will bring the observation-based\nknowledge to be used in modeling frameworks to improve predictive models and knowledge of processes controlling aerosols, clouds, and their\ninteractions from hours to decades. The ultimate outcome will be better understanding and predictions of extreme events that facilitates planning of\nclimate mitigation/adaptation strategies for the good of European citizens and global society.",
+      "end" : "Sat Nov 16 11:12:03 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Nov 17 11:12:03 UTC 2023",
+      "title" : "CERTAINTY",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY Imperial College London's DMP ",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "8cbd5ee1-6e4d-4159-8e2e-89fe334b062f",
+      "publicDate" : "2023-11-17T11:08:59.124Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

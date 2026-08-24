@@ -1,0 +1,113 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "05b8d69f-8a96-4337-bc8d-866b3271968b",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "olgagolgan99@gmail.com",
+      "name" : "Olga Pagnotta",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0008-1466-7742",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Marta Soricetti (orcid:0009-0008-1466-7742)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0004-5901-5730",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Olga Pagnotta (orcid:0009-0004-5901-5730)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0008-4037-6607",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Sara Vellone (orcid:0009-0008-4037-6607)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0003-3803-4011",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Lorenzo Paolini (orcid:0009-0003-3803-4011)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-07-26T15:05:15Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "3045e878-be44-405c-b407-8e643196a0c3",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "This is the dataset for the python software we have created for the research purpose. With this software we provide the answer to the research questions (see DMP description). We used it to preprocess the original datasets, to create our new datasets and to provide the proper answers.&#160;",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Pika.py software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "16f26799-3bf8-4426-b7e9-4ad86df8ffd4",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The dataset obtained from the processing of the 3rd versionOpenCitations Meta (OpenCitations, 2023), the 19th version OpenCitations COCI (OpenCitations, 2023) and the version of 27/04/23 of ERIH-PLUS (ErihPlus, 2023) datasets, which have been filtered and cleaned keeping only the relevant data needed for the purpose of the research. The dataset produced is composed by different files which serve the purpose of answering to the three research questions.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Pika.py Dataset",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    } ],
+    "description" : "<b>Purpose</b><div>The main purpose of this research is to answer to three different questions and find out:</div><div><span>1. the number of citations which refer to publications in Social Sciences and Humanities journals included in ERIH-PLUS, by looking at citations data contained in OpenCitations COCI and OpenCitations Meta;</span><br><span>2. the most citing and the most cited SSH discipline, according to the above mentioned datasets;</span><br><span>3. the citations coming from and going to publications contained in OpenCitations Meta which are not included in SSH journals.</span><br></div><div><b>Methodology</b></div><div>We want to draw a line that connects these three different datasets, aiming at  offering an overall view of the citations landscape of each of them. For this purpose, we approach the problem from a computational point of view. We extract only the relevant data by operating a first preprocessing of COCI, ERIH-PLUS and META's datasets. Then we build a python software able to analyze CSVs data, querying them to retrieve information needed and to present the results in a clear and understandable way.&#160;</div><div><b>Findings</b></div><div>The findings show that the majority of citations come from and go to psychology publications, and a deep gap exists between the number of citations included in SSH journals and the number of citations that are not included in SSH journals.&#160;</div><div><b>Originality/Value</b></div><div>The research conducted by us has the purpose to add information to existing resources with the aim of facilitating their use and allowing the researchers to have a clearer view of the data contained in each dataset. In addition, the research has the purpose to gather information that may be useful for understanding which is the most influential discipline in the SSH field and to provide a solid starting point for further studies regarding this subject.&#160;</div><div><br></div><div><b>Keywords</b>: COCI, Meta, ERIH-PLUS, OpenCitations, SSH, Journals</div><div><br></div>",
+    "dmp_id" : {
+      "identifier" : "1e9805ea-ced6-4e33-98f8-0c4eb33b7d52",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-09-07T09:33:04Z",
+    "project" : [ {
+      "description" : "This research is supported by University of Bologna within the Open Science Course.",
+      "end" : "Fri Apr 21 15:59:41 UTC 2023",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "https://ror.org/01111rn36",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "https://ror.org/01111rn36",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Apr 21 15:59:41 UTC 2023",
+      "title" : "Open Science",
+      "additional_properties" : { }
+    } ],
+    "title" : "Uncovering the Citation Landscape: Exploring OpenCitations COCI, OpenCitations Meta, and ERIH-PLUS in Social Sciences and Humanities Journals",
+    "additional_properties" : {
+      "templates" : [ "a9ae7573-5c99-434c-939e-639098c49bf9" ]
+    }
+  }
+}

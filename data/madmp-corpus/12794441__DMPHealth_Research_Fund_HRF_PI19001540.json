@@ -1,0 +1,151 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "f6191c67-0949-4a9a-8ecd-b7ed5b4af9ac",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "nmartinez.iacs@aragon.es",
+      "name" : "Natalia Martínez-Lizaga",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0048-4370",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Santiago Royo-Sierra (orcid:0000-0002-0048-4370)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9586-7955",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Natalia Martínez-Lizaga (orcid:0000-0002-9586-7955)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8783-5478",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Javier González Galindo (orcid:0000-0002-8783-5478)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0961-3298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "ENRIQUE BERNAL-DELGADO (orcid:0000-0002-0961-3298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7442-3450",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ester Angulo-Pueyo (orcid:0000-0001-7442-3450)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-9365-4342",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Mirian Seral Rodríguez (orcid:0000-0001-9365-4342)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6285-8120",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Francisco Estupiñán Romero (orcid:0000-0002-6285-8120)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7837-5759",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Manuel Ridao López (orcid:0000-0001-7837-5759)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-02-01T11:21:38Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards", "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).  In addition, we implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset of each participant on-site, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements.&#160;" ],
+      "dataset_id" : {
+        "identifier" : "b23a4fe4-b96f-4071-892d-47f41c33768a",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>The CONCEPT-STROKE public health cohort in Aragon links selected variables from primary care or hospital admissions for  Acute Ischemic Stroke (AIS), covering a global population for the region of approximately 1.3 million lives.</div><div><br></div><div>This cohort includes all patients admitted to hospital due to Acute Ischemic Stroke (AIS) in a public hospital in Aragon (Spain) and complementary information on patient attributes (e.g., comorbidities, prescribed stroke drug) and patient dependency measurements (e.g., Modified Rankin Scale (mRS), and Barthel index).</div><div><br></div><div><span>Original data is maintained and updated daily by&#160;</span><a href=\"https://bigan.iacs.es/es/inicio\" target=\"_blank\">BIGAN</a><span>&#160;(Health Data Space in Aragon).&#160;</span><br></div><div><div><span><br></span></div><div><span>A common data model specification with the required information to achieve the expected results of the research question is provided as supporting documentation at&#160;&#160;</span><a href=\"https://zenodo.org/record/8012966\" target=\"_blank\">https://zenodo.org/record/8012966</a><span><b>&#160;</b>- Common Data Model Specification.</span><br></div><div><span>BIGAN provides pseudonymised data in compliance with the baseline use case data model specification after the data request is processed and granted by the Aragon Ethical Research Committee.&#160;</span><br></div></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "BIGAN has a regional mandate from the government of Aragon to curate and maintain original data requests (and related ETL queries) in the long term and report on the re-use of health data for research purposes.&#160;",
+      "title" : "CONCEPT-STROKE public health cohort in Aragon (Spain)",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d",
+        "otherDQA" : "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).  In addition, we implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset of each participant on-site, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements.&#160;",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "<div>This publication corresponds to the Data Management Plan (DMP) for the &#34;<i>CONCEPT-STROKE: Effectiveness and efficiency of acute ischemic stroke care pathways in five Spanish regions</i>&#34; project.</div><div><br></div><div>CONCEPT-STROKE aims to estimate the effectiveness and efficiency of the care pathway followed by acute ischaemic stroke patients using real-world data routinely collected by five healthcare<span>&#160;systems in Spain. This project b</span><span>uilds on a two-stage design: a&#160;</span><span>cross-sectional data mining design followed by a&#160;</span><span>quasi-experimental design comparing interventions on acute&#160;</span><span>ischaemic stroke.&#160;</span></div><div><ul><li><span>Stage I: the pathway of care as such, as it happens in real life and the&#160;</span><span>propensity for a patient to follow a specific path.</span></li><li><span>Stage II: patients&#8217; survival at 30 days and 6 months&#160;</span><span>after admission to an emergency room.&#160;</span></li></ul></div><div><span>Below is a brief structured description of the research question, the proposed study design, and the cohort definition.&#160;</span><br></div><b>Research Question: </b>&#8220;What is the effectiveness and efficiency of the care pathway followed by patients with acute ischemic stroke?&#8221;<div><b>Income: </b>patients who have suffered an acute ischemic stroke&#160;&#160;</div><div><b>Outcome:</b><span>&#160;the care pathway followed by acute ischaemic stroke patients and patients&#8217; survival at 1 year after admission to an emergency room.&#160;</span><div><b>Study Design: </b><span>An observational retrospective longitudinal study to discover&#160;</span><span>and compare actual care paths with the theoretical pathway and with those present in the five regions and a survival&#160;</span><span>analysis to predict health outcomes within each path.</span></div></div><div><b>Cohort definition:</b> all patients 18 years or older admitted to hospital due to acute ischemic stroke.</div><div><ul><li><b>Inclusion criteria:</b> Patients 18 years or older admitted to emergency care services (or with an unplanned admission to hospital) with a principal diagnosis of Acute Ischemic Stroke (AIS) during the study period.</li><li><b>Exlusi&#243;n criteria:</b> Patients 17 years or younger or patients with a diagnosis of acute hemorrhagic stroke or with other non-specific stroke diagnoses (i.e. transient ischemic attack - TIA)</li><li><b>Study period: </b>From 01-01-2010 until 31-12-2022</li></ul></div>",
+    "dmp_id" : {
+      "identifier" : "9ea5042b-bbb3-47dd-9b7e-9306e3be5b92",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-07-22T12:03:59Z",
+    "project" : [ {
+      "description" : "Health Research Fund (HRF)\nPortal HRF is a search engine for Health Research Projects, designed by the Instituto de Salud Carlos III (ISCIII), in order to inform the public about the research that is developed and funded through the Strategic Action in Health. Portal HRF provides information on research projects awarded in the calls from 2013 to 2021, including projects financed with COVID funds.\n\nThe Strategic Action in Health, managed by the ISCIII, is included in the State Plan for Scientific and Technical Research and Innovation 2017-2020. Its objective is to develop, promote and strengthen research in the National Health System.",
+      "end" : "Tue Feb 06 11:55:15 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "Institute of Health Carlos III (ISCIII)",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "HEALTH RESEARCH PROJECTS",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Mon Feb 06 11:55:15 UTC 2023",
+      "title" : "Health Research Fund (HRF)- PI19/00154",
+      "additional_properties" : { }
+    } ],
+    "title" : "CONCEPT-STROKE: Effectiveness and efficiency of acute ischemic stroke care pathways in three Spanish regions",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution-NonCommercial 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-NC-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "74ddc2c7-db99-472a-ba5c-6755657e3b7d" ],
+      "contact" : "f6191c67-0949-4a9a-8ecd-b7ed5b4af9ac",
+      "publicDate" : "2023-07-03T00:00:00.000Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "4c088fd7-097d-418a-aabd-c6b597bd3bf7",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "girts.burgmanis@lu.lv",
+      "name" : "Girts Burgmanis",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-3838-8157",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ilze France (orcid:0000-0002-3838-8157)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-1472-446X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Dace Namsone (orcid:0000-0002-1472-446X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-6302-7305",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Kārlis Greitāns (orcid:0000-0001-6302-7305)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5903-2283",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Girts Burgmanis (orcid:0000-0001-5903-2283)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0009-0009-4866-2744",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Marta Mikite (orcid:0009-0009-4866-2744)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2730-6256",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ildze Čakāne (orcid:0000-0003-2730-6256)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5903-2283",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Girts Burgmanis (orcid:0000-0001-5903-2283)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-06-07T16:10:07Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "To follow-up of the data on focus groups, workshops, expert interviews, surveys,&#160;<span>lesson observations and decisions during the project. To access the detailed</span><div>information of numerical and textual data.</div>",
+      "distribution" : [ {
+        "available_until" : "2031-12-21T00:00:00.000Z",
+        "byte_size" : 1,
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "Data will be collected to achieve three objectives of project: a) to develop and&#160;<span>improve conceptual model and a descriptive framework of a multi-tiered system&#160;</span><span>of support for differentiated, personalized and inclusive T&amp;L in diverse&#160;</span><span>classrooms; b) to develop recommendations for education policymakers,&#160;</span><span>experts, and educators on implementing multi-tiered system of support in&#160;</span><span>diverse classrooms; c) to develop and improve students learning progress&#160;</span><span>diagnostic toolkit including theoretical and research-based learning and&#160;</span><span>assessment framework for development of TSs to support 3FLs learning of&#160;</span><span>students aged 5 to 16.</span>",
+        "additional_properties" : {
+          "availableUtilId" : "f2c8a9d7-0fde-110b-50f8-ec1d50a9672c",
+          "byteSizeId" : "29bdbfb5-e1c0-9d2a-6280-64760b01d57f",
+          "formatId" : "85294406-76dd-c98d-1581-7ce33c8b5c72",
+          "titleId" : "d36c2c01-5eb8-4d81-a406-39b4840b264c"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "e17813d3-c41c-60d9-19a3-61e868a111cc"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Empirical data collected during the study that describes the findings",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "97ee773e-efce-820b-3090-fdf6b5ab253a" : "GB",
+        "2ae8d4f5-10f9-6b3c-b609-13ec4510f40e" : "false",
+        "03c75f94-7fc3-5e82-29cc-bc5c6554f22c" : "false",
+        "fe4b7d38-57da-e05c-90a5-b8268004d2cc" : "false",
+        "7bbe7a56-1cab-58fe-2514-f97b121282b2" : "false",
+        "87115b3c-49dd-a38f-c438-dbbeb9c24d92" : "focus group discussions, expert interviews, lesson observation transcripts, conceptual models",
+        "dmpSectionIndex" : 3,
+        "aee54381-67db-577a-bb66-0aa6851e3a43" : "students, researchers, policy makers",
+        "b87c2bb2-061d-f91a-a63f-1aad46419841" : "true",
+        "da16e5d8-b69f-24bb-786b-e6e83d970c04" : "true",
+        "f57cd4c6-b9a4-de08-d008-41c3280dbaf2" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "6d953be0-2e0b-623d-285c-08dcd4337290" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "commentFieldValue05214089-0d46-e32e-2e37-21990888d7e2" : "Data will be accessible only after the project has ended to ensure that the&#160;<span>ownership of products and applied solutions is secured.</span>",
+        "b62f67f2-4bf2-4b8f-b7d0-c35c6315769d" : "Access will be granted upon receiving a concrete proposal for a scientific&#160;<span>collaboration, as well as the purpose of re-using this dataset.</span>",
+        "a9b76ba8-5c3e-71cb-7e43-4d9ab5d0f119" : "true",
+        "6181a474-c3cf-d321-e4cf-d2f223a72202" : "false",
+        "75aa573d-d145-6a34-f09c-9d6252bb2464" : "true",
+        "495ff6f6-89d1-372e-f9de-890e604738c8" : "2026-12-22",
+        "e474e88d-cef1-113e-7e0e-dddc4754822f" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "316ba737-8d0d-74f1-8296-f58253c02b8f" : "Any software which can open and read rich text and csv format files.",
+        "0b444cb3-dac4-34f6-4fc8-4460bd2c4610" : "true",
+        "3eae94ef-6a22-ffd9-0a83-a4028154d91e" : "true",
+        "612904cc-e7bf-fb9e-f752-226a6aedbc5e" : "false",
+        "a6be5e2d-81dd-69d5-ecda-28c0194d5aa8" : "true",
+        "8265e35d-b72f-a84a-fa21-70435a578150" : "false",
+        "103cf751-a910-08b8-1a95-e0e216c28eaf" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Girts Burgmanis (orcid:0000-0001-5903-2283)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-5903-2283\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "9d8f43df-b577-62e1-6748-ce12dbbbae2a" : "true",
+        "bbbe9986-dee7-815c-84e2-b419071b1b1f" : "false",
+        "b8c32a8a-f4b7-f518-491a-ab781c691971" : "false",
+        "5e4d0b6b-8146-27f8-7a59-e659ca72164a" : "true",
+        "9410d9fe-62b8-d342-7bc4-cf5ba157cd5b" : "false",
+        "d2c8eb76-d5b0-df8a-b2b3-9b901445ab2a" : "[\"Encryption\",\"Firewall\",\"Passwords\",\"Physical access control\"]"
+      }
+    } ],
+    "description" : "Empirical data collected during the study that&#160;<span>describes the findings.</span><div><span>Focus group discussions, expert interviews, lesson obsevation and workshop notes and data sets,&#160;</span><span>versions of conceptual models ect.</span></div>",
+    "dmp_id" : {
+      "identifier" : "34957d6c-66ec-40c1-8aab-11f113318a71",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-06-07T16:47:11Z",
+    "project" : [ {
+      "end" : "Sat Jun 07 16:10:07 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "90000048222",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "VPP-IZM-Izglītība-2023/1-0001",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Jun 07 16:10:07 UTC 2024",
+      "title" : "Individualized and personalized support system for students' reading, mathematical and scientific literacy development",
+      "additional_properties" : { }
+    } ],
+    "title" : "Individualized and personalized support system for students' reading, mathematical and scientific literacy development",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{\"3b63e447-d5f6-f016-0cb5-c451e0ca228e\":\"2024-06-07\"}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "4c088fd7-097d-418a-aabd-c6b597bd3bf7",
+      "publicDate" : "2024-06-07T15:54:04.637Z",
+      "blueprintId" : "eb02f2ae-69fd-456d-8143-6b0a98af64c4"
+    }
+  }
+}

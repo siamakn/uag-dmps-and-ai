@@ -1,0 +1,246 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "e4e1ce93-8a69-4483-a59d-2b233a8d8c55",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "inese.cakstina-dzerve@rsu.lv",
+      "name" : "Inese Cakstina-Dzerve",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2161-0433",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Olesja Rogoza (orcid:0000-0003-2161-0433)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9354-663X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Valdis Pirsko (orcid:0000-0002-9354-663X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "openaire:0000000121739398",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Riga Stradiņš University",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5589-0395",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Inese Cakstina-Dzerve (orcid:0000-0001-5589-0395)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ {
+      "currency_code" : "EUR",
+      "title" : "storage, archiving, processing",
+      "additional_properties" : { }
+    } ],
+    "created" : "2024-01-10T13:29:10Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Crosscheck by team members, as well as quality check upon deposition of the data" ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Fluorescent and bright field microscopy images of successful experiments, needed for reports, dissemination and publications.&#160;",
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "title" : "Fluorescence and bright field microscopy image data",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "Crosscheck by team members, as well as quality check upon deposition of the data",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Cross check will be perforemd by team members, as well as quality check upon deposition of the data" ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Personell notebooks, publication drafts, meeting notes etc.",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "To follow-up of the data and experiments and decisions during the project (meeting notes). To access the detailed information of numerical and image data.",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Textual data describing experimental design and result interpretations",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "663a6cb6-8449-59a9-bde2-dda2e5b70a84" : "true",
+        "5441c61a-43e6-b66f-cd68-d39a289c6a7f" : "false",
+        "67b56746-2805-9f5d-f3b0-29914159f015" : "RSU Dataverse has all the necessary measures to ensure secure long term preservation and curation.",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "1f1de328-eb57-c9b1-4790-acb56411c07e" : "false",
+        "f975c9c5-7bcb-108d-55a0-e6216608603c" : "true",
+        "93e22159-2cd3-f761-5dd1-815eb95cc36b" : "{\"identifier\":\"\",\"type\":\"\"}",
+        "9d2a4804-7119-6d2e-332d-56dc06fd8b45" : "false",
+        "374a7f26-872e-1f0d-dbcc-d10e42c3ebbf" : "false",
+        "1eacbf8b-cc6b-dac4-7020-a6804423d3c1" : "true",
+        "fa204f63-55a4-b580-791c-5ad26f194b3d" : "{\"name\":\"Euro\",\"value\":\"EUR\"}",
+        "0e139947-83a7-dea6-b586-7e542f992d6a" : "PDV, CSV, TXT are widely accessible file formats",
+        "d90fb379-0b39-0ece-059c-733f9ecae861" : "RSU Share-point",
+        "926edf06-cf66-3877-9c7c-2298a5f99537" : "lab personell, students, researchers",
+        "47a22703-0d56-c178-f379-7226187ec501" : "true",
+        "a48d6250-33b9-6562-40d7-adf2923fcabf" : "true",
+        "dmpSectionIndex" : 3,
+        "13540173-4074-68db-a1e5-cbd458e3ae92" : "Access will be granted upon receiving a concrete proposal for a scientific collaboration, as well as the purpose of re-using this dataset.&#160;",
+        "f7c33ceb-1fca-f11b-c03b-38930f01dc95" : "false",
+        "2c44f283-ef5c-521f-1d4b-be481317f62b" : "true",
+        "9fdcacc8-9771-ce19-ab3e-3da7db202d2b" : "true",
+        "336c53c2-8e68-b897-7046-072df25fae11" : "true",
+        "9099ec2e-a6e5-7bd5-d8aa-3ec666cb1e5f" : "[\"storage\",\"archiving\",\"processing\"]",
+        "05d3403d-fc70-45df-4aeb-408238648a24" : "false",
+        "9ddc0da6-b0b4-524e-af6e-ea55ca0636dd" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Riga Stradiņš University\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000000121739398\\\",\\\"status\\\":0,\\\"tag\\\":\\\"OpenAIRE\\\",\\\"key\\\":\\\"openaire\\\",\\\"hint\\\":null}\"]",
+        "otherDQA" : "Cross check will be perforemd by team members, as well as quality check upon deposition of the data",
+        "0057a30a-072e-2c78-321b-b9093e59f6c3" : "PDV, CSV, TXT are widely accessible file formats",
+        "8d2d2876-939f-64be-0bf5-46f336b4022f" : "[\"codebook\",\"readme file\",\"laboratory notebooks and experimental protocols\",\"methodology description\"]",
+        "60097f6c-e6bc-2d6c-6dd8-326cf3896c46" : "true",
+        "d6e805ec-d54a-8cbe-738b-ecfc422c595a" : "true",
+        "949b56d0-3579-73e1-84da-0ad040fea0c1" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Inese Cakstina-Dzerve (orcid:0000-0001-5589-0395)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0001-5589-0395\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "72928f79-c0ca-dafd-60d2-386ed77ee6ee" : "[\"Encryption\",\"Firewall\",\"Passwords\",\"Physical access control\"]"
+      }
+    }, {
+      "data_quality_assurance" : [ "Crosscheck by the team members, as well as a quality check upon depositing the data.&#160;" ],
+      "dataset_id" : {
+        "identifier" : "",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "All the data consisting of numerical values (e.g. cell viability data).",
+      "distribution" : [ {
+        "format" : [ ],
+        "license" : [ ],
+        "title" : "To gather all the raw and analysed data of the project needed for reports and publications.&#160;",
+        "additional_properties" : {
+          "formatId" : "af8d0773-c805-7972-dbd5-10f40cd0be95",
+          "titleId" : "1236f85c-6597-eeba-826d-bc9a0971ecda"
+        }
+      } ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m13",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "7e2cc6cf-8c59-155b-16d8-0b4eb99aa377"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "Tabular data of experiments",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "6f3b613b-1db1-4452-beb8-e95d2c292040",
+        "otherDQA" : "Crosscheck by the team members, as well as a quality check upon depositing the data.&#160;",
+        "otherDQAID" : "12d39b54-7747-a384-ab27-10907eece34f",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "DMP for hipTNBC is created to track all the result documentation created in this project.&#160;<div>Aim of the project: to identify and to verify molecular alterations, and clinically actionable targets associated with continuous acute, chronic, prolonged, and intermittent (cycling) hypoxia in triple negative breast cancer reference cell lines (TNBC-RCL) to advance the development of personalized therapy for breast cancer (BC) patients. Also, the proposed study plans to explore the effects of various modes of hypoxia on the transcriptomic and proteomic expression status of hypoxia-inducible factors (HIFs), as well as mitochondrial apoptotic priming system in TNBC-RCL.&#160;</div><div>Scientific Objectives (SO):</div><div>1. SO1: To perform bioinformatics analysis in publicly available TNBC multi-omics data sets (TCGA, METABRIC) for identification of novel acute continuous and cycling hypoxia-associated molecular alterations (potential biomarkers) and relevant druggable targets.</div><div>2. SO2: To verify molecular alterations identified in bioinformatics analysis, as well as 15-gene expression continuous acute hypoxia signature14 and cycling hypoxia signature20 in the panel of TNBC-RCLs exposed to various modes of hypoxia.</div><div>3. SO3: To explore the transcriptomic and proteomic expression status of various isoforms of HIFs (HIF-1, HIF- 2, HIF-3) during exposure of TNBC-RCLs to various modes of hypoxia.</div><div>4. SO4: To identify mitochondrial apoptotic dependencies21 induced by various hypoxia conditions for identification of druggable targets for BH3 mimetics.</div><div>5. SO5: To explore the effects of various modes of hypoxia on the sensitivity of TNBC-RCLs to the pharmacological agents identified in the bioinformatics and mitochondrial apoptotic priming dependency analysis.</div><div><br></div><div>WP1: Bioinformatics analysis of publicly available data sets to identify hypoxia-induced molecular alterations specific to TNBC. - responsible: V.Pirsko</div><div>WP2: Culture of TNBC-RCLs across various modes of hypoxia to obtain samples for hypoxia associated feature analysis. - responsible: I.Mitre</div><div>WP3: Analysis of hypoxia-specific gDNA, mRNA, miRNA, and protein features in hypoxic TNBC-RCLs. - responsible: I.Cakstina-Dzerve/O.Rogoza</div><div>WP4: Analysis of the mitochondrial apoptotic priming dependencies in hypoxic TNBC-RCLs. - responsible: I.Cakstina-Dzerve/O.Rogoza</div><div>WP5: The effects of hypoxia on sensitivity of TNBC-RCLs to pharmacological agents identified in WP1 and WP4. - responsible: I.Cakstina-Dzerve/O.Rogoza</div><div>WP6. Preparation of manuscripts for publications.- responsible: I.Cakstina-Dzerve/O.Rogoza/V.Pirsko/I.Mitre</div>",
+    "dmp_id" : {
+      "identifier" : "89f7a293-dfc4-4c68-9217-9b8c48bc4aa6",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-05-28T08:50:59Z",
+    "project" : [ {
+      "description" : "National grant",
+      "end" : "Thu Jan 09 13:29:10 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "lzp-2022/1-0047",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "FLPP",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Wed Jan 10 13:29:10 UTC 2024",
+      "title" : "hip-TNBC grant (lzp-2023/1-0020)",
+      "additional_properties" : { }
+    } ],
+    "title" : "hip-TNBC grant (lzp-2023/1-0020)",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "6f3b613b-1db1-4452-beb8-e95d2c292040" ],
+      "contact" : "e4e1ce93-8a69-4483-a59d-2b233a8d8c55",
+      "publicDate" : "2024-01-10T13:10:49.744Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

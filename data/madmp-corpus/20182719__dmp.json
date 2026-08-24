@@ -1,0 +1,844 @@
+{
+    "$schema": "./JSON-schema/1.2/maDMP-schema-1.2.json",
+    "dmp": {
+        "title": "RAISE Suite Minimal Technical maDMP MVP v0.2",
+        "description": "Minimal maDMP instance for the first RAISE Suite technical MVP. It keeps the RDA maDMP required baseline and adds only the MVP technical fields identified by technical partners under distribution.component_configuration.",
+        "contact": {
+            "contact_id": {
+                "identifier": "0000-0000-0000-0000",
+                "type": "orcid"
+            },
+            "mbox": "contact@example.org",
+            "name": "RAISE Suite maDMP Technical Contact"
+        },
+        "created": "2026-05-12T00:00:00Z",
+        "modified": "2026-05-13T00:00:00Z",
+        "dmp_id": {
+            "identifier": "10.5281/zenodo.20139001",
+            "type": "doi"
+        },
+        "ethical_issues_exist": "unknown",
+        "language": "eng",
+        "dataset": [
+            {
+                "dataset_id": {
+                    "identifier": "10.5281/zenodo.20182719",
+                    "type": "url"
+                },
+                "title": "RAISE Suite MVP Dataset",
+                "description": "Placeholder dataset used to define the minimum maDMP fields required by technical components for the MVP flow.",
+                "personal_data": "unknown",
+                "sensitive_data": "yes",
+                "distribution": [
+                    {
+                        "title": "MVP dataset distribution / version 0.2",
+                        "description": "Concrete dataset representation/version used for the technical MVP. For the MVP, the identified machine-actionable technical fields are collected under component_configuration.",
+                        "data_access": "open",
+                        "format": [
+                            "application/json"
+                        ],
+                        "component_configuration": {
+                            "stream": {
+                                "id": "007",
+                                "topic": "dataset/08deb1b2-f324-4f6d-8d20-12b74204814d"
+                            },
+                            "payload_schema": {
+                                "type": "object",
+                                "properties": {
+                                    "date": {
+                                        "type": "string",
+                                        "description": "Date of the measurements in YYYY-MM-DD format"
+                                    },
+                                    "pre1300": {
+                                        "type": "object",
+                                        "description": "Measurements collected before 13:00",
+                                        "properties": {
+                                            "Carbon Monoxide": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Nitrogen Dioxide": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Ozone": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Particulate Matter": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Sulfur Dioxide1": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Sulfur Dioxide2": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false,
+                                        "required": [
+                                            "Carbon Monoxide",
+                                            "Nitrogen Dioxide",
+                                            "Ozone",
+                                            "Particulate Matter",
+                                            "Sulfur Dioxide1",
+                                            "Sulfur Dioxide2"
+                                        ]
+                                    },
+                                    "full_day": {
+                                        "type": "object",
+                                        "description": "Measurements collected throughout the full day",
+                                        "properties": {
+                                            "Carbon Monoxide": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Nitrogen Dioxide": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Ozone": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Particulate Matter": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Sulfur Dioxide1": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            },
+                                            "Sulfur Dioxide2": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "min_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "min_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_station": {
+                                                        "type": [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "max_value": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "min_station",
+                                                    "min_value",
+                                                    "max_station",
+                                                    "max_value"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false,
+                                        "required": [
+                                            "Carbon Monoxide",
+                                            "Nitrogen Dioxide",
+                                            "Ozone",
+                                            "Particulate Matter",
+                                            "Sulfur Dioxide1",
+                                            "Sulfur Dioxide2"
+                                        ]
+                                    },
+                                    "station_max": {
+                                        "type": "object",
+                                        "description": "Max measurements recorded explicitly per station",
+                                        "properties": {
+                                            "Α.Π.Θ.": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            },
+                                            "ΚΑΛΑΜΑΡΙΑ": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            },
+                                            "ΚΟΡΔΕΛΙΟ": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            },
+                                            "ΝΕΟΧΩΡΟΥΔΑ": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            },
+                                            "ΣΙΝΔΟΣ": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            },
+                                            "ΣΤΑΥΡΟΥΠΟΛΗ": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "Carbon Monoxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Nitrogen Dioxide": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Ozone": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Particulate Matter": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide1": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    },
+                                                    "Sulfur Dioxide2": {
+                                                        "type": [
+                                                            "number",
+                                                            "null"
+                                                        ]
+                                                    }
+                                                },
+                                                "required": [
+                                                    "Carbon Monoxide",
+                                                    "Nitrogen Dioxide",
+                                                    "Ozone",
+                                                    "Particulate Matter",
+                                                    "Sulfur Dioxide1",
+                                                    "Sulfur Dioxide2"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": false,
+                                        "required": [
+                                            "Α.Π.Θ.",
+                                            "ΚΑΛΑΜΑΡΙΑ",
+                                            "ΚΟΡΔΕΛΙΟ",
+                                            "ΝΕΟΧΩΡΟΥΔΑ",
+                                            "ΣΙΝΔΟΣ",
+                                            "ΣΤΑΥΡΟΥΠΟΛΗ"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "date",
+                                    "pre1300",
+                                    "full_day",
+                                    "station_max"
+                                ],
+                                "additionalProperties": false
+                            },
+                            "privacy": {
+                                "anonymization_required": true,
+                                "anonymization_stage": "agent",
+                                "anonymization_target_fields": [
+                                    "pre1300|Carbon Monoxide|min_station",
+                                    "pre1300|Nitrogen Dioxide|min_station",
+                                    "pre1300|Ozone|min_station",
+                                    "pre1300|Particulate Matter|min_station",
+                                    "pre1300|Sulfur Dioxide1|min_station",
+                                    "pre1300|Sulfur Dioxide2|min_station",
+                                    "full_day|Carbon Monoxide|min_station",
+                                    "full_day|Nitrogen Dioxide|min_station",
+                                    "full_day|Ozone|min_station",
+                                    "full_day|Particulate Matter|min_station",
+                                    "full_day|Sulfur Dioxide1|min_station",
+                                    "full_day|Sulfur Dioxide2|min_station"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

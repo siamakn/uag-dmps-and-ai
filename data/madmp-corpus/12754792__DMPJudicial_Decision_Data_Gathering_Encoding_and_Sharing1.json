@@ -1,0 +1,281 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "d6909744-ee06-45de-a263-d5d2eaf7c005",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "cherifa.boukacem-zeghmouri@univ-lyon1.fr",
+      "name" : "Boukacem-Zeghmouri",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2103-371X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Krzysztof Kaminski (orcid:0000-0003-2103-371X)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-6157-3142",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Mandeep Dhami (orcid:0000-0001-6157-3142)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0201-6159",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Chérifa Boukacem-Zeghmouri (orcid:0000-0002-0201-6159)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-5507-8516",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "David Windridge (orcid:0000-0001-5507-8516)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4090-4480",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Łukasz Augustyniak (orcid:0000-0002-4090-4480)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8417-1012",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Tomasz Kajdanowicz (orcid:0000-0002-8417-1012)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9064-1965",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Santosh Tirunagari (orcid:0000-0002-9064-1965)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7683-8852",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Michał Bernaczyk (orcid:0000-0001-7683-8852)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9064-1965",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Santosh Tirunagari (orcid:0000-0002-9064-1965)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4090-4480",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Łukasz Augustyniak (orcid:0000-0002-4090-4480)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8417-1012",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Tomasz Kajdanowicz (orcid:0000-0002-8417-1012)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4090-4480",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Łukasz Augustyniak (orcid:0000-0002-4090-4480)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9064-1965",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Santosh Tirunagari (orcid:0000-0002-9064-1965)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-07-17T07:09:07Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "687337b7-0d6b-44e5-b0f8-e0d18e85b10d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The main aim of WP2 is to establish the data to develop and test the tool. The objectives will be to (1) collate/gather openly sourced legal case records and judgments for coding; (2) develop a coding scheme for extracting data from legal case records and judgments; (3) train human coders to reliably code data from legal case records and judgments using the specially designed coding scheme; (4) make human only coded data available for use by WP3, (5) facilitate human-in-loop coding for WP3, and (6) enable WP4 to make data Open and re-usable by others beyond the project team. It also aims to allow the WP compliant to the standard of Open Publishing.<div><br></div><div>To date, the datasets produced are those corresponding to objective (1). Here are the 4 datasets produced and available:</div><div><ul><li><b>JuDDGES/pl-court-raw</b>: Raw data from Polish court decisions</li><li><b>JuDDGES/pl-court-instruct</b>: Annotated and structured data from Polish court decisions</li><li><b>JuDDGES/pl-court-graph</b>: Graphical representations of Polish courts judgements</li><li><b>JuDDGES/en-court-raw</b>: Raw data from  England and Wales Appeal Court judgements</li></ul><div>It is planned to possibly modify or version them by adding new metadata or new judgments rather than creating new datasets.</div><div><br></div><div><br></div></div><div><br></div>",
+      "distribution" : [ ],
+      "language" : "eng",
+      "metadata" : [ {
+        "description" : "null",
+        "metadata_standard_id" : {
+          "identifier" : "https://rdamsc.bath.ac.uk/api2/m92",
+          "type" : "url",
+          "additional_properties" : { }
+        },
+        "additional_properties" : {
+          "valueId" : "null",
+          "fieldId" : "8beffbe0-ee02-e903-62d0-02bfbcbc3e66"
+        }
+      } ],
+      "personal_data" : "unknown",
+      "security_and_privacy" : [ ],
+      "sensitive_data" : "unknown",
+      "technical_resource" : [ ],
+      "title" : "WP2_Raw & Instruct Datasets",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "explain-the-co-ordination-of-data" : "Each partner is responsible for the collection and management of their own language data. Weekly exchange meetings are scheduled to discuss guidelines  for annotators and schemas for information extraction and share practices. The teams also share on a common GitHub repository dedicated to the project.",
+        "other-calibration" : "<h5 class=\"\">POLISH DATASETS</h5><div>In the first stage of ensuring data quality control for our Polish dataset, we utilized manually created metadata sourced from&#160;<a href=\"https://orzeczenia.ms.gov.pl/\" target=\"_blank\">https://orzeczenia.ms.gov.pl/</a>, a reputable repository of legal documents and judgments. This initial step was crucial in establishing a reliable foundation for subsequent analyses.</div><div>To further enhance the consistency and quality of data collection, we will implement two key measures:</div><div><ol><li><b>Schema Structure Validation:</b> We will employ JSON Schema validation tools (e.g., Python's jsonschema library available at&#160;<a href=\"https://python-jsonschema.readthedocs.io/en/stable/validate/\" target=\"_blank\">https://python-jsonschema.readthedocs.io/en/stable/validate/</a>) to verify that each data entry adheres to our predefined schema structure. This process involves checking whether the data conforms to specific formats, contains required fields, and meets all constraints outlined in our schema definition. By doing so, we can detect any discrepancies or anomalies early on and ensure that only well-structured data is included in our dataset.</li><li><b>Automated Data Quality Checks:</b> Following schema validation, automated scripts will be developed to perform routine checks on the dataset. These scripts will look for common issues such as missing values, duplicate records, outliers that deviate significantly from expected patterns, and inconsistencies across related fields. Any identified problems will be logged systematically for review by the research team.</li><li>Both measures are designed to maintain high standards of data integrity and meticulously document every step taken during the validation process. The documentation generated through these controls provides transparency into how the dataset has been curated and maintained over time&#8212;essential information when sharing results with an academic audience or using this resource as a basis for further research endeavors.</li></ol></div><div>By implementing these robust quality control mechanisms early in our workflow pipeline&#8212;and continuously refining them based on feedback&#8212;we aim to establish a trustworthy database capable of supporting rigorous scientific inquiry within Polish legal texts analysis.</div><div><br></div><div><h5 class=\"\">UK dataset</h5></div><div>An HTML parser has been developed to automatically traverse the search results and download the XML files for each judgment. The dataset includes the full content of 6,154 XML files with judgments published no later than 2024-05-15. This HTML parser is available in scripts/github.&#160;</div><div><br></div><div><br></div><div><br></div><div><br></div>",
+        "if-personal-data-are-processed" : "false",
+        "multiple_0de5c3a3-bd43-3af5-7d7d-7b371a12badb_33cb7fc4-1348-4059-78e7-38848c596352_0_b2ce190d-05aa-c5cd-e8fc-4b1ffe4d78eb" : "To be decided and updated.",
+        "explain-how-the-necessary-resources" : "[\"Infrastructure Grant\"]",
+        "indicate-who-will-be-able" : "[\"Researchers\",\"Research communities\",\"Decision makers\",\"Education\",\"Economy\",\"The public\"]",
+        "multiple_e552fe06-fabc-d75c-ccb5-4d66dd75ce42_f08754cd-1425-17e5-b5fd-05d332728c74_0_947432b4-1faa-c499-17a1-7a06f6a4f2ab" : [ "{\"label\":null,\"name\":\"Santosh Tirunagari (orcid:0000-0002-9064-1965)\",\"id\":null,\"reference\":\"0000-0002-9064-1965\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}" ],
+        "consider-what-other-documentation" : "All the documentation needed is available within the datasets cards.&#160;<div><ul><li>https://huggingface.co/datasets/JuDDGES/pl-court-raw</li><li>https://huggingface.co/datasets/JuDDGES/pl-court-instruct</li><li>https://huggingface.co/datasets/JuDDGES/pl-court-graph</li><li>https://huggingface.co/datasets/JuDDGES/en-court-raw</li></ul><div>What the dataset cards contain:</div></div><div><ul><li><b>Description</b>: An overview of the dataset, including its purpose, potential applications, and history.</li><li><b>Composition</b>: Details about dataset features such as the number of rows, data types, specific column characteristics, etc.</li><li><b>Usage</b>: Information on how the dataset can be used, including code examples, specific tasks it is suited for, and recommended configurations.</li><li><b>Creation</b>: Information on how the dataset was created, including data sources, collection process, cleaning methods, and authors or contributors.</li><li><b>Ethical Considerations</b>: Discussions on ethical considerations related to dataset use, such as potential biases, privacy impacts, and precautions to take.</li><li><b>License</b>: Information on usage rights and the license under which the dataset is published.</li><li><b>References</b>: Citations and references to related works or articles associated with the dataset.</li></ul><div>The data will also be directly linked to the publications; the detailed methodology in the publications will help complete the metadata.</div></div>",
+        "explain-the-foreseeable-research" : "In making new software, tools and data resources open on a public repository, researchers will be empowered to develop and empirically test theories of judicial decision making and address judicial policy and practice-relevant questions. Researchers from public (legal) institutions can also reuse the data for their purposes.&#160;",
+        "1af2d240-8ade-6a5e-4c1f-24d479268013" : "<div><h5 class=\"\">Polish dataset&#160;</h5></div>During our research activities, we must ensure that data and metadata are stored securely and backed up regularly to prevent any loss or corruption. To this end, we have chosen MongoDB Atlas as our primary storage solution.<div><br><div><b>MongoDB Atlas Database Storage</b>: MongoDB Atlas provides a fully managed cloud database service that offers high availability, scalability, and compliance with the most stringent data security standards. Our datasets and corresponding metadata will be hosted on MongoDB Atlas clusters, which are configured for optimal performance and reliability.</div><div><br></div><div><b>Backup Strategy: </b>The backup protocol within MongoDB Atlas is robust and automated. We will perform backups of our entire dataset every 6 hours without fail. This frequent backup schedule ensures that in the event of an unexpected system failure or data corruption incident, so we can quickly restore the most recent version of our data with minimal loss.</div><div><br></div><div>The backups themselves are snapshots of the database state at consistent points in time. These snapshots include all collections, documents, indexes, and configurations present when each backup is taken. They are encrypted using advanced encryption methods to protect sensitive information from unauthorized access during transit and at rest.</div><div><br></div><div>In addition to our rigorous backup strategy within MongoDB Atlas, we will periodically create new versions of datasets for integration with the Hugging Face platform. This process involves exporting curated collections from our MongoDB database and transforming them into formats suitable for machine learning models hosted on Hugging Face.</div><div><br></div><div><b>Dataset Versioning for Hugging Face: </b>We deliberately create dataset versions to track changes over time and provide researchers with access to historical and up-to-date data. By versioning our datasets, we facilitate reproducibility in research by enabling comparisons across different iterations of the same dataset.</div><div><br></div><div>Significant updates or enhancements made to the existing collections in MongoDB Atlas will determine the frequency at which these new versions are created. Each version released on Hugging Face will be thoroughly documented, detailing any modifications or additions since the previous release. This ensures transparency and provides users with clear insights into the evolution of the dataset.</div><div>By maintaining an active presence on platforms like Huggling Face, we contribute valuable resources to a broader community and invite collaboration and feedback that can lead to further improvements in our work. Our commitment extends beyond just storing and backing up data; it encompasses sharing knowledge and fostering advancements within the field through accessible, high-quality datasets.</div><div><br></div><div>Currently the UK datasets are stored locally on the data manager&#8217;s machine. They will gradually be backed up to MongoDB.</div><div><br></div></div>",
+        "multiple_3a46a10f-ce0c-b847-4d38-1cfdc7402ad5_f25d3c30-af12-d4a2-1356-5bf7a1952789_0_give-details-on-the-kind-of-data" : [ "Other" ],
+        "multiple_e552fe06-fabc-d75c-ccb5-4d66dd75ce42_f08754cd-1425-17e5-b5fd-05d332728c74_0_8428a130-ef19-f6ea-686d-675444c707f9" : "{\"label\":null,\"name\":\"Middlesex University\",\"id\":null,\"reference\":\"https://ror.org/0531tjg57\",\"status\":0,\"tag\":\"OpenAIRE\",\"key\":\"openaire\",\"hint\":null}",
+        "ethical-issues-solution " : "A letter of approval regarding the ethical considerations of the project was issued on March 8, 2024 for all the documents such as Informed Consent Form, Data Protection Declaration, Participant Recruitment Information.<div><br><div><ul><li>As mentioned in the project proposal:</li></ul></div><div>'<i>The research will first undergo ethics review from the Department of Psychology Research Ethics Committee at Middlesex University London, followed by reviews from Wroclaw and Lyon where necessary and applicable. The University has a strict data protection and declaration procedure which adheres to 7 principles, namely, that the information is Fairly and lawfully processed, processed for specified and lawful purposes, adequate, relevant and not excessive, accurate and kept up date where necessary, not kept for longer than is necessary, kept secure, and necessary to actively demonstrate compliance with all of the above principles. The University abides by GDPR rules and exemptions. DHAMI has previously been granted ethics approval for student projects involving human encoding of court records/legal judgments including from the BAILII data resource and so we do not foresee any ethical issues.</i>&#8217;</div><div><br></div></div>",
+        "4661db7b-55c4-6b73-112a-d276779d8bbf" : "No datasets will be reused.",
+        "indicate-how-it-will-be-decided" : "To be decided and updated.",
+        "how-often-the-backup" : "Daily",
+        "is-it-necessary-to-restrict-access" : "false",
+        "7cc69d39-2d82-cc2d-5860-62bda1bad579" : "It has not been decided yet, but we are considering Zenodo.",
+        "demonstrate=that-the-data-can-be" : "Zenodo is running from the CERN data center, whose purpose is long term and persistent preservation of digital objects.<div>No storage space limit per researcher, a DOI will be assigned to each dataset, the costs related to data management are included in the project within WP4.</div><div><br></div>",
+        "sharing-mechanism-wordlist" : "Repository",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_28279cea-5563-d796-5d35-9b51e9d59239_2_0e2190be-514e-61ac-34fa-4eafdf199a34" : "{\"label\":null,\"name\":\"Santosh Tirunagari (orcid:0000-0002-9064-1965)\",\"id\":null,\"reference\":\"0000-0002-9064-1965\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_a31fb32f-91dc-8f59-6647-578a2b614061_0_occupation-position" : "Coordinator and author of the data management plan",
+        "describe-the-data-to-be" : "[\"Other\"]",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_b403fced-55d8-c4fa-86e4-1f47fabcb81d_1_occupation-position" : "Coordinator and author of the data management plan",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_a31fb32f-91dc-8f59-6647-578a2b614061_0_0e2190be-514e-61ac-34fa-4eafdf199a34" : "{\"label\":null,\"name\":\"Chérifa Boukacem-Zeghmouri (orcid:0000-0002-0201-6159)\",\"id\":null,\"reference\":\"0000-0002-0201-6159\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}",
+        "explain-how-the-data" : "The platforms allow data retrieval online, knowing that they are open source, regarding MongoDB, see the previous question.",
+        "bd571238-84e2-e644-0b01-d01a656ab6ec" : "No datasets will be reused.",
+        "explain-how-the-data-might-be-re-used" : "[\"To obtain information\",\"To share information\",\"To make informed decisions\"]",
+        "indicate-whether-potential-users" : "There is no specific software required to reuse the data. The data is available as open access and in an open format.",
+        "give-details-on-the-volumes" : "GB (gigabyte)",
+        "indicate-which-metadata" : "[\"Structural\",\"Administrative\",\"Descriptive\",\"Technical\"]",
+        "explain-what-access-conditions" : "The data will be open to the Hugging Face community, which is an aknowledged open platform.",
+        "yes-pid" : "[\"DOI\"]",
+        "explain-which-methodologies-or-software" : "Polish data are extracted via API from official websites including the Polish Court judgements available at&#160;<a href=\"https://orzeczenia.ms.gov.pl/\" target=\"_blank\">https://orzeczenia.ms.gov.pl/</a>.&#160;<div>For the UK data, an HTML parser has been developed to automatically browse the search results and download the XML files for each judgment. The data has been extracted from the England and Wales Appeal Court judgements available at&#160;<a href=\"https://caselaw.nationalarchives.gov.uk/judgments/advanced_search?court=ewca/crim/\" target=\"_blank\">https://caselaw.nationalarchives.gov.uk/judgments/advanced_search?court=ewca/crim/</a>&#160;and can be downloaded as XML or PDF files under the Crown Copyright license.&#160;</div><div><br></div>",
+        "699173de-0358-2ef3-be22-40701c29c509" : "Not relevant",
+        "consider-how-this-information" : "Dataset cards, datasheets for dataset, readme text file",
+        "explain-how-the-data-will-be" : "[\"Deposit in a trustworthy data repository\",\"Indexed in a catalogue\"]",
+        "template" : "f8474cfb-ef80-4bac-a865-7120afa1931a",
+        "36c359c2-3449-203f-8a2f-f74adcdef72f" : "[]",
+        "multiple_d75c42b8-3a10-cf09-261d-163cc557ef19_f9262560-38e5-04b6-178e-5d5282acbd8e_1_explain-which-institutional-data" : "{\"label\":null,\"name\":\"Université Claude Bernard Lyon1\",\"id\":null,\"reference\":null,\"status\":0,\"tag\":\"OpenAIRE\",\"key\":\"openaire\",\"hint\":null}",
+        "20443b82-9d11-f34b-1477-74482f955794" : "It depends on the dataset:&#160;<div><ul><li><b>JuDDGES/pl-court-raw</b>: 10.3 GB</li><li><b>JuDDGES/pl-court-instruct</b>: 2.94 GB</li><li><b>JuDDGES/pl-court-graph: </b>1.57 GB (PyG format)/ 250MB (JSON)</li><li><b>JuDDGES/en-court-raw</b>: 86.6 MB</li></ul><div><br></div><div><br></div></div>",
+        "66a22535-2d71-0a77-9021-f825d9d63fe0" : "/",
+        "explain-how-data-provenance" : "For now, the WP2 datasets are published on HuggingFace platform and accompanied by enriched documentation within the 'dataset card': dataset cards help users understand the contents of the dataset and give context for how the dataset should be used. You can also add dataset metadata to your card. The metadata describes important information about a dataset such as its license, language, and size.\nWe are considering creating a datasheet template for the JuDDGES project data. This to provide consolidation to our approach in terms of data sharing, but also in terms of enhancing open practices within the project.",
+        "indicate-which-metadata-will" : "The data is documented through dataset cards. We do not use specific standards as we create our schema based on use cases and annotation guidelines.",
+        "will-exclusive-use-of-the-data" : "false",
+        "multiple_d75c42b8-3a10-cf09-261d-163cc557ef19_fa717343-62ee-0c7f-1ccb-89bc5191a36b_0_explain-which-institutional-data" : "{\"label\":null,\"name\":\"Wroclaw University of Technology\",\"id\":null,\"reference\":null,\"status\":0,\"tag\":\"OpenAIRE\",\"key\":\"openaire\",\"hint\":null}",
+        "ce598116-51da-8714-4774-274833176020" : "widely supported format across disciplines",
+        "f3f5bffb-539f-eee5-1a07-4a019cebadb3" : "Not relevant",
+        "occupation-position" : "Project Data Manager and Supervisor (PL datasets)",
+        "indicate-how-the-data-will" : "For now, the dataset names follow the naming convention 'project name/country-data type', for example: JuDDGES/pl-court-raw.",
+        "947432b4-1faa-c499-17a1-7a06f6a4f2ab" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Łukasz Augustyniak (orcid:0000-0002-4090-4480)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-4090-4480\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "explain-who-will-have-access" : "[\"{\\\"label\\\":null,\\\"name\\\":\\\"Santosh Tirunagari (orcid:0000-0002-9064-1965)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-9064-1965\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Łukasz Augustyniak (orcid:0000-0002-4090-4480)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-4090-4480\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\",\"{\\\"label\\\":null,\\\"name\\\":\\\"Tomasz Kajdanowicz (orcid:0000-0002-8417-1012)\\\",\\\"id\\\":null,\\\"reference\\\":\\\"0000-0002-8417-1012\\\",\\\"status\\\":0,\\\"tag\\\":\\\"ORCID\\\",\\\"key\\\":\\\"orcid\\\",\\\"hint\\\":null}\"]",
+        "choice-postponed-restricted" : "Embargoed",
+        "c54550aa-9de5-b883-1dd8-278452acf024" : "/",
+        "e43ca78f-d1c9-0fd1-2e9f-277b5f7752f2" : "The .parquet format is a commonly used format in the discipline. Given that the data is on the HuggingFace platform, it is the most appropriate format (more information&#160;<a href=\"https://huggingface.co/docs/datasets-server/parquet\" target=\"_blank\">here</a>: &#34;<i>Parquet is a columnar storage format optimized for querying and processing large datasets. Parquet is a popular choice for big data processing and analytics and is widely used for data processing and machine learning.</i>&#34;).<div><br></div><div>For this dataset: JuDDGES/pl-court-graph, the JSON format is intended for analysis and contains most of the attributes available in JuDDGES/pl-court-raw. We excluded some less-useful attributes and text content, which can be easily retrieved from the raw dataset and added to the graph as needed.&#160;<span>The PyG format is designed for machine learning applications, such as link prediction on graphs, and is fully compatible with the Pytorch Geometric framework (more information&#160;</span><a href=\"https://huggingface.co/datasets/JuDDGES/pl-court-graph\" target=\"_blank\">here</a><span>).</span></div><div><div><br></div><div><br></div></div>",
+        "give-details-on-the-kind-of-data" : "[\"Derived or compiled (e.g., text mining, 3D models)\"]",
+        "dmpSectionIndex" : 3,
+        "indicate-whether-additional-resources-will" : "false",
+        "c4c40a29-5965-4d15-25af-2f4cb5e3111b" : "Data are already on Hugging Face and GitHub.",
+        "explain-how" : "Not relevant",
+        "outline-the-plan-for-data-preservation" : "To be decided and updated.",
+        "explain-how-the-consistency" : "[\"Data entry validation\"]",
+        "describe-the-main-risks-and-how" : "Pseudonymization or anonymization will be applied if necessary. For Polish datasets, the judgments are already pseudonymized in the databases. The backups in the database are encrypted to protect sensitive data.",
+        "explain-whether-there-is-a" : "Not at this stage of the project within this WP.",
+        "indicate-whether-there-are-any" : "false",
+        "0e2190be-514e-61ac-34fa-4eafdf199a34" : "{\"label\":null,\"name\":\"Łukasz Augustyniak (orcid:0000-0002-4090-4480)\",\"id\":null,\"reference\":\"0000-0002-4090-4480\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}",
+        "explain-which-institutional-data" : "{\"label\":null,\"name\":\"Middlesex University London\",\"id\":null,\"reference\":null,\"status\":0,\"tag\":\"OpenAIRE\",\"key\":\"openaire\",\"hint\":null}",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_28279cea-5563-d796-5d35-9b51e9d59239_2_occupation-position" : "Data Manager and Supervisor (UK datasets)",
+        "multiple_56c0f9ed-6cab-b553-982e-25d3ece1ebb9_b403fced-55d8-c4fa-86e4-1f47fabcb81d_1_0e2190be-514e-61ac-34fa-4eafdf199a34" : "{\"label\":null,\"name\":\"Candice FILLAUD (orcid:0009-0005-2084-3384)\",\"id\":null,\"reference\":\"0009-0005-2084-3384\",\"status\":0,\"tag\":\"ORCID\",\"key\":\"orcid\",\"hint\":null}",
+        "8cd82670-83c3-f860-9c35-bb20cb128029" : "[\"Open\"]",
+        "9436ba02-537f-17f4-3d18-6f8083f88355" : "At this stage, we do not have the exact amount, but a dedicated budget is allocated for the management and opening of the project data. This is included in WP4: 'Open science practices &amp; engaging early career researchers', objective (1) provide open access to publication, data and software in accordance with the Open Science policy of the call.<div><ul><li>The storage of Polish datasets in MongoDB represents 100-200 USD monthly, the subscription will increase based on the size of the datasets.</li><li>The digital infrastructures (HuggingFace and GitHub) are free and open source, which does not represent a cost to the project. However,  within WP2 and the data management, the teams responsible for data management represent a human cost (collection, analysis, management, publication on digital platforms), which can be quantified in terms of working hours or salaries.</li></ul></div><div><br></div>",
+        "what-ethical-issues-and-codes" : "[\"Ethical issues surrounding personal data\"]",
+        "8428a130-ef19-f6ea-686d-675444c707f9" : "{\"label\":null,\"name\":\"Wroclaw University of Technology\",\"id\":null,\"reference\":null,\"status\":0,\"tag\":\"OpenAIRE\",\"key\":\"openaire\",\"hint\":null}",
+        "explain-which" : "Other",
+        "indicate-where-the-data-will-be" : "[\"{\\\"id\\\":null,\\\"name\\\":\\\"Repository of University of Wroclaw\\\",\\\"pid\\\":\\\"re3data_____::r3d100014250\\\",\\\"abbreviation\\\":null,\\\"uri\\\":null,\\\"created\\\":null,\\\"modified\\\":null,\\\"tag\\\":\\\"OpenAIRE\\\",\\\"source\\\":null,\\\"hint\\\":null}\"]",
+        "multiple_3a46a10f-ce0c-b847-4d38-1cfdc7402ad5_f25d3c30-af12-d4a2-1356-5bf7a1952789_0_other-type" : "The collected datasets come from digital databases (particularly government databases); they consist of primary digital data (raw data) and secondary data.<div><ul><li><b>JuDDGES/pl-court-raw</b>:&#160;<span>The dataset consists of Polish Court judgements available at&#160;<a href=\"https://orzeczenia.ms.gov.pl/\" target=\"_blank\">https://orzeczenia.ms.gov.pl/</a>, containing full content of the judgements along with metadata sourced from official API and extracted from the judgement contents. This dataset contains raw data.</span></li><li><span><b>JuDDGES/pl-court-instruct</b>:&#160;</span><span>The dataset consists of Polish Court judgements available at https://orzeczenia.ms.gov.pl/, containing full content of the judgements along with metadata sourced from official API and extracted from the judgement contents. This dataset is designed for fine-tuning large language models (LLMs) for information extraction tasks and is formatted as instructions.</span></li><li><span><b>JuDDGES/pl-court-grap</b>h:&#160;</span><span>This dataset is primarily based on the JuDDGES/pl-court-raw. The dataset consists of nodes representing either judgments or legal bases, and edges connecting judgments to the legal bases they refer to. Also, the graph was cleaned from small disconnected components, leaving single giant component.&#160;</span></li><li><span><b>JuDDGES/en-court-raw</b>:&#160;</span>The dataset consists of England and Wales Appeal Court judgements available at&#160;<a href=\"https://caselaw.nationalarchives.gov.uk/judgments/advanced_search?court=ewca/crim/\" target=\"_blank\">https://caselaw.nationalarchives.gov.uk/judgments/advanced_search?court=ewca/crim/</a>, containing full content of the judgements from official website. This dataset contains raw data.</li></ul></div><div><span><br></span></div><div><br></div>",
+        "reason-postponed-restricted" : "No restriction or embargoed.",
+        "other-preserve" : "To be decided and updated.",
+        "multiple_0de5c3a3-bd43-3af5-7d7d-7b371a12badb_33cb7fc4-1348-4059-78e7-38848c596352_0_wordlist-indicate-what-data-must" : "Retained",
+        "give-details-on-the-data-format" : "The data consists of primary digital data (raw data) and secondary data (for analysis) extracted via API or HTML parser.<div>The formats are non-proprietary and open source, such as parquet, JSON, xml and PyG formats.</div>"
+      }
+    } ],
+    "description" : "<div><span>This document corresponds to the Data Mangement Plan for the JuDDGES (Judicial Decision Data Gathering, Encoding and Sharing) project and aims to apply FAIR principles to data and software produced. It will be updated regularly, at least every semester until the end of the project.</span></div><div><br></div><div>The overall goal of the JuDDGES project is to harness state-of-the-art Natural Language Processing &amp; Human-In-The-Loop technologies to provide legal researchers with new Open software and tools that enable extensive, flexible and on-going meta-annotation capability (both automated and employing domain experts in-the-loop). This capability is applied to legal records/judgments from criminal courts across jurisdictions with varied legal constitutions (Poland, England &amp; Wales). &#10;</div><div>The project is organized into 4 WPs :&#160;</div><div><ul><li>WP1: Project management</li><li>WP2: Gathering and Human Encoding of Judicial Decision Data</li><li>WP3: NLP and HITL Machine Learning Methodological Development</li><li>WP4: Open science practices &amp; engaging early career researchers</li></ul><div><i>Website link coming soon</i></div></div><div><br></div><div><br></div>",
+    "dmp_id" : {
+      "identifier" : "291a62cc-f979-4128-ab7f-9e8b93d0dbee",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-07-17T07:11:31Z",
+    "project" : [ {
+      "end" : "Wed Jun 25 08:39:50 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "chistera____::CHISTERA||CHIST-ERA||CHIST-ERA",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "anr_________::ANR-23-CHRO-0001",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Jun 25 08:39:50 UTC 2024",
+      "title" : "Judicial Decision Data Gathering, Encoding and Sharing",
+      "additional_properties" : { }
+    } ],
+    "title" : "JuDDGES (Judicial Decision Data Gathering, Encoding and Sharing) DMP CHIST-ERA ",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "CC0 1.0",
+        "modified" : null,
+        "pid" : "CC0-1.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "f8474cfb-ef80-4bac-a865-7120afa1931a", "9fbc4380-ecfb-4066-a0fb-33abbc19f566" ],
+      "contact" : "d6909744-ee06-45de-a263-d5d2eaf7c005",
+      "publicDate" : "2024-04-22T12:10:37.013Z",
+      "blueprintId" : "37701076-e0ff-4e4f-95aa-9f3d6a23083a"
+    }
+  }
+}

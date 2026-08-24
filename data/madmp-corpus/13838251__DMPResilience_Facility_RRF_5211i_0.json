@@ -1,0 +1,80 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "8df527bf-110f-438f-97a4-6af936531f14",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ram.kumar.nagarajan@osi.lv",
+      "name" : "Nagarajan Ramkumar",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6452-532X",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Nagarajan Ramkumar (orcid:0000-0002-6452-532X)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-09-24T09:07:34Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "ef77d842-053c-439a-813c-909485eae3fb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Data collected will be of distinct origin: laboratory protocols of chemical synthesis, analytical data; characterization of chemical compounds. Besides the research specific data there will be project management and reporting data.",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Experimental procedures, analytical data and reporting",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "56c01f74-9de8-4fab-86b4-3cdc85e7168f",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "Fluorinated organoboron compounds are important synthetic building blocks that display the unique characteristics of a fluorinated motif with the versatile synthetic applications of organoboron moiety. Although such compounds are very valuable in various fields, such as pharmaceuticals and materials science, the types of fluorine-containing organoboron compounds are not abundant and their synthetic methods are also very limited. CARGO aims to develop a &#8220;toolbox&#8221; for both boryl-fluoromethylation and fluoromethylation of simple activated organic molecules by utilizing a bifunctional reagent, gem-diborylfluoromethane that can undergo a wide range of carbon&#8211;carbon bond-forming reactions by both catalytic and non-catalytic processes. Given its chemical stability and synthetic versatility, gem-diborylfluoromethane is deemed as an attractive reagent for constructing compounds with molecular complexity (containing both fluorine and boron moieties). Investigations will be carried out to explore the synthetic potential of this new reagent by developing sustainable synthetic approaches to access fluorinated organoboron compounds via radical and nucleophilic routes. Methodologies developed within the project will be validated on biologically relevant targets for medicinal and drug discovery purposes.",
+    "dmp_id" : {
+      "identifier" : "1d1bd1f3-f27c-4e07-b9b8-87b8c97e729f",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-09-25T10:14:22Z",
+    "project" : [ {
+      "end" : "Wed Sep 24 09:07:34 UTC 2025",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "90000812928",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "grant Nr.14/OSI/PG-38",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Tue Sep 24 09:07:34 UTC 2024",
+      "title" : "Resilience Facility (RRF) (5.2.1.1.i.) ",
+      "additional_properties" : { }
+    } ],
+    "title" : "Construction of Fluorinated Organoboron Compounds (CARGO)",
+    "additional_properties" : {
+      "license" : null,
+      "visible" : true,
+      "dmpProperties" : "{}",
+      "templates" : [ "56c01f74-9de8-4fab-86b4-3cdc85e7168f" ],
+      "contact" : "8df527bf-110f-438f-97a4-6af936531f14",
+      "publicDate" : "2024-09-24T08:53:50.140Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

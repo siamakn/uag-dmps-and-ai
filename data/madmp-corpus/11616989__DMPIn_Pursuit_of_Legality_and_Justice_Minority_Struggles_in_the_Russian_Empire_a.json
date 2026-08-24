@@ -1,0 +1,94 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "19742b67-9988-45a2-9cc4-a9b7f3169191",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "karabaev.alisher@gmail.com",
+      "name" : "Alisher Karabaev",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "dmp:Stefan Kirmse",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Stefan Kirmse",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-09-15T08:12:55Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Consistency verified with data models and standards", "Other", "Consistency verified with data models and standards." ],
+      "dataset_id" : {
+        "identifier" : "82c217a4-bc50-412a-bd50-fa5e7a7a6987",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>This DMP outlines a comprehensive approach to managing the project&#8217;s datasets throughout their lifecycle, ensuring their long-term availability and accessibility. The DMP serves as a guide for researchers and the research data manager in the JUSTIMINO project, covering data standards, metadata, data sharing, archiving, preservation, and security to uphold proper management principles. By adhering to FAIR data principles, the DMP outlines how research data will be collected, generated, shared, and preserved during and beyond the project&#8217;s lifespan.<br><div><br></div></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "The data will be safely stored in trusted repositories for long term preservation&#160;<span>and curation.&#160;</span>",
+      "title" : "JUSTIMINO Data Management Plan ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "Consistency verified with data models and standards.",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "This DMP provides a guideline to research data produced or collected in the project &#8220;In Pursuit of &#8216;Legality&#8217; and &#8216;Justice&#8217;. Minority Struggles in the Russian Empire and the Soviet Union (JUSTIMINO)&#8221;. This project, funded by a European Research Council (ERC) Consolidator Grant, explores the ways in which ethnic and religious minorities, from the Russian Empire&#8217;s &#8216;Great Reforms&#8217; of the 1860s to the dissolution of the USSR in 1991, routinely invoked and employed &#8216;legality&#8217; and &#8216;justice&#8217; to further and enforce their rights.<div>The JUSTIMINO project will produce and collect research data on ethnic and religious minorities in the Russian Empire and the Soviet Union. It will include information on legal cases, petitions, laws and regulations, oral histories, speeches, and writings related to minority issues. These data can be used to study a variety of topics, such as the ways in which minorities used &#8216;legality&#8217; and &#8216;justice&#8217; to further and enforce their rights, the evolution of minority rights in two highly authoritarian states, and the impact of legal and political change on minority groups.</div><div>The creation of this DMP was motivated by the recognition that there is a lack of easily accessible research data on the history of ethnic and religious minorities in the Russian Empire and the Soviet Union. The project will fill this gap by providing a comprehensive collection of primary and secondary sources on this topic. It is hoped that research data from this project will be a valuable resource for scholars who are interested in researching this important area of history.</div><div><br><div><br>&#160; &#10;<div><br></div></div></div>",
+    "dmp_id" : {
+      "identifier" : "71e5068d-592e-4d46-9d68-ad6d1230da0f",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-12-18T13:08:49Z",
+    "project" : [ {
+      "end" : "Thu Nov 14 09:34:58 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "85f2ae6b-7ac3-4684-ba81-349f9b3195cf",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101048445",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Wed Nov 15 09:34:58 UTC 2023",
+      "title" : "In Pursuit of 'Legality' and 'Justice': Minority Struggles in the Russian Empire and the Soviet Union",
+      "additional_properties" : { }
+    } ],
+    "title" : "JUSTIMINO Data Management Plan ",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution Share-Alike 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-SA-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "visible" : false,
+      "dmpProperties" : null,
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "19742b67-9988-45a2-9cc4-a9b7f3169191",
+      "publicDate" : "2023-09-15T07:56:34.988Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}
