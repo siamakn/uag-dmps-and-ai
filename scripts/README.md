@@ -51,11 +51,14 @@ opens from disk with no server. Selection lives in browser storage.
 ## Running it locally
 
 ```bash
-python scripts/serve.py                  # UI + API on http://127.0.0.1:8756
-python scripts/serve.py --api-port 8757  # split: UI on 8756, API on 8757
-python scripts/serve.py --port 9000      # pick your own
-python scripts/serve.py --no-open        # do not launch a browser
+python3 scripts/serve.py                  # UI + API on http://127.0.0.1:8756
+python3 scripts/serve.py --api-port 8757  # split: UI on 8756, API on 8757
+python3 scripts/serve.py --port 9000      # pick your own
+python3 scripts/serve.py --no-open        # do not launch a browser (headless)
 ```
+
+On Windows the interpreter is `python`, on Ubuntu `python3`; nothing else differs. Python 3.7+,
+stdlib only. See the README for the per-platform walkthrough.
 
 Ports default to 8756 and 8757, away from the usual 3000/5000/8000/8080 crowd.
 If a port is taken the server steps up to the next free one and says which it

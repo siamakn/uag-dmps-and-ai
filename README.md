@@ -76,17 +76,66 @@ Filters the pool by funder, year, format, discipline, lifecycle stage and sensit
 
 Everything explains itself on hover: each filter chip, column header, column-editor row and coloured tag carries a one-line description of exactly what it does and where the value comes from. The **Guide** button in the header opens a short panel covering the pool, how the discipline and lifecycle axes are derived, how to read a row, and where the selection is saved. Column layout and hover text are covered by the test suite, so a filter cannot be added without documenting it.
 
-**Run it locally:**
+### Running it
 
-```bash
-python scripts/serve.py                  # http://127.0.0.1:8756, opens a browser
-python scripts/serve.py --api-port 8757  # UI and API on separate ports
-python scripts/serve.py --port 9000      # pick your own
+Python 3.7 or newer, and nothing else — no `pip install`, no virtualenv, no Node. The only
+difference between platforms is whether the interpreter is called `python` or `python3`.
+
+**Windows** (PowerShell, from the repo root):
+
+```powershell
+git clone https://github.com/siamakn/uag-dmps-and-ai.git
+cd uag-dmps-and-ai
+python scripts\serve.py
 ```
 
-Ports default to 8756 and 8757 to stay clear of the usual 3000/5000/8000/8080 crowd, and the server steps up to the next free port if one is taken rather than failing. This mode saves your selection to **`data/selection.json`** — a real file you can commit and diff — and serves the maDMP files from the local corpus, so inspecting one costs no round trip to Zenodo.
+**Ubuntu / Debian:**
 
-**Or without a server:** open `dashboard/dashboard.html` directly. The whole dataset is embedded in the file, so it works offline; the only difference is that the selection lives in browser storage instead of a file.
+```bash
+sudo apt install -y python3 git          # both are usually already there
+git clone https://github.com/siamakn/uag-dmps-and-ai.git
+cd uag-dmps-and-ai
+python3 scripts/serve.py
+```
+
+Either way it prints where it is listening and opens your browser:
+
+```
+DMP Selection Bench
+  dashboard   http://127.0.0.1:8756/
+  api         http://127.0.0.1:8756/api
+  dataset     2650 records, 376 maDMPs
+  selection   .../data/selection.json
+  ctrl-c to stop
+```
+
+Options, identical on both platforms:
+
+```
+--api-port 8757   run the API on its own port instead of sharing the UI port
+--port 9000       choose the UI port
+--no-open         do not launch a browser (use this on a headless box)
+--verbose         log every request
+```
+
+Ports default to 8756 and 8757 to stay clear of the usual 3000/5000/8000/8080 crowd. If a port
+is taken the server steps up to the next free one and tells you which it took, so a forgotten
+instance never blocks a restart. It binds to `127.0.0.1` only — nothing is exposed off the machine.
+
+Running it this way saves your selection to **`data/selection.json`** — a real file you can commit
+and diff — and serves the maDMP files from the local corpus, so inspecting one costs no round trip
+to Zenodo.
+
+**Or without a server:** open `dashboard/dashboard.html` in any browser — double-click it on
+Windows, `xdg-open dashboard/dashboard.html` on Ubuntu. The whole dataset is embedded in the file,
+so it works offline; the only difference is that the selection lives in browser storage instead of
+a file.
+
+Two Ubuntu-specific notes: on a headless machine or WSL without a desktop there is no browser to
+open, so pass `--no-open` and point your own browser at the URL; and because the server
+deliberately refuses to reuse a busy address, restarting within a few seconds can find the old
+socket still in `TIME_WAIT` and quietly move to 8757. That is the fallback working, not a
+failure — the banner tells you which port it took.
 
 ## Repository layout
 
@@ -101,18 +150,27 @@ data/cordis/        CORDIS bulk downloads (git-ignored, ~90 MB, re-fetched on de
 dashboard/          template and built dashboard
 ```
 
-Everything is reproducible from scratch with plain Python 3, no dependencies:
+The repo ships with the harvested data, so cloning and running `serve.py` is enough. Rebuilding
+everything from scratch against a live Zenodo takes five steps:
 
 ```bash
-python scripts/01_harvest_records.py   # ~4 min without a Zenodo token
-python scripts/02_download_madmps.py
-python scripts/03_check_schema.py
-python scripts/04_build_dataset.py     # downloads ~90 MB of CORDIS data on first run
-python scripts/05_build_dashboard.py
-python scripts/serve.py
+python3 scripts/01_harvest_records.py   # ~4 min without a Zenodo token
+python3 scripts/02_download_madmps.py
+python3 scripts/03_check_schema.py
+python3 scripts/04_build_dataset.py     # downloads ~90 MB of CORDIS data on first run
+python3 scripts/05_build_dashboard.py
 ```
 
-Set `ZENODO_TOKEN` to cut the harvest to under a minute — it raises the anonymous page size from 25 records to 100.
+On Windows use `python` instead of `python3`. Each step is independently re-runnable and skips
+downloads already on disk.
+
+A Zenodo token cuts the harvest to under a minute by raising the anonymous page size from 25
+records to 100:
+
+```bash
+export ZENODO_TOKEN=...          # Ubuntu
+$env:ZENODO_TOKEN = "..."        # Windows PowerShell
+```
 
 ## A note on maDMP quality
 

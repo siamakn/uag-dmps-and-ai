@@ -317,7 +317,14 @@ def main():
     for s in servers[:-1]:
         threading.Thread(target=s.serve_forever, daemon=True).start()
     if not args.no_open:
-        threading.Timer(0.4, lambda: webbrowser.open(url)).start()
+        # No browser on a headless box (a bare Ubuntu server, WSL without a
+        # desktop). Failing to open one is not a reason to make noise.
+        def open_browser():
+            try:
+                webbrowser.open(url)
+            except Exception:
+                pass
+        threading.Timer(0.4, open_browser).start()
     try:
         servers[-1].serve_forever()
     except KeyboardInterrupt:

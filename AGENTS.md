@@ -252,7 +252,9 @@ Do not remove it.
 
 ## 6. Conventions for changing things
 
-- **No third-party dependencies.** Everything is Python 3 stdlib and vanilla JS. Do not add
+- **Python 3.7+, stdlib only, no third-party dependencies.** Everything is stdlib Python and
+  vanilla JS. The code is platform-neutral: the only difference between Windows and Ubuntu is
+  whether the interpreter is invoked as `python` or `python3`. Do not add
   `requests`, `pandas`, a bundler or a framework. If something needs a library, say so and let the
   user decide.
 - **`dashboard/dashboard.html` is generated.** Never edit it. Edit `dashboard/template.html` and
