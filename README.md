@@ -54,6 +54,13 @@ Harvested from Zenodo and joined to CORDIS. Current state:
 | DFG | 27 | **6** |
 | machine-actionable (RDA-DCS JSON, validated) | 376 | — |
 
+**Discipline works at two levels.** The six OECD fields are only the top of the EuroSciVoc
+tree; the useful granularity is the 37 sub-fields beneath them — materials engineering,
+nanotechnology, physical sciences, health sciences and so on. Pick a branch and its sub-fields
+appear underneath it as a second row of chips. A project that spans several branches is listed
+under each of them rather than being forced into whichever one happens to have the most terms,
+and each sub-field is always shown under the branch it actually belongs to.
+
 **Not everything that mentions a DMP is one.** A search for "data management plan" also returns
 posters, workshop guides, blank templates and papers *about* DMPs. Every record is therefore
 classified from its Zenodo resource type and the shape of its title into one of five kinds —

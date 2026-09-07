@@ -163,7 +163,7 @@ def load_cordis(path, framework):
                 "status": x.get("status") or "",
                 "legal": x.get("legalBasis") or "",
                 "call": x.get("masterCall") or x.get("topics") or "",
-                "_l1": [], "_l2": [],
+                "_l1": [], "_l2": [], "_pairs": [],
             }
     if "euroSciVoc.csv" in z.namelist():
         with z.open("euroSciVoc.csv") as f:
@@ -176,11 +176,15 @@ def load_cordis(path, framework):
                     p["_l1"].append(parts[0])
                     if len(parts) > 1:
                         p["_l2"].append(parts[1])
+                        p["_pairs"].append((parts[0], parts[1]))
     for p in proj.values():
         p["disc_all"] = [d for d, _ in collections.Counter(p["_l1"]).most_common()]
         p["disc_primary"] = p["disc_all"][0] if p["disc_all"] else ""
         p["disc2_all"] = [d for d, _ in collections.Counter(p["_l2"]).most_common(4)]
-        del p["_l1"], p["_l2"]
+        # every (branch, sub-field) pair, most used first, so a sub-field is never
+        # shown under a branch it does not belong to
+        p["fields"] = [list(k) for k, _ in collections.Counter(p["_pairs"]).most_common(14)]
+        del p["_l1"], p["_l2"], p["_pairs"]
     return proj
 
 
@@ -370,8 +374,9 @@ def main():
             "proj_start": (project or {}).get("start", "") or (md or {}).get("p_start", ""),
             "proj_end": (project or {}).get("end", "") or (md or {}).get("p_end", ""),
             "disc": (project or {}).get("disc_primary", ""),
-            "disc_all": (project or {}).get("disc_all", [])[:4],
+            "disc_all": (project or {}).get("disc_all", [])[:6],
             "disc2": (project or {}).get("disc2_all", [])[:3],
+            "fields": (project or {}).get("fields", []),
             "stage": stage, "stage_frac": frac, "stage_src": source,
             "madmp": bool(md), "n_datasets": (md or {}).get("n_datasets"),
             "n_dist": (md or {}).get("n_dist_real"),
@@ -410,6 +415,8 @@ def main():
           % (sum(1 for r in rows if r["madmp"]), sum(1 for r in rows if r["disc"])))
     print("lifecycle: %s" % collections.Counter(r["stage"] for r in rows).most_common())
     print("record kind: %s" % collections.Counter(r["kind"] for r in rows).most_common())
+    l2 = {p[1] for r in rows for p in (r["fields"] or [])}
+    print("EuroSciVoc level-2 fields present: %d" % len(l2))
 
 
 if __name__ == "__main__":

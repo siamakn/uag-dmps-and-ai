@@ -102,6 +102,11 @@ header .sub{color:var(--ink-3); font-size:12px; max-width:56ch}
 .chip:hover{border-color:var(--accent); color:var(--accent-ink)}
 .chip[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:500}
 .chip .n{opacity:.65; font-size:10px; margin-left:3px; font-family:"IBM Plex Mono",monospace}
+.sublbl{font-size:10px; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-3);
+        font-weight:600; margin:9px 0 6px}
+#f-disc2wrap{margin-top:2px; padding-left:9px; border-left:2px solid var(--line-2)}
+#f-disc2 .chip{font-size:11px; padding:2px 7px}
+.hint{font-size:11px; color:var(--ink-3); line-height:1.4}
 
 input[type=search],select{
   width:100%; padding:6px 9px; border:1px solid var(--line-2); border-radius:6px;
@@ -291,8 +296,12 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
       <div class="chips" id="f-fmt"></div>
     </div>
     <div class="grp">
-      <div class="lbl" data-tip="Top-level OECD field of science, from the project EuroSciVoc terms in CORDIS. Turning any of these on also hides records with no CORDIS project match.">Discipline <span class="aux">EuroSciVoc</span></div>
+      <div class="lbl" data-tip="The six OECD fields of science, from the project EuroSciVoc terms in CORDIS. A project carrying terms in several branches appears under each of them. Turning any of these on hides records with no CORDIS match.">Discipline <span class="aux">EuroSciVoc</span> <button type="button" data-clear="disc" data-tip="Untick every discipline and sub-field.">clear</button></div>
       <div class="chips" id="f-disc"></div>
+      <div id="f-disc2wrap">
+        <div class="sublbl" data-tip="The 37 EuroSciVoc sub-fields, shown for whichever branches you have picked above. This is where materials engineering, nanotechnology or physical sciences live.">Sub-field</div>
+        <div class="chips" id="f-disc2"></div>
+      </div>
     </div>
     <div class="grp">
       <div class="lbl" data-tip="Where the DMP was published within the project run, computed from the CORDIS start and end dates.">Lifecycle stage <button type="button" data-clear="stage" data-tip="Untick every stage chip.">clear</button></div>
@@ -452,7 +461,7 @@ var COL_TIP = {
   title:"Record title, with the CORDIS project title underneath. Click a title to expand the full description.",
   project:"Project acronym from CORDIS, with the project status underneath.",
   funder:"Which funding tier the record was matched to.",
-  disc:"Top-level EuroSciVoc field of science, with the more specific sub-fields underneath.",
+  disc:"EuroSciVoc branch with its own sub-fields underneath. When you filter by a branch this column shows that branch; other branches the project also belongs to are listed as 'also'.",
   stage:"Where the DMP sits in the project run. The bar shows the position between start and end.",
   date:"Zenodo publication date of the record.",
   format:"Whether the record carries a real maDMP or only a PDF, and how that maDMP scored against the RDA schema.",
@@ -534,7 +543,7 @@ function gridMin(cols){
 
 /* ---------------- state ---------------- */
 var state = {q:"", tiers:{"Horizon Europe":1}, y0:2024, y1:2026,
-             kind:{dmp:1}, fmt:{}, disc:{}, stage:{}, flag:{}, sort:"date", dir:-1,
+             kind:{dmp:1}, fmt:{}, disc:{}, disc2:{}, stage:{}, flag:{}, sort:"date", dir:-1,
              limit:LIMIT_STEP, open:{}};
 var sel = [], saveTimer=null;
 
@@ -570,7 +579,17 @@ function matches(r){
   if(state.fmt.madmp && !r.madmp) return false;
   if(state.fmt.pdf && !(r.n_pdf>0)) return false;
   if(state.fmt.valid && !r.schema_ok) return false;
-  if(anyOn(state.disc) && !state.disc[r.disc]) return false;
+  if(anyOn(state.disc)){
+    var l1=r.disc_all||[];
+    var ok=false;
+    for(var i=0;i<l1.length;i++) if(state.disc[l1[i]]){ ok=true; break; }
+    if(!ok) return false;
+  }
+  if(anyOn(state.disc2)){
+    var fs=r.fields||[], ok2=false;
+    for(var j=0;j<fs.length;j++) if(state.disc2[fs[j][1]]){ ok2=true; break; }
+    if(!ok2) return false;
+  }
   if(anyOn(state.stage) && !state.stage[r.stage]) return false;
   if(state.flag.ch && !r.challenging) return false;
   if(state.flag.chmeta && !r.ch_meta) return false;
@@ -624,8 +643,18 @@ var CELL = {
       esc(TIER_TIP[r.tier]||"")+'">'+esc(TIER_SHORT[r.tier])+'</span></div>';
   },
   disc:function(r){
-    return '<div class="cell">'+(r.disc?esc(r.disc):'<span style="color:var(--ink-3)">no CORDIS match</span>')+
-      (r.disc2&&r.disc2.length?'<div class="sub2">'+esc(r.disc2.join(", "))+'</div>':'')+'</div>';
+    if(!r.disc) return '<div class="cell"><span style="color:var(--ink-3)">no CORDIS match</span></div>';
+    // show the branch the reader is filtering on, else the project's main one
+    var picked=DISCS.filter(function(d){ return state.disc[d]; });
+    var branch=r.disc;
+    for(var i=0;i<picked.length;i++)
+      if((r.disc_all||[]).indexOf(picked[i])>=0){ branch=picked[i]; break; }
+    var subs=subFieldsOf(r,branch);
+    var others=(r.disc_all||[]).filter(function(d){ return d!==branch; });
+    return '<div class="cell">'+esc(branch)+
+      (subs.length?'<div class="sub2">'+esc(subs.join(", "))+'</div>':'')+
+      (others.length?'<div class="sub2" style="opacity:.75">also '+esc(others.join(", "))+'</div>':'')+
+      '</div>';
   },
   stage:function(r){
     if(r.stage==="unknown"||r.stage_frac==null)
@@ -723,8 +752,10 @@ function sheet(r){
     row2("Funding", funders)+
     row2("Lifecycle", r.stage==="unknown"?"no project dates":
          esc(r.stage)+" — "+Math.round((r.stage_frac||0)*100)+"% through the project")+
-    row2("Discipline", esc((r.disc_all||[]).join(", ")))+
-    row2("Sub-fields", esc((r.disc2||[]).join(", ")))+
+    row2("Discipline", (r.disc_all||[]).map(function(d){
+      var subs=subFieldsOf(r,d);
+      return '<b>'+esc(d)+'</b>'+(subs.length?' — '+esc(subs.join(", ")):'');
+    }).join("<br>"))+
     row2("Keywords", esc((r.subjects||[]).join(", ")))+
     row2("maDMP", r.madmp? num(r.n_datasets)+" datasets · "+num(r.n_dist)+
          " populated distributions · "+(r.schema_ok?"schema clean":num(r.n_findings)+
@@ -860,6 +891,11 @@ function chipHTML(v,label,on,n,tip){
     '" data-v="'+esc(v)+'"'+(tip?' data-tip="'+esc(tip)+'"':'')+'>'+esc(label)+
     (n!=null?'<span class="n">'+n+'</span>':'')+'</button>';
 }
+function subFieldsOf(r,l1){
+  var out=[], fs=r.fields||[];
+  for(var i=0;i<fs.length;i++) if(fs[i][0]===l1 && out.indexOf(fs[i][1])<0) out.push(fs[i][1]);
+  return out;
+}
 function countBy(fn){
   var c={}; ROWS.forEach(function(r){ var k=fn(r); if(k!=null) c[k]=(c[k]||0)+1; }); return c;
 }
@@ -874,10 +910,33 @@ function buildChips(){
     chipHTML("madmp","maDMP JSON",!!state.fmt.madmp,null,FMT_TIP.madmp)+
     chipHTML("pdf","has PDF",!!state.fmt.pdf,null,FMT_TIP.pdf)+
     chipHTML("valid","schema clean",!!state.fmt.valid,null,FMT_TIP.valid);
-  var dc=countBy(function(r){ return r.disc||null; });
+  var dc={}, sc2={}, subs={};
+  ROWS.forEach(function(r){
+    (r.disc_all||[]).forEach(function(d){ dc[d]=(dc[d]||0)+1; });
+    var seen={};
+    (r.fields||[]).forEach(function(p){
+      (subs[p[0]]=subs[p[0]]||{})[p[1]]=1;
+      if(!seen[p[1]]){ seen[p[1]]=1; sc2[p[1]]=(sc2[p[1]]||0)+1; }
+    });
+  });
   document.getElementById("f-disc").innerHTML=DISCS.map(function(d){
     return chipHTML(d,DISC_SHORT[d]||d,!!state.disc[d],dc[d]||0,
-      "EuroSciVoc field: "+d+". "+(dc[d]||0)+" records in the whole pool."); }).join("");
+      "Projects carrying any EuroSciVoc term under "+d+". A project spanning several branches counts under each."); }).join("");
+
+  // sub-fields for the picked branches; all of them when nothing is picked
+  var branches=DISCS.filter(function(d){ return state.disc[d]; });
+  if(!branches.length) branches=DISCS;
+  var list=[];
+  branches.forEach(function(d){
+    Object.keys(subs[d]||{}).forEach(function(t){ if(list.indexOf(t)<0) list.push(t); });
+  });
+  list.sort(function(a,b){ return (sc2[b]||0)-(sc2[a]||0); });
+  var wrap=document.getElementById("f-disc2wrap");
+  document.getElementById("f-disc2").innerHTML=list.map(function(t){
+    return chipHTML(t,t.length>34?t.slice(0,32)+"…":t,!!state.disc2[t],sc2[t]||0,
+      "EuroSciVoc sub-field: "+t+". "+(sc2[t]||0)+" records in the whole pool carry it."); }).join("")
+    || '<div class="hint">No sub-fields for this branch.</div>';
+  wrap.style.display = list.length ? "" : "none";
   var sc=countBy(function(r){ return r.stage; });
   document.getElementById("f-stage").innerHTML=STAGES.map(function(s){
     return chipHTML(s,s,!!state.stage[s],sc[s]||0,STAGE_TIP[s]); }).join("");
@@ -931,7 +990,7 @@ function setSort(k){
 }
 function applyPreset(p){
   state.q=""; document.getElementById("q").value="";
-  state.fmt={}; state.disc={}; state.stage={}; state.flag={}; state.limit=LIMIT_STEP;
+  state.fmt={}; state.disc={}; state.disc2={}; state.stage={}; state.flag={}; state.limit=LIMIT_STEP;
   state.kind = (p==="reset") ? {} : {dmp:1};
   if(p==="he-ma"){ state.tiers={"Horizon Europe":1}; state.fmt={madmp:1}; state.y0=2024; state.y1=2026; }
   else if(p==="he24"){ state.tiers={"Horizon Europe":1}; state.y0=2024; state.y1=2026; }
@@ -972,6 +1031,7 @@ function wire(){
   bindChipGroup("f-tier","tiers");
   bindChipGroup("f-fmt","fmt");
   bindChipGroup("f-disc","disc");
+  bindChipGroup("f-disc2","disc2");
   bindChipGroup("f-stage","stage");
   bindChipGroup("f-flag","flag");
 
@@ -982,7 +1042,9 @@ function wire(){
   document.getElementById("rail").addEventListener("click",function(e){
     var c=e.target.closest("[data-clear]"); if(!c) return;
     var which=c.getAttribute("data-clear");
-    state[which]={}; state.limit=LIMIT_STEP; buildChips(); render();
+    state[which]={};
+    if(which==="disc") state.disc2={};
+    state.limit=LIMIT_STEP; buildChips(); render();
   });
   document.getElementById("f-cols").addEventListener("click",function(e){
     var mv=e.target.closest("[data-mv]");

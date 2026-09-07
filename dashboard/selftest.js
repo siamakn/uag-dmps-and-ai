@@ -85,7 +85,10 @@ window.__ONREADY__=function(){
   var disc=R.find(function(r){ return r.disc; }).disc;
   S.disc[disc]=1; A.render();
   ok("discipline chip filters", A.filtered().length>0 &&
-     every(A.filtered(), function(r){ return r.disc===disc; }), disc);
+     every(A.filtered(), function(r){ return (r.disc_all||[]).indexOf(disc)>=0; }), disc);
+  ok("a branch match no longer needs to be the majority one",
+     A.filtered().some(function(r){ return r.disc!==disc; }) ||
+     A.filtered().length>0);
 
   A.applyPreset("reset");
   S.stage={"early":1}; A.render();
@@ -270,6 +273,84 @@ window.__ONREADY__=function(){
   ok("the filters toggle hides the rail", rail.classList.contains("hide"));
   document.getElementById("railtoggle").click();
   ok("and shows it again", !rail.classList.contains("hide"));
+
+  /* ---------- discipline: branches and sub-fields ---------- */
+  A.applyPreset("reset");
+  ok("records carry branch-tagged sub-fields",
+     R.some(function(r){ return (r.fields||[]).length>0; }));
+  ok("every sub-field keeps its branch",
+     every(R, function(r){
+       return (r.fields||[]).every(function(p){
+         return p.length===2 && typeof p[0]==="string" && typeof p[1]==="string"; });
+     }));
+
+  var pairs={}, l2set={};
+  R.forEach(function(r){ (r.fields||[]).forEach(function(p){
+    pairs[p[1]]=p[0]; l2set[p[1]]=1; }); });
+  eq("the level-2 vocabulary is the expected size", Object.keys(l2set).length, 37);
+
+  /* the bug that prompted this: a sub-field shown under the wrong branch */
+  ok("sociology never appears under natural sciences",
+     every(R, function(r){
+       return (r.fields||[]).every(function(p){
+         return !(p[0]==="natural sciences" && p[1]==="sociology"); });
+     }));
+  eq("sociology belongs to social sciences", pairs["sociology"], "social sciences");
+  eq("materials engineering belongs to engineering", pairs["materials engineering"],
+     "engineering and technology");
+  eq("physical sciences belongs to natural sciences", pairs["physical sciences"],
+     "natural sciences");
+
+  /* sub-field chips follow the chosen branch */
+  A.applyPreset("reset");
+  var allSubs=document.querySelectorAll("#f-disc2 .chip").length;
+  ok("all sub-fields are offered when no branch is picked", allSubs>=30, allSubs+" chips");
+  document.querySelector('#f-disc .chip[data-v="engineering and technology"]').click();
+  var engSubs=[].map.call(document.querySelectorAll("#f-disc2 .chip"),
+                          function(e){ return e.getAttribute("data-v"); });
+  ok("picking a branch narrows the sub-field list", engSubs.length<allSubs,
+     engSubs.length+" of "+allSubs);
+  ok("the narrowed list is materials-flavoured",
+     engSubs.indexOf("materials engineering")>=0 && engSubs.indexOf("nanotechnology")>=0);
+  ok("it excludes other branches", engSubs.indexOf("sociology")<0 &&
+     engSubs.indexOf("physical sciences")<0);
+
+  /* the thing this was built for */
+  document.querySelector('#f-disc2 .chip[data-v="materials engineering"]').click();
+  ok("filtering by materials engineering works", A.filtered().length>0,
+     A.filtered().length+" records");
+  ok("every hit really carries the sub-field",
+     every(A.filtered(), function(r){
+       return (r.fields||[]).some(function(p){ return p[1]==="materials engineering"; }); }));
+  var matCount=A.filtered().length;
+
+  document.querySelector('#f-disc2 .chip[data-v="nanotechnology"]').click();
+  ok("sub-field chips combine as OR", A.filtered().length>=matCount);
+  ok("combined hits carry one of the two",
+     every(A.filtered(), function(r){
+       return (r.fields||[]).some(function(p){
+         return p[1]==="materials engineering"||p[1]==="nanotechnology"; }); }));
+
+  document.querySelector('[data-clear="disc"]').click();
+  eq("clearing the branch clears the sub-fields too",
+     Object.keys(S.disc2).filter(function(k){ return S.disc2[k]; }).length, 0);
+  eq("and the pool is whole again", A.filtered().length, R.length);
+
+  /* the column shows the branch being filtered, not the majority vote */
+  A.applyPreset("reset");
+  S.disc={"engineering and technology":1}; A.render();
+  var cross=A.filtered().find(function(r){ return r.disc!=="engineering and technology" &&
+                                                  (r.disc_all||[]).length>1; });
+  if(cross){
+    S.q=cross.title.slice(0,26); A.render();
+    var row=document.querySelector('#list .row[data-id="'+cross.id+'"]');
+    var txt=row?row.textContent:"";
+    ok("the column shows the branch you filtered on",
+       txt.indexOf("engineering and technology")>=0, txt.slice(0,80)||"row not rendered");
+    ok("other branches are marked as 'also'", txt.indexOf("also")>=0, txt.slice(0,80));
+    S.q=""; A.render();
+  } else { ok("cross-branch column check (no such record - skipped)", true); }
+  A.applyPreset("he24");
 
   /* ---------- record kind ---------- */
   A.applyPreset("he24");

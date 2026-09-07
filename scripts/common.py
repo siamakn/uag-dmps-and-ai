@@ -143,7 +143,7 @@ DASHBOARD_FIELDS = [
     "disc", "disc_all", "disc2", "stage", "stage_frac", "madmp", "n_datasets",
     "n_dist", "schema_ok", "n_findings", "personal", "sensitive", "ethics",
     "challenging", "ch_meta", "n_json", "n_pdf", "url", "dl", "access", "type",
-    "madmp_file", "kind", "kind_why", "creators", "files", "funders",
+    "madmp_file", "kind", "kind_why", "creators", "files", "funders", "fields",
 ]
 
 
@@ -159,8 +159,8 @@ def payload_rows(rows):
         o["creators"] = (r.get("creators") or [])[:8]
         o["files"] = (r.get("files") or [])[:10]
         o["funders"] = (r.get("funders") or [])[:5]
-        o["disc_all"] = (r.get("disc_all") or [])[:4]
-        o["disc2"] = (r.get("disc2") or [])[:2]
+        o["disc_all"] = (r.get("disc_all") or [])[:6]
+        o["fields"] = (r.get("fields") or [])[:14]
         out.append(o)
     return out
 

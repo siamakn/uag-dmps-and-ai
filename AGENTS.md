@@ -75,7 +75,8 @@ Two ways to run, one shared template (`dashboard/template.html`):
 Features:
 
 - Filter by **record kind** (actual DMP / template / guidance / about / unclear — defaults to
-  actual DMPs only), funder tier, publication year range, format, discipline, lifecycle stage,
+  actual DMPs only), funder tier, publication year range, format, **discipline branch and its
+  EuroSciVoc sub-field**, lifecycle stage,
   sensitive-data flags, and full-text search across title, project, grant, DOI, call id and
   description
 - **Metadata sheet** on every row: click a title for authors, abstract, DOI, Zenodo type, project
@@ -95,7 +96,7 @@ Features:
 
 ### Test suite
 
-`dashboard/selftest.js` — **160 assertions, all passing.** Served only at `/selftest`, never part
+`dashboard/selftest.js` — **180 assertions, all passing.** Served only at `/selftest`, never part
 of a built file. It drives the real UI through both the internal API and real DOM clicks: filters,
 search, sorting, columns, paging, row expansion, selection, matrix, warnings, all three export
 formats, tooltips and the API round trip. It also asserts that *no control is undocumented*, so a
@@ -106,7 +107,7 @@ python scripts/serve.py --no-open
 chrome --headless=new --dump-dom "http://127.0.0.1:8756/selftest"
 ```
 
-Results go to `#testlog` and the document title (`SELFTEST 160/160 fail=0`), so it greps cleanly.
+Results go to `#testlog` and the document title (`SELFTEST 180/180 fail=0`), so it greps cleanly.
 `/selftest` rebuilds from disk on every request — editing the template or harness needs no restart.
 
 ---
@@ -147,7 +148,9 @@ Funding: `tier`, `program`, `grant`, `acronym`.
 
 CORDIS project: `proj_title`, `proj_start`, `proj_end`, `proj_status`, `call`, `legal`.
 
-Derived axes: `disc` (primary EuroSciVoc field), `disc_all`, `disc2` (sub-fields),
+Derived axes: `disc` (the project's most frequent EuroSciVoc branch, used for the coverage
+matrix), `disc_all` (every branch the project carries), `fields` (every `[branch, sub-field]`
+pair, so a sub-field is never displayed under a branch it does not belong to),
 `stage`, `stage_frac`, `stage_src`.
 
 maDMP: `madmp` (bool), `madmp_file`, `n_datasets`, `n_dist` (**populated** distributions only),
@@ -175,8 +178,12 @@ half the Horizon Europe maDMPs are not tagged as EU-funded in their Zenodo recor
 `≤ 0.34` early, `≤ 0.70` mid, above late; negative is `pre-start`; no dates is `unknown`.
 `stage_src` says whether the dates came from `cordis` or from the maDMP itself.
 
-**`disc`** — most frequent top-level EuroSciVoc term for the project. Empty when there is no
-CORDIS match.
+**`disc`** — the project's most frequent top-level EuroSciVoc branch. Empty when there is no
+CORDIS match. It is only a summary: **filtering uses `disc_all` and `fields`, not `disc`**, so
+picking "engineering and technology" returns every project carrying any engineering term rather
+than only those where engineering won the majority vote. EuroSciVoc has 6 branches, 41 level-2
+sub-fields (37 present in this pool) and 256 level-3 terms; the dashboard filters at levels 1
+and 2, and level 3 is not carried in the dataset.
 
 **`kind`** — what the record actually *is*, because a search for "data management plan"
 returns far more literature about DMPs than plans. Decided from the Zenodo resource type plus
@@ -271,6 +278,12 @@ every click. If you add a filter group, follow that pattern.
 another process already holds — making the busy-port fallback quietly steal the port instead of
 stepping past it. `serve.py` defines its own `Server` class with `allow_reuse_address = False`.
 Do not remove it.
+
+**The discipline column once showed sub-fields under the wrong branch** — a project tagged
+with both computer science and sociology rendered as "natural sciences / biological sciences,
+sociology", which reads as though sociology were a natural science. The dataset now keeps
+`[branch, sub-field]` pairs rather than two flat lists. If you touch that rendering, keep the
+pairing.
 
 **The pool once included anything whose title mentioned a DMP**, which meant posters, workshop
 guides, templates and papers about DMPs were offered as candidates. Filtering to DFG returned 27

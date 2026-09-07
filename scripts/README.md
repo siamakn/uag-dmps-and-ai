@@ -105,7 +105,7 @@ title, so it greps cleanly from a headless dump. Open the same URL in a normal
 browser to read the results on screen. `/selftest` rebuilds the page from disk on
 every request, so editing the template or the harness needs no restart.
 
-Current status: **160/160 passing.**
+Current status: **180/180 passing.**
 
 It has already earned its keep. Bugs it caught:
 
