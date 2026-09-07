@@ -1,8 +1,10 @@
 # uag-dmps-and-ai
 
-This is my personal working repository for the part of the UAG work on DMPs and AI that I am contributing to. It does not cover everything the UAG is doing — only the pieces I am actually involved in, so I can keep track of what I do, why I did it, and what came out of it.
+A working repository for the part of the UAG work on DMPs and AI that we are contributing to. It does not cover everything the UAG is doing — only the pieces we are actually involved in, so the work, the reasoning behind it and its results stay traceable.
 
 Right now that means one thing: putting together a small test set of DMPs for evaluating automated review tools.
+
+**Contributors:** [Siamak Nakhaie](https://github.com/siamakn) (FAIRmat, HU Berlin) · [Andrej Berg](https://github.com/andrejberg) (JGU Mainz)
 
 ## Working with an AI assistant
 
@@ -200,8 +202,10 @@ That is worth keeping rather than filtering out. Real-world incompleteness is ex
 
 Work in progress. The pool is built; the 10 DMPs are not selected yet.
 
-## No license
+## License
 
-This repository is deliberately published without a licence. That is a choice, not an oversight: the work is in progress and I am not granting rights to reuse, modify or redistribute it while it is still moving. Default copyright applies.
+Code in `scripts/` and `dashboard/`, and the documentation, is **MIT**-licensed — see [LICENSE](LICENSE). Use it freely.
 
-If you want to use something here, ask me.
+The derived dataset (`data/dmp_dataset.*`, `data/raw/`) is released under **CC BY 4.0**. It is factual metadata harvested from Zenodo and CORDIS.
+
+The files in `data/madmp-corpus/` are **not ours**. Each was downloaded from Zenodo and keeps the licence its depositor chose; the DOI for every one is in `data/dmp_dataset.csv`. Check the terms there before reusing them.

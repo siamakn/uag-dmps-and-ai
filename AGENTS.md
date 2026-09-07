@@ -8,8 +8,13 @@ Everything here was verified against the data in the repo, not assumed.
 
 ## 1. What this repository is
 
-A personal working repository for one contributor's slice of the **UAG work on DMPs and AI**.
-It does not cover everything the UAG does.
+A working repository for one part of the **UAG work on DMPs and AI**, maintained by Siamak
+Nakhaie (FAIRmat, HU Berlin) and Andrej Berg (JGU Mainz). It does not cover everything the
+UAG does.
+
+Code and documentation are MIT-licensed; the derived dataset is CC BY 4.0; the downloaded
+maDMP files in `data/madmp-corpus/` keep their depositors' own licences and cannot be
+relicensed. See `LICENSE`.
 
 The concrete goal: build a small, transparent **test set of ~10 open Data Management Plans**
 that can be used to evaluate automated and AI-assisted DMP review tools. The selected DMPs
