@@ -52,11 +52,15 @@ window.__ONREADY__=function(){
   /* ---------- presets ---------- */
   A.applyPreset("reset");
   eq("preset everything shows all rows", A.filtered().length, R.length);
+  ok("preset everything drops the kind filter too",
+     A.filtered().some(function(r){ return r.kind!=="dmp"; }));
 
   A.applyPreset("he24");
-  var expectHE=R.filter(function(r){ return r.tier==="Horizon Europe" &&
+  var expectHE=R.filter(function(r){ return r.tier==="Horizon Europe" && r.kind==="dmp" &&
                                             +r.year>=2024 && +r.year<=2026; }).length;
   eq("preset HE 2024+ count", A.filtered().length, expectHE);
+  ok("preset HE 2024+ shows only actual DMPs",
+     every(A.filtered(), function(r){ return r.kind==="dmp"; }));
   ok("preset HE 2024+ rows are all Horizon Europe",
      every(A.filtered(), function(r){ return r.tier==="Horizon Europe"; }));
   ok("preset HE 2024+ rows are all in range",
@@ -266,6 +270,87 @@ window.__ONREADY__=function(){
   ok("the filters toggle hides the rail", rail.classList.contains("hide"));
   document.getElementById("railtoggle").click();
   ok("and shows it again", !rail.classList.contains("hide"));
+
+  /* ---------- record kind ---------- */
+  A.applyPreset("he24");
+  ok("default view is restricted to actual DMPs", S.kind.dmp===1);
+  ok("nothing in the default view is a template, guide or paper",
+     every(A.filtered(), function(r){ return r.kind==="dmp"; }));
+
+  var kinds={}; R.forEach(function(r){ kinds[r.kind]=(kinds[r.kind]||0)+1; });
+  ok("every record carries a kind",
+     every(R, function(r){ return !!r.kind; }));
+  ok("every record explains its kind",
+     every(R, function(r){ return typeof r.kind_why === "string" && r.kind_why.length>0; }));
+  ok("the pool really contains non-plans to exclude",
+     (kinds.about||0)+(kinds.template||0)+(kinds.guidance||0) > 20,
+     JSON.stringify(kinds));
+
+  A.applyPreset("reset");
+  document.querySelector('#f-kind .chip[data-v="about"]').click();
+  ok("kind chip filters to writing about DMPs", A.filtered().length>0 &&
+     every(A.filtered(), function(r){ return r.kind==="about"; }));
+  document.querySelector('#f-kind .chip[data-v="template"]').click();
+  ok("kind chips combine", A.filtered().length>0 &&
+     every(A.filtered(), function(r){ return r.kind==="about"||r.kind==="template"; }));
+  document.querySelector('[data-clear="kind"]').click();
+  eq("clearing the kind filter shows everything again", A.filtered().length, R.length);
+
+  /* the DFG case that started this: mixed record types */
+  A.applyPreset("reset");
+  S.tiers={"DFG":1}; S.kind={dmp:1}; A.render();
+  var dfgPlans=A.filtered().length;
+  S.kind={}; A.render();
+  var dfgAll=A.filtered().length;
+  ok("DFG pool contains more records than actual plans", dfgAll>dfgPlans,
+     dfgAll+" records, "+dfgPlans+" plans");
+  ok("the excluded DFG records are visible when asked for", dfgAll-dfgPlans>5);
+
+  A.applyPreset("reset");
+  var nonPlan=A.filtered().find(function(r){ return r.kind!=="dmp"; });
+  ok("a non-plan row is tagged in the list", !!nonPlan);
+  if(nonPlan){
+    S.q=nonPlan.title.slice(0,28); A.render();
+    ok("the tag is actually rendered",
+       document.querySelector("#list .t-kind")!==null);
+    S.q=""; A.render();
+  }
+
+  ok("kind is available as a column", A.toggleCol("kind")===true);
+  ok("kind column renders", document.querySelector('#thead [data-sort="kind"]')!==null);
+  A.toggleCol("kind");
+
+  /* ---------- metadata sheet ---------- */
+  A.applyPreset("he-ma");
+  var rich=A.filtered().find(function(r){ return r.creators && r.creators.length &&
+                                                 r.files && r.files.length; });
+  ok("rows carry authors and file listings", !!rich);
+  if(rich){
+    S.q=""; A.render();
+    var btn=document.querySelector('#list [data-open="'+rich.id+'"]');
+    if(!btn){ A.setSort("date"); btn=document.querySelector('#list [data-open="'+rich.id+'"]'); }
+    if(btn){
+      btn.click();
+      var det=document.querySelector("#list .det");
+      ok("the metadata sheet opens", !!det);
+      if(det){
+        var txt=det.textContent;
+        ok("sheet shows the record kind and why", txt.indexOf("Record kind")>=0);
+        ok("sheet shows the Zenodo type", txt.indexOf("Zenodo type")>=0);
+        ok("sheet shows authors", txt.indexOf("Authors")>=0);
+        ok("sheet shows the DOI", txt.indexOf("DOI")>=0);
+        ok("sheet lists the files", txt.indexOf("Files")>=0);
+        ok("sheet shows the project run", txt.indexOf("Runs")>=0 || txt.indexOf("Project")>=0);
+        ok("sheet shows the lifecycle position", txt.indexOf("Lifecycle")>=0);
+        ok("sheet shows maDMP detail", txt.indexOf("maDMP")>=0);
+        ok("sheet shows a file size", /\d+\s?(B|KB|MB)/.test(txt), txt.slice(0,60));
+        ok("sheet links out", det.querySelector("a[href]")!==null);
+      }
+      btn=document.querySelector('#list [data-open="'+rich.id+'"]');
+      if(btn) btn.click();
+      eq("the sheet closes again", document.querySelectorAll("#list .det").length, 0);
+    }
+  }
 
   /* ---------- hover documentation ---------- */
   A.applyPreset("he24");

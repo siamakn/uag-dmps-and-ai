@@ -8,7 +8,7 @@ Right now that means one thing: putting together a small test set of DMPs for ev
 
 Nobody reads documentation any more, so the real documentation is written for the thing that will.
 
-**[AGENTS.md](AGENTS.md)** is an orientation document for AI assistants. Point yours at it — "read AGENTS.md" — and it can answer questions about this repo without guessing: what the data means field by field, how the discipline and lifecycle axes are derived, what the known limitations are, which numbers are current, and what the conventions are for changing anything. It also records two bugs that were already found and fixed, so an assistant doesn't reintroduce them.
+**[AGENTS.md](AGENTS.md)** is an orientation document for AI assistants. Point yours at it — "read AGENTS.md" — and it can answer questions about this repo without guessing: what the data means field by field, how the discipline and lifecycle axes are derived, what the known limitations are, which numbers are current, and what the conventions are for changing anything. It also records the bugs that were already found and fixed, so an assistant doesn't reintroduce them.
 
 `CLAUDE.md` is a one-line pointer to the same file, so Claude Code picks it up automatically.
 
@@ -44,35 +44,46 @@ Those manual reviews are the reference point. Once they exist, automated or AI-a
 
 Harvested from Zenodo and joined to CORDIS. Current state:
 
-| | records |
-|---|---|
-| DMP records in total | 2 650 |
-| Horizon Europe | 722 — of which **574 published 2024 or later** |
-| Horizon 2020 | 525 |
-| Other EU | 69 |
-| DFG | 27 |
-| machine-actionable (RDA-DCS JSON, validated) | 376 |
+| | records | of which actual plans |
+|---|---|---|
+| DMP-related records in total | 2 650 | 2 504 |
+| Horizon Europe | 722 | 700 |
+| — published 2024 or later | 574 | **555** |
+| Horizon 2020 | 525 | — |
+| Other EU | 69 | — |
+| DFG | 27 | **6** |
+| machine-actionable (RDA-DCS JSON, validated) | 376 | — |
 
-Horizon Europe from 2024 onward covers **445 distinct projects**, which is a large enough pool that the 3 × 3 matrix is comfortable rather than exhaustive:
+**Not everything that mentions a DMP is one.** A search for "data management plan" also returns
+posters, workshop guides, blank templates and papers *about* DMPs. Every record is therefore
+classified from its Zenodo resource type and the shape of its title into one of five kinds —
+`actual DMP`, `template`, `guidance`, `about DMPs`, `unclear` — and the dashboard shows only
+actual plans by default. It matters most at the small end: the DFG tier goes from 27 mixed
+records down to 6 real plans.
+
+Horizon Europe from 2024 onward covers **445 distinct projects**, which is a large enough pool
+that the 3 × 3 matrix is comfortable rather than exhaustive (actual plans only):
 
 | discipline (EuroSciVoc) | early | mid | late |
 |---|---|---|---|
-| natural sciences | 62 | 71 | 52 |
-| social sciences | 30 | 40 | 27 |
-| engineering and technology | 41 | 36 | 16 |
-| agricultural sciences | 11 | 12 | 9 |
-| medical and health sciences | 11 | 10 | 11 |
+| natural sciences | 61 | 67 | 47 |
+| social sciences | 30 | 39 | 26 |
+| engineering and technology | 41 | 36 | 15 |
+| agricultural sciences | 11 | 11 | 9 |
+| medical and health sciences | 11 | 10 | 10 |
 | humanities | 8 | 1 | 1 |
 
 Two things to know before selecting:
 
 **maDMPs are scarce.** Only 47 of those 574 Horizon Europe records are machine-actionable, and one project (CERTAINTY) contributes 24 of them as separate per-partner DMPs. Filling all nine matrix cells with maDMPs alone is not possible; a mixed set of maDMPs and PDF DMPs is.
 
-**The DFG is not a usable source here.** Zenodo holds 7 931 DFG-funded records, but only 27 mention a DMP, only 4 are typed as one, and none is machine-actionable. If DFG DMPs are needed, they will have to come from somewhere else — RDMO instances, institutional repositories, or GEPRIS-linked outputs.
+**The DFG is not a usable source here.** Zenodo holds 7 931 DFG-funded records, but only 27 mention a DMP — and of those just 6 are actual plans, the rest being templates, workshop guides and posters. None is machine-actionable. If DFG DMPs are needed, they will have to come from somewhere else — RDMO instances, institutional repositories, or GEPRIS-linked outputs.
 
 ## Selection dashboard
 
 Filters the pool by funder, year, format, discipline, lifecycle stage and sensitive-data flags, and tracks the 3 × 3 matrix live as DMPs are ticked — warning about duplicate projects or a fourth discipline creeping in. The selection can be copied out as Markdown, CSV or JSON.
+
+Clicking any title opens a full metadata sheet — authors, abstract, DOI, Zenodo type, project and its run dates, call, funders, discipline, keywords, maDMP statistics and the file list with sizes — so a candidate can be judged without opening Zenodo at all.
 
 Everything explains itself on hover: each filter chip, column header, column-editor row and coloured tag carries a one-line description of exactly what it does and where the value comes from. The **Guide** button in the header opens a short panel covering the pool, how the discipline and lifecycle axes are derived, how to read a row, and where the selection is saved. Column layout and hover text are covered by the test suite, so a filter cannot be added without documenting it.
 

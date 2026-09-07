@@ -40,6 +40,106 @@ CORDIS_SETS = [
 DMP_REQUIRED = ["contact", "created", "dataset", "dmp_id", "ethical_issues_exist",
                 "language", "modified", "title"]
 DMP_TITLE = re.compile(r"\bdmp\b|data\s*manage?ment\s*plan|datamanagementplan|madmp", re.I)
+
+# A record whose title mentions "data management plan" is very often *about* DMPs
+# rather than being one: posters, workshop guides, templates, project reports.
+# These signals separate the plans from the literature. Metadata only - resource
+# type and title - so the split stays reproducible and free of quality judgement.
+TEMPLATE_TITLE = re.compile(
+    r"\btemplates?\b|\bvorlage|boilerplate|\bworkbook\b|\bchecklist\b|\bmuster\b|"
+    r"\bexample\s+(ma)?dmp\b|\bsample\s+dmp\b|\bskeleton\b", re.I)
+GUIDE_TITLE = re.compile(
+    r"\bhow\s+to\b|\bguide\b|\bguidelines?\b|\bhandbook\b|\binstructions?\b|"
+    r"\brecommendations?\b|\btraining\b|\bworkshop\b|\btutorial\b|\bcourse\b|"
+    r"\blesson\b|\bprimer\b|best\s+practice|\bleitfaden\b|\banleitung\b|\bfaq\b", re.I)
+GUIDE_TAIL = re.compile(
+    r"\b(handbook|guide|guidelines?|tutorial|course|manual|instructions?)\s*$", re.I)
+# Scholarly output that talks about DMPs; it is not itself a plan.
+ABOUT_TYPES = {
+    "poster", "presentation", "publication-conferencepaper", "publication-article",
+    "publication-preprint", "publication-book", "publication-section",
+    "publication-thesis", "lesson", "software", "video", "image",
+    "publication-workingpaper", "publication-technicalnote", "publication-patent",
+}
+# Record types that can plausibly *be* a plan. Deliverables, reports, milestones
+# and standards are where project DMPs actually live.
+STRONG_PLAN_TYPES = {
+    "publication-datamanagementplan", "publication-deliverable", "publication-report",
+    "publication-milestone", "publication-standard", "publication-projectdeliverable",
+}
+WEAK_PLAN_TYPES = {"publication", "publication-other", "other", "dataset", "workflow"}
+
+# The title opens by naming itself a plan: "D1.1 Data Management Plan v2",
+# "NOVAFERT Data Management Plan", "Final data management plan".
+PLAN_HEAD = re.compile(
+    r"^\W*"
+    r"(deliverable\s*)?"
+    r"([A-Za-z0-9][\w&+.-]{0,18}[\s:_–-]{1,3}){0,5}"      # optional acronym / deliverable code
+    r"(final|initial|preliminary|updated?|revised|open|research|first|second|third)?\s*"
+    r"(data\s*(and\s+[\w ]{0,20}?\s*)?manage?ment\s*plan|dmp|ddomp|rdmp)\b", re.I)
+# ... but "DMP Evaluation Service" or "DMP Writing Made Easy" is about the activity,
+# not a plan. If one of these follows the plan phrase, it is not a plan.
+ACTIVITY_AFTER = re.compile(
+    r"\b(data\s*manage?ment\s*plan|dmp|rdmp)s?\W+"
+    r"(writing|creation|creating|authoring|development|developing|evaluation|evaluating|"
+    r"assessment|assessing|analysis|comparison|tool|tools|service|services|"
+    r"training|workshop|course|support|automation|generator|checker|interoperability|"
+    r"requirements|landscape|survey|study)\b", re.I)
+# Titles that announce a piece of scholarship about DMPs.
+ABOUT_HEAD = re.compile(
+    r"^\W*(towards?|identification|identifying|evaluation|evaluating|assessment|assessing|"
+    r"analysis|analysing|analyzing|comparison|comparing|collecting|building|standardi[sz]ing|"
+    r"exploring|understanding|introducing|implementing|developing|designing|measuring|"
+    r"a\s+(study|review|survey|framework|comparison)|on\s+the\b|lessons\b|"
+    r"experiences?\b|reflections?\b|what\b|why\b|how\b)", re.I)
+
+
+def classify_kind(title, rtype, madmp, n_datasets):
+    """Sort records into dmp / template / guidance / about / unclear.
+
+    Metadata only - Zenodo resource type plus title shape - so the split is
+    reproducible and carries no judgement about DMP quality. It is a heuristic:
+    the dashboard shows the verdict and its reason on every row so it can be
+    overridden by eye.
+    """
+    title = (title or "").strip()
+    if TEMPLATE_TITLE.search(title):
+        return "template", "title says template or workbook"
+    if madmp and (n_datasets or 0) > 0:
+        return "dmp", "machine-actionable file describing datasets"
+    if ACTIVITY_AFTER.search(title):
+        return ("about" if rtype in ABOUT_TYPES else "guidance",
+                "title is about DMP work rather than being a plan")
+    if ABOUT_HEAD.search(title):
+        return ("about" if rtype in ABOUT_TYPES else "about",
+                "title opens like a paper about DMPs")
+    if rtype in ABOUT_TYPES:
+        return "about", "resource type is %s, so it is output about DMPs" % rtype
+    if rtype == "publication-datamanagementplan":
+        return "dmp", "Zenodo resource type is data management plan"
+    head_match = PLAN_HEAD.search(title)
+    if head_match:
+        # "NFDI-MatWerk Guide: Research Data Management Plan" - the guide word sits
+        # in front of the plan phrase, so the record is guidance about a plan.
+        if GUIDE_TITLE.search(title[:head_match.end()]):
+            return "guidance", "a guide to writing a plan rather than a plan"
+        # "... Data Management Plan Handbook" - trailing guide word. But
+        # "... Data management plan & ethical guidelines" is a compound deliverable.
+        tail = GUIDE_TAIL.search(title)
+        if tail and not re.search(r"(&|\band\b|\+)\s*\w*\s*$", title[:tail.start()]):
+            return "guidance", "titled as a plan but the record is a handbook or guide"
+        return "dmp", "title names itself a data management plan"
+    if GUIDE_TITLE.search(title):
+        return "guidance", "title says guide, handbook, training or similar"
+    if madmp:
+        return "dmp", "carries a machine-actionable DMP file"
+    if rtype in STRONG_PLAN_TYPES and DMP_TITLE.search(title):
+        return "dmp", "project deliverable or report with a DMP title"
+    if rtype in WEAK_PLAN_TYPES and DMP_TITLE.search(title):
+        return "unclear", "mentions a DMP but the record type does not confirm it is one"
+    return "unclear", "mentions DMP but nothing confirms it is one"
+
+
 SENSITIVE_WORDS = re.compile(
     r"\bgdpr\b|personal data|sensitive data|pseudonym|anonymi|ethic|informed consent|"
     r"patient|clinical|special categor", re.I)
@@ -242,12 +342,23 @@ def main():
         json_files = [f for f in (r.get("files") or [])
                       if (f.get("ext") or "").lower() == "json"]
         pdfs = [f for f in (r.get("files") or []) if (f.get("ext") or "").lower() == "pdf"]
+        kind, kind_why = classify_kind(title, r.get("type"), bool(md),
+                                       (md or {}).get("n_datasets"))
+        files = [{"name": f.get("key"), "ext": f.get("ext"), "size": f.get("size")}
+                 for f in (r.get("files") or [])][:12]
+        funders = [{"funder": f.get("funder"), "number": f.get("number"),
+                    "acronym": f.get("acronym"), "program": f.get("program"),
+                    "title": f.get("title")}
+                   for f in (r.get("funding") or [])][:8]
 
         rows.append({
             "id": rid, "doi": r.get("doi"), "title": title, "date": r.get("date"),
             "year": (r.get("date") or "")[:4], "type": r.get("type"),
             "access": r.get("access"), "version": r.get("version"),
-            "desc": (r.get("desc") or "")[:700], "subjects": (r.get("subjects") or [])[:8],
+            "desc": (r.get("desc") or "")[:1600], "subjects": (r.get("subjects") or [])[:12],
+            "creators": (r.get("creators") or [])[:8],
+            "files": files, "funders": funders,
+            "kind": kind, "kind_why": kind_why,
             "tier": tier, "program": program,
             "grant": cand[0] if cand else (zenodo_grants[0] if zenodo_grants else ""),
             "acronym": (project or {}).get("acronym") or next(
@@ -282,7 +393,7 @@ def main():
     json.dump(rows, open(os.path.join(common.DATA, "dmp_dataset.json"), "w",
                          encoding="utf-8"), ensure_ascii=False)
 
-    cols = ["doi", "title", "date", "tier", "program", "grant", "acronym", "call",
+    cols = ["doi", "title", "kind", "date", "tier", "program", "grant", "acronym", "call",
             "disc", "stage", "stage_frac", "proj_start", "proj_end", "proj_status",
             "madmp", "schema_ok", "n_datasets", "n_dist", "personal", "sensitive",
             "ethics", "challenging", "access", "url", "dl"]
@@ -298,6 +409,7 @@ def main():
     print("maDMPs: %d | with CORDIS discipline: %d"
           % (sum(1 for r in rows if r["madmp"]), sum(1 for r in rows if r["disc"])))
     print("lifecycle: %s" % collections.Counter(r["stage"] for r in rows).most_common())
+    print("record kind: %s" % collections.Counter(r["kind"] for r in rows).most_common())
 
 
 if __name__ == "__main__":

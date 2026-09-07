@@ -74,11 +74,16 @@ Two ways to run, one shared template (`dashboard/template.html`):
 
 Features:
 
-- Filter by funder tier, publication year range, format, discipline, lifecycle stage, sensitive-data
-  flags, and full-text search across title, project, grant, DOI, call id and description
+- Filter by **record kind** (actual DMP / template / guidance / about / unclear — defaults to
+  actual DMPs only), funder tier, publication year range, format, discipline, lifecycle stage,
+  sensitive-data flags, and full-text search across title, project, grant, DOI, call id and
+  description
+- **Metadata sheet** on every row: click a title for authors, abstract, DOI, Zenodo type, project
+  and run dates, call, all funders, discipline and sub-fields, keywords, maDMP statistics, and the
+  file list with sizes and direct links
 - Four presets that set every filter at once
 - Sortable columns — click a header, click again to reverse
-- **Editable columns**: 13 available, 8 shown by default; show/hide, reorder, reset. Choice
+- **Editable columns**: 14 available, 8 shown by default; show/hide, reorder, reset. Choice
   persists in browser storage. The checkbox and DMP-title columns are locked.
 - Live 3 × 3 coverage matrix over the current selection, plus a challenging-case slot
 - Warnings for duplicate projects, a fourth discipline, missing lifecycle stage, and going over 10
@@ -90,7 +95,7 @@ Features:
 
 ### Test suite
 
-`dashboard/selftest.js` — **131 assertions, all passing.** Served only at `/selftest`, never part
+`dashboard/selftest.js` — **160 assertions, all passing.** Served only at `/selftest`, never part
 of a built file. It drives the real UI through both the internal API and real DOM clicks: filters,
 search, sorting, columns, paging, row expansion, selection, matrix, warnings, all three export
 formats, tooltips and the API round trip. It also asserts that *no control is undocumented*, so a
@@ -101,7 +106,7 @@ python scripts/serve.py --no-open
 chrome --headless=new --dump-dom "http://127.0.0.1:8756/selftest"
 ```
 
-Results go to `#testlog` and the document title (`SELFTEST 131/131 fail=0`), so it greps cleanly.
+Results go to `#testlog` and the document title (`SELFTEST 160/160 fail=0`), so it greps cleanly.
 `/selftest` rebuilds from disk on every request — editing the template or harness needs no restart.
 
 ---
@@ -150,6 +155,9 @@ maDMP: `madmp` (bool), `madmp_file`, `n_datasets`, `n_dist` (**populated** distr
 
 Challenging case: `challenging`, `ch_meta`.
 
+Record classification: `kind`, `kind_why`. Bibliographic detail: `creators`, `files`
+(name, ext, size), `funders` (every funding entry, not just the matched one), `subjects`.
+
 ### How the derived fields are computed
 
 Read `scripts/04_build_dataset.py` for the authoritative version. In short:
@@ -170,6 +178,19 @@ half the Horizon Europe maDMPs are not tagged as EU-funded in their Zenodo recor
 **`disc`** — most frequent top-level EuroSciVoc term for the project. Empty when there is no
 CORDIS match.
 
+**`kind`** — what the record actually *is*, because a search for "data management plan"
+returns far more literature about DMPs than plans. Decided from the Zenodo resource type plus
+the shape of the title, in this order: a title saying template/workbook wins; a maDMP file
+describing datasets means `dmp`; a title like "DMP Evaluation Service" or an opener like
+"Towards…"/"Identification of…" means it is `about` DMPs; poster/presentation/paper/software
+types are `about`; the Zenodo DMP type means `dmp`; a title that opens by naming itself a plan
+("D1.1 Data Management Plan v2", "NOVAFERT Data Management Plan") means `dmp`, unless a guide
+word sits in front of or at the end of it; then guide words mean `guidance`; then a deliverable
+or report with a DMP title means `dmp`; anything left is `unclear`. `kind_why` records which
+rule fired, and the dashboard shows it on every row. **It is a heuristic** — the dashboard
+exposes it as a filter, a column and a tag precisely so it can be overridden by eye. The
+dashboard shows only `kind == "dmp"` by default.
+
 **`ch_meta`** — the strict test: the maDMP itself sets `personal_data`, `sensitive_data`,
 `security_and_privacy` or `ethical_issues_exist`. **`challenging`** — looser: `ch_meta` OR a
 regex hit for GDPR / personal data / sensitive / ethics / consent / patient / clinical wording in
@@ -179,9 +200,10 @@ the title, description or subjects. Treat `challenging` alone as a *lead to chec
 
 | | |
 |---|---|
-| DMP records | 2,650 |
-| Horizon Europe | 722 — of which **574 published 2024 or later**, across 445 projects |
-| Horizon 2020 / Other EU / DFG | 525 / 69 / 27 |
+| DMP-related records | 2,650 — of which **2,504 are actual plans** |
+| by kind | dmp 2,504 · about 64 · template 35 · guidance 32 · unclear 15 |
+| Horizon Europe | 722 (700 plans) — of which **574 published 2024 or later, 555 of them plans**, across 445 projects |
+| Horizon 2020 / Other EU / DFG | 525 / 69 / 27 — the DFG 27 contain only **6 actual plans** |
 | Other funder / no funder metadata | 267 / 1,040 |
 | machine-actionable (validated RDA-DCS) | 376 |
 | with a CORDIS discipline | 1,034 |
@@ -191,12 +213,14 @@ Horizon Europe 2024+, discipline × stage:
 
 | discipline | early | mid | late |
 |---|---|---|---|
-| natural sciences | 62 | 71 | 52 |
-| social sciences | 30 | 40 | 27 |
-| engineering and technology | 41 | 36 | 16 |
-| agricultural sciences | 11 | 12 | 9 |
-| medical and health sciences | 11 | 10 | 11 |
+| natural sciences | 61 | 67 | 47 |
+| social sciences | 30 | 39 | 26 |
+| engineering and technology | 41 | 36 | 15 |
+| agricultural sciences | 11 | 11 | 9 |
+| medical and health sciences | 11 | 10 | 10 |
 | humanities | 8 | 1 | 1 |
+
+(actual plans only; add the other kinds back with the Record kind filter)
 
 ---
 
@@ -247,6 +271,11 @@ every click. If you add a filter group, follow that pattern.
 another process already holds — making the busy-port fallback quietly steal the port instead of
 stepping past it. `serve.py` defines its own `Server` class with `allow_reuse_address = False`.
 Do not remove it.
+
+**The pool once included anything whose title mentioned a DMP**, which meant posters, workshop
+guides, templates and papers about DMPs were offered as candidates. Filtering to DFG returned 27
+records of which only 6 were plans. Fixed by the `kind` classifier; keep it in mind when adding
+a query to step 01, since a wider net pulls in more literature.
 
 ---
 

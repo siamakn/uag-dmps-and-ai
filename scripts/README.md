@@ -105,9 +105,9 @@ title, so it greps cleanly from a headless dump. Open the same URL in a normal
 browser to read the results on screen. `/selftest` rebuilds the page from disk on
 every request, so editing the template or the harness needs no restart.
 
-Current status: **131/131 passing.**
+Current status: **160/160 passing.**
 
-It has already earned its keep. Two bugs it caught:
+It has already earned its keep. Bugs it caught:
 
 - filter chips captured their state object at bind time, but presets and the
   clear buttons replace those objects - so after clicking any preset, every chip

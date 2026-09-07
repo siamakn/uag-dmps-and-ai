@@ -166,6 +166,7 @@ input[type=search],select{
 .t-ma{background:var(--good-soft); color:var(--good)}
 .t-pdf{background:var(--surface-2); color:var(--ink-3)}
 .t-ch{background:var(--alert-soft); color:var(--alert)}
+.t-kind{background:var(--warn-soft); color:var(--warn)}
 .t-ok{background:var(--good-soft); color:var(--good)}
 .t-part{background:var(--warn-soft); color:var(--warn)}
 
@@ -176,7 +177,9 @@ input[type=search],select{
 
 .det{grid-column:1/-1; background:var(--surface-2); border-radius:6px; padding:10px 12px;
      margin-top:6px; font-size:12.5px; color:var(--ink-2)}
-.det dl{display:grid; grid-template-columns:auto minmax(0,1fr); gap:3px 12px; margin:8px 0 0}
+.det .sheettitle{font-weight:600; color:var(--ink); font-size:13px; margin-bottom:4px}
+.det .abstract{margin:0 0 10px; max-width:82ch; color:var(--ink-2)}
+.det dl{display:grid; grid-template-columns:auto minmax(0,1fr); gap:4px 14px; margin:8px 0 0}
 .det dt{color:var(--ink-3); font-size:11px}
 .det dd{margin:0; font-size:12px; overflow-wrap:anywhere}
 
@@ -270,6 +273,10 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
     <div class="grp">
       <div class="lbl">Search</div>
       <input type="search" id="q" placeholder="title, project, grant, DOI" autocomplete="off" data-tip="Matches the record title, project acronym and title, grant number, DOI, CORDIS call id and the description text.">
+    </div>
+    <div class="grp">
+      <div class="lbl" data-tip="Not every record that mentions a DMP is one. This splits the pool by what the record actually is, using the Zenodo resource type and the shape of the title.">Record kind <button type="button" data-clear="kind" data-tip="Show every kind, including the ones that are not plans.">clear</button></div>
+      <div class="chips" id="f-kind"></div>
     </div>
     <div class="grp">
       <div class="lbl" data-tip="Who funded the project. Matched from the Zenodo record and from the grant id inside the maDMP file.">Funding <button type="button" data-clear="tiers" data-tip="Untick every funding chip.">clear</button></div>
@@ -401,6 +408,16 @@ var TIER_CLS = {"Horizon Europe":"t-he","Horizon 2020":"t-h2020","Other EU":"t-e
 var TIER_SHORT = {"Horizon Europe":"Horizon Europe","Horizon 2020":"H2020","Other EU":"other EU",
                   "DFG":"DFG","Other funder":"other funder","No funder metadata":"no funder data"};
 var STAGES = ["early","mid","late","unknown"];
+var KINDS = ["dmp","template","guidance","about","unclear"];
+var KIND_LABEL = {dmp:"actual DMP", template:"template", guidance:"guidance",
+                  about:"about DMPs", unclear:"unclear"};
+var KIND_TIP = {
+  dmp:"The record is a data management plan: typed as one by Zenodo, carrying a machine-actionable file, or a project deliverable whose title names it a plan.",
+  template:"A blank template or workbook to be filled in, not a completed plan.",
+  guidance:"A guide, handbook, training or workshop about writing plans.",
+  about:"Scholarly output about DMPs - a poster, presentation, paper or software - rather than a plan.",
+  unclear:"Mentions a DMP but neither the resource type nor the title confirms the record is one. Worth a look by eye."
+};
 var DISC_SHORT = {"engineering and technology":"engineering + tech",
                   "medical and health sciences":"medical + health"};
 
@@ -443,7 +460,8 @@ var COL_TIP = {
   flags:"Sensitive-data and ethics signals - the pool for the challenging case.",
   grant:"EU grant agreement number.",
   call:"CORDIS master call identifier, for example HORIZON-CL5-2023-D1-01.",
-  links:"Open the Zenodo record, or the maDMP JSON file itself."
+  links:"Open the Zenodo record, or the maDMP JSON file itself.",
+  kind:"Whether the record is an actual plan, a template, guidance, or something written about DMPs. Derived from the Zenodo resource type and the title."
 };
 
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
@@ -470,6 +488,8 @@ var ALLCOLS = [
    sort:function(a,b){ return (b.challenging?1:0)-(a.challenging?1:0) || num(b.sensitive)-num(a.sensitive); }},
   {k:"grant",   t:"Grant",            w:100, sort:function(a,b){ return cmpStr(a.grant,b.grant); }},
   {k:"call",    t:"Call",             w:170, sort:function(a,b){ return cmpStr(a.call,b.call); }},
+  {k:"kind",    t:"Kind",             w:110,
+   sort:function(a,b){ return cmpStr(a.kind,b.kind); }},
   {k:"links",   t:"Open",             w:104}
 ];
 var COLDEF = {};
@@ -514,7 +534,7 @@ function gridMin(cols){
 
 /* ---------------- state ---------------- */
 var state = {q:"", tiers:{"Horizon Europe":1}, y0:2024, y1:2026,
-             fmt:{}, disc:{}, stage:{}, flag:{}, sort:"date", dir:-1,
+             kind:{dmp:1}, fmt:{}, disc:{}, stage:{}, flag:{}, sort:"date", dir:-1,
              limit:LIMIT_STEP, open:{}};
 var sel = [], saveTimer=null;
 
@@ -543,6 +563,7 @@ function byId(id){ return INDEX[id]||null; }
 /* ---------------- filtering ---------------- */
 function anyOn(o){ for(var k in o) if(o[k]) return true; return false; }
 function matches(r){
+  if(anyOn(state.kind) && !state.kind[r.kind]) return false;
   if(anyOn(state.tiers) && !state.tiers[r.tier]) return false;
   var y=parseInt(r.year,10)||0;
   if(y<state.y0 || y>state.y1) return false;
@@ -581,9 +602,17 @@ var CELL = {
       '" aria-label="Select '+esc(r.title.slice(0,60))+'"></div>';
   },
   title:function(r){
-    return '<div class="cell"><button class="ttl" type="button" data-open="'+esc(r.id)+'">'+
+    var flag = r.kind && r.kind!=="dmp"
+      ? '<span class="tag t-kind" data-tip="'+esc(KIND_TIP[r.kind]||"")+'">'+
+        esc(KIND_LABEL[r.kind]||r.kind)+'</span> ' : '';
+    return '<div class="cell">'+flag+'<button class="ttl" type="button" data-open="'+esc(r.id)+'">'+
       esc(r.title)+'</button>'+
       (r.proj_title?'<div class="sub2">'+esc(r.proj_title)+'</div>':'')+'</div>';
+  },
+  kind:function(r){
+    return '<div class="cell"><span class="tag '+(r.kind==="dmp"?"t-ma":"t-kind")+
+      '" data-tip="'+esc(KIND_TIP[r.kind]||"")+'">'+esc(KIND_LABEL[r.kind]||r.kind)+
+      '</span><div class="sub2">'+esc(r.type||"")+'</div></div>';
   },
   project:function(r){
     return '<div class="cell">'+(r.acronym?'<span class="mono">'+esc(r.acronym)+'</span>':
@@ -652,6 +681,61 @@ var CELL = {
 };
 
 /* ---------------- rendering ---------------- */
+function kb(n){
+  if(n==null) return "";
+  return n>=1048576 ? (n/1048576).toFixed(1)+" MB"
+       : n>=1024 ? Math.round(n/1024)+" KB" : n+" B";
+}
+function row2(label,value,mono){
+  if(value===null||value===undefined||value==="") return "";
+  return '<dt>'+esc(label)+'</dt><dd'+(mono?' class="mono"':'')+'>'+value+'</dd>';
+}
+function sheet(r){
+  var files=(r.files||[]).map(function(f){
+    var href = (API && r.madmp_file && (f.ext||"").toLowerCase()==="json")
+      ? API+"/madmp/"+encodeURIComponent(r.madmp_file)
+      : r.url;
+    return '<a href="'+esc(href)+'" target="_blank" rel="noopener">'+esc(f.name||"file")+
+      '</a> <span style="color:var(--ink-3)">'+esc(kb(f.size))+'</span>';
+  }).join("<br>");
+  var funders=(r.funders||[]).map(function(f){
+    return esc([f.funder,f.acronym,f.number].filter(Boolean).join(" · "))+
+      (f.program?' <span style="color:var(--ink-3)">'+esc(f.program)+'</span>':'');
+  }).join("<br>");
+  return '<div class="det">'+
+    '<div class="sheettitle">'+esc(r.title)+'</div>'+
+    (r.desc?'<p class="abstract">'+esc(r.desc)+(r.desc.length>=1195?'…':'')+'</p>'
+           :'<p class="abstract"><em>No description in the Zenodo record.</em></p>')+
+    '<dl>'+
+    row2("Record kind", esc(KIND_LABEL[r.kind]||r.kind)+
+         ' <span style="color:var(--ink-3)">— '+esc(r.kind_why||"")+'</span>')+
+    row2("Zenodo type", esc(r.type||""), true)+
+    row2("DOI", '<a href="https://doi.org/'+esc(r.doi)+'" target="_blank" rel="noopener">'+
+         esc(r.doi)+'</a>', true)+
+    row2("Published", esc(r.date)+(r.version?" · version "+esc(r.version):""), true)+
+    row2("Access", esc(r.access||""))+
+    row2("Authors", esc((r.creators||[]).join("; ")))+
+    row2("Project", (r.acronym?'<b>'+esc(r.acronym)+'</b> — ':'')+esc(r.proj_title||""))+
+    row2("Runs", r.proj_start?esc(r.proj_start)+" → "+esc(r.proj_end)+
+         " ("+esc((r.proj_status||"").toLowerCase())+")":"", true)+
+    row2("Programme", esc(r.legal||""), true)+
+    row2("Call", esc(r.call||""), true)+
+    row2("Funding", funders)+
+    row2("Lifecycle", r.stage==="unknown"?"no project dates":
+         esc(r.stage)+" — "+Math.round((r.stage_frac||0)*100)+"% through the project")+
+    row2("Discipline", esc((r.disc_all||[]).join(", ")))+
+    row2("Sub-fields", esc((r.disc2||[]).join(", ")))+
+    row2("Keywords", esc((r.subjects||[]).join(", ")))+
+    row2("maDMP", r.madmp? num(r.n_datasets)+" datasets · "+num(r.n_dist)+
+         " populated distributions · "+(r.schema_ok?"schema clean":num(r.n_findings)+
+         " schema gaps") : "")+
+    row2("Sensitive data", r.madmp? num(r.personal)+" datasets flag personal data · "+
+         num(r.sensitive)+" flag sensitive data · ethical issues: "+
+         esc(r.ethics||"unstated") : "")+
+    row2("Files", files)+
+    '</dl></div>';
+}
+
 var filtered=[];
 
 function renderHead(cols,tpl,minw){
@@ -675,20 +759,7 @@ function rowHTML(r,cols,tpl,minw){
   var h='<div class="row'+(on?' sel':'')+'" data-id="'+esc(r.id)+
         '" style="grid-template-columns:'+tpl+';min-width:'+minw+'px">';
   cols.forEach(function(c){ h+=CELL[c.k](r,on); });
-  if(state.open[r.id]){
-    h+='<div class="det">'+(r.desc?esc(r.desc)+(r.desc.length>=318?'…':'')
-                                 :'<em>No description in the record.</em>')+'<dl>'+
-      (r.proj_title?'<dt>Project</dt><dd>'+esc(r.proj_title)+'</dd>':'')+
-      (r.proj_start?'<dt>Runs</dt><dd class="mono">'+esc(r.proj_start)+' → '+esc(r.proj_end)+
-        ' ('+esc((r.proj_status||"").toLowerCase())+')</dd>':'')+
-      (r.legal?'<dt>Programme</dt><dd class="mono">'+esc(r.legal)+'</dd>':'')+
-      (r.call?'<dt>Call</dt><dd class="mono">'+esc(r.call)+'</dd>':'')+
-      (r.disc_all&&r.disc_all.length?'<dt>Fields</dt><dd>'+esc(r.disc_all.join(", "))+'</dd>':'')+
-      (r.madmp?'<dt>maDMP</dt><dd>'+num(r.n_datasets)+' datasets · '+num(r.n_dist)+
-        ' populated distributions · '+num(r.personal)+' personal · '+num(r.sensitive)+
-        ' sensitive · ethical issues: '+esc(r.ethics||"unstated")+'</dd>':'')+
-      '<dt>DOI</dt><dd class="mono">'+esc(r.doi||"—")+'</dd></dl></div>';
-  }
+  if(state.open[r.id]){ h+=sheet(r); }
   return h+'</div>';
 }
 function render(){
@@ -793,6 +864,9 @@ function countBy(fn){
   var c={}; ROWS.forEach(function(r){ var k=fn(r); if(k!=null) c[k]=(c[k]||0)+1; }); return c;
 }
 function buildChips(){
+  var kc=countBy(function(r){ return r.kind; });
+  document.getElementById("f-kind").innerHTML=KINDS.map(function(k){
+    return chipHTML(k,KIND_LABEL[k],!!state.kind[k],kc[k]||0,KIND_TIP[k]); }).join("");
   var tc=countBy(function(r){ return r.tier; });
   document.getElementById("f-tier").innerHTML=TIERS.map(function(t){
     return chipHTML(t,TIER_SHORT[t],!!state.tiers[t],tc[t]||0,TIER_TIP[t]); }).join("");
@@ -858,6 +932,7 @@ function setSort(k){
 function applyPreset(p){
   state.q=""; document.getElementById("q").value="";
   state.fmt={}; state.disc={}; state.stage={}; state.flag={}; state.limit=LIMIT_STEP;
+  state.kind = (p==="reset") ? {} : {dmp:1};
   if(p==="he-ma"){ state.tiers={"Horizon Europe":1}; state.fmt={madmp:1}; state.y0=2024; state.y1=2026; }
   else if(p==="he24"){ state.tiers={"Horizon Europe":1}; state.y0=2024; state.y1=2026; }
   else if(p==="eu"){ state.tiers={"Horizon Europe":1,"Horizon 2020":1,"Other EU":1}; state.y0=2024; state.y1=2026; }
@@ -893,6 +968,7 @@ function bindChipGroup(id,key){
   });
 }
 function wire(){
+  bindChipGroup("f-kind","kind");
   bindChipGroup("f-tier","tiers");
   bindChipGroup("f-fmt","fmt");
   bindChipGroup("f-disc","disc");
