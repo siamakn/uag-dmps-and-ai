@@ -1,0 +1,1659 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paired DMP study: one human document assessment",
+  "description": "Draft human-record contract with calibration-approved ordinal_012_calibration_v1. Pilot R-PILOT-01 may submit a single criterion while anchors/phase/protocol remain drafts. No labels supplied. Benchmark reviewers remain unassigned. Preserve raw human responses; never default missing scores to zero. Supplementary semantic checks are specified in human-review-protocol-draft.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0-draft"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "study_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "campaign_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cohort_manifest_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_approval": {
+      "enum": [
+        "draft",
+        "approved"
+      ]
+    },
+    "record_kind": {
+      "enum": [
+        "calibration_independent",
+        "cohort_independent",
+        "adjudication",
+        "matched_input_sensitivity",
+        "pilot_calibration"
+      ]
+    },
+    "record_status": {
+      "enum": [
+        "draft",
+        "submitted_locked",
+        "superseded"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "submitted_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "assessor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewer_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "human_reviewer",
+            "human_adjudicator"
+          ]
+        },
+        "expertise_and_conflicts_private_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prior_familiarity": {
+          "enum": [
+            "none_reported",
+            "familiar",
+            "uncertain"
+          ]
+        },
+        "prior_familiarity_note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "reviewer_id",
+        "role",
+        "expertise_and_conflicts_private_ref",
+        "prior_familiarity",
+        "prior_familiarity_note"
+      ]
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pair_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "project_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_document_artifact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "sampling_bin": {
+          "enum": [
+            "early_0_to_50_inclusive",
+            "late_over_100",
+            "calibration_outside_final_cohort"
+          ]
+        },
+        "issue_date_raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publication_date_raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "latest_project_end_date_raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "eligibility_manifest_artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date_anomaly_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "discipline_assignment_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "document_id",
+        "pair_id",
+        "project_id",
+        "source_document_artifact_ids",
+        "sampling_bin",
+        "issue_date_raw",
+        "publication_date_raw",
+        "latest_project_end_date_raw",
+        "eligibility_manifest_artifact_id",
+        "date_anomaly_refs",
+        "discipline_assignment_ref"
+      ]
+    },
+    "instrument": {
+      "$ref": "#/$defs/instrument"
+    },
+    "assessment_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "condition_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_view": {
+          "enum": [
+            "full_source_packet",
+            "exact_tool_visible_input"
+          ]
+        },
+        "packet_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonical_full_text_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tool_visible_text_artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "submitted_prompt_artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "packet_complete": {
+          "type": "boolean"
+        },
+        "omitted_or_unreadable_regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        },
+        "model_truncation_state": {
+          "enum": [
+            "not_checked",
+            "not_truncated",
+            "truncated",
+            "not_applicable"
+          ]
+        },
+        "model_input_transformations_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "masking_protocol_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "masked_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "known_unmasked_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "presentation_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "other_version_shown_before_submission": {
+          "type": "boolean"
+        },
+        "other_reviewer_labels_seen_before_submission": {
+          "type": "boolean"
+        },
+        "model_outputs_seen_before_submission": {
+          "type": "boolean"
+        },
+        "independence_deviations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "matched_input_prior_full_exposure": {
+          "enum": [
+            "none_reported",
+            "prior_exposure",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "carryover_design_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "condition_id",
+        "human_view",
+        "packet_artifact_id",
+        "canonical_full_text_artifact_id",
+        "tool_visible_text_artifact_id",
+        "submitted_prompt_artifact_id",
+        "packet_complete",
+        "omitted_or_unreadable_regions",
+        "model_truncation_state",
+        "model_input_transformations_ref",
+        "masking_protocol_version",
+        "masked_fields",
+        "known_unmasked_fields",
+        "presentation_order",
+        "other_version_shown_before_submission",
+        "other_reviewer_labels_seen_before_submission",
+        "model_outputs_seen_before_submission",
+        "independence_deviations",
+        "matched_input_prior_full_exposure",
+        "carryover_design_ref"
+      ]
+    },
+    "comparison_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tool_name": {
+          "const": "DMP-EVA"
+        },
+        "working_software_commit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "native_rubric_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tool_run_manifest_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intended_tool_ui_phase": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observed_effective_criteria_phase": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observed_effective_prompt_phase": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "native_instrument_omitted_ids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "1a",
+              "1b",
+              "2a",
+              "2b",
+              "3a",
+              "3b",
+              "3c",
+              "4a",
+              "4b",
+              "4c",
+              "5a",
+              "5b",
+              "5c",
+              "5d",
+              "6a",
+              "6b"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "comparison_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tool_name",
+        "working_software_commit",
+        "native_rubric_sha256",
+        "tool_run_manifest_ref",
+        "intended_tool_ui_phase",
+        "observed_effective_criteria_phase",
+        "observed_effective_prompt_phase",
+        "native_instrument_omitted_ids",
+        "comparison_notes"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      },
+      "minItems": 1
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/criterion"
+      },
+      "minItems": 1,
+      "maxItems": 16
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "supersedes_record_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "original_independent_record_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "adjudication_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unresolved_criterion_ids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "1a",
+              "1b",
+              "2a",
+              "2b",
+              "3a",
+              "3b",
+              "3c",
+              "4a",
+              "4b",
+              "4c",
+              "5a",
+              "5b",
+              "5c",
+              "5d",
+              "6a",
+              "6b"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "adjudication_meeting_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "reviewer_confirmation_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "record_content_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "supersedes_record_id",
+        "original_independent_record_ids",
+        "adjudication_reason",
+        "unresolved_criterion_ids",
+        "adjudication_meeting_at",
+        "reviewer_confirmation_ref",
+        "record_content_sha256"
+      ]
+    },
+    "overall_comments": {
+      "type": "string"
+    },
+    "assessment_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "enum": [
+            "single_criterion_pilot",
+            "partial_assessment",
+            "full_instrument"
+          ]
+        },
+        "assessed_criterion_ids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "1a",
+              "1b",
+              "2a",
+              "2b",
+              "3a",
+              "3b",
+              "3c",
+              "4a",
+              "4b",
+              "4c",
+              "5a",
+              "5b",
+              "5c",
+              "5d",
+              "6a",
+              "6b"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "scope",
+        "assessed_criterion_ids"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "study_id",
+    "campaign_id",
+    "cohort_manifest_ref",
+    "protocol_id",
+    "protocol_version",
+    "protocol_approval",
+    "record_kind",
+    "record_status",
+    "created_at",
+    "submitted_at",
+    "assessor",
+    "document",
+    "instrument",
+    "assessment_context",
+    "comparison_context",
+    "artifacts",
+    "criteria",
+    "provenance",
+    "overall_comments",
+    "assessment_scope"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "adjudication"
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assessor": {
+            "properties": {
+              "role": {
+                "const": "human_adjudicator"
+              }
+            }
+          },
+          "provenance": {
+            "properties": {
+              "original_independent_record_ids": {
+                "minItems": 2
+              },
+              "adjudication_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "enum": [
+              "calibration_independent",
+              "cohort_independent",
+              "matched_input_sensitivity"
+            ]
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assessor": {
+            "properties": {
+              "role": {
+                "const": "human_reviewer"
+              }
+            }
+          },
+          "provenance": {
+            "properties": {
+              "original_independent_record_ids": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "submitted_locked"
+          }
+        },
+        "required": [
+          "record_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "submitted_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "provenance": {
+            "properties": {
+              "reviewer_confirmation_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "matched_input_sensitivity"
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assessment_context": {
+            "properties": {
+              "human_view": {
+                "const": "exact_tool_visible_input"
+              },
+              "tool_visible_text_artifact_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "calibration_independent"
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "document": {
+            "properties": {
+              "sampling_bin": {
+                "const": "calibration_outside_final_cohort"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "submitted_locked"
+          },
+          "record_kind": {
+            "enum": [
+              "cohort_independent",
+              "adjudication",
+              "matched_input_sensitivity"
+            ]
+          }
+        },
+        "required": [
+          "record_status",
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "protocol_approval": {
+            "const": "approved"
+          },
+          "instrument": {
+            "properties": {
+              "score_policy_approval": {
+                "const": "approved_for_benchmark"
+              },
+              "anchors_status": {
+                "const": "benchmark_frozen"
+              },
+              "phase_mapping_status": {
+                "const": "benchmark_frozen"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "pilot_calibration"
+          }
+        },
+        "required": [
+          "record_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "assessor": {
+            "properties": {
+              "reviewer_id": {
+                "const": "R-PILOT-01"
+              },
+              "role": {
+                "const": "human_reviewer"
+              }
+            }
+          },
+          "document": {
+            "properties": {
+              "sampling_bin": {
+                "const": "calibration_outside_final_cohort"
+              }
+            }
+          },
+          "assessment_scope": {
+            "properties": {
+              "scope": {
+                "enum": [
+                  "single_criterion_pilot",
+                  "partial_assessment"
+                ]
+              }
+            }
+          },
+          "instrument": {
+            "properties": {
+              "score_policy_approval": {
+                "const": "approved_for_calibration"
+              }
+            }
+          },
+          "criteria": {
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/criterion"
+                },
+                {
+                  "properties": {
+                    "score": {
+                      "properties": {
+                        "scale_id": {
+                          "const": "ordinal_012_calibration_v1"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "provenance": {
+            "properties": {
+              "original_independent_record_ids": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "calibration_independent"
+          },
+          "record_status": {
+            "const": "submitted_locked"
+          }
+        },
+        "required": [
+          "record_kind",
+          "record_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "instrument": {
+            "properties": {
+              "score_policy_approval": {
+                "enum": [
+                  "approved_for_calibration",
+                  "approved_for_benchmark"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path_or_uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "source_document",
+            "full_canonical_text",
+            "human_packet",
+            "tool_visible_text",
+            "submitted_prompt",
+            "rubric",
+            "anchors",
+            "eligibility_manifest",
+            "other"
+          ]
+        },
+        "transformation_manifest_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "length_utf16_code_units": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "artifact_id",
+        "path_or_uri",
+        "sha256",
+        "media_type",
+        "role",
+        "transformation_manifest_ref",
+        "length_utf16_code_units"
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_page_1based": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "printed_page_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_or_table": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "json_pointer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text_start": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "text_end_exclusive": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "offset_units": {
+          "enum": [
+            "unicode_code_points",
+            "utf16_code_units",
+            null
+          ]
+        },
+        "excerpt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "artifact_id",
+        "physical_page_1based",
+        "printed_page_label",
+        "section_or_table",
+        "json_pointer",
+        "text_start",
+        "text_end_exclusive",
+        "offset_units",
+        "excerpt",
+        "note"
+      ]
+    },
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "scale_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scale_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchors_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_value_as_entered": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entry_context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entry_status": {
+          "enum": [
+            "not_entered",
+            "human_entered",
+            "withheld"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "scale_id",
+        "scale_version",
+        "anchors_artifact_id",
+        "original_value_as_entered",
+        "entry_context",
+        "entry_status"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "scale_id": {
+                "enum": [
+                  "ordinal_012_calibration_v1",
+                  "proposed_ordinal_012"
+                ]
+              }
+            },
+            "required": [
+              "scale_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  null
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "scale_id": {
+                "const": "meeting_1_10"
+              }
+            },
+            "required": [
+              "scale_id"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 10
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "entry_status": {
+                "enum": [
+                  "not_entered",
+                  "withheld"
+                ]
+              }
+            },
+            "required": [
+              "entry_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "then": {
+            "properties": {
+              "entry_status": {
+                "const": "human_entered"
+              },
+              "original_value_as_entered": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ],
+      "description": "value is null until explicitly entered by a human. NA/uncertainty are separate dispositions. original_value_as_entered retains the human label, including nonnumeric labels. Never coerce absence into zero."
+    },
+    "criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "criterion_id": {
+          "enum": [
+            "1a",
+            "1b",
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "3c",
+            "4a",
+            "4b",
+            "4c",
+            "5a",
+            "5b",
+            "5c",
+            "5d",
+            "6a",
+            "6b"
+          ]
+        },
+        "assessment_phase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rubric_cell_locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "native_crosswalk_status": {
+          "enum": [
+            "shared_id_semantics_to_check",
+            "shared_semantics_approved",
+            "different_semantics",
+            "not_in_native_instrument"
+          ]
+        },
+        "applicability": {
+          "enum": [
+            "applicable",
+            "not_applicable",
+            "uncertain"
+          ]
+        },
+        "applicability_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_state": {
+          "enum": [
+            "evidenced",
+            "partly_evidenced",
+            "not_reported",
+            "unreadable",
+            "unavailable_in_packet",
+            "uncertain",
+            "instrument_undefined"
+          ]
+        },
+        "score": {
+          "$ref": "#/$defs/score"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "not_stated"
+          ]
+        },
+        "confidence_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        },
+        "absence_search_scope": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "relevant_packet_search_completed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "assessment_phase",
+        "rubric_cell_locator",
+        "native_crosswalk_status",
+        "applicability",
+        "applicability_reason",
+        "evidence_state",
+        "score",
+        "confidence",
+        "confidence_reason",
+        "evidence",
+        "absence_search_scope",
+        "rationale",
+        "uncertainties",
+        "relevant_packet_search_completed"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "applicability": {
+                "enum": [
+                  "not_applicable",
+                  "uncertain"
+                ]
+              }
+            },
+            "required": [
+              "applicability"
+            ]
+          },
+          "then": {
+            "properties": {
+              "score": {
+                "properties": {
+                  "value": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "evidence_state": {
+                "enum": [
+                  "unreadable",
+                  "unavailable_in_packet",
+                  "uncertain",
+                  "instrument_undefined"
+                ]
+              }
+            },
+            "required": [
+              "evidence_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "score": {
+                "properties": {
+                  "value": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "evidence_state": {
+                "enum": [
+                  "evidenced",
+                  "partly_evidenced"
+                ]
+              }
+            },
+            "required": [
+              "evidence_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "score": {
+                "properties": {
+                  "scale_id": {
+                    "const": "ordinal_012_calibration_v1"
+                  },
+                  "value": {
+                    "const": 0
+                  }
+                },
+                "required": [
+                  "scale_id",
+                  "value"
+                ]
+              }
+            },
+            "required": [
+              "score"
+            ]
+          },
+          "then": {
+            "properties": {
+              "applicability": {
+                "const": "applicable"
+              },
+              "evidence_state": {
+                "const": "not_reported"
+              },
+              "relevant_packet_search_completed": {
+                "const": true
+              },
+              "absence_search_scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "score": {
+                "properties": {
+                  "scale_id": {
+                    "const": "ordinal_012_calibration_v1"
+                  },
+                  "value": {
+                    "const": 1
+                  }
+                },
+                "required": [
+                  "scale_id",
+                  "value"
+                ]
+              }
+            },
+            "required": [
+              "score"
+            ]
+          },
+          "then": {
+            "properties": {
+              "applicability": {
+                "const": "applicable"
+              },
+              "evidence_state": {
+                "const": "partly_evidenced"
+              },
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "score": {
+                "properties": {
+                  "scale_id": {
+                    "const": "ordinal_012_calibration_v1"
+                  },
+                  "value": {
+                    "const": 2
+                  }
+                },
+                "required": [
+                  "scale_id",
+                  "value"
+                ]
+              }
+            },
+            "required": [
+              "score"
+            ]
+          },
+          "then": {
+            "properties": {
+              "applicability": {
+                "const": "applicable"
+              },
+              "evidence_state": {
+                "const": "evidenced"
+              },
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "instrument": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "instrument_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "framework16",
+            "native_eva14",
+            "other_declared"
+          ]
+        },
+        "rubric_artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rubric_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "criterion_ids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "1a",
+              "1b",
+              "2a",
+              "2b",
+              "3a",
+              "3b",
+              "3c",
+              "4a",
+              "4b",
+              "4c",
+              "5a",
+              "5b",
+              "5c",
+              "5d",
+              "6a",
+              "6b"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "intended_human_rubric_phase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phase_mapping_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phase_mapping_rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "score_policy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "score_policy_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "score_policy_approval": {
+          "enum": [
+            "draft",
+            "approved_for_calibration",
+            "approved_for_benchmark"
+          ]
+        },
+        "na_policy_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "crosswalk_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchors_status": {
+          "enum": [
+            "calibration_draft",
+            "benchmark_frozen"
+          ]
+        },
+        "phase_mapping_status": {
+          "enum": [
+            "calibration_draft",
+            "benchmark_frozen"
+          ]
+        }
+      },
+      "required": [
+        "instrument_id",
+        "version",
+        "kind",
+        "rubric_artifact_id",
+        "rubric_sha256",
+        "criterion_ids",
+        "intended_human_rubric_phase",
+        "phase_mapping_version",
+        "phase_mapping_rationale",
+        "score_policy_id",
+        "score_policy_version",
+        "score_policy_approval",
+        "na_policy_version",
+        "crosswalk_version",
+        "anchors_status",
+        "phase_mapping_status"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "framework16"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "criterion_ids": {
+                "minItems": 16,
+                "maxItems": 16
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "native_eva14"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "criterion_ids": {
+                "minItems": 14,
+                "maxItems": 14,
+                "items": {
+                  "enum": [
+                    "1a",
+                    "1b",
+                    "2a",
+                    "2b",
+                    "3a",
+                    "3b",
+                    "4a",
+                    "4b",
+                    "4c",
+                    "5a",
+                    "5b",
+                    "5c",
+                    "6a",
+                    "6b"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

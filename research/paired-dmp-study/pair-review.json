@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-04",
+  "role": "independent_static_source_and_document_review_not_human_reference_review",
+  "status": "six_supported_proposed_slot_candidates_AGRICORE_replaces_RECAP; not_frozen",
+  "decisions_applied": {
+    "D08": "any_documented_CORDIS_branch_membership_one_slot_per_project_dominant_reported",
+    "D09": "latest_authoritative_current_project_end_including_extensions"
+  },
+  "pairs": [
+    {
+      "project": "iMagine",
+      "grant": "101058625",
+      "proposed_slot": "natural sciences",
+      "local_dominant_branch": "natural sciences",
+      "live_CORDIS_branches": [
+        "natural sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-09-01",
+      "latest_authoritative_end": "2025-08-31",
+      "duration_days": 1095,
+      "end_evidence": {
+        "path": "/tmp/pair-review/cordis-101058625.html",
+        "url": "https://cordis.europa.eu/project/id/101058625",
+        "sha256": "35f420d6b056792ad79ea62a35da44710c6c582f8bc0f73eca59d2b0dcf46bfc",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p7 expressly builds upon and updates D1.2; both project-wide, eight use cases.",
+      "date_evidence_clarity": "document_cover_and_delivery_dates",
+      "licence_evidence": "CC BY 4.0 in early physical p2 and late physical p3",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "7759984",
+        "record_url": "https://zenodo.org/records/7759984",
+        "cached_pdf": "/tmp/paired-search/7759984.pdf",
+        "bytes": 481463,
+        "sha256": "475634f9fdd5ed0ebd320e7d153670d7bb23ae98de883c3d03a6ff21ecab4304",
+        "document_dates": [
+          {
+            "date": "2023-02-28",
+            "label": "unlabelled dated cover; also due date",
+            "physical_pdf_page": 1,
+            "numerator_days": 180,
+            "fraction": 0.1643835616438356,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-03-09",
+            "label": "Actual delivery date, version 1.0",
+            "physical_pdf_page": 2,
+            "numerator_days": 189,
+            "fraction": 0.1726027397260274,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.1643835616438356,
+          0.1726027397260274
+        ]
+      },
+      "late": {
+        "record_id": "17055683",
+        "record_url": "https://zenodo.org/records/17055683",
+        "cached_pdf": "/tmp/paired-search/17055683.pdf",
+        "bytes": 1003166,
+        "sha256": "5655797dbbf1392a6f7979d7521e948c5c9161d7fa6f09a046db8e8e1094fcd0",
+        "document_dates": [
+          {
+            "date": "2025-09-05",
+            "label": "dated cover and Actual delivery date, version 1.0",
+            "physical_pdf_page": 1,
+            "numerator_days": 1100,
+            "fraction": 1.004566210045662,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.004566210045662,
+          1.004566210045662
+        ]
+      },
+      "uncertainties": [
+        "iMagine late is only5days after current CORDIS end; new authoritative end evidence could change qualification."
+      ],
+      "proposed_slot_membership_supported": true
+    },
+    {
+      "project": "EGI-ACE",
+      "grant": "101017567",
+      "proposed_slot": "engineering and technology",
+      "local_dominant_branch": "natural sciences",
+      "live_CORDIS_branches": [
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2021-01-01",
+      "latest_authoritative_end": "2023-06-30",
+      "duration_days": 910,
+      "end_evidence": {
+        "path": "/tmp/pair-review/cordis-101017567.html",
+        "url": "https://cordis.europa.eu/project/id/101017567",
+        "sha256": "b669c165bc72a533dd7c2c9ed638c997894e5a8f6e294fe1c29c2a932c2c8a2a",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p4 expressly updates D1.2; project research-data scope in both.",
+      "date_evidence_clarity": "explicit_issue_log",
+      "licence_evidence": "CC BY 4.0 in both physical p2",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "6602163",
+        "record_url": "https://zenodo.org/records/6602163",
+        "cached_pdf": "/tmp/paired-search/6602163.pdf",
+        "bytes": 513551,
+        "sha256": "4a0a8a2aa3ce0be13f16deaba02c811f4928528de663a8a09c0d73615f571fcc",
+        "document_dates": [
+          {
+            "date": "2021-08-04",
+            "label": "Document Log, Issue 1, Final version addressing review comments",
+            "physical_pdf_page": 2,
+            "numerator_days": 215,
+            "fraction": 0.23626373626373626,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.23626373626373626,
+          0.23626373626373626
+        ]
+      },
+      "late": {
+        "record_id": "19402005",
+        "record_url": "https://zenodo.org/records/19402005",
+        "cached_pdf": "/tmp/paired-search/19402005.pdf",
+        "bytes": 776995,
+        "sha256": "a827195d2d40780d0492d9513c2c65347bb209ab4880fc07e47f891c889906c5",
+        "document_dates": [
+          {
+            "date": "2023-11-08",
+            "label": "Document Log, Issue v1.1, appendix added following final review",
+            "physical_pdf_page": 2,
+            "numerator_days": 1041,
+            "fraction": 1.1439560439560439,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.1439560439560439,
+          1.1439560439560439
+        ]
+      },
+      "uncertainties": [],
+      "proposed_slot_membership_supported": true
+    },
+    {
+      "project": "SUSTRACK",
+      "grant": "101081823",
+      "proposed_slot": "social sciences",
+      "local_dominant_branch": "social sciences",
+      "live_CORDIS_branches": [
+        "natural sciences",
+        "social sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-11-01",
+      "latest_authoritative_end": "2025-10-31",
+      "duration_days": 1095,
+      "end_evidence": {
+        "path": "/tmp/pair-review/cordis-101081823.html",
+        "url": "https://cordis.europa.eu/project/id/101081823",
+        "sha256": "5ca59b1aa5d9dcfde96711fb1a45f76e9997cfa31acb68f7a2b8b4a020f0b2cd",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p12 expressly describes updates since D7.1/M6; same project, WP7 and task T7.4.",
+      "date_evidence_clarity": "dated_revision_and_submission",
+      "licence_evidence": "CC BY 4.0 in both freshly retrieved Zenodo record pages",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "14497074",
+        "record_url": "https://zenodo.org/records/14497074",
+        "cached_pdf": "/tmp/paired-search/14497074.pdf",
+        "bytes": 960776,
+        "sha256": "f1220cde868b34a446310f3a755e0ec600696e6db832b708cfbf39c301ef08b4",
+        "document_dates": [
+          {
+            "date": "2023-04-27",
+            "label": "Document Revision History version 6.0, Final version",
+            "physical_pdf_page": 2,
+            "numerator_days": 177,
+            "fraction": 0.16164383561643836,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-04-29",
+            "label": "Submission date, version V6.0",
+            "physical_pdf_page": 2,
+            "numerator_days": 179,
+            "fraction": 0.1634703196347032,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.16164383561643836,
+          0.1634703196347032
+        ]
+      },
+      "late": {
+        "record_id": "19161966",
+        "record_url": "https://zenodo.org/records/19161966",
+        "cached_pdf": "/tmp/paired-search/19161966.pdf",
+        "bytes": 1340985,
+        "sha256": "701789cbd909a8bd0f7128a6cba262dfb18bf6cd74881c4dc7520eb8637245e5",
+        "document_dates": [
+          {
+            "date": "2026-02-06",
+            "label": "Document Revision History version 3.0 Revised version submission, agreeing with Submission date",
+            "physical_pdf_page": 2,
+            "numerator_days": 1193,
+            "fraction": 1.089497716894977,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.089497716894977,
+          1.089497716894977
+        ]
+      },
+      "uncertainties": [],
+      "proposed_slot_membership_supported": true
+    },
+    {
+      "project": "RECHARGE",
+      "grant": "101061233",
+      "proposed_slot": "humanities",
+      "local_dominant_branch": "medical and health sciences",
+      "live_CORDIS_branches": [
+        "medical and health sciences",
+        "humanities"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-10-01",
+      "latest_authoritative_end": "2025-09-30",
+      "duration_days": 1095,
+      "end_evidence": {
+        "path": "/tmp/humanities-search/cordis-101061233.bin",
+        "url": "https://cordis.europa.eu/project/id/101061233",
+        "sha256": "2b33a760f4b0d47e6256ea3e52c825629c65ffb75cc0670ddd930c7f0cffde14",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Same project D6.1 and scope; final physical p2 expressly final update, preserving v1.1/v1.2 history; common Zenodo concept 17733865.",
+      "date_evidence_clarity": "submission_version_dates_and_dated_cover",
+      "licence_evidence": "CC BY 4.0 in both cached full Zenodo API metadata",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "17733866",
+        "record_url": "https://zenodo.org/records/17733866",
+        "cached_pdf": "/tmp/humanities-search/17733866-f0.pdf",
+        "bytes": 236054,
+        "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+        "document_dates": [
+          {
+            "date": "2023-03-29",
+            "label": "Submission date in deliverable description",
+            "physical_pdf_page": 2,
+            "numerator_days": 179,
+            "fraction": 0.1634703196347032,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-03-31",
+            "label": "Revisions table V1.0 Submission version",
+            "physical_pdf_page": 5,
+            "numerator_days": 181,
+            "fraction": 0.16529680365296803,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.1634703196347032,
+          0.16529680365296803
+        ]
+      },
+      "late": {
+        "record_id": "18403735",
+        "record_url": "https://zenodo.org/records/18403735",
+        "cached_pdf": "/tmp/humanities-search/18403735-f0.pdf",
+        "bytes": 1114561,
+        "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+        "document_dates": [
+          {
+            "date": "2026-02-02",
+            "label": "Date on cover, version 2.0",
+            "physical_pdf_page": 1,
+            "numerator_days": 1220,
+            "fraction": 1.1141552511415524,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.1141552511415524,
+          1.1141552511415524
+        ]
+      },
+      "uncertainties": [
+        "Early header 29Mar vs V1.0 revision-table31Mar is retained as same-bin interval.",
+        "Final dated cover2Feb2026 occurs after repository publication/creation/update28Jan2026. Actual release chronology not resolved; cover date evidence retained without replacing it by publication.",
+        "Initial p2 unrelated ENHANCED/D6.2 template header does not erase otherwise consistent cover/grant/body/D6.1 identity."
+      ],
+      "repository_version_list": {
+        "concept": "17733865",
+        "reported_total": 3,
+        "ids": [
+          "18403735",
+          "17801415",
+          "17733866"
+        ]
+      },
+      "proposed_slot_membership_supported": true
+    },
+    {
+      "project": "NANOFACTS",
+      "grant": "952259",
+      "proposed_slot": "medical and health sciences",
+      "local_dominant_branch": "engineering and technology",
+      "live_CORDIS_branches": [
+        "engineering and technology",
+        "medical and health sciences"
+      ],
+      "project_start": "2021-01-01",
+      "latest_authoritative_end": "2024-06-30",
+      "duration_days": 1276,
+      "date_evidence_clarity": "explicit_issue_footers_and_revision_dates",
+      "uncertainties": [
+        "Early explicit footer issue30Jun2021 differs from early revision and later first-issued narrative19Jun2021. All retained date choices are early.",
+        "Early cover36months and late cover42months corroborate duration change. Original end31Dec2023 inferred from start+36months, not independent amendment-register proof."
+      ],
+      "one_slot_only": true,
+      "end_evidence": {
+        "path": "/tmp/pair-review/cordis-952259.html",
+        "url": "https://cordis.europa.eu/project/id/952259",
+        "sha256": "90d9496e2b837d492bd81652a046af48f3f9a1df897079a1f52631ff985e57d1",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Early physicalp5 describes first project-wide DMP; late physicalp5 explicitly identifies first version and updates project data-management practices across consortium.",
+      "licence_evidence": "Both cached full Zenodo API metadata declare CC0; both PDF legal notices authorize reproduction provided source acknowledged. Preserve both; attribution retained.",
+      "threshold_check": "passes_for_all_retained_document_issue_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "proposed_slot_membership_supported": true,
+      "early": {
+        "record_id": "13847570",
+        "record_url": "https://zenodo.org/records/13847570",
+        "cached_pdf": "/tmp/humanities-search/13847570-f0.pdf",
+        "bytes": 408860,
+        "sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+        "md5": "4c30f697f3fedaa4bb22080a835fbd93",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2021-06-19",
+            "label": "Revision v1.5 date on early cover; late physicalp5 narrative says first version issued on this date",
+            "physical_pdf_page": 1,
+            "numerator_days": 169,
+            "fraction": 0.13244514106583072,
+            "threshold_pass": true
+          },
+          {
+            "date": "2021-06-30",
+            "label": "Explicit issue date in repeated early footer; first occurrence physicalp2",
+            "physical_pdf_page": 2,
+            "numerator_days": 180,
+            "fraction": 0.14106583072100312,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.13244514106583072,
+          0.14106583072100312
+        ],
+        "metadata_license_id": "cc-zero",
+        "metadata_publication_date": "2024-09-27",
+        "metadata_cache": "/tmp/humanities-search/13847570.bin",
+        "metadata_sha256": "7fef19632b15d559022f02facdcd1272457c33c83b62e1f8081c24646e9a792a",
+        "preferred_explicit_issue_date": "2021-06-30",
+        "preferred_issue_rationale": "Formal repeated issue-date footer; conflicting earlier revision/retrospective-issued statement retained and passes same bin."
+      },
+      "late": {
+        "record_id": "13857898",
+        "record_url": "https://zenodo.org/records/13857898",
+        "cached_pdf": "/tmp/humanities-search/13857898-f0.pdf",
+        "bytes": 442267,
+        "sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea",
+        "md5": "7994dc4459a724aead3c06f682cd831d",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2024-09-29",
+            "label": "Explicit issue-date footer and revision v2.3 date",
+            "physical_pdf_page": 1,
+            "numerator_days": 1367,
+            "fraction": 1.0713166144200628,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.0713166144200628,
+          1.0713166144200628
+        ],
+        "metadata_license_id": "cc-zero",
+        "metadata_publication_date": "2024-09-29",
+        "metadata_cache": "/tmp/humanities-search/13857898.bin",
+        "metadata_sha256": "7d13ee2b2ca3bc90687daf960f79dcf2e5abd9538e48177585c65d393699697c"
+      },
+      "extension_sensitivity": {
+        "early_cover_duration_months": 36,
+        "late_cover_duration_months": 42,
+        "inferred_original_end": "2023-12-31",
+        "inferred_original_duration_days": 1094,
+        "inferred_original_end_is_independently_authoritative": false,
+        "early_fraction_interval_original": [
+          0.15447897623400367,
+          0.16453382084095064
+        ],
+        "late_fraction_original": 1.2495429616087752,
+        "qualification_changes": false
+      },
+      "classification_paths_current": [
+        [
+          "engineering and technology",
+          "electrical engineering, electronic engineering, information engineering",
+          "electronic engineering",
+          "sensors",
+          "biosensors"
+        ],
+        [
+          "engineering and technology",
+          "environmental biotechnology",
+          "biosensing"
+        ],
+        [
+          "medical and health sciences",
+          "clinical medicine",
+          "oncology"
+        ],
+        [
+          "engineering and technology",
+          "nanotechnology",
+          "nano-materials"
+        ],
+        [
+          "medical and health sciences",
+          "basic medicine",
+          "pharmacology and pharmacy"
+        ]
+      ]
+    },
+    {
+      "project": "AGRICORE",
+      "grant": "816078",
+      "proposed_slot": "agricultural sciences",
+      "local_dominant_branch": null,
+      "dominant_branch_status": "absent_from_local_dataset; current_CORDIS_one_natural_and_one_agricultural_path_no_unique_dominant",
+      "live_CORDIS_branches": [
+        "natural sciences",
+        "agricultural sciences"
+      ],
+      "classification_paths_current": [
+        [
+          "natural sciences",
+          "biological sciences",
+          "ecology",
+          "ecosystems"
+        ],
+        [
+          "agricultural sciences",
+          "agriculture, forestry, and fisheries",
+          "agriculture"
+        ]
+      ],
+      "one_slot_only": true,
+      "project_start": "2019-09-01",
+      "latest_authoritative_end": "2024-06-30",
+      "duration_days": 1764,
+      "end_evidence": {
+        "path": "/tmp/health_agri/cordis-816078.html",
+        "url": "https://cordis.europa.eu/project/id/816078",
+        "sha256": "0c1251f6abfb55568f044bdf2385898c71910bf8421e0ac21b3ca35306e7b98b",
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "both_PDFs_print_original_end_2023-08-31; current_CORDIS_end_2024-06-30; full_amendment_register_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physicalp2 versionhistory initialversionfromD9.2; physicalp3 andp7 explicitly final project-wide DMP based on initialD9.2; earlyp3 andp6 same consortium/project-data scope.",
+      "date_evidence_clarity": "version_history_dates; early_v1.0_label_Final_draft_version; late_v1.0_label_Final_version",
+      "licence_evidence": "Both covers label dissemination Public; exact project-hosted PDFs downloaded by source worker. No explicit blanket document reuse licence found in full text; latep2 disclaimer concerns contributor originality/referencing, not a document reuse grant or consent prohibition.",
+      "blanket_reuse_licence": null,
+      "public_access_criterion_met": true,
+      "model_upload_permission_inferred": false,
+      "redistribution_permission_inferred": false,
+      "threshold_check": "passes_early_and_strict_post_end_using_document_version_dates",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen; unknown_blanket_reuse_terms_preserved",
+      "proposed_slot_membership_supported": true,
+      "uncertainties": [
+        "No local dominant branch exists; current CORDIS paths tie natural/agricultural; agricultural assignment permitted under D08.",
+        "Early finaldraft revision28Feb2020 and Aresreceipt29Feb2020 are separate labelled dates, not proof that receipt is issue. Both lie in early window.",
+        "Both PDFs retain original projectend31Aug2023, whereas latest CORDIS end30Jun2024 governs under D09.",
+        "Unknown blanket document licence is not an extra exclusion under public-download inclusion criterion; no permission for model submission or public redistribution is inferred."
+      ],
+      "early": {
+        "record_id": null,
+        "document_id": "AGRICORE-D9.2-v1.0",
+        "title": "D9.2 Data Management Plan",
+        "document_version": "D9.2 v1.0",
+        "source_file_url": "https://agricore-project.eu/wp-content/uploads/2021/06/D9.2-1.pdf",
+        "record_url": null,
+        "cached_pdf": "/tmp/health_agri/agricore_early.pdf",
+        "bytes": 698672,
+        "sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+        "document_dates": [
+          {
+            "date": "2020-02-28",
+            "label": "Version History Date, v1.0 Final draft version",
+            "physical_pdf_page": 2,
+            "numerator_days": 180,
+            "fraction": 0.10204081632653061,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.10204081632653061,
+          0.10204081632653061
+        ],
+        "dissemination_label": "Public, physicalp1",
+        "metadata_license_id": null,
+        "blanket_reuse_licence_found": false,
+        "public_download_verified_by_source_worker": true,
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "original_date_string": "28/02/2020",
+        "other_date_fields": [
+          {
+            "date": "2020-02-29",
+            "label": "Ares receipt on physicalp1",
+            "used_as_selected_revision_issue_date": false,
+            "numerator_days": 181,
+            "fraction": 0.10260770975056689
+          }
+        ],
+        "source_date_interval_days": [
+          180,
+          181
+        ],
+        "source_date_fraction_interval": [
+          0.10204081632653061,
+          0.10260770975056689
+        ]
+      },
+      "late": {
+        "record_id": null,
+        "document_id": "AGRICORE-D9.3-v1.0",
+        "title": "D9.3 Final Data Management Plan",
+        "document_version": "D9.3 v1.0",
+        "source_file_url": "https://agricore-project.eu/wp-content/uploads/2025/03/D9.3-Final-Data-Management-Plan.pdf",
+        "record_url": null,
+        "cached_pdf": "/tmp/health_agri/agricore_late.pdf",
+        "bytes": 807671,
+        "sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+        "document_dates": [
+          {
+            "date": "2024-08-31",
+            "label": "Version History Date, v1.0 Final version; original string31-ago-2024",
+            "physical_pdf_page": 2,
+            "numerator_days": 1826,
+            "fraction": 1.0351473922902494,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.0351473922902494,
+          1.0351473922902494
+        ],
+        "dissemination_label": "Public, physicalp1",
+        "metadata_license_id": null,
+        "blanket_reuse_licence_found": false,
+        "public_download_verified_by_source_worker": true,
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "original_date_string": "31-ago-2024"
+      },
+      "extension_sensitivity": {
+        "original_end_printed_in_both_PDFs": "2023-08-31",
+        "current_CORDIS_end": "2024-06-30",
+        "original_duration_days": 1460,
+        "current_duration_days": 1764,
+        "early_fraction_original": 0.1232876712328767,
+        "late_fraction_original": 1.2506849315068493,
+        "qualification_changes": false,
+        "amendment_document_not_inspected": true
+      }
+    }
+  ],
+  "sources": [
+    {
+      "key": "cordis-101058625",
+      "url": "https://cordis.europa.eu/project/id/101058625",
+      "resolved_url": "https://cordis.europa.eu/project/id/101058625",
+      "status": 200,
+      "bytes": 355541,
+      "sha256": "35f420d6b056792ad79ea62a35da44710c6c582f8bc0f73eca59d2b0dcf46bfc",
+      "retrieved_utc": "2026-11-03T17:35:31.429256+00:00"
+    },
+    {
+      "key": "cordis-101017567",
+      "url": "https://cordis.europa.eu/project/id/101017567",
+      "resolved_url": "https://cordis.europa.eu/project/id/101017567",
+      "status": 200,
+      "bytes": 606346,
+      "sha256": "b669c165bc72a533dd7c2c9ed638c997894e5a8f6e294fe1c29c2a932c2c8a2a",
+      "retrieved_utc": "2026-11-03T17:35:31.581799+00:00"
+    },
+    {
+      "key": "cordis-101081823",
+      "url": "https://cordis.europa.eu/project/id/101081823",
+      "resolved_url": "https://cordis.europa.eu/project/id/101081823",
+      "status": 200,
+      "bytes": 215208,
+      "sha256": "5ca59b1aa5d9dcfde96711fb1a45f76e9997cfa31acb68f7a2b8b4a020f0b2cd",
+      "retrieved_utc": "2026-11-03T17:35:31.831731+00:00"
+    },
+    {
+      "key": "zenodo-14497074",
+      "url": "https://zenodo.org/records/14497074",
+      "resolved_url": "https://zenodo.org/records/14497074",
+      "status": 200,
+      "bytes": 101928,
+      "sha256": "01038a8b2e019aab4b77308c5711959b756b60d5b79414ba2670895bd71f8026",
+      "retrieved_utc": "2026-11-03T17:35:31.848949+00:00"
+    },
+    {
+      "key": "zenodo-19161966",
+      "url": "https://zenodo.org/records/19161966",
+      "resolved_url": "https://zenodo.org/records/19161966",
+      "status": 200,
+      "bytes": 125351,
+      "sha256": "1e1c7e080af88c829689e2d5a6e9b2dab9d7cd2b9be0bbe1888c5b1760d715ee",
+      "retrieved_utc": "2026-11-03T17:35:31.506670+00:00"
+    },
+    {
+      "key": "recharge-record-17733866",
+      "url": "https://zenodo.org/api/records/17733866",
+      "cache_path": "/tmp/humanities-search/17733866.bin",
+      "sha256": "17018c771a594e6624d936beb4ceae573498d088080f1fcdb3dae52e625454fc",
+      "licence_id": "cc-by-4.0",
+      "record_file_checksum_matches_cached_pdf": true
+    },
+    {
+      "key": "recharge-record-18403735",
+      "url": "https://zenodo.org/api/records/18403735",
+      "cache_path": "/tmp/humanities-search/18403735.bin",
+      "sha256": "199fd3bd6112a58953c1adfe7f2bb7ee695b2507913f1602122d5af0f4d51ce3",
+      "licence_id": "cc-by-4.0",
+      "record_file_checksum_matches_cached_pdf": true
+    },
+    {
+      "key": "cordis-952259",
+      "url": "https://cordis.europa.eu/project/id/952259",
+      "resolved_url": "https://cordis.europa.eu/project/id/952259",
+      "status": 200,
+      "bytes": 121911,
+      "sha256": "90d9496e2b837d492bd81652a046af48f3f9a1df897079a1f52631ff985e57d1",
+      "retrieved_utc": "2026-11-03T17:42:08.920494+00:00"
+    },
+    {
+      "key": "cordis-693171",
+      "url": "https://cordis.europa.eu/project/id/693171",
+      "resolved_url": "https://cordis.europa.eu/project/id/693171",
+      "status": 200,
+      "bytes": 244891,
+      "sha256": "4d7f9f9c423dcfb9da0c4ba261565372b0f95c56b3c404268139b8fac27ba0fc",
+      "retrieved_utc": "2026-11-03T17:42:09.496361+00:00"
+    },
+    {
+      "key": "zenodo-1442633",
+      "url": "https://zenodo.org/api/records/1442633",
+      "resolved_url": "https://zenodo.org/api/records/1442633",
+      "status": 200,
+      "bytes": 5503,
+      "sha256": "5c582830e2d63596469ee1cd08de2d18fa09f0d98d47b6af7c9836959db4f8cd",
+      "retrieved_utc": "2026-11-03T17:43:37.271571+00:00",
+      "licence": {
+        "id": "cc-by-4.0"
+      }
+    },
+    {
+      "key": "zenodo-1886081",
+      "url": "https://zenodo.org/api/records/1886081",
+      "resolved_url": "https://zenodo.org/api/records/1886081",
+      "status": 200,
+      "bytes": 5995,
+      "sha256": "e71af8d771cfbc08db80716e87eaed05a7568aef05ce12532d4e24b9f5d23401",
+      "retrieved_utc": "2026-11-03T17:43:37.260329+00:00",
+      "licence": {
+        "id": "cc-by-4.0"
+      }
+    },
+    {
+      "key": "AGRICORE-early",
+      "url": "https://agricore-project.eu/wp-content/uploads/2021/06/D9.2-1.pdf",
+      "cache_path": "/tmp/health_agri/agricore_early.pdf",
+      "bytes": 698672,
+      "sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+      "retrieved_date": "2026-11-03",
+      "retrieved_utc": null
+    },
+    {
+      "key": "AGRICORE-late",
+      "url": "https://agricore-project.eu/wp-content/uploads/2025/03/D9.3-Final-Data-Management-Plan.pdf",
+      "cache_path": "/tmp/health_agri/agricore_late.pdf",
+      "bytes": 807671,
+      "sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+      "retrieved_date": "2026-11-03",
+      "retrieved_utc": null
+    },
+    {
+      "key": "cordis-816078",
+      "url": "https://cordis.europa.eu/project/id/816078",
+      "cache_path": "/tmp/health_agri/cordis-816078.html",
+      "sha256": "0c1251f6abfb55568f044bdf2385898c71910bf8421e0ac21b3ca35306e7b98b",
+      "retrieved_date": "2026-11-03",
+      "retrieved_utc": null
+    }
+  ],
+  "limits": [
+    "No human reference scoring, app or model calls.",
+    "No global version-family or repository-exhaustiveness claim.",
+    "Current end dates verified; no complete historical amendment registers reviewed.",
+    "Document source labels preserved; submission, delivery and repository publication are not silently equated.",
+    "PDF source bytes inspected from current-session caches; accessibility of those exact URLs was not independently re-downloaded."
+  ],
+  "reviewed_input_hashes": {
+    "natural-engineering-social-search.md": "74333a03caf5386d4e9346fb8f8ac25b3e7a0850689fe8341d35c4a77fb5633f",
+    "natural-engineering-social-search.json": "a1984aff1c43a79a6a074fe6a38f7d981602ed08eea37366cb68c6544477c892",
+    "humanities-search.md": "96f7424428d2158f1adecea72580be47e51e27bcb4bfcf26c471975775d75b3b",
+    "humanities-search.json": "bf74a2eb9a462d3fb7b0488dd85a37d65f2bf04097c70f915ceff511c456b340",
+    "health-agriculture-search.md": "eafe06c7a01c0250139180b557b7e7815f52c23db25d8a6965daf41c85ddf51c",
+    "health-agriculture-search.json": "cfa6a691a8cd2d2418b36ba59d9bef96098719a7401d2835a2c518af86640be5",
+    "humanities-search-nanofacts-assist.json": "d69fec6c8783c019c2a8a4d3f5e1e467cf776e744e71908cbd6b06422ad80795"
+  },
+  "visual_pdf_pages": {
+    "7759984": [
+      2
+    ],
+    "17055683": [
+      2
+    ],
+    "6602163": [
+      2
+    ],
+    "19402005": [
+      2
+    ],
+    "14497074": [
+      2
+    ],
+    "19161966": [
+      2
+    ],
+    "17733866": [
+      2,
+      5
+    ],
+    "18403735": [
+      1,
+      2
+    ],
+    "13847570": [
+      1,
+      2
+    ],
+    "13857898": [
+      1,
+      5
+    ],
+    "1442633": [
+      2
+    ],
+    "1886081": [
+      2
+    ],
+    "AGRICORE-D9.2-v1.0": [
+      2
+    ],
+    "AGRICORE-D9.3-v1.0": [
+      2
+    ]
+  },
+  "checks": {
+    "date_arithmetic_recomputed": true,
+    "licences_checked_at_stated_level": true,
+    "recharge_API_MD5_matches_selected_PDFs": true,
+    "twelve_pdf_digests_match_worker_reports": true,
+    "twelve_files_have_distinct_bytes": true,
+    "six_latest_CORDIS_project_date_intervals_checked": true,
+    "all_six_timing_and_lineage_checks_supported": true,
+    "NANOFACTS_and_RECAP_API_MD5s_match_selected_PDFs": true,
+    "six_proposed_core_slots_supported": true,
+    "six_unique_core_grants": true,
+    "six_unique_core_slots": true,
+    "twelve_core_files_have_distinct_bytes": true,
+    "AGRICORE_cached_source_hashes_match_completed_review": true,
+    "RECAP_retained_as_excluded_agricultural_reserve": true
+  },
+  "supported_slot_candidate_count": 6,
+  "six_discipline_coverage_established": true,
+  "reserves": [
+    {
+      "project": "RECAP",
+      "grant": "693171",
+      "proposed_slot": "agricultural sciences",
+      "local_dominant_branch": "engineering and technology",
+      "live_CORDIS_branches": [
+        "social sciences",
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "project_start": "2016-05-01",
+      "latest_authoritative_end": "2018-10-31",
+      "duration_days": 913,
+      "date_evidence_clarity": "explicit_final_revision_issue_dates_with_conflicting_delivery_field",
+      "uncertainties": [
+        "Early cover and running header D1.5 but physicalp2 Deliverable Number erroneously D1.3. Late physicalp7 direct DOI to early record corroborates identity.",
+        "Late Actual delivery31Oct2018 conflicts with DateofDelivery and final IssueDate03Dec2018. Selected version3.0 has explicit later issue date; actual-delivery field is not substituted as selected revision date.",
+        "Saved dataset lists agricultural membership, but fresh CORDIS Fields of science lists social, engineering, natural only. No historical raw CORDIS evidence retaining agricultural membership was available."
+      ],
+      "one_slot_only": true,
+      "end_evidence": {
+        "path": "/tmp/pair-review/cordis-693171.html",
+        "url": "https://cordis.europa.eu/project/id/693171",
+        "sha256": "4d7f9f9c423dcfb9da0c4ba261565372b0f95c56b3c404268139b8fac27ba0fc",
+        "date_and_membership_checked": true
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Early physicalp4 calls itself second project DMP; late physicalp4 third/final project DMP and physicalp7 explicitly cites D1.5 with DOI10.5281/zenodo.1442633. Common project-wide scope.",
+      "licence_evidence": "Both fresh full Zenodo API metadata declare CC BY4.0; both PDFp2 notices authorize reproduction with source acknowledged.",
+      "threshold_check": "passes_for_all_retained_document_issue_date_choices",
+      "eligibility_status": "timing_lineage_rights_supported_agricultural_membership_not_supported_by_current_source",
+      "proposed_slot_membership_supported": false,
+      "early": {
+        "record_id": "1442633",
+        "record_url": "https://zenodo.org/records/1442633",
+        "cached_pdf": "/tmp/paired-search/1442633.pdf",
+        "bytes": 2464616,
+        "sha256": "bd787e664cad99ce2035d1d6aa4833fc49d42c9010100fce8b7597decdc830c0",
+        "md5": "d662ea3beaa1edccf4ee3367beff4309",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2017-04-25",
+            "label": "DOCUMENT HISTORY Issue Date for version3.0 Final",
+            "physical_pdf_page": 2,
+            "numerator_days": 359,
+            "fraction": 0.3932092004381161,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.3932092004381161,
+          0.3932092004381161
+        ],
+        "metadata_license_id": "cc-by-4.0",
+        "metadata_publication_date": "2017-04-30",
+        "metadata_cache": "/tmp/pair-review/zenodo-1442633.json",
+        "metadata_sha256": "5c582830e2d63596469ee1cd08de2d18fa09f0d98d47b6af7c9836959db4f8cd",
+        "other_date_fields": [
+          {
+            "date": "2017-04-30",
+            "label": "Date of Delivery, Contractual and Actual",
+            "physical_pdf_page": 2,
+            "used_as_selected_revision_issue_date": false,
+            "numerator_days": 364,
+            "fraction": 0.39868565169769987
+          }
+        ]
+      },
+      "late": {
+        "record_id": "1886081",
+        "record_url": "https://zenodo.org/records/1886081",
+        "cached_pdf": "/tmp/paired-search/1886081.pdf",
+        "bytes": 713282,
+        "sha256": "43d21a1e86931b24484b7ddb032a5c205d733c4bc4fbe2ed9e49b37a01ef1663",
+        "md5": "063f46d98fd230fba139a2c9d4bc325f",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2018-12-03",
+            "label": "DOCUMENT HISTORY Issue Date for version3.0 Final version, corroborated by Date of Delivery field",
+            "physical_pdf_page": 2,
+            "numerator_days": 946,
+            "fraction": 1.036144578313253,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.036144578313253,
+          1.036144578313253
+        ],
+        "metadata_license_id": "cc-by-4.0",
+        "metadata_publication_date": "2018-12-03",
+        "metadata_cache": "/tmp/pair-review/zenodo-1886081.json",
+        "metadata_sha256": "e71af8d771cfbc08db80716e87eaed05a7568aef05ce12532d4e24b9f5d23401",
+        "other_date_fields": [
+          {
+            "date": "2018-10-31",
+            "label": "Contractual and Actual delivery fields",
+            "physical_pdf_page": 2,
+            "used_as_selected_revision_issue_date": false,
+            "numerator_days": 913,
+            "fraction": 1.0,
+            "reason": "Selected version3.0 has explicit later IssueDate03Dec2018, corroborated by DateofDelivery03Dec2018"
+          }
+        ]
+      },
+      "historical_dataset_branches": [
+        "engineering and technology",
+        "natural sciences",
+        "agricultural sciences"
+      ],
+      "classification_paths_current": [
+        [
+          "social sciences",
+          "sociology",
+          "governance",
+          "public services"
+        ],
+        [
+          "engineering and technology",
+          "mechanical engineering",
+          "vehicle engineering",
+          "aerospace engineering",
+          "satellite technology"
+        ],
+        [
+          "natural sciences",
+          "computer and information sciences",
+          "software",
+          "software development"
+        ],
+        [
+          "engineering and technology",
+          "environmental engineering",
+          "remote sensing"
+        ],
+        [
+          "social sciences",
+          "political sciences",
+          "public administration"
+        ]
+      ],
+      "reserve_status": "excluded_from_agricultural_slot_current_CORDIS_membership_unsupported"
+    }
+  ],
+  "evidence_snapshot_date": "2026-11-03",
+  "six_discipline_coverage_qualification": "supported_proposal_with_recorded_date_and_rights_caveats_not_final_selection",
+  "proposed_core_projects": [
+    "iMagine",
+    "EGI-ACE",
+    "SUSTRACK",
+    "RECHARGE",
+    "NANOFACTS",
+    "AGRICORE"
+  ]
+}

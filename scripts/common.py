@@ -71,6 +71,8 @@ def slim(hit):
         files.append({
             "key": k, "ext": v.get("ext"), "size": v.get("size"),
             "link": (v.get("links") or {}).get("content"),
+            # repository checksum, e.g. "md5:..."; identifies bytes, not lineage
+            "checksum": v.get("checksum"),
         })
     return {
         "id": hit.get("id"),
@@ -89,6 +91,16 @@ def slim(hit):
                      for c in (m.get("creators") or [])][:6],
         "funding": funding,
         "files": files,
+        # version lineage as the repository reports it: a lead for pairing, never proof
+        "concept_id": (hit.get("parent") or {}).get("id"),
+        "concept_doi": ((hit.get("parent") or {}).get("pids") or {}).get("doi", {}).get("identifier"),
+        "version_index": (hit.get("versions") or {}).get("index"),
+        "is_latest": (hit.get("versions") or {}).get("is_latest"),
+        "related": [
+            {"id": r.get("identifier"), "scheme": r.get("scheme"),
+             "relation": (r.get("relation_type") or {}).get("id")}
+            for r in (m.get("related_identifiers") or [])
+        ][:20],
     }
 
 
@@ -144,6 +156,7 @@ DASHBOARD_FIELDS = [
     "n_dist", "schema_ok", "n_findings", "personal", "sensitive", "ethics",
     "challenging", "ch_meta", "n_json", "n_pdf", "url", "dl", "access", "type",
     "madmp_file", "kind", "kind_why", "creators", "files", "funders", "fields",
+    "version", "stage_src",
 ]
 
 
@@ -171,3 +184,21 @@ def load_dataset():
         raise SystemExit("data/dmp_dataset.json is missing - run "
                          "scripts/04_build_dataset.py first")
     return json.load(open(path, encoding="utf-8"))
+
+
+def boot_json(obj):
+    """JSON for an inline <script type="application/json"> block. "<\\/" is a valid JSON
+    escape for "/" and keeps a title containing "</script>" from ending the block."""
+    return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+
+def selftest_block():
+    """The test harness and its fixtures as script tags. Only ever injected into test
+    builds (/selftest, or 05_build_dashboard.py --selftest), never the shipped page."""
+    js = open(os.path.join(DASHBOARD, "selftest.js"), encoding="utf-8").read()
+    assert "</script" not in js, "selftest.js must not contain a closing script tag"
+    fx_path = os.path.join(DASHBOARD, "paired-fixtures.json")
+    fx = json.load(open(fx_path, encoding="utf-8")) if os.path.exists(fx_path) else {}
+    nl = chr(10)
+    return (nl + '<script id="paired-fixtures" type="application/json">' + boot_json(fx) +
+            "</script>" + nl + "<script>" + nl + js + nl + "</script>")

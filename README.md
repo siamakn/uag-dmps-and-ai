@@ -1,5 +1,15 @@
 # uag-dmps-and-ai
 
+**Current research proposal (4 November 2026):** six projects across six disciplines
+now have a [documented paired proposal](research/paired-dmp-study/cohort-proposal.md),
+with two versions of the same DMP each (twelve documents). See the
+[paired-study handoff](research/paired-dmp-study/README.md) for the confirmed timing
+rule, evidence, decisions and Claude implementation brief. The dashboard now has a
+**Paired study** mode for this design (six discipline rows with early/late slots, evidence
+capture, exact issue-date timing, validation and freeze); the historical 10-document design
+described below stays available as *Legacy 3×3*. See
+[what was built and how it was tested](research/paired-dmp-study/claude-platform-results.md).
+
 A working repository for the part of the UAG work on DMPs and AI that we are contributing to. It does not cover everything the UAG is doing — only the pieces we are actually involved in, so the work, the reasoning behind it and its results stay traceable.
 
 Right now that means one thing: putting together a small test set of DMPs for evaluating automated review tools.

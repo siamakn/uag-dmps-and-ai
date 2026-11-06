@@ -246,6 +246,50 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
 .foot code{font-family:"IBM Plex Mono",monospace; background:var(--surface-2); padding:1px 4px; border-radius:3px}
 #testlog{white-space:pre-wrap; font-family:"IBM Plex Mono",monospace; font-size:11px;
          padding:12px 18px; color:var(--ink-2)}
+
+/* ---------- paired study ---------- */
+.mode{display:inline-flex; border:1px solid var(--line-2); border-radius:6px; overflow:hidden}
+.mode button{border:0; background:var(--surface); padding:5px 10px; font:inherit; font-size:12px;
+             color:var(--ink-2); cursor:pointer}
+.mode button+button{border-left:1px solid var(--line-2)}
+.mode button[aria-pressed="true"]{background:var(--accent); color:var(--on-accent); font-weight:500}
+.stat[hidden]{display:none}
+select.assign{width:100%; padding:3px 5px; font-size:11.5px}
+.prow{border:1px solid var(--line); border-radius:6px; padding:7px 9px; margin-top:7px; background:var(--surface)}
+.prow .ph{display:flex; justify-content:space-between; gap:6px; align-items:baseline}
+.prow .pd{font-weight:600; font-size:12px; color:var(--ink)}
+.badge{font-size:9.5px; padding:1px 6px; border-radius:99px; font-weight:600; text-transform:uppercase; letter-spacing:.05em}
+.b-empty{background:var(--surface-2); color:var(--ink-3)}
+.b-pending{background:var(--warn-soft); color:var(--warn)}
+.b-verified{background:var(--good-soft); color:var(--good)}
+.b-rejected{background:var(--alert-soft); color:var(--alert)}
+.pslot{display:grid; grid-template-columns:34px minmax(0,1fr) 18px; gap:6px; font-size:11.5px; margin-top:5px; align-items:start}
+.pslot .r{color:var(--ink-3); font-size:9.5px; text-transform:uppercase; letter-spacing:.06em; padding-top:2px}
+.pslot .x,.evx{border:0; background:none; color:var(--ink-3); cursor:pointer; font-size:15px; line-height:1; padding:0}
+.pslot .x:hover,.evx:hover{color:var(--alert)}
+.pissues{margin:6px 0 0; padding-left:15px; font-size:11px; color:var(--ink-3)}
+.pissues li.hard{color:var(--alert)}
+.pbtns{display:flex; gap:6px; margin-top:6px; flex-wrap:wrap}
+.pbtns .btn{font-size:11px; padding:3px 8px}
+.pct-over{color:var(--accent-ink); font-weight:600}
+.ped{margin-top:7px; padding:8px; background:var(--surface-2); border-radius:6px; display:grid; gap:7px; font-size:11.5px}
+.ped h4{margin:4px 0 0; font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-3)}
+.ped label{display:grid; gap:2px; color:var(--ink-3); font-size:10.5px}
+.ped .two{display:grid; grid-template-columns:1fr 1fr; gap:6px}
+.ped input[type=text],.ped select,#p-protobody input[type=text],#p-protobody select{
+  width:100%; padding:4px 6px; border:1px solid var(--line-2); border-radius:5px;
+  background:var(--surface); color:var(--ink); font-family:inherit; font-size:12px}
+.ped .ev{display:grid; grid-template-columns:minmax(0,1fr) 16px; gap:4px; font-size:11px; color:var(--ink-2)}
+.ped .file{font-size:11px; color:var(--ink-2); overflow-wrap:anywhere}
+#p-cohort .note{margin-top:8px}
+#p-proto{margin-top:10px; font-size:12px}
+#p-proto summary{cursor:pointer; color:var(--ink-2); font-weight:500}
+#p-protobody{display:grid; gap:7px; margin-top:7px}
+#p-protobody label{display:grid; gap:2px; color:var(--ink-3); font-size:10.5px}
+#p-protobody .dec{border-top:1px solid var(--line); padding-top:6px}
+#p-blocked .note{color:var(--alert); background:var(--alert-soft)}
+#p-msg{white-space:pre-wrap}
+.legacy-flag{font-size:11px; color:var(--ink-3); margin:-4px 0 8px}
 @media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
 </style>
 
@@ -255,12 +299,17 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
     <div class="sub">__COUNT__ data management plans from Zenodo, joined to CORDIS project timelines and EuroSciVoc disciplines.</div>
   </div>
   <button class="btn" id="railtoggle" type="button" data-tip="Show or hide the filter rail. Only appears on narrow screens.">Filters</button>
-  <button class="btn" id="guidebtn" type="button" aria-expanded="false" data-tip="A short guide to the pool, the columns and the 3 x 3 target.">Guide</button>
+  <button class="btn" id="guidebtn" type="button" aria-expanded="false" data-tip="A short guide to the pool, the paired study and the historical 3 x 3 selection.">Guide</button>
+  <div class="mode" role="group" aria-label="Which study">
+    <button type="button" data-mode="paired" aria-pressed="false" data-tip="The active design: six projects, one per discipline, each with two versions of the same DMP (issued at or before 50% and after 100% of the project run).">Paired study</button>
+    <button type="button" data-mode="legacy" aria-pressed="false" data-tip="The historical 3 x 3 selection kept in data/selection.json. Still readable and editable; it gives nothing to the paired study.">Legacy 3×3</button>
+  </div>
   <div class="stats">
     <div class="stat hit" data-tip="DMP records passing the current filters."><b id="s-hits">0</b><span>matching</span></div>
     <div class="stat" data-tip="How many of the matching records are machine-actionable RDA-DCS files."><b id="s-ma">0</b><span>maDMP</span></div>
     <div class="stat" data-tip="Distinct funded projects among the matching records. Lower than the record count when one project deposited several DMPs."><b id="s-proj">0</b><span>projects</span></div>
-    <div class="stat" data-tip="How many DMPs you have ticked. The target is 10."><b id="s-sel">0</b><span>selected</span></div>
+    <div class="stat" id="stat-sel" data-tip="Legacy selection: how many DMPs you have ticked. That design targeted 10."><b id="s-sel">0</b><span>selected</span></div>
+    <div class="stat" id="stat-pairs" data-tip="Paired study: pairs that pass every check, out of six."><b id="s-pairs">0</b><span>pairs verified</span></div>
   </div>
 </header>
 
@@ -269,8 +318,9 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
     <div class="grp">
       <div class="lbl" data-tip="One click sets every filter below to a sensible combination.">Presets</div>
       <div class="chips" id="f-preset">
-        <button class="chip" type="button" data-preset="he-ma" data-tip="Strictest reading of the criteria: Horizon Europe, published 2024 or later, machine-actionable only. About 47 records.">HE · 2024+ · maDMP</button>
-        <button class="chip" type="button" data-preset="he24" data-tip="Horizon Europe published 2024 or later: about 574 records across 445 projects. The practical starting point, since maDMPs alone cannot fill all nine matrix cells.">HE · 2024+</button>
+        <button class="chip" type="button" data-preset="paired" data-tip="Paired-study discovery: every EU-funded plan, all publication years. Publication dates do not rule a pair in or out, because eligibility depends on the issue date printed in the document.">Paired · any EU · all years</button>
+        <button class="chip" type="button" data-preset="he-ma" data-tip="Horizon Europe, published 2024 or later, machine-actionable only. About 47 records. A preference, not an eligibility rule.">HE · 2024+ · maDMP</button>
+        <button class="chip" type="button" data-preset="he24" data-tip="Horizon Europe published 2024 or later: about 574 records across 445 projects. Recency and programme are preferences; for the paired study a 2024+ window can hide an earlier version.">HE · 2024+</button>
         <button class="chip" type="button" data-preset="eu" data-tip="Adds Horizon 2020 and other EU funding to the Horizon Europe pool.">Any EU · 2024+</button>
         <button class="chip" type="button" data-preset="reset" data-tip="Clears every filter and shows the full pool of 2 650 records.">Everything</button>
       </div>
@@ -325,8 +375,36 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
     <div id="guide" hidden>
       <h2>What this is</h2>
       <p>Every data management plan on Zenodo that could be found by five different queries, joined to
-      CORDIS so each one carries a discipline and a position in its project's life. The job is to pick
-      <b>10</b>: nine filling a 3 &times; 3 discipline &times; lifecycle matrix, plus one challenging case.</p>
+      CORDIS so each one carries a discipline and a position in its project's life, plus a small registry of
+      study documents found elsewhere.</p>
+
+      <h3>The paired study (active)</h3>
+      <p>Six EU projects, one per broad EuroSciVoc discipline, each giving <b>two versions of the same DMP</b>:
+      twelve documents in six pairs. Pick a document with the menu in the first column; it lands in that
+      discipline's early or late slot.</p>
+      <ul>
+        <li><b>Timing uses the issue date printed in the document</b>, never the repository publication date.
+        With <code>n</code> = issue date &minus; project start and <code>d</code> = project end &minus; start, in
+        whole days: early is <code>2n &le; d</code> (&le;&nbsp;50&nbsp;%), late is <code>n &gt; d</code>
+        (strictly after the end). A date exactly at the end is 100&nbsp;% and is <em>not</em> late. Partial dates
+        stay intervals and are indeterminate when they straddle a threshold.</li>
+        <li>Project end is the latest authoritative date including extensions (D09); a project may fill any
+        discipline it carries in CORDIS, but only one row (D08).</li>
+        <li>Sharing a grant only makes two documents candidates. A pair is <b>verified</b> only when a person has
+        recorded the same scope, that the later document revises the earlier one, the issue dates with page
+        locators, and checksummed files. Until then it is <b>pending</b>; wrong timing, reuse or a contradiction
+        makes it <b>rejected</b>.</li>
+        <li>The lifecycle column below still shows the publication-date position. Treat it as a discovery aid:
+        a delayed deposit cannot make a document late.</li>
+        <li>Served, the draft is saved to <code>data/paired_selection.json</code>; standalone, in this
+        browser under <code>dmpbench.paired.v1</code>. <b>Freeze</b> (served only) checks every file on disk and
+        writes an immutable snapshot to <code>data/paired-snapshots/</code>.</li>
+      </ul>
+
+      <h3>Legacy 3 &times; 3 selection (historical)</h3>
+      <p>The earlier design picked <b>10</b>: nine filling a 3 &times; 3 discipline &times; lifecycle matrix,
+      plus one challenging case. It stays available under <em>Legacy 3×3</em>, saved in
+      <code>data/selection.json</code>, and confers no eligibility or priority on the paired study.</p>
 
       <h3>How the two axes are derived</h3>
       <ul>
@@ -335,7 +413,8 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
         as soon as a discipline filter is on.</li>
         <li><b>Lifecycle stage</b> is where the publication date falls between the project's CORDIS start and
         end dates: <code>early</code> up to 34&nbsp;%, <code>mid</code> up to 70&nbsp;%, <code>late</code> above.
-        The bar in the column shows the exact position.</li>
+        The bar in the column shows the position; positions past the end are printed, not hidden. This
+        legacy label is not the paired study's &gt;&nbsp;100&nbsp;% rule.</li>
       </ul>
 
       <h3>Reading a row</h3>
@@ -369,6 +448,36 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
   </main>
 
   <aside class="panel tray">
+    <div id="paired-tray" hidden>
+      <div class="count" data-tip="A pair counts only when it passes every check. Documents count once each, whatever their state."><b id="p-pairs">0</b><span>of 6 pairs verified</span>
+        <b id="p-docs" style="margin-left:12px">0</b><span>of 12 documents</span></div>
+      <div class="hint" id="p-origin"></div>
+      <div id="p-blocked"></div>
+      <div id="p-hist"></div>
+      <div id="p-rows"></div>
+      <div id="p-cohort"></div>
+      <details id="p-proto">
+        <summary data-tip="The timing rule, the confirmed decisions D08/D09 and the decisions still open. Freezing needs an approved protocol with no open decision.">Protocol and open decisions</summary>
+        <div id="p-protobody"></div>
+      </details>
+      <div class="exp" id="p-actions">
+        <button class="btn" type="button" data-pact="proposal" data-tip="Replace the draft with the 2026-11-04 cohort proposal. Nothing in it is marked verified: a person still has to confirm scope, lineage and issue dates.">Load proposal</button>
+        <button class="btn" type="button" data-pact="empty" data-tip="Start an empty draft. The current draft is replaced after you confirm.">New draft</button>
+        <button class="btn" type="button" data-pact="legacy" id="p-legacybtn" data-tip="Attach the legacy selection to the draft as historical, unverified material. Every id is kept, resolved or not. It fills no slot and can be removed again.">Attach legacy</button>
+        <button class="btn pri" type="button" data-pact="json" data-tip="Copy the draft and its validation as canonical JSON: every evidence field, unknowns kept as null.">Copy JSON</button>
+        <button class="btn" type="button" data-pact="csv" data-tip="Copy one CSV row per pair: documents, issue dates, exact positions, lineage and what is missing.">Copy CSV</button>
+        <button class="btn" type="button" data-pact="md" data-tip="Copy the same summary as a Markdown table.">Copy table</button>
+        <button class="btn" type="button" data-pact="load" data-tip="Load a study or snapshot JSON pasted into the box below. A snapshot comes back as a new draft; the snapshot itself is never changed.">Load JSON</button>
+        <button class="btn" type="button" data-pact="files" data-served="1" data-tip="Hash every selected file found on disk and record its checksum. Needs serve.py.">Check files</button>
+        <button class="btn" type="button" data-pact="fetch" data-served="1" data-tip="Download selected files that are missing locally into data/paired-dmp-corpus/, then hash them. Needs serve.py and network.">Fetch missing</button>
+        <button class="btn" type="button" data-pact="freeze" data-served="1" data-tip="Validate the six pairs and the protocol, re-hash every file on disk, then write an immutable snapshot. Refuses with reasons when anything is missing.">Freeze</button>
+      </div>
+      <textarea id="p-out" data-tip="Exports land here; paste a study or snapshot here to load it." placeholder="Exports appear here. Paste a study or snapshot JSON here and press Load JSON."></textarea>
+      <div id="p-msg" class="savestate"></div>
+      <div id="p-save" class="savestate"></div>
+    </div>
+    <div id="legacy-tray">
+    <div class="legacy-flag">Historical design — kept readable; not the paired study.</div>
     <div class="count" data-tip="Nine DMPs fill the 3 x 3 matrix, plus one challenging case."><b id="t-n">0</b><span>of 10 selected</span></div>
     <div class="lbl" data-tip="Every DMP you tick lands in one cell. The goal is three disciplines by three stages with one DMP in each. Green means filled, amber means you have doubled up.">Discipline × lifecycle coverage</div>
     <table class="mx" id="mx"></table>
@@ -383,6 +492,7 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
     </div>
     <textarea id="out" readonly data-tip="The copied text also lands here, in case the clipboard is blocked." placeholder="Your selection appears here in the chosen format, ready to paste into the repo."></textarea>
     <div id="savestate" class="savestate"></div>
+    </div>
   </aside>
 </div>
 
@@ -398,6 +508,7 @@ button[data-tip],select[data-tip],input[data-tip],.th[data-tip]{cursor:pointer}
 
 __BOOT__
 <script id="data" type="application/json">__DATA__</script>
+<script id="paired-boot" type="application/json">__PAIRED__</script>
 <script>
 (function(){
 "use strict";
@@ -447,7 +558,7 @@ var FMT_TIP = {
 var STAGE_TIP = {
   early:"Published in the first 34% of the project run.",
   mid:"Published between 34% and 70% of the project run.",
-  late:"Published after 70% of the run, including anything after the project ended.",
+  late:"Published after 70% of the run, including anything after the project ended. Not the paired study's rule: that needs an issue date strictly after the project end.",
   unknown:"No CORDIS project dates, so the position cannot be computed."
 };
 var FLAG_TIP = {
@@ -462,7 +573,7 @@ var COL_TIP = {
   project:"Project acronym from CORDIS, with the project status underneath.",
   funder:"Which funding tier the record was matched to.",
   disc:"EuroSciVoc branch with its own sub-fields underneath. When you filter by a branch this column shows that branch; other branches the project also belongs to are listed as 'also'.",
-  stage:"Where the DMP sits in the project run. The bar shows the position between start and end.",
+  stage:"Where the record's publication date sits in the project run. The bar shows the position between start and end; positions past the end are printed in full. For the paired study this is a discovery aid only: eligibility uses the document's own issue date.",
   date:"Zenodo publication date of the record.",
   format:"Whether the record carries a real maDMP or only a PDF, and how that maDMP scored against the RDA schema.",
   datasets:"How many datasets the maDMP describes, and how many distribution blocks are actually filled in.",
@@ -574,8 +685,10 @@ function anyOn(o){ for(var k in o) if(o[k]) return true; return false; }
 function matches(r){
   if(anyOn(state.kind) && !state.kind[r.kind]) return false;
   if(anyOn(state.tiers) && !state.tiers[r.tier]) return false;
-  var y=parseInt(r.year,10)||0;
-  if(y<state.y0 || y>state.y1) return false;
+  if(!(state.y0<=YEARS[0] && state.y1>=YEARS[YEARS.length-1])){
+    var y=parseInt(r.year,10)||0;
+    if(y<state.y0 || y>state.y1) return false;
+  }
   if(state.fmt.madmp && !r.madmp) return false;
   if(state.fmt.pdf && !(r.n_pdf>0)) return false;
   if(state.fmt.valid && !r.schema_ok) return false;
@@ -617,6 +730,7 @@ function sortRows(list){
 /* ---------------- cell renderers ---------------- */
 var CELL = {
   pick:function(r,on){
+    if(mode==="paired") return '<div>'+assignSelect(r)+'</div>';
     return '<div><input type="checkbox" '+(on?'checked':'')+' data-pick="'+esc(r.id)+
       '" aria-label="Select '+esc(r.title.slice(0,60))+'"></div>';
   },
@@ -659,11 +773,13 @@ var CELL = {
   stage:function(r){
     if(r.stage==="unknown"||r.stage_frac==null)
       return '<div class="cell" style="color:var(--ink-3)">no project dates</div>';
-    var pct=Math.max(0,Math.min(1,r.stage_frac))*100;
+    var pct=Math.max(0,Math.min(1,r.stage_frac))*100, over=r.stage_frac>1;
     return '<div class="cell" data-tip="'+esc("Project ran "+r.proj_start+" to "+r.proj_end+
-      ". This DMP was published "+Math.round(r.stage_frac*100)+"% of the way through, which is "+
-      r.stage+".")+'">'+esc(r.stage)+' <span class="mono" style="color:var(--ink-3)">'+
-      Math.round(r.stage_frac*100)+'%</span>'+
+      ". This record was published "+Math.round(r.stage_frac*100)+"% of the way through, which is "+
+      r.stage+". Publication date, not issue date"+(mode==="paired"?": a discovery aid, never eligibility.":".")+
+      (over?" The bar stops at the end; the number shows how far past it.":""))+'">'+esc(r.stage)+
+      ' <span class="mono'+(over?' pct-over':'')+'" style="'+(over?'':'color:var(--ink-3)')+'">'+
+      Math.round(r.stage_frac*100)+'%'+(over?' ↦':'')+'</span>'+
       '<div class="track">'+
       '<u style="width:'+pct+'%"></u><i style="left:calc('+pct+'% - 1px)"></i></div></div>';
   },
@@ -786,16 +902,18 @@ function renderHead(cols,tpl,minw){
   el.innerHTML=h;
 }
 function rowHTML(r,cols,tpl,minw){
-  var on=sel.indexOf(r.id)>=0;
+  var on=mode==="paired" ? slotsOf(docIdFor(r)).length>0 : sel.indexOf(r.id)>=0;
   var h='<div class="row'+(on?' sel':'')+'" data-id="'+esc(r.id)+
         '" style="grid-template-columns:'+tpl+';min-width:'+minw+'px">';
   cols.forEach(function(c){ h+=CELL[c.k](r,on); });
   if(state.open[r.id]){ h+=sheet(r); }
   return h+'</div>';
 }
+function pool(){ return mode==="paired" ? ROWS.concat(REG) : ROWS; }
 function render(){
+  COLDEF.pick.w = mode==="paired" ? 158 : 26;
   var cols=visibleCols(), tpl=gridTemplate(cols), minw=gridMin(cols);
-  filtered=sortRows(ROWS.filter(matches));
+  filtered=sortRows(pool().filter(matches));
   var shown=filtered.slice(0,state.limit);
   renderHead(cols,tpl,minw);
   document.getElementById("list").innerHTML = shown.length
@@ -814,6 +932,7 @@ function render(){
   m.hidden=shown.length>=filtered.length;
   m.textContent="Show "+Math.min(LIMIT_STEP,filtered.length-shown.length)+" more";
   renderTray();
+  renderPaired();
 }
 
 /* ---------------- tray ---------------- */
@@ -852,6 +971,8 @@ function renderTray(){
   var unk=rows.filter(function(r){ return r.stage==="unknown"; }).length;
   if(unk) notes.push(unk+" selected DMP"+(unk>1?"s have":" has")+" no project dates, so no lifecycle stage.");
   if(rows.length>10) notes.push(rows.length+" selected — the target is 10.");
+  var unres=sel.filter(function(id){ return !INDEX[id]; }).length;
+  if(unres) notes.push(unres+" saved id"+(unres>1?"s are":" is")+" not in the current dataset; kept, not shown.");
   document.getElementById("notes").innerHTML=notes.length
     ? '<div class="note">'+notes.map(esc).join("<br>")+'</div>' : '';
 
@@ -988,17 +1109,19 @@ function setSort(k){
   document.getElementById("sort").value=state.sort;
   render(); return true;
 }
-function applyPreset(p){
+function applyPreset(p){ applyPresetState(p); buildChips(); render(); }
+function applyPresetState(p){
   state.q=""; document.getElementById("q").value="";
   state.fmt={}; state.disc={}; state.disc2={}; state.stage={}; state.flag={}; state.limit=LIMIT_STEP;
   state.kind = (p==="reset") ? {} : {dmp:1};
-  if(p==="he-ma"){ state.tiers={"Horizon Europe":1}; state.fmt={madmp:1}; state.y0=2024; state.y1=2026; }
+  if(p==="paired"){ state.tiers={"Horizon Europe":1,"Horizon 2020":1,"Other EU":1};
+                    state.y0=YEARS[0]; state.y1=YEARS[YEARS.length-1]; }
+  else if(p==="he-ma"){ state.tiers={"Horizon Europe":1}; state.fmt={madmp:1}; state.y0=2024; state.y1=2026; }
   else if(p==="he24"){ state.tiers={"Horizon Europe":1}; state.y0=2024; state.y1=2026; }
   else if(p==="eu"){ state.tiers={"Horizon Europe":1,"Horizon 2020":1,"Other EU":1}; state.y0=2024; state.y1=2026; }
   else { state.tiers={}; state.y0=YEARS[0]; state.y1=YEARS[YEARS.length-1]; }
   document.getElementById("y0").value=String(state.y0);
   document.getElementById("y1").value=String(state.y1);
-  buildChips(); render();
 }
 
 var YEARS=[];
@@ -1095,7 +1218,7 @@ function wire(){
     var i=sel.indexOf(d.getAttribute("data-drop")); if(i>=0) sel.splice(i,1);
     save(); render();
   });
-  document.querySelector(".exp").addEventListener("click",function(e){
+  document.querySelector("#legacy-tray .exp").addEventListener("click",function(e){
     var b=e.target.closest("[data-exp]"); if(!b) return;
     var k=b.getAttribute("data-exp");
     if(k==="clear"){ sel=[]; save(); document.getElementById("out").value=""; render(); return; }
@@ -1160,14 +1283,746 @@ function bindTips(){
   });
 }
 
+/* ================================================================ paired study
+   Six projects x two versions of the same DMP. scripts/paired.py is the Python side of
+   the same rules; dashboard/paired-fixtures.json pins both to identical results. */
+var PBOOT={};
+try{ PBOOT=JSON.parse(document.getElementById("paired-boot").textContent)||{}; }catch(e){ PBOOT={}; }
+var REG=PBOOT.registry||[], REGINDEX={};
+var PSCHEMA="dmpbench.paired-study", PVERSION=1, SNAPSCHEMA="dmpbench.paired-snapshot";
+var PKEY="dmpbench.paired.v1", MODEKEY="dmpbench.mode";
+var PDISC=["natural sciences","engineering and technology","medical and health sciences",
+           "agricultural sciences","social sciences","humanities"];
+var VSTATES=["not_checked","verified","contradictory","unavailable"];
+var VSTATE_TIP="not checked = nobody has confirmed it; verified = a person checked the cited evidence; contradictory = sources disagree; unavailable = the evidence cannot be obtained.";
+var STATUS_TIP={
+  empty:"Nothing assigned to this discipline yet.",
+  pending:"Something is missing or unverified. The list below says what.",
+  verified:"Every check passes: one project, two distinct same-scope versions, issue dates verified with locators, timing exact, files checksummed.",
+  rejected:"A hard failure: wrong timing, a reused project or document, repeated bytes, a scope mismatch or a contradiction."
+};
+var mode="paired";
+try{ var m0=localStorage.getItem(MODEKEY); if(m0==="legacy"||m0==="paired") mode=m0; }catch(e){}
+var P={study:null, blocked:null, open:{}, saveTimer:null, last:null};
+
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+function nowIso(){ return new Date().toISOString().replace(/\.\d{3}Z$/,"+00:00"); }
+function newStudy(origin){
+  var s=clone(PBOOT.empty), t=nowIso();
+  s.created=t; s.updated=t; s.study_id="paired-draft-"+t.slice(0,10); s.origin=origin||"empty";
+  return s;
+}
+function checkStudy(o){
+  if(!o || typeof o!=="object" || Array.isArray(o)) return "not a JSON object";
+  if(o.schema!==PSCHEMA) return "not a paired-study file (schema is "+JSON.stringify(o.schema)+")";
+  if(o.schema_version!==PVERSION) return "unsupported schema_version "+JSON.stringify(o.schema_version)+" (this page reads "+PVERSION+")";
+  if(!Array.isArray(o.pairs) || !o.documents || typeof o.documents!=="object") return "pairs must be a list and documents an object";
+  return null;
+}
+
+/* ---------- exact timing (mirror of paired.py:timing) ---------- */
+function pDate(s){
+  if(s==null || String(s).trim()==="") return null;
+  var m=/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/.exec(String(s).trim());
+  if(!m) return {error:"unparseable date "+JSON.stringify(s)};
+  var y=+m[1], mo=m[2]?+m[2]:null, d=m[3]?+m[3]:null, D=86400000;
+  if(y<1 || (mo!=null && (mo<1||mo>12))) return {error:"impossible date "+JSON.stringify(s)};
+  if(d!=null){
+    var t=Date.UTC(y,mo-1,d), dt=new Date(t);
+    if(dt.getUTCFullYear()!==y || dt.getUTCMonth()!==mo-1 || dt.getUTCDate()!==d)
+      return {error:"impossible date "+JSON.stringify(s)};
+    return {lo:t/D, hi:t/D, precision:"day"};
+  }
+  if(mo!=null) return {lo:Date.UTC(y,mo-1,1)/D, hi:Date.UTC(y,mo,1)/D-1, precision:"month"};
+  return {lo:Date.UTC(y,0,1)/D, hi:Date.UTC(y+1,0,1)/D-1, precision:"year"};
+}
+function verdict(all,none){ return all?"yes":(none?"no":"indeterminate"); }
+function pTiming(issue,start,end,pre){
+  var out={state:"unknown",reason:"",n_lo:null,n_hi:null,d:null,early:"unknown",late:"unknown",precision:null};
+  var ps=pDate(start), pe=pDate(end);
+  if(!ps || !pe){ out.reason="project start or end date missing"; return out; }
+  if(ps.error || pe.error){ out.state="invalid"; out.reason="project date unparseable"; return out; }
+  if(ps.precision!=="day" || pe.precision!=="day"){ out.reason="project dates must be exact days"; return out; }
+  var d=pe.lo-ps.lo; out.d=d;
+  if(d<=0){ out.state="invalid"; out.reason="project duration is not positive ("+d+" days)"; return out; }
+  var pi=pDate(issue);
+  if(!pi){ out.reason="no documented issue date"; return out; }
+  if(pi.error){ out.state="invalid"; out.reason=pi.error; return out; }
+  var lo=pi.lo-ps.lo, hi=pi.hi-ps.lo, lower=(pre||"exclude")==="exclude"?0:null;
+  out.state="ok"; out.n_lo=lo; out.n_hi=hi; out.precision=pi.precision;
+  out.early=verdict((lower===null || lo>=lower) && 2*hi<=d, (lower!==null && hi<lower) || 2*lo>d);
+  out.late=verdict(lo>d, hi<=d);
+  return out;
+}
+function pct(n,d){ return (n==null || !d) ? null : Math.round(10000*n/d)/100; }
+function fmtPct(t){
+  var a=pct(t.n_lo,t.d), b=pct(t.n_hi,t.d);
+  return a===b ? a.toFixed(2)+"%" : a.toFixed(2)+"%–"+b.toFixed(2)+"%";
+}
+
+/* ---------- validation (mirror of paired.py:validate) ---------- */
+function issue(code,sev,text,role){ var i={code:code,severity:sev,text:text}; if(role) i.role=role; return i; }
+function pValidate(study){
+  var proto=study.protocol||{}, pre=(proto.pre_start_policy||{}).value||"exclude";
+  var docs=study.documents||{}, pairs=study.pairs||[];
+  var grantSlots={}, docSlots={}, hashSlots={};
+  pairs.forEach(function(p){
+    var g=(p.project||{}).grant;
+    if(g) (grantSlots[String(g)]=grantSlots[String(g)]||[]).push(p.pair_id);
+    ["early","late"].forEach(function(role){
+      var did=p[role]; if(!did) return;
+      (docSlots[did]=docSlots[did]||[]).push(p.pair_id+"/"+role);
+      ((docs[did]||{}).files||[]).forEach(function(f){
+        if(f.sha256){ var s=hashSlots[f.sha256]=hashSlots[f.sha256]||{}; s[did]=1; } });
+    });
+  });
+  var res={}, nver=0, distinct={}, negative=false;
+  pairs.forEach(function(p){
+    var iss=[], tim={};
+    var proj=(p.project && Object.keys(p.project).length) ? p.project : null, disc=p.discipline;
+    if(!proj || !proj.grant) iss.push(issue("no_project","pending","no project assigned"));
+    else {
+      var g=String(proj.grant);
+      if((grantSlots[g]||[]).length>1)
+        iss.push(issue("project_reused","hard","project "+g+" also fills "+
+          grantSlots[g].filter(function(x){ return x!==p.pair_id; }).join(", ")));
+      var br=(p.cordis||{}).branches||[];
+      if(!br.length) iss.push(issue("discipline_source_missing","pending","no documented CORDIS branch membership recorded"));
+      else if(br.indexOf(disc)<0) iss.push(issue("discipline_unsupported","hard",disc+" is not among the project's CORDIS branches ("+br.join(", ")+")"));
+      if(!proj.start || !proj.end) iss.push(issue("project_dates_missing","pending","project start/end missing"));
+    }
+    if(!String(p.scope||"").trim()) iss.push(issue("scope_missing","pending","same-scope descriptor not recorded"));
+    if(p.early && p.late && p.early===p.late) iss.push(issue("same_document_both_roles","hard","the same document fills both roles"));
+    var scopes={};
+    ["early","late"].forEach(function(role){
+      var did=p[role];
+      if(!did){ iss.push(issue("no_"+role,"pending",role+" slot empty",role)); return; }
+      distinct[did]=1;
+      var doc=docs[did];
+      if(!doc){ iss.push(issue("document_missing","hard",role+" document "+did+" is not in the study",role)); return; }
+      if((docSlots[did]||[]).length>1)
+        iss.push(issue("document_reused","hard",role+" document also used in "+
+          docSlots[did].filter(function(x){ return x!==p.pair_id+"/"+role; }).join(", "),role));
+      if(proj && proj.grant && doc.grant && String(doc.grant)!==String(proj.grant))
+        iss.push(issue("grant_mismatch","hard",role+" document belongs to grant "+doc.grant+", pair is "+proj.grant,role));
+      if(String(doc.scope||"").trim()) scopes[String(doc.scope).trim().toLowerCase()]=1;
+      var id=doc.issue_date||{}, st=id.state||"not_checked";
+      var t=pTiming(id.value,(proj||{}).start,(proj||{}).end,pre); tim[role]=t;
+      if(t.state==="ok" && t.n_lo!=null && t.n_lo<0) negative=true;
+      if(!id.value) iss.push(issue("issue_date_missing","pending",role+" document has no documented issue date",role));
+      else if(t.state==="invalid") iss.push(issue("timing_invalid","hard",role+" timing: "+t.reason,role));
+      else if(t.state==="unknown") iss.push(issue("timing_unknown","pending",role+" timing: "+t.reason,role));
+      else {
+        var v=t[role];
+        if(v==="no") iss.push(issue("timing_fail","hard",role+" document is at "+fmtPct(t)+", outside "+(role==="early"?"<= 50%":"> 100%"),role));
+        else if(v==="indeterminate") iss.push(issue("timing_indeterminate","pending",role+" date precision ("+t.precision+") straddles the threshold",role));
+        var alts=doc.alt_dates||[];
+        for(var k=0;k<alts.length;k++){
+          var ta=pTiming(alts[k].value,proj.start,proj.end,pre);
+          if(ta.state==="ok" && ta[role]!==v){
+            iss.push(issue("alt_date_conflict","pending",role+" alternative date "+alts[k].value+" ("+(alts[k].label||"unlabelled")+") gives a different verdict",role));
+            break;
+          }
+        }
+      }
+      if(id.value && !String(id.locator||"").trim()) iss.push(issue("issue_date_no_locator","pending",role+" issue date has no page/section locator",role));
+      if(st==="contradictory" || st==="unavailable") iss.push(issue("issue_date_"+st,"hard",role+" issue date marked "+st,role));
+      else if(id.value && st!=="verified") iss.push(issue("issue_date_unverified","pending",role+" issue date not verified by a person",role));
+      var files=doc.files||[], hashed=files.filter(function(f){ return !!f.sha256; });
+      if(!hashed.length) iss.push(issue("files_missing","pending",role+" document has no selected file with a checksum",role));
+      else {
+        if(files.length>1 && !files.some(function(f){ return f.analysis; }))
+          iss.push(issue("representation_unchosen","pending",role+" document has several files and no analysis file chosen",role));
+        for(var j=0;j<hashed.length;j++){
+          if(Object.keys(hashSlots[hashed[j].sha256]||{}).length>1){
+            iss.push(issue("repeated_bytes","hard",role+" file "+(hashed[j].name||"")+" has the same bytes as another study document",role));
+            break;
+          }
+        }
+        files.forEach(function(f){
+          if(f.access==="failed" || f.access==="unavailable" || f.access==="contradictory")
+            iss.push(issue("file_unavailable","hard",role+" file "+(f.name||"")+" could not be retrieved or does not match its checksum",role));
+        });
+      }
+    });
+    if(Object.keys(scopes).length>1)
+      iss.push(issue("scope_mismatch","hard","the two documents record different scopes: "+Object.keys(scopes).sort().join(" / ")));
+    var lin=p.lineage||{}, ls=lin.state||"not_checked";
+    if(ls==="contradictory" || ls==="unavailable") iss.push(issue("lineage_"+ls,"hard","lineage evidence marked "+ls));
+    else if(p.early && p.late && ls!=="verified") iss.push(issue("lineage_unverified","pending","no person has verified that the later document revises the earlier one"));
+    else if(ls==="verified" && !(lin.evidence||[]).length) iss.push(issue("lineage_no_evidence","pending","lineage marked verified without evidence"));
+    var hard=iss.some(function(i){ return i.severity==="hard"; });
+    var empty=!proj && !p.early && !p.late;
+    var status=empty?"empty":(hard?"rejected":(iss.length?"pending":"verified"));
+    if(status==="verified") nver++;
+    var tout={};
+    Object.keys(tim).forEach(function(r){ var t=tim[r]; tout[r]=t; t.pct_lo=pct(t.n_lo,t.d); t.pct_hi=pct(t.n_hi,t.d); });
+    res[p.pair_id]={status:status, issues:iss, timing:tout};
+  });
+  var cohort=[];
+  if(pairs.map(function(p){ return p.discipline; }).join("|")!==PDISC.join("|"))
+    cohort.push(issue("disciplines","hard","the study must have exactly the six fixed discipline rows"));
+  if(nver<6) cohort.push(issue("incomplete","pending",nver+" of 6 pairs verified"));
+  if(!proto.approved) cohort.push(issue("protocol_unapproved","pending","protocol not approved"));
+  (proto.open_decisions||[]).forEach(function(d){
+    if(d.status==="open") cohort.push(issue("decision_open","pending","open decision: "+(d.id||"?"))); });
+  if(negative && (proto.pre_start_policy||{}).status!=="confirmed")
+    cohort.push(issue("pre_start_unsettled","pending","a document predates its project start and the pre-start policy is not confirmed"));
+  return {pairs:res, cohort:cohort, counts:{verified_pairs:nver, distinct_documents:Object.keys(distinct).length},
+          freezable:!cohort.length && nver===6};
+}
+
+/* ---------- exports (mirror of paired.py) ---------- */
+var PCOLS=["pair_id","discipline","grant","acronym","status",
+  "early_document","early_issue_date","early_position","early_link",
+  "late_document","late_issue_date","late_position","late_link","lineage","missing_or_failing"];
+function docLink(doc){
+  if(!doc) return "";
+  if(doc.doi) return "https://doi.org/"+doc.doi;
+  if(doc.record_url) return doc.record_url;
+  var f=(doc.files||[]).filter(function(x){ return x.url; })[0];
+  return f?f.url:"";
+}
+function pExportRows(study,v){
+  v=v||pValidate(study);
+  var docs=study.documents||{};
+  return (study.pairs||[]).map(function(p){
+    var r=v.pairs[p.pair_id]||{}, proj=p.project||{};
+    var row={pair_id:p.pair_id, discipline:p.discipline, grant:proj.grant||"", acronym:proj.acronym||"",
+             status:r.status||"", lineage:(p.lineage||{}).state||""};
+    ["early","late"].forEach(function(role){
+      var doc=p[role]?docs[p[role]]:null, t=(r.timing||{})[role];
+      row[role+"_document"]=p[role]||"";
+      row[role+"_issue_date"]=((doc||{}).issue_date||{}).value||"";
+      row[role+"_position"]=(t && t.state==="ok")?fmtPct(t):"";
+      row[role+"_link"]=docLink(doc);
+    });
+    row.missing_or_failing=(r.issues||[]).map(function(i){ return i.text; }).join("; ");
+    return row;
+  });
+}
+function csvCell(v){ v=String(v==null?"":v); return /[",\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
+function mdCell(v){ return String(v==null?"":v).replace(/\r?\n/g," ").replace(/\\/g,"\\\\").replace(/\|/g,"\\|"); }
+function toCSV(rows){
+  return PCOLS.join(",")+"\n"+rows.map(function(r){
+    return PCOLS.map(function(c){ return csvCell(r[c]); }).join(","); }).join("\n")+(rows.length?"\n":"");
+}
+function toMD(rows){
+  return "| "+PCOLS.join(" | ")+" |\n|"+PCOLS.map(function(){ return "---"; }).join("|")+"|\n"+
+    rows.map(function(r){ return "| "+PCOLS.map(function(c){ return mdCell(r[c]); }).join(" | ")+" |"; }).join("\n")+
+    (rows.length?"\n":"");
+}
+function sortKeys(o){
+  if(Array.isArray(o)) return o.map(sortKeys);
+  if(o && typeof o==="object"){ var out={}; Object.keys(o).sort().forEach(function(k){ out[k]=sortKeys(o[k]); }); return out; }
+  return o;
+}
+function canonicalJSON(o){ return JSON.stringify(sortKeys(o),null,1)+"\n"; }
+function pExport(kind){
+  if(!P.study) return "";
+  var v=pValidate(P.study);
+  if(kind==="json") return canonicalJSON({study:P.study, validation:v});
+  var rows=pExportRows(P.study,v);
+  return kind==="csv"?toCSV(rows):toMD(rows);
+}
+
+/* ---------- persistence: data/paired_selection.json or browser key dmpbench.paired.v1 ---------- */
+function setPState(txt,cls){ var el=document.getElementById("p-save"); if(el){ el.textContent=txt; el.className="savestate "+(cls||""); } }
+function pMsg(txt,cls){ var el=document.getElementById("p-msg"); if(el){ el.textContent=txt; el.className="savestate "+(cls||""); } }
+function pLoad(){
+  if(!PBOOT.empty){ P.blocked={reason:"this page was built without the paired-study block; rebuild it"}; return Promise.resolve(); }
+  if(!API){
+    var raw=null;
+    try{ raw=localStorage.getItem(PKEY); }catch(e){}
+    if(raw==null){ P.study=newStudy("empty"); P.blocked=null; return Promise.resolve(); }
+    var obj=null, why=null;
+    try{ obj=JSON.parse(raw); }catch(e){ why="the browser draft is not valid JSON ("+e.message+")"; }
+    if(!why) why=checkStudy(obj);
+    if(why){ P.study=null; P.blocked={reason:why+"; the stored text is untouched", raw:raw}; return Promise.resolve(); }
+    P.study=obj; P.blocked=null; return Promise.resolve();
+  }
+  return fetch(API+"/paired").then(function(r){ return r.json().then(function(d){ return {status:r.status,d:d}; }); })
+    .then(function(x){
+      if(x.status===409){ P.study=null; P.blocked={reason:x.d.error}; return; }
+      P.study=x.d.study||newStudy("empty"); P.blocked=null;
+    })
+    .catch(function(e){ P.study=null; P.blocked={reason:"could not load the paired draft: "+e.message}; });
+}
+function pSave(){
+  if(!P.study || P.blocked) return Promise.resolve(null);
+  P.study.updated=nowIso();
+  if(!API){
+    P.study.sources=PBOOT.sources||{};
+    try{ localStorage.setItem(PKEY, JSON.stringify(P.study)); setPState("saved in this browser ("+PKEY+")","ok"); }
+    catch(e){ setPState("could not save in browser storage: "+e.message,"bad"); }
+    return Promise.resolve(true);
+  }
+  clearTimeout(P.saveTimer); setPState("saving…","");
+  return new Promise(function(resolve){ P.saveTimer=setTimeout(function(){ pPut(false).then(resolve); },250); });
+}
+function pPut(replaceCorrupt){
+  return fetch(API+"/paired",{method:"PUT",headers:{"Content-Type":"application/json"},
+                              body:JSON.stringify({study:P.study, replace_corrupt:!!replaceCorrupt})})
+    .then(function(r){ return r.json().then(function(d){ return {ok:r.ok,status:r.status,d:d}; }); })
+    .then(function(x){
+      if(x.ok){
+        P.blocked=null;
+        setPState("saved to "+String(x.d.file).split(/[\\/]/).slice(-2).join("/"),"ok");
+        if(x.d.kept_corrupt_file) pMsg("The unreadable file was kept as "+x.d.kept_corrupt_file,"ok");
+      } else if(x.status===409){
+        P.blocked={reason:x.d.error}; setPState("not saved: "+x.d.error,"bad"); renderPaired();
+      } else setPState("not saved: "+(x.d.error||x.status),"bad");
+      return x;
+    })
+    .catch(function(){ setPState("could not save — is serve.py still running?","bad"); return null; });
+}
+function pResetCorrupt(){
+  var fresh=newStudy("empty (replaced an unreadable draft)");
+  if(!API){
+    var key=PKEY+".corrupt-"+Date.now();
+    try{ if(P.blocked && P.blocked.raw!=null) localStorage.setItem(key, P.blocked.raw); }catch(e){ pMsg("could not keep the unreadable draft: "+e.message,"bad"); return Promise.resolve(); }
+    P.blocked=null; P.study=fresh; pSave(); pMsg("The unreadable draft was kept in browser storage as "+key,"ok"); render();
+    return Promise.resolve();
+  }
+  P.study=fresh;
+  return pPut(true).then(function(){ render(); });
+}
+function hasContent(s){ return !!s && (s.pairs||[]).some(function(p){ return p.project||p.early||p.late; }); }
+function replaceStudy(st, why){
+  if(hasContent(P.study) && !window.confirm("Replace the current paired draft? "+why)) return false;
+  P.study=st; P.open={}; pSave(); render(); return true;
+}
+
+/* ---------- assignment ---------- */
+function docIdFor(r){ return r.src==="registry" ? r.id : "zenodo:"+r.id; }
+function byAny(id){ return INDEX[id]||REGINDEX[id]||null; }
+function pairById(id){ return P.study ? (P.study.pairs||[]).filter(function(p){ return p.pair_id===id; })[0]||null : null; }
+function slotsOf(did){
+  var out=[];
+  (P.study?P.study.pairs:[]).forEach(function(p){
+    ["early","late"].forEach(function(role){ if(p[role]===did) out.push(p.pair_id+"|"+role); }); });
+  return out;
+}
+function discOf(pid){ var p=pairById(pid); return p?p.discipline:pid; }
+function assignSelect(r){
+  var did=docIdFor(r), cur=slotsOf(did), docd=r.disc_all||[];
+  var opt=function(d,role){
+    return '<option value="add|'+esc(PDISC_ID[d])+'|'+role+'">'+role+' → '+esc(DISC_SHORT[d]||d)+'</option>'; };
+  var h='<select class="assign" data-assign="'+esc(r.id)+'" aria-label="Assign '+esc(String(r.title||"").slice(0,50))+
+        ' to a paired-study slot" data-tip="Put this document in a discipline\'s early or late slot. Disciplines the project carries in CORDIS are listed first; any other choice is flagged as unsupported.">';
+  h+='<option value="">'+(cur.length?"in "+cur.map(function(k){ var a=k.split("|"); return a[1]+" · "+(DISC_SHORT[discOf(a[0])]||discOf(a[0])); }).join(", "):"assign to pair…")+'</option>';
+  cur.forEach(function(k){ var a=k.split("|");
+    h+='<option value="drop|'+esc(a[0])+'|'+a[1]+'">remove from '+a[1]+' · '+esc(discOf(a[0]))+'</option>'; });
+  var yes=PDISC.filter(function(d){ return docd.indexOf(d)>=0; }), no=PDISC.filter(function(d){ return docd.indexOf(d)<0; });
+  if(yes.length){ h+='<optgroup label="CORDIS branches of this project">'; yes.forEach(function(d){ h+=opt(d,"early")+opt(d,"late"); }); h+='</optgroup>'; }
+  if(no.length){ h+='<optgroup label="Not documented for this project">'; no.forEach(function(d){ h+=opt(d,"early")+opt(d,"late"); }); h+='</optgroup>'; }
+  return h+'</select>';
+}
+var PDISC_ID={};
+PDISC.forEach(function(d){ PDISC_ID[d]=d.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""); });
+
+function docFromRow(r){
+  if(r.src==="registry"){
+    var g=r.registry||{};
+    return {doc_id:r.id, source:"registry", record_id:g.record_id||null, record_url:g.record_url||null, doi:g.doi||null,
+      concept_id:null, version_label:g.version_label||"", title:g.title||r.title, grant:g.grant||r.grant, scope:"",
+      publication_date:g.publication_date||null,
+      issue_date:{value:null,label:"",locator:"",source_url:"",state:"not_checked",verified_by:"",verified_on:""},
+      alt_dates:[], prior_checks:[{by:"registry provenance", result:(g.provenance||{}).found_via||"", date:(g.provenance||{}).registered||""}],
+      files:(g.files||[]).map(function(f,i,all){ return {name:f.name, url:f.url, format:f.format||"", bytes:f.bytes||null,
+        sha256:f.sha256||null, repo_checksum:null, retrieved:null, local_path:f.local_path||null, licence:"",
+        access:"not_checked", analysis:all.length===1}; })};
+  }
+  var files=(r.files||[]);
+  return {doc_id:"zenodo:"+r.id, source:"dataset", record_id:r.id, record_url:r.url||null, doi:r.doi||null,
+    concept_id:null, version_label:r.version||"", title:r.title, grant:r.grant||null, scope:"",
+    publication_date:r.date||null,
+    issue_date:{value:null,label:"",locator:"",source_url:"",state:"not_checked",verified_by:"",verified_on:""},
+    alt_dates:[], prior_checks:[],
+    files:files.map(function(f){ return {name:f.name, format:(f.ext||"").toLowerCase(), bytes:f.size||null,
+      url:"https://zenodo.org/records/"+encodeURIComponent(r.id)+"/files/"+encodeURIComponent(f.name||"")+"?download=1",
+      sha256:null, repo_checksum:null, retrieved:null, local_path:null, licence:"", access:"not_checked",
+      analysis:files.length===1}; })};
+}
+function pAssign(pid,role,rowId){
+  if(!P.study || P.blocked){ pMsg("The paired draft is not loaded, so nothing can be assigned.","bad"); return false; }
+  var p=pairById(pid), r=byAny(rowId);
+  if(!p || !r || (role!=="early" && role!=="late")) return false;
+  if(!r.grant){ pMsg("This record carries no grant number, so it cannot be tied to a project.","bad"); return false; }
+  if(p.project && p.project.grant && String(p.project.grant)!==String(r.grant)){
+    pMsg(p.discipline+" already holds project "+(p.project.acronym||p.project.grant)+". Empty both slots and clear it first.","bad");
+    return false;
+  }
+  if(!p.project){
+    var g=r.registry||{};
+    p.project={grant:String(r.grant), acronym:r.acronym||"", title:r.proj_title||"", programme:r.tier||"",
+      start:r.proj_start||null, end:r.proj_end||null,
+      end_basis:r.src==="registry"?"as registered: "+((g.provenance||{}).found_via||"registry")
+                                  :"CORDIS bulk download used by the local dataset; extensions not checked (D09 needs the latest authoritative end)",
+      original_end:null, end_source:{url:"https://cordis.europa.eu/project/id/"+r.grant, sha256:null, local_path:null, retrieved:null}};
+    p.cordis={branches:(r.disc_all||[]).slice(), paths:[], field_pairs:(r.fields||[]).slice(), dominant:r.disc?[r.disc]:[],
+      source:r.src==="registry"?"registry entry":"local dataset (CORDIS bulk EuroSciVoc)", retrieved:null};
+  }
+  var did=docIdFor(r);
+  if(!P.study.documents[did]) P.study.documents[did]=docFromRow(r);
+  p[role]=did;
+  pMsg("","");
+  pSave(); render(); return true;
+}
+function pRemove(pid,role){
+  var p=pairById(pid); if(!p || !p[role]) return false;
+  p[role]=null;              /* the document's evidence stays in study.documents */
+  pSave(); render(); return true;
+}
+function pClearProject(pid){
+  var p=pairById(pid); if(!p || p.early || p.late) return false;
+  p.project=null; p.cordis=null;
+  pSave(); render(); return true;
+}
+
+/* ---------- evidence editing ---------- */
+function setPath(obj,key,val){
+  var ks=key.split("."), o=obj;
+  for(var i=0;i<ks.length-1;i++){ if(o[ks[i]]==null || typeof o[ks[i]]!=="object") o[ks[i]]={}; o=o[ks[i]]; }
+  o[ks[ks.length-1]]=val;
+}
+function getPath(obj,key){
+  var ks=key.split("."), o=obj;
+  for(var i=0;i<ks.length;i++){ if(o==null) return ""; o=o[ks[i]]; }
+  return o==null?"":o;
+}
+function fld(label,ed,id,key,obj,tip){
+  return '<label>'+esc(label)+'<input type="text" data-ed="'+ed+'" data-id="'+esc(id)+'" data-k="'+esc(key)+
+    '" value="'+esc(getPath(obj,key))+'" data-tip="'+esc(tip)+'"></label>';
+}
+function stateSel(label,ed,id,key,obj,tip){
+  var cur=getPath(obj,key)||"not_checked";
+  return '<label>'+esc(label)+'<select data-ed="'+ed+'" data-id="'+esc(id)+'" data-k="'+esc(key)+'" data-tip="'+esc(tip+" "+VSTATE_TIP)+'">'+
+    VSTATES.map(function(s){ return '<option value="'+s+'"'+(s===cur?' selected':'')+'>'+s.replace("_"," ")+'</option>'; }).join("")+
+    '</select></label>';
+}
+function editorHTML(p){
+  var id=p.pair_id, h='<div class="ped" data-editor="'+esc(id)+'">';
+  h+='<h4>Project and scope</h4>';
+  h+=fld("Same-scope descriptor","pair",id,"scope",p,"What both documents cover, e.g. 'project-wide DMP, all work packages'. Partner-specific plans must name the partner.");
+  if(p.project){
+    h+='<div class="two">'+fld("Project start","pair",id,"project.start",p,"CORDIS start date, YYYY-MM-DD.")+
+       fld("Project end (latest)","pair",id,"project.end",p,"Latest authoritative end date including extensions (D09), YYYY-MM-DD.")+'</div>';
+    h+='<div class="two">'+fld("Original end","pair",id,"project.original_end",p,"The originally scheduled end, kept for sensitivity. Not used for eligibility.")+
+       fld("End source URL","pair",id,"project.end_source.url",p,"Where the end date was read, e.g. the CORDIS project page.")+'</div>';
+    h+=fld("End basis","pair",id,"project.end_basis",p,"How the end date was established and whether extensions were checked.");
+    var c=p.cordis||{};
+    h+='<div class="file">CORDIS branches: '+esc((c.branches||[]).join(", ")||"none recorded")+
+       (c.dominant&&c.dominant.length?' · dominant: '+esc(c.dominant.join(" = ")):'')+' · source: '+esc(c.source||"?")+'</div>';
+  }
+  h+='<h4>Lineage: does the later document revise the earlier one?</h4>';
+  var lin=p.lineage||{};
+  h+='<div class="two">'+stateSel("Lineage state","pair",id,"lineage.state",p,"Only a person who has read both documents should set verified.")+
+     fld("Verified by","pair",id,"lineage.verified_by",p,"Who checked the lineage evidence.")+'</div>';
+  h+=fld("Verified on","pair",id,"lineage.verified_on",p,"Date of the check, YYYY-MM-DD.");
+  (lin.evidence||[]).forEach(function(ev,i){
+    h+='<div class="ev"><span><b>'+esc(ev.locator||"")+'</b> '+esc(ev.note||"")+'</span>'+
+       '<button class="evx" type="button" data-evdrop="'+esc(id)+'|'+i+'" aria-label="Remove evidence" data-tip="Remove this evidence entry.">×</button></div>';
+  });
+  h+='<div class="two"><label>Evidence locator<input type="text" data-evnew="locator" data-id="'+esc(id)+'" data-tip="Where the evidence is, e.g. \'late PDF p2 revision table\'."></label>'+
+     '<label>Evidence note<input type="text" data-evnew="note" data-id="'+esc(id)+'" data-tip="A short factual note, e.g. \'v2.0 revises D1.1 v1.0, same consortium scope\'."></label></div>';
+  h+='<div><button class="btn" type="button" data-evadd="'+esc(id)+'" data-tip="Add the locator and note above as a lineage evidence entry.">Add evidence</button></div>';
+  (lin.prior_checks||[]).forEach(function(pc){
+    h+='<div class="file">Earlier check — '+esc(pc.by||"")+': '+esc(pc.result||"")+(pc.date?' ('+esc(pc.date)+')':'')+'</div>'; });
+  ["early","late"].forEach(function(role){
+    var did=p[role]; if(!did) return;
+    var d=P.study.documents[did]; if(!d) return;
+    h+='<h4>'+role+' document · '+esc(did)+'</h4>';
+    h+='<div class="file">'+esc(d.title||"")+(d.version_label?' · version '+esc(d.version_label):'')+
+       (d.publication_date?' · published '+esc(d.publication_date)+' (not used for timing)':'')+'</div>';
+    h+='<div class="two">'+fld("Issue date","doc",did,"issue_date.value",d,"The date the document itself gives as its issue date: YYYY-MM-DD, or YYYY-MM / YYYY when that is all it says. Never the repository date.")+
+       fld("Page / section","doc",did,"issue_date.locator",d,"Where the date is printed, e.g. 'physical PDF p1 cover'.")+'</div>';
+    h+=fld("Date label","doc",did,"issue_date.label",d,"What the document calls this date, e.g. 'Submission date', 'Version history v1.0'.");
+    h+='<div class="two">'+stateSel("Issue-date state","doc",did,"issue_date.state",d,"Set verified only after reading the date at the locator.")+
+       fld("Verified by","doc",did,"issue_date.verified_by",d,"Who read the issue date at the locator.")+'</div>';
+    h+=fld("Document scope","doc",did,"scope",d,"Scope as this document states it. Two different scopes in one pair reject it.");
+    (d.alt_dates||[]).forEach(function(a){
+      h+='<div class="file">Other labelled date: '+esc(a.value||"")+' — '+esc(a.label||"")+(a.locator?' ('+esc(a.locator)+')':'')+'</div>'; });
+    (d.files||[]).forEach(function(f,i){
+      h+='<div class="file">'+((d.files.length>1)?'<input type="radio" name="an-'+esc(did)+'" data-analysis="'+esc(did)+'|'+i+'"'+(f.analysis?' checked':'')+
+           ' aria-label="Use as analysis file" data-tip="The file reviewers and tools will read for this version."> ':'')+
+         esc(f.name||"file")+' · '+esc(f.format||"?")+(f.bytes?' · '+esc(kb(f.bytes)):'')+
+         ' · '+(f.sha256?'sha256 '+esc(f.sha256.slice(0,12))+'…':'<em>no checksum yet</em>')+
+         (f.local_path?' · '+esc(f.local_path):'')+' · '+esc(f.access||"not_checked")+'</div>';
+    });
+    (d.prior_checks||[]).forEach(function(pc){
+      h+='<div class="file">Earlier check — '+esc(pc.by||"")+': '+esc(pc.result||"")+'</div>'; });
+  });
+  h+=fld("Notes","pair",id,"notes",p,"Anything a later reader needs: uncertainties, ties, rights caveats.");
+  return h+'</div>';
+}
+
+/* ---------- rendering ---------- */
+function timingTip(t,role){
+  return "n = "+t.n_lo+(t.n_hi!==t.n_lo?"–"+t.n_hi:"")+" days after start, d = "+t.d+" days. "+
+    (role==="early"?"Early needs 2n <= d.":"Late needs n > d.")+" Verdict: "+t[role]+".";
+}
+function slotHTML(p,role,r){
+  var did=p[role], doc=did?(P.study.documents[did]||null):null, t=(r.timing||{})[role];
+  var h='<div class="pslot" data-slot="'+esc(p.pair_id)+'|'+role+'"><span class="r">'+role+'</span><div>';
+  if(!did) h+='<span style="color:var(--ink-3)">empty</span>';
+  else {
+    var id=(doc||{}).issue_date||{};
+    h+='<span class="mono">'+esc(did)+'</span> '+esc(doc?String(doc.title||"").slice(0,64):"(missing)");
+    h+='<div class="sub2">issued '+(id.value?'<span class="mono">'+esc(id.value)+'</span>':'<em>unknown</em>')+
+       (t && t.state==="ok"?' · <span class="mono'+(t.n_lo>t.d?' pct-over':'')+'" data-tip="'+esc(timingTip(t,role))+'">'+esc(fmtPct(t))+'</span>':'')+
+       (doc && doc.publication_date?' · published '+esc(doc.publication_date):'')+'</div>';
+  }
+  h+='</div>'+(did?'<button class="x" type="button" data-premove="'+esc(p.pair_id)+'|'+role+'" aria-label="Remove the '+role+' document" data-tip="Take this document out of the slot. Its evidence stays in the study.">×</button>':'<span></span>')+'</div>';
+  return h;
+}
+function pairHTML(p,r){
+  var proj=p.project;
+  var h='<div class="prow" data-pair="'+esc(p.pair_id)+'">';
+  h+='<div class="ph"><span class="pd">'+esc(p.discipline)+'</span><span class="badge b-'+r.status+'" data-tip="'+esc(STATUS_TIP[r.status])+'">'+esc(r.status)+'</span></div>';
+  h+='<div class="sub2">'+(proj?'<b class="mono">'+esc(proj.acronym||proj.grant)+'</b> · grant '+esc(proj.grant)+' · '+
+     esc(proj.start||"?")+' → '+esc(proj.end||"?")+
+     ((p.cordis||{}).dominant&&p.cordis.dominant.length&&p.cordis.dominant.indexOf(p.discipline)<0?' · dominant branch: '+esc(p.cordis.dominant.join(" = ")):'')
+     :'no project yet — assign a document from the table')+'</div>';
+  h+=slotHTML(p,"early",r)+slotHTML(p,"late",r);
+  if(r.issues.length) h+='<ul class="pissues">'+r.issues.map(function(i){
+    return '<li class="'+(i.severity==="hard"?"hard":"")+'">'+esc(i.text)+'</li>'; }).join("")+'</ul>';
+  h+='<div class="pbtns"><button class="btn" type="button" data-pinspect="'+esc(p.pair_id)+'" aria-expanded="'+(P.open[p.pair_id]?"true":"false")+
+     '" data-tip="Open the evidence editor: scope, lineage, issue dates with locators, files.">'+(P.open[p.pair_id]?"Close evidence":"Evidence")+'</button>';
+  if(proj && !p.early && !p.late) h+='<button class="btn" type="button" data-pclear="'+esc(p.pair_id)+'" data-tip="Remove the project from this row. Offered only when both slots are empty.">Clear project</button>';
+  h+='</div>';
+  if(P.open[p.pair_id]) h+=editorHTML(p);
+  return h+'</div>';
+}
+function protoHTML(pr){
+  var h='<label><span><input type="checkbox" data-proto="approved"'+(pr.approved?' checked':'')+' data-tip="Tick only when the group has approved this protocol. Freezing requires it."> Protocol approved</span></label>';
+  h+='<div class="two" style="display:grid;grid-template-columns:1fr 1fr;gap:6px">'+
+     '<label>Approved by<input type="text" data-proto="approved_by" value="'+esc(pr.approved_by||"")+'" data-tip="Who approved the protocol."></label>'+
+     '<label>Approved on<input type="text" data-proto="approved_on" value="'+esc(pr.approved_on||"")+'" data-tip="Date of approval, YYYY-MM-DD."></label></div>';
+  h+='<div class="hint">Timing: '+esc(pr.timing_basis||"")+'. Early '+esc(pr.early_rule||"")+'; late '+esc(pr.late_rule||"")+
+     '. Publication-date fallback: '+(pr.publication_date_fallback?"yes":"no")+'.</div>';
+  h+='<div class="hint">'+esc((pr.project_end||{}).decision||"")+': '+esc((pr.project_end||{}).rule||"")+'</div>';
+  h+='<div class="hint">'+esc((pr.discipline||{}).decision||"")+': '+esc((pr.discipline||{}).rule||"")+'</div>';
+  var ps=pr.pre_start_policy||{};
+  h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">'+
+     '<label>Pre-start documents<select data-proto="pre_start_policy.value" data-tip="Whether a document issued before the project started may fill an early slot.">'+
+       ['exclude','include'].map(function(v){ return '<option value="'+v+'"'+(ps.value===v?' selected':'')+'>'+v+'</option>'; }).join("")+'</select></label>'+
+     '<label>Policy status<select data-proto="pre_start_policy.status" data-tip="Proposed until the group confirms it. Matters only if a document predates its project.">'+
+       ['proposed','confirmed'].map(function(v){ return '<option value="'+v+'"'+(ps.status===v?' selected':'')+'>'+v+'</option>'; }).join("")+'</select></label></div>';
+  (pr.open_decisions||[]).forEach(function(d,i){
+    h+='<div class="dec"><div class="hint">'+esc(d.text||d.id)+'</div>'+
+       '<div style="display:grid;grid-template-columns:120px 1fr;gap:6px">'+
+       '<select data-proto="open_decisions.'+i+'.status" aria-label="Status of '+esc(d.id)+'" data-tip="open blocks a freeze; resolved or not material lets it pass. Record the outcome in the note.">'+
+       ['open','resolved','not_material'].map(function(v){ return '<option value="'+v+'"'+(d.status===v?' selected':'')+'>'+v.replace("_"," ")+'</option>'; }).join("")+'</select>'+
+       '<input type="text" data-proto="open_decisions.'+i+'.note" value="'+esc(d.note||"")+'" aria-label="Note for '+esc(d.id)+'" data-tip="How it was decided, by whom, and where it is recorded."></div></div>';
+  });
+  return h;
+}
+function renderPaired(){
+  var tray=document.getElementById("paired-tray"); if(!tray) return;
+  var blocked=document.getElementById("p-blocked");
+  document.querySelectorAll('#p-actions [data-served]').forEach(function(b){ b.hidden=!API; });
+  if(P.blocked){
+    blocked.innerHTML='<div class="note">The saved paired draft cannot be read: '+esc(P.blocked.reason)+
+      '. Nothing has been overwritten.<br><button class="btn" type="button" data-pact="reset-corrupt" style="margin-top:6px" data-tip="Keep the unreadable draft aside (a .corrupt copy) and start an empty one.">Start a new draft, keep the unreadable one</button></div>';
+    document.getElementById("p-rows").innerHTML=""; document.getElementById("p-cohort").innerHTML="";
+    document.getElementById("p-pairs").textContent="–"; document.getElementById("p-docs").textContent="–";
+    document.getElementById("s-pairs").textContent="–";
+    return;
+  }
+  blocked.innerHTML="";
+  if(!P.study) return;
+  var v=pValidate(P.study); P.last=v;
+  document.getElementById("p-pairs").textContent=v.counts.verified_pairs;
+  document.getElementById("p-docs").textContent=v.counts.distinct_documents;
+  document.getElementById("s-pairs").textContent=v.counts.verified_pairs+"/6";
+  document.getElementById("p-origin").textContent="Draft "+(P.study.study_id||"")+" · "+(P.study.origin||"")+
+    ((P.study.snapshots||[]).length?" · snapshots: "+P.study.snapshots.join(", "):"");
+  var hist=P.study.historical;
+  document.getElementById("p-hist").innerHTML=hist?'<div class="hint" style="margin-top:6px">Legacy selection attached as history: '+
+    hist.ids.length+' ids ('+hist.unresolved.length+' unresolved) — '+esc(hist.label)+
+    ' <button class="btn" type="button" data-pact="drop-legacy" data-tip="Detach the historical legacy selection from this draft. The legacy file itself is untouched.">Detach</button></div>':'';
+  document.getElementById("p-legacybtn").hidden=!!hist;
+  document.getElementById("p-rows").innerHTML=(P.study.pairs||[]).map(function(p){ return pairHTML(p,v.pairs[p.pair_id]); }).join("");
+  var nonInc=v.cohort.filter(function(i){ return i.code!=="incomplete"; });
+  document.getElementById("p-cohort").innerHTML='<div class="note">'+
+    (v.freezable?"All six pairs verified and the protocol approved. Ready to freeze.":
+     "Not freezable yet: "+esc(v.counts.verified_pairs+" of 6 pairs verified")+(nonInc.length?"; "+nonInc.map(function(i){ return esc(i.text); }).join("; "):""))+'</div>';
+  var pb=document.getElementById("p-protobody");
+  if(!pb.contains(document.activeElement)) pb.innerHTML=protoHTML(P.study.protocol||{});
+}
+function applyMode(){
+  document.querySelectorAll("[data-mode]").forEach(function(b){
+    b.setAttribute("aria-pressed", b.getAttribute("data-mode")===mode?"true":"false"); });
+  document.getElementById("paired-tray").hidden = mode!=="paired";
+  document.getElementById("legacy-tray").hidden = mode==="paired";
+  document.getElementById("stat-sel").hidden = mode==="paired";
+  document.getElementById("stat-pairs").hidden = mode!=="paired";
+  COL_TIP.pick = mode==="paired"
+    ? "Assign the document to a discipline's early or late slot in the paired study."
+    : "Tick to add this DMP to the legacy selection.";
+}
+function setMode(m){
+  if(m!=="paired" && m!=="legacy") return false;
+  mode=m;
+  try{ localStorage.setItem(MODEKEY,m); }catch(e){}
+  applyMode(); render(); return true;
+}
+
+/* ---------- actions ---------- */
+function copyOut(txt,btn){
+  var out=document.getElementById("p-out"); out.value=txt; out.select();
+  if(btn){ var t=btn.textContent, done=function(){ btn.textContent="Copied"; setTimeout(function(){ btn.textContent=t; },1200); };
+    if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done,done); else done(); }
+}
+function pLoadJSON(text){
+  var obj;
+  try{ obj=JSON.parse(text); }catch(e){ pMsg("Not loaded: that is not valid JSON ("+e.message+"). The draft is unchanged.","bad"); return false; }
+  var st=null, why;
+  if(obj && obj.schema===SNAPSCHEMA && obj.study){
+    st=clone(obj.study); st.status="draft"; st.origin="new draft from snapshot "+(obj.snapshot_id||"?"); st.study_id="paired-draft-"+nowIso().slice(0,10);
+  } else if(obj && obj.study && obj.validation) st=obj.study;
+  else st=obj;
+  why=checkStudy(st);
+  if(why){ pMsg("Not loaded: "+why+". The draft is unchanged.","bad"); return false; }
+  if(st.status==="frozen"){ st=clone(st); st.status="draft"; }
+  if(!replaceStudy(st,"It will be replaced by the pasted study.")) return false;
+  pMsg("Loaded "+(st.study_id||"study")+".","ok"); return true;
+}
+function pImportLegacy(){
+  var ids=sel.slice();
+  P.study.historical={source:API?"data/selection.json (served)":"browser storage dmpbench.sel",
+    label:"historical, unverified; confers no eligibility or selection priority",
+    imported_at:nowIso(), ids:ids, unresolved:ids.filter(function(i){ return !INDEX[i]; })};
+  pSave(); render(); return true;
+}
+function postJSON(path,body){
+  return fetch(API+path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+    .then(function(r){ return r.json().then(function(d){ d.__status=r.status; return d; }); });
+}
+function pFiles(download){
+  if(!API){ pMsg("File checks need serve.py: the browser cannot read your disk.","bad"); return Promise.resolve(null); }
+  pMsg(download?"downloading missing files…":"hashing files on disk…","");
+  return postJSON("/paired/files",{study:P.study, download:!!download}).then(function(d){
+    var ok=0, miss=0, bad=0;
+    Object.keys(d.facts||{}).forEach(function(k){
+      var f=d.facts[k], doc=P.study.documents[f.doc_id], tf=doc&&doc.files&&doc.files[f.index];
+      if(!tf) return;
+      if(f.present){
+        if(tf.sha256 && tf.sha256!==f.sha256){ tf.access="contradictory"; bad++; return; }
+        tf.sha256=f.sha256; tf.bytes=f.bytes; tf.local_path=f.local_path; tf.access="verified";
+        if(f.retrieved) tf.retrieved=f.retrieved; ok++;
+      } else { if(f.access==="failed") tf.access="failed"; miss++; }
+    });
+    pSave(); render();
+    pMsg(ok+" file(s) on disk and hashed, "+miss+" missing"+(bad?", "+bad+" do not match their recorded checksum":""), bad?"bad":"ok");
+    return d;
+  }).catch(function(e){ pMsg("file check failed: "+e.message,"bad"); return null; });
+}
+function pFreeze(){
+  if(!API){ pMsg("Freezing needs serve.py: it re-hashes the files on disk and writes data/paired-snapshots/.","bad"); return Promise.resolve(null); }
+  pMsg("freezing…","");
+  return postJSON("/paired/freeze",{study:P.study}).then(function(d){
+    if(d.ok){ (P.study.snapshots=P.study.snapshots||[]).push(d.snapshot_id); pSave();
+              pMsg("Frozen as "+d.snapshot_id+". The snapshot is immutable; further edits stay in this draft.","ok"); }
+    else pMsg("Not frozen:\n- "+(d.reasons||[d.error||"unknown error"]).join("\n- "),"bad");
+    render(); return d;
+  }).catch(function(e){ pMsg("freeze failed: "+e.message,"bad"); return null; });
+}
+function pAction(k,btn){
+  if(k==="reset-corrupt") return pResetCorrupt();
+  if(P.blocked || !P.study){ pMsg("The paired draft is not loaded.","bad"); return; }
+  if(k==="proposal"){
+    if(!PBOOT.proposal){ pMsg("This page carries no cohort proposal.","bad"); return; }
+    if(replaceStudy(clone(PBOOT.proposal),"It will be replaced by the cohort proposal.")) pMsg("Loaded the cohort proposal as an unverified draft.","ok");
+  } else if(k==="empty"){ if(replaceStudy(newStudy("empty"),"It will be replaced by an empty draft.")) pMsg("Started an empty draft.","ok"); }
+  else if(k==="legacy") pImportLegacy();
+  else if(k==="drop-legacy"){ delete P.study.historical; pSave(); render(); }
+  else if(k==="json"||k==="csv"||k==="md") copyOut(pExport(k),btn);
+  else if(k==="load") pLoadJSON(document.getElementById("p-out").value);
+  else if(k==="files") return pFiles(false);
+  else if(k==="fetch") return pFiles(true);
+  else if(k==="freeze") return pFreeze();
+}
+function wirePaired(){
+  document.querySelector(".mode").addEventListener("click",function(e){
+    var b=e.target.closest("[data-mode]"); if(b) setMode(b.getAttribute("data-mode")); });
+  document.getElementById("list").addEventListener("change",function(e){
+    var s=e.target.closest("[data-assign]"); if(!s) return;
+    var v=s.value; if(!v) return;
+    var a=v.split("|");
+    if(a[0]==="add") pAssign(a[1],a[2],s.getAttribute("data-assign"));
+    else if(a[0]==="drop") pRemove(a[1],a[2]);
+    else render();
+  });
+  var tray=document.getElementById("paired-tray");
+  tray.addEventListener("click",function(e){
+    var t;
+    if((t=e.target.closest("[data-pact]"))) return pAction(t.getAttribute("data-pact"),t);
+    if((t=e.target.closest("[data-premove]"))){ var a=t.getAttribute("data-premove").split("|"); return pRemove(a[0],a[1]); }
+    if((t=e.target.closest("[data-pinspect]"))){ var id=t.getAttribute("data-pinspect"); P.open[id]=!P.open[id]; return renderPaired(); }
+    if((t=e.target.closest("[data-pclear]"))) return pClearProject(t.getAttribute("data-pclear"));
+    if((t=e.target.closest("[data-evadd]"))){
+      var pid=t.getAttribute("data-evadd"), p=pairById(pid);
+      var loc=tray.querySelector('[data-evnew="locator"][data-id="'+pid+'"]'), note=tray.querySelector('[data-evnew="note"][data-id="'+pid+'"]');
+      if(!p || !(loc.value.trim()||note.value.trim())){ pMsg("Write a locator or a note first.","bad"); return; }
+      p.lineage=p.lineage||{state:"not_checked",evidence:[]};
+      (p.lineage.evidence=p.lineage.evidence||[]).push({locator:loc.value.trim(), note:note.value.trim()});
+      pSave(); return renderPaired();
+    }
+    if((t=e.target.closest("[data-evdrop]"))){
+      var b=t.getAttribute("data-evdrop").split("|"), pp=pairById(b[0]);
+      if(pp && pp.lineage && pp.lineage.evidence){ pp.lineage.evidence.splice(+b[1],1); pSave(); renderPaired(); }
+    }
+  });
+  tray.addEventListener("change",function(e){
+    var t=e.target, key, obj;
+    if(t.hasAttribute("data-analysis")){
+      var a=t.getAttribute("data-analysis").split("|"), doc=P.study.documents[a[0]];
+      if(doc) doc.files.forEach(function(f,i){ f.analysis=(i===+a[1]); });
+      pSave(); return renderPaired();
+    }
+    if(t.hasAttribute("data-ed")){
+      key=t.getAttribute("data-k");
+      obj=t.getAttribute("data-ed")==="pair" ? pairById(t.getAttribute("data-id")) : P.study.documents[t.getAttribute("data-id")];
+      if(!obj) return;
+      var val=t.value.trim();
+      setPath(obj,key, val===""?null:val);
+      if(/\.state$/.test(key) && val==="verified" && !getPath(obj,key.replace(/state$/,"verified_on")))
+        setPath(obj,key.replace(/state$/,"verified_on"),nowIso().slice(0,10));
+      pSave(); render(); return;
+    }
+    if(t.hasAttribute("data-proto")){
+      key=t.getAttribute("data-proto");
+      setPath(P.study.protocol,key, t.type==="checkbox"?t.checked:t.value);
+      pSave(); t.blur(); render();
+    }
+  });
+}
+var PAPI={
+  study:function(){ return P.study; }, blocked:function(){ return P.blocked; },
+  validate:function(s){ return pValidate(s||P.study); }, timing:pTiming, parseDate:pDate,
+  assign:pAssign, remove:pRemove, clearProject:pClearProject,
+  load:function(st){ P.study=st; P.blocked=null; P.open={}; return pSave(); },
+  reload:function(){ return pLoad().then(function(){ render(); }); },
+  save:pSave, exportAs:pExport, exportRows:pExportRows, toCSV:toCSV, toMD:toMD, csvCell:csvCell, mdCell:mdCell,
+  loadJSON:pLoadJSON, importLegacy:pImportLegacy, files:pFiles, freeze:pFreeze, resetCorrupt:pResetCorrupt,
+  checkStudy:checkStudy, newStudy:newStudy, proposal:function(){ return PBOOT.proposal?clone(PBOOT.proposal):null; },
+  open:P.open, key:PKEY, docIdFor:docIdFor,
+  serverValidate:function(s){ return postJSON("/paired/validate",{study:s||P.study}); }
+};
+
 /* ---------------- boot ---------------- */
 function fail(msg){ document.getElementById("list").innerHTML='<div class="empty">'+esc(msg)+'</div>'; }
 function init(){
   INDEX={}; ROWS.forEach(function(r){ INDEX[r.id]=r; });
   var s={}; ROWS.forEach(function(r){ if(r.disc) s[r.disc]=(s[r.disc]||0)+1; });
   DISCS=Object.keys(s).sort(function(a,b){ return s[b]-s[a]; });
-  sel=sel.filter(function(id){ return INDEX[id]; });
-  buildYears(); buildChips(); buildSort(); buildCols(); wire(); bindTips(); render();
+  REGINDEX={}; REG.forEach(function(r){ REGINDEX[r.id]=r; });
+  /* unknown legacy ids are kept, not silently dropped: they show as a tray note */
+  buildYears();
+  if(mode==="paired") applyPresetState("paired");
+  buildChips(); buildSort(); buildCols(); wire(); wirePaired(); bindTips(); applyMode(); render();
   if(API) setSaveState("selection saved to data/selection.json","ok");
   window.__APP__={ROWS:ROWS,state:state,colState:colState,ALLCOLS:ALLCOLS,COLDEF:COLDEF,
                   sel:function(){return sel;}, setSel:function(v){ sel=v; save(); render(); },
@@ -1175,13 +2030,15 @@ function init(){
                   exportAs:exportAs, toggleCol:toggleCol, moveCol:moveCol, setSort:setSort,
                   applyPreset:applyPreset, visibleCols:visibleCols, buildChips:buildChips,
                   showTip:showTip, hideTip:hideTip,
+                  mode:function(){ return mode; }, setMode:setMode, pool:pool, REG:REG,
+                  paired:PAPI,
                   ready:true};
   if(window.__ONREADY__) window.__ONREADY__();
 }
 function boot(){
   var embedded=null;
   try{ embedded=JSON.parse(document.getElementById("data").textContent); }catch(e){}
-  if(embedded && embedded.length){ ROWS=embedded; localLoad(); init(); return; }
+  if(embedded && embedded.length){ ROWS=embedded; localLoad(); pLoad().then(init); return; }
   if(!API){ fail("No dataset in this page and no local API configured. Rebuild with scripts/05_build_dashboard.py, or start scripts/serve.py."); return; }
   fail("Loading the dataset from the local server…");
   fetch(API+"/dmps")
@@ -1193,6 +2050,7 @@ function boot(){
         .then(function(s){ sel=(s&&s.ids)||[]; })
         .catch(function(){ localLoad(); });
     })
+    .then(pLoad)
     .then(init)
     .catch(function(e){ fail("Could not reach the local server: "+e.message+
       ". Start it with: python scripts/serve.py"); });

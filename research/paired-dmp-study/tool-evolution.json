@@ -1,0 +1,763 @@
+{
+  "checked_at_utc": "2026-11-03T10:49:54.534574+00:00",
+  "method": "Fresh read-only GitHub and Zenodo downloads; immutable source bytes statically inspected; PDF text and implementation URI annotations inspected. No DMP-EVA app, JavaScript prompt assembly, paid model request, or evaluation executed.",
+  "working_target": {
+    "basis": "User requested latest DMP-EVA state; pin default-branch HEAD observed at check.",
+    "repository": "https://github.com/usadellab/dmp-eva",
+    "default_branch": "main",
+    "commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+    "commit_date": "2026-10-21T08:07:01Z",
+    "tree_sha": "b4ec23af67aa8129d2e001799e37dede9a897042",
+    "same_as_previous_inspected_commit": true,
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/README.md",
+        "retrieved_at": "2026-11-03T10:49:53.977810+00:00",
+        "sha256": "59c75ea6e2b799b3334ed73dc67cc27953c70f5ea16824cfb5335a2ce168c1e7",
+        "bytes": 7185,
+        "git_blob_sha1": "18a1e587c5a02ebd334324eea2fa86533f3b1f11",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "eva.json": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+        "retrieved_at": "2026-11-03T10:49:53.991094+00:00",
+        "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+        "bytes": 13424,
+        "git_blob_sha1": "f94b05e3b7a6dfb40612cdd5fe6da648c46ab268",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "index.html": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/index.html",
+        "retrieved_at": "2026-11-03T10:49:54.006946+00:00",
+        "sha256": "1ce4291b97e14bc763bfcf971edbde94351865496cac2f3f228a427379678947",
+        "bytes": 42684,
+        "git_blob_sha1": "74146605ccf5d5adebcb97160d1baa1c39e7410d",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/api-config.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js",
+        "retrieved_at": "2026-11-03T10:49:54.033327+00:00",
+        "sha256": "0f9ab8329f0cb89a329bdfcf9897bdf23947a869d6d088c91addc4c562aa9e0e",
+        "bytes": 11627,
+        "git_blob_sha1": "5789d294089c362a19d2bad1f6732d6a0fdebd24",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/app.20260727a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js",
+        "retrieved_at": "2026-11-03T10:49:54.107783+00:00",
+        "sha256": "5cc2e08a83bbe39e77786ac49b3104dbae72e36a8d7c8737f0ec32c14de32ca5",
+        "bytes": 76461,
+        "git_blob_sha1": "434120ff47e8f6d3ead0d574a2612b737fba2994",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/criteria-extractor.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js",
+        "retrieved_at": "2026-11-03T10:49:54.114411+00:00",
+        "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+        "bytes": 30214,
+        "git_blob_sha1": "e30651c1acd932484ba219ac52872b057243a77b",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/evaluator.20260423a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js",
+        "retrieved_at": "2026-11-03T10:49:54.125565+00:00",
+        "sha256": "987e8829a9c62369e6a9b0187697aa15ec1defa1357e504fdf3789a98a3af1c2",
+        "bytes": 18273,
+        "git_blob_sha1": "260fc3216967e8a3b33ce11ea2d2c27dfb21a288",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/export-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/export-service.js",
+        "retrieved_at": "2026-11-03T10:49:54.165561+00:00",
+        "sha256": "10a9636b26b4559e908805f376fe05c7abc5018c39b4444985d527b924638739",
+        "bytes": 6249,
+        "git_blob_sha1": "0725af91c42e6253dc256599a691faf6a240b9a7",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/file-parser.20260423a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js",
+        "retrieved_at": "2026-11-03T10:49:54.175999+00:00",
+        "sha256": "c0bf844fde574119ea69190bd1afba10e10b2c3637031d8949eb9eb7c4e1bc71",
+        "bytes": 12977,
+        "git_blob_sha1": "209103a4c02d23e3955b4c55307e3125c1181490",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      },
+      "js/llm-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js",
+        "retrieved_at": "2026-11-03T10:49:54.223464+00:00",
+        "sha256": "9af182a7249222aaff30e57e9e686839a4f67c6c67ee861d136ae5a58df8608b",
+        "bytes": 30161,
+        "git_blob_sha1": "a075b80518893b6a6e8708b86ce21f86bafe7c61",
+        "matches_tree_blob": true,
+        "matches_previous_inspection": true
+      }
+    }
+  },
+  "github_release_state": {
+    "latest_stable_endpoint_status": 404,
+    "meaning": "No latest stable release returned; sole listed release is a prerelease.",
+    "releases": [
+      {
+        "tag": "v0.1",
+        "url": "https://github.com/usadellab/dmp-eva/releases/tag/v0.1",
+        "prerelease": true,
+        "published_at": "2026-04-09T15:55:02Z",
+        "body": "Pre-release for Zenodo publication"
+      }
+    ],
+    "tags": [
+      {
+        "name": "v0.1",
+        "zipball_url": "https://api.github.com/repos/usadellab/dmp-eva/zipball/refs/tags/v0.1",
+        "tarball_url": "https://api.github.com/repos/usadellab/dmp-eva/tarball/refs/tags/v0.1",
+        "commit": {
+          "sha": "db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+          "url": "https://api.github.com/repos/usadellab/dmp-eva/commits/db85e5a71271239f8fbe3e271e4aa8b7e71d6321"
+        },
+        "node_id": "REF_kwDOQVHjNK5yZWZzL3RhZ3MvdjAuMQ"
+      }
+    ]
+  },
+  "preprint": {
+    "record": 19630859,
+    "doi": "10.5281/zenodo.19630859",
+    "publication_date": "2026-04-17",
+    "metadata_version": null,
+    "landing_version_label": "v1; PDF Version 1.0",
+    "concept_doi": "10.5281/zenodo.19630858",
+    "latest_record_observed": 19630859,
+    "version_record_ids": [
+      19630859
+    ],
+    "version_links": {
+      "latest": "https://zenodo.org/api/records/19630859/versions/latest",
+      "versions": "https://zenodo.org/api/records/19630859/versions",
+      "parent_doi": "https://doi.org/10.5281/zenodo.19630858"
+    },
+    "pdf_sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "same_as_previous_pdf": true,
+    "explicit_software_commit_in_inspected_paper": false,
+    "commit_attribution": "No explicit commit identified in extracted publication text or implementation links. PDF links identify software record 19486055; commit is derived from archive/tag provenance, not explicitly named by paper.",
+    "implementation_uri_annotations": [
+      "22 0 obj <</A<</Type/Action/S/URI/URI(https://zenodo.org/records/19486055)>>/Border[0 0 0]/F 4/Rect[231.49407 593.51077 253.49454 606.15969]/StructParent 13/Subtype/Link/Type/Annot>>",
+      "90 0 obj <</A<</Type/Action/S/URI/URI(https://doi.org/10.5281/zenodo.19486055)>>/Border[0 0 0]/F 4/Rect[282.22895 259.80909 331.4946 272.458]/StructParent 59/Subtype/Link/Type/Annot>>",
+      "95 0 obj <</A<</Type/Action/S/URI/URI(https://github.com/orgs/dmp-evaluation)>>/Border[0 0 0]/F 4/Rect[326.9799 154.47412 516.3912 167.12305]/StructParent 61/Subtype/Link/Type/Annot>>"
+    ]
+  },
+  "publication_linked_archive": {
+    "record": 19486055,
+    "doi": "10.5281/zenodo.19486055",
+    "version": "v0.1",
+    "publication_date": "2026-04-09",
+    "concept_doi": "10.5281/zenodo.19486054",
+    "latest_record_observed": 19486055,
+    "version_record_ids": [
+      19486055
+    ],
+    "version_links": {
+      "latest": "https://zenodo.org/api/records/19486055/versions/latest",
+      "versions": "https://zenodo.org/api/records/19486055/versions",
+      "parent_doi": "https://doi.org/10.5281/zenodo.19486054"
+    },
+    "commit": "db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+    "commit_date": "2026-02-23T17:11:41Z",
+    "zip_sha256": "50be0554e0e79a96c546954365e4e88e129a8c1432c0970b88a9f46f6abd1eb0",
+    "same_as_previous_zip": true,
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/README.md",
+        "retrieved_at": "2026-11-03T10:49:54.231072+00:00",
+        "sha256": "4cbe6538c0094876af25de4aa5cdeb09c10f8621499f27dc46f0fe94670e26ae",
+        "bytes": 4576,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/README.md",
+        "matches_archived_bytes": true
+      },
+      "eva.json": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/eva.json",
+        "retrieved_at": "2026-11-03T10:49:54.309421+00:00",
+        "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+        "bytes": 13424,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/eva.json",
+        "matches_archived_bytes": true
+      },
+      "index.html": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/index.html",
+        "retrieved_at": "2026-11-03T10:49:54.309875+00:00",
+        "sha256": "4ed2f0a7c7c85028c6f3a63d884d030fb2910333028c9a58fe4a7e2f3ea4dd75",
+        "bytes": 36312,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/index.html",
+        "matches_archived_bytes": true
+      },
+      "js/api-config.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/api-config.js",
+        "retrieved_at": "2026-11-03T10:49:54.338995+00:00",
+        "sha256": "86f4aa413d86147bfdb12a8ecf233c30146810c178b042795bf080e9dbe440a0",
+        "bytes": 10664,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/api-config.js",
+        "matches_archived_bytes": true
+      },
+      "js/app.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/app.js",
+        "retrieved_at": "2026-11-03T10:49:54.356873+00:00",
+        "sha256": "0ba0b8e065e4cde34279bd37b1f5e69371b3695d44be2251f86903933c532ad2",
+        "bytes": 45487,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/app.js",
+        "matches_archived_bytes": true
+      },
+      "js/criteria-extractor.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/criteria-extractor.js",
+        "retrieved_at": "2026-11-03T10:49:54.376898+00:00",
+        "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+        "bytes": 30214,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/criteria-extractor.js",
+        "matches_archived_bytes": true
+      },
+      "js/evaluator.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/evaluator.js",
+        "retrieved_at": "2026-11-03T10:49:54.382299+00:00",
+        "sha256": "59ef7eca333ff308c0088ef09cae03e29bda4e0eef9e4dda777cdb4d1e9a631c",
+        "bytes": 16012,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/evaluator.js",
+        "matches_archived_bytes": true
+      },
+      "js/export-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/export-service.js",
+        "retrieved_at": "2026-11-03T10:49:54.408823+00:00",
+        "sha256": "10a9636b26b4559e908805f376fe05c7abc5018c39b4444985d527b924638739",
+        "bytes": 6249,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/export-service.js",
+        "matches_archived_bytes": true
+      },
+      "js/file-parser.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/file-parser.js",
+        "retrieved_at": "2026-11-03T10:49:54.480511+00:00",
+        "sha256": "6f53df1ac0539e7067cd42e79fc435e3b695afb4fd9235e0aa4efa9c45c59147",
+        "bytes": 12375,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/file-parser.js",
+        "matches_archived_bytes": true
+      },
+      "js/llm-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/llm-service.js",
+        "retrieved_at": "2026-11-03T10:49:54.534574+00:00",
+        "sha256": "ff096145e1495367b2d7ffbb29abda6d566a21c1031a1784fdab552bfd3fc341",
+        "bytes": 24288,
+        "archive_zip_member": "usadellab-dmp-eva-db85e5a/js/llm-service.js",
+        "matches_archived_bytes": true
+      }
+    }
+  },
+  "default_rubric_ids": [
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "3a",
+    "3b",
+    "4a",
+    "4b",
+    "4c",
+    "5a",
+    "5b",
+    "5c",
+    "6a",
+    "6b"
+  ],
+  "findings": [
+    {
+      "id": "rubric_coverage",
+      "paper": "Table 2 has 16 subsection IDs; Figure 1 says Table 2 is preloaded as eva.json.",
+      "archive": "Default eva.json has 14 IDs; omits 3c and 5d.",
+      "latest": "Same eva.json bytes and same omissions. Alternative built-in/fallback criteria are a different loaded condition.",
+      "status": "persists",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/eva.json"
+      ],
+      "scope": "Default eva.json only; not a claim about every custom or fallback rubric."
+    },
+    {
+      "id": "prompt_rubric_inclusion",
+      "paper": "Describes checking DMPs against the framework; does not specify exact prompt bytes.",
+      "archive": "assembleFullPrompt inserts formatted criterion text via criteriaContext.",
+      "latest": "Extracts IDs from formatted criteria; assembled default prompt does not insert criterion wording or criteriaContext.",
+      "status": "persists",
+      "change_from_archive": "Materially changed; omission is a latest-source finding, not an archive finding.",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/llm-service.js#L74-L82",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js#L74-L110"
+      ],
+      "scope": "Default assembly; custom prompt text can hard-code wording. No model behavior tested."
+    },
+    {
+      "id": "phase_mapping",
+      "paper": "Three stage-specific sets of criteria; no numerical time thresholds or phase-key contract.",
+      "archive": "Single UI short keys proposal/mid/end match extractor and prompt phase mapping. No comparable batch path identified.",
+      "latest": "Single UI short keys reach prompt that recognizes long keys and defaults to early; batch long keys reach extractor recognizing short keys and defaulting to early rubric wording.",
+      "status": "persists",
+      "change_from_archive": "Latest mismatch differs from archive single-run behavior; batch comparison is not comparable.",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/index.html#L181-L185",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js#L1407-L1421",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js#L1463-L1483",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js#L719-L724",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js#L85-L90",
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/llm-service.js#L74-L82"
+      ],
+      "scope": "Static supplied phase keys and default fallback branches; no claim about observed model outputs."
+    },
+    {
+      "id": "zero_score_aggregation",
+      "paper": "No independently validated 0\u2013100 aggregate specified in inspected text.",
+      "archive": "Overall mean filters category scores >0, including removal of genuine zero scores and no-evidence categories.",
+      "latest": "Same exclusion rule; separate summary average uses all categories.",
+      "status": "persists",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/evaluator.js#L169-L175",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js#L192-L198"
+      ],
+      "scope": "Native overallScore only, not every displayed summary statistic."
+    },
+    {
+      "id": "pdf_input",
+      "paper": "Recommends TXT/Markdown, describes partial Word support; no claim of native PDF upload support.",
+      "archive": "Parser switch has no PDF case.",
+      "latest": "Parser switch still has no PDF case.",
+      "status": "persists",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/file-parser.js#L256-L288",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js#L263-L286"
+      ],
+      "scope": "Native parser only; prior external conversion is possible."
+    },
+    {
+      "id": "text_truncation",
+      "paper": "Does not specify this parser limit.",
+      "archive": "Inspected parseFile returns full extracted text without current 30,720-unit slice.",
+      "latest": "parseFile slices extracted text to 30,720 JavaScript UTF-16 code units and sets truncated/originalTextLength; evaluator surfaces a progress warning. Prompt also replaces ASCII double quotes with single quotes.",
+      "status": "persists",
+      "change_from_archive": "Limit introduced relative to archive; persists relative to prior latest inspection.",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/file-parser.js#L241-L302",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js#L235-L305",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js#L39-L45",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js#L93-L101"
+      ],
+      "scope": "Code units are not bytes or tokens. No assertion that every candidate is truncated; cap also applies when parsing rubric files."
+    },
+    {
+      "id": "temperature_seed_propagation",
+      "paper": "No reproducibility parameter contract specified.",
+      "archive": "Profile temperature exists but request builder omits it; no seed sent by builder.",
+      "latest": "Still omits profile temperature and seed.",
+      "status": "persists",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/api-config.js#L258-L293",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js#L267-L310"
+      ],
+      "scope": "Actual body built by generateFetchConfig; provider defaults not measured."
+    },
+    {
+      "id": "output_cap_propagation",
+      "paper": "No output-cap propagation claim identified.",
+      "archive": "generateFetchConfig does not map profile.maxTokens into request.",
+      "latest": "Maps truthy profile.maxTokens to max_tokens; also supports conditional enable_thinking=false.",
+      "status": "resolved",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/api-config.js#L270-L284",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js#L284-L302"
+      ],
+      "scope": "Narrow improvement in constructed request body only; no inference about provider acceptance or all settings."
+    },
+    {
+      "id": "export_provenance",
+      "paper": "No exact-request provenance/export specification identified.",
+      "archive": "JSON export saves processed result and small metadata object; no exact prompt/rubric hash/software commit/request/raw response manifest.",
+      "latest": "Same export service bytes and same small evaluator metadata field set: filenames, phase, date, model.",
+      "status": "persists",
+      "evidence": [
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/export-service.js#L14-L23",
+        "https://github.com/usadellab/dmp-eva/blob/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/evaluator.js#L73-L82",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/export-service.js#L14-L23",
+        "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js#L81-L90"
+      ],
+      "scope": "Native evaluation export; a supplemental study manifest can be collected separately."
+    }
+  ],
+  "status_semantics": {
+    "persists": "Observed in freshly fetched latest snapshot, consistent with preceding latest-source check; archive comparison is stated separately.",
+    "resolved": "Narrow static issue absent/improved in latest compared with archive, with no runtime claim.",
+    "uncertain": "Evidence insufficient to classify.",
+    "not_comparable": "No equivalent implementation claim/path; not evidence of failure or resolution."
+  },
+  "recommendations": [
+    "Use immutable latest commit b80b43de820d46440d982eb99b2b3da8f4c2f818 as working baseline; do not ask archive-versus-latest again.",
+    "Preserve native behavior and results. Any rubric, phase, prompt, extraction or aggregation correction must be an explicit separately named condition with patch/commit and hash.",
+    "Collect supplementary exact-request/run provenance, criterion coverage and native versus separately recomputed aggregates before evaluation."
+  ],
+  "limits": [
+    "Static findings only; no provider availability/response behavior tested.",
+    "No new software/preprint version discovered in supplied repositories/version families; not a claim that no unrelated publication exists.",
+    "Historical source report remains a historical check; this report supersedes its unresolved archive-versus-main choice."
+  ],
+  "retrieval_receipts": [
+    {
+      "name": "repo",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva",
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva",
+      "retrieved_at": "2026-11-03T10:49:31.950270+00:00",
+      "sha256": "744df12416f48894f53884ac7d7a5e1b3d30ce7c89953bf734cd6e60efb0f2f6",
+      "bytes": 6205,
+      "status": 200
+    },
+    {
+      "name": "main",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/commits/main",
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/commits/main",
+      "retrieved_at": "2026-11-03T10:49:32.197698+00:00",
+      "sha256": "6fd5f5906d9404321c300fa3be6343f5ee23bd90ca215b2eb6973e29d8307b99",
+      "bytes": 4574,
+      "status": 200
+    },
+    {
+      "name": "latest-release",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/releases/latest",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "tags",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/tags",
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/tags",
+      "retrieved_at": "2026-11-03T10:49:32.744592+00:00",
+      "sha256": "c940198d32026b2d1e8b4f09e5883443bcaaf7aec4a6556b5bf7767a3e1d8d06",
+      "bytes": 400,
+      "status": 200
+    },
+    {
+      "name": "preprint",
+      "url": "https://zenodo.org/api/records/19630859",
+      "resolved_url": "https://zenodo.org/api/records/19630859",
+      "retrieved_at": "2026-11-03T10:49:32.949796+00:00",
+      "sha256": "0a7ea36eddb7234a1ca39145a83e50fa9af4ba28ed3f8fbcc1b172d9e7db7dd9",
+      "bytes": 8940,
+      "status": 200
+    },
+    {
+      "name": "archive",
+      "url": "https://zenodo.org/api/records/19486055",
+      "resolved_url": "https://zenodo.org/api/records/19486055",
+      "retrieved_at": "2026-11-03T10:49:33.108585+00:00",
+      "sha256": "c788d2681ffa520ded175c0de7037bd79c2586fe8cdb5a07ff36b5026d313401",
+      "bytes": 3996,
+      "status": 200
+    },
+    {
+      "name": "releases",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/releases",
+      "retrieved_at": "2026-11-03T10:49:53.726165+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/releases",
+      "sha256": "c38ba8bc76a05bb15478b78d136b4b4efdcacdb18a5bbbb54ea4d5dfada99a9b",
+      "bytes": 1790,
+      "cache_file": "/tmp/dmp-eva-evolution/releases"
+    },
+    {
+      "name": "tag-release",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/releases/tags/v0.1",
+      "retrieved_at": "2026-11-03T10:49:53.726950+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/releases/tags/v0.1",
+      "sha256": "aed5af9116da19ed8f7d0f5616220c298a33b49b3bdc7a194b54d76b82c09606",
+      "bytes": 1788,
+      "cache_file": "/tmp/dmp-eva-evolution/tag-release"
+    },
+    {
+      "name": "tree",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/git/trees/b80b43de820d46440d982eb99b2b3da8f4c2f818?recursive=1",
+      "retrieved_at": "2026-11-03T10:49:53.727441+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/git/trees/b80b43de820d46440d982eb99b2b3da8f4c2f818?recursive=1",
+      "sha256": "9f8eb841fa9b364375126da28ee8967775fa94aad8c9d4ad84cc32ef5de8b018",
+      "bytes": 3729,
+      "cache_file": "/tmp/dmp-eva-evolution/tree"
+    },
+    {
+      "name": "archive-commit",
+      "url": "https://api.github.com/repos/usadellab/dmp-eva/commits/db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+      "retrieved_at": "2026-11-03T10:49:53.727744+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/usadellab/dmp-eva/commits/db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+      "sha256": "369831a8d8acae3a435a46522ceb7a57b837a0b4dadabf2af5df4dfda715a8a4",
+      "bytes": 5114,
+      "cache_file": "/tmp/dmp-eva-evolution/archive-commit"
+    },
+    {
+      "name": "preprint-latest",
+      "url": "https://zenodo.org/api/records/19630859/versions/latest",
+      "retrieved_at": "2026-11-03T10:49:53.728017+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19630859",
+      "sha256": "0a7ea36eddb7234a1ca39145a83e50fa9af4ba28ed3f8fbcc1b172d9e7db7dd9",
+      "bytes": 8940,
+      "cache_file": "/tmp/dmp-eva-evolution/preprint-latest"
+    },
+    {
+      "name": "preprint-versions",
+      "url": "https://zenodo.org/api/records/19630859/versions",
+      "retrieved_at": "2026-11-03T10:49:53.729654+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19630859/versions",
+      "sha256": "09791df9a4cfa319bf809053e81c5d521ab46fc377e36800094f393f4f08be58",
+      "bytes": 9075,
+      "cache_file": "/tmp/dmp-eva-evolution/preprint-versions"
+    },
+    {
+      "name": "archive-latest",
+      "url": "https://zenodo.org/api/records/19486055/versions/latest",
+      "retrieved_at": "2026-11-03T10:49:53.730098+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19486055",
+      "sha256": "c788d2681ffa520ded175c0de7037bd79c2586fe8cdb5a07ff36b5026d313401",
+      "bytes": 3996,
+      "cache_file": "/tmp/dmp-eva-evolution/archive-latest"
+    },
+    {
+      "name": "archive-versions",
+      "url": "https://zenodo.org/api/records/19486055/versions",
+      "retrieved_at": "2026-11-03T10:49:53.730368+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19486055/versions",
+      "sha256": "c17ce68837937979bca477b7a5950bdf1092db3f0b9ead4f995b8d5f6105e087",
+      "bytes": 4129,
+      "cache_file": "/tmp/dmp-eva-evolution/archive-versions"
+    },
+    {
+      "name": "paper.pdf",
+      "url": "https://zenodo.org/api/records/19630859/files/DMP_Evaluation_V1.0.pdf/content",
+      "retrieved_at": "2026-11-03T10:49:53.890993+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19630859/files/DMP_Evaluation_V1.0.pdf/content",
+      "sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+      "bytes": 676358,
+      "cache_file": "/tmp/dmp-eva-evolution/paper.pdf"
+    },
+    {
+      "name": "archive.zip",
+      "url": "https://zenodo.org/api/records/19486055/files/usadellab/dmp-eva-v0.1.zip/content",
+      "retrieved_at": "2026-11-03T10:49:53.893373+00:00",
+      "status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19486055/files/usadellab/dmp-eva-v0.1.zip/content",
+      "sha256": "50be0554e0e79a96c546954365e4e88e129a8c1432c0970b88a9f46f6abd1eb0",
+      "bytes": 59417,
+      "cache_file": "/tmp/dmp-eva-evolution/archive.zip"
+    },
+    {
+      "name": "latest--README.md",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/README.md",
+      "retrieved_at": "2026-11-03T10:49:53.977810+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/README.md",
+      "sha256": "59c75ea6e2b799b3334ed73dc67cc27953c70f5ea16824cfb5335a2ce168c1e7",
+      "bytes": 7185,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--README.md"
+    },
+    {
+      "name": "latest--eva.json",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+      "retrieved_at": "2026-11-03T10:49:53.991094+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+      "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+      "bytes": 13424,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--eva.json"
+    },
+    {
+      "name": "latest--index.html",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/index.html",
+      "retrieved_at": "2026-11-03T10:49:54.006946+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/index.html",
+      "sha256": "1ce4291b97e14bc763bfcf971edbde94351865496cac2f3f228a427379678947",
+      "bytes": 42684,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--index.html"
+    },
+    {
+      "name": "latest--js--api-config.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js",
+      "retrieved_at": "2026-11-03T10:49:54.033327+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js",
+      "sha256": "0f9ab8329f0cb89a329bdfcf9897bdf23947a869d6d088c91addc4c562aa9e0e",
+      "bytes": 11627,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--api-config.js"
+    },
+    {
+      "name": "latest--js--app.20260727a.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js",
+      "retrieved_at": "2026-11-03T10:49:54.107783+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js",
+      "sha256": "5cc2e08a83bbe39e77786ac49b3104dbae72e36a8d7c8737f0ec32c14de32ca5",
+      "bytes": 76461,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--app.20260727a.js"
+    },
+    {
+      "name": "latest--js--criteria-extractor.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js",
+      "retrieved_at": "2026-11-03T10:49:54.114411+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js",
+      "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+      "bytes": 30214,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--criteria-extractor.js"
+    },
+    {
+      "name": "latest--js--evaluator.20260423a.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js",
+      "retrieved_at": "2026-11-03T10:49:54.125565+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js",
+      "sha256": "987e8829a9c62369e6a9b0187697aa15ec1defa1357e504fdf3789a98a3af1c2",
+      "bytes": 18273,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--evaluator.20260423a.js"
+    },
+    {
+      "name": "latest--js--export-service.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/export-service.js",
+      "retrieved_at": "2026-11-03T10:49:54.165561+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/export-service.js",
+      "sha256": "10a9636b26b4559e908805f376fe05c7abc5018c39b4444985d527b924638739",
+      "bytes": 6249,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--export-service.js"
+    },
+    {
+      "name": "latest--js--file-parser.20260423a.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js",
+      "retrieved_at": "2026-11-03T10:49:54.175999+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js",
+      "sha256": "c0bf844fde574119ea69190bd1afba10e10b2c3637031d8949eb9eb7c4e1bc71",
+      "bytes": 12977,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--file-parser.20260423a.js"
+    },
+    {
+      "name": "latest--js--llm-service.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js",
+      "retrieved_at": "2026-11-03T10:49:54.223464+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js",
+      "sha256": "9af182a7249222aaff30e57e9e686839a4f67c6c67ee861d136ae5a58df8608b",
+      "bytes": 30161,
+      "cache_file": "/tmp/dmp-eva-evolution/latest--js--llm-service.js"
+    },
+    {
+      "name": "archive--README.md",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/README.md",
+      "retrieved_at": "2026-11-03T10:49:54.231072+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/README.md",
+      "sha256": "4cbe6538c0094876af25de4aa5cdeb09c10f8621499f27dc46f0fe94670e26ae",
+      "bytes": 4576,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--README.md"
+    },
+    {
+      "name": "archive--eva.json",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/eva.json",
+      "retrieved_at": "2026-11-03T10:49:54.309421+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/eva.json",
+      "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+      "bytes": 13424,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--eva.json"
+    },
+    {
+      "name": "archive--index.html",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/index.html",
+      "retrieved_at": "2026-11-03T10:49:54.309875+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/index.html",
+      "sha256": "4ed2f0a7c7c85028c6f3a63d884d030fb2910333028c9a58fe4a7e2f3ea4dd75",
+      "bytes": 36312,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--index.html"
+    },
+    {
+      "name": "archive--js--api-config.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/api-config.js",
+      "retrieved_at": "2026-11-03T10:49:54.338995+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/api-config.js",
+      "sha256": "86f4aa413d86147bfdb12a8ecf233c30146810c178b042795bf080e9dbe440a0",
+      "bytes": 10664,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--api-config.js"
+    },
+    {
+      "name": "archive--js--app.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/app.js",
+      "retrieved_at": "2026-11-03T10:49:54.356873+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/app.js",
+      "sha256": "0ba0b8e065e4cde34279bd37b1f5e69371b3695d44be2251f86903933c532ad2",
+      "bytes": 45487,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--app.js"
+    },
+    {
+      "name": "archive--js--criteria-extractor.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/criteria-extractor.js",
+      "retrieved_at": "2026-11-03T10:49:54.376898+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/criteria-extractor.js",
+      "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+      "bytes": 30214,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--criteria-extractor.js"
+    },
+    {
+      "name": "archive--js--evaluator.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/evaluator.js",
+      "retrieved_at": "2026-11-03T10:49:54.382299+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/evaluator.js",
+      "sha256": "59ef7eca333ff308c0088ef09cae03e29bda4e0eef9e4dda777cdb4d1e9a631c",
+      "bytes": 16012,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--evaluator.js"
+    },
+    {
+      "name": "archive--js--export-service.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/export-service.js",
+      "retrieved_at": "2026-11-03T10:49:54.408823+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/export-service.js",
+      "sha256": "10a9636b26b4559e908805f376fe05c7abc5018c39b4444985d527b924638739",
+      "bytes": 6249,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--export-service.js"
+    },
+    {
+      "name": "archive--js--file-parser.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/file-parser.js",
+      "retrieved_at": "2026-11-03T10:49:54.480511+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/file-parser.js",
+      "sha256": "6f53df1ac0539e7067cd42e79fc435e3b695afb4fd9235e0aa4efa9c45c59147",
+      "bytes": 12375,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--file-parser.js"
+    },
+    {
+      "name": "archive--js--llm-service.js",
+      "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/llm-service.js",
+      "retrieved_at": "2026-11-03T10:49:54.534574+00:00",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/db85e5a71271239f8fbe3e271e4aa8b7e71d6321/js/llm-service.js",
+      "sha256": "ff096145e1495367b2d7ffbb29abda6d566a21c1031a1784fdab552bfd3fc341",
+      "bytes": 24288,
+      "cache_file": "/tmp/dmp-eva-evolution/archive--js--llm-service.js"
+    }
+  ]
+}

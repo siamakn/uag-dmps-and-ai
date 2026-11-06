@@ -1,0 +1,555 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-06",
+  "scope": "Bounded two-seed primary-source follow-up, not a systematic review or novelty verification.",
+  "status": "presentation_methods_checked_thesis_methods_inaccessible",
+  "source_counts": {
+    "original_pdfs_obtained": 1,
+    "original_pdf_pages_text_read": 25,
+    "original_pdf_pages_visually_inspected": 5,
+    "thesis_methods_pages_read": 0,
+    "associated_pdf_contents_read": 0
+  },
+  "evidence_status_definitions": {
+    "observed": "Directly observed in retained original source or access response.",
+    "observed_cached_summary_only": "Cached primary-document summary extraction; original bytes unavailable and method details unverified.",
+    "not_reported_in_inspected_source": "Bounded negative reporting observation about actually inspected presentation only.",
+    "not_inspected": "Relevant original contents not read.",
+    "not_accessible": "Retrieval failed or access explicitly restricted.",
+    "inference": "Methodological implication, not a source observation."
+  },
+  "sources": {
+    "R1": {
+      "kind": "original_presentation_pdf",
+      "record_url": "https://zenodo.org/records/21401065",
+      "url": "https://zenodo.org/records/21401065/files/Session12.2_Anne-MarieTuikka_LIBER2026.pdf?download=1",
+      "local_path": "data/paired-dmp-corpus/methods-2026-11-06/repo-2026-slides.pdf",
+      "sha256": "c01586413b73146ea697566c82bfae5cf3981678d2403b01e130acad576ea222",
+      "bytes": 759585,
+      "physical_pages": 25,
+      "extracted_text_pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "visually_inspected_physical_pages": [
+        13,
+        16,
+        17,
+        18,
+        19
+      ],
+      "original_obtained": true,
+      "rights": "Deposit metadata.license.id is cc-by-4.0; third-party terms preserved."
+    },
+    "R2": {
+      "kind": "original_record_metadata",
+      "url": "https://zenodo.org/api/records/21401065",
+      "local_path": "data/paired-dmp-corpus/methods-2026-11-06/repo-record.json",
+      "sha256": "e5d7bbb1eba9eb681d43f5fc1087f8ea2e37624b5071fa99df570ce6816b181e",
+      "original_obtained": true
+    },
+    "T1": {
+      "kind": "thesis_pdf",
+      "record_url": "https://documentserver.uhasselt.be/handle/1942/46881",
+      "url": "https://documentserver.uhasselt.be/bitstream/1942/46881/1/783c1e87-3523-48ed-b391-bca8329082eb.pdf",
+      "original_obtained": false,
+      "sha256": null,
+      "availability": "not_accessible",
+      "reading_scope": "Initially returned cached search-service extraction of Dutch summary physical pp6-7 and contents pp10-11 only; methods/evaluation pages not inspected. Original bytes not preserved because inaccessible.",
+      "rights": "Institutional cached record reserves rights unless otherwise indicated; PDF-specific terms uninspected."
+    },
+    "T2": {
+      "kind": "unidentified_associated_pdf",
+      "url": "https://documentserver.uhasselt.be/bitstream/1942/46881/2/60cb9b69-cc1f-46ef-8ee8-e5ad8cea4c9f.pdf",
+      "original_obtained": false,
+      "sha256": null,
+      "availability": "not_accessible",
+      "reading_scope": "No contents inspected; relationship/type unknown."
+    },
+    "U1": {
+      "kind": "access_restriction_response_not_thesis",
+      "url": "https://documentserver.uhasselt.be/bitstream/1942/46881/1/783c1e87-3523-48ed-b391-bca8329082eb.pdf",
+      "local_path": "data/paired-dmp-corpus/methods-2026-11-06/uhasselt-access-response.html",
+      "sha256": "47a3403c051b728c19bdd45e3f0eee563c97deb83a2df0abc04131ec711aab13",
+      "http_status": 503,
+      "retrieved_utc": "2026-11-06T09:48:50.412570+00:00",
+      "original_obtained": true
+    }
+  },
+  "claims": [
+    {
+      "id": "R-N",
+      "dimension": "sample_units",
+      "status": "observed",
+      "claim": "28 DMP documents, 556 expert judgments, approximately 50 minutes per evaluation.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        16
+      ],
+      "section": null,
+      "limits": "Judgments are nested observations. Distinct project and reviewer counts are not supplied."
+    },
+    {
+      "id": "R-PROV",
+      "dimension": "corpus_provenance",
+      "status": "observed",
+      "claim": "Turku and Tampere university-library experts performed early-2026 validation; feedback changed tool/criteria; operational support followed in June.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        15
+      ],
+      "section": null
+    },
+    {
+      "id": "R-CALL",
+      "dimension": "corpus_provenance",
+      "status": "observed",
+      "claim": "Deposit description identifies the 2025 Research Council of Finland call and institutional review setting.",
+      "source_id": "R2",
+      "physical_pdf_pages": null,
+      "section": "metadata.description"
+    },
+    {
+      "id": "R-DEN",
+      "dimension": "denominators",
+      "status": "observed",
+      "claim": "Feedback screenshot: 27 reviews, Tampere 13/Turku 14, combined mean 54 minutes; usefulness-question response totals 25 and 24.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        19
+      ],
+      "section": null,
+      "limits": "Not reconciled with p16 total 28. Do not assume reviews equal distinct plans."
+    },
+    {
+      "id": "R-REF",
+      "dimension": "reference_exposure",
+      "status": "observed",
+      "claim": "Only flagged questions were expert-validated; interface shows AI response beside expert response and requests reasons for disagreement.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        16
+      ],
+      "section": null,
+      "limits": "Displayed validation is AI-exposed; no assertion that earlier institutional review was exposed."
+    },
+    {
+      "id": "R-REFMISS",
+      "dimension": "independent_review_adjudication",
+      "status": "not_reported_in_inspected_source",
+      "claim": "A complete blinded double-rated reference, inter-reviewer agreement, reviewer allocation and adjudication rules are not reported in inspected deck.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "section": null,
+      "limits": "Bounded deck reporting observation; not proof these procedures never existed."
+    },
+    {
+      "id": "R-PIPE",
+      "dimension": "model_input_exposure",
+      "status": "observed",
+      "claim": "Diagram separates applicability, sentence retrieval, evaluation of retrieved sentences and rule-based topic aggregation linked to original-document evidence.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        13,
+        14
+      ],
+      "section": null,
+      "limits": "Full-document judgment-model exposure is not established."
+    },
+    {
+      "id": "R-RUB",
+      "dimension": "instrument",
+      "status": "observed",
+      "claim": "Configurable questions derive from Finnish-template guidance and carry applicability/normative information.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        6,
+        9,
+        10,
+        11
+      ],
+      "section": null
+    },
+    {
+      "id": "R-MODEL",
+      "dimension": "model_configuration",
+      "status": "observed",
+      "claim": "European CSC-hosted Azure OpenAI infrastructure is named; consistency is described across repeated evaluations and AI models.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        8,
+        17
+      ],
+      "section": null
+    },
+    {
+      "id": "R-MODELMISS",
+      "dimension": "prompts_models_full_input",
+      "status": "not_reported_in_inspected_source",
+      "claim": "Exact model IDs, prompt bytes, settings, requests/repeats, software commit, retrieval/chunk/context/omission details are not supplied in deck.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "section": null
+    },
+    {
+      "id": "R-OUTCOME",
+      "dimension": "outcomes",
+      "status": "observed",
+      "claim": "p17 consistency/expert-agreement percentage pairs in explicit/implicit/additive/relational/adequacy category order: 94/56, 72/82, 72/72, 69/82, 83/58.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        17
+      ],
+      "section": null,
+      "limits": "Category denominator meanings not fully defined; not whole-corpus accuracy and not a validated correctness scale."
+    },
+    {
+      "id": "R-AGG",
+      "dimension": "outcomes",
+      "status": "observed",
+      "claim": "Topic-comparison screenshot shows 69.6% agreement and Cohen kappa 0.565.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        18
+      ],
+      "section": null,
+      "limits": "Precise aggregate data scope, per-cell denominators, confusion tables, weighting and intervals not supplied."
+    },
+    {
+      "id": "R-ERROR",
+      "dimension": "error_analysis",
+      "status": "observed",
+      "claim": "Authors report criterion literalism, applicability mistakes, invented GDPR mention, template-boilerplate assessment; later irrelevant/minor feedback, missed GDPR issues and mixed workload effects.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        20,
+        22
+      ],
+      "section": null,
+      "limits": "Reported examples/themes, not independently reproduced frequencies."
+    },
+    {
+      "id": "R-VERS",
+      "dimension": "lifecycle_paired_versions",
+      "status": "not_reported_in_inspected_source",
+      "claim": "Same-project early/late paired sampling and project-duration issue-date thresholds are not reported in 25-slide deck.",
+      "source_id": "R1",
+      "physical_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "section": null
+    },
+    {
+      "id": "R-MATERIAL",
+      "dimension": "public_materials",
+      "status": "observed",
+      "claim": "Inspected Zenodo deposit contains a single presentation PDF and no deposited corpus, labels, prompts or code package.",
+      "source_id": "R2",
+      "physical_pdf_pages": null,
+      "section": "files",
+      "limits": "No global absence claim. Service site linked on R1 p25 was inaccessible via web tool."
+    },
+    {
+      "id": "T-SUMMARY",
+      "dimension": "summary_only_sample",
+      "status": "observed_cached_summary_only",
+      "claim": "Dutch summary reports 11 researchers with prior DMP experience, two local LLM implementations, feedback-interface user-experience evaluation and a data-steward cognitive walkthrough.",
+      "source_id": "T1",
+      "physical_pdf_pages": [
+        6,
+        7
+      ],
+      "section": "0.3",
+      "limits": "Original hash unavailable. Not a verified methods extraction; corpus, allocation, model-validity denominator and exact model versions not established. No numeric correctness claim adopted."
+    },
+    {
+      "id": "T-corpus_provenance_and_document_N",
+      "dimension": "corpus_provenance_and_document_N",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-independent_review_adjudication",
+      "dimension": "independent_review_adjudication",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-exact_models_prompts_settings",
+      "dimension": "exact_models_prompts_settings",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-full_input_and_RAG_exposure",
+      "dimension": "full_input_and_RAG_exposure",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-validity_outcomes_denominators_and_errors",
+      "dimension": "validity_outcomes_denominators_and_errors",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-public_materials",
+      "dimension": "public_materials",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "T-lifecycle_paired_versions",
+      "dimension": "lifecycle_paired_versions",
+      "status": "not_inspected",
+      "claim": "Relevant thesis methods/evaluation material could not be inspected because institutional external access is restricted.",
+      "source_id": "T1",
+      "physical_pdf_pages": null,
+      "section": null,
+      "limits": "Not an absence or not-reported conclusion."
+    },
+    {
+      "id": "U-ACCESS",
+      "dimension": "access",
+      "status": "observed",
+      "claim": "Server returned HTTP503 HTML explicitly restricting external/student access because of automated-traffic pressure.",
+      "source_id": "U1",
+      "physical_pdf_pages": null,
+      "section": "HTML body",
+      "limits": "No contact or access-circumvention attempted."
+    }
+  ],
+  "thesis_navigation_not_read": {
+    "numbering_offset_inferred": null,
+    "targets": [
+      {
+        "section": "1.3",
+        "printed_pages": [
+          22
+        ],
+        "physical_pages": null
+      },
+      {
+        "section": "3.4.1-3.4.4",
+        "printed_pages": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "physical_pages": null
+      },
+      {
+        "section": "4.1.1-4.1.2",
+        "printed_pages": [
+          51,
+          52,
+          53
+        ],
+        "physical_pages": null
+      },
+      {
+        "section": "4.2.2-4.2.5",
+        "printed_pages": [
+          54,
+          55,
+          56
+        ],
+        "physical_pages": null
+      },
+      {
+        "section": "4.3-4.5",
+        "printed_pages": [
+          58,
+          59,
+          60,
+          61
+        ],
+        "physical_pages": null
+      },
+      {
+        "section": "Table4.1",
+        "printed_pages": [
+          57
+        ],
+        "physical_pages": null
+      }
+    ],
+    "physical_page_mapping": "Unverified; navigation uses printed pages from cached contents only."
+  },
+  "implications": [
+    {
+      "status": "inference",
+      "text": "Provide full-coverage independent reference ratings, retain original ratings before adjudication and expose denominators and reviewer AI exposure.",
+      "basis_claim_ids": [
+        "R-REF",
+        "R-REFMISS",
+        "R-DEN"
+      ]
+    },
+    {
+      "status": "inference",
+      "text": "Separate retrieval, inference, applicability and rubric ambiguity errors, while matching complete evidence exposure in configured prompt conditions.",
+      "basis_claim_ids": [
+        "R-PIPE",
+        "R-ERROR"
+      ]
+    },
+    {
+      "status": "inference",
+      "text": "Keep repeat consistency distinct from agreement, and treat six projects as six clusters.",
+      "basis_claim_ids": [
+        "R-OUTCOME",
+        "R-N"
+      ]
+    },
+    {
+      "status": "inference",
+      "text": "Describe contribution as a small provenance-rich six-project same-scope paired-version pilot with explicit lifecycle eligibility and pinned DMP-EVA evaluation; no first-study or exhaustive-gap claim.",
+      "basis_claim_ids": [
+        "R-VERS",
+        "T-lifecycle_paired_versions"
+      ]
+    }
+  ],
+  "authorized_actions_performed": [
+    "read_only_primary_source_retrieval",
+    "presentation_text_and_selected_visual_inspection",
+    "new_methods_report_creation"
+  ],
+  "actions_not_performed": [
+    "human_labels",
+    "model_requests",
+    "platform_edits",
+    "external_messages",
+    "existing_research_file_edits",
+    "selection_changes",
+    "experimental_freeze"
+  ],
+  "remaining_dependency": "Thesis methods/evaluation access; no immediate user reading task."
+}

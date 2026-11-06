@@ -1,0 +1,276 @@
+{
+  "date": "2026-11-04",
+  "status": "bounded_sample_only_not_ready_for_benchmark_input_freeze",
+  "method": "Compare existing UTF-8 pdftotext -layout and default extracts, split on form feeds, against page images rendered with pdftoppm -f PAGE -l PAGE -scale-to 1250 -singlefile -png; physical PDF page numbers are 1-based. Selection was purposive: one table/body and one annex or near-end page per document, not random. SHA-256 of all three files verified against text-extraction.json.",
+  "limitations": [
+    "24 pages across 12 PDFs; not full-document completeness or universal preference. Image-based figures, hyperlinks, invisible text, all checkboxes, non-Latin scripts and mathematical notation are not systematically tested. No clear mathematical expressions, non-Latin script, or checked checkboxes were present in these sampled pages; accented GIOŚ was checked.",
+    "Text cannot express table borders, empty form boxes, text colors or highlighting faithfully. No OCR or remediation performed. Contents/annex checks only cover sampled end pages; absence of a sampled annex does not imply none exists.",
+    "All layouts and 11 of 12 reading-order alternatives exceeded the separately documented 30720 UTF-16-unit native pre-trim threshold; actual parser behavior and truncation are described in tool-preflight.json. The sample does not demonstrate that any full text survives submission."
+  ],
+  "documents": [
+    {
+      "project": "iMagine",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101058625/7759984.pdf",
+        "sha256": "475634f9fdd5ed0ebd320e7d153670d7bb23ae98de883c3d03a6ff21ecab4304"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101058625/7759984.txt",
+        "sha256": "11ab5876923205dcc4c126df490e19a7461f0a757b6aac6b771db636d3b09643"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101058625/7759984.reading-order.txt",
+        "sha256": "8b2dc92fa8f123ff92a59cabef9b0e32a70ea50ca48c3d7a6b27d7a1aa80e637"
+      },
+      "physical_pdf_pages": [
+        13,
+        50
+      ],
+      "sample_preference": "layout",
+      "observation": "p13 two-column prompt and answer interleave line-by-line in reading order; layout keeps columns aligned. p50 reading order moves the second Yes below the following question; layout places it beside its question."
+    },
+    {
+      "project": "iMagine",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101058625/17055683.pdf",
+        "sha256": "5655797dbbf1392a6f7979d7521e948c5c9161d7fa6f09a046db8e8e1094fcd0"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101058625/17055683.txt",
+        "sha256": "69604bb5ff55f6c557a7d8db5e123aa9621fa69de75d922b9f57e3e91a92aed7"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101058625/17055683.reading-order.txt",
+        "sha256": "4ce8116820044b603d172877ae322cc2b70cb0edbbfa18553dcef424200ee178"
+      },
+      "physical_pdf_pages": [
+        25,
+        65
+      ],
+      "sample_preference": "layout",
+      "observation": "p25 reading order interleaves the availability question with answer text; p65 reorders lines within the image-processing question and collects bullet glyphs apart from their text. Layout preserves columns and bullets better, although it still flattens cells."
+    },
+    {
+      "project": "EGI-ACE",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101017567/6602163.pdf",
+        "sha256": "4a0a8a2aa3ce0be13f16deaba02c811f4928528de663a8a09c0d73615f571fcc"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101017567/6602163.txt",
+        "sha256": "549a9fba9d9d758f52c46a7f44d66bb304f7385066e2d614f059969049b31cb9"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101017567/6602163.reading-order.txt",
+        "sha256": "31e3120d1c9571f2db13d1b34eb28602c1079948ffb03af3b7d76ee35e6d0540"
+      },
+      "physical_pdf_pages": [
+        20,
+        54
+      ],
+      "sample_preference": "layout",
+      "observation": "p20 both retain field names and answer prose; layout preserves left-column labels. p54 reading order detaches bullet glyphs from the two target groups; layout keeps each on its line."
+    },
+    {
+      "project": "EGI-ACE",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101017567/19402005.pdf",
+        "sha256": "a827195d2d40780d0492d9513c2c65347bb209ab4880fc07e47f891c889906c5"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101017567/19402005.txt",
+        "sha256": "9bbaf694dbbeff3d6789430d2b19a168c8e84a4edbb2adf150a117e53f3d1fba"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101017567/19402005.reading-order.txt",
+        "sha256": "a5ccad5f24f31cc78947aab30ae6d8bc856f244908129fea6e5ceda42fe88bef"
+      },
+      "physical_pdf_pages": [
+        33,
+        71
+      ],
+      "sample_preference": "layout",
+      "observation": "p33 layout preserves field-to-content alignment and bullet lines; reading order separates bullet glyphs and content. p71 final field and answer are recognizable in both."
+    },
+    {
+      "project": "NANOFACTS",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/952259/13847570.pdf",
+        "sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/952259/13847570.txt",
+        "sha256": "03b14b6e63cee940a933ff8bdeb87d98610f99c8f3206a684ba94fa09f6d1664"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/952259/13847570.reading-order.txt",
+        "sha256": "0019d5a23675d0682c908073bfe47fc39fb2b203985f35c2ba16a84e34c3eaaa"
+      },
+      "physical_pdf_pages": [
+        8,
+        26
+      ],
+      "sample_preference": "layout",
+      "observation": "p8 reading order fragments the final table row across columns; layout retains spatial association. p26 shows two empty response boxes in the image, absent as boxes in both text files; question text remains."
+    },
+    {
+      "project": "NANOFACTS",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/952259/13857898.pdf",
+        "sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/952259/13857898.txt",
+        "sha256": "37ebc61a8cd8c6b1d220fd5082f1118b2c9e60cab04dfea5a818a0fdb0127d54"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/952259/13857898.reading-order.txt",
+        "sha256": "8b07f2b192d37418f63405a223ab425e5449201bf55434a01c63fc6eac3ed6c4"
+      },
+      "physical_pdf_pages": [
+        7,
+        24
+      ],
+      "sample_preference": "layout",
+      "observation": "p7 reading order interleaves dataset types, formats and sizes across rows; layout retains approximate columns. p24 contains empty response boxes absent as boxes in both; visible questions remain."
+    },
+    {
+      "project": "AGRICORE",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.pdf",
+        "sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.txt",
+        "sha256": "aa65740540c63a6c09fecbb0b74dd4b127b694a6251b33fae43eea8600aa85a1"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.reading-order.txt",
+        "sha256": "5814adfd2be1de9bec99052d0a419cb24333096d85b7cbe34bc0d211a7a7b169"
+      },
+      "physical_pdf_pages": [
+        10,
+        19
+      ],
+      "sample_preference": "layout",
+      "observation": "p10 reading order groups all category labels before dataset names, weakening associations; layout preserves column placement. p19 layout maintains deliverable table row; reading order separates headers and fields. GIOŚ is retained in both."
+    },
+    {
+      "project": "AGRICORE",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.pdf",
+        "sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.txt",
+        "sha256": "7d9f222095a0f93ccfa69e6b09e85a4609dd7a0deabd2e1dd84d0dd7b2a4cd77"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.reading-order.txt",
+        "sha256": "98492119b65989003af33c4724bf6cb1bef9490522f551d02c8fbefb100e7e4d"
+      },
+      "physical_pdf_pages": [
+        17,
+        34
+      ],
+      "sample_preference": "layout",
+      "observation": "p17 reading order lists field labels together before their respective values; layout preserves associations. p34 reading order groups the two IDs and mixes row values; layout keeps rows spatially aligned."
+    },
+    {
+      "project": "SUSTRACK",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101081823/14497074.pdf",
+        "sha256": "f1220cde868b34a446310f3a755e0ec600696e6db832b708cfbf39c301ef08b4"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101081823/14497074.txt",
+        "sha256": "0cb5ab3d2721fe379f6dd8bb570dd1b4e1ed514dd2693881a730efcf116153aa"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101081823/14497074.reading-order.txt",
+        "sha256": "653cc3c7990ab8ae603ca972d4abcc7d3deba17beb95c0402e74b7e6dd022e4e"
+      },
+      "physical_pdf_pages": [
+        24,
+        54
+      ],
+      "sample_preference": "layout",
+      "observation": "p24 reading order separates dataset identifiers, fields and formats; layout preserves approximate rows. p54 annex form text and placeholders are present, but color and yellow highlighting that distinguish instructions and placeholders are lost in both, and table structure is flattened."
+    },
+    {
+      "project": "SUSTRACK",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101081823/19161966.pdf",
+        "sha256": "701789cbd909a8bd0f7128a6cba262dfb18bf6cd74881c4dc7520eb8637245e5"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101081823/19161966.txt",
+        "sha256": "6d38dc9db98bf516376c4a2f131152a94321d33be59a0dabc20d5973e385180e"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101081823/19161966.reading-order.txt",
+        "sha256": "8f2b6dbb89aab5741ddb2e3a86815b8ac8d7fc5560df22189bb139d2f412a9b4"
+      },
+      "physical_pdf_pages": [
+        29,
+        67
+      ],
+      "sample_preference": "layout",
+      "observation": "p29 reading order separates row fields and identifiers; layout retains spatial cues. p67 annex inventory is heavily fragmented in both; reading order loses row relationships more severely. Both break DOIs across lines, so reconstructing identifiers requires care."
+    },
+    {
+      "project": "RECHARGE",
+      "role": "early",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101061233/17733866.pdf",
+        "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101061233/17733866.txt",
+        "sha256": "f99354ff6662c65b0afdfe55bc7192dcfdfc95910772657758c87484abaa25d1"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101061233/17733866.reading-order.txt",
+        "sha256": "74fe2b14b2abc076d0fca06bf9836ddd9965654897e5e3091732080facafc739"
+      },
+      "physical_pdf_pages": [
+        7,
+        14
+      ],
+      "sample_preference": "layout",
+      "observation": "p7 reading order lists metadata names before their descriptions, losing row associations; layout aligns them. p14 closing prose reads coherently in both."
+    },
+    {
+      "project": "RECHARGE",
+      "role": "late",
+      "pdf": {
+        "path": "data/paired-dmp-corpus/101061233/18403735.pdf",
+        "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce"
+      },
+      "layout": {
+        "path": "data/paired-dmp-corpus/101061233/18403735.txt",
+        "sha256": "f9915b30eb451bf7b427b85ed6b28b84007bbbfa5f7c3a24d33ad7388ff232a3"
+      },
+      "reading_order": {
+        "path": "data/paired-dmp-corpus/101061233/18403735.reading-order.txt",
+        "sha256": "bfcf090594e6993ee590779dae1e618c2dd800ddd87b11609dec846380c3d987"
+      },
+      "physical_pdf_pages": [
+        9,
+        17
+      ],
+      "sample_preference": "similar_on_sample",
+      "observation": "p9 both retain metadata label/description sequence, layout additionally preserves columns; p17 closing prose reads coherently in both. This is a sample-only comparison, not a whole-document choice."
+    }
+  ]
+}

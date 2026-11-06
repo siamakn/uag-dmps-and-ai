@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "latest_continuation_checkpoint": "scientific-preparation-2026-11-06.json",
+  "latest_continuation_readable": "scientific-preparation-2026-11-06.md",
+  "previous_continuation_checkpoint": "continuation-2026-11-06.json",
+  "calibration_phase_preparation_D15": {
+    "decision_date": "2026-11-06",
+    "choice": "both_early_interpretations_in_separate_calibration_conditions",
+    "materials": "dual-phase-calibration.json",
+    "main_benchmark_phase_policy_approved": false,
+    "human_pilot": "still_deferred",
+    "human_assessment_records_created": 0
+  },
+  "updated_date": "2026-11-04",
+  "timezone": "Europe/Berlin",
+  "study_status": "six_pair_proposal_and_technical_preparation_documented_human_pilot_deferred",
+  "entrypoint": "research/paired-dmp-study/README.md",
+  "baseline_git_commit": "784712eff138f719a888451f2cee728085cd4bcd",
+  "target": {
+    "projects": 6,
+    "documents": 12,
+    "disciplines": 6,
+    "one_project_per_discipline": true,
+    "same_project_same_dmp_scope_required": true,
+    "tool": "https://github.com/usadellab/dmp-eva",
+    "reference": "independent_human_assessment_with_proposed_adjudication",
+    "timing_basis": "documented_version_issue_date",
+    "early_upper_fraction_inclusive": 0.5,
+    "late_lower_fraction_exclusive": 1.0,
+    "proposed_early_lower_fraction_inclusive": 0.0,
+    "pre_start_policy_status": "proposed_exclusion_confirm_if_material",
+    "publication_date_fallback_approved": false,
+    "search_policy": "fresh_across_full_pool_no_privilege_for_historical_selection",
+    "quality_based_selection_allowed": false,
+    "software_baseline_policy": "latest_upstream_pinned_per_campaign_with_recorded_publication_archive_discrepancies",
+    "working_commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+    "publication_tool_convergence_required": false,
+    "discipline_assignment_policy": "any_documented_cordis_membership_one_slot_per_project_report_dominant_branch",
+    "project_end_policy": "latest_authoritative_end_including_extensions_preserve_original_and_sensitivity",
+    "calibration_scale": {
+      "id": "ordinal_012_calibration_v1",
+      "approved_for": "calibration",
+      "values": {
+        "0": "not_evidenced",
+        "1": "partial",
+        "2": "sufficient"
+      },
+      "NA_and_uncertainty": "separate_null_score_states",
+      "criterion_specific_anchors": "draft_pending_calibration"
+    },
+    "human_reviewers": {
+      "pilot": {
+        "id": "R-PILOT-01",
+        "name": "Siamak",
+        "status": "available_in_principle_but_pilot_deferred"
+      },
+      "benchmark": "not_yet_assigned; UAG_members_or_librarians_possible",
+      "Andrej_assignment": "not_assumed"
+    }
+  },
+  "completed": [
+    "read_repository_instructions_and_existing_selection",
+    "read_supplied_october_7_minutes_excerpt",
+    "read_primary_preprint_and_inspect_pinned_current_and_archived_tool_sources",
+    "audit_local_publication_date_candidate_leads_with_reproducible_script",
+    "independently_crosscheck_audit_counts_and_key_static_source_findings",
+    "record_user_answers_D01_D02_D03",
+    "save_staged_plan_timing_rationale_and_claude_platform_brief",
+    "read_full_google_doc_minutes",
+    "fresh_whole_pool_version_family_inventory",
+    "live_latest_tool_check_and_discrepancy_register",
+    "independent_continuation_review",
+    "record_continuation_decisions_D04_D07",
+    "bounded_humanities_batch_01_source_inspection",
+    "independent_humanities_batch_01_check",
+    "record_D08_D10_discipline_end_date_and_autonomy_decisions",
+    "six_same_scope_pairs_independently_supported",
+    "six_pair_proposal_and_twelve_source_PDFs_preserved",
+    "current_CORDIS_paths_and_dominance_recomputed_from_snapshots",
+    "cohort_hash_identity_and_threshold_verification",
+    "human_review_protocol_schema_and_blank_calibration_materials_drafted",
+    "record_FAIR_EASE_user_clarification_action_D11",
+    "isolated_native_tool_preflight_44assertions_no_model_calls",
+    "two_text_representations_extracted_and_hashed_for12PDFs",
+    "blank_calibration_materials_and_pinned_framework_preserved",
+    "tool_improvement_brief_saved",
+    "record_D12_D13_scale_approval_and_pilot_vs_benchmark_reviewer_distinction",
+    "prepare_and_independently_check_single_criterion_pilot",
+    "resolve_pilot_0_vs1_anchor_overlap_without_prefilling_judgment",
+    "save_Claude_human_review_pilot_brief",
+    "record_D14_pilot_deferral_without_creating_any_assessment_label",
+    "bounded_extraction_fidelity_QA_24pages_12PDFs_36hashes",
+    "meeting_ready_progress_note_saved_not_sent"
+  ],
+  "not_completed": [
+    "systematic_related_work_search_for_novelty",
+    "implement_platform_changes",
+    "collect_human_reference_labels",
+    "run_models_or_benchmark",
+    "finalize_rubric_crosswalk_and_campaign_configuration",
+    "human_approval_and_calibration_of_reference_instrument",
+    "freeze_cohort_protocol_and_model_campaign",
+    "resolve_intended_model_submission_terms_for_AGRICORE"
+  ],
+  "verified_pairs": 6,
+  "selected_pairs": 0,
+  "discovery_audit": {
+    "basis": "publication_dates_only_not_issue_date_eligibility",
+    "dataset_records": 2650,
+    "heuristic_actual_plans": 2504,
+    "eu_same_grant_full_date_leads": 19,
+    "he_same_grant_full_date_leads": 11,
+    "lineage_verified": false,
+    "full_evidence": "corpus-audit.json"
+  },
+  "preserved_selection": {
+    "path": "data/selection.json",
+    "tracked_at_start": false,
+    "records": 12,
+    "distinct_projects": 12,
+    "sha256": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+    "role": "historical_only"
+  },
+  "pending_decisions": [
+    "pre_start_handling_if_relevant",
+    "recency_scope_and_language",
+    "sampling_window_to_rubric_phase_mapping",
+    "human_score_anchors_applicability_and_primary_outcome",
+    "mainz_model_availability_run_settings_and_repetitions",
+    "native_prefix_only_baseline_vs_separately_configured_full_input_full_rubric_condition"
+  ],
+  "access": {
+    "full_google_minutes": "resolved_http_200_read_only_txt_export_no_user_action_needed",
+    "google_drive_plugin": "not_installed_not_needed_for_successful_minutes_retrieval",
+    "account_remaining_allowance": "unknown"
+  },
+  "next_actions": [
+    "refine_reproducible_full_document_input_handling_and_page_table_preservation",
+    "use_existing_Claude_selection_and_review_handoffs_when_implementation_is_requested",
+    "keep_FAIR_EASE_reserve_provisional_pending_user_clarification",
+    "resume_human_calibration_only_when_user_ready_or_reviewers_available",
+    "freeze_protocol_configuration_and_reference_labels_before_agreement_claims"
+  ],
+  "agent_work": [
+    {
+      "role": "corpus_audit",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "corpus-audit.md"
+    },
+    {
+      "role": "study_sources",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "study-sources.md"
+    },
+    {
+      "role": "platform_spec",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "claude-platform-brief.md"
+    },
+    {
+      "role": "independent_review",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "review.md"
+    },
+    {
+      "role": "latest_eva_check",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "tool-evolution.md"
+    },
+    {
+      "role": "version_inventory_and_humanities_batch",
+      "model": "gpt-6.1-terra",
+      "effort": "high",
+      "output": "version-inventory.md"
+    },
+    {
+      "role": "continuation_review",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "output": "continuation-review.md"
+    }
+  ],
+  "checks": {
+    "corpus_counts": "independent_recalculation_passed",
+    "static_tool_findings": "independently_checked_not_runtime_tests",
+    "dashboard_tests": "not_run_no_platform_changes_and_current_harness_writes_selection",
+    "production_data_modified": false,
+    "benchmark_model_calls": 0,
+    "json_validation": "passed_21_files",
+    "local_markdown_links": "passed",
+    "timing_example": "verified",
+    "git_diff_whitespace": "passed",
+    "historical_selection_checksum": "unchanged",
+    "cohort_provenance_verifier": "passed_6projects_6slots_12distinctPDFs_all_retained_date_alternatives_6CORDIS_snapshots",
+    "tool_preflight": "44of44_observed_behavior_assertions_passed; zero_model_calls",
+    "python37_syntax": "prepare_and_verify_helpers_passed",
+    "source_text_QA": "bounded_24page_visual_extraction_check_completed; full_document_QA_not_established",
+    "pilot_packet": "independently_checked_sources_navigation_blank_fields_and_corrected_anchors"
+  },
+  "updated_at_utc": "2026-11-04T14:59:46.160362+00:00",
+  "meeting_source": {
+    "export_url": "https://docs.google.com/document/d/1weSr-2fSnyMoOCq-AynX9tzCVwhxgh6woGyttz4i91w/export?format=txt",
+    "sha256": "440080d67adbee24eecc03645fb3b55f849babadf03cc4668de343a1374dd74f",
+    "bytes": 13964,
+    "report": "meeting-reconciliation.md"
+  },
+  "fresh_version_inventory": {
+    "report": "version-inventory.md",
+    "json": "version-inventory.json",
+    "records": 1234,
+    "stored_grant_families": 908,
+    "multi_record_families": 208,
+    "single_record_families": 700,
+    "publication_window_filter": false,
+    "issue_dates_verified": false,
+    "same_scope_verified": false,
+    "independent_count_check": "passed"
+  },
+  "orchestration": {
+    "parent_model": "gpt-6.1-sol",
+    "worker_policy": "Terra high for bounded inventory/extraction; Sol high for complex source analysis and independent review",
+    "outputs_persisted_in_repository": true,
+    "last_worker_failure": "workspace_out_of_credits_three_retrieval_agents",
+    "current_strategy": "continue_independent_technical_preparation; human_pilot_deferred_no_current_user_task"
+  },
+  "humanities_batch_01": {
+    "report": "humanities-batch-01.md",
+    "evidence": "humanities-batch-01.json",
+    "families": [
+      "HeriTACE",
+      "E-RIHS IP",
+      "DIAMAS"
+    ],
+    "qualifying_pairs_verified": 0,
+    "pdf_files_inspected": 4,
+    "search_coverage": "bounded_not_exhaustive_zenodo_version_and_grant_search_http_403",
+    "strongest_followup": "retrieve_DIAMAS_Update_2_document_and_issue_date",
+    "independent_review": "passed_bounded_dates_scope_and_arithmetic"
+  },
+  "verified_pairs_meaning": "independent_agent_verification_of_identity_timing_current_classification_and_provenance_not_human_quality_assessment",
+  "proposed_pairs": 6,
+  "frozen_pairs": 0,
+  "proposal": {
+    "manifest": "cohort-proposal.json",
+    "readable": "cohort-proposal.md",
+    "status": "working_proposal_not_experimental_freeze",
+    "projects": [
+      "iMagine",
+      "EGI-ACE",
+      "NANOFACTS",
+      "AGRICORE",
+      "SUSTRACK",
+      "RECHARGE"
+    ],
+    "local_source_root": "data/paired-dmp-corpus",
+    "pdf_documents": 12,
+    "source_CORDIS_snapshots": 6,
+    "files_ignored_by_git": true,
+    "verification_command": "python3 research/paired-dmp-study/verify-cohort.py",
+    "verification_result": "passed",
+    "AGRICORE_terms": "blanket_reuse_licence_unknown_preserved_links_only_public_manifest"
+  },
+  "pending_user_questions": [],
+  "FAIR_EASE_clarification": {
+    "status": "provisional_reserve",
+    "user_will_obtain_clarification": true,
+    "draft": "rights-clarification.md",
+    "external_message_sent_by_agent": false,
+    "core_cohort_depends_on_it": false
+  },
+  "calibration": {
+    "proposal": "calibration-proposal.json",
+    "blank_worksheet": "calibration-worksheet.md",
+    "framework_index": "criteria-index.json",
+    "reference_protocol": "human-review-protocol-draft.md",
+    "record_schema": "human-review-record.schema.json",
+    "projects_outside_core": [
+      "AD4GD",
+      "PathOS"
+    ],
+    "human_assessment_records": 0,
+    "scoring_scale": "approved_ordinal_012_calibration_v1",
+    "pilot_reviewer": "R-PILOT-01_Siamak",
+    "benchmark_reviewer_assignment": "unassigned",
+    "status": "deferred_not_failed"
+  },
+  "tool_preflight": {
+    "report": "tool-preflight.md",
+    "results": "tool-preflight.json",
+    "reproducer": "tool-preflight.py",
+    "actual_function_checks": 44,
+    "passed": 44,
+    "model_or_provider_requests": 0,
+    "network_stub_invocations": 0,
+    "native_parser_truncated_layout_texts": 12,
+    "native_parser_truncated_reading_order_texts": 11,
+    "meaning": "observed_behavior_confirmed_not_product_quality_validation",
+    "source_cache": "data/paired-dmp-corpus/upstream/dmp-eva-b80b43de820d46440d982eb99b2b3da8f4c2f818"
+  },
+  "pilot": {
+    "id": "PILOT-01",
+    "reviewer_id": "R-PILOT-01",
+    "instructions": "pilot-start.md",
+    "blank_form": "pilot-template.json",
+    "independent_check": "pilot-review.md",
+    "document": "PathOS_D3.5_v2.0_17578116_outside_core",
+    "criterion": "1b",
+    "intended_phase": "end_project_working_pilot_choice",
+    "scale_id": "ordinal_012_calibration_v1",
+    "anchor_status": "draft_for_calibration_0_vs1_overlap_corrected",
+    "human_response_received": false,
+    "human_assessment_records": 0,
+    "formal_benchmark_reviewer_allocation": "unassigned",
+    "status": "deferred_by_user_before_assessment",
+    "deferral_reason": "needs_time_to_read_publication_and_familiarize_with_framework",
+    "response_to_request_received": true,
+    "resume_policy": "only_when_user_ready_or_reviewers_recruited; do_not_repeat_rating_request_now"
+  },
+  "source_preparation_QA": {
+    "report": "extraction-qa.md",
+    "evidence": "extraction-qa.json",
+    "sampled_physical_pages": 24,
+    "documents": 12,
+    "source_and_extraction_hashes_checked": 36,
+    "method": "purposive_two_pages_per_document; PDF_image_vs_layout_and_reading_order",
+    "source_quality_scores_created": false,
+    "conclusion": "neither_text_representation_ready_to_freeze; layout_generally_better_in_samples",
+    "whole_document_fidelity_established": false
+  },
+  "meeting_note": "uag-progress-note.md"
+}

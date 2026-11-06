@@ -1,0 +1,24 @@
+# Initial related-work positioning
+
+Checked 2026-11-03. This is a bounded seed review, not a systematic or exhaustive literature review. The primary-source records below were actually opened; source abstracts/descriptions support only the limited summaries recorded here. No claim of global novelty is established.
+
+| Source and reading scope | Relevant evidence | Consequence for this study |
+| --- | --- | --- |
+| [Repo et al. (2026), Human-Centred AI for Data Management Plan Assessment and Support](https://zenodo.org/records/21401065), primary presentation landing-page description read | Describes a DMP Analyser study using Finnish 2025 funding-call plans and existing expert feedback, with criterion-level AI/human comparisons and sentence-level evidence traceability. | Human-versus-AI DMP assessment already has close related work. The contribution proposed here must be more specific: an open, provenance-rich paired-version sample, a lifecycle-sensitive rubric and versioned DMP-EVA evaluation. Do not claim the first human/AI comparison. |
+| [Vandenberk (2025), Data management plan completion and reviewing through human-in-the-loop AI](https://documentserver.uhasselt.be/handle/1942/46881), institutional thesis record/abstract read; thesis PDF identified but not fully reviewed | Describes a human-in-the-loop DMP assistance system with prompt engineering/RAG, user feedback and usability evaluation. | Distinguish user experience of authoring/support from agreement with a calibrated human review reference. Reviewer-interface requirements can be informed by this work after reading its methods. |
+| [Gajbe, Tiwari, Gopalji and Singh (2021), Evaluation and analysis of Data Management Plan tools: a parametric approach](https://digitalcommons.isical.ac.in/journal-articles/1985/), author-institution repository abstract read; [publisher record](https://www.sciencedirect.com/science/article/pii/S0306457320309699) identified | Compares 14 DMP tools against 45 parameters. The institutional record does not provide full text. | Tool-feature coverage is a different evaluation target from judging the correctness and evidential support of AI assessments of individual DMPs. Use it as context, not evidence validating an LLM scoring scale. Note all four authors; the meeting shorthand omitted Gopalji. |
+| [Science Europe (2021), Practical Guide to the International Alignment of Research Data Management, extended edition](https://zenodo.org/records/4915862), primary description read; PDF identified but rubric not yet fully inspected in this pass | The extended guide includes a DMP evaluation rubric and core DMP requirements. | A transparent crosswalk may clarify the Infra-DMP framework's relationship to established criteria. Do not assume score scales or lifecycle thresholds are interchangeable. |
+
+The supplied Mansour et al. preprint has already been read in `study-sources.md`. It supplies the stage-sensitive framework, while `tool-evolution.md` establishes what latest DMP-EVA actually implements. Keeping those two sources distinct is part of reproducibility rather than a reason to abandon the study.
+
+## Bounded search log
+
+Alongside the sources explicitly named in the meeting minutes, web searches on 2026-11-03 used `"DMP" "assessment" "human" "benchmark" "2026" lifecycle evaluation` and `"Evaluation and analysis of data management plan tools" Gajbe 2021`. The returned results were screened for primary sources; only the records above informed this note. This is not a complete database search, deduplicated systematic review or proof of absence of other longitudinal benchmarks.
+
+## Proposed contribution, subject to further literature review
+
+An auditable pilot can contribute a metadata-selected set of same-scope DMP version pairs, a human reference with retained individual judgments and evidence locations, and reproducible results for a pinned current DMP-EVA configuration. Its distinctive focus is whether criterion-level tool/human discrepancies change between first-half and post-end versions of the same project plan, while documenting extraction, rubric, phase and aggregation behavior.
+
+This can provide reusable reviewer material and practical recommendations for the AI/DMP subgroup and NFDI. Six projects support a descriptive paired case study. They do not justify discipline rankings, population accuracy estimates or causal claims that stage itself changes tool reliability. An open EU-funded sample also does not establish generalization to confidential or German-funded DMPs.
+
+Before manuscript novelty claims: read Repo et al.'s presentation and associated methods/materials, the relevant thesis methods, Science Europe's rubric, and additional primary studies found through backward/forward citation searching. Record source availability and avoid treating unavailable full text as evidence that a method is absent.

@@ -1,0 +1,2256 @@
+{
+  "wrapper_id": "DUAL-PHASE-CALIBRATION-PREPARATION-v1",
+  "status": "blank_calibration_preparation_not_human_assessment_records",
+  "prepared_date": "2026-11-06",
+  "decision": {
+    "id": "D15",
+    "user_choice": "Prepare both early-phase interpretations as separate calibration conditions; more reviewer work",
+    "approval_scope": "Preparation of separate early-phase calibration conditions only",
+    "main_benchmark_phase_approved": false,
+    "phase_specific_anchors_approved": false,
+    "pilot_resumed": false,
+    "main_model_matrix_changed": false,
+    "extra_main_model_calls_approved": false
+  },
+  "scale": {
+    "id": "ordinal_012_calibration_v1",
+    "approval": "approved_for_calibration",
+    "values": [
+      0,
+      1,
+      2
+    ],
+    "criterion_phase_anchors": "draft_need_real_human_calibration",
+    "no_default_scores": true,
+    "numeric_native_mapping": null
+  },
+  "framework_source": {
+    "path": "data/paired-dmp-corpus/framework/DMP_Evaluation_V1.0.pdf",
+    "url": "https://zenodo.org/records/19630859/files/DMP_Evaluation_V1.0.pdf?download=1",
+    "sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "kind": "preprint_version_1.0_table_2"
+  },
+  "native_source_provenance": {
+    "path": "data/paired-dmp-corpus/upstream/dmp-eva-b80b43de820d46440d982eb99b2b3da8f4c2f818/latest--eva.json",
+    "url": "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+    "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+    "kind": "default_source_rubric_not_effective_prompt"
+  },
+  "source_manifests": [
+    {
+      "path": "research/paired-dmp-study/calibration-proposal.json",
+      "sha256": "8ca0e1b849cf97557072b66a32fb6326ad8cce39c2e191dc523ccec5785fc8f1"
+    },
+    {
+      "path": "research/paired-dmp-study/rubric-comparability.json",
+      "sha256": "288efc6faf9c0f7c1cad7e39fdc11e5fa0c09e602559e0aa95df5055a21da088"
+    },
+    {
+      "path": "research/paired-dmp-study/cohort-proposal.json",
+      "sha256": "edf1d3eab475302156d0366f262516e61d674a553fe67366a7181aff35a735fd"
+    },
+    {
+      "path": "research/paired-dmp-study/natural-engineering-social-search.md",
+      "sha256": "74333a03caf5386d4e9346fb8f8ac25b3e7a0850689fe8341d35c4a77fb5633f"
+    }
+  ],
+  "documents": [
+    {
+      "record_id": "10839334",
+      "project": "AD4GD",
+      "purpose": "near_half_project_document",
+      "source_url": "https://zenodo.org/records/10839334",
+      "local_pdf": "data/paired-dmp-corpus/calibration/10839334.pdf",
+      "sha256": "7c3d64d506c4c5a1db61ffc8c3abad716f616ff5a0fa32d35ee0519dcd9b4d93",
+      "independent_calibration_reference_labels": "not_created",
+      "in_final_cohort": false,
+      "rights_check": "see_screening_report; do_not_infer_redistribution_permission",
+      "grant": "101061001",
+      "identity_physical_pdf_pages": [
+        1,
+        2
+      ],
+      "issue_date": "2024-02-29",
+      "project_start": "2022-09-01",
+      "reported_project_end": "2025-08-31",
+      "duration_days": 1095,
+      "elapsed_days": 546,
+      "outside_core_grant_check": "not_in_six_proposal_grants",
+      "packet": {
+        "access": "existing_local_full_source_pdf",
+        "external_artifacts_added": false,
+        "external_model_submission": false,
+        "extraction_or_GUI_adapter_status": "pending_not_created_here"
+      },
+      "stage_fraction": 0.4986301369863014,
+      "timing_source": "natural-engineering-social-search.md; reported CORDIS dates from 2026-11-03 source check, not refreshed here",
+      "version_note": "Cover and metadata identify D8.3, deliverable version 3; p2 separately says document version 1, with D8.2 in running header. Preserve these distinctions.",
+      "rights_note": "PDF p2 marks Public; existing screening does not establish a blanket reuse licence for this file. No redistribution/model-upload permission inferred.",
+      "declared_document_context": {
+        "physical_pdf_page": 3,
+        "description": "The abstract describes an intermediate report and implementation of the initial strategy. This is declared document purpose, not a quality finding or approval of a rubric phase.",
+        "visual_check": true
+      }
+    },
+    {
+      "record_id": "17578116",
+      "project": "PathOS",
+      "purpose": "post_end_document",
+      "source_url": "https://zenodo.org/records/17578116",
+      "local_pdf": "data/paired-dmp-corpus/calibration/17578116.pdf",
+      "sha256": "732074dc327f114356c5cff1ccc7f6846d79480eabe8daa2b53951058e4e94fa",
+      "independent_calibration_reference_labels": "not_created",
+      "in_final_cohort": false,
+      "rights_check": "see_screening_report; do_not_infer_redistribution_permission",
+      "grant": "101058728",
+      "identity_physical_pdf_pages": [
+        1,
+        2
+      ],
+      "issue_date": "2025-11-10",
+      "project_start": "2022-09-01",
+      "reported_project_end": "2025-08-31",
+      "duration_days": 1095,
+      "elapsed_days": 1166,
+      "outside_core_grant_check": "not_in_six_proposal_grants",
+      "packet": {
+        "access": "existing_local_full_source_pdf",
+        "external_artifacts_added": false,
+        "external_model_submission": false,
+        "extraction_or_GUI_adapter_status": "pending_not_created_here"
+      },
+      "stage_fraction": 1.0648401826484017,
+      "timing_source": "natural-engineering-social-search.md; reported CORDIS dates from 2026-11-03 source check, not refreshed here",
+      "version_note": "D3.5 v2.0; physical pp1-2 distinguish original delivery 2024-04-11 from update 2025-11-10.",
+      "rights_note": "Existing screening reports both PathOS landing pages CC BY 4.0, checked 2026-11-03; no new licence retrieval or model submission is performed."
+    }
+  ],
+  "core_grants_compared": [
+    "101058625",
+    "101017567",
+    "952259",
+    "816078",
+    "101081823",
+    "101061233"
+  ],
+  "conditions": [
+    {
+      "condition_id": "CAL-AD4GD-E",
+      "document_record_id": "10839334",
+      "document_sha256": "7c3d64d506c4c5a1db61ffc8c3abad716f616ff5a0fa32d35ee0519dcd9b4d93",
+      "rubric_phase": "proposal_early_stage",
+      "preparation_approval": "approved_to_prepare_under_D15",
+      "reviewer_id": null,
+      "human_response_received": false,
+      "instrument_row_count": 16,
+      "defined_row_count": 16,
+      "blank_response_row_count": 16,
+      "rows": [
+        {
+          "criterion_id": "1a",
+          "navigation_label": "New data production and existing-data reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              7,
+              8
+            ],
+            "printed_pdf_pages": [
+              6,
+              7
+            ],
+            "locator": "Table 2, 1a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/0/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "1b",
+          "navigation_label": "Data types, formats and volumes",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8
+            ],
+            "printed_pdf_pages": [
+              7
+            ],
+            "locator": "Table 2, 1b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/1/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2a",
+          "navigation_label": "Metadata and documentation",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8,
+              9
+            ],
+            "printed_pdf_pages": [
+              7,
+              8
+            ],
+            "locator": "Table 2, 2a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/2/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2b",
+          "navigation_label": "Data quality control",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              9,
+              10
+            ],
+            "printed_pdf_pages": [
+              8,
+              9
+            ],
+            "locator": "Table 2, 2b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/3/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3a",
+          "navigation_label": "Storage and backup",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              10,
+              11
+            ],
+            "printed_pdf_pages": [
+              9,
+              10
+            ],
+            "locator": "Table 2, 3a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/4/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3b",
+          "navigation_label": "Access and relevant restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              11
+            ],
+            "printed_pdf_pages": [
+              10
+            ],
+            "locator": "Table 2, 3b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/5/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3c",
+          "navigation_label": "Security and sensitive-data protection",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              12,
+              13
+            ],
+            "printed_pdf_pages": [
+              11,
+              12
+            ],
+            "locator": "Table 2, 3c proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/6/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4a",
+          "navigation_label": "Personal-data compliance",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              13,
+              14,
+              15
+            ],
+            "printed_pdf_pages": [
+              12,
+              13,
+              14
+            ],
+            "locator": "Table 2, 4a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/7/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4b",
+          "navigation_label": "Intellectual property and other legal issues",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              15,
+              16
+            ],
+            "printed_pdf_pages": [
+              14,
+              15
+            ],
+            "locator": "Table 2, 4b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/8/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4c",
+          "navigation_label": "Ethical issues and approvals",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              17,
+              18
+            ],
+            "printed_pdf_pages": [
+              16,
+              17
+            ],
+            "locator": "Table 2, 4c proposal_early_stage column (unlabelled ethics block)",
+            "heading_status": "unlabelled_ethics_block_inferred_as_4c_by_sequence_and_content",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/2/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/9/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5a",
+          "navigation_label": "Sharing timing and restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18
+            ],
+            "printed_pdf_pages": [
+              17
+            ],
+            "locator": "Table 2, 5a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/10/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5b",
+          "navigation_label": "Preservation selection and repositories",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18,
+              19
+            ],
+            "printed_pdf_pages": [
+              17,
+              18
+            ],
+            "locator": "Table 2, 5b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/11/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5c",
+          "navigation_label": "Tools needed for access and reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              19
+            ],
+            "printed_pdf_pages": [
+              18
+            ],
+            "locator": "Table 2, 5c proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/2/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/12/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5d",
+          "navigation_label": "Persistent identifiers",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              20
+            ],
+            "printed_pdf_pages": [
+              19
+            ],
+            "locator": "Table 2, 5d proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/13/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6a",
+          "navigation_label": "Responsibilities",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              20,
+              21
+            ],
+            "printed_pdf_pages": [
+              19,
+              20
+            ],
+            "locator": "Table 2, 6a proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/0/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/14/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6b",
+          "navigation_label": "Resources for data management",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "proposal_early_stage",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              21,
+              22
+            ],
+            "printed_pdf_pages": [
+              20,
+              21
+            ],
+            "locator": "Table 2, 6b proposal_early_stage column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/1/stages/proposal_early_stage",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/15/phases/proposal_early_stage",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        }
+      ]
+    },
+    {
+      "condition_id": "CAL-AD4GD-M",
+      "document_record_id": "10839334",
+      "document_sha256": "7c3d64d506c4c5a1db61ffc8c3abad716f616ff5a0fa32d35ee0519dcd9b4d93",
+      "rubric_phase": "mid_project",
+      "preparation_approval": "approved_to_prepare_under_D15",
+      "reviewer_id": null,
+      "human_response_received": false,
+      "instrument_row_count": 16,
+      "defined_row_count": 15,
+      "blank_response_row_count": 16,
+      "rows": [
+        {
+          "criterion_id": "1a",
+          "navigation_label": "New data production and existing-data reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              7
+            ],
+            "printed_pdf_pages": [
+              6
+            ],
+            "locator": "Table 2, 1a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/0/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "1b",
+          "navigation_label": "Data types, formats and volumes",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8
+            ],
+            "printed_pdf_pages": [
+              7
+            ],
+            "locator": "Table 2, 1b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/1/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2a",
+          "navigation_label": "Metadata and documentation",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8,
+              9
+            ],
+            "printed_pdf_pages": [
+              7,
+              8
+            ],
+            "locator": "Table 2, 2a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/2/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2b",
+          "navigation_label": "Data quality control",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              9
+            ],
+            "printed_pdf_pages": [
+              8
+            ],
+            "locator": "Table 2, 2b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/3/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3a",
+          "navigation_label": "Storage and backup",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              10,
+              11
+            ],
+            "printed_pdf_pages": [
+              9,
+              10
+            ],
+            "locator": "Table 2, 3a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/4/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3b",
+          "navigation_label": "Access and relevant restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              11,
+              12
+            ],
+            "printed_pdf_pages": [
+              10,
+              11
+            ],
+            "locator": "Table 2, 3b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/5/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3c",
+          "navigation_label": "Security and sensitive-data protection",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              12,
+              13
+            ],
+            "printed_pdf_pages": [
+              11,
+              12
+            ],
+            "locator": "Table 2, 3c mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/6/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4a",
+          "navigation_label": "Personal-data compliance",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              13,
+              14,
+              15
+            ],
+            "printed_pdf_pages": [
+              12,
+              13,
+              14
+            ],
+            "locator": "Table 2, 4a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/7/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4b",
+          "navigation_label": "Intellectual property and other legal issues",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              15,
+              16
+            ],
+            "printed_pdf_pages": [
+              14,
+              15
+            ],
+            "locator": "Table 2, 4b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/8/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4c",
+          "navigation_label": "Ethical issues and approvals",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              17
+            ],
+            "printed_pdf_pages": [
+              16
+            ],
+            "locator": "Table 2, 4c mid_project column (unlabelled ethics block)",
+            "heading_status": "unlabelled_ethics_block_inferred_as_4c_by_sequence_and_content",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/2/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/9/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5a",
+          "navigation_label": "Sharing timing and restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18
+            ],
+            "printed_pdf_pages": [
+              17
+            ],
+            "locator": "Table 2, 5a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/10/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5b",
+          "navigation_label": "Preservation selection and repositories",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18,
+              19
+            ],
+            "printed_pdf_pages": [
+              17,
+              18
+            ],
+            "locator": "Table 2, 5b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/11/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5c",
+          "navigation_label": "Tools needed for access and reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              19
+            ],
+            "printed_pdf_pages": [
+              18
+            ],
+            "locator": "Table 2, 5c mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/2/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/12/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5d",
+          "navigation_label": "Persistent identifiers",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": false,
+            "source_cell_state": "instrument_undefined_blank",
+            "physical_pdf_pages": [
+              20
+            ],
+            "printed_pdf_pages": [
+              19
+            ],
+            "locator": "Table 2, 5d mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "undefined_no_anchor_no_inheritance"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/13/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6a",
+          "navigation_label": "Responsibilities",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              20
+            ],
+            "printed_pdf_pages": [
+              19
+            ],
+            "locator": "Table 2, 6a mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/0/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/14/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6b",
+          "navigation_label": "Resources for data management",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "mid_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              21
+            ],
+            "printed_pdf_pages": [
+              20
+            ],
+            "locator": "Table 2, 6b mid_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/1/stages/mid_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/15/phases/mid_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        }
+      ]
+    },
+    {
+      "condition_id": "CAL-PATHOS-L",
+      "document_record_id": "17578116",
+      "document_sha256": "732074dc327f114356c5cff1ccc7f6846d79480eabe8daa2b53951058e4e94fa",
+      "rubric_phase": "end_project",
+      "preparation_approval": "retained_proposed_late_calibration_context_not_new_D15_phase_approval",
+      "reviewer_id": null,
+      "human_response_received": false,
+      "instrument_row_count": 16,
+      "defined_row_count": 16,
+      "blank_response_row_count": 16,
+      "rows": [
+        {
+          "criterion_id": "1a",
+          "navigation_label": "New data production and existing-data reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              7
+            ],
+            "printed_pdf_pages": [
+              6
+            ],
+            "locator": "Table 2, 1a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/0/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "1b",
+          "navigation_label": "Data types, formats and volumes",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8
+            ],
+            "printed_pdf_pages": [
+              7
+            ],
+            "locator": "Table 2, 1b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/0/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/1/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2a",
+          "navigation_label": "Metadata and documentation",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              8,
+              9
+            ],
+            "printed_pdf_pages": [
+              7,
+              8
+            ],
+            "locator": "Table 2, 2a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/2/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "2b",
+          "navigation_label": "Data quality control",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              9,
+              10
+            ],
+            "printed_pdf_pages": [
+              8,
+              9
+            ],
+            "locator": "Table 2, 2b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/1/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/3/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3a",
+          "navigation_label": "Storage and backup",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              10,
+              11
+            ],
+            "printed_pdf_pages": [
+              9,
+              10
+            ],
+            "locator": "Table 2, 3a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/4/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3b",
+          "navigation_label": "Access and relevant restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              11
+            ],
+            "printed_pdf_pages": [
+              10
+            ],
+            "locator": "Table 2, 3b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/2/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/5/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "3c",
+          "navigation_label": "Security and sensitive-data protection",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              12
+            ],
+            "printed_pdf_pages": [
+              11
+            ],
+            "locator": "Table 2, 3c end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/6/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4a",
+          "navigation_label": "Personal-data compliance",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              13,
+              14
+            ],
+            "printed_pdf_pages": [
+              12,
+              13
+            ],
+            "locator": "Table 2, 4a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/7/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4b",
+          "navigation_label": "Intellectual property and other legal issues",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              15,
+              16
+            ],
+            "printed_pdf_pages": [
+              14,
+              15
+            ],
+            "locator": "Table 2, 4b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/8/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "4c",
+          "navigation_label": "Ethical issues and approvals",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              17
+            ],
+            "printed_pdf_pages": [
+              16
+            ],
+            "locator": "Table 2, 4c end_project column (unlabelled ethics block)",
+            "heading_status": "unlabelled_ethics_block_inferred_as_4c_by_sequence_and_content",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/3/subsections/2/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/9/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5a",
+          "navigation_label": "Sharing timing and restrictions",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18
+            ],
+            "printed_pdf_pages": [
+              17
+            ],
+            "locator": "Table 2, 5a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/10/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5b",
+          "navigation_label": "Preservation selection and repositories",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              18,
+              19
+            ],
+            "printed_pdf_pages": [
+              17,
+              18
+            ],
+            "locator": "Table 2, 5b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/11/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5c",
+          "navigation_label": "Tools needed for access and reuse",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              19,
+              20
+            ],
+            "printed_pdf_pages": [
+              18,
+              19
+            ],
+            "locator": "Table 2, 5c end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/4/subsections/2/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/12/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "5d",
+          "navigation_label": "Persistent identifiers",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              20
+            ],
+            "printed_pdf_pages": [
+              19
+            ],
+            "locator": "Table 2, 5d end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": false,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": null,
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/13/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6a",
+          "navigation_label": "Responsibilities",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              20
+            ],
+            "printed_pdf_pages": [
+              19
+            ],
+            "locator": "Table 2, 6a end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/0/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/14/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        },
+        {
+          "criterion_id": "6b",
+          "navigation_label": "Resources for data management",
+          "instrument": {
+            "framework_id": "Mansour_Table2_V1.0",
+            "rubric_phase": "end_project",
+            "instrument_defined": true,
+            "source_cell_state": "defined",
+            "physical_pdf_pages": [
+              21
+            ],
+            "printed_pdf_pages": [
+              20
+            ],
+            "locator": "Table 2, 6b end_project column",
+            "heading_status": "printed_id_present",
+            "criterion_text_in_wrapper": null,
+            "anchor_status": "draft_not_frozen"
+          },
+          "native_coverage_separate": {
+            "native_present": true,
+            "source_rubric_id": "default_eva_b80b43de820d46440d982eb99b2b3da8f4c2f818",
+            "native_phase_source_pointer": "/data_management_plan/5/subsections/1/stages/end_project",
+            "semantic_crosswalk_ref": "rubric-comparability.json#/criteria/15/phases/end_project",
+            "native_score_mapping": null
+          },
+          "response": {
+            "entry_state": "not_entered",
+            "score": null,
+            "applicability": null,
+            "evidence_state": null,
+            "applicability_reason": "",
+            "evidence_reason": "",
+            "rationale": "",
+            "evidence_locators": [],
+            "searched_sections": [],
+            "criterion_specific_search_completed": null,
+            "confidence": null,
+            "reviewer_comment": ""
+          }
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "distinct_source_documents": 2,
+    "distinct_projects": 2,
+    "AD4GD_repeated_phase_conditions": 2,
+    "PathOS_proposed_end_contexts": 1,
+    "condition_rosters": 3,
+    "blank_rows_total": 48,
+    "defined_rows_total": 47,
+    "AD4GD_defined_rows": 31,
+    "instrument_undefined_rows_total": 1,
+    "entered_responses": 0,
+    "human_assessment_records": 0,
+    "model_calls": 0
+  },
+  "order_plan": {
+    "status": "proposed_not_assigned_not_scheduled",
+    "reviewer_assignments": [],
+    "AD4GD_sequences": [
+      [
+        "CAL-AD4GD-E",
+        "CAL-AD4GD-M"
+      ],
+      [
+        "CAL-AD4GD-M",
+        "CAL-AD4GD-E"
+      ]
+    ],
+    "first_pass": "Different reviewers, if available, independently start with opposite phases without seeing the other-phase anchors/ratings; a later within-reviewer second pass is explicitly repeated exposure.",
+    "carryover_controls": [
+      "Save each first pass before the other-phase instructions or reconciliation are shown.",
+      "Specify and log any interval before a second phase; no untested interval guarantees washout.",
+      "Do not expose prior scores or prefill the other response. Reviewers may need the same PDF again, so memory cannot be eliminated.",
+      "Log sequence, dates, earlier exposure and any accidental cross-condition access.",
+      "Keep PathOS end context separate and balance its position if practicable; it is not a washout mechanism."
+    ],
+    "if_only_one_reviewer": "One sequence is a usability/calibration observation, not a counterbalanced experiment or independent phase-effect estimate.",
+    "blindness_limit": "Phase instructions must be visible to interpret the task; no claim of phase blinding. Project names/source dates remain visible."
+  },
+  "unit_and_interpretation": {
+    "AD4GD": "The same exact DMP under two phase interpretations, not two independent DMPs or a longitudinal pair. Any paired condition labels identify calibration lens, not early/late source versions.",
+    "PathOS": "A different project/document, proposed end-phase context; not the later version of AD4GD.",
+    "phase_comparability": "Same AD4GD bytes hold source content constant, but requirements change by phase. Compare interpretation, evidence selection, applicability and anchors before any ordinal score contrast.",
+    "score_interpretation": "0/1/2 remains ordinal; neither equal score meanings across phases nor interval distances are established. No averaging across E/M to create a reference and no native 0-100 conversion.",
+    "denominators": "Each condition retains 16 IDs; AD4GD-M has 15 defined cells plus one source-undefined 5d row. Do not use a fictitious 48 scored-row denominator."
+  },
+  "wrapper_contract": {
+    "is_instance_of_human_review_record_schema": false,
+    "schema_replacement": false,
+    "future_adapter": "Pending; create a versioned assessment record only from actual human responses under the existing record contract, preserving condition/phase/source provenance.",
+    "source_metadata_is_response": false,
+    "undefined_cell_handling": "AD4GD-M/5d instrument_defined=false is source metadata only. Response remains not_entered/null with empty reasons/evidence; do not supply NA, uncertainty, a score or inherited early/end wording."
+  },
+  "human_reference_status": "No AI outputs, expected answers, gold labels, assessor assignments or actual human submissions. Existing pilot remains deferred; preparation requests no current reading/rating task.",
+  "execution_boundary": "No downloads, external submissions, model requests, GUI/schema/platform edits or selection writes."
+}

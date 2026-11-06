@@ -1,0 +1,75 @@
+# Plan for a paired DMP evaluation benchmark
+
+Version: planning draft 2026-11-03. Read decisions.md for unsettled assumptions. This is a six-project pilot benchmark, not evidence that one project represents an entire discipline.
+
+## Scientific target
+
+Build six verified pairs of versions of the same DMP, one project per broad discipline: natural sciences; engineering and technology; medical and health sciences; agricultural sciences; social sciences; humanities. Each pair must have comparable scope and distinct dated versions. Pairing permits examination of evaluation behavior across lifecycle stages while holding the project constant. It does not establish that later DMPs must score better or isolate stage causally from other changes.
+
+For complete dates, compute `fraction = (document_date - project_start) / (project_end - project_start)` in days. Preserve full precision for eligibility; round only for display. The user-confirmed cutoffs are `fraction <= 0.50` and `fraction > 1.00`; the proposed operational early window additionally requires `fraction >= 0`, with pre-start inclusion to be decided if material. A document exactly at project end is not above 100%. A pre-start document is not silently an early-stage document. Missing or invalid duration is unknown. Partial dates define intervals: eligibility must hold across the whole interval or remain uncertain. Never replace an uncertain month with a guessed day without labeling it.
+
+Use the evidenced issue date for eligibility (confirmed D01) and store the repository publication fraction separately. No publication-date fallback is approved. A repository modification/upload date is not the issue date. A record uploaded after the project ended may still contain an early DMP. See timing-and-rationale.md for the reportable definition and scientific rationale.
+
+## Work packages and exit criteria
+
+| Stage | Aim and work | Concrete output / completion gate | Owner and checker |
+| --- | --- | --- | --- |
+| 0. Reconcile evidence | Read supplied minutes, publication and implementation; audit actual repo; record confirmed timing and latest-tool decisions; reconcile full minutes; perform a bounded related-work search before claiming novelty | Source report, decisions log and accepted protocol assumptions; full minutes reconciled in meeting-reconciliation.md | Source worker; independent reviewer; user for scientific decisions |
+| 1. Establish feasibility | Group actual-plan leads by grant and scope; capture issue-date evidence independently of publication windows; inspect six branch coverage; start fresh across the whole pool; preserve historical selection without privileging its projects | Counts of leads versus verified pairs, gap table, reproducible screening inputs and hashes | Corpus worker; independent data checker |
+| 2. Recover version families | Target eligible late projects and missing branches; retrieve repository version histories, linked identifiers, project deliverables and earlier versions | Candidate ledger, evidence for common DMP scope, exclusion reasons, alternate pairs where available | Retrieval worker in bounded batches; provenance checker |
+| 3. Verify and freeze selection | Check content only for identity/scope/dates/access; verify project dates and classification; apply declared metadata ranking | Six unique projects / six branches / twelve distinct document versions; primary plus reserve pairs where possible; manifest and documented gaps if impossible | Pair-verification worker; independent checker; human scientific sign-off |
+| 4. Prepare reference review | Freeze rubric and scoring; calibrate reviewers on separate examples; prepare consistent source/extracted views | Review instructions, blinded review form, independent labels and evidence, adjudication protocol | Methods worker; two human reviewers and adjudicator |
+| 5. Run evaluation | Freeze tool/model/prompt versions; compare overall and criterion-based conditions using same document inputs | Reproducible run manifest, raw outputs, parsed scores, error/latency logs and model settings | Execution worker; reproducibility checker |
+| 6. Analyze and release | Compare model/human agreement and within-project stage differences; report uncertainty, failures and limitations | Report, provenance-rich dataset manifest, permitted redistribution or source links, rerun instructions | Analysis worker; independent scientific/reproducibility review |
+
+Platform work is specified in claude-platform-brief.md and can proceed after core protocol decisions. A full human-review GUI need not block discovery; a stable review schema comes first. No benchmark inference jobs are authorized or configured by this planning document.
+
+## Search strategy and stopping rule
+
+Start a fresh candidate search across the complete local pool (D02), not a new full network harvest. Do not prioritize the historical saved selection. The publication-date audit is a discovery aid, not an issue-date eligibility filter: inventory version families across the whole pool regardless of publication window, including versions deposited together or deposited late. Do not discard a possible issue-date pair because its publication-date fractions fail. Stage 2 searches version families of promising projects and apparent gaps, paying particular attention to medical/health and humanities without treating their publication-date gaps as established issue-date shortages. Query Zenodo version relations and project/grant identifiers, then authoritative project deliverable pages, CORDIS-linked outputs and institutional repositories. Capture query, source, retrieval date, pagination/version coverage and number screened. A concept DOI can link versions but does not alone establish comparable scope; inspect version notes, cover pages, deliverable identifiers and coverage.
+
+Prefer Horizon Europe; expand to H2020 or other documented EU programmes when justified. Prefer recent later versions, while allowing earlier versions from before 2024 subject to agreement. Use maDMP availability as a preference after pairing eligibility, never a completeness or quality threshold. Do not discard structurally incomplete plans.
+
+Before each retrieval batch, set its bounded target (for example one unresolved branch and its candidate project list). After the batch, report newly verified pairs, exhausted sources and unresolved gaps. Once every branch has a verified primary pair and preferably a reserve, stop broad retrieval. If a branch still lacks a pair after the recorded source tiers, bring the gap and options to the user; absence from this pool is not proof of global absence.
+
+Before final selection, declare metadata-only tie breakers. Proposed order for discussion: EU programme preference, later-version recency, paired machine-actionable availability, then a fixed seeded draw among equivalent candidates. Require eligibility first and distinct projects across slots. Log any override and its reason; no DMP quality scores may enter ranking.
+
+## Evidence and data contract
+
+Maintain one record per candidate version and one per candidate pair. Minimum version evidence: stable source ID/DOI and concept ID if present; grant; project and DMP scope; file URL/name/format/size/checksum; document version; issue/publication/retrieval dates with precision and provenance; project start/end dates and authoritative source; discipline memberships and assignment; open-download verification; depositor licence; language; extraction status. Keep raw source metadata snapshots when feasible and permitted.
+
+Minimum pair evidence: pair ID; both document IDs and hashes; same-project proof; same-DMP-scope proof with page or source anchors; distinct-version proof; early/late fractions and uncertainty; chosen date basis; classification assignment rule; verifier and independent checker; status (`lead`, `needs_evidence`, `eligible`, `excluded`, `selected`, `reserve`); reasons and unresolved questions. Matching grant numbers or two different deposits of identical bytes do not establish a pair. PDF and JSON representations of a single version count as one version.
+
+Freeze a machine-readable manifest and a human-readable table with the final protocol version and hashes. Preserve both the original files and any derived text, with extraction tool/version and page mappings. Do not substitute an extraction failure with exclusion for poor quality. Track access, extraction and inference failures separately. Dataset licensing does not relicense third-party DMP content.
+
+## Human reference and model evaluation
+
+DMP-EVA is the confirmed target, evaluated against human reference judgments; Mainz resources may later support backend-model comparisons. The publication and tool reports inform a dedicated frozen review protocol; do not assume DMP-EVA's default rubric equals the publication's matrix. The user selected latest upstream as the working target. Resolve and pin the latest commit at campaign freeze; compare publication-associated and current behavior in tool-evolution.md. Convergence is not required. Never silently repair the tested system and label it as the unchanged upstream version. Use software-baseline-policy.md to separate native outputs from optional diagnostic/configured/corrected conditions. Require criterion definitions, applicability rules, score anchors, evidence references and handling of missing evidence. Distinguish “not applicable,” “not reported,” and “unreadable.” Decide stage-aware expectations explicitly before scoring; comparing early and late plans must not assume a final-stage obligation applies identically at early stage.
+
+Propose two independent qualified human reviewers for all twelve documents, with adjudication and retained original ratings. Calibrate on documents outside the final six projects. Hide model outputs during human review and randomize document order; record unavoidable stage/identity cues in the documents. The later version must not be shown when evaluating the early version unless a separate longitudinal task explicitly requires it.
+
+Freeze model checkpoint, provider, quantization, inference settings, context limits, actual prompt text/hashes, rubric version, parser and input extraction before test runs. Open-weight does not imply identical licences or deployment conditions. Obtain actual Mainz model/API capabilities from the team; don't invent endpoints or credentials. Record exactly which criterion wording reaches the model in each condition. If the native latest path omits it, document that behavior rather than inserting it silently; a full-rubric prompt is a separately labelled condition. Log truncation and token budgeting; document information differences between human-visible full documents, native tool input and any matched-input sensitivity condition. Retain raw responses and separately parsed outputs, including zeros, failures and retries.
+
+Use a small external pilot for prompt/parser behavior checks, then lock the test protocol. Such checks establish what the native path does, not a requirement to correct its divergences before measuring it. Do not tune prompts using the final twelve-document outcomes. Preserve a native latest-tool baseline. Researcher-defined overall and criterion-based prompt conditions must be labelled explicitly, use frozen definitions and comparable preprocessing, and retain differences from the native configuration in the run manifest. Determine repetition count and compute cost after a small pilot, before consuming evaluation resources.
+
+Report per-criterion agreement, score error where valid, human-human agreement, missingness and failures. Predeclare the primary agreement/error measure after rubric mapping is fixed. Show all six paired results and how model-human discrepancies change between versions. Aggregate at project level or otherwise account for pairing; twelve documents and many criterion scores are not independent projects. With six projects and one per discipline, use descriptive/exploratory results, avoid disciplinary rankings and strong population or causal claims. Record public-document training-contamination uncertainty.
+
+## Agent design and resource policy
+
+The initial planning coordinator was requested as Astra medium; the user subsequently switched this orchestrator to GPT-6.1 Sol. Workers receive bounded context and separate output files. Use Terra high for constrained inventory and evidence extraction, Sol high for complex source analysis and independent review. An independent reviewer checks worker evidence and the coordinator's synthesis. The coordinator resolves disagreements and asks the user about scientific choices. Agents cannot replace human reference assessors.
+
+For execution, use Sol high for methods, lineage verification and code work; use Luna high only for constrained extraction/cataloguing with schema checks and sampled independent verification. Escalate ambiguous evidence to Sol high and scientific design disputes to the coordinator. Keep at most two substantive workers plus one checker active; don't create six long-running discipline agents by default. Cache source retrievals and reuse reports rather than repeating full-repository analysis.
+
+The user has switched the main conversation to Sol; use high effort for difficult protocol/implementation work and medium for routine coordination where available. Return to Astra for the protocol freeze or a genuinely unresolved methodological problem. Standard speed is preferred. OpenAI's official pricing guidance says model, reasoning, context and tools affect allowance, weekly limits may apply, and API prices must not be used to estimate subscription task counts. Account-specific remaining usage is unknown here; inspect the client usage dashboard between stages. No promise can be made that a week of allowance completes the project. Source checked 2026-11-03: https://learn.chatgpt.com/docs/pricing
+
+## Current work and human-review deferral
+
+D14 defers the user’s pilot while he becomes familiar with the publication. This does not pause the research project. Source/extraction QA, eligibility/provenance work, reproducibility checks, meeting documentation and requested implementation handoffs can proceed without human scores. Human calibration, independent reference labels and agreement analysis wait until real reviewers are available. Retain the approved 0/1/2 scale and blank materials; do not re-request a rating now or substitute agent judgments for human labels.
+
+## Immediate next actions
+
+1. Complete bounded source-text extraction QA without rating DMP quality.
+2. Prepare a concise meeting-ready selection/progress note from the six-pair proposal and source caveats.
+3. Keep the Claude selection and human-review implementation briefs current with D12–D14.
+4. Resume human calibration when the user is ready or formal reviewers are recruited; use the retained external calibration examples.
+5. Settle campaign inputs, phase mapping and analysis; obtain genuine reference labels before empirical human/tool agreement claims.

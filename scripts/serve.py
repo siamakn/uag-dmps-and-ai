@@ -25,6 +25,18 @@ Endpoints
     PUT  /api/selection         {"ids": [...]} -> writes data/selection.json
     GET  /api/madmp/<file>      one maDMP file from the local corpus
 
+  paired study (separate storage; never touches data/selection.json)
+    GET  /api/paired            the paired-study draft, or 409 if the file is corrupt
+    PUT  /api/paired            {"study": {...}} -> writes data/paired_selection.json
+    POST /api/paired/validate   {"study": {...}} -> the Python validation result
+    POST /api/paired/files      {"study": {...}, "download": bool} -> local file checksums
+    POST /api/paired/freeze     {"study": {...}} -> immutable data/paired-snapshots/<id>.json
+    GET  /api/paired/snapshots  the frozen snapshots on disk
+
+--state-dir DIR keeps selection.json, paired_selection.json and paired-snapshots/ in DIR
+instead of data/. /selftest refuses to run against the real data/ directory, because the
+harness saves and clears selections; use --test (a fresh temporary state dir) instead.
+
 Stdlib only. Binds to 127.0.0.1, so nothing is exposed off this machine.
 """
 import argparse
@@ -34,18 +46,38 @@ import errno
 import json
 import os
 import sys
+import tempfile
 import threading
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import paired  # noqa: E402
 
 UI_PORT = 8756
 API_PORT = 8757
-SELECTION = os.path.join(common.DATA, "selection.json")
-
+PATHS = {}
 STATE = {"rows": [], "payload": [], "html": "", "html_test": "", "api_base": "/api"}
+
+
+def set_state_dir(state_dir):
+    state_dir = os.path.abspath(state_dir or common.DATA)
+    os.makedirs(state_dir, exist_ok=True)
+    PATHS.update(
+        state=state_dir,
+        default=state_dir == os.path.abspath(common.DATA),
+        selection=os.path.join(state_dir, "selection.json"),
+        paired=os.path.join(state_dir, paired.STUDY_FILE),
+    )
+
+
+set_state_dir(common.DATA)
+
+
+def paired_boot():
+    return {"empty": paired.new_study(), "proposal": paired.proposal_to_study(),
+            "registry": paired.registry_rows(), "sources": paired.source_hashes()}
 
 
 # ----------------------------------------------------------------- data
@@ -59,9 +91,12 @@ def load_state(api_base):
     boot = '<script>window.DMP_API=%s;</script>' % json.dumps(api_base)
     count = "{:,}".format(len(payload)).replace(",", " ")
 
+    pboot = common.boot_json(paired_boot())
+
     def fill(boot_block):
         return (tpl.replace("__BOOT__", boot_block)
                    .replace("__DATA__", "null")
+                   .replace("__PAIRED__", pboot)
                    .replace("__COUNT__", count))
 
     html = fill(boot)
@@ -71,10 +106,7 @@ def load_state(api_base):
     html_test = ""
     test_path = os.path.join(common.DASHBOARD, "selftest.js")
     if os.path.exists(test_path):
-        js = open(test_path, encoding="utf-8").read()
-        assert "</script" not in js, "selftest.js must not contain a closing script tag"
-        nl = chr(10)
-        html_test = fill(boot + nl + "<script>" + nl + js + nl + "</script>")
+        html_test = fill(boot + common.selftest_block())
 
     STATE.update(rows=rows, payload=payload, html=html, html_test=html_test,
                  api_base=api_base)
@@ -82,10 +114,10 @@ def load_state(api_base):
 
 
 def read_selection():
-    if not os.path.exists(SELECTION):
+    if not os.path.exists(PATHS["selection"]):
         return []
     try:
-        d = json.load(open(SELECTION, encoding="utf-8"))
+        d = json.load(open(PATHS["selection"], encoding="utf-8"))
     except Exception:
         return []
     return d.get("ids", []) if isinstance(d, dict) else []
@@ -93,12 +125,14 @@ def read_selection():
 
 def write_selection(ids):
     index = {r["id"]: r for r in STATE["payload"]}
-    ids = [str(i) for i in ids if str(i) in index]
-    picked = [index[i] for i in ids]
+    # ids the current dataset does not know are kept, never silently dropped
+    ids = [str(i) for i in ids]
+    picked = [index[i] for i in ids if i in index]
     doc = {
         "saved": datetime.datetime.now().isoformat(timespec="seconds"),
         "count": len(ids),
         "ids": ids,
+        "unresolved": [i for i in ids if i not in index],
         "matrix": matrix_of(picked),
         "selection": [{
             "doi": r["doi"], "zenodo": r["url"], "title": r["title"],
@@ -109,11 +143,48 @@ def write_selection(ids):
             "challenging": r["challenging"],
         } for r in picked],
     }
-    tmp = SELECTION + ".tmp"
+    tmp = PATHS["selection"] + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
-    os.replace(tmp, SELECTION)
+    os.replace(tmp, PATHS["selection"])
     return doc
+
+
+# ----------------------------------------------------------------- paired study
+def write_paired(study, replace_corrupt=False):
+    """Save a paired-study draft. Never overwrites a corrupt file unless asked, and then
+    keeps its bytes next to it first."""
+    reason = paired.check_study(study)
+    if reason:
+        return 400, {"error": "refused: " + reason}
+    if study.get("status") == "frozen":
+        return 400, {"error": "refused: a frozen study is a snapshot; load it as a new draft instead"}
+    path = PATHS["paired"]
+    _, err = paired.read_study(path)
+    kept = None
+    if err:
+        if not replace_corrupt:
+            return 409, {"error": err, "corrupt": True}
+        stamp = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
+        kept = path.replace(".json", ".corrupt-%s.json" % stamp)
+        os.replace(path, kept)
+    study["updated"] = paired.now_iso()
+    study["sources"] = paired.source_hashes()
+    paired.write_atomic(path, paired.canonical(study))
+    return 200, {"ok": True, "file": path, "updated": study["updated"], "kept_corrupt_file": kept}
+
+
+def list_snapshots():
+    d = os.path.join(PATHS["state"], paired.SNAPSHOT_DIR)
+    if not os.path.isdir(d):
+        return []
+    out = []
+    for name in sorted(os.listdir(d)):
+        if name.endswith(".json"):
+            full = os.path.join(d, name)
+            out.append({"snapshot_id": name[:-5], "path": full,
+                        "content_hash_ok": paired.verify_snapshot(full)})
+    return out
 
 
 def matrix_of(picked):
@@ -193,6 +264,12 @@ class Handler(BaseHTTPRequestHandler):
                               "text/html; charset=utf-8")
 
         if path == "/selftest":
+            # The harness saves and clears selections. Against the real data/ that
+            # would destroy the user's work, so it only runs with a separate state dir.
+            if PATHS["default"]:
+                return self._send(409, b"/selftest writes and clears selections, so it will not run "
+                                       b"against data/. Start the server with --test (a fresh "
+                                       b"temporary state dir) or --state-dir DIR.")
             # rebuilt from disk on every request so editing the harness or the
             # template does not need a server restart
             try:
@@ -207,7 +284,16 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/health":
             return self._json({"ok": True, "records": len(STATE["payload"]),
                                "selection": len(read_selection()),
-                               "corpus": os.path.isdir(common.CORPUS)})
+                               "corpus": os.path.isdir(common.CORPUS),
+                               "state_dir": PATHS["state"],
+                               "state_dir_is_default": PATHS["default"]})
+        if path == "/api/paired":
+            study, err = paired.read_study(PATHS["paired"])
+            if err:
+                return self._json({"error": err, "corrupt": True, "file": PATHS["paired"]}, 409)
+            return self._json({"study": study, "file": PATHS["paired"]})
+        if path == "/api/paired/snapshots":
+            return self._json({"snapshots": list_snapshots()})
         if path == "/api/dmps":
             return self._json({"count": len(STATE["payload"]), "rows": STATE["payload"]})
         if path == "/api/stats":
@@ -233,19 +319,55 @@ class Handler(BaseHTTPRequestHandler):
     def do_PUT(self):
         self.do_POST()
 
+    def _body(self):
+        n = int(self.headers.get("Content-Length") or 0)
+        return json.loads(self.rfile.read(n).decode("utf-8") or "{}")
+
     def do_POST(self):
-        if self.path.split("?")[0].rstrip("/") != "/api/selection":
+        path = self.path.split("?")[0].rstrip("/")
+        if path.startswith("/api/paired"):
+            return self._paired_post(path)
+        if path != "/api/selection":
             return self._json({"error": "not found"}, 404)
         try:
-            n = int(self.headers.get("Content-Length") or 0)
-            body = json.loads(self.rfile.read(n).decode("utf-8") or "{}")
+            body = self._body()
             ids = body.get("ids", []) if isinstance(body, dict) else body
             if not isinstance(ids, list):
                 raise ValueError("expected an ids list")
         except Exception as e:
             return self._json({"error": "bad request: %s" % e}, 400)
         doc = write_selection(ids)
-        return self._json({"ok": True, "count": doc["count"], "file": SELECTION})
+        return self._json({"ok": True, "count": doc["count"], "file": PATHS["selection"]})
+
+    def _paired_post(self, path):
+        try:
+            body = self._body()
+            study = body.get("study") if isinstance(body, dict) else None
+            if not isinstance(study, dict):
+                raise ValueError("expected {\"study\": {...}}")
+        except Exception as e:
+            return self._json({"error": "bad request: %s" % e}, 400)
+        if path == "/api/paired":
+            code, res = write_paired(study, bool(body.get("replace_corrupt")))
+            return self._json(res, code)
+        reason = paired.check_study(study)
+        if reason:
+            return self._json({"error": "refused: " + reason}, 400)
+        if path == "/api/paired/validate":
+            return self._json(paired.validate(study))
+        if path == "/api/paired/files":
+            facts = paired.file_facts(study)
+            if body.get("download"):
+                facts = paired.download_missing(study, facts)
+            return self._json({"facts": facts})
+        if path == "/api/paired/freeze":
+            try:
+                ok, res = paired.freeze(study, PATHS["state"])
+            except FileExistsError:
+                return self._json({"ok": False, "reasons": ["a snapshot with this id already exists"]}, 409)
+            res["ok"] = ok
+            return self._json(res, 200 if ok else 422)
+        return self._json({"error": "not found"}, 404)
 
 
 class ApiOnly(Handler):
@@ -287,9 +409,18 @@ def main():
                     help="serve the API on its own port (default: same as the UI)")
     ap.add_argument("--no-open", action="store_true", help="do not launch a browser")
     ap.add_argument("--verbose", action="store_true", help="log every request")
+    ap.add_argument("--state-dir", default=None,
+                    help="where selection.json, paired_selection.json and paired-snapshots/ live "
+                         "(default: data/)")
+    ap.add_argument("--test", action="store_true",
+                    help="use a fresh temporary state dir; required for /selftest")
     args = ap.parse_args()
 
     common.ensure_dirs()
+    if args.test:
+        set_state_dir(tempfile.mkdtemp(prefix="dmpbench-test-"))
+    elif args.state_dir:
+        set_state_dir(args.state_dir)
     servers = []
     if args.api_port is None:
         ui, ui_port = bind(args.port, Handler)
@@ -308,7 +439,10 @@ def main():
     print("  api         http://127.0.0.1:%d/api" % api_port)
     print("  dataset     %d records, %d maDMPs"
           % (n, sum(1 for r in STATE["payload"] if r["madmp"])))
-    print("  selection   %s" % SELECTION)
+    print("  selection   %s" % PATHS["selection"])
+    print("  paired      %s" % PATHS["paired"])
+    if not PATHS["default"]:
+        print("  state dir   %s  (not data/; /selftest enabled)" % PATHS["state"])
     if args.port != ui_port or (args.api_port and args.api_port != api_port):
         print("  note: a requested port was busy, moved up to the next free one")
     print("  ctrl-c to stop")

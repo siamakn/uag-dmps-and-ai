@@ -129,3 +129,31 @@ Verified against the live API; these are InvenioRDM fields, not the legacy ones.
 | `metadata.publication_date:[2024 TO 2026]` | date range |
 
 Anonymous requests are capped at 25 records per page; a token raises it to 100.
+
+## Paired study (steps 06-07 and `paired.py`)
+
+The active design pairs two versions of the same DMP from each of six projects. These pieces
+support it; none of them reads a publication date as an issue date or marks a pair verified on
+its own.
+
+```bash
+python scripts/06_discover_versions.py groups      # plans grouped by grant  -> data/paired-discovery/groups.json
+python scripts/06_discover_versions.py versions    # Zenodo version chains   -> data/paired-discovery/versions.json
+python scripts/06_discover_versions.py register --doc-id ID --title T --grant G --url URL --found-via "..." [--file PATH]
+python scripts/07_fetch_study_files.py [--proposal] [--download] [--write]   # hash the selected files
+python scripts/paired.py validate|export|freeze|proposal|seed-registry|verify-snapshot
+python scripts/test_paired.py                        # unit tests, temporary directories only
+```
+
+- **`paired.py`** is the authoritative Python side: the study schema, exact integer timing
+  (`2n <= d` early, `n > d` late; partial dates kept as intervals), validation, CSV/Markdown/JSON
+  export, and `freeze`, which re-hashes every selected file and writes an immutable
+  `data/paired-snapshots/<id>.json` (created with O_EXCL; a later edit makes a new snapshot).
+- **06** groups every actual plan by grant with no publication-date window, then asks Zenodo for
+  all versions of each plan's concept (paged, cached, one fetch per concept) and lists versions
+  missing from the harvest as leads. Coverage and failures are recorded. Version chains miss
+  revisions deposited as new concepts or hosted elsewhere; `register` adds those to
+  `data/study-documents.json` with provenance and never invents a Zenodo id.
+- **07** touches only files selected in a study (or the cohort proposal), downloads into the
+  git-ignored `data/paired-dmp-corpus/`, and reports a checksum mismatch instead of replacing it.
+

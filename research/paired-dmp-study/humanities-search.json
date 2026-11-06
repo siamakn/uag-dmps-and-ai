@@ -1,0 +1,2550 @@
+{
+  "updated_utc": "2026-11-03T17:36:32.770306+00:00",
+  "status": "one_supported_pair_no_reserve_after_bounded_multisource_search",
+  "scope": "humanities CORDIS membership, dominant branch retained; documented issue date early <=50%, late >100%, current authoritative end including extensions",
+  "sources": [
+    {
+      "name": "11146154",
+      "url": "https://zenodo.org/api/records/11146154",
+      "resolved_url": "https://zenodo.org/api/records/11146154",
+      "content_type": "application/json",
+      "bytes": 4733,
+      "sha256": "b5a6603d9b6f867cd44af0054d41d88392c8949914cb229b0b2456ecc4eab27d",
+      "retrieved_utc": "2026-11-03T10:59:12.563749+00:00"
+    },
+    {
+      "name": "10925825",
+      "url": "https://zenodo.org/api/records/10925825",
+      "resolved_url": "https://zenodo.org/api/records/10925825",
+      "content_type": "application/json",
+      "bytes": 4612,
+      "sha256": "ce7d2b23732b3b123c282db0b556cf15d9d100bb4286061f5a2e65387802d053",
+      "retrieved_utc": "2026-11-03T10:59:12.513055+00:00"
+    },
+    {
+      "name": "8242975",
+      "url": "https://zenodo.org/api/records/8242975",
+      "resolved_url": "https://zenodo.org/api/records/8242975",
+      "content_type": "application/json",
+      "bytes": 5525,
+      "sha256": "0c874b1f47959ca1f910c77f7b0639a6a2d53464633d590ecbbb67d9c3010784",
+      "retrieved_utc": "2026-11-03T10:59:12.536946+00:00"
+    },
+    {
+      "name": "18403735",
+      "url": "https://zenodo.org/api/records/18403735",
+      "resolved_url": "https://zenodo.org/api/records/18403735",
+      "content_type": "application/json",
+      "bytes": 6183,
+      "sha256": "0924c789ff2fca54240c12f9099697e07bc54234114ea183261ddbdf4790c1d9",
+      "retrieved_utc": "2026-11-03T10:59:12.583257+00:00"
+    },
+    {
+      "name": "3245354",
+      "url": "https://zenodo.org/api/records/3245354",
+      "resolved_url": "https://zenodo.org/api/records/3245354",
+      "content_type": "application/json",
+      "bytes": 6519,
+      "sha256": "a4d4203f0c7be9deed7178f61d3826752868aeaaa119e362449d505eff43b955",
+      "retrieved_utc": "2026-11-03T10:59:12.535491+00:00"
+    },
+    {
+      "name": "3246339",
+      "url": "https://zenodo.org/api/records/3246339",
+      "resolved_url": "https://zenodo.org/api/records/3246339",
+      "content_type": "application/json",
+      "bytes": 7585,
+      "sha256": "f0b390b5528d67565c4f70829e0567797179ebdd1839900a322c11c407753d6f",
+      "retrieved_utc": "2026-11-03T10:59:12.548299+00:00"
+    },
+    {
+      "name": "4972582",
+      "url": "https://zenodo.org/api/records/4972582",
+      "resolved_url": "https://zenodo.org/api/records/4972582",
+      "content_type": "application/json",
+      "bytes": 4930,
+      "sha256": "8474c6da2196bda61153a5f6d670ca53dc23e8dd4d6ae5a4abbed1731522b802",
+      "retrieved_utc": "2026-11-03T10:59:12.741581+00:00"
+    },
+    {
+      "name": "4327654",
+      "url": "https://zenodo.org/api/records/4327654",
+      "resolved_url": "https://zenodo.org/api/records/4327654",
+      "content_type": "application/json",
+      "bytes": 5554,
+      "sha256": "38688a962b6c0548c4d91f305d95ebe70342aca54089789635b9192746fa8079",
+      "retrieved_utc": "2026-11-03T10:59:12.764957+00:00"
+    },
+    {
+      "name": "4327675",
+      "url": "https://zenodo.org/api/records/4327675",
+      "resolved_url": "https://zenodo.org/api/records/4327675",
+      "content_type": "application/json",
+      "bytes": 6043,
+      "sha256": "f61d0096aad4d46821c2352e7c80cd5865316e58326bc4e1ef8a27c0562730db",
+      "retrieved_utc": "2026-11-03T10:59:12.782414+00:00"
+    },
+    {
+      "name": "4925652",
+      "url": "https://zenodo.org/api/records/4925652",
+      "resolved_url": "https://zenodo.org/api/records/4925652",
+      "content_type": "application/json",
+      "bytes": 6216,
+      "sha256": "3cba5ff56d8c89b2d8a58a5b6c569438bdf25c66a7b62b2f6eb63b1d33f68860",
+      "retrieved_utc": "2026-11-03T10:59:12.794954+00:00"
+    },
+    {
+      "name": "4533876",
+      "url": "https://zenodo.org/api/records/4533876",
+      "resolved_url": "https://zenodo.org/api/records/4533876",
+      "content_type": "application/json",
+      "bytes": 8437,
+      "sha256": "d6cc74819f582523677c0a637bbb135bbaa1211888fe4bee76ccac1ace3c6bf7",
+      "retrieved_utc": "2026-11-03T10:59:12.844928+00:00"
+    },
+    {
+      "name": "7835582",
+      "url": "https://zenodo.org/api/records/7835582",
+      "resolved_url": "https://zenodo.org/api/records/7835582",
+      "content_type": "application/json",
+      "bytes": 8887,
+      "sha256": "606c4fbf6d9bb91eb04051af16a0d8d2af1a69c1b2bebd7e20cb5d2a781c23ba",
+      "retrieved_utc": "2026-11-03T10:59:12.920349+00:00"
+    },
+    {
+      "name": "6407114",
+      "url": "https://zenodo.org/api/records/6407114",
+      "resolved_url": "https://zenodo.org/api/records/6407114",
+      "content_type": "application/json",
+      "bytes": 4819,
+      "sha256": "67e5a0b2822bcf04e19894053bb8373574c8bfd01eea529b368f2c5ea7f82a61",
+      "retrieved_utc": "2026-11-03T10:59:12.990649+00:00"
+    },
+    {
+      "name": "diamas-update2-real",
+      "url": "https://www.ec.europa.eu/research/participants/documents/downloadPublic/SXhGZDB1YnJDY3BVa21VMFdMRDRJWDZDY1RKM2pVYkR6NVJ6UmNZTmpqekhEcWlCWlBVK1B3PT0=/attachment/VFEyQTQ4M3ptUWZVZDUxWXNadFg3L2hSUFlXMmNqQnI=",
+      "resolved_url": "https://ec.europa.eu/research/participants/documents/downloadPublic/SXhGZDB1YnJDY3BVa21VMFdMRDRJWDZDY1RKM2pVYkR6NVJ6UmNZTmpqekhEcWlCWlBVK1B3PT0=/attachment/VFEyQTQ4M3ptUWZVZDUxWXNadFg3L2hSUFlXMmNqQnI=",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 4097,
+      "sha256": "e9a4785b0471ee31bd73a0d7de426febcf9f73315741489f8f4d74447d04805b",
+      "retrieved_utc": "2026-11-03T10:59:22.136824+00:00"
+    },
+    {
+      "name": "11146154-f0",
+      "url": "https://zenodo.org/api/records/11146154/files/SPPELME_8.1_DMP_Version_FINALE_MN.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/11146154/files/SPPELME_8.1_DMP_Version_FINALE_MN.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 123537,
+      "sha256": "c69291b3adb51bbea2c812a661211c08f3c3e96e9a1de0d9a6d6d398c1abd432",
+      "retrieved_utc": "2026-11-03T10:59:22.211859+00:00"
+    },
+    {
+      "name": "10925825-f0",
+      "url": "https://zenodo.org/api/records/10925825/files/D2.1_Data_Managment_Plan_V2_030424.docx/content",
+      "resolved_url": "https://zenodo.org/api/records/10925825/files/D2.1_Data_Managment_Plan_V2_030424.docx/content",
+      "content_type": "application/octet-stream",
+      "bytes": 127996,
+      "sha256": "07d6e6654cbe067320accccb567a90448c34c94561613ca4fd6f27977e8db9b9",
+      "retrieved_utc": "2026-11-03T10:59:22.238461+00:00"
+    },
+    {
+      "name": "18403735-f0",
+      "url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1114561,
+      "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+      "retrieved_utc": "2026-11-03T10:59:22.490883+00:00"
+    },
+    {
+      "name": "3245354-f0",
+      "url": "https://zenodo.org/api/records/3245354/files/EURHISFIRM-D1.2-FinalVersion-v1.3.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/3245354/files/EURHISFIRM-D1.2-FinalVersion-v1.3.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 563250,
+      "sha256": "df6abcb4efab9d3827784798904ea55e76bff0c50c507ddf956eaf1432f12374",
+      "retrieved_utc": "2026-11-03T10:59:22.431846+00:00"
+    },
+    {
+      "name": "3246339-f0",
+      "url": "https://zenodo.org/api/records/3246339/files/EURHISFIRM-D1.7-DataManagementPlan_v2.3.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/3246339/files/EURHISFIRM-D1.7-DataManagementPlan_v2.3.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1397540,
+      "sha256": "e931c0387af54ff66b25977eb936ca5fafc1db4760469fd5ef18e4d65cc480d3",
+      "retrieved_utc": "2026-11-03T10:59:22.644141+00:00"
+    },
+    {
+      "name": "4972582-f0",
+      "url": "https://zenodo.org/api/records/4972582/files/1.9Finaldatamanagementplan-4.1.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4972582/files/1.9Finaldatamanagementplan-4.1.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1320388,
+      "sha256": "00fa87febde511b5ec55f9c74eb5f3c8af99971e9873fc68b2936cd40d3abdc9",
+      "retrieved_utc": "2026-11-03T10:59:22.754796+00:00"
+    },
+    {
+      "name": "4327654-f0",
+      "url": "https://zenodo.org/api/records/4327654/files/D1.1-Data-Management-Plan-v1.0.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4327654/files/D1.1-Data-Management-Plan-v1.0.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 381050,
+      "sha256": "f37faf7e45343dd5da515c3cc1912859bc76615d99899a3dbbda00865ce1d5de",
+      "retrieved_utc": "2026-11-03T10:59:22.670621+00:00"
+    },
+    {
+      "name": "4327675-f0",
+      "url": "https://zenodo.org/api/records/4327675/files/D1.4-Data-Management-Plan-update-1.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4327675/files/D1.4-Data-Management-Plan-update-1.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 326552,
+      "sha256": "1ba93b7dd30eab147704cae41373cc2e41d88afc60dac1f66f7e9560549ebabe",
+      "retrieved_utc": "2026-11-03T10:59:22.616561+00:00"
+    },
+    {
+      "name": "4925652-f0",
+      "url": "https://zenodo.org/api/records/4925652/files/D1.6_Data_Management_Plan_update2.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4925652/files/D1.6_Data_Management_Plan_update2.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 308881,
+      "sha256": "20e606eb765d83bd7e0fa45fa43c755d2b60156219b708286ee69f19a37b312f",
+      "retrieved_utc": "2026-11-03T10:59:22.781703+00:00"
+    },
+    {
+      "name": "4533876-f0",
+      "url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_DRAFT_TRIPLE.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_DRAFT_TRIPLE.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1373193,
+      "sha256": "60bc6224708c35eaf72ae63e5a93e5de952f4865a2ac77ab3f3a1c5c43079ade",
+      "retrieved_utc": "2026-11-03T10:59:23.391998+00:00"
+    },
+    {
+      "name": "4533876-f1",
+      "url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_TRIPLE_approved.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_TRIPLE_approved.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1669906,
+      "sha256": "a8b3ff84fc9203e511ebea584879d00312cfcf05586a3107cd4d551ff0b0464f",
+      "retrieved_utc": "2026-11-03T10:59:23.507880+00:00"
+    },
+    {
+      "name": "7835582-f0",
+      "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan_TRIPLE.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan_TRIPLE.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 584246,
+      "sha256": "1d92a6734550663305f999afd6d48aab64ba7ee605ed0277e952d62095bbfed1",
+      "retrieved_utc": "2026-11-03T10:59:23.046937+00:00"
+    },
+    {
+      "name": "7835582-f1",
+      "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20TRIPLE_approved.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20TRIPLE_approved.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1162641,
+      "sha256": "97a5bb5ad1800895f990d160cc5e6d0d513c381fb12652280e60c913eba59980",
+      "retrieved_utc": "2026-11-03T10:59:23.284172+00:00"
+    },
+    {
+      "name": "7835582-f2",
+      "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20Final%20Update%20V3.0%20March%202023.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20Final%20Update%20V3.0%20March%202023.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 879695,
+      "sha256": "e6698a8147cf61473c8c7951c43bd180a5eef93cfb7079f520859c4dcd7fe1e1",
+      "retrieved_utc": "2026-11-03T10:59:23.307577+00:00"
+    },
+    {
+      "name": "6407114-f0",
+      "url": "https://zenodo.org/api/records/6407114/files/DMP_A.G.A.T.H.O.C.L.E.S.%20-%20GA%20893629.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/6407114/files/DMP_A.G.A.T.H.O.C.L.E.S.%20-%20GA%20893629.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1370334,
+      "sha256": "77fd079c2be824ab6e812763ffdf5b5c3d7dda53fceee50817389ad653d041c3",
+      "retrieved_utc": "2026-11-03T10:59:23.442100+00:00"
+    },
+    {
+      "name": "cordis-101058007",
+      "url": "https://cordis.europa.eu/project/id/101058007",
+      "resolved_url": "https://cordis.europa.eu/project/id/101058007",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 345321,
+      "sha256": "22d33bae022dc351b9feb7a01f6b7b1651de01186d4269b8dccfa279c66418e3",
+      "retrieved_utc": "2026-11-03T10:59:23.307225+00:00"
+    },
+    {
+      "name": "cordis-101023762",
+      "url": "https://cordis.europa.eu/project/id/101023762",
+      "resolved_url": "https://cordis.europa.eu/project/id/101023762",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 92726,
+      "sha256": "2694e33b4bac4bb029d57fb1b0452c87b3f2d36ce90536e3cb4b7ad3519b9dd5",
+      "retrieved_utc": "2026-11-03T10:59:23.968436+00:00"
+    },
+    {
+      "name": "cordis-777489",
+      "url": "https://cordis.europa.eu/project/id/777489",
+      "resolved_url": "https://cordis.europa.eu/project/id/777489",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 215112,
+      "sha256": "d8732c9a271a33781c1bb107701d532e2bfce774ee57c707e227faf6ccccde27",
+      "retrieved_utc": "2026-11-03T10:59:23.539629+00:00"
+    },
+    {
+      "name": "cordis-780069",
+      "url": "https://cordis.europa.eu/project/id/780069",
+      "resolved_url": "https://cordis.europa.eu/project/id/780069",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 186421,
+      "sha256": "d5a30e2b7f05fc06abf15a1846dc7b6390cadb3e2c0ba2de54378eec274ea303",
+      "retrieved_utc": "2026-11-03T10:59:23.576855+00:00"
+    },
+    {
+      "name": "cordis-863420",
+      "url": "https://cordis.europa.eu/project/id/863420",
+      "resolved_url": "https://cordis.europa.eu/project/id/863420",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 346416,
+      "sha256": "2b3e007e8ecfce72a7deeafefd131dab3de655960c59b8ca319a6ff18989c349",
+      "retrieved_utc": "2026-11-03T10:59:23.678635+00:00"
+    },
+    {
+      "name": "cordis-101061233",
+      "url": "https://cordis.europa.eu/project/id/101061233",
+      "resolved_url": "https://cordis.europa.eu/project/id/101061233",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 198353,
+      "sha256": "2b33a760f4b0d47e6256ea3e52c825629c65ffb75cc0670ddd930c7f0cffde14",
+      "retrieved_utc": "2026-11-03T10:59:23.643432+00:00"
+    },
+    {
+      "name": "cordis-101024115",
+      "url": "https://cordis.europa.eu/project/id/101024115",
+      "resolved_url": "https://cordis.europa.eu/project/id/101024115",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 97556,
+      "sha256": "4f29c739ea61e9058abb53115f3340c362d6b950b7495ba333708f23aa1958a1",
+      "retrieved_utc": "2026-11-03T10:59:23.711063+00:00"
+    },
+    {
+      "name": "cordis-101029346",
+      "url": "https://cordis.europa.eu/project/id/101029346",
+      "resolved_url": "https://cordis.europa.eu/project/id/101029346",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 96271,
+      "sha256": "02856e6327707457888f6eeff139374a6936b0adfcf05dc30478d9c290ffaaeb",
+      "retrieved_utc": "2026-11-03T10:59:23.738923+00:00"
+    },
+    {
+      "name": "cordis-893629",
+      "url": "https://cordis.europa.eu/project/id/893629",
+      "resolved_url": "https://cordis.europa.eu/project/id/893629",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 107923,
+      "sha256": "89246cb20564916b1bae224510b654d4acd2cadf19e3fc327dd8f0b03cca9d39",
+      "retrieved_utc": "2026-11-03T10:59:23.794561+00:00"
+    },
+    {
+      "name": "18403735-versions",
+      "url": "https://zenodo.org/api/records/18403735/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/18403735/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 17881,
+      "sha256": "67c1d2e18645b83d31ff8d99660d58d309716a03bbce465839aa73de381db91a",
+      "retrieved_utc": "2026-11-03T17:28:55.046590+00:00"
+    },
+    {
+      "name": "11146154-versions",
+      "url": "https://zenodo.org/api/records/11146154/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/11146154/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 4868,
+      "sha256": "2deeb54d33ad587439cac4985ee5f59920eee94344f1f0e480a581095baeac1b",
+      "retrieved_utc": "2026-11-03T17:28:54.850458+00:00"
+    },
+    {
+      "name": "8242975-versions",
+      "url": "https://zenodo.org/api/records/8242975/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/8242975/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 9600,
+      "sha256": "3d3abf2f572b2f13a5aa7642b049299daafaff06b9556aacc755c86c1bc0718f",
+      "retrieved_utc": "2026-11-03T17:28:54.876287+00:00"
+    },
+    {
+      "name": "10925825-versions",
+      "url": "https://zenodo.org/api/records/10925825/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/10925825/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 4747,
+      "sha256": "0a932cafbf073e335e3ca03c8b7e442614992a3dc63a06c25c222b47fc5b530a",
+      "retrieved_utc": "2026-11-03T17:28:54.846984+00:00"
+    },
+    {
+      "name": "recharge-deliverables",
+      "url": "https://recharge-culture.eu/deliverables/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "recharge-resources",
+      "url": "https://recharge-culture.eu/resources/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "recharge-sitemap",
+      "url": "https://recharge-culture.eu/wp-sitemap.xml",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "name": "18403735-f0",
+      "url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1114561,
+      "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+      "retrieved_utc": "2026-11-03T17:29:07.359758+00:00"
+    },
+    {
+      "name": "17801415-f0",
+      "url": "https://zenodo.org/api/records/17801415/files/RECHARGE-DMP_v1.2.docx.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/17801415/files/RECHARGE-DMP_v1.2.docx.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1063042,
+      "sha256": "12ad732739b7ccdd586f39da4632e2b4517553be0abd42437ffa78bfd535382b",
+      "retrieved_utc": "2026-11-03T17:29:07.607234+00:00"
+    },
+    {
+      "name": "17733866-f0",
+      "url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 236054,
+      "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+      "retrieved_utc": "2026-11-03T17:29:06.747284+00:00"
+    },
+    {
+      "name": "search-101058007",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101058007%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101058007%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 27985,
+      "sha256": "3b0dfc26870f1c1696a3e012d8b2f10054eab9bb66f883503c294db6bcdd442f",
+      "retrieved_utc": "2026-11-03T17:30:05.274707+00:00"
+    },
+    {
+      "name": "search-893629",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22893629%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22893629%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 5652,
+      "sha256": "fead47fa9d646bbc28a66f874de736993fe01835d0384fc055e0a271b3f7dbfd",
+      "retrieved_utc": "2026-11-03T17:30:05.158691+00:00"
+    },
+    {
+      "name": "search-101023762",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101023762%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101023762%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 5573,
+      "sha256": "55019d79100148858449e87f7f66b072ac9ac594ade03c82c7588663c52d091b",
+      "retrieved_utc": "2026-11-03T17:30:05.106466+00:00"
+    },
+    {
+      "name": "search-785934",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22785934%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22785934%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6001,
+      "sha256": "00b81b1277c469fa19c295e6483bfcc832063188f72cf7f5a51272272feaf47c",
+      "retrieved_utc": "2026-11-03T17:30:05.106871+00:00"
+    },
+    {
+      "name": "search-777483",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22777483%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22777483%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 35622,
+      "sha256": "0d28bf2a8b1cfe2c05e160535bc518da6b829d170c64b470f5f9dfe7c888bc24",
+      "retrieved_utc": "2026-11-03T17:30:05.238009+00:00"
+    },
+    {
+      "name": "search-101079148",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101079148%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101079148%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 19579,
+      "sha256": "839d8ab578a5728262b3a989975ac5d8b8bf6332a7abb6ac66275629444bff4b",
+      "retrieved_utc": "2026-11-03T17:30:05.148820+00:00"
+    },
+    {
+      "name": "10405850-versions",
+      "url": "https://zenodo.org/api/records/10405850/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/10405850/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 13003,
+      "sha256": "2bdf7a3a72c4a45d5347176075f05941aa685e6f39738b9161c501458bee5830",
+      "retrieved_utc": "2026-11-03T17:30:05.375571+00:00"
+    },
+    {
+      "name": "10405959-versions",
+      "url": "https://zenodo.org/api/records/10405959/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/10405959/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 13768,
+      "sha256": "b01568a58c68b1068638e35f8cce00020bb4fdb9966330b5a6e0c78f27d205ea",
+      "retrieved_utc": "2026-11-03T17:30:05.380881+00:00"
+    },
+    {
+      "name": "6407114-versions",
+      "url": "https://zenodo.org/api/records/6407114/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/6407114/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 4953,
+      "sha256": "5f0d2fb6bdc3f36f892a4c8d4a502caa8dff3480790bea985088eb3e994c63a5",
+      "retrieved_utc": "2026-11-03T17:30:05.403124+00:00"
+    },
+    {
+      "name": "7835582-versions",
+      "url": "https://zenodo.org/api/records/7835582/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/7835582/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 23638,
+      "sha256": "72c811ba52ef8d21a9cd84e1b2ec19bb1c7d306a3c842139471fcb3ce53eab76",
+      "retrieved_utc": "2026-11-03T17:30:05.402359+00:00"
+    },
+    {
+      "name": "4972582-versions",
+      "url": "https://zenodo.org/api/records/4972582/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/4972582/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 5064,
+      "sha256": "0131594c98570d82eb7b052a28fe2c6e32fe63a5b60ad6ccee24b3d923a7faf1",
+      "retrieved_utc": "2026-11-03T17:30:05.420209+00:00"
+    },
+    {
+      "name": "4925652-versions",
+      "url": "https://zenodo.org/api/records/4925652/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/4925652/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 6350,
+      "sha256": "bb075e0fc5b6737eb8798ea1a00e3dc8d9a31eb843f2f790fe7802edf585ae05",
+      "retrieved_utc": "2026-11-03T17:30:05.468594+00:00"
+    },
+    {
+      "name": "search-870811",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22870811%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22870811%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 11544,
+      "sha256": "de738d6fb428a4826e79531d5d65b8f05bdb328f5e98e9c458a2310e985a79c1",
+      "retrieved_utc": "2026-11-03T17:30:35.974352+00:00"
+    },
+    {
+      "name": "search-823782",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22823782%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22823782%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 29927,
+      "sha256": "540bde47082eb1e57c3d9cd401703ad91c176d31f78021a15da898a4a3963591",
+      "retrieved_utc": "2026-11-03T17:30:36.024561+00:00"
+    },
+    {
+      "name": "search-761974",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22761974%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22761974%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6840,
+      "sha256": "c1fa2a99b7130ab534e71538b12ccd0baa0b909c5ad31a3288d1766e00023376",
+      "retrieved_utc": "2026-11-03T17:30:35.992168+00:00"
+    },
+    {
+      "name": "search-732391",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22732391%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22732391%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 5212,
+      "sha256": "c8fd69dc1cfc60b49e6b694bf7667cc3abd52b23a619db4095e622f5b6daf115",
+      "retrieved_utc": "2026-11-03T17:30:35.991669+00:00"
+    },
+    {
+      "name": "search-642877",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22642877%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22642877%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 12547,
+      "sha256": "2ea37493ba6e824d60f6924e6a43132e8a5220ea31af5b19e797e5f779f3edde",
+      "retrieved_utc": "2026-11-03T17:30:35.963666+00:00"
+    },
+    {
+      "name": "search-101007579",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101007579%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101007579%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 5795,
+      "sha256": "c3124dc799e692f4a8abaa309235dac3e7545f270993741832632ae83f46d64f",
+      "retrieved_utc": "2026-11-03T17:30:35.985441+00:00"
+    },
+    {
+      "name": "search-101030581",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101030581%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101030581%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 13156,
+      "sha256": "f8762f4f9f40871cc900916bb297801f8cdef57e2f7ec786023a3a48ff2ab02e",
+      "retrieved_utc": "2026-11-03T17:30:36.984473+00:00"
+    },
+    {
+      "name": "search-101022502",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101022502%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101022502%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6179,
+      "sha256": "538e2e814bf59f5311573c8c106f62340ee6ef02aea3d80f719dafb92cfb8e2f",
+      "retrieved_utc": "2026-11-03T17:30:36.929669+00:00"
+    },
+    {
+      "name": "search-101094354",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101094354%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101094354%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 528,
+      "sha256": "bc101058b5aa6e2f1e48ee18ebecf3053cfb6807a0b8f31dec65b75eea67d7f4",
+      "retrieved_utc": "2026-11-03T17:30:36.904124+00:00"
+    },
+    {
+      "name": "search-101058450",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101058450%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101058450%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 7736,
+      "sha256": "44766bc4909eccf8d2f05ff6daa364d6f3ce4fb379d9ad4cf177e21d36344eeb",
+      "retrieved_utc": "2026-11-03T17:30:36.931491+00:00"
+    },
+    {
+      "name": "search-101017549",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101017549%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22101017549%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6810,
+      "sha256": "1538fd8b33ef824b03a8de29205f3d4b8bd8875c6b0aef6c6c8f882d85f45866",
+      "retrieved_utc": "2026-11-03T17:30:36.936417+00:00"
+    },
+    {
+      "name": "recharge-results",
+      "url": "https://cordis.europa.eu/project/id/101061233/results",
+      "resolved_url": "https://cordis.europa.eu/project/id/101061233/results",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 84831,
+      "sha256": "de8c119623bd1f89c43c65b087193ec9d423f85701967fd7b5b0eb372c308fab",
+      "retrieved_utc": "2026-11-03T17:30:36.263742+00:00"
+    },
+    {
+      "name": "recharge-project-home",
+      "url": "https://recharge-culture.eu/",
+      "resolved_url": "https://recharge-culture.eu/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 79597,
+      "sha256": "61fb0939531ee5a7d482195db082c303f9cf5210b71312adeb54d47c6cb63e81",
+      "retrieved_utc": "2026-11-03T17:30:36.684666+00:00"
+    },
+    {
+      "name": "3364523-versions",
+      "url": "https://zenodo.org/api/records/3364523/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/3364523/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 6935,
+      "sha256": "0f4d067c69696483bcf1e630873cbb1fda2c6beb7cfd45c300f8a7537021a554",
+      "retrieved_utc": "2026-11-03T17:30:45.553044+00:00"
+    },
+    {
+      "name": "3532937-versions",
+      "url": "https://zenodo.org/api/records/3532937/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/3532937/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 10886,
+      "sha256": "e7f3afe6a618c4a1a52b2944f136d558fbe35efc8a636b667a3dee6b6e0375e7",
+      "retrieved_utc": "2026-11-03T17:30:45.598629+00:00"
+    },
+    {
+      "name": "3364523-f0",
+      "url": "https://zenodo.org/api/records/3364523/files/Deliverable%20D6.1%20-%20ICEDIG%20-%20Data%20Management%20Plan.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/3364523/files/Deliverable%20D6.1%20-%20ICEDIG%20-%20Data%20Management%20Plan.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 223894,
+      "sha256": "d9ed5016588eb9cfcb60b16bf61bd079b37780e56c5e45d8d4abe273138c0396",
+      "retrieved_utc": "2026-11-03T17:30:45.694359+00:00"
+    },
+    {
+      "name": "3532937-f0",
+      "url": "https://zenodo.org/api/records/3532937/files/Deliverable%20D6.6_ICEDIG_Provisional%20DMP%20for%20DiSSCo.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/3532937/files/Deliverable%20D6.6_ICEDIG_Provisional%20DMP%20for%20DiSSCo.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 1697225,
+      "sha256": "f8598b38803610f3c1f82fc33b5ace122ee61cb3f920aada1455b354d619e475",
+      "retrieved_utc": "2026-11-03T17:30:47.866354+00:00"
+    },
+    {
+      "name": "cordis-777483",
+      "url": "https://cordis.europa.eu/project/id/777483",
+      "resolved_url": "https://cordis.europa.eu/project/id/777483",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 218421,
+      "sha256": "dde62ec83f4b5008f19019eb0b60791120c238f126570bea4aa58a128c489ed2",
+      "retrieved_utc": "2026-11-03T17:30:45.687736+00:00"
+    },
+    {
+      "name": "cordis-777483-results",
+      "url": "https://cordis.europa.eu/project/id/777483/results",
+      "resolved_url": "https://cordis.europa.eu/project/id/777483/results",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175218,
+      "sha256": "fcb0b581d4d820b0de65a84b38c4fc3dd6cfd67c3ac0f65e8f91c56088c9f75e",
+      "retrieved_utc": "2026-11-03T17:30:45.619002+00:00"
+    },
+    {
+      "name": "search-external-0",
+      "url": "https://zenodo.org/api/records?q=%22SSHOC+Data+Management+Plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22SSHOC+Data+Management+Plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 39353,
+      "sha256": "eced02df282e70c47d1c0a73935288f523ba65bd1d67a84064183435a536a3af",
+      "retrieved_utc": "2026-11-03T17:31:50.590549+00:00"
+    },
+    {
+      "name": "search-external-1",
+      "url": "https://zenodo.org/api/records?q=%22PALOMERA%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22PALOMERA%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 15568,
+      "sha256": "5b6916fa136d9f36e4221c5ef24cbf43f3e73628054dcea4580a6feac0b2c47e",
+      "retrieved_utc": "2026-11-03T17:31:50.592666+00:00"
+    },
+    {
+      "name": "search-external-2",
+      "url": "https://zenodo.org/api/records?q=%22OPERAS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22OPERAS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 112209,
+      "sha256": "fdb5465a50a6aae9dea1ec7ae27a0e8a67fe994867bc294ef7f4a18581b49edf",
+      "retrieved_utc": "2026-11-03T17:31:51.444691+00:00"
+    },
+    {
+      "name": "search-external-3",
+      "url": "https://zenodo.org/api/records?q=%22humanities%22+AND+%22data+management+plan%22+AND+final&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22humanities%22+AND+%22data+management+plan%22+AND+final&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 84557,
+      "sha256": "f3dd412adb2e159e6407c4faf8c096fce0879c3e8fe1018559f1e5d70cf5429a",
+      "retrieved_utc": "2026-11-03T17:31:50.743023+00:00"
+    },
+    {
+      "name": "sshoc-deliverables",
+      "url": "https://sshoc.eu/publications/deliverables",
+      "resolved_url": "https://sshoc.eu/publications/deliverables",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 79191,
+      "sha256": "4e75d75d63e1b2b4cd6558116fd061377dd7de8a5e7d00da1bd11c127dde4570",
+      "retrieved_utc": "2026-11-03T17:31:51.229337+00:00"
+    },
+    {
+      "name": "search-883242",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22883242%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22883242%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 7144,
+      "sha256": "801430482a0a51fd3df960c7c65095d2352c9b4aace37715d26309777bce8a36",
+      "retrieved_utc": "2026-11-03T17:32:33.640467+00:00"
+    },
+    {
+      "name": "search-813547",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22813547%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22813547%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 7627,
+      "sha256": "878f4b7ebaa85c9110c8bb2da3397f5d381d782df1c2355de4db3b04e577bc64",
+      "retrieved_utc": "2026-11-03T17:32:33.636356+00:00"
+    },
+    {
+      "name": "search-892230",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22892230%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22892230%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6528,
+      "sha256": "e7c0518766c1e75d2932f1b3dc975aca77fd3fcbd9f100a5c8be2c2cb6210966",
+      "retrieved_utc": "2026-11-03T17:32:33.625374+00:00"
+    },
+    {
+      "name": "search-694986",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22694986%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22694986%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 525,
+      "sha256": "1988133473ae4b7a6e5b652b34d87c3afce5762e31965f1aaae1f81e382fee85",
+      "retrieved_utc": "2026-11-03T17:32:33.597735+00:00"
+    },
+    {
+      "name": "search-654119",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22654119%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22654119%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 69790,
+      "sha256": "e9ad56fd92e0f068f95c402873074ac30c56f6c219e52d61b6bd3a572894d9b6",
+      "retrieved_utc": "2026-11-03T17:32:33.729663+00:00"
+    },
+    {
+      "name": "search-731102",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22731102%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22731102%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 525,
+      "sha256": "87328628cd9041b3c060e0d9141ad504a06a20c7af2ea43719acb992938227f0",
+      "retrieved_utc": "2026-11-03T17:32:33.593477+00:00"
+    },
+    {
+      "name": "search-823914",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22823914%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22823914%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 32198,
+      "sha256": "9dd263230087ca1bdd9b3fc980ff268879d72214a5395b1a44062570e445be77",
+      "retrieved_utc": "2026-11-03T17:32:33.867652+00:00"
+    },
+    {
+      "name": "search-731081",
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22731081%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22731081%22+AND+%28%22data+management+plan%22+OR+DMP%29&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 525,
+      "sha256": "735b251a74912ec9fb621aa5545d34df264472021021ac3420fb6bcb5aad0802",
+      "retrieved_utc": "2026-11-03T17:32:33.795061+00:00"
+    },
+    {
+      "name": "search-reserve-8",
+      "url": "https://zenodo.org/api/records?q=%22PARTHENOS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22PARTHENOS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 43748,
+      "sha256": "9f2624bb076c6308ea87f775073216e160b2840860ad3909846c7928a6238bcf",
+      "retrieved_utc": "2026-11-03T17:32:33.984733+00:00"
+    },
+    {
+      "name": "search-reserve-9",
+      "url": "https://zenodo.org/api/records?q=%22HIRMEOS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22HIRMEOS%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 487,
+      "sha256": "d4fb844dd0e0eaead9d6f98d80535ee09d8ae686803275d60cad2e843122fdce",
+      "retrieved_utc": "2026-11-03T17:32:33.898004+00:00"
+    },
+    {
+      "name": "search-reserve-10",
+      "url": "https://zenodo.org/api/records?q=%22ARIADNEplus%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22ARIADNEplus%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 12745,
+      "sha256": "8b6fa91dd83eb9b4aac4d2f60e3324a67a90b3d2ab3d18210f0f501fac77b90a",
+      "retrieved_utc": "2026-11-03T17:32:33.852599+00:00"
+    },
+    {
+      "name": "cordis-731102-results",
+      "url": "https://cordis.europa.eu/project/id/731102/results",
+      "resolved_url": "https://cordis.europa.eu/project/id/731102/results",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 87578,
+      "sha256": "af8f3346958771e5fa70dc9a2280bd719b51cf64539615c0dee973e6cfd3929e",
+      "retrieved_utc": "2026-11-03T17:34:14.150668+00:00"
+    },
+    {
+      "name": "cordis-731081-results",
+      "url": "https://cordis.europa.eu/project/id/731081/results",
+      "resolved_url": "https://cordis.europa.eu/project/id/731081/results",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 77633,
+      "sha256": "434f1c24edb6945cf603ae7702622d203525a8a2a54b74a8b27d267a9cdff10e",
+      "retrieved_utc": "2026-11-03T17:34:14.193137+00:00"
+    },
+    {
+      "name": "cordis-823782-results",
+      "url": "https://cordis.europa.eu/project/id/823782/results",
+      "resolved_url": "https://cordis.europa.eu/project/id/823782/results",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 324704,
+      "sha256": "f2399cfc823e7443f4f2703156a5b5ac74356829f36d45a130c5c596e1a90a63",
+      "retrieved_utc": "2026-11-03T17:34:14.429825+00:00"
+    },
+    {
+      "name": "14557527-f0",
+      "url": "https://zenodo.org/api/records/14557527/files/D1.3%20Data%20Management%20Plan_M24_V2.0.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/14557527/files/D1.3%20Data%20Management%20Plan_M24_V2.0.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 2105293,
+      "sha256": "2255ee1cf85e85140fff3af89d33661407bf5747cdd83be78d81f75773dcdfa4",
+      "retrieved_utc": "2026-11-03T17:34:18.860676+00:00"
+    },
+    {
+      "name": "14557527-versions",
+      "url": "https://zenodo.org/api/records/14557527/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/14557527/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 14501,
+      "sha256": "df62745e2e64e45ea09eca8ce76598610432af67a460ecc220376c7328e99386",
+      "retrieved_utc": "2026-11-03T17:34:14.244982+00:00"
+    },
+    {
+      "name": "4558274-f0",
+      "url": "https://zenodo.org/api/records/4558274/files/D1.6%20SSHOC%20Data%20Management%20Plan%20(Approved%203%20Nov%202020).pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4558274/files/D1.6%20SSHOC%20Data%20Management%20Plan%20(Approved%203%20Nov%202020).pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 703161,
+      "sha256": "c353b347f2cd91e5fa67a2f30b28545423bb391be1b4e2fb08eb911cf3d81236",
+      "retrieved_utc": "2026-11-03T17:34:14.985713+00:00"
+    },
+    {
+      "name": "4558274-f1",
+      "url": "https://zenodo.org/api/records/4558274/files/D1.6%20SSHOC%20Data%20Management%20Plan.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/4558274/files/D1.6%20SSHOC%20Data%20Management%20Plan.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 641309,
+      "sha256": "6054b4f0fa6b3b66b0dfed8cec75e1469ca7874d31f2f201f01c458c27b64cea",
+      "retrieved_utc": "2026-11-03T17:34:15.105274+00:00"
+    },
+    {
+      "name": "4558274-versions",
+      "url": "https://zenodo.org/api/records/4558274/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/4558274/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 21046,
+      "sha256": "551cee2ed76ae9ab55c1ab49df08492aaea64860465932317f7e93e82c57d945",
+      "retrieved_utc": "2026-11-03T17:34:14.459427+00:00"
+    },
+    {
+      "name": "3635301-f0",
+      "url": "https://zenodo.org/api/records/3635301/files/operas-p_d12_data_management_plan.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/3635301/files/operas-p_d12_data_management_plan.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 172905,
+      "sha256": "3c6a6698a6ce440382e5524273dc88b052983b35fcca273419dbcc225debc2f4",
+      "retrieved_utc": "2026-11-03T17:34:14.633548+00:00"
+    },
+    {
+      "name": "3635301-versions",
+      "url": "https://zenodo.org/api/records/3635301/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/3635301/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 5946,
+      "sha256": "3516e049c936f6910edcc18f6e21786733f0b07da96faef016330c9d80033550",
+      "retrieved_utc": "2026-11-03T17:34:14.606351+00:00"
+    },
+    {
+      "name": "search-heritage-0",
+      "url": "https://zenodo.org/api/records?q=%22IPERION%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22IPERION%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 33704,
+      "sha256": "2c7b2dc4e1926070212e2fd662337ae7223d573b89dc3d8e681f2536ebd34444",
+      "retrieved_utc": "2026-11-03T17:34:59.679069+00:00"
+    },
+    {
+      "name": "search-heritage-1",
+      "url": "https://zenodo.org/api/records?q=%22EHRI%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22EHRI%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 6100,
+      "sha256": "a3b5bf4524a784623e669fd7d9e16a16769e02d6957850d8406b52d387fbdb56",
+      "retrieved_utc": "2026-11-03T17:34:59.621598+00:00"
+    },
+    {
+      "name": "search-heritage-2",
+      "url": "https://zenodo.org/api/records?q=%22DESIR%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22DESIR%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 485,
+      "sha256": "8bcb75f9eab237d7127578a14a89199cec35d8363a977503dee718e7266df05a",
+      "retrieved_utc": "2026-11-03T17:34:59.600217+00:00"
+    },
+    {
+      "name": "search-heritage-3",
+      "url": "https://zenodo.org/api/records?q=%22DARIAH%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "resolved_url": "https://zenodo.org/api/records?q=%22DARIAH%22+AND+%22data+management+plan%22&size=25&all_versions=true",
+      "content_type": "application/json",
+      "bytes": 100538,
+      "sha256": "78a59f11b9a9c09c3d6d935249d711127e44a38b680300787e80acea8b47fd16",
+      "retrieved_utc": "2026-11-03T17:34:59.859010+00:00"
+    },
+    {
+      "name": "desir-dmp",
+      "url": "https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5b3672642&appId=PPGMS",
+      "resolved_url": "https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5b3672642&appId=PPGMS",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 4143,
+      "sha256": "9b632113747a2fea4af65fb25a8c82910be8d1b7fcda725b17001469593659d7",
+      "retrieved_utc": "2026-11-03T17:34:59.080412+00:00"
+    },
+    {
+      "name": "desir-hal",
+      "url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22data+management+plan%22+AND+%28DESIR+OR+DARIAH%29&fl=docid%2ChalId_s%2Ctitle_s%2CproducedDate_s%2CsubmittedDate_s%2CfileMain_s%2Cversion_i%2Curi_s%2CopenAccess_bool&rows=100&wt=json",
+      "resolved_url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22data+management+plan%22+AND+%28DESIR+OR+DARIAH%29&fl=docid%2ChalId_s%2Ctitle_s%2CproducedDate_s%2CsubmittedDate_s%2CfileMain_s%2Cversion_i%2Curi_s%2CopenAccess_bool&rows=100&wt=json",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 986,
+      "sha256": "1e067602723ce9d11aba40db80c0bf0baa81a85a3f38e86fb99f50ab5051d0f0",
+      "retrieved_utc": "2026-11-03T17:34:59.196551+00:00"
+    },
+    {
+      "name": "desir-dmp-real",
+      "url": "https://www.ec.europa.eu/research/participants/documents/downloadPublic/U3E2U2ZYTXA5UXNtaDlVRGtWSi9iQWx5ek4xUGZybFBXQndEcVRXU2NhT3IzREdqMGVsRThnPT0=/attachment/VFEyQTQ4M3ptUWRnUWtPMU1TcmZ0RTgvZ3Ardk5GSEI=",
+      "resolved_url": "https://ec.europa.eu/research/participants/documents/downloadPublic/U3E2U2ZYTXA5UXNtaDlVRGtWSi9iQWx5ek4xUGZybFBXQndEcVRXU2NhT3IzREdqMGVsRThnPT0=/attachment/VFEyQTQ4M3ptUWRnUWtPMU1TcmZ0RTgvZ3Ardk5GSEI=",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 4097,
+      "sha256": "03345fc6fbd7fb0866e2d48697eb1c6b448121bef2f51c511b30fa673eb3660a",
+      "retrieved_utc": "2026-11-03T17:35:14.253551+00:00"
+    },
+    {
+      "name": "5785981-versions",
+      "url": "https://zenodo.org/api/records/5785981/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/5785981/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 17229,
+      "sha256": "fdb81266b1295949a575f830588249bf0cc9c2c91afef74ebeab59ed0a90b4fc",
+      "retrieved_utc": "2026-11-03T17:35:14.306228+00:00"
+    },
+    {
+      "name": "4541267-versions",
+      "url": "https://zenodo.org/api/records/4541267/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/4541267/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 17229,
+      "sha256": "d028b880809f82af7c124dfa9c45da16d452defebb653c6975d3617c7cdf2d1c",
+      "retrieved_utc": "2026-11-03T17:35:14.580458+00:00"
+    },
+    {
+      "name": "5788560-versions",
+      "url": "https://zenodo.org/api/records/5788560/versions?size=25",
+      "resolved_url": "https://zenodo.org/api/records/5788560/versions?size=25",
+      "content_type": "application/json",
+      "bytes": 17229,
+      "sha256": "58aa7e5350b585854872e773619b4ce436de863341e22f49630e4f1236dd8f27",
+      "retrieved_utc": "2026-11-03T17:35:14.394145+00:00"
+    },
+    {
+      "name": "ehri3-initial",
+      "url": "https://www.ehri-project.eu/wp-content/uploads/2022/09/D12.1-EHRI-3-Data-Management-Plan.pdf",
+      "resolved_url": "https://www.ehri-project.eu/wp-content/uploads/2022/09/D12.1-EHRI-3-Data-Management-Plan.pdf",
+      "content_type": "application/pdf",
+      "bytes": 499216,
+      "sha256": "42f927cce0cf0afb5307e29a69b4c012e822bb402f2f7c340c5293d23ae6fa5d",
+      "retrieved_utc": "2026-11-03T17:35:29.988164+00:00"
+    },
+    {
+      "name": "ehri3-final",
+      "url": "https://www.ehri-project.eu/wp-content/uploads/2023/07/D12.2-Updated-Data-Management-Plan.pdf",
+      "resolved_url": "https://www.ehri-project.eu/wp-content/uploads/2023/07/D12.2-Updated-Data-Management-Plan.pdf",
+      "content_type": "application/pdf",
+      "bytes": 504999,
+      "sha256": "c3dfe1bc2ec85402f5dedcef2650c9ba394bf8eb2b342e77292a1eb30e10b2e8",
+      "retrieved_utc": "2026-11-03T17:35:29.977342+00:00"
+    },
+    {
+      "name": "cordis-871111",
+      "url": "https://cordis.europa.eu/project/id/871111",
+      "resolved_url": "https://cordis.europa.eu/project/id/871111",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 348751,
+      "sha256": "3c9048b5bc515a19e2136ae1295cfe69aa47938ef898e4218986e54dacba0d80",
+      "retrieved_utc": "2026-11-03T17:35:29.930700+00:00"
+    },
+    {
+      "name": "ehri3-deliverables",
+      "url": "https://www.ehri-project.eu/deliverables-ehri-3-2020-2024/",
+      "resolved_url": "https://www.ehri-project.eu/deliverables-ehri-3-2020-2024/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 60086,
+      "sha256": "8eb13df610a0f400b8ebf94bb66db7c20ebc1fcdc56c49289ec1229396151093",
+      "retrieved_utc": "2026-11-03T17:35:29.898468+00:00"
+    }
+  ],
+  "findings": [
+    {
+      "project": "DIAMAS",
+      "grant": "101058007",
+      "status": "Update2_unretrieved",
+      "evidence": "Initial download is meta-refresh wrapper. Following exact target returned HDS-010 technical-error HTML, not PDF; no date inferred."
+    },
+    {
+      "project": "MeMAD",
+      "grant": "780069",
+      "status": "observed_final_not_post_end",
+      "latest_observed_document": "4925652",
+      "submission_date": "2021-03-30",
+      "project_end": "2021-03-31",
+      "publication_date": "2021-06-11",
+      "evidence": "PDF p1 actual submission date is one day before current CORDIS end; later deposit is not later issue.",
+      "visually_inspected_physical_pages": [
+        1
+      ]
+    },
+    {
+      "project": "TRIPLE",
+      "grant": "863420",
+      "status": "observed_final_exact_end_not_strictly_post_end",
+      "latest_observed_document": "7835582 f2",
+      "document_date": "2023-03-31",
+      "project_end": "2023-03-31",
+      "evidence": "PDF cover date and physical p2 update date exactly project end; scope/version history plausible but does not pass strict >100%.",
+      "visually_inspected_physical_pages": [
+        1
+      ]
+    },
+    {
+      "project": "EURHISFIRM",
+      "grant": "777489",
+      "status": "date_uncertain_final_observed_deposited_before_end",
+      "latest_observed_document": "4972582",
+      "document_date_precision": "2021 only in approval p2",
+      "publication_date": "2021-06-15",
+      "project_end": "2021-06-30",
+      "evidence": "No precise issue date established from extracted front matter."
+    },
+    {
+      "project": "SPPELME",
+      "grant": "101023762",
+      "status": "final_pdf_has_no_obvious_issue_date_in_text",
+      "document_record": "11146154",
+      "publication_date": "2024-05-08",
+      "project_end": "2024-03-31",
+      "evidence": "5-page PDF; template footer 13.10.2016 is not issue date. Need earlier version and formal date evidence."
+    },
+    {
+      "project": "ICEDIG",
+      "grant": "777483",
+      "status": "observed_documents_different_scope_and_both_before_end",
+      "current_dates": [
+        "2018-01-01",
+        "2020-03-31"
+      ],
+      "initial_record": "3364523",
+      "initial_dates": "v1 header2018-03-28; delivery2018-03-31",
+      "second_record": "3532937",
+      "second_date": "2019-10-31 v1.0 completed after consortium review, physicalp3",
+      "scope_evidence": "D6.1 physicalpp2/3 explicitly states two plans: project ICEDIG and infrastructure DiSSCo. D6.6 covers DiSSCo, not same scope. Planned v2/v3/v4 in timetable are prospective, not recovered documents.",
+      "versions": "total1 each; grant DMP query total4, two other results guidance/milestone; no successor found",
+      "visual_inspection": "D6.1 physicalp2 and D6.6 physicalp3 rendered and inspected; confirms two scopes and final date"
+    },
+    {
+      "project": "PALOMERA",
+      "grant": "101094270",
+      "status": "final_before_end",
+      "final_record": "14557527",
+      "final_document_submission": "2024-12-23",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "current_end": "2024-12-31",
+      "source": "https://cordis.europa.eu/project/id/101094270/results",
+      "version_total": 2,
+      "date_scope_note": "V2.0 final log23Dec2024; publication remains2023-07-17 for both versions, illustrating publication field cannot date revisions",
+      "visual_inspection": "physicalp2 inspected"
+    },
+    {
+      "project": "SSHOC",
+      "grant": "823782",
+      "status": "no_post_end_successor_found",
+      "record": "4558274",
+      "submission_date": "2020-06-30",
+      "approval_date": "2020-11-03",
+      "current_end": "2022-04-30",
+      "concept_versions_total": 2,
+      "source_tiers": [
+        "Exact-title Zenodo query (records omit grant metadata)",
+        "Current project deliverables page",
+        "CORDIS results listing"
+      ],
+      "caveat": "No claim nonpublic or unindexed successor absent"
+    },
+    {
+      "project": "OPERAS-P",
+      "grant": "871069",
+      "status": "only_early_document_recovered",
+      "record": "3635301",
+      "delivery_date": "2019-12-18",
+      "physical_pdf_page": 2,
+      "concept_versions_total": 1
+    },
+    {
+      "project": "IPERION HS",
+      "grant": "871034",
+      "status": "only2021_DMP_versions_recovered",
+      "concept_versions_total": 3,
+      "versions": [
+        {
+          "id": "5788560",
+          "publication_date": "2021-02-15",
+          "metadata_version": "1.0"
+        },
+        {
+          "id": "5785981",
+          "publication_date": "2021-02-15",
+          "metadata_version": "1.0"
+        },
+        {
+          "id": "4541267",
+          "publication_date": "2021-02-15",
+          "metadata_version": "1.0"
+        }
+      ],
+      "caveat": "Final innovation/exploitation report is not a final DMP; PDFs not inspected because no new candidate file identified"
+    },
+    {
+      "project": "DESIR",
+      "grant": "731081",
+      "status": "early_HAL_document_only_official_download_failed",
+      "hal_search_total": 2,
+      "relevant_hal_id": "hal-01563849v1",
+      "relevant_hal_produced_date": "2017-06-17",
+      "relevant_hal_submitted_date": "2017-07-18",
+      "hal_document_url": "https://hal.science/hal-01563849/document",
+      "official_CORDIS_link_result": "meta-refresh wrapper then HDS-010 technical-error HTML",
+      "caveat": "Only1 relevant HAL result; second result is generic training. No issue date extracted from PDF."
+    },
+    {
+      "project": "EHRI-3",
+      "grant": "871111",
+      "status": "same_scope_early_final_both_pre_end_and_no_current_CORDIS_classification",
+      "initial_actual_month": "2021-04",
+      "initial_source": "https://www.ehri-project.eu/wp-content/uploads/2022/09/D12.1-EHRI-3-Data-Management-Plan.pdf",
+      "final_actual_month": "2023-07",
+      "final_source": "https://www.ehri-project.eu/wp-content/uploads/2023/07/D12.2-Updated-Data-Management-Plan.pdf",
+      "scope": "Final physicalp2 says final version building onD12.1; same EHRI3 scope",
+      "current_authoritative_dates": [
+        "2020-09-01",
+        "2025-02-28"
+      ],
+      "current_classification": "CORDIS explicitly says not yet classified with EuroSciVoc",
+      "visual_inspection": "Final physicalp1 inspected",
+      "caveat": "An apparent humanities topic is insufficient CORDIS membership; no classification invented."
+    }
+  ],
+  "verified_pairs": [],
+  "cache_root": "/tmp/humanities-search",
+  "assets_added_to_repository": false,
+  "limitations": "One supported candidate pair with all source date ambiguities retained; no final selection. RECHARGE date/version and scope pages visually inspected. Other rejection evidence mostly text extracted, identified accordingly. Latest authoritative CORDIS date used; original end matches dated early PDF, no extension observed. Reserve search bounded but continuing; no all-repositories exhaustive claim.",
+  "records": [
+    {
+      "id": "17733866",
+      "record_url": "https://zenodo.org/records/17733866",
+      "api_url": "https://zenodo.org/api/records/17733866",
+      "publication_date": "2025-11-27",
+      "created": "2025-12-01T14:44:53.111035+00:00",
+      "updated": "2025-12-01T14:44:54.769909+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "17733865",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "RECHARGE-DMP_v1.pdf",
+          "url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content",
+          "repository_checksum": "md5:4b8c7955a955c37584a486695a686c58"
+        }
+      ]
+    },
+    {
+      "id": "17801415",
+      "record_url": "https://zenodo.org/records/17801415",
+      "api_url": "https://zenodo.org/api/records/17801415",
+      "publication_date": "2025-12-03",
+      "created": "2025-12-03T11:56:40.939202+00:00",
+      "updated": "2025-12-03T11:57:39.999215+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "17733865",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "RECHARGE-DMP_v1.2.docx.pdf",
+          "url": "https://zenodo.org/api/records/17801415/files/RECHARGE-DMP_v1.2.docx.pdf/content",
+          "repository_checksum": "md5:4d95c58bed4ef9c776d2db4fe35a1e73"
+        }
+      ]
+    },
+    {
+      "id": "18403735",
+      "record_url": "https://zenodo.org/records/18403735",
+      "api_url": "https://zenodo.org/api/records/18403735",
+      "publication_date": "2026-01-28",
+      "created": "2026-01-28T16:23:21.522164+00:00",
+      "updated": "2026-01-28T16:23:21.882892+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "17733865",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf",
+          "url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+          "repository_checksum": "md5:e0db09eeef608bc1a66447b07d6e2289"
+        }
+      ]
+    },
+    {
+      "id": "11146154",
+      "record_url": "https://zenodo.org/records/11146154",
+      "api_url": "https://zenodo.org/api/records/11146154",
+      "publication_date": "2024-05-08",
+      "created": "2024-05-08T10:55:07.459912+00:00",
+      "updated": "2024-07-06T01:09:54.092366+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "11146153",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "SPPELME_8.1_DMP_Version_FINALE_MN.pdf",
+          "url": "https://zenodo.org/api/records/11146154/files/SPPELME_8.1_DMP_Version_FINALE_MN.pdf/content",
+          "repository_checksum": "md5:1dd71688ce59691be377e1a4facbf6d9"
+        }
+      ]
+    },
+    {
+      "id": "10925825",
+      "record_url": "https://zenodo.org/records/10925825",
+      "api_url": "https://zenodo.org/api/records/10925825",
+      "publication_date": "2024-04-04",
+      "created": "2024-04-04T09:40:21.412659+00:00",
+      "updated": "2024-04-04T09:40:21.620600+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "10925824",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "D2.1_Data_Managment_Plan_V2_030424.docx",
+          "url": "https://zenodo.org/api/records/10925825/files/D2.1_Data_Managment_Plan_V2_030424.docx/content",
+          "repository_checksum": "md5:135a51aefa887e7042422f453fb6f66a"
+        }
+      ]
+    },
+    {
+      "id": "8242975",
+      "record_url": "https://zenodo.org/records/8242975",
+      "api_url": "https://zenodo.org/api/records/8242975",
+      "publication_date": "2023-08-13",
+      "created": "2023-08-13T11:11:44.988233+00:00",
+      "updated": "2024-07-11T13:02:56.857064+00:00",
+      "license": null,
+      "concept_id": "8242973",
+      "metadata_version": null,
+      "files": []
+    },
+    {
+      "id": "3245354",
+      "record_url": "https://zenodo.org/records/3245354",
+      "api_url": "https://zenodo.org/api/records/3245354",
+      "publication_date": "2018-09-28",
+      "created": "2019-06-14T13:36:05.246855+00:00",
+      "updated": "2024-07-22T21:43:55.500594+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "3245353",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "EURHISFIRM-D1.2-FinalVersion-v1.3.pdf",
+          "url": "https://zenodo.org/api/records/3245354/files/EURHISFIRM-D1.2-FinalVersion-v1.3.pdf/content",
+          "repository_checksum": "md5:6aa2f440a5e7f509e1217bcc3fa676de"
+        }
+      ]
+    },
+    {
+      "id": "3246339",
+      "record_url": "https://zenodo.org/records/3246339",
+      "api_url": "https://zenodo.org/api/records/3246339",
+      "publication_date": "2019-03-28",
+      "created": "2019-06-14T13:43:47.763571+00:00",
+      "updated": "2024-07-22T21:41:53.075253+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "3246338",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "EURHISFIRM-D1.7-DataManagementPlan_v2.3.pdf",
+          "url": "https://zenodo.org/api/records/3246339/files/EURHISFIRM-D1.7-DataManagementPlan_v2.3.pdf/content",
+          "repository_checksum": "md5:6c56cf61bf9d94fe2f31310db959a47c"
+        }
+      ]
+    },
+    {
+      "id": "4972582",
+      "record_url": "https://zenodo.org/records/4972582",
+      "api_url": "https://zenodo.org/api/records/4972582",
+      "publication_date": "2021-06-15",
+      "created": "2021-06-17T10:41:42.644918+00:00",
+      "updated": "2024-07-19T00:44:03.742866+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "4972581",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "1.9Finaldatamanagementplan-4.1.pdf",
+          "url": "https://zenodo.org/api/records/4972582/files/1.9Finaldatamanagementplan-4.1.pdf/content",
+          "repository_checksum": "md5:ea11acf0001efff126c162b026fcecdb"
+        }
+      ]
+    },
+    {
+      "id": "4327654",
+      "record_url": "https://zenodo.org/records/4327654",
+      "api_url": "https://zenodo.org/api/records/4327654",
+      "publication_date": "2020-12-16",
+      "created": "2020-12-17T10:08:19.825262+00:00",
+      "updated": "2024-07-19T12:11:03.455201+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "4327653",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "D1.1-Data-Management-Plan-v1.0.pdf",
+          "url": "https://zenodo.org/api/records/4327654/files/D1.1-Data-Management-Plan-v1.0.pdf/content",
+          "repository_checksum": "md5:e22cba8b00f85867419d5cb77d35b731"
+        }
+      ]
+    },
+    {
+      "id": "4327675",
+      "record_url": "https://zenodo.org/records/4327675",
+      "api_url": "https://zenodo.org/api/records/4327675",
+      "publication_date": "2020-12-16",
+      "created": "2020-12-17T10:10:32.864760+00:00",
+      "updated": "2024-07-19T12:11:02.039454+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "4327674",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "D1.4-Data-Management-Plan-update-1.pdf",
+          "url": "https://zenodo.org/api/records/4327675/files/D1.4-Data-Management-Plan-update-1.pdf/content",
+          "repository_checksum": "md5:322ca71bfd926ba141e7db8d228d5ab7"
+        }
+      ]
+    },
+    {
+      "id": "4925652",
+      "record_url": "https://zenodo.org/records/4925652",
+      "api_url": "https://zenodo.org/api/records/4925652",
+      "publication_date": "2021-06-11",
+      "created": "2021-06-11T06:30:41.297763+00:00",
+      "updated": "2024-07-19T01:45:08.429716+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "4925651",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "D1.6_Data_Management_Plan_update2.pdf",
+          "url": "https://zenodo.org/api/records/4925652/files/D1.6_Data_Management_Plan_update2.pdf/content",
+          "repository_checksum": "md5:5a47951cd9d5700b3cc61d027d064418"
+        }
+      ]
+    },
+    {
+      "id": "4533876",
+      "record_url": "https://zenodo.org/records/4533876",
+      "api_url": "https://zenodo.org/api/records/4533876",
+      "publication_date": "2020-03-31",
+      "created": "2021-02-11T09:12:34.292844+00:00",
+      "updated": "2024-07-19T08:37:43.749995+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "3937376",
+      "metadata_version": "Draft",
+      "files": [
+        {
+          "name": "D1.3 Data Management Plan_DRAFT_TRIPLE.pdf",
+          "url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_DRAFT_TRIPLE.pdf/content",
+          "repository_checksum": "md5:f1e1a082f46f7c429501c666eeaa4d32"
+        },
+        {
+          "name": "D1.3 Data Management Plan_TRIPLE_approved.pdf",
+          "url": "https://zenodo.org/api/records/4533876/files/D1.3%20Data%20Management%20Plan_TRIPLE_approved.pdf/content",
+          "repository_checksum": "md5:f741b10921e41093aa7b167a81c25a21"
+        }
+      ]
+    },
+    {
+      "id": "7835582",
+      "record_url": "https://zenodo.org/records/7835582",
+      "api_url": "https://zenodo.org/api/records/7835582",
+      "publication_date": "2020-12-31",
+      "created": "2023-04-17T09:28:29.417903+00:00",
+      "updated": "2024-07-12T07:24:37.342894+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "4438625",
+      "metadata_version": "Final",
+      "files": [
+        {
+          "name": "D1.3 Data Management Plan_TRIPLE.pdf",
+          "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan_TRIPLE.pdf/content",
+          "repository_checksum": "md5:fbc811cc2b7ae3d0d9f1bbd6b9d90a71"
+        },
+        {
+          "name": "D1.3 Data Management Plan TRIPLE_approved.pdf",
+          "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20TRIPLE_approved.pdf/content",
+          "repository_checksum": "md5:0a93553d15f996728dd9c3700481916e"
+        },
+        {
+          "name": "D1.3 Data Management Plan Final Update V3.0 March 2023.pdf",
+          "url": "https://zenodo.org/api/records/7835582/files/D1.3%20Data%20Management%20Plan%20Final%20Update%20V3.0%20March%202023.pdf/content",
+          "repository_checksum": "md5:dc9707c9d9685cb61d42afb081d3f9ca"
+        }
+      ]
+    },
+    {
+      "id": "6407114",
+      "record_url": "https://zenodo.org/records/6407114",
+      "api_url": "https://zenodo.org/api/records/6407114",
+      "publication_date": "2022-04-01",
+      "created": "2022-04-01T19:17:12.352900+00:00",
+      "updated": "2024-07-16T23:12:22.904832+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "6407113",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "DMP_A.G.A.T.H.O.C.L.E.S. - GA 893629.pdf",
+          "url": "https://zenodo.org/api/records/6407114/files/DMP_A.G.A.T.H.O.C.L.E.S.%20-%20GA%20893629.pdf/content",
+          "repository_checksum": "md5:2bd6a6533166b24d16edf5b6c498d271"
+        }
+      ]
+    },
+    {
+      "id": "3364523",
+      "record_url": "https://zenodo.org/records/3364523",
+      "api_url": "https://zenodo.org/api/records/3364523",
+      "publication_date": "2018-03-30",
+      "created": "2019-08-09T13:56:25.813935+00:00",
+      "updated": "2024-07-22T20:07:05.572147+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "3364522",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "Deliverable D6.1 - ICEDIG - Data Management Plan.pdf",
+          "url": "https://zenodo.org/api/records/3364523/files/Deliverable%20D6.1%20-%20ICEDIG%20-%20Data%20Management%20Plan.pdf/content",
+          "repository_checksum": "md5:6730b271607ce769ffa7dd3a948bf0c6"
+        }
+      ]
+    },
+    {
+      "id": "3532937",
+      "record_url": "https://zenodo.org/records/3532937",
+      "api_url": "https://zenodo.org/api/records/3532937",
+      "publication_date": "2019-11-08",
+      "created": "2019-11-12T10:38:11.095964+00:00",
+      "updated": "2024-07-22T16:48:42.856442+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "concept_id": "3532936",
+      "metadata_version": null,
+      "files": [
+        {
+          "name": "Deliverable D6.6_ICEDIG_Provisional DMP for DiSSCo.pdf",
+          "url": "https://zenodo.org/api/records/3532937/files/Deliverable%20D6.6_ICEDIG_Provisional%20DMP%20for%20DiSSCo.pdf/content",
+          "repository_checksum": "md5:4d296ab685862a6224149d08ee6f3753"
+        }
+      ]
+    }
+  ],
+  "supported_pairs": [
+    {
+      "project": "RECHARGE",
+      "grant": "101061233",
+      "slot_options": [
+        "humanities",
+        "medical and health sciences"
+      ],
+      "one_slot_only": true,
+      "local_dominant_branch": "medical and health sciences",
+      "classification_source": "https://cordis.europa.eu/project/id/101061233",
+      "live_classification_paths": [
+        [
+          "humanities",
+          "other humanities",
+          "library sciences",
+          "knowledge organization"
+        ],
+        [
+          "medical and health sciences",
+          "health sciences",
+          "public health",
+          "epidemiology",
+          "pandemics"
+        ]
+      ],
+      "project_start": "2022-10-01",
+      "current_authoritative_end": "2025-09-30",
+      "original_end_evidence": "Initial 2023 DMP physical p2 says 30 September 2025; current CORDIS end same. No extension observed, no complete historical amendment register reviewed.",
+      "duration_days": 1095,
+      "early": {
+        "record_id": "17733866",
+        "scope": "Project-wide D6.1, EUR beneficiary, all consortium data; pp2/3/5",
+        "document_dates": [
+          {
+            "date": "2023-03-29",
+            "label": "Submission date",
+            "physical_pdf_page": 2
+          },
+          {
+            "date": "2023-03-31",
+            "label": "V1.0 submission version in Table 1 Revisions",
+            "physical_pdf_page": 5
+          }
+        ],
+        "timing_interval_days": [
+          179,
+          181
+        ],
+        "timing_fraction_interval": [
+          0.1634703196347032,
+          0.16529680365296803
+        ],
+        "publication_date": "2025-11-27",
+        "retrieval_record_created_date": "2025-12-01",
+        "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+        "license": "CC BY 4.0",
+        "visually_inspected_physical_pages": [
+          2,
+          5
+        ]
+      },
+      "late": {
+        "record_id": "18403735",
+        "scope": "Project-wide D6.1 v2.0, explicitly final update, physical p2; same scope as original p5 and final purpose section",
+        "document_date": "2026-02-02",
+        "date_label": "Date on cover; version 2.0",
+        "physical_pdf_page": 1,
+        "timing_days": 1220,
+        "timing_fraction": 1.1141552511415524,
+        "days_after_end": 125,
+        "publication_date": "2026-01-28",
+        "record_created_and_updated_date": "2026-01-28",
+        "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+        "license": "CC BY 4.0",
+        "visually_inspected_physical_pages": [
+          1,
+          2
+        ]
+      },
+      "lineage": "Zenodo concept 17733865 versions API total3, no next page. Initial v1.0, mid v1.2 (cover14Nov2024), final v2.0. Final overview explicitly final update and retains v1.1/v1.2 history. Same title deliverable6.1 and project-wide scope.",
+      "threshold_status": "passes_early_and_strict_post_end_for_all_documented_date_choices",
+      "ambiguities": [
+        "Early submission-date header29Mar2023 vs v1.0 log31Mar2023, both safely <=50%; preserve interval, no arbitrary reconciliation.",
+        "Final cover date2Feb2026 is 5 days later than repository publication/created/updated28Jan2026; formal date may have been prospective. Both dates after project end, but only cover used in timing.",
+        "Initial PDF physicalp2 has an unrelated ENHANCED/D6.2 template header visible in image; body/cover/grant/deliverable/scope identify RECHARGE D6.1.",
+        "Date labels are Submission date and Date/version, not literally issue date; precise source labels retained for methodological review."
+      ],
+      "selection_status": "supported_candidate_not_frozen_or_added_to_selection"
+    }
+  ],
+  "version_list_coverage": [
+    {
+      "cache_name": "10405850-versions",
+      "total": 2,
+      "next": null,
+      "record_ids": [
+        "10405850",
+        "7885928"
+      ]
+    },
+    {
+      "cache_name": "10405959-versions",
+      "total": 2,
+      "next": null,
+      "record_ids": [
+        "10405959",
+        "10118019"
+      ]
+    },
+    {
+      "cache_name": "10925825-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "10925825"
+      ]
+    },
+    {
+      "cache_name": "11146154-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "11146154"
+      ]
+    },
+    {
+      "cache_name": "14557527-versions",
+      "total": 2,
+      "next": null,
+      "record_ids": [
+        "14557527",
+        "8154723"
+      ]
+    },
+    {
+      "cache_name": "18403735-versions",
+      "total": 3,
+      "next": null,
+      "record_ids": [
+        "18403735",
+        "17801415",
+        "17733866"
+      ]
+    },
+    {
+      "cache_name": "3364523-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "3364523"
+      ]
+    },
+    {
+      "cache_name": "3532937-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "3532937"
+      ]
+    },
+    {
+      "cache_name": "3635301-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "3635301"
+      ]
+    },
+    {
+      "cache_name": "4541267-versions",
+      "total": 3,
+      "next": null,
+      "record_ids": [
+        "5788560",
+        "5785981",
+        "4541267"
+      ]
+    },
+    {
+      "cache_name": "4558274-versions",
+      "total": 2,
+      "next": null,
+      "record_ids": [
+        "4558274",
+        "3931491"
+      ]
+    },
+    {
+      "cache_name": "4925652-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "4925652"
+      ]
+    },
+    {
+      "cache_name": "4972582-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "4972582"
+      ]
+    },
+    {
+      "cache_name": "5785981-versions",
+      "total": 3,
+      "next": null,
+      "record_ids": [
+        "5788560",
+        "5785981",
+        "4541267"
+      ]
+    },
+    {
+      "cache_name": "5788560-versions",
+      "total": 3,
+      "next": null,
+      "record_ids": [
+        "5788560",
+        "5785981",
+        "4541267"
+      ]
+    },
+    {
+      "cache_name": "6407114-versions",
+      "total": 1,
+      "next": null,
+      "record_ids": [
+        "6407114"
+      ]
+    },
+    {
+      "cache_name": "7835582-versions",
+      "total": 3,
+      "next": null,
+      "record_ids": [
+        "7835582",
+        "6365382",
+        "4438626"
+      ]
+    },
+    {
+      "cache_name": "8242975-versions",
+      "total": 2,
+      "next": null,
+      "record_ids": [
+        "8242975",
+        "8242974"
+      ]
+    }
+  ],
+  "search_coverage": [
+    {
+      "cache_name": "search-101007579",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "6477107",
+          "title": "SCICOMOVE Data Management Plan",
+          "publication_date": "2022-04-22"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101017549",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "5599151",
+          "title": "D2.1 - Data processing, Data Management Plan and GDPR compliance report",
+          "publication_date": "2021-10-26"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101022502",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "10458812",
+          "title": "MWER Data management plan",
+          "publication_date": "2024-01-04"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101023762",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "11146154",
+          "title": "Data Management Plan (final): SPPELME",
+          "publication_date": "2024-05-08"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101030581",
+      "total": 2,
+      "next": null,
+      "records": [
+        {
+          "id": "10405883",
+          "title": "Data Management Plan - STEMCo v1.1",
+          "publication_date": "2023-12-19"
+        },
+        {
+          "id": "10406517",
+          "title": "Data Management Plan - STEMCo v1.2.0",
+          "publication_date": "2023-12-19"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101058007",
+      "total": 4,
+      "next": null,
+      "records": [
+        {
+          "id": "10118019",
+          "title": "D1.5 \"Update 1: Data and Research data Management Plan (DMP/RDMP)\"",
+          "publication_date": "2023-11-13"
+        },
+        {
+          "id": "7885928",
+          "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_under EC review",
+          "publication_date": "2023-05-02"
+        },
+        {
+          "id": "10405850",
+          "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_approved by the EC",
+          "publication_date": "2023-12-19"
+        },
+        {
+          "id": "10405959",
+          "title": "D1.5 \"Update 1: Data and Research data Management Plan (DMP/RDMP)\"_approved by the EC",
+          "publication_date": "2023-12-19"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101058450",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "21218801",
+          "title": "MOZART D8.2 Data Management Plan",
+          "publication_date": "2022-11-30"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101079148",
+      "total": 3,
+      "next": null,
+      "records": [
+        {
+          "id": "8004294",
+          "title": "E-RIHS IP D1.2 Project DMP",
+          "publication_date": "2023-06-05"
+        },
+        {
+          "id": "12607922",
+          "title": "E-RIHS IP D5.2 Data Management Plan for E-RIHS ERIC",
+          "publication_date": "2024-07-01"
+        },
+        {
+          "id": "8004272",
+          "title": "E-RIHS IP D1.1. Project Handbook",
+          "publication_date": "2023-06-05"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-101094354",
+      "total": 0,
+      "next": null,
+      "records": []
+    },
+    {
+      "cache_name": "search-642877",
+      "total": 2,
+      "next": null,
+      "records": [
+        {
+          "id": "3948485",
+          "title": "Innochain: Updated Data Management Plan",
+          "publication_date": "2017-10-10"
+        },
+        {
+          "id": "3948582",
+          "title": "Innochain Dissemination & Data Management Plan (6.1)",
+          "publication_date": "2016-01-22"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-654119",
+      "total": 6,
+      "next": null,
+      "records": [
+        {
+          "id": "3662407",
+          "title": "PARTHENOS Training Suite: Manage, Improve and Open up your Research Data",
+          "publication_date": "2018-01-26"
+        },
+        {
+          "id": "3662461",
+          "title": "PARTHENOS Training Suite: Digital Humanities Research Questions and Methods",
+          "publication_date": "2019-10-04"
+        },
+        {
+          "id": "3662312",
+          "title": "PARTHENOS Training Suite: Introduction to Research Infrastructures",
+          "publication_date": "2018-11-08"
+        },
+        {
+          "id": "3662432",
+          "title": "PARTHENOS Training Suite: Formal Ontologies: A Complete Novice's Guide",
+          "publication_date": "2018-12-07"
+        },
+        {
+          "id": "3662352",
+          "title": "PARTHENOS Training Suite: Management Challenges in Research Infrastructures",
+          "publication_date": "2018-04-11"
+        },
+        {
+          "id": "3662399",
+          "title": "PARTHENOS Training Suite: Introduction to Collaborations in Research Infrastructures",
+          "publication_date": "2017-02-07"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-694986",
+      "total": 0,
+      "next": null,
+      "records": []
+    },
+    {
+      "cache_name": "search-731081",
+      "total": 0,
+      "next": null,
+      "records": []
+    },
+    {
+      "cache_name": "search-731102",
+      "total": 0,
+      "next": null,
+      "records": []
+    },
+    {
+      "cache_name": "search-732391",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "820580",
+          "title": "D8.2 - Data Management Plan - v1.0",
+          "publication_date": "2017-06-28"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-761974",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "3406176",
+          "title": "D1.2- Ethical considerations and Data Management Plan",
+          "publication_date": "2019-09-12"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-777483",
+      "total": 4,
+      "next": null,
+      "records": [
+        {
+          "id": "3364523",
+          "title": "ICEDIG - Data Management Plan",
+          "publication_date": "2018-03-30"
+        },
+        {
+          "id": "3532937",
+          "title": "Provisional Data Management Plan for DiSSCo infrastructure. Deliverable D6.6",
+          "publication_date": "2019-11-08"
+        },
+        {
+          "id": "2632740",
+          "title": "Report on implementation of open access policies in collection institutions. MILESTONE \u2013 MS35",
+          "publication_date": "2019-01-31"
+        },
+        {
+          "id": "3465285",
+          "title": "Open access implementation guidelines  for DiSSCo. Deliverable D6.5",
+          "publication_date": "2019-09-30"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-785934",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "3689349",
+          "title": "Data Management Plan (ISLAM-OPHOB-ISM, 785934)",
+          "publication_date": "2019-03-30"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-813547",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "5995707",
+          "title": "D9.1 Data Management Plan",
+          "publication_date": "2019-10-24"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-823782",
+      "total": 3,
+      "next": null,
+      "records": [
+        {
+          "id": "6246977",
+          "title": "Data Management Planning and Overcoming Challenges in Social Sciences Data Sharing - Day 2",
+          "publication_date": "2022-02-23"
+        },
+        {
+          "id": "6246973",
+          "title": "Data Management Planning and Overcoming Challenges in Social Sciences Data Sharing - Day 1",
+          "publication_date": "2022-02-23"
+        },
+        {
+          "id": "4633681",
+          "title": "SSHOC D1.4 Second Annual Progress & Activity Report",
+          "publication_date": "2021-03-25"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-823914",
+      "total": 3,
+      "next": null,
+      "records": [
+        {
+          "id": "7510597",
+          "title": "D3.3 Final report on policies and strategies",
+          "publication_date": "2022-12-13"
+        },
+        {
+          "id": "6380113",
+          "title": "D3.2 Interim report on policies and strategies",
+          "publication_date": "2022-03-23"
+        },
+        {
+          "id": "7639209",
+          "title": "D5.4 Final report on Data Infrastructure update and extension",
+          "publication_date": "2022-12-28"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-870811",
+      "total": 2,
+      "next": null,
+      "records": [
+        {
+          "id": "7186471",
+          "title": "D1.2 Data Management Plan",
+          "publication_date": "2020-11-04"
+        },
+        {
+          "id": "7186477",
+          "title": "D1.2 Data Management Plan",
+          "publication_date": "2022-05-10"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-883242",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "6107775",
+          "title": "D1.7 Data Management Plan",
+          "publication_date": "2020-11-30"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-892230",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "6488297",
+          "title": "DMP for OpeRaNew Project",
+          "publication_date": "2022-04-26"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-893629",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "6407114",
+          "title": "DATA MANAGEMENT PLAN - INITIAL VERSION",
+          "publication_date": "2022-04-01"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-external-0",
+      "total": 3,
+      "next": null,
+      "records": [
+        {
+          "id": "3931491",
+          "title": "D1.6 SSHOC Data Management Plan",
+          "publication_date": "2020-06-30"
+        },
+        {
+          "id": "4558274",
+          "title": "D1.6 SSHOC Data Management Plan",
+          "publication_date": "2020-06-30"
+        },
+        {
+          "id": "4633681",
+          "title": "SSHOC D1.4 Second Annual Progress & Activity Report",
+          "publication_date": "2021-03-25"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-external-1",
+      "total": 2,
+      "next": null,
+      "records": [
+        {
+          "id": "8154723",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        },
+        {
+          "id": "14557527",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-external-2",
+      "total": 15,
+      "next": null,
+      "records": [
+        {
+          "id": "21474257",
+          "title": "OPERAS PRIME D1.1 \u2013 Data Management Plan",
+          "publication_date": "2026-07-21"
+        },
+        {
+          "id": "3635301",
+          "title": "OPERAS-P Deliverable: D1.2 Data Management Plan",
+          "publication_date": "2020-02-04"
+        },
+        {
+          "id": "7866262",
+          "title": "Data Management Plan (OPERAS-PLUS Deliverable 1.2)",
+          "publication_date": "2023-04-26"
+        },
+        {
+          "id": "14557527",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        },
+        {
+          "id": "4587426",
+          "title": "Research data management and Data Management Plans",
+          "publication_date": "2021-03-06"
+        },
+        {
+          "id": "12167523",
+          "title": "ATRIUM Data Management Plan Initial Version",
+          "publication_date": "2024-06-13"
+        },
+        {
+          "id": "6365382",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan",
+          "publication_date": "2020-12-31"
+        },
+        {
+          "id": "4438626",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan",
+          "publication_date": "2020-12-31"
+        },
+        {
+          "id": "7835582",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan",
+          "publication_date": "2020-12-31"
+        },
+        {
+          "id": "8154723",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        },
+        {
+          "id": "4533876",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan DRAFT",
+          "publication_date": "2020-03-31"
+        },
+        {
+          "id": "3937377",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan DRAFT",
+          "publication_date": "2020-03-31"
+        },
+        {
+          "id": "7885928",
+          "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_under EC review",
+          "publication_date": "2023-05-02"
+        },
+        {
+          "id": "10405850",
+          "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_approved by the EC",
+          "publication_date": "2023-12-19"
+        },
+        {
+          "id": "12607329",
+          "title": "CRAFT-OA deliverable 1.7 First Update DMP",
+          "publication_date": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-external-3",
+      "total": 8,
+      "next": null,
+      "records": [
+        {
+          "id": "11389869",
+          "title": "Data Management Plan by Carlos G Halaburda, PhD (Horizon Europe 2022, MSCA Postdoctoral Fellowships, Grant Number 101103095)",
+          "publication_date": "2024-02-20"
+        },
+        {
+          "id": "17911802",
+          "title": "Research Sustainability Workflow for the Humanities",
+          "publication_date": "2025-12-17"
+        },
+        {
+          "id": "20447841",
+          "title": "OPENMIN  - Consolidating Open Science and Data Initiatives on Ethnic and Migrant Minorities in Europe: Data Management Plan",
+          "publication_date": "2026-05-29"
+        },
+        {
+          "id": "15389649",
+          "title": "Open Science end-of-the-course project DMP - 2024/2025",
+          "publication_date": "2025-05-12"
+        },
+        {
+          "id": "15742057",
+          "title": "Open Science end-of-the-course project DMP - 2024/2025",
+          "publication_date": "2025-06-25"
+        },
+        {
+          "id": "15680336",
+          "title": "Research data management at Leiden University: Practice and research",
+          "publication_date": "2025-06-17"
+        },
+        {
+          "id": "4633681",
+          "title": "SSHOC D1.4 Second Annual Progress & Activity Report",
+          "publication_date": "2021-03-25"
+        },
+        {
+          "id": "18496375",
+          "title": "Digital Cem\u00ed. Immersive Experience - Textual content to be included in the hotspots of Digital Cem\u00ec",
+          "publication_date": "2026-02-05"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-heritage-0",
+      "total": 5,
+      "next": null,
+      "records": [
+        {
+          "id": "5785981",
+          "title": "D6.1 Data Management Plan for IPERION HS",
+          "publication_date": "2021-02-15"
+        },
+        {
+          "id": "4541267",
+          "title": "D6.1 Data Management Plan for IPERION HS",
+          "publication_date": "2021-02-15"
+        },
+        {
+          "id": "5788560",
+          "title": "D6.1 Data Management Plan for IPERION HS",
+          "publication_date": "2021-02-15"
+        },
+        {
+          "id": "7849169",
+          "title": "IPERION HS D6.3 Final report on innovation, exploitation and interoperability",
+          "publication_date": "2023-04-20"
+        },
+        {
+          "id": "7101169",
+          "title": "Interim report on documentation of instrument parameters and analysis protocols across access platforms, and metadata requirements",
+          "publication_date": "2022-09-21"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-heritage-1",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "21626168",
+          "title": "TRACE-BE Deliverable 6.1.1 Data Management Plan",
+          "publication_date": "2026-07-27"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-heritage-2",
+      "total": 0,
+      "next": null,
+      "records": []
+    },
+    {
+      "cache_name": "search-heritage-3",
+      "total": 11,
+      "next": null,
+      "records": [
+        {
+          "id": "8154723",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        },
+        {
+          "id": "3931491",
+          "title": "D1.6 SSHOC Data Management Plan",
+          "publication_date": "2020-06-30"
+        },
+        {
+          "id": "4558274",
+          "title": "D1.6 SSHOC Data Management Plan",
+          "publication_date": "2020-06-30"
+        },
+        {
+          "id": "14557527",
+          "title": "PALOMERA D1.3 \u2013 Data Management Plan",
+          "publication_date": "2023-07-17"
+        },
+        {
+          "id": "4438626",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan",
+          "publication_date": "2020-12-31"
+        },
+        {
+          "id": "12167523",
+          "title": "ATRIUM Data Management Plan Initial Version",
+          "publication_date": "2024-06-13"
+        },
+        {
+          "id": "7835582",
+          "title": "TRIPLE Deliverable: D1.3 Data Management Plan",
+          "publication_date": "2020-12-31"
+        },
+        {
+          "id": "3754264",
+          "title": "Supporting Sustainable Digital Data Workflows in the Art and Humanities",
+          "publication_date": "2020-04-16"
+        },
+        {
+          "id": "4633681",
+          "title": "SSHOC D1.4 Second Annual Progress & Activity Report",
+          "publication_date": "2021-03-25"
+        },
+        {
+          "id": "7251759",
+          "title": "Swiss National Data and Service Center for the Humanities (DaSCH)",
+          "publication_date": "2022-10-26"
+        },
+        {
+          "id": "17911802",
+          "title": "Research Sustainability Workflow for the Humanities",
+          "publication_date": "2025-12-17"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-reserve-10",
+      "total": 1,
+      "next": null,
+      "records": [
+        {
+          "id": "7510597",
+          "title": "D3.3 Final report on policies and strategies",
+          "publication_date": "2022-12-13"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-reserve-8",
+      "total": 4,
+      "next": null,
+      "records": [
+        {
+          "id": "1493342",
+          "title": "Create a data management plan (with RDMO)",
+          "publication_date": "2018-11-21"
+        },
+        {
+          "id": "1491250",
+          "title": "Introduction to Humanities Research Data Management",
+          "publication_date": "2018-11-19"
+        },
+        {
+          "id": "3662407",
+          "title": "PARTHENOS Training Suite: Manage, Improve and Open up your Research Data",
+          "publication_date": "2018-01-26"
+        },
+        {
+          "id": "7510597",
+          "title": "D3.3 Final report on policies and strategies",
+          "publication_date": "2022-12-13"
+        }
+      ]
+    },
+    {
+      "cache_name": "search-reserve-9",
+      "total": 0,
+      "next": null,
+      "records": []
+    }
+  ],
+  "reserve_status": "No second supported pair recovered in bounded search. Local complete grant queries where totals<=25, version chains for strongest observed finals, title searches correcting missing grant tags, CORDIS and official project repositories, and HAL tried. Not exhaustive of all institutions/projects.",
+  "source_tiers_checked": [
+    "Local complete humanities-membership inventory (ongoing future-end families deprioritized)",
+    "Zenodo public grant+DMP and exact-title searches size25, totals+pagination retained",
+    "Zenodo version chains for candidate records size25",
+    "Current CORDIS facts/results and deliverable links",
+    "Official project websites (DIAMAS, RECHARGE, SSHOC, EHRI)",
+    "HAL API title search for DESIR/DARIAH"
+  ],
+  "next_steps_if_reserve_required": [
+    "Broaden beyond inventory using finished humanities CORDIS projects and institutional repositories; current bounded results do not prove universal absence.",
+    "Prefer RECHARGE for humanities unless a separately validated medical pair is unavailable; never count twice.",
+    "If literal issue-date wording required, methodological adjudication of document Date/submission-date fields remains explicit; all source labels retained."
+  ]
+}

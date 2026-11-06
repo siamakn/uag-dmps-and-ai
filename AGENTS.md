@@ -1,5 +1,27 @@
 # AGENTS.md — orientation for AI assistants
 
+**Active study update (2026-11-04):** Read
+[`research/paired-dmp-study/README.md`](research/paired-dmp-study/README.md) and its
+decision/status files first for the current research task. The user now requests six
+distinct projects across all six disciplines, each with two same-scope DMP versions
+(twelve documents), using documented issue dates at ≤50% and >100% of project duration.
+This supersedes the historical selection design below, while repository conventions
+remain applicable. `data/selection.json` currently exists and must be preserved; it is
+a historical twelve-project shortlist, not six verified pairs. A new six-pair
+working proposal is now documented in
+[`cohort-proposal.md`](research/paired-dmp-study/cohort-proposal.md), prepared
+2026-11-04 with independent provenance checks; human reference labels and experiment
+freeze remain pending. Source PDFs are retained separately in the ignored local
+`data/paired-dmp-corpus/` directory.
+
+**Platform status (2026-11-04):** the selection platform now supports the paired study —
+`scripts/paired.py` (schema, exact timing, validation, freeze), a *Paired study* mode in the
+dashboard (six discipline rows × early/late slots, evidence editor, validation, separate
+storage), `scripts/06_discover_versions.py` and `scripts/07_fetch_study_files.py`. What was
+built, how it was tested and what is still undecided is in
+[`claude-platform-results.md`](research/paired-dmp-study/claude-platform-results.md). No pair
+is verified and nothing is frozen: verification needs a person to record evidence.
+
 Read this before answering questions about this repository or changing anything in it.
 It is written for an AI assistant working with someone who has just cloned the repo.
 Everything here was verified against the data in the repo, not assumed.
@@ -26,9 +48,11 @@ So the repo is **not** a DMP review tool. It is the machinery for *choosing what
 harvest a candidate pool, enrich it with the metadata the selection criteria need, and give a
 human a dashboard to pick from.
 
-**Current status:** the pool is built and the dashboard works. The 10 DMPs are *not* selected yet.
-If the user asks "which 10 did we pick?", the answer is that nothing is picked yet — the
-selection would live in `data/selection.json`, which is absent until they make one.
+**Current status:** the pool is built and the dashboard works. The historical 10-DMP design was
+superseded by the paired study (see the top of this file). `data/selection.json` exists, is
+untracked, and holds a historical 12-record pick from 12 grants (2026-11-02); it is preserved
+byte-for-byte (backup in `data/backups/`) and confers nothing on the paired study. The paired
+draft lives in `data/paired_selection.json` (absent until someone saves one).
 
 ### Selection criteria (the spec everything serves)
 
@@ -65,7 +89,10 @@ disk are skipped, so re-running is cheap.
 | `03_check_schema.py` | checks each maDMP against RDA DMP Common Standard 1.2 | `data/schema_findings.json` |
 | `04_build_dataset.py` | joins Zenodo records to CORDIS, derives discipline and lifecycle | `data/dmp_dataset.{json,csv}` |
 | `05_build_dashboard.py` | embeds the dataset in a standalone HTML page | `dashboard/dashboard.html` |
-| `serve.py` | runs the dashboard locally with a small JSON API | serves `/`, writes `data/selection.json` |
+| `06_discover_versions.py` | paired study: groups plans by grant, walks Zenodo version chains, registers external documents | `data/paired-discovery/`, `data/study-documents.json` |
+| `07_fetch_study_files.py` | paired study: checks, fetches and hashes only the selected files | `data/paired-dmp-corpus/` |
+| `paired.py` | paired-study schema, timing, validation, export, freeze (module + CLI) | `data/paired-snapshots/` |
+| `serve.py` | runs the dashboard locally with a small JSON API | serves `/`, writes `data/selection.json` and `data/paired_selection.json` |
 
 ### Dashboard
 
@@ -98,22 +125,49 @@ Features:
   coloured tags and counters each carry a one-line explanation; keyboard focus shows it too,
   Escape dismisses. A **Guide** button opens a short panel about the pool and the two axes.
 - Light and dark themes, responsive down to a single column
+- **Two modes** (header switch, remembered in `dmpbench.mode`): *Paired study* (default) and
+  *Legacy 3×3*. Paired mode replaces the row checkbox with an assignment menu, shows registry
+  documents as extra candidates, and swaps the tray for six discipline rows with early/late
+  slots, per-pair status (empty / pending / verified / rejected) and the reasons, an evidence
+  editor (scope, lineage with locators, issue dates with page locators and verification state,
+  analysis file), a protocol panel, exports, file checks and **Freeze** (served only). The legacy
+  matrix, duplicate-project warning and challenging slot only appear in legacy mode.
+- Paired storage is separate: `data/paired_selection.json` served, `dmpbench.paired.v1` standalone.
+  A corrupt or unsupported draft blocks the panel instead of being overwritten.
 
 ### Test suite
 
-`dashboard/selftest.js` — **180 assertions, all passing.** Served only at `/selftest`, never part
-of a built file. It drives the real UI through both the internal API and real DOM clicks: filters,
-search, sorting, columns, paging, row expansion, selection, matrix, warnings, all three export
-formats, tooltips and the API round trip. It also asserts that *no control is undocumented*, so a
-new filter without a tooltip fails the suite.
+Three layers, all stdlib / headless Chrome. Results recorded in
+`research/paired-dmp-study/claude-platform-results.md`.
+
+- `dashboard/selftest.js` — the browser suite. Served only at `/selftest` (or in a standalone
+  test build), never part of a shipped page. It drives the real UI through the internal API and
+  real DOM clicks: the original filters/sorting/columns/selection/matrix/export/tooltip checks
+  (run in legacy mode), plus the paired study — shared timing fixtures, escaping, a synthetic
+  six-pair cohort and 18 failing mutations, assignment/removal through the table, the evidence
+  editor, exports and JSON round trip, malformed input, legacy import, browser-storage
+  persistence and corruption recovery, and (served) Python-vs-JS validation agreement, API
+  persistence, freeze refusal and a real two-page reload. **The harness writes and clears
+  selections, so `/selftest` refuses to run unless the server uses a temporary state dir.**
+- `scripts/test_paired.py` — unittest for timing, validation, exports, freeze immutability,
+  legacy import and the server endpoints, all against temporary directories. It asserts that
+  `data/selection.json` is byte-identical afterwards.
+- `dashboard/paired-fixtures.json` — the timing cases, escaping expectations and synthetic cohort
+  both suites share, so the Python and JavaScript rules cannot drift apart unnoticed.
 
 ```bash
-python scripts/serve.py --no-open
-chrome --headless=new --dump-dom "http://127.0.0.1:8756/selftest"
+python scripts/test_paired.py
+python scripts/serve.py --test --no-open --port 8790          # temporary state dir
+chrome --headless=new --dump-dom "http://127.0.0.1:8790/selftest"
+chrome --headless=new --dump-dom "http://127.0.0.1:8790/selftest?phase=reload"
+python scripts/05_build_dashboard.py --selftest /tmp/st.html  # standalone test build
+chrome --headless=new --user-data-dir=/tmp/prof --dump-dom file:///tmp/st.html
+chrome --headless=new --user-data-dir=/tmp/prof --dump-dom "file:///tmp/st.html?phase=reload"
 ```
 
-Results go to `#testlog` and the document title (`SELFTEST 180/180 fail=0`), so it greps cleanly.
-`/selftest` rebuilds from disk on every request — editing the template or harness needs no restart.
+Results go to `#testlog` and the document title (`SELFTEST n/n fail=0 skip=k`), so it greps
+cleanly. Standalone runs skip the API assertions and say so. `/selftest` rebuilds from disk on
+every request.
 
 ---
 
@@ -305,9 +359,14 @@ a query to step 01, since a wider net pulls in more literature.
   `requests`, `pandas`, a bundler or a framework. If something needs a library, say so and let the
   user decide.
 - **`dashboard/dashboard.html` is generated.** Never edit it. Edit `dashboard/template.html` and
-  run `python scripts/05_build_dashboard.py`. The template has three placeholders —
-  `__BOOT__`, `__DATA__`, `__COUNT__` — filled differently by the standalone build and by
-  `serve.py`. Both must keep working.
+  run `python scripts/05_build_dashboard.py`. The template has four placeholders —
+  `__BOOT__`, `__DATA__`, `__PAIRED__`, `__COUNT__` — filled differently by the standalone build
+  and by `serve.py`. Both must keep working.
+- **Paired-study rules live twice**: `scripts/paired.py` (timing, validate, exports) and their
+  JavaScript mirror in the template. Change both, and extend `dashboard/paired-fixtures.json`;
+  the served suite fails if the two validators disagree.
+- **Never run the self-test against real state.** Use `serve.py --test` (or `--state-dir`), and a
+  throwaway `--user-data-dir` for the standalone build.
 - **Every new control needs a `data-tip`.** The test suite fails otherwise, by design.
 - **Add tests for what you change**, in `dashboard/selftest.js`, then run the headless suite.
   Prefer real DOM clicks over calling internals — the one bug the internal-API tests missed was in
@@ -334,11 +393,19 @@ data/madmp-corpus/     384 downloaded .json files, 377 real maDMPs
 data/dmp_dataset.json  the joined dataset the dashboard renders
 data/dmp_dataset.csv   the same, flattened
 data/schema_findings.json   per-file RDA schema results
-data/selection.json    written by the dashboard when served (absent until you pick something)
+data/selection.json    legacy selection (historical 12-record pick, untracked; preserve it)
+data/backups/          byte-preserving backup of the legacy selection (git-ignored)
+data/paired_selection.json  the paired-study draft, when served (absent until saved)
+data/paired-snapshots/ immutable frozen cohorts + CSV/MD derivatives (none yet)
+data/study-documents.json   registry of study documents absent from the dataset (3 now)
+data/paired-discovery/ grant groups and Zenodo version-chain leads; cache/ is git-ignored
+data/paired-dmp-corpus/     source PDFs and CORDIS snapshots for the proposal (git-ignored)
 data/cordis/           CORDIS bulk downloads (git-ignored)
 dashboard/template.html     the single source for both builds
 dashboard/dashboard.html    generated standalone build
-dashboard/selftest.js       the 131-assertion suite
+dashboard/selftest.js       the browser suite (test builds only)
+dashboard/paired-fixtures.json   shared timing/escaping fixtures and synthetic cohort
+research/paired-dmp-study/  the paired-study research record and handoffs
 ```
 
 ## 8. API surface (`scripts/serve.py`)
@@ -354,7 +421,16 @@ GET  /api/stats           pool counts and the Horizon Europe 2024+ matrix
 GET  /api/selection       saved selection, resolved to full records
 PUT  /api/selection       {"ids": [...]} -> writes data/selection.json
 GET  /api/madmp/<file>    one maDMP file from the local corpus
+GET  /api/paired          the paired draft; 409 with the reason if the file is corrupt
+PUT  /api/paired          {"study": {...}, "replace_corrupt": false} -> data/paired_selection.json
+POST /api/paired/validate {"study": {...}} -> Python validation result
+POST /api/paired/files    {"study": {...}, "download": false} -> checksums of selected files
+POST /api/paired/freeze   {"study": {...}} -> immutable data/paired-snapshots/<id>.json, or 422 + reasons
+GET  /api/paired/snapshots  frozen snapshots and whether their content hash still matches
 ```
+
+`--state-dir DIR` moves `selection.json`, `paired_selection.json` and `paired-snapshots/` to DIR;
+`--test` uses a fresh temporary one. `/selftest` returns 409 against the default `data/`.
 
 ## 9. Glossary
 

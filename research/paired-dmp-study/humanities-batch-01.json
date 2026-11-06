@@ -1,0 +1,271 @@
+{
+  "date_utc": "2026-11-03",
+  "scope": "First three Horizon Europe humanities-membership multi-record families from offline inventory; bounded discovery, not selection.",
+  "source_records": [
+    {
+      "id": "15411332",
+      "record_url": "https://zenodo.org/records/15411332",
+      "api_url": "https://zenodo.org/api/records/15411332",
+      "api_sha256": "a57d73af8f0238c78baa08185cd7baee993c3ef2fcca8be31a6b2a9e2a09eff3",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "15411331",
+      "versions_endpoint": "https://zenodo.org/api/records/15411332/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2025-05-14",
+      "created": "2025-05-14T13:35:32.892854+00:00",
+      "updated": "2026-04-03T08:08:11.606401+00:00",
+      "metadata_version": null,
+      "title": "D1.2 HeriTACE Data Management Plan (initial)",
+      "files": [
+        {
+          "name": "D1.2_HeriTACE_Data_Management_Plan_DRAFT_pending_European_Commission_approval.pdf",
+          "url": "https://zenodo.org/api/records/15411332/files/D1.2_HeriTACE_Data_Management_Plan_DRAFT_pending_European_Commission_approval.pdf/content",
+          "zenodo_checksum": "md5:5de1c3945f650bd61d6fce4e658b2d34",
+          "downloaded_sha256": null
+        }
+      ]
+    },
+    {
+      "id": "21024156",
+      "record_url": "https://zenodo.org/records/21024156",
+      "api_url": "https://zenodo.org/api/records/21024156",
+      "api_sha256": "1d8450603e73a611581b3df7bd128f8fd0e5987967abc88efb309eb398c2ca80",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "21024155",
+      "versions_endpoint": "https://zenodo.org/api/records/21024156/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2026-06-29",
+      "created": "2026-07-30T07:32:29.514416+00:00",
+      "updated": "2026-07-30T07:32:29.810553+00:00",
+      "metadata_version": null,
+      "title": "D1.3 Data Management Plan (update)",
+      "files": [
+        {
+          "name": "D1.3_HeriTACE_Data Management Plan_update_v1.0.pdf",
+          "url": "https://zenodo.org/api/records/21024156/files/D1.3_HeriTACE_Data%20Management%20Plan_update_v1.0.pdf/content",
+          "zenodo_checksum": "md5:5a7ede62f31c96ee5ef96a4716cb7b01",
+          "downloaded_sha256": null
+        }
+      ]
+    },
+    {
+      "id": "8004294",
+      "record_url": "https://zenodo.org/records/8004294",
+      "api_url": "https://zenodo.org/api/records/8004294",
+      "api_sha256": "3c191183e302036b239591ffc72c91d939f3aec7eed93810c67cc1e34671fe8a",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "8004293",
+      "versions_endpoint": "https://zenodo.org/api/records/8004294/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2023-06-05",
+      "created": "2023-06-05T07:01:42.732369+00:00",
+      "updated": "2024-07-11T23:35:41.102099+00:00",
+      "metadata_version": "0.6",
+      "title": "E-RIHS IP D1.2 Project DMP",
+      "files": [
+        {
+          "name": "D1.2 E-RIHS IP Project DMP.pdf",
+          "url": "https://zenodo.org/api/records/8004294/files/D1.2%20E-RIHS%20IP%20Project%20DMP.pdf/content",
+          "zenodo_checksum": "md5:1c32683cfcf7626612d377e5929550cc",
+          "downloaded_sha256": "e3379af664ff5d43c26269b3086bf93c5bdc22bb95c6c78e7d4e20cce3028d2c"
+        }
+      ]
+    },
+    {
+      "id": "12607922",
+      "record_url": "https://zenodo.org/records/12607922",
+      "api_url": "https://zenodo.org/api/records/12607922",
+      "api_sha256": "ecea8ebddf223d8112c82bf7f3055e15d2b5d26ef7ed5a4d878b2a253ce3bf26",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "12607921",
+      "versions_endpoint": "https://zenodo.org/api/records/12607922/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2024-07-01",
+      "created": "2024-07-01T12:52:56.830995+00:00",
+      "updated": "2025-01-03T15:22:18.923391+00:00",
+      "metadata_version": null,
+      "title": "E-RIHS IP D5.2 Data Management Plan for E-RIHS ERIC",
+      "files": [
+        {
+          "name": "D5.2_E-RIHS IP_DMP for E-RIHS ERIC.pdf",
+          "url": "https://zenodo.org/api/records/12607922/files/D5.2_E-RIHS%20IP_DMP%20for%20E-RIHS%20ERIC.pdf/content",
+          "zenodo_checksum": "md5:6863b2888d38a95c70e9609370612909",
+          "downloaded_sha256": "7892542955b1891617b45d0230746812521d448125a9d1d578ce81ac64d21b14"
+        }
+      ]
+    },
+    {
+      "id": "10405850",
+      "record_url": "https://zenodo.org/records/10405850",
+      "api_url": "https://zenodo.org/api/records/10405850",
+      "api_sha256": "9c9e4e2df4d594e8d1e43182db9bb4a6fe50e0db216edcb85bd744f37d835b5c",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "7885927",
+      "versions_endpoint": "https://zenodo.org/api/records/10405850/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2023-12-19",
+      "created": "2023-12-19T12:53:52.424419+00:00",
+      "updated": "2024-07-07T18:40:51.352951+00:00",
+      "metadata_version": null,
+      "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_approved by the EC",
+      "files": [
+        {
+          "name": "(Zenodo) D1.1-AMU-DMP_DRMP_final_approved by the EC.pdf",
+          "url": "https://zenodo.org/api/records/10405850/files/(Zenodo)%20D1.1-AMU-DMP_DRMP_final_approved%20by%20the%20EC.pdf/content",
+          "zenodo_checksum": "md5:96cc5b5ef1a2300abeff7bedc08640d1",
+          "downloaded_sha256": "4cfd65e78e69a684a4228cf88ee3a40335535f334f818f1dee5ae736d9023d78"
+        }
+      ]
+    },
+    {
+      "id": "10405959",
+      "record_url": "https://zenodo.org/records/10405959",
+      "api_url": "https://zenodo.org/api/records/10405959",
+      "api_sha256": "ed3f97b217c548ec705f67805b757785891a38d88be67ee604f8cc55a96eb43c",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)",
+      "concept_record_id": "10118018",
+      "versions_endpoint": "https://zenodo.org/api/records/10405959/versions",
+      "version_list_status": "403 forbidden",
+      "publication_date": "2023-12-19",
+      "created": "2023-12-19T13:29:18.482234+00:00",
+      "updated": "2024-07-07T18:40:38.149289+00:00",
+      "metadata_version": null,
+      "title": "D1.5 \"Update 1: Data and Research data Management Plan (DMP/RDMP)\"_approved by the EC",
+      "files": [
+        {
+          "name": "Zenodo version - D1.5 Update 1 _ Data and Research data  Management Plan (DMP_RDMP)_approved by the EC.pdf",
+          "url": "https://zenodo.org/api/records/10405959/files/Zenodo%20version%20-%20D1.5%20Update%201%20_%20Data%20and%20Research%20data%20%20Management%20Plan%20(DMP_RDMP)_approved%20by%20the%20EC.pdf/content",
+          "zenodo_checksum": "md5:6a6b46f7f1be4bd5703da4893091f036",
+          "downloaded_sha256": "cace8746213b1fa3ec1fd71d2d9b91934eb88e7905a141e9883f140f93498266"
+        }
+      ]
+    }
+  ],
+  "cordis_sources": [
+    {
+      "url": "https://cordis.europa.eu/project/id/101138672",
+      "sha256": "86e7aab4bcc5237a64beb04600accd8e7dab0a79253d53de61701a9e235da7b6",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/101138672/results",
+      "sha256": "d19bca733f4a84e2bc22233b6fbf7fe086f9c888b959895857bf6102c0e95e4d",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/101079148",
+      "sha256": "babe8b45c1ab911841046d33953e8ca0edc5560e8e07dabf71d79a1af90f5590",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/101079148/results",
+      "sha256": "713ccb8e3cb603bfc96599fafbd5d3851182d26051294cbaba636cde5ad4e207",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/101058007",
+      "sha256": "e8f97d4f1875bad88ddd84bf6e831f2789ef9c0a5337481818fb0822a9d9cd48",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/101058007/results",
+      "sha256": "455fce02dddb33507dff469b984ec311a7c659675e30b3421984a1778a75478c",
+      "retrieved_utc": "2026-11-03T10:53:16Z (batch completion)"
+    }
+  ],
+  "failed_or_incomplete_sources": [
+    {
+      "url": "https://ec.europa.eu/research/participants/documents/downloadPublic?appId=PPGMS&documentIds=080166e52013231e",
+      "result": "HTML response rather than PDF; Update 2 issue date and content unverified",
+      "response_sha256": "1b0d87bf2035678c942813b276d66d043e51a989f32e6187e34ecdaebec454ff",
+      "retrieved_utc": "2026-11-03T10:52:56Z (batch completion)"
+    },
+    {
+      "url": "https://zenodo.org/api/records/{id}/versions?size=100",
+      "result": "403 for all six IDs; total and coverage unknown"
+    },
+    {
+      "url": "https://zenodo.org/api/records?q=metadata.funding.award.number%3A%22{grant}%22%20AND%20%28%22data%20management%20plan%22%20OR%20DMP%29&size=100&all_versions=true",
+      "result": "403 for all three grants; no results count or pagination coverage"
+    }
+  ],
+  "findings": [
+    {
+      "grant": "101138672",
+      "project": "HeriTACE",
+      "project_dates": [
+        "2024-01-01",
+        "2027-12-31"
+      ],
+      "status": "ongoing_future_end_no_current_strict_post_end_version",
+      "scope": "Not investigated in PDFs; separate initial and update titles only",
+      "issue_dates": "not extracted",
+      "classification": "local dataset primary engineering, humanities membership; external classification not verified"
+    },
+    {
+      "grant": "101079148",
+      "project": "E-RIHS IP",
+      "project_dates": [
+        "2022-10-01",
+        "2024-12-31"
+      ],
+      "status": "inspected_records_not_same_scope_or_post_end",
+      "documents": [
+        {
+          "id": "8004294",
+          "scope": "IP project DMP, project-generated/reused data, p2",
+          "issue_date": "2023-06-02",
+          "source": "version 0.6 issue log p3; delivery date listed 2023-02-28 conflicts chronologically",
+          "fraction_days": "244/822"
+        },
+        {
+          "id": "12607922",
+          "scope": "ERIC/infrastructure data, p2; not established as same scope as D1.2",
+          "issue_date": "2024-06-12",
+          "source": "version 1.1 issue log p3; actual delivery 2024-06-28",
+          "fraction_days": "620/822"
+        }
+      ],
+      "classification": "local primary humanities; external classification not verified"
+    },
+    {
+      "grant": "101058007",
+      "project": "DIAMAS",
+      "project_dates": [
+        "2022-09-01",
+        "2025-08-31"
+      ],
+      "status": "same_scope_revision_evidenced_no_post_end_document_verified",
+      "documents": [
+        {
+          "id": "10405850",
+          "version_date_interval": [
+            "2022-10-01",
+            "2022-10-31"
+          ],
+          "date_label": "Created/Modified Oct 2022, p2; actual delivery 10/2022 p1, not explicitly termed issue date",
+          "fraction_days_interval": [
+            "30/1095",
+            "60/1095"
+          ]
+        },
+        {
+          "id": "10405959",
+          "version_date_interval": [
+            "2023-10-01",
+            "2023-10-31"
+          ],
+          "date_label": "Created/Modified Oct 2023, p3; actual delivery 10/2023 p2, not explicitly termed issue date",
+          "fraction_days_interval": [
+            "395/1095",
+            "425/1095"
+          ],
+          "scope": "p3 explicitly states updated D1.1"
+        }
+      ],
+      "update_2": "CORDIS lists Update 2; PDF inaccessible; date and scope unverified",
+      "classification": "local primary humanities; external classification not verified"
+    }
+  ],
+  "limitations": "No complete version chain or exhaustive search; repository publication date never substitutes for documented issue date. CORDIS dates current snapshot; extension history not established. No final pair selected."
+}

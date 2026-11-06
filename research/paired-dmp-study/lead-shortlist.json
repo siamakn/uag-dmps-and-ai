@@ -1,0 +1,1049 @@
+{
+ "generated": "2026-11-06",
+ "inputs": {
+  "versions.json_generated": "2026-11-04T16:43:17+00:00",
+  "scope": "granted"
+ },
+ "screen": "publication dates as a one-directional screen only (see script docstring); no issue date read",
+ "counts": {
+  "leads": 226,
+  "no_cordis_or_dates": 99,
+  "no_post_end_version": 109,
+  "kept": 18,
+  "tier_A": 6,
+  "tier_B": 6,
+  "tier_D": 6
+ },
+ "reserve_coverage_by_branch_excluding_proposal_projects": {
+  "natural sciences": [
+   "e-DIPLOMA",
+   "MultiMiner",
+   "ExPaNDS",
+   "PathOS",
+   "MarinePlan",
+   "EUbOPEN",
+   "PAPILLONS",
+   "RitualModes",
+   "ADOPT BBMRI-ERIC",
+   "COMETE",
+   "GOLDEN-ROM"
+  ],
+  "engineering and technology": [
+   "MultiMiner",
+   "TWEET-IE",
+   "SteamBioAfrica"
+  ],
+  "medical and health sciences": [
+   "D1-Glia",
+   "EUbOPEN",
+   "ADOPT BBMRI-ERIC"
+  ],
+  "agricultural sciences": [
+   "PAPILLONS"
+  ],
+  "social sciences": [
+   "e-DIPLOMA",
+   "SteamBioAfrica",
+   "ExPaNDS",
+   "IANUS",
+   "MarinePlan",
+   "RitualModes",
+   "ADOPT BBMRI-ERIC",
+   "FAIRsFAIR"
+  ],
+  "humanities": [
+   "RitualModes",
+   "GOLDEN-ROM"
+  ]
+ },
+ "not_done": [
+  "no issue dates read",
+  "no lineage or scope checked",
+  "no D09 end-date check",
+  "same-grant pairs across different concepts not considered here (see corpus-audit.md)",
+  "nothing registered in data/study-documents.json"
+ ],
+ "shortlist": [
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "10390669",
+   "grant": "101061424",
+   "acronym": "e-DIPLOMA",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "natural sciences",
+    "social sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2022-09-01",
+   "project_end_local_cordis": "2025-10-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "10390670",
+     "title": "e-DIPLOMA - Deliverable 1.3: Data Management Plan",
+     "published": "2023-11-27",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 39.1,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/10390670",
+     "files": [
+      "e-DIPLOMA_D1.3_DataManagementPlan.pdf"
+     ]
+    },
+    {
+     "id": "21102983",
+     "title": "e-DIPLOMA - Deliverable 1.3: Data Management Plan v2",
+     "published": "2026-03-26",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 112.63,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/21102983",
+     "files": [
+      "e-DIPLOMA_D1.3_DataManagementPlan_26_03_2026.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "8063405",
+   "grant": "101091374",
+   "acronym": "MultiMiner",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "engineering and technology",
+    "natural sciences"
+   ],
+   "dominant_branch": "engineering and technology",
+   "project_start": "2023-01-01",
+   "project_end_local_cordis": "2026-06-30",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "8063406",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.3",
+     "published": "2023-06-21",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 13.4,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/8063406",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_3.pdf"
+     ]
+    },
+    {
+     "id": "10653171",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.4",
+     "published": "2024-02-13",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 31.97,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/10653171",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_4.pdf"
+     ]
+    },
+    {
+     "id": "14016960",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.5",
+     "published": "2024-10-31",
+     "version_index": 2,
+     "in_dataset": false,
+     "publication_position": 52.43,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/14016960",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_5.pdf"
+     ]
+    },
+    {
+     "id": "14878400",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.6",
+     "published": "2025-02-16",
+     "version_index": 3,
+     "in_dataset": false,
+     "publication_position": 60.89,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/14878400",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_6.pdf"
+     ]
+    },
+    {
+     "id": "17052131",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.7",
+     "published": "2025-09-04",
+     "version_index": 4,
+     "in_dataset": false,
+     "publication_position": 76.57,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/17052131",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_7_with_appendices.pdf"
+     ]
+    },
+    {
+     "id": "20429095",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.8",
+     "published": "2026-05-28",
+     "version_index": 5,
+     "in_dataset": true,
+     "publication_position": 97.41,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/20429095",
+     "files": [
+      "MultiMiner_DMP_Version_1_8.pdf"
+     ]
+    },
+    {
+     "id": "22706196",
+     "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.9",
+     "published": "2026-09-11",
+     "version_index": 6,
+     "in_dataset": false,
+     "publication_position": 105.72,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/22706196",
+     "files": [
+      "D5_4_MultiMiner_Data_Management_Plan_V1_9_wappendix.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "10061048",
+   "grant": "101079125",
+   "acronym": "TWEET-IE",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "engineering and technology"
+   ],
+   "dominant_branch": "engineering and technology",
+   "project_start": "2022-11-01",
+   "project_end_local_cordis": "2025-10-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "10061049",
+     "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+     "published": "2023-11-01",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 33.33,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/10061049",
+     "files": [
+      "TWEET-IE_D6-3_v2-0.pdf"
+     ]
+    },
+    {
+     "id": "14022681",
+     "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+     "published": "2024-03-31",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 47.12,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/14022681",
+     "files": [
+      "TWEET-IE_D6-3_v3-0.pdf"
+     ]
+    },
+    {
+     "id": "14023125",
+     "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+     "published": "2024-06-20",
+     "version_index": 2,
+     "in_dataset": false,
+     "publication_position": 54.52,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/14023125",
+     "files": [
+      "TWEET-IE_D6-3_v3-1.pdf"
+     ]
+    },
+    {
+     "id": "14024376",
+     "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+     "published": "2024-11-01",
+     "version_index": 3,
+     "in_dataset": false,
+     "publication_position": 66.76,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/14024376",
+     "files": [
+      "TWEET-IE_D6-3_v4-0.pdf"
+     ]
+    },
+    {
+     "id": "17361082",
+     "title": "TWEET-IE Deliverable 6.4: Data Management Plan - Final assessment",
+     "published": "2025-12-31",
+     "version_index": 4,
+     "in_dataset": true,
+     "publication_position": 105.57,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17361082",
+     "files": [
+      "TWEET-IE_D6-4_final.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "10844551",
+   "grant": "101090280",
+   "acronym": "D1-Glia",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "medical and health sciences"
+   ],
+   "dominant_branch": "medical and health sciences",
+   "project_start": "2023-04-01",
+   "project_end_local_cordis": "2025-03-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "11091859",
+     "title": "Data Management Plan",
+     "published": "2024-03-19",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 48.36,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/11091859",
+     "files": []
+    },
+    {
+     "id": "10844552",
+     "title": "Data Management Plan",
+     "published": "2024-03-20",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 48.49,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/10844552",
+     "files": []
+    },
+    {
+     "id": "15392557",
+     "title": "Data Management Plan",
+     "published": "2025-05-12",
+     "version_index": 2,
+     "in_dataset": true,
+     "publication_position": 105.75,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/15392557",
+     "files": [
+      "D1.1_D1-Glia_090325_V3.pdf",
+      "README.txt"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "13871825",
+   "grant": "101036401",
+   "acronym": "SteamBioAfrica",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "engineering and technology",
+    "social sciences"
+   ],
+   "dominant_branch": "engineering and technology",
+   "project_start": "2021-09-01",
+   "project_end_local_cordis": "2024-08-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "13871826",
+     "title": "D12.1 Data Management Plan",
+     "published": "2022-03-31",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 19.27,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/13871826",
+     "files": []
+    },
+    {
+     "id": "13879550",
+     "title": "D12.1 Data Management Plan",
+     "published": "2022-06-06",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 25.39,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/13879550",
+     "files": []
+    },
+    {
+     "id": "13879557",
+     "title": "D12.1 Data Management Plan",
+     "published": "2023-04-17",
+     "version_index": 2,
+     "in_dataset": false,
+     "publication_position": 54.16,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/13879557",
+     "files": []
+    },
+    {
+     "id": "13879565",
+     "title": "D12.1 Data Management Plan",
+     "published": "2024-09-17",
+     "version_index": 3,
+     "in_dataset": true,
+     "publication_position": 101.55,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/13879565",
+     "files": []
+    }
+   ]
+  },
+  {
+   "tier": "A",
+   "tier_meaning": "early by deposit date; late issue date must be checked",
+   "concept": "3672925",
+   "grant": "857641",
+   "acronym": "ExPaNDS",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences",
+    "social sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2019-09-01",
+   "project_end_local_cordis": "2023-02-28",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "3672926",
+     "title": "D1.10 ExPaNDS Data Management Plan",
+     "published": "2020-02-14",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 13.01,
+     "deposit_screen": "early-by-deposit",
+     "record_url": "https://zenodo.org/records/3672926",
+     "files": [
+      "D1_10 ExPaNDS Data Management Plan.pdf"
+     ]
+    },
+    {
+     "id": "7646655",
+     "title": "ExPaNDS Data Management Plan",
+     "published": "2023-03-15",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 101.18,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/7646655",
+     "files": [
+      "D1_10 ExPaNDS Data Management Plan v2.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "11049556",
+   "grant": "101058728",
+   "acronym": "PathOS",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "natural sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2022-09-01",
+   "project_end_local_cordis": "2025-08-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "11049557",
+     "title": "PathOS - D3.5 Data Management Plan",
+     "published": "2024-04-11",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 53.7,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/11049557",
+     "files": [
+      "PathOS D3.5 Data Management Plan Update.pdf"
+     ]
+    },
+    {
+     "id": "17578116",
+     "title": "PathOS - D3.5 Data Management Plan (update)",
+     "published": "2025-11-10",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 106.48,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17578116",
+     "files": [
+      "Deliverabe D3.5 Data Management Plan Final Update.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "15527690",
+   "grant": "101058158",
+   "acronym": "IANUS",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "social sciences"
+   ],
+   "dominant_branch": "social sciences",
+   "project_start": "2022-06-01",
+   "project_end_local_cordis": "2025-05-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "15527691",
+     "title": "IANUS - Data Management Plan (M6)",
+     "published": "2025-05-27",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 99.63,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/15527691",
+     "files": [
+      "IANUS Data Management Plan 29 Nov 2022.pdf"
+     ]
+    },
+    {
+     "id": "15527866",
+     "title": "IANUS - Data Management Plan (mid-term update)",
+     "published": "2025-05-27",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 99.63,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/15527866",
+     "files": [
+      "IANUS Data Management Plan 21 Dec 2023.pdf"
+     ]
+    },
+    {
+     "id": "17779555",
+     "title": "IANUS - Data Management Plan (final update)",
+     "published": "2025-12-01",
+     "version_index": 2,
+     "in_dataset": true,
+     "publication_position": 116.8,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17779555",
+     "files": [
+      "IANUS-DMP_v3.2 final version.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "15785969",
+   "grant": "101059407",
+   "acronym": "MarinePlan",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "natural sciences",
+    "social sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2022-10-01",
+   "project_end_local_cordis": "2025-09-30",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "15785970",
+     "title": "D6.5 - Final Data Management Plan",
+     "published": "2025-07-01",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 91.69,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/15785970",
+     "files": []
+    },
+    {
+     "id": "17132524",
+     "title": "D6.5 - Final Data Management Plan",
+     "published": "2025-09-16",
+     "version_index": 2,
+     "in_dataset": false,
+     "publication_position": 98.72,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/17132524",
+     "files": []
+    },
+    {
+     "id": "17641382",
+     "title": "D6.5 - Final Data Management Plan",
+     "published": "2025-09-19",
+     "version_index": 3,
+     "in_dataset": true,
+     "publication_position": 99.0,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/17641382",
+     "files": []
+    },
+    {
+     "id": "17132397",
+     "title": "D6.5 - Final Data Management Plan",
+     "published": "2025-11-16",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 104.29,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17132397",
+     "files": []
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "8278990",
+   "grant": "875510",
+   "acronym": "EUbOPEN",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences",
+    "medical and health sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2020-05-01",
+   "project_end_local_cordis": "2025-10-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "8278991",
+     "title": "EUbOPEN Data Management Plan",
+     "published": "2023-04-30",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 54.45,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/8278991",
+     "files": [
+      "EUbOPEN Data Management Plan version 1.3.pdf"
+     ]
+    },
+    {
+     "id": "21646962",
+     "title": "EUbOPEN Data Management Plan",
+     "published": "2026-07-28",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 113.44,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/21646962",
+     "files": [
+      "EUbOPEN Data Management Plan vs 1.8.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "17245510",
+   "grant": "101000210",
+   "acronym": "PAPILLONS",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences",
+    "agricultural sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2021-06-01",
+   "project_end_local_cordis": "2025-05-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "17640869",
+     "title": "PAPILLONS Data Management Plan",
+     "published": "2024-06-21",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 76.44,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/17640869",
+     "files": [
+      "PAPILLONS_data_management_plan.pdf"
+     ]
+    },
+    {
+     "id": "17245511",
+     "title": "PAPILLONS Data Management Plan",
+     "published": "2025-10-01",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 108.42,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17245511",
+     "files": [
+      "Papillons_Data_Management_Plan.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "B",
+   "tier_meaning": "deposit between 50% and 100%, plus a post-end deposit; both issue dates must be checked",
+   "concept": "7262255",
+   "grant": "101017567",
+   "acronym": "EGI-ACE",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences",
+    "engineering and technology"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2021-01-01",
+   "project_end_local_cordis": "2023-06-30",
+   "in_cohort_proposal": "engineering and technology",
+   "versions": [
+    {
+     "id": "7262256",
+     "title": "EGI-ACE D1.5 Data Management Plan",
+     "published": "2022-10-26",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 72.86,
+     "deposit_screen": "mid",
+     "record_url": "https://zenodo.org/records/7262256",
+     "files": [
+      "EGI-ACE D1.5 V1 Public Under EC review.pdf"
+     ]
+    },
+    {
+     "id": "10149915",
+     "title": "EGI-ACE D1.5 Data Management Plan",
+     "published": "2023-11-17",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 115.38,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/10149915",
+     "files": [
+      "EGI-ACE D1.5 V1.1-Public-Under EC Review.pdf"
+     ]
+    },
+    {
+     "id": "19402005",
+     "title": "EGI-ACE D1.5 Data Management Plan",
+     "published": "2023-11-17",
+     "version_index": 2,
+     "in_dataset": true,
+     "publication_position": 115.38,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/19402005",
+     "files": [
+      "EGI-ACE D1.5 V1.1-Public-Approved by the EC.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "17733865",
+   "grant": "101061233",
+   "acronym": "RECHARGE",
+   "programme": "Horizon Europe",
+   "cordis_branches": [
+    "medical and health sciences",
+    "humanities"
+   ],
+   "dominant_branch": "medical and health sciences",
+   "project_start": "2022-10-01",
+   "project_end_local_cordis": "2025-09-30",
+   "in_cohort_proposal": "humanities",
+   "versions": [
+    {
+     "id": "17733866",
+     "title": "RECHARGE: Data Management Plan",
+     "published": "2025-11-27",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 105.3,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17733866",
+     "files": [
+      "RECHARGE-DMP_v1.pdf"
+     ]
+    },
+    {
+     "id": "17801415",
+     "title": "RECHARGE: Data Management Plan (mid-term update)",
+     "published": "2025-12-03",
+     "version_index": 1,
+     "in_dataset": false,
+     "publication_position": 105.84,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17801415",
+     "files": [
+      "RECHARGE-DMP_v1.2.docx.pdf"
+     ]
+    },
+    {
+     "id": "18403735",
+     "title": "RECHARGE: Data Management Plan (final update)",
+     "published": "2026-01-28",
+     "version_index": 2,
+     "in_dataset": true,
+     "publication_position": 110.96,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/18403735",
+     "files": [
+      "D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "8403008",
+   "grant": "694986",
+   "acronym": "RitualModes",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences",
+    "humanities",
+    "social sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2016-10-01",
+   "project_end_local_cordis": "2023-09-30",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "8403009",
+     "title": "Data, code and documentation for the paper The Tragedies that Bind Us: Shared memories, identity fusion, and moral concern among Balinese Hindus following the 2002 Bali Bombings (Revach et al., 2023)",
+     "published": "2023-10-03",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 100.12,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/8403009",
+     "files": [
+      "bali_2.R",
+      "Bali bombing study - preregistration.pdf",
+      "bali_data_2304_raw.xlsx",
+      "r_bali_data_2005_cleaned.csv"
+     ]
+    },
+    {
+     "id": "17585539",
+     "title": "Data, code and documentation for the paper The Tragedies that Bind Us: Shared memories, identity fusion, and moral concern among Balinese Hindus following the 2002 Bali Bombings (Revach et al., 2023)",
+     "published": "2025-03-30",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 121.41,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/17585539",
+     "files": [
+      "Bali bombing study - preregistration.pdf",
+      "r_bali_data_wrangled.csv",
+      "bali_data_2304_raw.xlsx",
+      "r_bali_data_2005_cleaned.csv",
+      "bali_3.R"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "7513755",
+   "grant": "676550",
+   "acronym": "ADOPT BBMRI-ERIC",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "medical and health sciences",
+    "social sciences",
+    "natural sciences"
+   ],
+   "dominant_branch": "medical and health sciences",
+   "project_start": "2015-10-01",
+   "project_end_local_cordis": "2019-03-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "7513756",
+     "title": "BBMRI-ERIC Colorectal Cancer Cohort (CRC-Cohort): Data Protection Policy",
+     "published": "2023-01-08",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 207.99,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/7513756",
+     "files": [
+      "CRC-Data-Protection.pdf"
+     ]
+    },
+    {
+     "id": "7930536",
+     "title": "BBMRI-ERIC Colorectal Cancer Cohort (CRC-Cohort): Data Protection Policy",
+     "published": "2023-05-12",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 217.7,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/7930536",
+     "files": [
+      "CRC-Data-Protection.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "8063546",
+   "grant": "813948",
+   "acronym": "COMETE",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "natural sciences"
+   ],
+   "dominant_branch": "natural sciences",
+   "project_start": "2018-11-01",
+   "project_end_local_cordis": "2023-04-30",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "8063547",
+     "title": "Next-Generation Computational Methods for Enhanced Multiphase Flow Processes - WP2",
+     "published": "2023-06-21",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 103.17,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/8063547",
+     "files": [
+      "source_code.zip"
+     ]
+    },
+    {
+     "id": "8378578",
+     "title": "Next-Generation Computational Methods for Enhanced Multiphase Flow Processes - WP2",
+     "published": "2023-06-21",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 103.17,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/8378578",
+     "files": [
+      "source_code.zip",
+      "WP5_D5.14_Data_Management_Plan-revised.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "8242973",
+   "grant": "101029346",
+   "acronym": "GOLDEN-ROM",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "humanities",
+    "natural sciences"
+   ],
+   "dominant_branch": "humanities",
+   "project_start": "2021-06-01",
+   "project_end_local_cordis": "2023-05-31",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "8242974",
+     "title": "Data Management Plan",
+     "published": "2023-08-13",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 110.15,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/8242974",
+     "files": []
+    },
+    {
+     "id": "8242975",
+     "title": "Data Management Plan",
+     "published": "2023-08-13",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 110.15,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/8242975",
+     "files": []
+    }
+   ]
+  },
+  {
+   "tier": "D",
+   "tier_meaning": "only post-end deposits; both issue dates must be checked",
+   "concept": "6334610",
+   "grant": "831558",
+   "acronym": "FAIRsFAIR",
+   "programme": "Horizon 2020",
+   "cordis_branches": [
+    "social sciences"
+   ],
+   "dominant_branch": "social sciences",
+   "project_start": "2019-03-01",
+   "project_end_local_cordis": "2022-02-28",
+   "in_cohort_proposal": null,
+   "versions": [
+    {
+     "id": "6334611",
+     "title": "D1.2 Data Management Plan",
+     "published": "2022-03-07",
+     "version_index": 0,
+     "in_dataset": false,
+     "publication_position": 100.64,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/6334611",
+     "files": [
+      "D1.2_Data_Management_Plan_20190830_v1.0.pdf"
+     ]
+    },
+    {
+     "id": "6656144",
+     "title": "D1.2 Data Management Plan",
+     "published": "2022-03-07",
+     "version_index": 1,
+     "in_dataset": true,
+     "publication_position": 100.64,
+     "deposit_screen": "post-end",
+     "record_url": "https://zenodo.org/records/6656144",
+     "files": [
+      "D1.2_FAIRsFAIR_Data_Management_Plan_20190822_v1.0_final.pdf"
+     ]
+    }
+   ]
+  }
+ ]
+}

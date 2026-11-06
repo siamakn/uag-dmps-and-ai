@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "checkpoint_date": "2026-11-06",
+  "extends": [
+    "status.json",
+    "parallel-preparation-status.json"
+  ],
+  "entrypoint": "continuation-2026-11-06.md",
+  "status": "synthetic_analysis_checked_and_bounded_version_followup_complete",
+  "human_pilot": "deferred_no_current_task",
+  "real_human_labels_created": 0,
+  "model_inference_requests": 0,
+  "external_messages_sent": 0,
+  "platform_files_changed_by_this_continuation": false,
+  "Claude_platform_report_present": true,
+  "Claude_implementation_independently_accepted": false,
+  "analysis": {
+    "synthetic_only": true,
+    "tests_passed": 16,
+    "independent_review": "analysis-dry-run-review.md",
+    "scientific_analysis_approved": false,
+    "real_record_adapter_implemented": false,
+    "repeats_supported": 1
+  },
+  "version_followup": {
+    "saved_leads": 226,
+    "EU_grant_concept_families_screened": 163,
+    "publication_only_leads": 10,
+    "leads_with_cached_classification": 6,
+    "source_PDFs_retained": 5,
+    "families_with_late_PDF_checked": 4,
+    "excluded_late_files": [
+      "TWEET-IE:17361082",
+      "D1-Glia:15392557",
+      "e-DIPLOMA:21102983"
+    ],
+    "conditional_pair": "MultiMiner:10653171/22706196",
+    "new_pairs_promoted": 0
+  },
+  "checks": {
+    "source_hashes_and_date_arithmetic": "passed",
+    "synthetic_arithmetic_and_missingness": "passed_16_tests_plus_independent_checks",
+    "Python37": "grammar_passed_not_runtime_test",
+    "shared_working_tree_whitespace": "scripts/README.md:159 trailing_blank_line_left_untouched",
+    "cohort_proposal_unchanged": true,
+    "experiment_draft_and_matrix_unchanged": true,
+    "input_packet_manifest_unchanged": true,
+    "historical_selection_unchanged": true
+  },
+  "next_actions": [
+    "review_Claude_final_changes_with_isolated_storage_after_user_reports_stable",
+    "resolve_Mainz_actual_backend_and_complete_request_context_when_info_available",
+    "retain_MultiMiner_conditional_until_consistent_issue_date_hierarchy_resolved",
+    "resume_human_calibration_when_reviewers_ready"
+  ],
+  "required_user_action_now": null,
+  "historical_selection_sha256": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+  "artifacts_sha256": {
+    "analysis-dry-run.py": "81caca0ac16481714a13306d878ce2ffb9f53325ea9d469984d575353763cb94",
+    "analysis-dry-run-test.py": "85f70786f65b2418aabce187a5f6b6bb149f9ea2e15582dd5605f1c3180e3423",
+    "analysis-dry-run.md": "fc23ac4b1b4ff4693482d7687347d8f2b1869fda3876b07b3b35d64442716c07",
+    "analysis-dry-run-review.md": "28cc1ad250e836f075113a5e92d8db7ad596b1ae89aeaa805d45cb3f2971f0e5",
+    "version-followup-screen.py": "2c2d08b1591795654c6bb90a01e67cea5ae8c86297973f6bd434a1e18c9d0e9e",
+    "version-followup-screen.json": "e71da14f41b272bdcc6e8b1ecef3b0ce9a71d67adf08075eaaefa9d12178d6a0",
+    "version-followup-screen.md": "58d8d1b57f8c831d44150c6cf919f4abc3e6c96a0a25ea18355fd5c4f44c903b",
+    "version-followup-date-checks.json": "11d2559e9fab7ef47cbc4dbca32f78bfb486db22092b7236ae6dfce7b8a3d21e",
+    "version-followup-documents.md": "04348c13d2c9f3cba473c6eb643b14a7187dd1d8f6f2b3397ebe541e8e83cacc",
+    "version-followup-documents.json": "bd572fbb6e247fe60bef6e8e58fd110ceaa9930d8b71c05cf122feb25ff7e4d7",
+    "continuation-2026-11-06.md": "6c9188206fb82b185577f36aa8cf1230d75041781de162eefe61be0a6fdb59e4"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-06",
+  "status": "bounded_source_review_complete_no_unresolved_material_issue_in_checked_claims",
+  "review_scope": "Independent source checks of three central claims per completed report, plus targeted provenance and phase-cell checks. Not an exhaustive literature review or complete second rubric audit.",
+  "reviewed_reports": [
+    {
+      "report": "prior-study-methods",
+      "files": [
+        {
+          "path": "research/paired-dmp-study/prior-study-methods.md",
+          "bytes": 13062,
+          "sha256": "b1e81a9b5306334e05180d756bf1773baff318d6ac8bf92c9f8bae9b9b5e345d"
+        },
+        {
+          "path": "research/paired-dmp-study/prior-study-methods.json",
+          "bytes": 17886,
+          "sha256": "95231a0685ec4995fd26634a3ab3ba68ddc30665ef847b5cdee388e98541b893"
+        }
+      ],
+      "checked_claim_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    {
+      "report": "rubric-comparability",
+      "files": [
+        {
+          "path": "research/paired-dmp-study/rubric-comparability.md",
+          "bytes": 23021,
+          "sha256": "c87b82c5819709579402ab1eb006d53dcf1156db59a8d6be86ba59bef37f6e61"
+        },
+        {
+          "path": "research/paired-dmp-study/rubric-comparability.json",
+          "bytes": 49494,
+          "sha256": "288efc6faf9c0f7c1cad7e39fdc11e5fa0c09e602559e0aa95df5055a21da088"
+        }
+      ],
+      "checked_claim_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "report": "related-work-evidence-map",
+      "files": [
+        {
+          "path": "research/paired-dmp-study/related-work-evidence-map.md",
+          "bytes": 6165,
+          "sha256": "e2563bea4679e7d2e299c416e9753919c5167f75baa6609018705dbf6192df8e"
+        },
+        {
+          "path": "research/paired-dmp-study/related-work-evidence-map.json",
+          "bytes": 10914,
+          "sha256": "f81d1ecfa4f98f952fc81be93ed2d74b9d9b28ff55c9ca6a6632dd06728c7cd1"
+        }
+      ],
+      "checked_claim_ids": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "P1",
+      "report": "prior-study-methods",
+      "claim": "The presentation reports 28 DMP documents and 556 selected expert judgments; the displayed validation workflow exposes the AI judgment.",
+      "primary_locator": "Repo presentation physical p16; rendered and visually inspected independently.",
+      "result": "supported",
+      "boundary": "Judgments are nested and selected. No inference of 556 plans, full-corpus accuracy or an independent blinded reference."
+    },
+    {
+      "id": "P2",
+      "report": "prior-study-methods",
+      "claim": "Consistency and expert agreement are different measurements; explicit checks show 94% consistency and 56% expert agreement.",
+      "primary_locator": "Repo presentation physical p17; independently read extracted text and rendered table.",
+      "result": "supported",
+      "boundary": "Category denominators and repeated-run design are not reconstructed from the displayed percentages."
+    },
+    {
+      "id": "P3",
+      "report": "prior-study-methods",
+      "claim": "The exact presentation/API capture is verifiable, while the thesis access response is not a thesis PDF or evidence that its methods are absent.",
+      "primary_locator": "repo-record.json metadata.license and files; local PDF MD5/SHA-256; uhasselt-access-response.html/.json.",
+      "result": "supported_after_correction",
+      "boundary": "API PDF checksum matches local MD5. API metadata.license.id is cc-by-4.0. Thesis HTTP503 notice explicitly restricts access; thesis methods and cached-summary claims were not independently verified here."
+    },
+    {
+      "id": "R1",
+      "report": "rubric-comparability",
+      "claim": "4a end has changed acceptance routes: the publication includes controlled-access and documented exception routes omitted by the native anonymized-output wording.",
+      "primary_locator": "Publication physical p14, printed p13, end-project column; native /data_management_plan/3/subsections/0/stages/end_project.",
+      "result": "supported",
+      "boundary": "Comparison of instrument wording; not legal advice or a judgment about any project."
+    },
+    {
+      "id": "R2",
+      "report": "rubric-comparability",
+      "claim": "5a early changes two conditional publication checks into alternatives joined by OR in native wording.",
+      "primary_locator": "Publication physical p18, printed p17, 5a early column; native /data_management_plan/4/subsections/0/stages/proposal_early_stage.",
+      "result": "supported",
+      "boundary": "This identifies changed acceptance logic; no numeric conversion or phase policy is approved."
+    },
+    {
+      "id": "R3",
+      "report": "rubric-comparability",
+      "claim": "5b early loses the publication retention-period example and funder/community qualifier in native wording.",
+      "primary_locator": "Publication physical p19, printed p18, 5b early continuation; native /data_management_plan/4/subsections/1/stages/proposal_early_stage.",
+      "result": "supported",
+      "boundary": "The report correctly asks for calibration rather than declaring a universal ten-year obligation."
+    },
+    {
+      "id": "M1",
+      "report": "related-work-evidence-map",
+      "claim": "Pham compares automated text-mining analysis with manual 16-criterion 0/1/2 scoring of 21 Belmont Forum DMPs, with discussion to consensus.",
+      "primary_locator": "Captured primary HTML sections4,4.1,4.2, independently read.",
+      "result": "supported",
+      "boundary": "Text-mining coverage and reconciled ratings do not validate LLM criterion sufficiency or independent inter-rater agreement."
+    },
+    {
+      "id": "M2",
+      "report": "related-work-evidence-map",
+      "claim": "Sharma is a 2023 chapter applying two human instruments to 150 plans across award years; once per instrument is not full independent double coding.",
+      "primary_locator": "PDF physical p1/printed26 and physical pp8-9/printed33-34; independently extracted and read.",
+      "result": "supported",
+      "boundary": "The inspected longitudinal sample does not establish repeated same-project DMP version pairs."
+    },
+    {
+      "id": "M3",
+      "report": "related-work-evidence-map",
+      "claim": "Miksa maps six maDMP assessment methods to four reviewer goals; narrative non-ambiguity is outside the implemented coverage.",
+      "primary_locator": "PDF physical p9, Table1 and adjacent discussion; independently rendered, visually inspected and text-read.",
+      "result": "supported",
+      "boundary": "A method/goal mapping is not a human-versus-LLM accuracy benchmark."
+    }
+  ],
+  "additional_checks": [
+    {
+      "claim": "Publication5d mid-project cell is visually blank.",
+      "locator": "Framework physicalp20/printed19, rendered independently.",
+      "result": "supported",
+      "boundary": "Instrument undefined differs from native absence and document-level NA."
+    },
+    {
+      "claim": "Framework phases are qualitative, with no numeric duration cutoffs in section3.",
+      "locator": "Framework physicalp6/printed5, text read independently.",
+      "result": "supported",
+      "boundary": "Sampling <=50% and >100% does not automatically choose rubric phases."
+    },
+    {
+      "claim": "Frnka/Suchanek Crossref capture supplies 2026 publication dates.",
+      "locator": "parent-frnka-article-crossref.json fields DOI,published,published-online.",
+      "result": "supported",
+      "boundary": "Metadata dates do not verify article methods. Full text remains uninspected."
+    }
+  ],
+  "corrections_resolved": [
+    {
+      "issue": "Earlier task shorthand referred to the NSF longitudinal chapter as2024.",
+      "evidence": "Actual title page says iConference2023 and DOI10.1007/978-3-031-28032-0_3.",
+      "resolution": "Final evidence-map MD/JSON correctly identify2023."
+    },
+    {
+      "issue": "Initial prior-study draft checked rights but missed metadata.license and stated no explicit presentation licence.",
+      "evidence": "Captured Repo API metadata.license.id=cc-by-4.0.",
+      "resolution": "Worker corrected both final reports; independently rechecked. This does not change thesis rights."
+    }
+  ],
+  "verification": {
+    "report_json_parses": 3,
+    "primary_artifact_sha256_matches": 9,
+    "repo_pdf_md5_matches_api": true,
+    "platform_review_performed": false,
+    "human_labels_created": 0,
+    "model_inference_requests": 0,
+    "external_messages_sent": 0
+  },
+  "remaining_dependencies": [
+    "Vandenberk thesis methods unavailable at normally accessed institutional server; cached summary is not full methods verification.",
+    "Frnka2025 thesis and Frnka/Suchanek2026 article methods remain uninspected; incomplete retrieval cannot establish design absence.",
+    "Phase policy, phase-specific anchors, numeric scale comparison and primary estimand remain unapproved methods decisions.",
+    "Human pilot remains deferred; independent reference assessments and experiment freeze remain pending."
+  ],
+  "limits": "Checked claims are suitable for bounded planning records, not empirical performance or global novelty claims. I did not independently verify all rubric cells, all presentation screenshot metrics, cached thesis summary text, search completeness, or inaccessible methods."
+}

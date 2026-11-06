@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-04",
+  "status": "proposal_not_approved_not_frozen_not_executed",
+  "protocol": "experiment-protocol-draft.md",
+  "human_pilot_status": "deferred_no_current_human_task",
+  "formal_reviewers": "unassigned",
+  "human_judgments_created": 0,
+  "model_requests_made": 0,
+  "cohort": {
+    "manifest": "cohort-proposal.json",
+    "status": "working_proposal",
+    "project_clusters": 6,
+    "documents": 12,
+    "selection_independent_of_quality": true,
+    "pairs": [
+      {
+        "project": "iMagine",
+        "grant": "101058625",
+        "discipline_slot": "natural sciences"
+      },
+      {
+        "project": "EGI-ACE",
+        "grant": "101017567",
+        "discipline_slot": "engineering and technology"
+      },
+      {
+        "project": "NANOFACTS",
+        "grant": "952259",
+        "discipline_slot": "medical and health sciences"
+      },
+      {
+        "project": "AGRICORE",
+        "grant": "816078",
+        "discipline_slot": "agricultural sciences"
+      },
+      {
+        "project": "SUSTRACK",
+        "grant": "101081823",
+        "discipline_slot": "social sciences"
+      },
+      {
+        "project": "RECHARGE",
+        "grant": "101061233",
+        "discipline_slot": "humanities"
+      }
+    ]
+  },
+  "pins": {
+    "working_software_commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+    "working_software_tree": "b4ec23af67aa8129d2e001799e37dede9a897042",
+    "latest_live_checked_date": "2026-11-03",
+    "refresh_once_before_campaign_freeze": true,
+    "publication_linked_archive_commit": "db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+    "framework_pdf_sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "native_rubric_sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+    "exact_source_manifest": "source-provenance.json",
+    "observed_function_checks": "tool-preflight.json"
+  },
+  "human_instrument": {
+    "criterion_ids": [
+      "1a",
+      "1b",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6a",
+      "6b"
+    ],
+    "scale": "ordinal_012_calibration_v1",
+    "scale_approved_for": "calibration_only",
+    "benchmark_anchors": "pending_calibration_and_freeze",
+    "applicability_evidence_uncertainty_missingness": "separate_from_numeric_score",
+    "mid_project_5d": "instrument_undefined",
+    "native_0_100_mapping": null
+  },
+  "models": {
+    "M0": {
+      "exact_id": null,
+      "endpoint": null,
+      "status": "select_later_from_verified_Mainz_availability"
+    },
+    "M1": {
+      "exact_id": null,
+      "endpoint": null,
+      "status": "optional_later_extension"
+    }
+  },
+  "conditions": [
+    {
+      "id": "N0",
+      "role": "native_as_is_diagnostic",
+      "model": "M0",
+      "input": "frozen_common_TXT_through_native_parser_30720_UTF16_unit_prefix",
+      "rubric": "native_default_14_IDs_actual_prompt_omits_full_wording",
+      "phase_path": "single_UI_short_keys_actual_mismatch_preserved",
+      "document_phase_assignments": null,
+      "output": "raw_native_evidence_units_0_100_and_unchanged_aggregates",
+      "requests_per_document_repeat": 1,
+      "implementation_status": "bounded_functions_checked_full_app_requests_unverified"
+    },
+    {
+      "id": "F0",
+      "role": "configured_overall_main_comparator",
+      "model": "M0",
+      "input": "entire_frozen_canonical_text",
+      "rubric": "full_defined_framework_phase_cells_and_calibrated_anchors",
+      "output": "all_defined_criterion_ordinal_012_or_separate_non_score_disposition_with_evidence",
+      "requests_per_document_repeat": 1,
+      "implementation_status": "not_implemented_full_input_adapter_or_configuration_requires_explicit_version_and_preflight"
+    },
+    {
+      "id": "F1",
+      "role": "configured_criterion_main_contrast",
+      "model": "M0",
+      "input": "identical_to_F0",
+      "rubric": "identical_full_context_to_F0",
+      "output": "one_target_criterion_same_schema_scale_as_F0",
+      "requests_per_document_repeat": "K_d_defined_target_criteria_max16",
+      "implementation_status": "not_implemented"
+    },
+    {
+      "id": "M1_F0",
+      "role": "optional_model_extension_only_model_changes",
+      "model": "M1",
+      "input": "identical_to_F0",
+      "rubric": "identical_to_F0",
+      "prompt": "identical_to_F0",
+      "requests_per_document_repeat": 1,
+      "implementation_status": "deferred"
+    }
+  ],
+  "stages": [
+    {
+      "id": "local_preparation",
+      "requests": 0,
+      "status": "can_proceed_now"
+    },
+    {
+      "id": "outside_cohort_technical_smoke",
+      "status": "future_only_after_execution_authorization_terms_and_configuration",
+      "documents": 2,
+      "repeats": 1,
+      "conditions": [
+        "N0",
+        "F0",
+        "one_F1_criterion_per_document"
+      ],
+      "logical_requests": 6,
+      "accuracy_claims_allowed": false
+    },
+    {
+      "id": "first_main",
+      "status": "proposed_not_authorized_execution",
+      "projects": 6,
+      "documents": 12,
+      "repeats": 1,
+      "models": [
+        "M0"
+      ],
+      "conditions": [
+        "N0",
+        "F0",
+        "F1"
+      ],
+      "logical_request_formula": "R * (24 + sum_d K_d)",
+      "maximum_logical_requests": 216,
+      "stochastic_stability_estimable": false
+    },
+    {
+      "id": "optional_model_extension",
+      "conditions": [
+        "M1_F0"
+      ],
+      "repeats": 1,
+      "additional_logical_requests": 12,
+      "maximum_main_plus_extension": 228
+    },
+    {
+      "id": "optional_stability_extension",
+      "repeats": 3,
+      "maximum_main_logical_requests": 648,
+      "additional_over_first_main_maximum": 432,
+      "maximum_main_plus_M1_F0": 684,
+      "freeze_repeats_before_outputs": true
+    }
+  ],
+  "request_count_notes": {
+    "K_d": "number_of_defined_framework_criteria_for_document_phase_max16_undefined_cells_retained_as_dispositions_not_scoring_calls",
+    "formula_general": "sum_condition sum_document (requests_per_document_repeat * R_condition)",
+    "retries": "count_all_transport_attempts_separately_from_logical_requests",
+    "human_assessments": 24,
+    "maximum_human_criterion_rows_including_non_scores": 384
+  },
+  "candidate_primary_analysis": {
+    "status": "proposal_pending_scale_crosswalk_and_analysis_freeze",
+    "contrast": "F1_minus_F0_project_balanced_exact_disagreement_rate",
+    "nested_order": [
+      "common_applicable_numeric_criteria_within_document",
+      "two_document_means_within_project",
+      "equal_mean_of_six_project_contrasts"
+    ],
+    "negative_favors": "F1",
+    "zero_comparable_denominator": "undefined_not_zero",
+    "mandatory_companions": [
+      "fixed_human_applicable_instrument_defined_denominator_coverage",
+      "applicability_disagreement",
+      "missingness_and_failure_reasons",
+      "all_six_project_results"
+    ],
+    "native_score_mapping": null,
+    "native_score_agreement_claim": "not_allowed_until_outside_cohort_mapping_is_justified_calibrated_and_frozen",
+    "independent_N": 6,
+    "criteria_or_repeats_are_independent_N": false,
+    "discipline_rankings_or_population_accuracy_claims": false
+  },
+  "repeat_and_provider_contract": {
+    "actual_model_revision_required": true,
+    "actual_sent_parameters_required": true,
+    "seed": null,
+    "temperature": null,
+    "native_builder_omits_temperature_and_seed": "observed_in_constructed_request_not_live_provider_validation",
+    "fresh_sessions": true,
+    "model_reported_confidence_is_truth": false
+  },
+  "failure_policy": {
+    "status": "proposed",
+    "maximum_attempts_per_logical_request": 3,
+    "retry_only": [
+      "transient_timeout",
+      "http_429",
+      "http_5xx"
+    ],
+    "timeout_and_backoff_values": null,
+    "honor_retry_after": true,
+    "retry_valid_unfavorable_or_refused_or_schema_invalid_output": false,
+    "archive_every_attempt": true,
+    "native_internal_retries": "inspect_and_include_in_cap_before_execution",
+    "failures_as_zero": false,
+    "drop_failed_documents": false
+  },
+  "information_exposure": {
+    "native_full_human_comparison": "operational_confounded_by_prefix_vs_full_input",
+    "F0_F1_input_must_match": true,
+    "chunk_score_aggregation_allowed": false,
+    "chunking_requires": "separately_approved_evidence_policy_and_refrozen_condition",
+    "full_input_eligibility": "complete_assembled_request_plus_output_and_overhead_checked_with_actual_backend_tokenizer_context_limit",
+    "criterion_dependent_retrieval_allowed": false,
+    "bounding_boxes": "audit_sidecar_only",
+    "page_marked_text_and_chunks": "preparation_candidates_not_approved_benchmark_inputs"
+  },
+  "freeze_gates": [
+    "cohort_and_rights",
+    "whole_input_QA_hashes_and_locators",
+    "intended_and_effective_phase_mapping",
+    "framework_native_semantic_crosswalk",
+    "outside_cohort_human_calibration_benchmark_anchors",
+    "exact_prompt_schema_configuration_adapter_pin",
+    "Mainz_model_endpoint_actual_settings_and_limits",
+    "repetition_retry_and_analysis_rules",
+    "human_reference_locked_before_model_outputs_exposed_to_reviewers"
+  ],
+  "Mainz_questions_later": [
+    "exact_available_open_weight_checkpoints_tokenizer_serving_revisions_and_API_schema",
+    "context_output_limits_and_token_accounting",
+    "accepted_seed_temperature_schema_thinking_controls_and_returned_revision_logging",
+    "quota_rate_concurrency_and_submission_retention_terms_including_AGRICORE"
+  ],
+  "sources": [
+    "decisions.md",
+    "software-baseline-policy.md",
+    "study-sources.md",
+    "source-provenance.json",
+    "tool-evolution.md",
+    "tool-preflight.md",
+    "human-review-protocol-draft.md",
+    "cohort-proposal.json",
+    "extraction-qa.md"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "checked_date": "2026-11-03",
+  "method": "Read-only public downloads; PDF full text extracted with pdftotext -layout; Table 2 first page rendered; URI annotations inspected with mutool; source code statically read. No app/model execution.",
+  "current_source": {
+    "repository": "https://github.com/usadellab/dmp-eva",
+    "commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+    "commit_date": "2026-10-21T08:07:01Z",
+    "tree_sha": "b4ec23af67aa8129d2e001799e37dede9a897042",
+    "tree_paths": [
+      ".DS_Store",
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "css",
+      "css/styles.css",
+      "eva.json",
+      "index.html",
+      "js",
+      "js/api-config.js",
+      "js/app.20260727a.js",
+      "js/criteria-extractor.js",
+      "js/evaluator.20260423a.js",
+      "js/export-service.js",
+      "js/file-parser.20260423a.js",
+      "js/llm-service.js"
+    ],
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/README.md",
+        "sha256": "59c75ea6e2b799b3334ed73dc67cc27953c70f5ea16824cfb5335a2ce168c1e7",
+        "bytes": 7185
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/LICENSE",
+        "sha256": "fcf91a6227d12958d0acd7771da246b0bc282cc215afc1ca6f011a5f2aa5841d",
+        "bytes": 1066
+      },
+      "eva.json": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+        "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+        "bytes": 13424
+      },
+      "index.html": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/index.html",
+        "sha256": "1ce4291b97e14bc763bfcf971edbde94351865496cac2f3f228a427379678947",
+        "bytes": 42684
+      },
+      "js/evaluator.20260423a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js",
+        "sha256": "987e8829a9c62369e6a9b0187697aa15ec1defa1357e504fdf3789a98a3af1c2",
+        "bytes": 18273
+      },
+      "js/llm-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js",
+        "sha256": "9af182a7249222aaff30e57e9e686839a4f67c6c67ee861d136ae5a58df8608b",
+        "bytes": 30161
+      },
+      "js/file-parser.20260423a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js",
+        "sha256": "c0bf844fde574119ea69190bd1afba10e10b2c3637031d8949eb9eb7c4e1bc71",
+        "bytes": 12977
+      },
+      "js/export-service.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/export-service.js",
+        "sha256": "10a9636b26b4559e908805f376fe05c7abc5018c39b4444985d527b924638739",
+        "bytes": 6249
+      },
+      "js/app.20260727a.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/app.20260727a.js",
+        "sha256": "5cc2e08a83bbe39e77786ac49b3104dbae72e36a8d7c8737f0ec32c14de32ca5",
+        "bytes": 76461
+      },
+      "js/api-config.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js",
+        "sha256": "0f9ab8329f0cb89a329bdfcf9897bdf23947a869d6d088c91addc4c562aa9e0e",
+        "bytes": 11627
+      },
+      "js/criteria-extractor.js": {
+        "url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js",
+        "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+        "bytes": 30214
+      }
+    },
+    "queried_tree_ref": "b80b43de820d46440d982eb99b2b3da8f4c2f818"
+  },
+  "criteria_preprint": {
+    "record_url": "https://zenodo.org/records/19630859",
+    "doi": "10.5281/zenodo.19630859",
+    "publication_date": "2026-04-17",
+    "record_version": "v1 (landing page); PDF Version 1.0",
+    "license": "cc-by-4.0",
+    "pdf_url": "https://zenodo.org/records/19630859/files/DMP_Evaluation_V1.0.pdf?download=1",
+    "pdf_sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "pdf_md5": "178be54a5895dd7d10a219b433ea5f06",
+    "physical_pages": 28,
+    "unread_supplements": [
+      "Plant_Science_DMP_best-practices-DataPLANT_(FAIRagro).docx",
+      "Material_Science_DMP_best-practices-FAIRmat.docx"
+    ]
+  },
+  "linked_software_archive": {
+    "record_url": "https://zenodo.org/records/19486055",
+    "doi": "10.5281/zenodo.19486055",
+    "publication_date": "2026-04-09",
+    "version": "v0.1",
+    "resource_type": "software",
+    "license": "mit-license",
+    "resolved_commit": "db85e5a71271239f8fbe3e271e4aa8b7e71d6321",
+    "commit_date": "2026-02-23T17:11:41Z",
+    "archive_file": "usadellab/dmp-eva-v0.1.zip",
+    "archive_download": "https://zenodo.org/api/records/19486055/files/usadellab/dmp-eva-v0.1.zip/content",
+    "archive_sha256": "50be0554e0e79a96c546954365e4e88e129a8c1432c0970b88a9f46f6abd1eb0",
+    "archive_md5": "bf5ae04cbd97694cc251274a7eb1a7b2"
+  },
+  "scope_limits": [
+    "Current-source findings apply to pinned commit, not automatically to v0.1 software archive.",
+    "No empirical evaluation paper identified in supplied preprint, README, or linked archive.",
+    "No application runs, benchmark labels, model requests, or provider term review."
+  ]
+}

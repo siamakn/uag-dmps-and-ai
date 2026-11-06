@@ -1,0 +1,93 @@
+{
+  "updated": "2026-11-03",
+  "status": "bounded_batch_complete",
+  "method": "documented issue or submission, not publication; integer day arithmetic",
+  "candidates": [
+    {
+      "project": "SUSTRACK",
+      "grant": "101081823",
+      "branch": "social sciences",
+      "start": "2022-11-01",
+      "end": "2025-10-31",
+      "end_source": "https://cordis.europa.eu/project/id/101081823",
+      "duration_days": 1095,
+      "early": {
+        "record": "14497074",
+        "issue": "2023-04-29",
+        "numerator_days": 179,
+        "sha256": "f1220cde868b34a446310f3a755e0ec600696e6db832b708cfbf39c301ef08b4"
+      },
+      "late": {
+        "record": "19161966",
+        "issue": "2026-02-06",
+        "numerator_days": 1193,
+        "sha256": "701789cbd909a8bd0f7128a6cba262dfb18bf6cd74881c4dc7520eb8637245e5"
+      },
+      "status": "issue_date_and_scope_qualified",
+      "licence": "CC-BY-4.0 per both Zenodo landing pages"
+    },
+    {
+      "project": "AD4GD",
+      "grant": "101061001",
+      "status": "final_submission_exactly_end_fails"
+    },
+    {
+      "project": "MAPWORMS",
+      "grant": "101046846",
+      "status": "final_submission_before_saved_end_fails"
+    },
+    {
+      "project": "ERIES",
+      "grant": "101058684",
+      "status": "footer_dates_may_be_exports_issue_dates_unverified"
+    },
+    {
+      "project": "iMagine",
+      "grant": "101058625",
+      "branch": "natural sciences",
+      "start": "2022-09-01",
+      "end": "2025-08-31",
+      "end_source": "https://cordis.europa.eu/project/id/101058625",
+      "duration_days": 1095,
+      "early": {
+        "record": "7759984",
+        "issue": "2023-03-09",
+        "numerator_days": 189,
+        "sha256": "475634f9fdd5ed0ebd320e7d153670d7bb23ae98de883c3d03a6ff21ecab4304"
+      },
+      "late": {
+        "record": "17055683",
+        "issue": "2025-09-05",
+        "numerator_days": 1100,
+        "sha256": "5655797dbbf1392a6f7979d7521e948c5c9161d7fa6f09a046db8e8e1094fcd0"
+      },
+      "status": "issue_date_and_scope_qualified",
+      "licence": "CC-BY-4.0 per both PDFs",
+      "extension_history": "no different original end identified"
+    },
+    {
+      "project": "EGI-ACE",
+      "grant": "101017567",
+      "branch": "engineering and technology",
+      "start": "2021-01-01",
+      "end": "2023-06-30",
+      "end_source": "https://cordis.europa.eu/project/id/101017567",
+      "duration_days": 910,
+      "early": {
+        "record": "6602163",
+        "issue": "2021-08-04",
+        "numerator_days": 215,
+        "sha256": "4a0a8a2aa3ce0be13f16deaba02c811f4928528de663a8a09c0d73615f571fcc"
+      },
+      "late": {
+        "record": "19402005",
+        "issue": "2023-11-08",
+        "numerator_days": 1041,
+        "sha256": "a827195d2d40780d0492d9513c2c65347bb209ab4880fc07e47f891c889906c5"
+      },
+      "status": "issue_date_and_scope_qualified",
+      "licence": "CC-BY-4.0 per both PDFs",
+      "extension_history": "no different original end identified"
+    }
+  ]
+}

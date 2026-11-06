@@ -1,0 +1,155 @@
+{
+  "status": "draft_navigation_index_not_substitute_for_rubric",
+  "framework": {
+    "record_url": "https://zenodo.org/records/19630859",
+    "doi": "10.5281/zenodo.19630859",
+    "publication_date": "2026-04-17",
+    "record_version": "v1 (landing page); PDF Version 1.0",
+    "license": "cc-by-4.0",
+    "pdf_url": "https://zenodo.org/records/19630859/files/DMP_Evaluation_V1.0.pdf?download=1",
+    "pdf_sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "pdf_md5": "178be54a5895dd7d10a219b433ea5f06",
+    "physical_pages": 28,
+    "unread_supplements": [
+      "Plant_Science_DMP_best-practices-DataPLANT_(FAIRagro).docx",
+      "Material_Science_DMP_best-practices-FAIRmat.docx"
+    ],
+    "local_pdf": "data/paired-dmp-corpus/framework/DMP_Evaluation_V1.0.pdf"
+  },
+  "criteria": [
+    {
+      "id": "1a",
+      "short_navigation_label": "New data production and existing-data reuse",
+      "first_relevant_physical_pdf_page": 7,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "1b",
+      "short_navigation_label": "Data types, formats and volumes",
+      "first_relevant_physical_pdf_page": 8,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "2a",
+      "short_navigation_label": "Metadata and documentation",
+      "first_relevant_physical_pdf_page": 8,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "2b",
+      "short_navigation_label": "Data quality control",
+      "first_relevant_physical_pdf_page": 9,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "3a",
+      "short_navigation_label": "Storage and backup",
+      "first_relevant_physical_pdf_page": 10,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "3b",
+      "short_navigation_label": "Access and relevant restrictions",
+      "first_relevant_physical_pdf_page": 11,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "3c",
+      "short_navigation_label": "Security and sensitive-data protection",
+      "first_relevant_physical_pdf_page": 12,
+      "native_default_eva_json_contains_id": false,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "4a",
+      "short_navigation_label": "Personal-data compliance",
+      "first_relevant_physical_pdf_page": 13,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "4b",
+      "short_navigation_label": "Intellectual property and other legal issues",
+      "first_relevant_physical_pdf_page": 15,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "4c",
+      "short_navigation_label": "Ethical issues and approvals",
+      "first_relevant_physical_pdf_page": 17,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "5a",
+      "short_navigation_label": "Sharing timing and restrictions",
+      "first_relevant_physical_pdf_page": 18,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "5b",
+      "short_navigation_label": "Preservation selection and repositories",
+      "first_relevant_physical_pdf_page": 18,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "5c",
+      "short_navigation_label": "Tools needed for access and reuse",
+      "first_relevant_physical_pdf_page": 19,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "5d",
+      "short_navigation_label": "Persistent identifiers",
+      "first_relevant_physical_pdf_page": 20,
+      "native_default_eva_json_contains_id": false,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "6a",
+      "short_navigation_label": "Responsibilities",
+      "first_relevant_physical_pdf_page": 20,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    },
+    {
+      "id": "6b",
+      "short_navigation_label": "Resources for data management",
+      "first_relevant_physical_pdf_page": 21,
+      "native_default_eva_json_contains_id": true,
+      "stage_wording": "read_exact_stage_cell_in_original_Table_2",
+      "score_anchor_approval": "base_012_scale_approved_for_calibration; criterion_phase_anchors_draft"
+    }
+  ],
+  "notes": [
+    "Physical pages are one-based; original printed page labels differ.",
+    "4c ethics cell is located physically on p17; its heading is absent from extracted text.",
+    "Mid-project 5d has no supplied criterion text; record instrument undefined rather than inventing it.",
+    "Short labels are navigation paraphrases, not replacement assessment criteria."
+  ]
+}

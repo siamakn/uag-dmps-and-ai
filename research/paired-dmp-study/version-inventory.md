@@ -1,0 +1,33 @@
+# Offline version-family inventory
+
+2026-11-03. This is a discovery queue, **not a set of verified same-scope pairs**. No issue dates were extracted. The confirmed eligibility thresholds are issue date at ≤50% and strictly >100% of project duration; publication dates shown in the JSON do not establish either role. In particular, co-deposited and late-deposited documents remain in the inventory. Earlier documents before 2024 are not excluded. Pre-start handling and other protocol policies remain open in `decisions.md`.
+
+Run `python3 research/paired-dmp-study/version-inventory.py` from any working directory to regenerate the JSON. It reads the complete locally built dataset without a publication window, filters to its heuristic `kind=dmp`, the three stored EU tiers, and a nonempty stored grant independently present in retained funding numbers or the selected local maDMP's project funding `grant_id`. This check confirms only consistency with another stored field, **not** an independently verified grant association. The build chooses its first CORDIS-matched grant; multi-grant records need a source check. It groups on the exact stored grant, not acronym or title. Non-EU tiers, missing grants and classifier exclusions remain outside this EU-led inventory; they may contain missed European projects. The 2,650-record local pool is itself bounded, not a complete global search.
+
+The inventory contains **1,234 records in 908 grant families**: 208 have at least two records, and 700 have one. It excludes 146 non-DMP-classified records, 1,268 non-EU-tier records and 2 EU-tier records without a stored grant. Zenodo's DMP type and the repository classifier are imperfect: e.g. some coding manuals, presentations or business plans appear in these families and must be checked before document retrieval. A family can have multiple independent plans; grant grouping does not establish lineage, common coverage, file accessibility, or a revision. No selection or quality judgment is made here.
+
+| Branch | Multi-record, primary | Multi-record, any membership | One-record, primary | One-record, any membership |
+| --- | ---: | ---: | ---: | ---: |
+| Natural sciences | 70 | 111 | 228 | 343 |
+| Engineering and technology | 41 | 67 | 110 | 220 |
+| Medical and health sciences | 12 | 21 | 31 | 83 |
+| Agricultural sciences | 13 | 28 | 18 | 55 |
+| Social sciences | 34 | 72 | 126 | 230 |
+| Humanities | 3 | 8 | 15 | 36 |
+
+Counts are unique grant families *within each column and branch*. Any-membership counts overlap between branches and cannot be summed to count projects. The primary and all-branch assignments are inherited from the local CORDIS join; classification and project date sources need verification before eligibility. Inconsistent stored assignments within a grant are preserved as sets. One-record families are a separate queue for discovering predecessor or successor versions outside the local pool; one record does not demonstrate absence of versions.
+
+## Bounded first extraction queues
+
+For each branch the complete `multi_record_grants` and `one_record_grants` arrays in the JSON give the deterministic order: Horizon Europe, Horizon 2020, Other EU; most recent valid repository publication **year** descending; grant lexicographically. This order is solely to organize issue-date/lineage extraction, not to decide eligibility or a final ranking. It does not use plan quality, publication-stage cutoffs, machine-actionability, or the historical selection. Start with multi-record families, then use the separate one-record list for missing-version searches. The first leads in the two thinnest branches by any-membership count are below; membership is not an assignment to a final slot.
+
+- Humanities: HeriTACE (101138672), E-RIHS IP (101079148), DIAMAS (101058007), ISLAM-OPHOB-ISM (785934), EURHISFIRM (777489), MeMAD (780069), TRIPLE (863420), ICEDIG (777483). E-RIHS IP and ICEDIG have titles suggesting potentially different project/infrastructure scope; ISLAM-OPHOB-ISM includes a coding manual. DIAMAS and MeMAD include records sharing publication dates, which does not settle issue dates.
+- Medical and health sciences: FLIARA (101084234), AQUASERV (101131121), EUREMAP (101131663), EIRENE PPP (101079789), XpanDH (101095594), AEGEUS (101099210), PERSEUS (101099423), ThrombUS (101137227), BY-COVID (101046203), SciLake (101058573). AQUASERV and EUREMAP include non-plan-looking titles; BY-COVID includes a use-case plan as well as a project plan; EIRENE PPP titles may refer to different scopes. Investigate scope rather than assuming a pair.
+
+For each lead retrieve complete record/version relationships and actual files, verify project/grant and consistent scope with cover/version-history/deliverable evidence, and extract documented issue dates with provenance and precision. Then verify project dates and extensions, eligibility with exact arithmetic or conservative date intervals, distinct versions/checksums, openness and licence. Do not treat different deposits, formats, names, or metadata dates as proof of different versions. Record exhausted source tiers and results before widening retrieval.
+
+## Source limits and reproducibility
+
+The JSON contains SHA-256 hashes of the input dataset, all saved raw JSONL files, relevant pipeline scripts, and each selected local maDMP used for the funding or byte check. It stores full per-record retained file metadata and grant evidence. Its duplicate checks identify matching filenames and sizes across records (a lead, not proof of identical bytes), and matching SHA-256 among locally available selected maDMPs (proof for those files only). One family, grant 101056306, has identical local maDMP bytes across records 16937959 and 16937965; five families have matching filename/size, and 32 have multiple stored funding numbers. Remote PDFs were not downloaded or hashed; absent duplicate warnings do not prove difference. File-level scope may be lost because the dataset retains only one selected maDMP per record.
+
+The underlying harvest used the five queries in `scripts/01_harvest_records.py`: Zenodo's DMP resource type, that type with JSON, JSON with maDMP/machine-actionable/DMP terms, EC-funded DMP type/title, and corresponding DFG-funded terms. The present pass makes **no network queries**. Saved raw JSONL is reduced metadata, not complete source responses; all-version traversal and pagination completeness were not established. File checksums and concept/version links are generally missing. The full query strings and source hashes are reproducible from the named script and JSON. This inventory cannot rule out unharvested repositories, other records, earlier versions, or issue-date-qualified pairs.

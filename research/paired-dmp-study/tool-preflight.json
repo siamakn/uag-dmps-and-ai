@@ -1,0 +1,1620 @@
+{
+  "checked_at_utc": "2026-11-04T10:27:46.563315+00:00",
+  "commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+  "scope": "Five groups of synthetic browser function checks; no app orchestration, model request, provider test, benchmark or human-label validation.",
+  "candidate_text_manifest": {
+    "path": "research/paired-dmp-study/text-extraction.json",
+    "sha256": "ca04692693c49169db77ed229916e2047beb2b33c6cc33e5f018a82e2e7d673e"
+  },
+  "chrome_version": "Google Chrome 156.0.8078.79",
+  "source_files": {
+    "eva.json": {
+      "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+      "bytes": 13424,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json"
+    },
+    "js/api-config.js": {
+      "sha256": "0f9ab8329f0cb89a329bdfcf9897bdf23947a869d6d088c91addc4c562aa9e0e",
+      "bytes": 11627,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/api-config.js"
+    },
+    "js/criteria-extractor.js": {
+      "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+      "bytes": 30214,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js"
+    },
+    "js/evaluator.20260423a.js": {
+      "sha256": "987e8829a9c62369e6a9b0187697aa15ec1defa1357e504fdf3789a98a3af1c2",
+      "bytes": 18273,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/evaluator.20260423a.js"
+    },
+    "js/file-parser.20260423a.js": {
+      "sha256": "c0bf844fde574119ea69190bd1afba10e10b2c3637031d8949eb9eb7c4e1bc71",
+      "bytes": 12977,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/file-parser.20260423a.js"
+    },
+    "js/llm-service.js": {
+      "sha256": "9af182a7249222aaff30e57e9e686839a4f67c6c67ee861d136ae5a58df8608b",
+      "bytes": 30161,
+      "immutable_url": "https://raw.githubusercontent.com/usadellab/dmp-eva/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js"
+    }
+  },
+  "harness_sha256": "d03ca45dccf65ae622df42040cb97fa360d19091b5101ee8611e7df7a4ec9fe9",
+  "reproducer_sha256": "7b3446ec9b6ad902da8de0ed3e3edd9f73c070d27bb8af62e9f3fd0b37c4a93a",
+  "network_controls": [
+    "No remote scripts or resources; embedded exact source bytes",
+    "CSP default-src none / connect-src none",
+    "fetch/XHR/WebSocket/EventSource/sendBeacon/RTCPeerConnection stubs throw",
+    "Chrome background networking disabled; proxy to loopback port 9; DNS rules reject external names",
+    "Fresh isolated temporary browser profile deleted after execution"
+  ],
+  "chrome_arguments_without_temporary_paths": [
+    "/usr/bin/google-chrome",
+    "--headless=new",
+    "--no-sandbox",
+    "--disable-dev-shm-usage",
+    "--disable-gpu",
+    "--disable-background-networking",
+    "--disable-component-update",
+    "--disable-sync",
+    "--metrics-recording-only",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--proxy-server=http://127.0.0.1:9",
+    "--host-resolver-rules=MAP * ~NOTFOUND",
+    "--virtual-time-budget=10000",
+    "--dump-dom"
+  ],
+  "chrome_exit_code": 0,
+  "runtime": {
+    "completed": true,
+    "checks": [
+      {
+        "name": "default_ids_14_omit_3c_5d",
+        "passed": true,
+        "detail": [
+          "1a",
+          "1b",
+          "2a",
+          "2b",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "4c",
+          "5a",
+          "5b",
+          "5c",
+          "6a",
+          "6b"
+        ]
+      },
+      {
+        "name": "default_prompt_contains_ids",
+        "passed": true,
+        "detail": "1a 1b 2a 2b 3a 3b 4a 4b 4c 5a 5b 5c 6a 6b"
+      },
+      {
+        "name": "default_criterion_wording_absent",
+        "passed": true,
+        "detail": {
+          "absentNames": [
+            "1a",
+            "1b",
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "4c",
+            "5a",
+            "5b",
+            "5c",
+            "6a",
+            "6b"
+          ],
+          "absentDescriptions": [
+            "1a",
+            "1b",
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "4c",
+            "5a",
+            "5b",
+            "5c",
+            "6a",
+            "6b"
+          ]
+        }
+      },
+      {
+        "name": "distinctive_name_description_context_absent",
+        "passed": true,
+        "detail": "Synthetic markers, not subjective similarity"
+      },
+      {
+        "name": "prompt_replaces_double_quotes",
+        "passed": true,
+        "detail": "Synthetic DMP statement with \"double quotes\". No research data or human labels."
+      },
+      {
+        "name": "short_phase_rubric_map",
+        "passed": true,
+        "detail": [
+          {
+            "input": "proposal",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "mid",
+            "stageKey": "mid_project",
+            "firstCriterionDescription": "Confirm which data have been produced or reused so far Update formats and tools used, noting any changes Include information on data provenance Update documentation to show growth and technical advances as data is generated",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "end",
+            "stageKey": "end_project",
+            "firstCriterionDescription": "List final data sets, types, and formats collected or reused Provide justification for deviations from the original plan",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          }
+        ]
+      },
+      {
+        "name": "all_short_phase_prompts_use_early",
+        "passed": true,
+        "detail": [
+          {
+            "input": "proposal",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "mid",
+            "stageKey": "mid_project",
+            "firstCriterionDescription": "Confirm which data have been produced or reused so far Update formats and tools used, noting any changes Include information on data provenance Update documentation to show growth and technical advances as data is generated",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "end",
+            "stageKey": "end_project",
+            "firstCriterionDescription": "List final data sets, types, and formats collected or reused Provide justification for deviations from the original plan",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          }
+        ]
+      },
+      {
+        "name": "all_long_phase_rubrics_use_early",
+        "passed": true,
+        "detail": [
+          {
+            "input": "proposal_early_stage",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "mid_project",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a MID-PROJECT evaluation. Score based on ACTUAL PROGRESS, IMPLEMENTATION, and UPDATES to original plans. Confirm what has been done. Report deviations. Ongoing work with clear evidence scores well. Plans without progress evidence score poorly."
+          },
+          {
+            "input": "end_project",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is an END-PROJECT evaluation. Score based on FINAL OUTCOMES, COMPLETED ACTIONS, and DELIVERABLES. Only concrete completed work scores well. Plans, intentions, or ongoing work WITHOUT final delivery score VERY POORLY. Be STRICT: if the DMP describes what WILL be done rather than what HAS been done, score 0-59 (insufficient)."
+          }
+        ]
+      },
+      {
+        "name": "long_phase_prompt_map",
+        "passed": true,
+        "detail": [
+          {
+            "input": "proposal_early_stage",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+          },
+          {
+            "input": "mid_project",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is a MID-PROJECT evaluation. Score based on ACTUAL PROGRESS, IMPLEMENTATION, and UPDATES to original plans. Confirm what has been done. Report deviations. Ongoing work with clear evidence scores well. Plans without progress evidence score poorly."
+          },
+          {
+            "input": "end_project",
+            "stageKey": "proposal_early_stage",
+            "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+            "actualPromptGuidance": "This is an END-PROJECT evaluation. Score based on FINAL OUTCOMES, COMPLETED ACTIONS, and DELIVERABLES. Only concrete completed work scores well. Plans, intentions, or ongoing work WITHOUT final delivery score VERY POORLY. Be STRICT: if the DMP describes what WILL be done rather than what HAS been done, score 0-59 (insufficient)."
+          }
+        ]
+      },
+      {
+        "name": "native_category_scores_90_0_0",
+        "passed": true,
+        "detail": [
+          {
+            "id": "1a",
+            "name": "Positive",
+            "score": 90,
+            "status": "excellent",
+            "feedback": "Excellent coverage of positive. Synthetic score only"
+          },
+          {
+            "id": "1b",
+            "name": "Explicit zero",
+            "score": 0,
+            "status": "insufficient",
+            "feedback": "Insufficient coverage of explicit zero. Synthetic score only"
+          },
+          {
+            "id": "2a",
+            "name": "No evidence unit",
+            "score": 0,
+            "status": "insufficient",
+            "feedback": "No relevant content found in DMP for this criterion."
+          }
+        ]
+      },
+      {
+        "name": "native_overall_excludes_zero",
+        "passed": true,
+        "detail": {
+          "overallScore": 90,
+          "summaryAverage": 30
+        }
+      },
+      {
+        "name": "all_zero_overall_is_zero",
+        "passed": true,
+        "detail": 0
+      },
+      {
+        "name": "parser_returns_first_30720_utf16_units",
+        "passed": true,
+        "detail": [
+          {
+            "label": "ascii",
+            "inputUTF16Units": 30724,
+            "inputUTF8Bytes": 30724,
+            "outputUTF16Units": 30720,
+            "outputUTF8Bytes": 30720,
+            "truncated": true,
+            "originalTextLength": 30724,
+            "equalsExpectedPrefix": true,
+            "lastCodeUnit": 65
+          },
+          {
+            "label": "emoji",
+            "inputUTF16Units": 30724,
+            "inputUTF8Bytes": 61444,
+            "outputUTF16Units": 30720,
+            "outputUTF8Bytes": 61440,
+            "truncated": true,
+            "originalTextLength": 30724,
+            "equalsExpectedPrefix": true,
+            "lastCodeUnit": 56832
+          },
+          {
+            "label": "split_surrogate",
+            "inputUTF16Units": 30725,
+            "inputUTF8Bytes": 30727,
+            "outputUTF16Units": 30720,
+            "outputUTF8Bytes": 30722,
+            "truncated": true,
+            "originalTextLength": 30725,
+            "equalsExpectedPrefix": true,
+            "lastCodeUnit": 55357
+          }
+        ]
+      },
+      {
+        "name": "parser_limit_not_utf8_bytes",
+        "passed": true,
+        "detail": {
+          "label": "emoji",
+          "inputUTF16Units": 30724,
+          "inputUTF8Bytes": 61444,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 61440,
+          "truncated": true,
+          "originalTextLength": 30724,
+          "equalsExpectedPrefix": true,
+          "lastCodeUnit": 56832
+        }
+      },
+      {
+        "name": "parser_can_split_surrogate",
+        "passed": true,
+        "detail": {
+          "label": "split_surrogate",
+          "inputUTF16Units": 30725,
+          "inputUTF8Bytes": 30727,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30722,
+          "truncated": true,
+          "originalTextLength": 30725,
+          "equalsExpectedPrefix": true,
+          "lastCodeUnit": 55357
+        }
+      },
+      {
+        "name": "pdf_native_parser_rejects",
+        "passed": true,
+        "detail": "Unsupported file type: .pdf"
+      },
+      {
+        "name": "candidate_parser_101058625_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101058625/7759984.txt",
+          "input_sha256": "11ab5876923205dcc4c126df490e19a7461f0a757b6aac6b771db636d3b09643",
+          "inputUTF16Units": 126953,
+          "originalTextLength": 126953,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30733,
+          "truncated": true,
+          "retainedFractionUTF16": 0.24197931517963342,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6714c0332fadfde41ab17d0bb6f2dcfa3c2b54643a04ab175e438622f8480f5d"
+        }
+      },
+      {
+        "name": "candidate_parser_101058625_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101058625/7759984.reading-order.txt",
+          "input_sha256": "8b2dc92fa8f123ff92a59cabef9b0e32a70ea50ca48c3d7a6b27d7a1aa80e637",
+          "inputUTF16Units": 86961,
+          "originalTextLength": 86961,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30735,
+          "truncated": true,
+          "retainedFractionUTF16": 0.3532618070169386,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "aa5212b84a818dc1f26ee2983e0901af1ee28ee71a995c8af23047ac209f92a5"
+        }
+      },
+      {
+        "name": "candidate_parser_101058625_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101058625/17055683.txt",
+          "input_sha256": "69604bb5ff55f6c557a7d8db5e123aa9621fa69de75d922b9f57e3e91a92aed7",
+          "inputUTF16Units": 182821,
+          "originalTextLength": 182821,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30872,
+          "truncated": true,
+          "retainedFractionUTF16": 0.16803321281472042,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6de42b5f4e3f6ffe2716a53d702d6d696c1a894260b8345a98ac1077db142e81"
+        }
+      },
+      {
+        "name": "candidate_parser_101058625_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101058625/17055683.reading-order.txt",
+          "input_sha256": "4ce8116820044b603d172877ae322cc2b70cb0edbbfa18553dcef424200ee178",
+          "inputUTF16Units": 124824,
+          "originalTextLength": 124824,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30932,
+          "truncated": true,
+          "retainedFractionUTF16": 0.24610651797731206,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "33113d1f10b16777602b494056f23064a2b565910f305762884cfd7fba1d93ee"
+        }
+      },
+      {
+        "name": "candidate_parser_101017567_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101017567/6602163.txt",
+          "input_sha256": "549a9fba9d9d758f52c46a7f44d66bb304f7385066e2d614f059969049b31cb9",
+          "inputUTF16Units": 121378,
+          "originalTextLength": 121378,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30864,
+          "truncated": true,
+          "retainedFractionUTF16": 0.25309364135181006,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "0c60f602e6970d3bc0bab8ca8957e2453787438456909a027be7078846ad567d"
+        }
+      },
+      {
+        "name": "candidate_parser_101017567_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101017567/6602163.reading-order.txt",
+          "input_sha256": "31e3120d1c9571f2db13d1b34eb28602c1079948ffb03af3b7d76ee35e6d0540",
+          "inputUTF16Units": 85163,
+          "originalTextLength": 85163,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30864,
+          "truncated": true,
+          "retainedFractionUTF16": 0.36072003099937766,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "895efd42b40dc2e411d8f80a517e235c9766bcb1567969671061a0c0d26525c0"
+        }
+      },
+      {
+        "name": "candidate_parser_101017567_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101017567/19402005.txt",
+          "input_sha256": "9bbaf694dbbeff3d6789430d2b19a168c8e84a4edbb2adf150a117e53f3d1fba",
+          "inputUTF16Units": 141995,
+          "originalTextLength": 141995,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30882,
+          "truncated": true,
+          "retainedFractionUTF16": 0.21634564597344977,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "a956909b5c846145f8611549b23877637d84018a672cc75e6193c39f27e7b734"
+        }
+      },
+      {
+        "name": "candidate_parser_101017567_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101017567/19402005.reading-order.txt",
+          "input_sha256": "a5ccad5f24f31cc78947aab30ae6d8bc856f244908129fea6e5ceda42fe88bef",
+          "inputUTF16Units": 101087,
+          "originalTextLength": 101087,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30966,
+          "truncated": true,
+          "retainedFractionUTF16": 0.30389664348531464,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "89a98b5c2074fed146ffa2b2306b62ab245f534c2740abb86a3e2c162153376f"
+        }
+      },
+      {
+        "name": "candidate_parser_952259_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/952259/13847570.txt",
+          "input_sha256": "03b14b6e63cee940a933ff8bdeb87d98610f99c8f3206a684ba94fa09f6d1664",
+          "inputUTF16Units": 66819,
+          "originalTextLength": 66819,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.45974947245543935,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "f3270709a55d5e1c9ee54632fcd1fe1b3c2c58ee2a9f8701e02e14167845b7e3"
+        }
+      },
+      {
+        "name": "candidate_parser_952259_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/952259/13847570.reading-order.txt",
+          "input_sha256": "0019d5a23675d0682c908073bfe47fc39fb2b203985f35c2ba16a84e34c3eaaa",
+          "inputUTF16Units": 60181,
+          "originalTextLength": 60181,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30857,
+          "truncated": true,
+          "retainedFractionUTF16": 0.5104601119954802,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "8f50c3d0705d59ff7eac614a1295e8a7ff0f4e4e013f5eefdd65e22cd6a632a9"
+        }
+      },
+      {
+        "name": "candidate_parser_952259_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/952259/13857898.txt",
+          "input_sha256": "37ebc61a8cd8c6b1d220fd5082f1118b2c9e60cab04dfea5a818a0fdb0127d54",
+          "inputUTF16Units": 68254,
+          "originalTextLength": 68254,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.4500835115890644,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d4688271c737f26048c0d8195fe1cba70e28ad6af7dae61a883586057be86764"
+        }
+      },
+      {
+        "name": "candidate_parser_952259_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/952259/13857898.reading-order.txt",
+          "input_sha256": "8b07f2b192d37418f63405a223ab425e5449201bf55434a01c63fc6eac3ed6c4",
+          "inputUTF16Units": 61131,
+          "originalTextLength": 61131,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30855,
+          "truncated": true,
+          "retainedFractionUTF16": 0.5025273592776169,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "9300c8bc922a614b977515ba0c9b35e82ca3e5d81e2fabe73f12138ce197f051"
+        }
+      },
+      {
+        "name": "candidate_parser_816078_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.txt",
+          "input_sha256": "aa65740540c63a6c09fecbb0b74dd4b127b694a6251b33fae43eea8600aa85a1",
+          "inputUTF16Units": 44956,
+          "originalTextLength": 44956,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30885,
+          "truncated": true,
+          "retainedFractionUTF16": 0.6833348162647922,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6b2cb165385d0cfec3ef84c467c1a903d12c6c94a0967c8c644730c0728c77d0"
+        }
+      },
+      {
+        "name": "candidate_parser_816078_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.reading-order.txt",
+          "input_sha256": "5814adfd2be1de9bec99052d0a419cb24333096d85b7cbe34bc0d211a7a7b169",
+          "inputUTF16Units": 34365,
+          "originalTextLength": 34365,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30975,
+          "truncated": true,
+          "retainedFractionUTF16": 0.8939327804452204,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "27bf9b30abb7c244c2e61f708211f8b3df79f3a7a3337e23825e80b50315d72f"
+        }
+      },
+      {
+        "name": "candidate_parser_816078_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.txt",
+          "input_sha256": "7d9f222095a0f93ccfa69e6b09e85a4609dd7a0deabd2e1dd84d0dd7b2a4cd77",
+          "inputUTF16Units": 99609,
+          "originalTextLength": 99609,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30825,
+          "truncated": true,
+          "retainedFractionUTF16": 0.3084058669397344,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "45270501a6cdf489be0e0564256538d94bd2c04b40138e175f2807e3c94e7dd4"
+        }
+      },
+      {
+        "name": "candidate_parser_816078_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.reading-order.txt",
+          "input_sha256": "98492119b65989003af33c4724bf6cb1bef9490522f551d02c8fbefb100e7e4d",
+          "inputUTF16Units": 78591,
+          "originalTextLength": 78591,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.39088445241821584,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "5cd523e21b36caccb9d237290d29d38a828daf4c3d0f7656acbfcea1a010c067"
+        }
+      },
+      {
+        "name": "candidate_parser_101081823_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101081823/14497074.txt",
+          "input_sha256": "0cb5ab3d2721fe379f6dd8bb570dd1b4e1ed514dd2693881a730efcf116153aa",
+          "inputUTF16Units": 181498,
+          "originalTextLength": 181498,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30783,
+          "truncated": true,
+          "retainedFractionUTF16": 0.16925806344973499,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "88b4688b7e583541b70dadd8f340c01dd4d237a4601c4190ed1af187f912a710"
+        }
+      },
+      {
+        "name": "candidate_parser_101081823_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101081823/14497074.reading-order.txt",
+          "input_sha256": "653cc3c7990ab8ae603ca972d4abcc7d3deba17beb95c0402e74b7e6dd022e4e",
+          "inputUTF16Units": 148942,
+          "originalTextLength": 148942,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30797,
+          "truncated": true,
+          "retainedFractionUTF16": 0.2062547837413221,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "df4e3dc4779e1ac76439197b97ed3f7b5c5b06e2b0ef340895917305ba1d2758"
+        }
+      },
+      {
+        "name": "candidate_parser_101081823_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101081823/19161966.txt",
+          "input_sha256": "6d38dc9db98bf516376c4a2f131152a94321d33be59a0dabc20d5973e385180e",
+          "inputUTF16Units": 199662,
+          "originalTextLength": 199662,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30805,
+          "truncated": true,
+          "retainedFractionUTF16": 0.15386002343961294,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "4ed42e29d7648f0a57aa13e459ab86f45f8cf6e7b8e8dafec5005aab7e501b98"
+        }
+      },
+      {
+        "name": "candidate_parser_101081823_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101081823/19161966.reading-order.txt",
+          "input_sha256": "8f2b6dbb89aab5741ddb2e3a86815b8ac8d7fc5560df22189bb139d2f412a9b4",
+          "inputUTF16Units": 155921,
+          "originalTextLength": 155921,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30811,
+          "truncated": true,
+          "retainedFractionUTF16": 0.1970228513157304,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d4f313b1f1f31e954fa393cca8a183bb524e367c76f232ad52f9dbb1a28e861f"
+        }
+      },
+      {
+        "name": "candidate_parser_101061233_early_layout",
+        "passed": true,
+        "detail": {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101061233/17733866.txt",
+          "input_sha256": "f99354ff6662c65b0afdfe55bc7192dcfdfc95910772657758c87484abaa25d1",
+          "inputUTF16Units": 35617,
+          "originalTextLength": 35617,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30773,
+          "truncated": true,
+          "retainedFractionUTF16": 0.8625094758121122,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d2b42d08247672f5c32e43e81fc921cca45643a21be481ade75aaa66530f485b"
+        }
+      },
+      {
+        "name": "candidate_parser_101061233_early_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101061233/17733866.reading-order.txt",
+          "input_sha256": "74fe2b14b2abc076d0fca06bf9836ddd9965654897e5e3091732080facafc739",
+          "inputUTF16Units": 27503,
+          "originalTextLength": 27503,
+          "outputUTF16Units": 27503,
+          "outputUTF8Bytes": 27572,
+          "truncated": false,
+          "retainedFractionUTF16": 1,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "74fe2b14b2abc076d0fca06bf9836ddd9965654897e5e3091732080facafc739"
+        }
+      },
+      {
+        "name": "candidate_parser_101061233_late_layout",
+        "passed": true,
+        "detail": {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101061233/18403735.txt",
+          "input_sha256": "f9915b30eb451bf7b427b85ed6b28b84007bbbfa5f7c3a24d33ad7388ff232a3",
+          "inputUTF16Units": 48235,
+          "originalTextLength": 48235,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30867,
+          "truncated": true,
+          "retainedFractionUTF16": 0.6368819322069037,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "0bbfe6b4f3fa3857750dc7f05d51651d3221b6a26e3b62d21ac0103a7beced04"
+        }
+      },
+      {
+        "name": "candidate_parser_101061233_late_reading_order",
+        "passed": true,
+        "detail": {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101061233/18403735.reading-order.txt",
+          "input_sha256": "bfcf090594e6993ee590779dae1e618c2dd800ddd87b11609dec846380c3d987",
+          "inputUTF16Units": 39439,
+          "originalTextLength": 39439,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30881,
+          "truncated": true,
+          "retainedFractionUTF16": 0.7789244149192424,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "fdf658994b14e3edd6ce51ce6c6a47229302340483033afb64da15d40dcd0131"
+        }
+      },
+      {
+        "name": "request_omits_temperature_seed",
+        "passed": true,
+        "detail": [
+          "model",
+          "messages",
+          "max_tokens",
+          "response_format",
+          "enable_thinking"
+        ]
+      },
+      {
+        "name": "request_sends_outputcap_and_optional_settings",
+        "passed": true,
+        "detail": {
+          "model": "synthetic-model",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Synthetic request never sent."
+            }
+          ],
+          "max_tokens": 321,
+          "response_format": {
+            "type": "json_object"
+          },
+          "enable_thinking": false
+        }
+      },
+      {
+        "name": "request_model_and_messages_propagate",
+        "passed": true,
+        "detail": {
+          "model": "synthetic-model",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Synthetic request never sent."
+            }
+          ],
+          "max_tokens": 321,
+          "response_format": {
+            "type": "json_object"
+          },
+          "enable_thinking": false
+        }
+      },
+      {
+        "name": "no_network_functions_invoked",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "results": {
+      "prompt": {
+        "ids": [
+          "1a",
+          "1b",
+          "2a",
+          "2b",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "4c",
+          "5a",
+          "5b",
+          "5c",
+          "6a",
+          "6b"
+        ],
+        "absentNames": [
+          "1a",
+          "1b",
+          "2a",
+          "2b",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "4c",
+          "5a",
+          "5b",
+          "5c",
+          "6a",
+          "6b"
+        ],
+        "absentDescriptions": [
+          "1a",
+          "1b",
+          "2a",
+          "2b",
+          "3a",
+          "3b",
+          "4a",
+          "4b",
+          "4c",
+          "5a",
+          "5b",
+          "5c",
+          "6a",
+          "6b"
+        ],
+        "defaultPrompt": {
+          "systemPrompt": "",
+          "userPrompt": "Analyze DMP paragraph by paragraph. For each meaningful paragraph:\n1. Copy paragraph text VERBATIM (include table rows, bullet points as single units)\n2. Table rows: include entire row like \"| Data | FASTQ | 100GB |\"\n3. Bullet items: include single bullet point as one evaluation unit\n4. Pick 1-5 relevant criteria IDs from ONLY this list: 1a 1b 2a 2b 3a 3b 4a 4b 4c 5a 5b 5c 6a 6b\n   - DO NOT invent new IDs like 7a, 8a, etc.\n   - DO NOT use IDs not in the list above\n5. Score 0-100 (90-100 excellent, 75-89 good, 60-74 pass, 0-59 insufficient)\n\nOutput JSON format: {\"p\":[[paragraphText,[\"criteriaIds\"],score,explanation]]}\n\nDMP (paragraphs separated by blank lines):\nSynthetic DMP statement with 'double quotes'. No research data or human labels.\n\nProcess ALL paragraphs. JSON output only.\n\nPHASE-SPECIFIC SCORING INSTRUCTIONS:\nThis is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        "probePrompt": {
+          "systemPrompt": "",
+          "userPrompt": "Analyze DMP paragraph by paragraph. For each meaningful paragraph:\n1. Copy paragraph text VERBATIM (include table rows, bullet points as single units)\n2. Table rows: include entire row like \"| Data | FASTQ | 100GB |\"\n3. Bullet items: include single bullet point as one evaluation unit\n4. Pick 1-5 relevant criteria IDs from ONLY this list: 1a\n   - DO NOT invent new IDs like 7a, 8a, etc.\n   - DO NOT use IDs not in the list above\n5. Score 0-100 (90-100 excellent, 75-89 good, 60-74 pass, 0-59 insufficient)\n\nOutput JSON format: {\"p\":[[paragraphText,[\"criteriaIds\"],score,explanation]]}\n\nDMP (paragraphs separated by blank lines):\nSynthetic DMP statement with 'double quotes'. No research data or human labels.\n\nProcess ALL paragraphs. JSON output only.\n\nPHASE-SPECIFIC SCORING INSTRUCTIONS:\nThis is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        "customCriteriaContextPrompt": {
+          "systemPrompt": "",
+          "userPrompt": "Analyze DMP paragraph by paragraph. For each meaningful paragraph:\n1. Copy paragraph text VERBATIM (include table rows, bullet points as single units)\n2. Table rows: include entire row like \"| Data | FASTQ | 100GB |\"\n3. Bullet items: include single bullet point as one evaluation unit\n4. Pick 1-5 relevant criteria IDs from ONLY this list: 1a\n   - DO NOT invent new IDs like 7a, 8a, etc.\n   - DO NOT use IDs not in the list above\n5. Score 0-100 (90-100 excellent, 75-89 good, 60-74 pass, 0-59 insufficient)\n\nOutput JSON format: {\"p\":[[paragraphText,[\"criteriaIds\"],score,explanation]]}\n\nDMP (paragraphs separated by blank lines):\nSynthetic DMP statement with 'double quotes'. No research data or human labels.\n\nProcess ALL paragraphs. JSON output only.\n\nPHASE-SPECIFIC SCORING INSTRUCTIONS:\nThis is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        }
+      },
+      "phases": [
+        {
+          "input": "proposal",
+          "stageKey": "proposal_early_stage",
+          "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+          "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        {
+          "input": "mid",
+          "stageKey": "mid_project",
+          "firstCriterionDescription": "Confirm which data have been produced or reused so far Update formats and tools used, noting any changes Include information on data provenance Update documentation to show growth and technical advances as data is generated",
+          "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        {
+          "input": "end",
+          "stageKey": "end_project",
+          "firstCriterionDescription": "List final data sets, types, and formats collected or reused Provide justification for deviations from the original plan",
+          "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        {
+          "input": "proposal_early_stage",
+          "stageKey": "proposal_early_stage",
+          "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+          "actualPromptGuidance": "This is a PROPOSAL / EARLY STAGE evaluation. Score based on PLANS, INTENTIONS, and EXPECTED approaches. Plans that are concrete and well-thought-out score well. Vague or missing plans score poorly."
+        },
+        {
+          "input": "mid_project",
+          "stageKey": "proposal_early_stage",
+          "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+          "actualPromptGuidance": "This is a MID-PROJECT evaluation. Score based on ACTUAL PROGRESS, IMPLEMENTATION, and UPDATES to original plans. Confirm what has been done. Report deviations. Ongoing work with clear evidence scores well. Plans without progress evidence score poorly."
+        },
+        {
+          "input": "end_project",
+          "stageKey": "proposal_early_stage",
+          "firstCriterionDescription": "For new data collection or production: Describe the data in terms of scientific context and technical perspective Specify the methods, tools, instruments, and software to be used for data collection Justify collecting or producing new data (see Section 1b) For reuse of existing data: Describe the reused data (type, scope, and relevance) Explain the purpose of reusing the data (e.g., validation, comparison, integration) Mention sources, access conditions, and permissions (e.g., database name, DOI, publication, software, licensing, embargoes, access restrictions)",
+          "actualPromptGuidance": "This is an END-PROJECT evaluation. Score based on FINAL OUTCOMES, COMPLETED ACTIONS, and DELIVERABLES. Only concrete completed work scores well. Plans, intentions, or ongoing work WITHOUT final delivery score VERY POORLY. Be STRICT: if the DMP describes what WILL be done rather than what HAS been done, score 0-59 (insufficient)."
+        }
+      ],
+      "aggregation": {
+        "inputCriteria": {
+          "categories": [
+            {
+              "id": "1a",
+              "name": "Positive"
+            },
+            {
+              "id": "1b",
+              "name": "Explicit zero"
+            },
+            {
+              "id": "2a",
+              "name": "No evidence unit"
+            }
+          ]
+        },
+        "inputRaw": {
+          "p": [
+            [
+              "Synthetic positive unit",
+              [
+                "1a"
+              ],
+              90,
+              "Synthetic score only"
+            ],
+            [
+              "Synthetic zero unit",
+              [
+                "1b"
+              ],
+              0,
+              "Synthetic score only"
+            ]
+          ]
+        },
+        "processed": {
+          "overallScore": 90,
+          "categories": [
+            {
+              "id": "1a",
+              "name": "Positive",
+              "score": 90,
+              "status": "excellent",
+              "feedback": "Excellent coverage of positive. Synthetic score only"
+            },
+            {
+              "id": "1b",
+              "name": "Explicit zero",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "Insufficient coverage of explicit zero. Synthetic score only"
+            },
+            {
+              "id": "2a",
+              "name": "No evidence unit",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "No relevant content found in DMP for this criterion."
+            }
+          ],
+          "sentenceEvaluations": [
+            {
+              "sentence": "Synthetic positive unit",
+              "criteriaIds": [
+                "1a"
+              ],
+              "score": 90,
+              "explanation": "Synthetic score only",
+              "suggestion": null
+            },
+            {
+              "sentence": "Synthetic zero unit",
+              "criteriaIds": [
+                "1b"
+              ],
+              "score": 0,
+              "explanation": "Synthetic score only",
+              "suggestion": null
+            }
+          ],
+          "originalDMPText": "Synthetic original text"
+        },
+        "summary": {
+          "overallScore": 90,
+          "totalCategories": 3,
+          "averageScore": 30,
+          "maxScore": 90,
+          "minScore": 0,
+          "statusCounts": {
+            "excellent": 1,
+            "good": 0,
+            "pass": 0,
+            "insufficient": 2
+          },
+          "strengths": [
+            {
+              "id": "1a",
+              "name": "Positive",
+              "score": 90,
+              "status": "excellent",
+              "feedback": "Excellent coverage of positive. Synthetic score only"
+            }
+          ],
+          "weaknesses": [
+            {
+              "id": "1b",
+              "name": "Explicit zero",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "Insufficient coverage of explicit zero. Synthetic score only"
+            },
+            {
+              "id": "2a",
+              "name": "No evidence unit",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "No relevant content found in DMP for this criterion."
+            }
+          ]
+        },
+        "allZero": {
+          "overallScore": 0,
+          "categories": [
+            {
+              "id": "1a",
+              "name": "Positive",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "Insufficient coverage of positive. Synthetic"
+            },
+            {
+              "id": "1b",
+              "name": "Explicit zero",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "No relevant content found in DMP for this criterion."
+            },
+            {
+              "id": "2a",
+              "name": "No evidence unit",
+              "score": 0,
+              "status": "insufficient",
+              "feedback": "No relevant content found in DMP for this criterion."
+            }
+          ],
+          "sentenceEvaluations": [
+            {
+              "sentence": "Zero",
+              "criteriaIds": [
+                "1a"
+              ],
+              "score": 0,
+              "explanation": "Synthetic",
+              "suggestion": null
+            }
+          ],
+          "originalDMPText": "Synthetic"
+        }
+      },
+      "parser": [
+        {
+          "label": "ascii",
+          "inputUTF16Units": 30724,
+          "inputUTF8Bytes": 30724,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30720,
+          "truncated": true,
+          "originalTextLength": 30724,
+          "equalsExpectedPrefix": true,
+          "lastCodeUnit": 65
+        },
+        {
+          "label": "emoji",
+          "inputUTF16Units": 30724,
+          "inputUTF8Bytes": 61444,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 61440,
+          "truncated": true,
+          "originalTextLength": 30724,
+          "equalsExpectedPrefix": true,
+          "lastCodeUnit": 56832
+        },
+        {
+          "label": "split_surrogate",
+          "inputUTF16Units": 30725,
+          "inputUTF8Bytes": 30727,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30722,
+          "truncated": true,
+          "originalTextLength": 30725,
+          "equalsExpectedPrefix": true,
+          "lastCodeUnit": 55357
+        }
+      ],
+      "pdfError": "Unsupported file type: .pdf",
+      "candidateTexts": [
+        {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101058625/7759984.txt",
+          "input_sha256": "11ab5876923205dcc4c126df490e19a7461f0a757b6aac6b771db636d3b09643",
+          "inputUTF16Units": 126953,
+          "originalTextLength": 126953,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30733,
+          "truncated": true,
+          "retainedFractionUTF16": 0.24197931517963342,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6714c0332fadfde41ab17d0bb6f2dcfa3c2b54643a04ab175e438622f8480f5d"
+        },
+        {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101058625/7759984.reading-order.txt",
+          "input_sha256": "8b2dc92fa8f123ff92a59cabef9b0e32a70ea50ca48c3d7a6b27d7a1aa80e637",
+          "inputUTF16Units": 86961,
+          "originalTextLength": 86961,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30735,
+          "truncated": true,
+          "retainedFractionUTF16": 0.3532618070169386,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "aa5212b84a818dc1f26ee2983e0901af1ee28ee71a995c8af23047ac209f92a5"
+        },
+        {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101058625/17055683.txt",
+          "input_sha256": "69604bb5ff55f6c557a7d8db5e123aa9621fa69de75d922b9f57e3e91a92aed7",
+          "inputUTF16Units": 182821,
+          "originalTextLength": 182821,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30872,
+          "truncated": true,
+          "retainedFractionUTF16": 0.16803321281472042,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6de42b5f4e3f6ffe2716a53d702d6d696c1a894260b8345a98ac1077db142e81"
+        },
+        {
+          "project": "iMagine",
+          "grant": "101058625",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101058625/17055683.reading-order.txt",
+          "input_sha256": "4ce8116820044b603d172877ae322cc2b70cb0edbbfa18553dcef424200ee178",
+          "inputUTF16Units": 124824,
+          "originalTextLength": 124824,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30932,
+          "truncated": true,
+          "retainedFractionUTF16": 0.24610651797731206,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "33113d1f10b16777602b494056f23064a2b565910f305762884cfd7fba1d93ee"
+        },
+        {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101017567/6602163.txt",
+          "input_sha256": "549a9fba9d9d758f52c46a7f44d66bb304f7385066e2d614f059969049b31cb9",
+          "inputUTF16Units": 121378,
+          "originalTextLength": 121378,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30864,
+          "truncated": true,
+          "retainedFractionUTF16": 0.25309364135181006,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "0c60f602e6970d3bc0bab8ca8957e2453787438456909a027be7078846ad567d"
+        },
+        {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101017567/6602163.reading-order.txt",
+          "input_sha256": "31e3120d1c9571f2db13d1b34eb28602c1079948ffb03af3b7d76ee35e6d0540",
+          "inputUTF16Units": 85163,
+          "originalTextLength": 85163,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30864,
+          "truncated": true,
+          "retainedFractionUTF16": 0.36072003099937766,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "895efd42b40dc2e411d8f80a517e235c9766bcb1567969671061a0c0d26525c0"
+        },
+        {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101017567/19402005.txt",
+          "input_sha256": "9bbaf694dbbeff3d6789430d2b19a168c8e84a4edbb2adf150a117e53f3d1fba",
+          "inputUTF16Units": 141995,
+          "originalTextLength": 141995,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30882,
+          "truncated": true,
+          "retainedFractionUTF16": 0.21634564597344977,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "a956909b5c846145f8611549b23877637d84018a672cc75e6193c39f27e7b734"
+        },
+        {
+          "project": "EGI-ACE",
+          "grant": "101017567",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101017567/19402005.reading-order.txt",
+          "input_sha256": "a5ccad5f24f31cc78947aab30ae6d8bc856f244908129fea6e5ceda42fe88bef",
+          "inputUTF16Units": 101087,
+          "originalTextLength": 101087,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30966,
+          "truncated": true,
+          "retainedFractionUTF16": 0.30389664348531464,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "89a98b5c2074fed146ffa2b2306b62ab245f534c2740abb86a3e2c162153376f"
+        },
+        {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/952259/13847570.txt",
+          "input_sha256": "03b14b6e63cee940a933ff8bdeb87d98610f99c8f3206a684ba94fa09f6d1664",
+          "inputUTF16Units": 66819,
+          "originalTextLength": 66819,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.45974947245543935,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "f3270709a55d5e1c9ee54632fcd1fe1b3c2c58ee2a9f8701e02e14167845b7e3"
+        },
+        {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/952259/13847570.reading-order.txt",
+          "input_sha256": "0019d5a23675d0682c908073bfe47fc39fb2b203985f35c2ba16a84e34c3eaaa",
+          "inputUTF16Units": 60181,
+          "originalTextLength": 60181,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30857,
+          "truncated": true,
+          "retainedFractionUTF16": 0.5104601119954802,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "8f50c3d0705d59ff7eac614a1295e8a7ff0f4e4e013f5eefdd65e22cd6a632a9"
+        },
+        {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/952259/13857898.txt",
+          "input_sha256": "37ebc61a8cd8c6b1d220fd5082f1118b2c9e60cab04dfea5a818a0fdb0127d54",
+          "inputUTF16Units": 68254,
+          "originalTextLength": 68254,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.4500835115890644,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d4688271c737f26048c0d8195fe1cba70e28ad6af7dae61a883586057be86764"
+        },
+        {
+          "project": "NANOFACTS",
+          "grant": "952259",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/952259/13857898.reading-order.txt",
+          "input_sha256": "8b07f2b192d37418f63405a223ab425e5449201bf55434a01c63fc6eac3ed6c4",
+          "inputUTF16Units": 61131,
+          "originalTextLength": 61131,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30855,
+          "truncated": true,
+          "retainedFractionUTF16": 0.5025273592776169,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "9300c8bc922a614b977515ba0c9b35e82ca3e5d81e2fabe73f12138ce197f051"
+        },
+        {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.txt",
+          "input_sha256": "aa65740540c63a6c09fecbb0b74dd4b127b694a6251b33fae43eea8600aa85a1",
+          "inputUTF16Units": 44956,
+          "originalTextLength": 44956,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30885,
+          "truncated": true,
+          "retainedFractionUTF16": 0.6833348162647922,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "6b2cb165385d0cfec3ef84c467c1a903d12c6c94a0967c8c644730c0728c77d0"
+        },
+        {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.reading-order.txt",
+          "input_sha256": "5814adfd2be1de9bec99052d0a419cb24333096d85b7cbe34bc0d211a7a7b169",
+          "inputUTF16Units": 34365,
+          "originalTextLength": 34365,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30975,
+          "truncated": true,
+          "retainedFractionUTF16": 0.8939327804452204,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "27bf9b30abb7c244c2e61f708211f8b3df79f3a7a3337e23825e80b50315d72f"
+        },
+        {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.txt",
+          "input_sha256": "7d9f222095a0f93ccfa69e6b09e85a4609dd7a0deabd2e1dd84d0dd7b2a4cd77",
+          "inputUTF16Units": 99609,
+          "originalTextLength": 99609,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30825,
+          "truncated": true,
+          "retainedFractionUTF16": 0.3084058669397344,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "45270501a6cdf489be0e0564256538d94bd2c04b40138e175f2807e3c94e7dd4"
+        },
+        {
+          "project": "AGRICORE",
+          "grant": "816078",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.reading-order.txt",
+          "input_sha256": "98492119b65989003af33c4724bf6cb1bef9490522f551d02c8fbefb100e7e4d",
+          "inputUTF16Units": 78591,
+          "originalTextLength": 78591,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30837,
+          "truncated": true,
+          "retainedFractionUTF16": 0.39088445241821584,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "5cd523e21b36caccb9d237290d29d38a828daf4c3d0f7656acbfcea1a010c067"
+        },
+        {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101081823/14497074.txt",
+          "input_sha256": "0cb5ab3d2721fe379f6dd8bb570dd1b4e1ed514dd2693881a730efcf116153aa",
+          "inputUTF16Units": 181498,
+          "originalTextLength": 181498,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30783,
+          "truncated": true,
+          "retainedFractionUTF16": 0.16925806344973499,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "88b4688b7e583541b70dadd8f340c01dd4d237a4601c4190ed1af187f912a710"
+        },
+        {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101081823/14497074.reading-order.txt",
+          "input_sha256": "653cc3c7990ab8ae603ca972d4abcc7d3deba17beb95c0402e74b7e6dd022e4e",
+          "inputUTF16Units": 148942,
+          "originalTextLength": 148942,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30797,
+          "truncated": true,
+          "retainedFractionUTF16": 0.2062547837413221,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "df4e3dc4779e1ac76439197b97ed3f7b5c5b06e2b0ef340895917305ba1d2758"
+        },
+        {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101081823/19161966.txt",
+          "input_sha256": "6d38dc9db98bf516376c4a2f131152a94321d33be59a0dabc20d5973e385180e",
+          "inputUTF16Units": 199662,
+          "originalTextLength": 199662,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30805,
+          "truncated": true,
+          "retainedFractionUTF16": 0.15386002343961294,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "4ed42e29d7648f0a57aa13e459ab86f45f8cf6e7b8e8dafec5005aab7e501b98"
+        },
+        {
+          "project": "SUSTRACK",
+          "grant": "101081823",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101081823/19161966.reading-order.txt",
+          "input_sha256": "8f2b6dbb89aab5741ddb2e3a86815b8ac8d7fc5560df22189bb139d2f412a9b4",
+          "inputUTF16Units": 155921,
+          "originalTextLength": 155921,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30811,
+          "truncated": true,
+          "retainedFractionUTF16": 0.1970228513157304,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d4f313b1f1f31e954fa393cca8a183bb524e367c76f232ad52f9dbb1a28e861f"
+        },
+        {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "early",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101061233/17733866.txt",
+          "input_sha256": "f99354ff6662c65b0afdfe55bc7192dcfdfc95910772657758c87484abaa25d1",
+          "inputUTF16Units": 35617,
+          "originalTextLength": 35617,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30773,
+          "truncated": true,
+          "retainedFractionUTF16": 0.8625094758121122,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "d2b42d08247672f5c32e43e81fc921cca45643a21be481ade75aaa66530f485b"
+        },
+        {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "early",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101061233/17733866.reading-order.txt",
+          "input_sha256": "74fe2b14b2abc076d0fca06bf9836ddd9965654897e5e3091732080facafc739",
+          "inputUTF16Units": 27503,
+          "originalTextLength": 27503,
+          "outputUTF16Units": 27503,
+          "outputUTF8Bytes": 27572,
+          "truncated": false,
+          "retainedFractionUTF16": 1,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "74fe2b14b2abc076d0fca06bf9836ddd9965654897e5e3091732080facafc739"
+        },
+        {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "late",
+          "representation": "layout",
+          "text_file": "data/paired-dmp-corpus/101061233/18403735.txt",
+          "input_sha256": "f9915b30eb451bf7b427b85ed6b28b84007bbbfa5f7c3a24d33ad7388ff232a3",
+          "inputUTF16Units": 48235,
+          "originalTextLength": 48235,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30867,
+          "truncated": true,
+          "retainedFractionUTF16": 0.6368819322069037,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "0bbfe6b4f3fa3857750dc7f05d51651d3221b6a26e3b62d21ac0103a7beced04"
+        },
+        {
+          "project": "RECHARGE",
+          "grant": "101061233",
+          "role": "late",
+          "representation": "reading_order",
+          "text_file": "data/paired-dmp-corpus/101061233/18403735.reading-order.txt",
+          "input_sha256": "bfcf090594e6993ee590779dae1e618c2dd800ddd87b11609dec846380c3d987",
+          "inputUTF16Units": 39439,
+          "originalTextLength": 39439,
+          "outputUTF16Units": 30720,
+          "outputUTF8Bytes": 30881,
+          "truncated": true,
+          "retainedFractionUTF16": 0.7789244149192424,
+          "equalsExpectedPrefix": true,
+          "expectedPrefixSHA256": "fdf658994b14e3edd6ce51ce6c6a47229302340483033afb64da15d40dcd0131"
+        }
+      ],
+      "request": {
+        "profile": {
+          "endpoint": "https://invalid.invalid/never-sent",
+          "additionalHeaders": {
+            "Content-Type": "application/json"
+          },
+          "requiresAPIKey": false,
+          "modelParamName": "model",
+          "messagesParamName": "messages",
+          "temperature": 0.17,
+          "seed": 12345,
+          "maxTokens": 321,
+          "responseFormat": "json_object",
+          "disableThinking": true,
+          "streamEnabled": false
+        },
+        "config": {
+          "url": "https://invalid.invalid/never-sent",
+          "options": {
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"model\":\"synthetic-model\",\"messages\":[{\"role\":\"user\",\"content\":\"Synthetic request never sent.\"}],\"max_tokens\":321,\"response_format\":{\"type\":\"json_object\"},\"enable_thinking\":false}"
+          }
+        },
+        "body": {
+          "model": "synthetic-model",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Synthetic request never sent."
+            }
+          ],
+          "max_tokens": 321,
+          "response_format": {
+            "type": "json_object"
+          },
+          "enable_thinking": false
+        }
+      }
+    },
+    "blockedNetworkCalls": [],
+    "browser": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+    },
+    "passed": true
+  }
+}
