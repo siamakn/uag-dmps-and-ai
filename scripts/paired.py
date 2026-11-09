@@ -73,9 +73,14 @@ def sha256_or_none(path):
 def default_protocol():
     return {
         "id": "paired-dmp-protocol-draft-2026-11-04",
-        "approved": False,
-        "approved_by": "",
-        "approved_on": "",
+        # D20: the selection protocol below was approved by the user on 2026-11-09. The approval
+        # covers selection only, not the later experiment protocol (rubric phases, anchors, runs).
+        "approved": True,
+        "approved_by": "Siamak Nakhaie",
+        "approved_on": "2026-11-09",
+        "approval_scope": "selection protocol only: issue-date timing, D08, D09, D16-D19; not the "
+                          "experiment protocol (rubric phases, score anchors, model runs)",
+        "approval_decision": "D20",
         "disciplines": list(DISCIPLINES),
         "timing_basis": "documented DMP issue date; repository publication dates kept separately",
         "publication_date_fallback": False,

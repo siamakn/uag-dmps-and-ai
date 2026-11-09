@@ -1,6 +1,6 @@
 # Verification checklist — six proposal pairs
 
-Generated 2026-11-06 by `verification-checklist.py` from `cohort-proposal.json` and the local corpus. **Nothing here is verified.** A pair becomes *verified* in the dashboard only when a person has done the steps below and recorded them.
+Generated 2026-11-09 by `verification-checklist.py` from `cohort-proposal.json` and the local corpus. **Nothing here is verified.** A pair becomes *verified* in the dashboard only when a person has done the steps below and recorded them.
 
 ## How to use it
 
@@ -12,7 +12,7 @@ Generated 2026-11-06 by `verification-checklist.py` from `cohort-proposal.json` 
    - **Lineage**: confirm that the later document revises or succeeds the earlier one (revision table, 'updates D1.2', same deliverable series). Add an evidence entry (locator + one-line note), set *Lineage state* to `verified`, enter your name.
    - If something contradicts the proposal, set the state to `contradictory` and say why in *Notes*. The pair turns *rejected*; that is a valid outcome.
 4. Press **Check files** (re-hashes the 12 PDFs on disk).
-5. When all six pairs show *verified*, the protocol must still be approved in the protocol panel before **Freeze** is allowed.
+5. When all six pairs show *verified*, press **Freeze** (served mode only). The selection protocol is already approved (D20, 2026-11-09), so verified pairs are the only remaining requirement.
 
 The quoted lines come from automatic text extraction and can be garbled or in a different order from the page. They only help you find the date; the PDF page is the evidence.
 

@@ -81,8 +81,9 @@ def main():
         "   - If something contradicts the proposal, set the state to `contradictory` and say why in "
         "*Notes*. The pair turns *rejected*; that is a valid outcome.",
         "4. Press **Check files** (re-hashes the 12 PDFs on disk).",
-        "5. When all six pairs show *verified*, the protocol must still be approved in the protocol "
-        "panel before **Freeze** is allowed.",
+        "5. When all six pairs show *verified*, press **Freeze** (served mode only). The selection "
+        "protocol is already approved (D20, 2026-11-09), so verified pairs are the only remaining "
+        "requirement.",
         "",
         "The quoted lines come from automatic text extraction and can be garbled or in a different "
         "order from the page. They only help you find the date; the PDF page is the evidence.",

@@ -66,6 +66,12 @@ These four were the open decisions in the platform's protocol panel; they are no
 there. The protocol as a whole is still **not approved** (approval is a separate, explicit act), and
 no pair is verified.
 
+## Selection protocol approval (2026-11-09)
+
+| ID | User decision | Operational consequence |
+| --- | --- | --- |
+| D20 | The user approves the selection protocol as a whole: documented issue-date timing (early `2n <= d`, late `n > d`, no publication-date fallback), D08, D09 and D16–D19. | `scripts/paired.py:default_protocol` now carries `approved: true`, approver Siamak Nakhaie, 2026-11-09, with the approval scope recorded. The approval covers **selection only**, not the experiment protocol (rubric phase mapping, score anchors, model configuration, repetitions). Freezing still needs all six pairs verified by a person. |
+
 ## Proposals to settle after feasibility
 
 - Apply recency primarily to the later version; permit an older early version, explicitly recorded. Do not silently impose 2024+ on both.
