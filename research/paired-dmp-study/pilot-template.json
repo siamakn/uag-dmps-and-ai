@@ -1,0 +1,57 @@
+{
+  "template_id": "PILOT-01-blank-form-v1",
+  "status": "unstarted_blank_form_not_a_human_assessment_record",
+  "purpose": "single_criterion_workflow_and_anchor_calibration_outside_core_cohort",
+  "reviewer_role": "R-PILOT-01",
+  "reviewer_name": "Siamak",
+  "formal_benchmark_reviewer_assignment": "not_determined",
+  "scale": {
+    "id": "ordinal_012_calibration_v1",
+    "approval": "approved_for_calibration",
+    "numeric_values": [
+      0,
+      1,
+      2
+    ],
+    "separate_null_score_states": [
+      "not_applicable",
+      "uncertain"
+    ],
+    "criterion_specific_anchors": "draft_for_calibration"
+  },
+  "document": {
+    "record_id": "17578116",
+    "project": "PathOS",
+    "version": "D3.5 v2.0, update 2025-11-10",
+    "in_core_cohort": false,
+    "local_pdf": "data/paired-dmp-corpus/calibration/17578116.pdf",
+    "source_url": "https://zenodo.org/records/17578116",
+    "sha256": "732074dc327f114356c5cff1ccc7f6846d79480eabe8daa2b53951058e4e94fa"
+  },
+  "instrument": {
+    "criterion_id": "1b",
+    "framework_doi": "10.5281/zenodo.19630859",
+    "framework_sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+    "framework_physical_page": 8,
+    "framework_printed_page": "7",
+    "intended_rubric_phase": "end_project",
+    "phase_status": "working_pilot_choice_not_frozen_benchmark_policy"
+  },
+  "fields_to_be_supplied_by_human": {
+    "assessment": null,
+    "applicability": null,
+    "evidence_state": null,
+    "numeric_score": null,
+    "evidence_locators": [],
+    "rationale": "",
+    "confidence": null,
+    "usability_feedback": "",
+    "criterion_specific_search_completed": null,
+    "searched_sections": []
+  },
+  "human_response_received": false,
+  "model_rating_or_expected_answer_supplied": false,
+  "note": "This blank form wrapper is not an instance of human-review-record.schema.json. Create a labelled pilot assessment record only from an actual human response and validate it against that record contract.",
+  "pilot_status": "deferred_by_user_before_assessment",
+  "deferral_is_assessment_label": false
+}

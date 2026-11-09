@@ -1,0 +1,101 @@
+{
+  "prepared_date": "2026-11-06",
+  "kind": "bounded_issue_date_screen_not_quality_assessment",
+  "checked_by": "orchestrator",
+  "pairs_promoted": 0,
+  "observations": [
+    {
+      "project": "TWEET-IE",
+      "grant": "101079125",
+      "record_id": "17361082",
+      "record_url": "https://zenodo.org/records/17361082",
+      "publication_date": "2025-12-31",
+      "document_date": "2025-10-31",
+      "locator": "physical PDF p1 cover M36 and p3 History of Changes v4.1",
+      "visually_checked_pages": [
+        1,
+        3
+      ],
+      "project_start": "2022-11-01",
+      "latest_CORDIS_end_observed": "2025-10-31",
+      "elapsed_days": 1095,
+      "duration_days": 1095,
+      "percentage_display": 100.0,
+      "late_eligibility": false,
+      "decision": "not_a_strict_post_end_late_version",
+      "live_metadata_access": "open",
+      "live_PDF_download_status": 200,
+      "repository_licence": {
+        "id": "apl1.0"
+      },
+      "sources": [
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/tweet-ie-17361082.pdf",
+          "sha256": "7d8d4bbd026169811d9d318087d4e046ee41aca3ec814d66f47626911e9eb3b3",
+          "bytes": 1528533
+        },
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/tweet-ie-101079125-cordis.html",
+          "sha256": "e70bae42c4f20b26bc882a85ee0848275087bd9591584c8b7fa06d774f44f0ab",
+          "bytes": 144976
+        },
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/tweet-ie-17361082-api.json",
+          "sha256": "00d30b96939473c588bf7ebe77d396b2fb1cc57e99688c6c4f1c7f551badc538",
+          "bytes": 11025
+        }
+      ],
+      "early_source_inspected": false,
+      "lineage_verified": false
+    },
+    {
+      "project": "D1-Glia",
+      "grant": "101090280",
+      "record_id": "15392557",
+      "record_url": "https://zenodo.org/records/15392557",
+      "publication_date": "2025-05-12",
+      "document_date": "2025-03-09",
+      "locator": "physical PDF p2 Delivery Date (Final) and v3 Issue date; day/month format established by v1 29/6/2023",
+      "visually_checked_pages": [
+        2
+      ],
+      "project_start": "2023-04-01",
+      "latest_CORDIS_end_observed": "2025-03-31",
+      "elapsed_days": 708,
+      "duration_days": 730,
+      "percentage_display": 96.98630136986301,
+      "late_eligibility": false,
+      "decision": "not_a_strict_post_end_late_version",
+      "live_metadata_access": "open",
+      "live_PDF_download_status": 200,
+      "repository_licence": {
+        "id": "cc-by-4.0"
+      },
+      "sources": [
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/d1-glia-15392557.pdf",
+          "sha256": "cd09548731691c7342d06a1fcee0b48632a5e54fe378a8e880c2d4f7afefa61d",
+          "bytes": 598929
+        },
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/d1-glia-101090280-cordis.html",
+          "sha256": "4b3217d4a9241405d4bf32abcfe100a04c1500f5b1fa20d38cbcbae8e6f36387",
+          "bytes": 99236
+        },
+        {
+          "path": "data/paired-dmp-corpus/followup-2026-11-06/d1-glia-15392557-api.json",
+          "sha256": "4bad3d9d11c4ac16c93c79fe80e60c057d110361f02f8fc1f9cc8acfd4914c40",
+          "bytes": 5479
+        }
+      ],
+      "early_source_inspected": false,
+      "lineage_verified": false
+    }
+  ],
+  "access_discrepancy": {
+    "project": "D1-Glia",
+    "web_search_rendered_record": "restricted",
+    "fresh_live_API_and_download": "open metadata, HTTP200 PDF",
+    "handling": "do not exclude using stale search rendering; issue date independently fails strict post-end rule"
+  }
+}

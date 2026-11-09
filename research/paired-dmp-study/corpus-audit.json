@@ -1,0 +1,2662 @@
+{
+  "audit_date": "2026-11-03",
+  "method": {
+    "early": "0 <= 2 * (publication - project_start).days <= (project_end - project_start).days",
+    "late": "(publication - project_start).days > (project_end - project_start).days",
+    "filters": "kind=dmp; EU tier; nonempty grant and primary CORDIS discipline; public record; listed file",
+    "exact_dates": "YYYY-MM-DD only; integer day comparison, not stage label or rounded stage_frac",
+    "interval_dates": "YYYY-MM spans calendar month; YYYY spans year; accept only when entire interval qualifies",
+    "identity_warning": "Same-grant combinations are leads, not verified versions of the same DMP/scope.",
+    "access_warning": "Public record + listed file is not verified public downloadable file access."
+  },
+  "input_sha256": {
+    "data/dmp_dataset.json": "eff880577cf054431ae07d68d6978983d4518557640864797101b9269601f3d4",
+    "data/selection.json": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+    "AGENTS.md": "f63d1e1109536f3dd1ed43f4103adaf4b50aebd7428d15ab5bed344b82c91713",
+    "scripts/common.py": "8c497c458d9eee6a93c56ccff23950ffb723706e90fd20fc26bb1443593b1e1f",
+    "scripts/01_harvest_records.py": "5f766bc3e0780d61e081585ef1a4e454513c489bb9199f03ed5d5c9679e4b2c9",
+    "scripts/04_build_dataset.py": "c1e33e647b5cd9e562711ceec2e586604ef76a5d00205ec157110e928b1fb149",
+    "dashboard/template.html": "8ea13e665f2cc07bbd42e754a003d0b4a45373251423e59f864a952f4cb1fc36",
+    "data/raw/dfg_pool.jsonl": "b838b84a72404c6c73823dc260f5d1d4d8e44704a726a8d0eace5c88153db8c4",
+    "data/raw/dmp_typed.jsonl": "ac5ae437030286b87dccc69aac6d675c9173721cba822058aefc0b7b94216a53",
+    "data/raw/dmp_typed_json.jsonl": "54c59aa17a6f86963fd06772516804b645af3ba1a4c8e38082dec47a2b80cd0d",
+    "data/raw/ec_pool.jsonl": "5381160271be6783a86f244a220d1948b695f38db3e6d5d862313efe7a61da87",
+    "data/raw/madmp_json.jsonl": "6cf4850432dc0ee0fd600cc02d89dbe231de7b09c7f31e7ae16b895a42199cf6"
+  },
+  "inventory": {
+    "rows": 2650,
+    "kind_counts": {
+      "dmp": 2504,
+      "guidance": 32,
+      "template": 35,
+      "about": 64,
+      "unclear": 15
+    },
+    "tier_counts": {
+      "No funder metadata": 1040,
+      "Other funder": 267,
+      "Horizon Europe": 722,
+      "Horizon 2020": 525,
+      "Other EU": 69,
+      "DFG": 27
+    },
+    "raw_unique_records": 3268,
+    "raw_fields": [
+      "access",
+      "creators",
+      "date",
+      "desc",
+      "doi",
+      "files",
+      "funding",
+      "id",
+      "subjects",
+      "title",
+      "type",
+      "version"
+    ],
+    "date_string_lengths": {
+      "9": 1,
+      "10": 2589,
+      "7": 44,
+      "4": 16
+    },
+    "nonempty_version_strings": 1174,
+    "local_cordis_files": []
+  },
+  "summary": {
+    "EU_full_dates": {
+      "grants": 19,
+      "record_combinations": 26,
+      "primary_disc_grants": {
+        "natural sciences": 10,
+        "engineering and technology": 6,
+        "medical and health sciences": 0,
+        "agricultural sciences": 2,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 17,
+        "engineering and technology": 11,
+        "medical and health sciences": 0,
+        "agricultural sciences": 5,
+        "social sciences": 3,
+        "humanities": 0
+      }
+    },
+    "HE_full_dates": {
+      "grants": 11,
+      "record_combinations": 14,
+      "primary_disc_grants": {
+        "natural sciences": 8,
+        "engineering and technology": 2,
+        "medical and health sciences": 0,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 10,
+        "engineering and technology": 5,
+        "medical and health sciences": 0,
+        "agricultural sciences": 1,
+        "social sciences": 2,
+        "humanities": 0
+      }
+    },
+    "EU_both_2024plus_full_dates": {
+      "grants": 2,
+      "record_combinations": 3,
+      "primary_disc_grants": {
+        "natural sciences": 1,
+        "engineering and technology": 0,
+        "medical and health sciences": 0,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 2,
+        "engineering and technology": 0,
+        "medical and health sciences": 0,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      }
+    },
+    "HE_both_2024plus_full_dates": {
+      "grants": 2,
+      "record_combinations": 3,
+      "primary_disc_grants": {
+        "natural sciences": 1,
+        "engineering and technology": 0,
+        "medical and health sciences": 0,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 2,
+        "engineering and technology": 0,
+        "medical and health sciences": 0,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      }
+    },
+    "EU_safe_intervals": {
+      "grants": 21,
+      "record_combinations": 28,
+      "primary_disc_grants": {
+        "natural sciences": 11,
+        "engineering and technology": 6,
+        "medical and health sciences": 1,
+        "agricultural sciences": 2,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 18,
+        "engineering and technology": 11,
+        "medical and health sciences": 1,
+        "agricultural sciences": 5,
+        "social sciences": 4,
+        "humanities": 0
+      }
+    },
+    "HE_safe_intervals": {
+      "grants": 13,
+      "record_combinations": 16,
+      "primary_disc_grants": {
+        "natural sciences": 9,
+        "engineering and technology": 2,
+        "medical and health sciences": 1,
+        "agricultural sciences": 0,
+        "social sciences": 1,
+        "humanities": 0
+      },
+      "disc_all_grants": {
+        "natural sciences": 11,
+        "engineering and technology": 5,
+        "medical and health sciences": 1,
+        "agricultural sciences": 1,
+        "social sciences": 3,
+        "humanities": 0
+      }
+    }
+  },
+  "selection": {
+    "saved": "2026-11-02T15:30:59",
+    "count": 12,
+    "resolved": 12,
+    "distinct_grants": 12,
+    "records": [
+      {
+        "id": "18849166",
+        "doi": "10.5281/zenodo.18849166",
+        "url": "https://zenodo.org/records/18849166",
+        "title": "D1.2 Data Management Plan Project",
+        "date": "2026-03-03",
+        "version": null,
+        "grant": "101069941",
+        "acronym": "PLOTO",
+        "tier": "Horizon Europe",
+        "disc": "natural sciences",
+        "disc_all": [
+          "natural sciences"
+        ],
+        "proj_start": "2022-09-01",
+        "proj_end": "2026-02-28",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.002,
+        "access": "public",
+        "files": [
+          {
+            "name": "D1.2 - Data Management Plan.pdf",
+            "ext": "pdf",
+            "size": 980380
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 1279,
+          "duration_days": 1276,
+          "fraction": 1.0023510971786833,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "21250628",
+        "doi": "10.5281/zenodo.21250628",
+        "url": "https://zenodo.org/records/21250628",
+        "title": "ENTICE - Machine-Actionable Data Management Plan",
+        "date": "2026-07-07",
+        "version": "1",
+        "grant": "101184775",
+        "acronym": "ENTICE",
+        "tier": "Horizon Europe",
+        "disc": "natural sciences",
+        "disc_all": [
+          "natural sciences",
+          "social sciences"
+        ],
+        "proj_start": "2025-01-01",
+        "proj_end": "2028-12-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.378,
+        "access": "public",
+        "files": [
+          {
+            "name": "ENTICE__MachineActionable_Data_Management_Plan.json",
+            "ext": "json",
+            "size": 48455
+          },
+          {
+            "name": "ENTICE__MachineActionable_Data_Management_Plan.pdf",
+            "ext": "pdf",
+            "size": 335696
+          }
+        ],
+        "madmp": true,
+        "madmp_file": "21250628__ENTICE__MachineActionable_Data_Management_Plan.json",
+        "exact_position": {
+          "elapsed_days": 552,
+          "duration_days": 1460,
+          "fraction": 0.3780821917808219,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      },
+      {
+        "id": "21336370",
+        "doi": "10.5281/zenodo.21336370",
+        "url": "https://zenodo.org/records/21336370",
+        "title": "DMP -  Engineering Research Infrastructures for European Synergies (ERIES)",
+        "date": "2026-07-13",
+        "version": "1",
+        "grant": "101058684",
+        "acronym": "ERIES",
+        "tier": "Horizon Europe",
+        "disc": "engineering and technology",
+        "disc_all": [
+          "engineering and technology",
+          "natural sciences"
+        ],
+        "proj_start": "2022-06-01",
+        "proj_end": "2026-05-31",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.029,
+        "access": "public",
+        "files": [
+          {
+            "name": "DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.json",
+            "ext": "json",
+            "size": 16303
+          },
+          {
+            "name": "DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.pdf",
+            "ext": "pdf",
+            "size": 109349
+          }
+        ],
+        "madmp": true,
+        "madmp_file": "21336370__DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.json",
+        "exact_position": {
+          "elapsed_days": 1503,
+          "duration_days": 1460,
+          "fraction": 1.0294520547945205,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "15632251",
+        "doi": "10.5281/zenodo.15632251",
+        "url": "https://zenodo.org/records/15632251",
+        "title": "CERTAINTY BSC's DMP",
+        "date": "2025-06-10",
+        "version": "1",
+        "grant": "101137680",
+        "acronym": "CERTAINTY",
+        "tier": "Horizon Europe",
+        "disc": "engineering and technology",
+        "disc_all": [
+          "engineering and technology"
+        ],
+        "proj_start": "2024-01-01",
+        "proj_end": "2027-12-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.36,
+        "access": "public",
+        "files": [
+          {
+            "name": "CERTAINTY_BSCs_DMP.json",
+            "ext": "json",
+            "size": 6561
+          },
+          {
+            "name": "CERTAINTY_BSCs_DMP.pdf",
+            "ext": "pdf",
+            "size": 133820
+          }
+        ],
+        "madmp": true,
+        "madmp_file": "15632251__CERTAINTY_BSCs_DMP.json",
+        "exact_position": {
+          "elapsed_days": 526,
+          "duration_days": 1460,
+          "fraction": 0.36027397260273974,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      },
+      {
+        "id": "18403735",
+        "doi": "10.5281/zenodo.18403735",
+        "url": "https://zenodo.org/records/18403735",
+        "title": "RECHARGE: Data Management Plan (final update)",
+        "date": "2026-01-28",
+        "version": null,
+        "grant": "101061233",
+        "acronym": "RECHARGE",
+        "tier": "Horizon Europe",
+        "disc": "medical and health sciences",
+        "disc_all": [
+          "medical and health sciences",
+          "humanities"
+        ],
+        "proj_start": "2022-10-01",
+        "proj_end": "2025-09-30",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.11,
+        "access": "public",
+        "files": [
+          {
+            "name": "D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf",
+            "ext": "pdf",
+            "size": 1114561
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 1215,
+          "duration_days": 1095,
+          "fraction": 1.1095890410958904,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "18384473",
+        "doi": "10.5281/zenodo.18384473",
+        "url": "https://zenodo.org/records/18384473",
+        "title": "D1.3. Data Management Plan for SysAge",
+        "date": "2026-01-27",
+        "version": null,
+        "grant": "101159920",
+        "acronym": "SysAge",
+        "tier": "Horizon Europe",
+        "disc": "medical and health sciences",
+        "disc_all": [
+          "medical and health sciences"
+        ],
+        "proj_start": "2024-09-01",
+        "proj_end": "2027-08-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.469,
+        "access": "public",
+        "files": [
+          {
+            "name": "D1.3_Data_Management_Plan_SysAge.pdf",
+            "ext": "pdf",
+            "size": 604962
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 513,
+          "duration_days": 1094,
+          "fraction": 0.4689213893967093,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      },
+      {
+        "id": "21454112",
+        "doi": "10.5281/zenodo.21454112",
+        "url": "https://zenodo.org/records/21454112",
+        "title": "ReForest: Deliverable D7.4. Update of the Data Management Plan",
+        "date": "2026-07-20",
+        "version": "V1",
+        "grant": "101060635",
+        "acronym": "REFOREST",
+        "tier": "Horizon Europe",
+        "disc": "agricultural sciences",
+        "disc_all": [
+          "agricultural sciences",
+          "social sciences"
+        ],
+        "proj_start": "2022-07-01",
+        "proj_end": "2026-06-30",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.014,
+        "access": "public",
+        "files": [
+          {
+            "name": "REFOREST_WP7_D7.4 Update of Data Management Plan_13June2024_V6.0_CZU.pdf",
+            "ext": "pdf",
+            "size": 1408907
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 1480,
+          "duration_days": 1460,
+          "fraction": 1.0136986301369864,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "20645134",
+        "doi": "10.5281/zenodo.20645134",
+        "url": "https://zenodo.org/records/20645134",
+        "title": "Data Management Plan Aquaserv 42171",
+        "date": "2026-06-11",
+        "version": null,
+        "grant": "101131121",
+        "acronym": "AQUASERV",
+        "tier": "Horizon Europe",
+        "disc": "agricultural sciences",
+        "disc_all": [
+          "agricultural sciences",
+          "medical and health sciences",
+          "social sciences"
+        ],
+        "proj_start": "2024-04-01",
+        "proj_end": "2029-03-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.439,
+        "access": "public",
+        "files": [
+          {
+            "name": "AQUASERV_Data_Management_Plan_42171.pdf",
+            "ext": "pdf",
+            "size": 47243
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 801,
+          "duration_days": 1825,
+          "fraction": 0.4389041095890411,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      },
+      {
+        "id": "19161921",
+        "doi": "10.5281/zenodo.19161921",
+        "url": "https://zenodo.org/records/19161921",
+        "title": "Data Management Plan V1",
+        "date": "2026-03-09",
+        "version": null,
+        "grant": "101081823",
+        "acronym": "SUSTRACK",
+        "tier": "Horizon Europe",
+        "disc": "social sciences",
+        "disc_all": [
+          "social sciences",
+          "natural sciences"
+        ],
+        "proj_start": "2022-11-01",
+        "proj_end": "2025-10-31",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.118,
+        "access": "public",
+        "files": [
+          {
+            "name": "D7.1 – DATA MANAGEMENT PLAN V1.pdf",
+            "ext": "pdf",
+            "size": 1347475
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 1224,
+          "duration_days": 1095,
+          "fraction": 1.1178082191780823,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "15591241",
+        "doi": "10.5281/zenodo.15591241",
+        "url": "https://zenodo.org/records/15591241",
+        "title": "EU-CHINA BRIDGE - Machine-Actionable Data Management Plan",
+        "date": "2025-06-04",
+        "version": "1",
+        "grant": "101137971",
+        "acronym": "EU-CHINA-BRIDGE",
+        "tier": "Horizon Europe",
+        "disc": "social sciences",
+        "disc_all": [
+          "social sciences"
+        ],
+        "proj_start": "2024-04-01",
+        "proj_end": "2027-03-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.392,
+        "access": "public",
+        "files": [
+          {
+            "name": "EUCHINA_BRIDGE__MachineActionable_Data_Management_Plan.pdf",
+            "ext": "pdf",
+            "size": 70965
+          },
+          {
+            "name": "EUCHINA_BRIDGE__MachineActionable_Data_Management_Plan.json",
+            "ext": "json",
+            "size": 6162
+          }
+        ],
+        "madmp": true,
+        "madmp_file": "15591241__EUCHINA_BRIDGE__MachineActionable_Data_Management_Plan.json",
+        "exact_position": {
+          "elapsed_days": 429,
+          "duration_days": 1094,
+          "fraction": 0.3921389396709324,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      },
+      {
+        "id": "11146154",
+        "doi": "10.5281/zenodo.11146154",
+        "url": "https://zenodo.org/records/11146154",
+        "title": "Data Management Plan (final): SPPELME",
+        "date": "2024-05-08",
+        "version": null,
+        "grant": "101023762",
+        "acronym": "SPPELME",
+        "tier": "Horizon 2020",
+        "disc": "humanities",
+        "disc_all": [
+          "humanities"
+        ],
+        "proj_start": "2021-10-01",
+        "proj_end": "2024-03-31",
+        "stage_src": "cordis",
+        "stage": "late",
+        "stage_frac": 1.042,
+        "access": "public",
+        "files": [
+          {
+            "name": "SPPELME_8.1_DMP_Version_FINALE_MN.pdf",
+            "ext": "pdf",
+            "size": 123537
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 950,
+          "duration_days": 912,
+          "fraction": 1.0416666666666667,
+          "early_late_role": "late"
+        },
+        "interval_role": "late"
+      },
+      {
+        "id": "10405850",
+        "doi": "10.5281/zenodo.10405850",
+        "url": "https://zenodo.org/records/10405850",
+        "title": "D1.1 Data and Research data Management Plan (DMP/RDMP)_approved by the EC",
+        "date": "2023-12-19",
+        "version": null,
+        "grant": "101058007",
+        "acronym": "DIAMAS",
+        "tier": "Horizon Europe",
+        "disc": "humanities",
+        "disc_all": [
+          "humanities",
+          "natural sciences"
+        ],
+        "proj_start": "2022-09-01",
+        "proj_end": "2025-08-31",
+        "stage_src": "cordis",
+        "stage": "mid",
+        "stage_frac": 0.433,
+        "access": "public",
+        "files": [
+          {
+            "name": "(Zenodo) D1.1-AMU-DMP_DRMP_final_approved by the EC.pdf",
+            "ext": "pdf",
+            "size": 589895
+          }
+        ],
+        "madmp": false,
+        "madmp_file": "",
+        "exact_position": {
+          "elapsed_days": 474,
+          "duration_days": 1095,
+          "fraction": 0.4328767123287671,
+          "early_late_role": "early"
+        },
+        "interval_role": "early"
+      }
+    ]
+  },
+  "rounding_threshold_mismatches": [],
+  "same_grant_leads_full_dates": {
+    "101000570": {
+      "early": [
+        {
+          "id": "14506240",
+          "doi": "10.5281/zenodo.14506240",
+          "url": "https://zenodo.org/records/14506240",
+          "title": "Update of Data Management Plan - Public summary",
+          "date": "2023-05-31",
+          "version": null,
+          "grant": "101000570",
+          "acronym": "VIRTIGATION",
+          "tier": "Horizon 2020",
+          "disc": "agricultural sciences",
+          "disc_all": [
+            "agricultural sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2021-06-01",
+          "proj_end": "2025-11-30",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.444,
+          "access": "public",
+          "files": [
+            {
+              "name": "VIRTIGATION_D7.4_Public-Abstract.pdf",
+              "ext": "pdf",
+              "size": 282697
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 729,
+            "duration_days": 1643,
+            "fraction": 0.443700547778454,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "14506057",
+          "doi": "10.5281/zenodo.14506057",
+          "url": "https://zenodo.org/records/14506057",
+          "title": "Initial data management plan - Public summary",
+          "date": "2021-11-30",
+          "version": null,
+          "grant": "101000570",
+          "acronym": "VIRTIGATION",
+          "tier": "Horizon 2020",
+          "disc": "agricultural sciences",
+          "disc_all": [
+            "agricultural sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2021-06-01",
+          "proj_end": "2025-11-30",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.111,
+          "access": "public",
+          "files": [
+            {
+              "name": "VIRTIGATION_D7.2_Public-Abstract.pdf",
+              "ext": "pdf",
+              "size": 271916
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 182,
+            "duration_days": 1643,
+            "fraction": 0.11077297626293366,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17970028",
+          "doi": "10.5281/zenodo.17970028",
+          "url": "https://zenodo.org/records/17970028",
+          "title": "Final Data Management Plan",
+          "date": "2025-12-18",
+          "version": null,
+          "grant": "101000570",
+          "acronym": "VIRTIGATION",
+          "tier": "Horizon 2020",
+          "disc": "agricultural sciences",
+          "disc_all": [
+            "agricultural sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2021-06-01",
+          "proj_end": "2025-11-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.011,
+          "access": "public",
+          "files": [
+            {
+              "name": "D7.6_VIRTIGATION_Final Data Management Plan_Public summary.pdf",
+              "ext": "pdf",
+              "size": 502503
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1661,
+            "duration_days": 1643,
+            "fraction": 1.0109555690809495,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101017567": {
+      "early": [
+        {
+          "id": "6602163",
+          "doi": "10.5281/zenodo.6602163",
+          "url": "https://zenodo.org/records/6602163",
+          "title": "EGI-ACE D1.2 Data management plan",
+          "date": "2021-08-04",
+          "version": "Final",
+          "grant": "101017567",
+          "acronym": "EGI-ACE",
+          "tier": "Horizon 2020",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2021-01-01",
+          "proj_end": "2023-06-30",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.236,
+          "access": "public",
+          "files": [
+            {
+              "name": "EGI-ACE D1.2 V1 Public Final.pdf",
+              "ext": "pdf",
+              "size": 513551
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 215,
+            "duration_days": 910,
+            "fraction": 0.23626373626373626,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "19402005",
+          "doi": "10.5281/zenodo.19402005",
+          "url": "https://zenodo.org/records/19402005",
+          "title": "EGI-ACE D1.5 Data Management Plan",
+          "date": "2023-11-17",
+          "version": "1.1 Approved by the EC",
+          "grant": "101017567",
+          "acronym": "EGI-ACE",
+          "tier": "Horizon 2020",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2021-01-01",
+          "proj_end": "2023-06-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.154,
+          "access": "public",
+          "files": [
+            {
+              "name": "EGI-ACE D1.5 V1.1-Public-Approved by the EC.pdf",
+              "ext": "pdf",
+              "size": 776995
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1050,
+            "duration_days": 910,
+            "fraction": 1.1538461538461537,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101046846": {
+      "early": [
+        {
+          "id": "7269841",
+          "doi": "10.5281/zenodo.7269841",
+          "url": "https://zenodo.org/records/7269841",
+          "title": "D1.3. FAIR compliant Data Management Plan, first version",
+          "date": "2022-11-01",
+          "version": "1",
+          "grant": "101046846",
+          "acronym": "MAPWORMS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2022-05-01",
+          "proj_end": "2026-04-30",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.126,
+          "access": "public",
+          "files": [
+            {
+              "name": "MAPWORMS_D1.3__FAIR-compliant_Data_Management_Plan_v1_20221031.pdf",
+              "ext": "pdf",
+              "size": 729395
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 184,
+            "duration_days": 1460,
+            "fraction": 0.12602739726027398,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "20020721",
+          "doi": "10.5281/zenodo.20020721",
+          "url": "https://zenodo.org/records/20020721",
+          "title": "D1.11 RP3 UPDATE OF THE DATA MANAGEMENT PLAN",
+          "date": "2026-05-04",
+          "version": null,
+          "grant": "101046846",
+          "acronym": "MAPWORMS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2022-05-01",
+          "proj_end": "2026-04-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.003,
+          "access": "public",
+          "files": [
+            {
+              "name": "MAPWORMS_D1.11_RP3 Final Data ManagementPlan_v1.7_20260430.pdf",
+              "ext": "pdf",
+              "size": 2541117
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1464,
+            "duration_days": 1460,
+            "fraction": 1.0027397260273974,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101057388": {
+      "early": [
+        {
+          "id": "10054551",
+          "doi": "10.5281/zenodo.10054551",
+          "url": "https://zenodo.org/records/10054551",
+          "title": "EuroScienceGateway Data Management Plan (DMP; D1.1)",
+          "date": "2023-10-30",
+          "version": "1.0",
+          "grant": "101057388",
+          "acronym": "EuroScienceGateway",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.387,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.1_ESG_DMP.pdf",
+              "ext": "pdf",
+              "size": 253171
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 424,
+            "duration_days": 1095,
+            "fraction": 0.3872146118721461,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17456115",
+          "doi": "10.5281/zenodo.17456115",
+          "url": "https://zenodo.org/records/17456115",
+          "title": "Data Management Plan",
+          "date": "2025-10-24",
+          "version": "3",
+          "grant": "101057388",
+          "acronym": "EuroScienceGateway",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.049,
+          "access": "public",
+          "files": [
+            {
+              "name": "ESG_DMP.pdf",
+              "ext": "pdf",
+              "size": 517539
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1149,
+            "duration_days": 1095,
+            "fraction": 1.0493150684931507,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101058386": {
+      "early": [
+        {
+          "id": "10417093",
+          "doi": "10.5281/zenodo.10417093",
+          "url": "https://zenodo.org/records/10417093",
+          "title": "interTwin D1.2 First Data Management Plan",
+          "date": "2023-06-14",
+          "version": "Final",
+          "grant": "101058386",
+          "acronym": "interTwin",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.261,
+          "access": "public",
+          "files": [
+            {
+              "name": "interTwin D1.2 V1 Public Final.pdf",
+              "ext": "pdf",
+              "size": 788677
+            },
+            {
+              "name": "interTwin D1.2 V1 Public Under EC review.pdf",
+              "ext": "pdf",
+              "size": 788637
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 286,
+            "duration_days": 1095,
+            "fraction": 0.26118721461187216,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17099293",
+          "doi": "10.5281/zenodo.17099293",
+          "url": "https://zenodo.org/records/17099293",
+          "title": "interTwin D1.4 Final Data Management Plan",
+          "date": "2025-09-11",
+          "version": "1 Under EC Review",
+          "grant": "101058386",
+          "acronym": "interTwin",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.01,
+          "access": "public",
+          "files": [
+            {
+              "name": "interTwin_D1.4_V1_Public_Under EC Review.pdf",
+              "ext": "pdf",
+              "size": 953401
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1106,
+            "duration_days": 1095,
+            "fraction": 1.0100456621004565,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101058625": {
+      "early": [
+        {
+          "id": "7759984",
+          "doi": "10.5281/zenodo.7759984",
+          "url": "https://zenodo.org/records/7759984",
+          "title": "iMagine D1.2 Data Management Plan",
+          "date": "2023-03-22",
+          "version": "V 1.0 Under EC Review",
+          "grant": "101058625",
+          "acronym": "iMagine",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.184,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.2 Data Management Plan.pdf",
+              "ext": "pdf",
+              "size": 481463
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 202,
+            "duration_days": 1095,
+            "fraction": 0.18447488584474886,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17055683",
+          "doi": "10.5281/zenodo.17055683",
+          "url": "https://zenodo.org/records/17055683",
+          "title": "iMagine D1.4 Final Data Management Plan",
+          "date": "2025-09-05",
+          "version": "V1 Under EC Review",
+          "grant": "101058625",
+          "acronym": "iMagine",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.005,
+          "access": "public",
+          "files": [
+            {
+              "name": "iMagine_D1.4_V1_Public_Under EC Review.pdf",
+              "ext": "pdf",
+              "size": 1003166
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1100,
+            "duration_days": 1095,
+            "fraction": 1.004566210045662,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101058684": {
+      "early": [
+        {
+          "id": "21382158",
+          "doi": "10.5281/zenodo.21382158",
+          "url": "https://zenodo.org/records/21382158",
+          "title": "D3.1 - DMP - Engineering Research Infrastructures for European Synergies (ERIES)",
+          "date": "2022-12-20",
+          "version": null,
+          "grant": "101058684",
+          "acronym": "ERIES",
+          "tier": "Horizon Europe",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2022-06-01",
+          "proj_end": "2026-05-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.138,
+          "access": "public",
+          "files": [
+            {
+              "name": "D3.1-DMP_Engineering_Research_Infrastructures_for_European_Synergies_0.pdf",
+              "ext": "pdf",
+              "size": 117110
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 202,
+            "duration_days": 1460,
+            "fraction": 0.13835616438356163,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "21336370",
+          "doi": "10.5281/zenodo.21336370",
+          "url": "https://zenodo.org/records/21336370",
+          "title": "DMP -  Engineering Research Infrastructures for European Synergies (ERIES)",
+          "date": "2026-07-13",
+          "version": "1",
+          "grant": "101058684",
+          "acronym": "ERIES",
+          "tier": "Horizon Europe",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2022-06-01",
+          "proj_end": "2026-05-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.029,
+          "access": "public",
+          "files": [
+            {
+              "name": "DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.json",
+              "ext": "json",
+              "size": 16303
+            },
+            {
+              "name": "DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.pdf",
+              "ext": "pdf",
+              "size": 109349
+            }
+          ],
+          "madmp": true,
+          "madmp_file": "21336370__DMP___Engineering_Research_Infrastructures_for_European_Synergies_ERIES.json",
+          "exact_position": {
+            "elapsed_days": 1503,
+            "duration_days": 1460,
+            "fraction": 1.0294520547945205,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101058728": {
+      "early": [
+        {
+          "id": "7801445",
+          "doi": "10.5281/zenodo.7801445",
+          "url": "https://zenodo.org/records/7801445",
+          "title": "PathOS - D3.2 Data Management Plan",
+          "date": "2023-04-05",
+          "version": null,
+          "grant": "101058728",
+          "acronym": "PathOS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.197,
+          "access": "public",
+          "files": [
+            {
+              "name": "PathOS_Deliverable_3.2_v1.0_final.pdf",
+              "ext": "pdf",
+              "size": 415177
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 216,
+            "duration_days": 1095,
+            "fraction": 0.19726027397260273,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17578116",
+          "doi": "10.5281/zenodo.17578116",
+          "url": "https://zenodo.org/records/17578116",
+          "title": "PathOS - D3.5 Data Management Plan (update)",
+          "date": "2025-11-10",
+          "version": null,
+          "grant": "101058728",
+          "acronym": "PathOS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.065,
+          "access": "public",
+          "files": [
+            {
+              "name": "Deliverabe D3.5 Data Management Plan Final Update.pdf",
+              "ext": "pdf",
+              "size": 783595
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1166,
+            "duration_days": 1095,
+            "fraction": 1.0648401826484017,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101058785": {
+      "early": [
+        {
+          "id": "7808697",
+          "doi": "10.5281/zenodo.7808697",
+          "url": "https://zenodo.org/records/7808697",
+          "title": "FAIR-EASE_D1.2_Initial Project and Data Management Plan",
+          "date": "2023-04-07",
+          "version": "1.0",
+          "grant": "101058785",
+          "acronym": "FAIR-EASE",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology",
+            "social sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.199,
+          "access": "public",
+          "files": [
+            {
+              "name": "FAIR-EASE_D1.2_Initial Project and Data Management Plan.pdf",
+              "ext": "pdf",
+              "size": 1077675
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 218,
+            "duration_days": 1095,
+            "fraction": 0.19908675799086759,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17360548",
+          "doi": "10.5281/zenodo.17360548",
+          "url": "https://zenodo.org/records/17360548",
+          "title": "FAIR-EASE - D1.6 : Final Project and Data Management Plan",
+          "date": "2025-10-15",
+          "version": null,
+          "grant": "101058785",
+          "acronym": "FAIR-EASE",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "engineering and technology",
+            "social sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.041,
+          "access": "public",
+          "files": [
+            {
+              "name": "FAIR-EASE_D1.6_Final Project and Data Management Plan_VFinal.pdf",
+              "ext": "pdf",
+              "size": 1361970
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1140,
+            "duration_days": 1095,
+            "fraction": 1.0410958904109588,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101061001": {
+      "early": [
+        {
+          "id": "10839334",
+          "doi": "10.5281/zenodo.10839334",
+          "url": "https://zenodo.org/records/10839334",
+          "title": "AD4GD D8.3 Data Management Plan",
+          "date": "2024-02-29",
+          "version": null,
+          "grant": "101061001",
+          "acronym": "AD4GD",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.499,
+          "access": "public",
+          "files": [
+            {
+              "name": "AD4GD_Deliverable_D_8_3.pdf",
+              "ext": "pdf",
+              "size": 1057707
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 546,
+            "duration_days": 1095,
+            "fraction": 0.4986301369863014,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "10843720",
+          "doi": "10.5281/zenodo.10843720",
+          "url": "https://zenodo.org/records/10843720",
+          "title": "AD4GD D8.2 Data Management Plan (initial)",
+          "date": "2023-03-06",
+          "version": null,
+          "grant": "101061001",
+          "acronym": "AD4GD",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.17,
+          "access": "public",
+          "files": [
+            {
+              "name": "AD4GD_Deliverable_D_8_2 Data Management Plan v.1.2_Final.pdf",
+              "ext": "pdf",
+              "size": 491239
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 186,
+            "duration_days": 1095,
+            "fraction": 0.16986301369863013,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17201854",
+          "doi": "10.5281/zenodo.17201854",
+          "url": "https://zenodo.org/records/17201854",
+          "title": "AD4GD D8.4 Data Management Plan (final) Funded by the European Union",
+          "date": "2025-09-25",
+          "version": null,
+          "grant": "101061001",
+          "acronym": "AD4GD",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2022-09-01",
+          "proj_end": "2025-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.023,
+          "access": "public",
+          "files": [
+            {
+              "name": "AD4GD D8.4.pdf",
+              "ext": "pdf",
+              "size": 2250186
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1120,
+            "duration_days": 1095,
+            "fraction": 1.0228310502283104,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101081823": {
+      "early": [
+        {
+          "id": "14497074",
+          "doi": "10.5281/zenodo.14497074",
+          "url": "https://zenodo.org/records/14497074",
+          "title": "Data Management Plan",
+          "date": "2024-05-01",
+          "version": null,
+          "grant": "101081823",
+          "acronym": "SUSTRACK",
+          "tier": "Horizon Europe",
+          "disc": "social sciences",
+          "disc_all": [
+            "social sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2022-11-01",
+          "proj_end": "2025-10-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.5,
+          "access": "public",
+          "files": [
+            {
+              "name": "SUSTRACK_D7.1_Data_Management_Plan_Final.pdf",
+              "ext": "pdf",
+              "size": 960776
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 547,
+            "duration_days": 1095,
+            "fraction": 0.4995433789954338,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "19161921",
+          "doi": "10.5281/zenodo.19161921",
+          "url": "https://zenodo.org/records/19161921",
+          "title": "Data Management Plan V1",
+          "date": "2026-03-09",
+          "version": null,
+          "grant": "101081823",
+          "acronym": "SUSTRACK",
+          "tier": "Horizon Europe",
+          "disc": "social sciences",
+          "disc_all": [
+            "social sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2022-11-01",
+          "proj_end": "2025-10-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.118,
+          "access": "public",
+          "files": [
+            {
+              "name": "D7.1 – DATA MANAGEMENT PLAN V1.pdf",
+              "ext": "pdf",
+              "size": 1347475
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1224,
+            "duration_days": 1095,
+            "fraction": 1.1178082191780823,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        },
+        {
+          "id": "19161966",
+          "doi": "10.5281/zenodo.19161966",
+          "url": "https://zenodo.org/records/19161966",
+          "title": "Data Management Plan (V2)",
+          "date": "2026-03-09",
+          "version": null,
+          "grant": "101081823",
+          "acronym": "SUSTRACK",
+          "tier": "Horizon Europe",
+          "disc": "social sciences",
+          "disc_all": [
+            "social sciences",
+            "natural sciences"
+          ],
+          "proj_start": "2022-11-01",
+          "proj_end": "2025-10-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.118,
+          "access": "public",
+          "files": [
+            {
+              "name": "D7.2 – DATA MANAGEMENT PLAN (V2).pdf",
+              "ext": "pdf",
+              "size": 1340985
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1224,
+            "duration_days": 1095,
+            "fraction": 1.1178082191780823,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101095129": {
+      "early": [
+        {
+          "id": "11098069",
+          "doi": "10.5281/zenodo.11098069",
+          "url": "https://zenodo.org/records/11098069",
+          "title": "Deliverable 1.2 GraspOS Data management plan (DMP)",
+          "date": "2023-06-30",
+          "version": null,
+          "grant": "101095129",
+          "acronym": "GraspOS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2023-01-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.164,
+          "access": "public",
+          "files": [
+            {
+              "name": "GraspOS DMP - Deliverable D1.2 v1.0 Zenodo Accepted.pdf",
+              "ext": "pdf",
+              "size": 14799447
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 180,
+            "duration_days": 1095,
+            "fraction": 0.1643835616438356,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "8095578",
+          "doi": "10.5281/zenodo.8095578",
+          "url": "https://zenodo.org/records/8095578",
+          "title": "GraspOS Data Management Plan",
+          "date": "2023-06-29",
+          "version": "1",
+          "grant": "101095129",
+          "acronym": "GraspOS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2023-01-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.163,
+          "access": "public",
+          "files": [
+            {
+              "name": "supportingFiles.zip",
+              "ext": "zip",
+              "size": 233377
+            },
+            {
+              "name": "DMP_GraspOS_next_Generation_Research_Assessment_to_Promote_Open_Science_1.pdf",
+              "ext": "pdf",
+              "size": 699816
+            },
+            {
+              "name": "DMPGraspOS_next_Generation_Research_Assessment_to_Promote_Open_Science1.json",
+              "ext": "json",
+              "size": 20001
+            }
+          ],
+          "madmp": true,
+          "madmp_file": "8095578__DMPGraspOS_next_Generation_Research_Assessment_to_Promote_Open_Science1.json",
+          "exact_position": {
+            "elapsed_days": 179,
+            "duration_days": 1095,
+            "fraction": 0.1634703196347032,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "18679355",
+          "doi": "10.5281/zenodo.18679355",
+          "url": "https://zenodo.org/records/18679355",
+          "title": "Data Management Plan CNR Pilot: career progression at CNR in light of the Agreement on Reforming Research Assessment",
+          "date": "2026-02-18",
+          "version": "1.0",
+          "grant": "101095129",
+          "acronym": "GraspOS",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2023-01-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.045,
+          "access": "public",
+          "files": [
+            {
+              "name": "Data Management Plan CNR Pilot.pdf",
+              "ext": "pdf",
+              "size": 183495
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1144,
+            "duration_days": 1095,
+            "fraction": 1.0447488584474887,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101096083": {
+      "early": [
+        {
+          "id": "12578066",
+          "doi": "10.5281/zenodo.12578066",
+          "url": "https://zenodo.org/records/12578066",
+          "title": "EM-TECH Data Management Plan (D1.2)",
+          "date": "2023-06-30",
+          "version": null,
+          "grant": "101096083",
+          "acronym": "EM-TECH",
+          "tier": "Horizon Europe",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology"
+          ],
+          "proj_start": "2023-01-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.164,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.2_EMTECH_DataManagementPlan_v1.0.pdf",
+              "ext": "pdf",
+              "size": 1370187
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 180,
+            "duration_days": 1095,
+            "fraction": 0.1643835616438356,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "18859774",
+          "doi": "10.5281/zenodo.18859774",
+          "url": "https://zenodo.org/records/18859774",
+          "title": "EM-TECH: Data management plan revision 2 (D1.4)",
+          "date": "2026-03-04",
+          "version": null,
+          "grant": "101096083",
+          "acronym": "EM-TECH",
+          "tier": "Horizon Europe",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology"
+          ],
+          "proj_start": "2023-01-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.058,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.4_EM-TECH_Data management plan revision 2.pdf",
+              "ext": "pdf",
+              "size": 1616320
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1158,
+            "duration_days": 1095,
+            "fraction": 1.0575342465753426,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "680708": {
+      "early": [
+        {
+          "id": "1204016",
+          "doi": "10.5281/zenodo.1204016",
+          "url": "https://zenodo.org/records/1204016",
+          "title": "Data Management Plan",
+          "date": "2017-04-07",
+          "version": "2",
+          "grant": "680708",
+          "acronym": "HIT2GAP",
+          "tier": "Horizon 2020",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2015-09-01",
+          "proj_end": "2019-08-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.4,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.8.pdf",
+              "ext": "pdf",
+              "size": 1396661
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 584,
+            "duration_days": 1460,
+            "fraction": 0.4,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "3831567",
+          "doi": "10.5281/zenodo.3831567",
+          "url": "https://zenodo.org/records/3831567",
+          "title": "Data Management Plan",
+          "date": "2019-10-02",
+          "version": null,
+          "grant": "680708",
+          "acronym": "HIT2GAP",
+          "tier": "Horizon 2020",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences"
+          ],
+          "proj_start": "2015-09-01",
+          "proj_end": "2019-08-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.022,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.8_Data Management Plan.pdf",
+              "ext": "pdf",
+              "size": 957179
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1492,
+            "duration_days": 1460,
+            "fraction": 1.021917808219178,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "693171": {
+      "early": [
+        {
+          "id": "1442633",
+          "doi": "10.5281/zenodo.1442633",
+          "url": "https://zenodo.org/records/1442633",
+          "title": "D1.5 Data Management Plan (2)",
+          "date": "2017-04-30",
+          "version": null,
+          "grant": "693171",
+          "acronym": "RECAP",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2016-05-01",
+          "proj_end": "2018-10-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.399,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.5 Data Management Plan (2).pdf",
+              "ext": "pdf",
+              "size": 2464616
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 364,
+            "duration_days": 913,
+            "fraction": 0.39868565169769987,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "1442627",
+          "doi": "10.5281/zenodo.1442627",
+          "url": "https://zenodo.org/records/1442627",
+          "title": "D1.3 Data Management Plan (1)",
+          "date": "2016-10-31",
+          "version": null,
+          "grant": "693171",
+          "acronym": "RECAP",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2016-05-01",
+          "proj_end": "2018-10-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.2,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.3 Data Management Plan (1).pdf",
+              "ext": "pdf",
+              "size": 2587494
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 183,
+            "duration_days": 913,
+            "fraction": 0.2004381161007667,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "1886081",
+          "doi": "10.5281/zenodo.1886081",
+          "url": "https://zenodo.org/records/1886081",
+          "title": "D1.10 Data Management Plan (3)",
+          "date": "2018-12-03",
+          "version": null,
+          "grant": "693171",
+          "acronym": "RECAP",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2016-05-01",
+          "proj_end": "2018-10-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.036,
+          "access": "public",
+          "files": [
+            {
+              "name": "D1.10 Data Management Plan (3).pdf",
+              "ext": "pdf",
+              "size": 713282
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 946,
+            "duration_days": 913,
+            "fraction": 1.036144578313253,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "730109": {
+      "early": [
+        {
+          "id": "3492133",
+          "doi": "10.5281/zenodo.3492133",
+          "url": "https://zenodo.org/records/3492133",
+          "title": "D7.3: Data Management Plan (2)",
+          "date": "2018-06-30",
+          "version": null,
+          "grant": "730109",
+          "acronym": "DIANA",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "social sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2017-01-01",
+          "proj_end": "2019-12-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.498,
+          "access": "public",
+          "files": [
+            {
+              "name": "DIANA_D7.3 Data Management Plan (2).pdf",
+              "ext": "pdf",
+              "size": 884681
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 545,
+            "duration_days": 1094,
+            "fraction": 0.49817184643510054,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "3492131",
+          "doi": "10.5281/zenodo.3492131",
+          "url": "https://zenodo.org/records/3492131",
+          "title": "D7.2: Data Management Plan (1)",
+          "date": "2017-03-31",
+          "version": null,
+          "grant": "730109",
+          "acronym": "DIANA",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "social sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2017-01-01",
+          "proj_end": "2019-12-31",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.081,
+          "access": "public",
+          "files": [
+            {
+              "name": "DIANA_Deliverable_Data Management Plan(1).pdf",
+              "ext": "pdf",
+              "size": 956013
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 89,
+            "duration_days": 1094,
+            "fraction": 0.08135283363802559,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "3600285",
+          "doi": "10.5281/zenodo.3600285",
+          "url": "https://zenodo.org/records/3600285",
+          "title": "D7.4 Data Management Plan (3)",
+          "date": "2020-01-07",
+          "version": null,
+          "grant": "730109",
+          "acronym": "DIANA",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences",
+            "social sciences",
+            "agricultural sciences"
+          ],
+          "proj_start": "2017-01-01",
+          "proj_end": "2019-12-31",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.006,
+          "access": "public",
+          "files": [
+            {
+              "name": "DIANA_D7.4 Data Management Plan (3)_FINAL.pdf",
+              "ext": "pdf",
+              "size": 1048545
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1101,
+            "duration_days": 1094,
+            "fraction": 1.006398537477148,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "769355": {
+      "early": [
+        {
+          "id": "5845236",
+          "doi": "10.5281/zenodo.5845236",
+          "url": "https://zenodo.org/records/5845236",
+          "title": "D2.3 - Data Management Plan v2",
+          "date": "2019-10-30",
+          "version": null,
+          "grant": "769355",
+          "acronym": "PIXEL",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2018-05-01",
+          "proj_end": "2021-09-30",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.438,
+          "access": "public",
+          "files": [
+            {
+              "name": "D2.3 - Data Management Plan v2.pdf",
+              "ext": "pdf",
+              "size": 688231
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 547,
+            "duration_days": 1248,
+            "fraction": 0.43830128205128205,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "5845344",
+          "doi": "10.5281/zenodo.5845344",
+          "url": "https://zenodo.org/records/5845344",
+          "title": "D2.4 - Data Management Plan v3",
+          "date": "2022-01-13",
+          "version": null,
+          "grant": "769355",
+          "acronym": "PIXEL",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2018-05-01",
+          "proj_end": "2021-09-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.084,
+          "access": "public",
+          "files": [
+            {
+              "name": "PIXEL - D2.4 - Data Management Plan v3.pdf",
+              "ext": "pdf",
+              "size": 945196
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1353,
+            "duration_days": 1248,
+            "fraction": 1.0841346153846154,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "870337": {
+      "early": [
+        {
+          "id": "6876487",
+          "doi": "10.5281/zenodo.6876487",
+          "url": "https://zenodo.org/records/6876487",
+          "title": "Data Management Plan 1st Update (CURE Deliverable D7.5)",
+          "date": "2021-06-30",
+          "version": null,
+          "grant": "870337",
+          "acronym": "CURE",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2020-01-01",
+          "proj_end": "2023-04-30",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.449,
+          "access": "public",
+          "files": [
+            {
+              "name": "CURE_D7.5.pdf",
+              "ext": "pdf",
+              "size": 607222
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 546,
+            "duration_days": 1215,
+            "fraction": 0.44938271604938274,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        },
+        {
+          "id": "4739022",
+          "doi": "10.5281/zenodo.4739022",
+          "url": "https://zenodo.org/records/4739022",
+          "title": "Data Management Plan (CURE Deliverable D7.4)",
+          "date": "2020-03-31",
+          "version": null,
+          "grant": "870337",
+          "acronym": "CURE",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2020-01-01",
+          "proj_end": "2023-04-30",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.074,
+          "access": "public",
+          "files": [
+            {
+              "name": "CURE_D7.4.pdf",
+              "ext": "pdf",
+              "size": 861868
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 90,
+            "duration_days": 1215,
+            "fraction": 0.07407407407407407,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "8093683",
+          "doi": "10.5281/zenodo.8093683",
+          "url": "https://zenodo.org/records/8093683",
+          "title": "Data Management Plan 2nd Update (CURE Deliverable D7.6)",
+          "date": "2023-06-29",
+          "version": null,
+          "grant": "870337",
+          "acronym": "CURE",
+          "tier": "Horizon 2020",
+          "disc": "engineering and technology",
+          "disc_all": [
+            "engineering and technology",
+            "natural sciences"
+          ],
+          "proj_start": "2020-01-01",
+          "proj_end": "2023-04-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.049,
+          "access": "public",
+          "files": [
+            {
+              "name": "CURE_D7.6.pdf",
+              "ext": "pdf",
+              "size": 1002897
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1275,
+            "duration_days": 1215,
+            "fraction": 1.0493827160493827,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    },
+    "884411": {
+      "early": [
+        {
+          "id": "5772790",
+          "doi": "10.5281/zenodo.5772790",
+          "url": "https://zenodo.org/records/5772790",
+          "title": "D9.6.1 Data Management Plan",
+          "date": "2020-10-30",
+          "version": null,
+          "grant": "884411",
+          "acronym": "ASTEP",
+          "tier": "Horizon 2020",
+          "disc": "agricultural sciences",
+          "disc_all": [
+            "agricultural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2020-05-01",
+          "proj_end": "2025-06-30",
+          "stage_src": "cordis",
+          "stage": "early",
+          "stage_frac": 0.097,
+          "access": "public",
+          "files": [
+            {
+              "name": "ASTEP_D9.6.1_Data Management Plan_V3.1_2020-10-30_UPCT.pdf",
+              "ext": "pdf",
+              "size": 744985
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 182,
+            "duration_days": 1886,
+            "fraction": 0.09650053022269353,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "16411304",
+          "doi": "10.5281/zenodo.16411304",
+          "url": "https://zenodo.org/records/16411304",
+          "title": "D9.6.3 'Data Management Plan'",
+          "date": "2025-07-24",
+          "version": null,
+          "grant": "884411",
+          "acronym": "ASTEP",
+          "tier": "Horizon 2020",
+          "disc": "agricultural sciences",
+          "disc_all": [
+            "agricultural sciences",
+            "engineering and technology"
+          ],
+          "proj_start": "2020-05-01",
+          "proj_end": "2025-06-30",
+          "stage_src": "cordis",
+          "stage": "late",
+          "stage_frac": 1.013,
+          "access": "public",
+          "files": [
+            {
+              "name": "ASTEP_D9.6.3_Data Management Plan_V1.1_2025-06-26_UPCT.pdf",
+              "ext": "pdf",
+              "size": 834284
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 1910,
+            "duration_days": 1886,
+            "fraction": 1.0127253446447508,
+            "early_late_role": "late"
+          },
+          "interval_role": "late"
+        }
+      ]
+    }
+  },
+  "additional_leads_with_safe_intervals": {
+    "101069547": {
+      "early": [
+        {
+          "id": "10518610",
+          "doi": "10.5281/zenodo.10518610",
+          "url": "https://zenodo.org/records/10518610",
+          "title": "PoDIUM D1.4 Data Management Plan (V1)",
+          "date": "2024-01-16",
+          "version": null,
+          "grant": "101069547",
+          "acronym": "PoDIUM",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "social sciences"
+          ],
+          "proj_start": "2022-10-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "mid",
+          "stage_frac": 0.398,
+          "access": "public",
+          "files": [
+            {
+              "name": "PoDIUM-D1.4-Data-Management-Plan-v1.pdf",
+              "ext": "pdf",
+              "size": 385467
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": {
+            "elapsed_days": 472,
+            "duration_days": 1187,
+            "fraction": 0.3976411120471778,
+            "early_late_role": "early"
+          },
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "19593084",
+          "doi": "10.5281/zenodo.19593084",
+          "url": "https://zenodo.org/records/19593084",
+          "title": "PoDIUM - D1.6 Data Management Plan (Final Version)",
+          "date": "2026",
+          "version": null,
+          "grant": "101069547",
+          "acronym": "PoDIUM",
+          "tier": "Horizon Europe",
+          "disc": "natural sciences",
+          "disc_all": [
+            "natural sciences",
+            "social sciences"
+          ],
+          "proj_start": "2022-10-01",
+          "proj_end": "2025-12-31",
+          "stage_src": "cordis",
+          "stage": "unknown",
+          "stage_frac": null,
+          "access": "public",
+          "files": [
+            {
+              "name": "PoDIUM - D1.6 Data Management Plan Final Version.pdf",
+              "ext": "pdf",
+              "size": 952134
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": null,
+          "interval_role": "late"
+        }
+      ]
+    },
+    "101079789": {
+      "early": [
+        {
+          "id": "17864615",
+          "doi": "10.5281/zenodo.17864615",
+          "url": "https://zenodo.org/records/17864615",
+          "title": "EIRENE PPP D9.2 - Data Management Plan of EIRENE PPP Project",
+          "date": "2023-03",
+          "version": null,
+          "grant": "101079789",
+          "acronym": "EIRENE PPP",
+          "tier": "Horizon Europe",
+          "disc": "medical and health sciences",
+          "disc_all": [
+            "medical and health sciences"
+          ],
+          "proj_start": "2022-10-01",
+          "proj_end": "2025-09-30",
+          "stage_src": "cordis",
+          "stage": "unknown",
+          "stage_frac": null,
+          "access": "public",
+          "files": [
+            {
+              "name": "EIRENE PPP D9.2 - Data Managment Plan.pdf",
+              "ext": "pdf",
+              "size": 212242
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": null,
+          "interval_role": "early"
+        }
+      ],
+      "late": [
+        {
+          "id": "17866885",
+          "doi": "10.5281/zenodo.17866885",
+          "url": "https://zenodo.org/records/17866885",
+          "title": "EIRENE PPP D3.1 - Data policy and Data Management Plan of EIRENE",
+          "date": "2025-10",
+          "version": null,
+          "grant": "101079789",
+          "acronym": "EIRENE PPP",
+          "tier": "Horizon Europe",
+          "disc": "medical and health sciences",
+          "disc_all": [
+            "medical and health sciences"
+          ],
+          "proj_start": "2022-10-01",
+          "proj_end": "2025-09-30",
+          "stage_src": "cordis",
+          "stage": "unknown",
+          "stage_frac": null,
+          "access": "public",
+          "files": [
+            {
+              "name": "D3.1 - EIRENE Data Policy & Data Management Plan.pdf",
+              "ext": "pdf",
+              "size": 734655
+            }
+          ],
+          "madmp": false,
+          "madmp_file": "",
+          "exact_position": null,
+          "interval_role": "late"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1034 @@
+{
+ "note": "Shared timing fixtures. scripts/test_paired.py runs them against scripts/paired.py:timing and the dashboard self-test runs the same list against the JavaScript mirror. Project 2022-01-01..2022-12-31 is d=364 days, so 50% is n=182 (2022-07-02) and 100% is n=364 (2022-12-31).",
+ "timing": [
+  {
+   "name": "exactly 0% is early",
+   "issue": "2022-01-01",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "yes",
+   "late": "no",
+   "n_lo": 0,
+   "n_hi": 0,
+   "d": 364
+  },
+  {
+   "name": "exactly 50% is early",
+   "issue": "2022-07-02",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "yes",
+   "late": "no",
+   "n_lo": 182,
+   "n_hi": 182,
+   "d": 364
+  },
+  {
+   "name": "one day past 50% is not early",
+   "issue": "2022-07-03",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "no",
+   "n_lo": 183,
+   "n_hi": 183,
+   "d": 364
+  },
+  {
+   "name": "exactly 100% is not late",
+   "issue": "2022-12-31",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "no",
+   "n_lo": 364,
+   "n_hi": 364,
+   "d": 364
+  },
+  {
+   "name": "one day after end is late",
+   "issue": "2023-01-01",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "yes",
+   "n_lo": 365,
+   "n_hi": 365,
+   "d": 364
+  },
+  {
+   "name": "well past end is late and shown above 100%",
+   "issue": "2023-07-01",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "yes",
+   "n_lo": 546,
+   "n_hi": 546,
+   "d": 364,
+   "pct_lo": 150.0
+  },
+  {
+   "name": "month precision spanning 50% is indeterminate",
+   "issue": "2022-07",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "indeterminate",
+   "late": "no",
+   "n_lo": 181,
+   "n_hi": 211,
+   "d": 364
+  },
+  {
+   "name": "month precision wholly before 50% is early",
+   "issue": "2022-03",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "yes",
+   "late": "no",
+   "n_lo": 59,
+   "n_hi": 89,
+   "d": 364
+  },
+  {
+   "name": "month precision spanning the end is indeterminate for late",
+   "issue": "2022-12",
+   "start": "2022-01-01",
+   "end": "2022-12-30",
+   "early": "no",
+   "late": "indeterminate",
+   "n_lo": 334,
+   "n_hi": 364,
+   "d": 363
+  },
+  {
+   "name": "year precision is never assumed to be 1 January",
+   "issue": "2023",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "yes",
+   "n_lo": 365,
+   "n_hi": 729,
+   "d": 364
+  },
+  {
+   "name": "pre-start date is not early under the proposed default",
+   "issue": "2021-12-31",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "no",
+   "n_lo": -1,
+   "n_hi": -1,
+   "d": 364
+  },
+  {
+   "name": "pre-start date is early if the policy allows it",
+   "issue": "2021-12-31",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "pre_start": "include",
+   "early": "yes",
+   "late": "no",
+   "n_lo": -1,
+   "n_hi": -1,
+   "d": 364
+  },
+  {
+   "name": "missing issue date stays unknown",
+   "issue": null,
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "unknown",
+   "late": "unknown",
+   "state": "unknown"
+  },
+  {
+   "name": "zero duration is invalid",
+   "issue": "2022-06-01",
+   "start": "2022-01-01",
+   "end": "2022-01-01",
+   "early": "unknown",
+   "late": "unknown",
+   "state": "invalid"
+  },
+  {
+   "name": "negative duration is invalid",
+   "issue": "2022-06-01",
+   "start": "2022-12-31",
+   "end": "2022-01-01",
+   "early": "unknown",
+   "late": "unknown",
+   "state": "invalid"
+  },
+  {
+   "name": "missing project end stays unknown",
+   "issue": "2022-06-01",
+   "start": "2022-01-01",
+   "end": null,
+   "early": "unknown",
+   "late": "unknown",
+   "state": "unknown"
+  },
+  {
+   "name": "impossible date is invalid",
+   "issue": "2022-02-30",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "unknown",
+   "late": "unknown",
+   "state": "invalid"
+  },
+  {
+   "name": "leap day counts",
+   "issue": "2024-03-01",
+   "start": "2024-02-28",
+   "end": "2024-03-06",
+   "early": "yes",
+   "late": "no",
+   "n_lo": 2,
+   "n_hi": 2,
+   "d": 7
+  }
+ ],
+ "escape": [
+  "plain",
+  "comma, inside",
+  "quote \" inside",
+  "pipe | inside",
+  "line\nbreak",
+  "back\\slash"
+ ],
+ "synthetic_cohort": {
+  "schema": "dmpbench.paired-study",
+  "schema_version": 1,
+  "status": "draft",
+  "study_id": "synthetic-cohort",
+  "created": "2026-01-01T00:00:00+00:00",
+  "updated": "2026-01-01T00:00:00+00:00",
+  "origin": "synthetic test cohort - not real documents",
+  "protocol": {
+   "id": "paired-dmp-protocol-draft-2026-11-04",
+   "approved": true,
+   "approved_by": "test",
+   "approved_on": "2026-01-01",
+   "disciplines": [
+    "natural sciences",
+    "engineering and technology",
+    "medical and health sciences",
+    "agricultural sciences",
+    "social sciences",
+    "humanities"
+   ],
+   "timing_basis": "documented DMP issue date; repository publication dates kept separately",
+   "publication_date_fallback": false,
+   "early_rule": "2*n <= d, i.e. fraction <= 0.50 (confirmed D01)",
+   "late_rule": "n > d, i.e. fraction > 1, strict (confirmed D01)",
+   "early_lower_bound": {
+    "rule": "n >= 0",
+    "status": "proposed"
+   },
+   "pre_start_policy": {
+    "value": "exclude",
+    "status": "proposed"
+   },
+   "project_end": {
+    "rule": "latest authoritative end date including extensions; original dates retained with sensitivity",
+    "decision": "D09",
+    "status": "confirmed"
+   },
+   "discipline": {
+    "rule": "any documented CORDIS branch membership; one slot per project; dominant branch also reported",
+    "decision": "D08",
+    "status": "confirmed"
+   },
+   "open_decisions": [
+    {
+     "id": "issue-date-hierarchy",
+     "status": "resolved",
+     "note": "synthetic",
+     "text": "Evidence hierarchy for conflicting document issue dates (cover, revision history, structured fields)."
+    },
+    {
+     "id": "partial-dates",
+     "status": "resolved",
+     "note": "synthetic",
+     "text": "Partial dates (YYYY, YYYY-MM) are carried as intervals and stay indeterminate when they straddle a threshold. Confirm or replace."
+    },
+    {
+     "id": "representation",
+     "status": "resolved",
+     "note": "synthetic",
+     "text": "Whether a pair may change file format, and which representation is the analysis document when PDF and maDMP accompany one version."
+    },
+    {
+     "id": "pre-start",
+     "status": "resolved",
+     "note": "synthetic",
+     "text": "Whether a document issued before the project started can fill an early slot (proposed: no)."
+    }
+   ]
+  },
+  "sources": {},
+  "pairs": [
+   {
+    "pair_id": "natural-sciences",
+    "discipline": "natural sciences",
+    "project": {
+     "grant": "SYN1",
+     "acronym": "SYN-1",
+     "title": "Synthetic project 1",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN1",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "natural sciences"
+     ],
+     "paths": [],
+     "dominant": [
+      "natural sciences"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN1-early",
+    "late": "SYN1-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   },
+   {
+    "pair_id": "engineering-and-technology",
+    "discipline": "engineering and technology",
+    "project": {
+     "grant": "SYN2",
+     "acronym": "SYN-2",
+     "title": "Synthetic project 2",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN2",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "engineering and technology"
+     ],
+     "paths": [],
+     "dominant": [
+      "engineering and technology"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN2-early",
+    "late": "SYN2-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   },
+   {
+    "pair_id": "medical-and-health-sciences",
+    "discipline": "medical and health sciences",
+    "project": {
+     "grant": "SYN3",
+     "acronym": "SYN-3",
+     "title": "Synthetic project 3",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN3",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "medical and health sciences"
+     ],
+     "paths": [],
+     "dominant": [
+      "medical and health sciences"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN3-early",
+    "late": "SYN3-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   },
+   {
+    "pair_id": "agricultural-sciences",
+    "discipline": "agricultural sciences",
+    "project": {
+     "grant": "SYN4",
+     "acronym": "SYN-4",
+     "title": "Synthetic project 4",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN4",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "agricultural sciences"
+     ],
+     "paths": [],
+     "dominant": [
+      "agricultural sciences"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN4-early",
+    "late": "SYN4-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   },
+   {
+    "pair_id": "social-sciences",
+    "discipline": "social sciences",
+    "project": {
+     "grant": "SYN5",
+     "acronym": "SYN-5",
+     "title": "Synthetic project 5",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN5",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "social sciences"
+     ],
+     "paths": [],
+     "dominant": [
+      "social sciences"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN5-early",
+    "late": "SYN5-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   },
+   {
+    "pair_id": "humanities",
+    "discipline": "humanities",
+    "project": {
+     "grant": "SYN6",
+     "acronym": "SYN-6",
+     "title": "Synthetic project 6",
+     "programme": "Horizon Europe",
+     "start": "2020-01-01",
+     "end": "2022-12-31",
+     "end_basis": "synthetic",
+     "original_end": null,
+     "end_source": {
+      "url": "https://example.org/SYN6",
+      "sha256": null,
+      "local_path": null,
+      "retrieved": "2026-01-01"
+     }
+    },
+    "cordis": {
+     "branches": [
+      "humanities"
+     ],
+     "paths": [],
+     "dominant": [
+      "humanities"
+     ],
+     "source": "synthetic",
+     "retrieved": "2026-01-01"
+    },
+    "scope": "project-wide",
+    "early": "SYN6-early",
+    "late": "SYN6-late",
+    "lineage": {
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01",
+     "evidence": [
+      {
+       "locator": "late p2 revision table",
+       "note": "late v2 revises v1"
+      }
+     ],
+     "prior_checks": []
+    },
+    "notes": ""
+   }
+  ],
+  "documents": {
+   "SYN1-early": {
+    "doc_id": "SYN1-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 1 early",
+    "grant": "SYN1",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN1-early.pdf",
+      "url": "https://example.org/SYN1-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "bb0bd5e54ff213ca03d8cc321b5e299fac95a5eb83f740bf33bd2e206e0e5e4b",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN1-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN1-late": {
+    "doc_id": "SYN1-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 1 late",
+    "grant": "SYN1",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN1-late.pdf",
+      "url": "https://example.org/SYN1-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "fb657b241fc2015225b12f1c232ff52adf708a284bdc30d7ec9815f7dea14e87",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN1-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN2-early": {
+    "doc_id": "SYN2-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 2 early",
+    "grant": "SYN2",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN2-early.pdf",
+      "url": "https://example.org/SYN2-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "058c25c8fb9f377304b9bcc91b185d4c2d3a9734465bd9410d7a215b480e115c",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN2-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN2-late": {
+    "doc_id": "SYN2-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 2 late",
+    "grant": "SYN2",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN2-late.pdf",
+      "url": "https://example.org/SYN2-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "28dcf13234d0b7c552516fb8746b1cd4ac6aec4338c0e1bc3a71b4d9cb6dc933",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN2-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN3-early": {
+    "doc_id": "SYN3-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 3 early",
+    "grant": "SYN3",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN3-early.pdf",
+      "url": "https://example.org/SYN3-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "1fb3dd549bb2569b07899d960eb8710bc9c9fa1ece6889617c3c627699fcd852",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN3-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN3-late": {
+    "doc_id": "SYN3-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 3 late",
+    "grant": "SYN3",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN3-late.pdf",
+      "url": "https://example.org/SYN3-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "79cbf558de60c4001ac717a06114dd49f324097ac14a63024a7508dcbb079606",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN3-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN4-early": {
+    "doc_id": "SYN4-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 4 early",
+    "grant": "SYN4",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN4-early.pdf",
+      "url": "https://example.org/SYN4-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "a08c03bb575e50d741b075efb19db480142c4167f95b6de4886aab3baae9b7ae",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN4-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN4-late": {
+    "doc_id": "SYN4-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 4 late",
+    "grant": "SYN4",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN4-late.pdf",
+      "url": "https://example.org/SYN4-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "898f075c22328a1cad98f9ef20e2875d6207add81b70626ec42307ffe67045d2",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN4-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN5-early": {
+    "doc_id": "SYN5-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 5 early",
+    "grant": "SYN5",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN5-early.pdf",
+      "url": "https://example.org/SYN5-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "a308626cf392a917dd9183960f2639cc7821b49c71fc511ccb628a631223eec0",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN5-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN5-late": {
+    "doc_id": "SYN5-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 5 late",
+    "grant": "SYN5",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN5-late.pdf",
+      "url": "https://example.org/SYN5-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "0d3a017674b5f2ff0a9cedf20b6b7255b38e1fa1ac59f908eec200f885054784",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN5-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN6-early": {
+    "doc_id": "SYN6-early",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v1",
+    "title": "Synthetic DMP 6 early",
+    "grant": "SYN6",
+    "scope": "project-wide",
+    "publication_date": "2020-06-01",
+    "issue_date": {
+     "value": "2020-06-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN6-early.pdf",
+      "url": "https://example.org/SYN6-early.pdf",
+      "format": "pdf",
+      "bytes": 20,
+      "sha256": "245978ebe00765c9303f19d16b40ebf9c7cce28df36254fcb2b05bb360729c5d",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN6-early.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   },
+   "SYN6-late": {
+    "doc_id": "SYN6-late",
+    "source": "manual",
+    "record_id": null,
+    "record_url": null,
+    "doi": null,
+    "concept_id": null,
+    "version_label": "v2",
+    "title": "Synthetic DMP 6 late",
+    "grant": "SYN6",
+    "scope": "project-wide",
+    "publication_date": "2023-03-01",
+    "issue_date": {
+     "value": "2023-03-01",
+     "label": "cover",
+     "locator": "p1",
+     "source_url": "",
+     "state": "verified",
+     "verified_by": "test",
+     "verified_on": "2026-01-01"
+    },
+    "alt_dates": [],
+    "files": [
+     {
+      "name": "SYN6-late.pdf",
+      "url": "https://example.org/SYN6-late.pdf",
+      "format": "pdf",
+      "bytes": 19,
+      "sha256": "1049e3451bbe7187d98a380b69b84e717345ca04833a983f118db78eca4b73c3",
+      "repo_checksum": null,
+      "retrieved": "2026-01-01",
+      "local_path": "synthetic/SYN6-late.pdf",
+      "licence": "",
+      "access": "verified",
+      "analysis": true
+     }
+    ],
+    "prior_checks": []
+   }
+  }
+ },
+ "synthetic_note": "files live at synthetic/<doc_id>.pdf with content 'synthetic <grant> <role>' - only the Python freeze test creates them, in a temporary root",
+ "escape_expected": {
+  "csv_row": "plain,\"comma, inside\",\"quote \"\" inside\",pipe | inside,\"line\nbreak\",back\\slash",
+  "md_row": "| plain | comma, inside | quote \" inside | pipe \\| inside | line break | back\\\\slash |"
+ }
+}

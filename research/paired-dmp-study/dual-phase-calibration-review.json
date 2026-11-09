@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-06",
+  "status": "bounded_calibration_preparation_review_complete_no_material_issue",
+  "review_scope": "Approval boundary, source identity/locators, all48blank row records, units and carryover handling. No human assessment or phase-policy selection.",
+  "reviewed_files": [
+    {
+      "path": "research/paired-dmp-study/dual-phase-calibration.md",
+      "bytes": 10462,
+      "sha256": "399681c578e09e54011d64e7f304c00a011865c086df7d6241a313cc5c6bee03"
+    },
+    {
+      "path": "research/paired-dmp-study/dual-phase-calibration.json",
+      "bytes": 87821,
+      "sha256": "5e067492465b19ddfe6b54c22c4b95b89819e11e161c33531dcf9775c2a0e79e"
+    }
+  ],
+  "checks": [
+    {
+      "id": "scope",
+      "result": "pass",
+      "evidence": "Both reports and decision fields limit D15 to preparing two early calibration interpretations. Main phase approval, detailed anchors, model matrix change, extra calls and pilot resumption remain false. PathOS end context is proposed."
+    },
+    {
+      "id": "identity",
+      "result": "pass",
+      "evidence": "AD4GD E/M use record10839334 and identical SHA-2567c3d64d506c4c5a1db61ffc8c3abad716f616ff5a0fa32d35ee0519dcd9b4d93. PathOS17578116 uses SHA-256732074dc327f114356c5cff1ccc7f6846d79480eabe8daa2b53951058e4e94fa. Both local hashes independently recomputed."
+    },
+    {
+      "id": "outside_cohort",
+      "result": "pass",
+      "evidence": "Calibration grants101061001 and101058728 are absent from all6actual cohort-proposal.json grant fields. Their same-paper phase conditions are not additional documents or longitudinal pairs."
+    },
+    {
+      "id": "source_identity_locators",
+      "result": "pass",
+      "evidence": "Independently extracted source physicalpp1-2 confirm record/project/grant/deliverable/update context; AD4GD physicalp3 confirms declared intermediate report context. No DMP quality evaluation made."
+    },
+    {
+      "id": "rosters",
+      "result": "pass",
+      "evidence": "All3condition rows are exactly ordered16-ID rosters; all48 physical/printed page arrays, phases, native-presence fields and native pointers match the pinned rubric-comparability.json."
+    },
+    {
+      "id": "undefined",
+      "result": "pass",
+      "evidence": "AD4GD-M5d is the sole instrument_defined=false row. Counts are16E+15M+16L=47defined,31defined across early interpretations and1source-undefined mid5d. Undefined is source metadata, not an assessmentNA."
+    },
+    {
+      "id": "responses",
+      "result": "pass",
+      "evidence": "All48response objects exactly match the fully blank response contract, including null scores/applicability/evidence/confidence/search-completion, empty reasons/rationale/comments/evidence/search arrays and entry_state=not_entered. No expected scores or labels supplied."
+    },
+    {
+      "id": "reviewer_state",
+      "result": "pass",
+      "evidence": "All3reviewer_id fields null, allhuman_response_received false, assignments empty and order plan proposed/unscheduled. D14 deferral is preserved; no current reading/rating task requested."
+    },
+    {
+      "id": "carryover",
+      "result": "pass",
+      "evidence": "Both proposed E/M sequences and repeated-exposure limits are explicit. One same-reviewer second phase is not independent evidence; no guaranteed washout or phase blinding claimed. Scores are not averaged across phase lenses."
+    },
+    {
+      "id": "provenance",
+      "result": "pass",
+      "evidence": "All8referenced source/manifests independently rehashed, both stage fractions recomputed against stated dated source snapshots, and reviewed report JSON parsed. No new live project-date verification claimed."
+    }
+  ],
+  "counts": {
+    "condition_rosters": 3,
+    "distinct_source_documents": 2,
+    "distinct_source_projects": 2,
+    "roster_rows": [
+      16,
+      16,
+      16
+    ],
+    "all_response_rows_blank": 48,
+    "early_source_defined_rows": 31,
+    "early_source_undefined_rows": 1,
+    "all_source_defined_rows": 47,
+    "human_responses": 0
+  },
+  "source_review_limit": "Every locator was checked against the pinned semantic crosswalk; this is not a new independent visual audit of all48original framework cells. The mid5d blank cell was visually inspected in the completed scientific review. Sourceidentity/header pages and AD4GD abstract were read without quality scoring.",
+  "scientific_review_pin_unchanged": {
+    "path": "research/paired-dmp-study/scientific-methods-review.json",
+    "sha256": "d69363b8622276f49cc9385b1210d59b15d67dc706d7263896ec0613f4159d61"
+  },
+  "pending": [
+    "Human pilot stays deferred.",
+    "Criterion/phase anchors, evidence-packet boundaries and human exposure/order need later calibration decisions.",
+    "Main benchmark phase policy and execution freeze remain unapproved.",
+    "PathOS end condition remains proposed context; preparation does not assign a reviewer or request assessment."
+  ],
+  "execution": {
+    "human_ratings_created": 0,
+    "model_calls": 0,
+    "platform_review_or_tests": false,
+    "external_contacts": 0,
+    "existing_files_edited_by_this_review": false
+  }
+}

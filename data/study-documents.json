@@ -1,0 +1,118 @@
+{
+ "documents": [
+  {
+   "acronym": "AGRICORE",
+   "cordis_branches": [
+    "natural sciences",
+    "agricultural sciences"
+   ],
+   "creators": [],
+   "doc_id": "AGRICORE-D9.2-v1.0",
+   "doi": null,
+   "files": [
+    {
+     "bytes": 698672,
+     "format": "pdf",
+     "local_path": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.pdf",
+     "name": "AGRICORE-D9.2-v1.0.pdf",
+     "sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+     "url": "https://agricore-project.eu/wp-content/uploads/2021/06/D9.2-1.pdf"
+    }
+   ],
+   "grant": "816078",
+   "project_end": "2024-06-30",
+   "project_start": "2019-09-01",
+   "provenance": {
+    "found_via": "cohort proposal 2026-11-04 (project website)",
+    "note": "absent from data/dmp_dataset.json; no Zenodo id is invented",
+    "registered": "2026-11-04",
+    "registered_by": "scripts/paired.py seed-registry",
+    "source_url": "https://agricore-project.eu/wp-content/uploads/2021/06/D9.2-1.pdf"
+   },
+   "publication_date": null,
+   "record_id": null,
+   "record_url": null,
+   "tier": "Horizon 2020",
+   "title": "D9.2 Data Management Plan",
+   "version_label": "D9.2 v1.0"
+  },
+  {
+   "acronym": "AGRICORE",
+   "cordis_branches": [
+    "natural sciences",
+    "agricultural sciences"
+   ],
+   "creators": [],
+   "doc_id": "AGRICORE-D9.3-v1.0",
+   "doi": null,
+   "files": [
+    {
+     "bytes": 807671,
+     "format": "pdf",
+     "local_path": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.pdf",
+     "name": "AGRICORE-D9.3-v1.0.pdf",
+     "sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+     "url": "https://agricore-project.eu/wp-content/uploads/2025/03/D9.3-Final-Data-Management-Plan.pdf"
+    }
+   ],
+   "grant": "816078",
+   "project_end": "2024-06-30",
+   "project_start": "2019-09-01",
+   "provenance": {
+    "found_via": "cohort proposal 2026-11-04 (project website)",
+    "note": "absent from data/dmp_dataset.json; no Zenodo id is invented",
+    "registered": "2026-11-04",
+    "registered_by": "scripts/paired.py seed-registry",
+    "source_url": "https://agricore-project.eu/wp-content/uploads/2025/03/D9.3-Final-Data-Management-Plan.pdf"
+   },
+   "publication_date": null,
+   "record_id": null,
+   "record_url": null,
+   "tier": "Horizon 2020",
+   "title": "D9.3 Final Data Management Plan",
+   "version_label": "D9.3 v1.0"
+  },
+  {
+   "acronym": "RECHARGE",
+   "cordis_branches": [
+    "medical and health sciences",
+    "humanities"
+   ],
+   "creators": [
+    "Rossetti, Ilaria",
+    "Mania, Joanna"
+   ],
+   "doc_id": "zenodo:17733866",
+   "doi": "10.5281/zenodo.17733866",
+   "files": [
+    {
+     "bytes": 236054,
+     "format": "pdf",
+     "local_path": "data/paired-dmp-corpus/101061233/17733866.pdf",
+     "name": "RECHARGE-DMP_v1.pdf",
+     "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+     "url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content"
+    }
+   ],
+   "grant": "101061233",
+   "project_end": "2025-09-30",
+   "project_start": "2022-10-01",
+   "provenance": {
+    "found_via": "cohort proposal 2026-11-04 (Zenodo version chain of concept 17733865)",
+    "note": "Zenodo record absent from the saved harvest",
+    "registered": "2026-11-04",
+    "registered_by": "scripts/paired.py seed-registry",
+    "source_url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content"
+   },
+   "publication_date": "2025-11-27",
+   "record_id": "17733866",
+   "record_url": "https://zenodo.org/records/17733866",
+   "tier": "Horizon Europe",
+   "title": "RECHARGE: Data Management Plan",
+   "version_label": ""
+  }
+ ],
+ "note": "Study documents that are not rows of data/dmp_dataset.json. Metadata and checksums only; source files keep their own terms and are not stored in git.",
+ "schema": "dmpbench.study-documents",
+ "schema_version": 1
+}

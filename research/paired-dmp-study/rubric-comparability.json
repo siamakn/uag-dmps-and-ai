@@ -1,0 +1,1083 @@
+{
+  "status": "draft_source_semantic_audit_not_approved_instrument_or_labels",
+  "prepared_date": "2026-11-06",
+  "scope": "Publication Table 2 full cells versus pinned default eva.json; not candidate DMP assessment, legal-compliance verification, or model-performance evaluation.",
+  "software_commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+  "latest_check": "Existing live-source check 2026-11-03; this audit verifies local pinned bytes and does not refresh upstream HEAD.",
+  "sources": {
+    "publication": {
+      "path": "data/paired-dmp-corpus/framework/DMP_Evaluation_V1.0.pdf",
+      "url": "https://zenodo.org/records/19630859/files/DMP_Evaluation_V1.0.pdf?download=1",
+      "sha256": "465a894b06bb67abea19acf16eba02dca8d665855a01572a7762ec3bb0e3fc26",
+      "kind": "preprint_version_1.0_table_2"
+    },
+    "native_rubric": {
+      "path": "data/paired-dmp-corpus/upstream/dmp-eva-b80b43de820d46440d982eb99b2b3da8f4c2f818/latest--eva.json",
+      "url": "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/eva.json",
+      "sha256": "8f0c169d51219a80d6fcb13bb517eb7f65c0a6471853e1b32d20f5cc92c612f9",
+      "kind": "default_source_rubric_not_effective_prompt"
+    },
+    "native_extractor": {
+      "path": "data/paired-dmp-corpus/upstream/dmp-eva-b80b43de820d46440d982eb99b2b3da8f4c2f818/latest--js--criteria-extractor.js",
+      "url": "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/criteria-extractor.js",
+      "sha256": "6c33859a7ae0be13b63cea52b436cd8a46f83aa54892a5a042457ff9f8999006",
+      "kind": "source_stage_selection"
+    },
+    "native_prompt_assembler": {
+      "path": "data/paired-dmp-corpus/upstream/dmp-eva-b80b43de820d46440d982eb99b2b3da8f4c2f818/latest--js--llm-service.js",
+      "url": "https://github.com/usadellab/dmp-eva/blob/b80b43de820d46440d982eb99b2b3da8f4c2f818/js/llm-service.js",
+      "sha256": "9af182a7249222aaff30e57e9e686839a4f67c6c67ee861d136ae5a58df8608b",
+      "kind": "source_prompt_assembly"
+    }
+  },
+  "method": {
+    "read": "Complete relevant Table 2 text plus visual render of all physical PDF pages 7-22; lifecycle prose physical p6.",
+    "locators": "Physical PDF pages are 1-based; printed page is physical minus one here. JSON pointers address exact hashed native file.",
+    "native_extractor_lines": [
+      715,
+      762
+    ],
+    "native_prompt_lines": [
+      74,
+      109
+    ],
+    "phase_order": [
+      "proposal_early_stage",
+      "mid_project",
+      "end_project"
+    ],
+    "no_human_or_model_scores": true,
+    "not_full_rubric_reproduction": true
+  },
+  "interpretation_limits": [
+    "Classifications are analytical source comparisons, not calibrated equivalence judgments or authoritative legal requirements.",
+    "Retained means no material source-cell difference identified, not empirically equivalent scoring.",
+    "Native default assembly does not transmit complete rubric wording; source-level matches must not be reported as model-visible criteria without prompt evidence.",
+    "Publication 4c attribution is inferred from the unlabelled ethics block in sequence; the physical cell content and boundaries are visible but the printed identifier/question are absent.",
+    "Blank mid-project 5d is instrument undefined; native 3c/5d absence is not_in_native_instrument. These do not express document-level NA."
+  ],
+  "criteria": [
+    {
+      "id": "1a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/0/subsections/0",
+      "native_id_line": 8,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            7,
+            8
+          ],
+          "publication_printed_pages": [
+            6,
+            7
+          ],
+          "publication_locator": "Table 2, 1a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 11,
+          "classification": "omitted_requirement",
+          "analysis": "Native omits the explicit personal-data-subject permission justification. Generic sources/access/permissions remain; they do not explicitly restore that check."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            7
+          ],
+          "publication_printed_pages": [
+            6
+          ],
+          "publication_locator": "Table 2, 1a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/0/stages/mid_project",
+          "native_stage_line": 12,
+          "classification": "retained",
+          "analysis": "Produced/reused data, changes, provenance and evolving documentation are retained."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            7
+          ],
+          "publication_printed_pages": [
+            6
+          ],
+          "publication_locator": "Table 2, 1a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/0/stages/end_project",
+          "native_stage_line": 13,
+          "classification": "retained",
+          "analysis": "Final datasets and justification of deviations are retained."
+        }
+      }
+    },
+    {
+      "id": "1b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/0/subsections/1",
+      "native_id_line": 17,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            8
+          ],
+          "publication_printed_pages": [
+            7
+          ],
+          "publication_locator": "Table 2, 1b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 20,
+          "classification": "retained",
+          "analysis": "Expected types, formats, volumes, proprietary-format justification and a no-new-data explanation are retained."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            8
+          ],
+          "publication_printed_pages": [
+            7
+          ],
+          "publication_locator": "Table 2, 1b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/1/stages/mid_project",
+          "native_stage_line": 21,
+          "classification": "retained",
+          "analysis": "Workflow monitoring, actual technical characteristics and format-conversion strategy are retained."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            8
+          ],
+          "publication_printed_pages": [
+            7
+          ],
+          "publication_locator": "Table 2, 1b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/0/subsections/1/stages/end_project",
+          "native_stage_line": 22,
+          "classification": "retained",
+          "analysis": "Final technical documentation/metadata and technical fidelity for reuse are retained. This cell is not simply a final volume inventory."
+        }
+      }
+    },
+    {
+      "id": "2a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/1/subsections/0",
+      "native_id_line": 32,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            8,
+            9
+          ],
+          "publication_printed_pages": [
+            7,
+            8
+          ],
+          "publication_locator": "Table 2, 2a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 35,
+          "classification": "retained",
+          "analysis": "Descriptive/process metadata, community standards, suitability, creation tools and metadata formats are retained, despite the shortened question."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            8,
+            9
+          ],
+          "publication_printed_pages": [
+            7,
+            8
+          ],
+          "publication_locator": "Table 2, 2a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/0/stages/mid_project",
+          "native_stage_line": 36,
+          "classification": "retained",
+          "analysis": "Standards/tools, QA/QC, selection rationale, conditional schema justification and metadata storage/sharing are retained."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            8,
+            9
+          ],
+          "publication_printed_pages": [
+            7,
+            8
+          ],
+          "publication_locator": "Table 2, 2a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/0/stages/end_project",
+          "native_stage_line": 37,
+          "classification": "retained",
+          "analysis": "Documentation evidence, QA outcomes and post-project metadata maintenance are retained."
+        }
+      }
+    },
+    {
+      "id": "2b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/1/subsections/1",
+      "native_id_line": 41,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            9,
+            10
+          ],
+          "publication_printed_pages": [
+            8,
+            9
+          ],
+          "publication_locator": "Table 2, 2b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 44,
+          "classification": "retained",
+          "analysis": "Verification/validation, versioning, QC procedures and conditional ethics-review reference are retained."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            9
+          ],
+          "publication_printed_pages": [
+            8
+          ],
+          "publication_locator": "Table 2, 2b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/1/stages/mid_project",
+          "native_stage_line": 45,
+          "classification": "retained",
+          "analysis": "The implementation report requirement is retained."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            9,
+            10
+          ],
+          "publication_printed_pages": [
+            8,
+            9
+          ],
+          "publication_locator": "Table 2, 2b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/1/subsections/1/stages/end_project",
+          "native_stage_line": 46,
+          "classification": "retained",
+          "analysis": "QC measures and integration with ethical/legal/preservation criteria are retained."
+        }
+      }
+    },
+    {
+      "id": "3a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/2/subsections/0",
+      "native_id_line": 56,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            10,
+            11
+          ],
+          "publication_printed_pages": [
+            9,
+            10
+          ],
+          "publication_locator": "Table 2, 3a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 59,
+          "classification": "omitted_requirement",
+          "analysis": "Native retains storage/backup and the conditional security statement, but omits specifying whether an external-storage Data Processing Agreement is needed."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            10,
+            11
+          ],
+          "publication_printed_pages": [
+            9,
+            10
+          ],
+          "publication_locator": "Table 2, 3a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/0/stages/mid_project",
+          "native_stage_line": 60,
+          "classification": "omitted_requirement",
+          "analysis": "Native retains actual locations/procedures/security tests, but omits documenting and approving institutional-policy deviations."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            10,
+            11
+          ],
+          "publication_printed_pages": [
+            9,
+            10
+          ],
+          "publication_locator": "Table 2, 3a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/0/stages/end_project",
+          "native_stage_line": 61,
+          "classification": "retained",
+          "analysis": "Final arrangements and transfer to preservation meeting security/integrity standards are retained; the publication adds emphasis on personal data."
+        }
+      }
+    },
+    {
+      "id": "3b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/2/subsections/1",
+      "native_id_line": 65,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            11
+          ],
+          "publication_printed_pages": [
+            10
+          ],
+          "publication_locator": "Table 2, 3b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 68,
+          "classification": "less_operational_detail",
+          "analysis": "Roles, access levels, sensitive-data justification and grant/documentation process remain. Publication additionally gives confidentiality/IP and account/authentication examples; do not turn examples into mandatory subtests."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            11,
+            12
+          ],
+          "publication_printed_pages": [
+            10,
+            11
+          ],
+          "publication_locator": "Table 2, 3b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/1/stages/mid_project",
+          "native_stage_line": 69,
+          "classification": "omitted_requirement",
+          "analysis": "Native omits explicit authentication/authorization, removal of users no longer requiring access, and identification of the project/IT audit-log custodian."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            11
+          ],
+          "publication_printed_pages": [
+            10
+          ],
+          "publication_locator": "Table 2, 3b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/2/subsections/1/stages/end_project",
+          "native_stage_line": 70,
+          "classification": "retained",
+          "analysis": "Discontinuing access and handling post-completion external requests are retained."
+        }
+      }
+    },
+    {
+      "id": "3c",
+      "native_present": false,
+      "native_subsection_pointer": null,
+      "native_id_line": null,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": false,
+        "semantic_crosswalk_review_required": false,
+        "status": "not_defined_for_missing_native_criterion",
+        "reason": "Missing native criterion is a coverage disposition, not a numeric observation."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            12,
+            13
+          ],
+          "publication_printed_pages": [
+            11,
+            12
+          ],
+          "publication_locator": "Table 2, 3c proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "not_in_native_instrument",
+          "analysis": "No native 3c stage cell. Related security material in 3a/4a is overlap, not complete coverage of classification, safeguards, support and incident planning."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            12,
+            13
+          ],
+          "publication_printed_pages": [
+            11,
+            12
+          ],
+          "publication_locator": "Table 2, 3c mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "not_in_native_instrument",
+          "analysis": "No native 3c stage cell. Other IDs do not restore explicit incident/near-miss reporting, response and secured-transfer checks."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            12
+          ],
+          "publication_printed_pages": [
+            11
+          ],
+          "publication_locator": "Table 2, 3c end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "not_in_native_instrument",
+          "analysis": "No native 3c stage cell. Do not infer a criterion result from other IDs or count absence as zero/NA."
+        }
+      }
+    },
+    {
+      "id": "4a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/3/subsections/0",
+      "native_id_line": 80,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            13,
+            14,
+            15
+          ],
+          "publication_printed_pages": [
+            12,
+            13,
+            14
+          ],
+          "publication_locator": "Table 2, 4a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 83,
+          "classification": "omitted_requirements_and_conditions",
+          "analysis": "Native compresses legal basis to Article 6/9 and omits the detailed conditional basis/subject-information checks, DPIA timing, safeguards, support and planned agreements. The publication explicitly accepts an inapplicability statement; the native question is conditional but lacks that instruction."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            13,
+            14,
+            15
+          ],
+          "publication_printed_pages": [
+            12,
+            13,
+            14
+          ],
+          "publication_locator": "Table 2, 4a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/0/stages/mid_project",
+          "native_stage_line": 84,
+          "classification": "omitted_requirements_and_conditions",
+          "analysis": "Native retains ROPA/basis/consent/DPIA/TOM headings but drops conditional qualifications and detail on approved locations, international-transfer assessment, agreements, oversight and changes in processing scope. Generic consent wording must not become a universal consent requirement."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            13,
+            14
+          ],
+          "publication_printed_pages": [
+            12,
+            13
+          ],
+          "publication_locator": "Table 2, 4a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/0/stages/end_project",
+          "native_stage_line": 85,
+          "classification": "changed_acceptance_routes",
+          "analysis": "Native requires anonymized published outputs, while the publication also permits appropriate controlled access and documented exceptions for public outputs. Native also omits retention-schedule alignment, future-reuse basis, compliance-record archiving and lifecycle monitoring. This is altered acceptance logic, not just abbreviation."
+        }
+      }
+    },
+    {
+      "id": "4b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/3/subsections/1",
+      "native_id_line": 89,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            15,
+            16
+          ],
+          "publication_printed_pages": [
+            14,
+            15
+          ],
+          "publication_locator": "Table 2, 4b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 92,
+          "classification": "omitted_requirements_and_conditions",
+          "analysis": "Native keeps IPR, third-party licensing, ownership and legal frameworks, but drops the no-restriction statement route, agreement/contract ownership context and TTO/legal-department handling."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            15,
+            16
+          ],
+          "publication_printed_pages": [
+            14,
+            15
+          ],
+          "publication_locator": "Table 2, 4b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/1/stages/mid_project",
+          "native_stage_line": 93,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps licensing/agreements/access, but omits post-completion publication/reuse rights and responsibility for IP records."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            15,
+            16
+          ],
+          "publication_printed_pages": [
+            14,
+            15
+          ],
+          "publication_locator": "Table 2, 4b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/1/stages/end_project",
+          "native_stage_line": 94,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps ownership/post-project access/registered IP, but omits fulfillment of obligations and collaborators/institutions awareness of continuing rights/restrictions."
+        }
+      }
+    },
+    {
+      "id": "4c",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/3/subsections/2",
+      "native_id_line": 98,
+      "publication_heading_status": "unlabelled_ethics_block_inferred_as_4c_by_sequence_and_content",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            17,
+            18
+          ],
+          "publication_printed_pages": [
+            16,
+            17
+          ],
+          "publication_locator": "Table 2, 4c proposal_early_stage column (unlabelled ethics block)",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/2/stages/proposal_early_stage",
+          "native_stage_line": 101,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps broad ethics approval/recruitment/safeguards/codes, but drops approval application status, participant information/risk detail, cultural/community considerations, vulnerable-group safeguards and responsible person/procedures."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            17
+          ],
+          "publication_printed_pages": [
+            16
+          ],
+          "publication_locator": "Table 2, 4c mid_project column (unlabelled ethics block)",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/2/stages/mid_project",
+          "native_stage_line": 102,
+          "classification": "omitted_requirement",
+          "analysis": "Native omits naming the approving body and explicit recruitment/sampling changes. Ethical/study-population changes remain."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            17
+          ],
+          "publication_printed_pages": [
+            16
+          ],
+          "publication_locator": "Table 2, 4c end_project column (unlabelled ethics block)",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/3/subsections/2/stages/end_project",
+          "native_stage_line": 103,
+          "classification": "omitted_requirement",
+          "analysis": "Native omits participant agreements in the published-material check. Broad fulfillment/documentation and end-of-study obligations remain."
+        }
+      }
+    },
+    {
+      "id": "5a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/4/subsections/0",
+      "native_id_line": 113,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            18
+          ],
+          "publication_printed_pages": [
+            17
+          ],
+          "publication_locator": "Table 2, 5a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 116,
+          "classification": "changed_logical_connector",
+          "analysis": "For unshareable data, publication has separate metadata-sharing and ten-year-storage explanations; native joins them as alternatives with OR. A plan meeting just one can meet the native wording while leaving a publication check unanswered."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            18
+          ],
+          "publication_printed_pages": [
+            17
+          ],
+          "publication_locator": "Table 2, 5a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/0/stages/mid_project",
+          "native_stage_line": 117,
+          "classification": "mixed_scope_change",
+          "analysis": "Native drops selected-but-not-yet-used repositories, timeline-format changes and internal data sharing (retains metadata sharing). This both narrows the repository route and reduces other checks."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            18
+          ],
+          "publication_printed_pages": [
+            17
+          ],
+          "publication_locator": "Table 2, 5a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/0/stages/end_project",
+          "native_stage_line": 118,
+          "classification": "omitted_requirement",
+          "analysis": "Native retains licenses/restrictions/embargoes/sensitive-access conditions, but drops access procedures and an explicit availability-timing/embargo-justification check."
+        }
+      }
+    },
+    {
+      "id": "5b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/4/subsections/1",
+      "native_id_line": 122,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            18,
+            19
+          ],
+          "publication_printed_pages": [
+            17,
+            18
+          ],
+          "publication_locator": "Table 2, 5b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 125,
+          "classification": "qualifier_removed_and_omissions",
+          "analysis": "Native drops metadata selection and a detailed no-repository storage route. It presents 10+ years without the publication example qualifier or alignment to funder/community expectations; calibrate whether this is being read as a fixed minimum."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            18,
+            19
+          ],
+          "publication_printed_pages": [
+            17,
+            18
+          ],
+          "publication_locator": "Table 2, 5b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/1/stages/mid_project",
+          "native_stage_line": 126,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps dataset selection/criteria and archive confirmation but drops retention-period updates."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            18,
+            19
+          ],
+          "publication_printed_pages": [
+            17,
+            18
+          ],
+          "publication_locator": "Table 2, 5b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/1/stages/end_project",
+          "native_stage_line": 127,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps deposit/metadata/license/PID confirmation but drops explaining deviations. PID mention here does not replace full 5d coverage."
+        }
+      }
+    },
+    {
+      "id": "5c",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/4/subsections/2",
+      "native_id_line": 131,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            19
+          ],
+          "publication_printed_pages": [
+            18
+          ],
+          "publication_locator": "Table 2, 5c proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/2/stages/proposal_early_stage",
+          "native_stage_line": 134,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps planned formats/tools and open-format preference but drops acknowledgement/justification of proprietary formats."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            19
+          ],
+          "publication_printed_pages": [
+            18
+          ],
+          "publication_locator": "Table 2, 5c mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/2/stages/mid_project",
+          "native_stage_line": 135,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps tool/format updates and open-source preference, but omits alternatives or rationale when proprietary tools are required."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            19,
+            20
+          ],
+          "publication_printed_pages": [
+            18,
+            19
+          ],
+          "publication_locator": "Table 2, 5c end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/4/subsections/2/stages/end_project",
+          "native_stage_line": 136,
+          "classification": "mixed_scope_and_conditionality_change",
+          "analysis": "Native keeps preservation formats/access mechanisms/code links, but omits explicitly naming needed tools and the conditional small-dataset dual-format recommendation. It drops the applicability qualifier for code/workflows and the open-license preference. Conditional recommendations require distinct treatment from obligations."
+        }
+      }
+    },
+    {
+      "id": "5d",
+      "native_present": false,
+      "native_subsection_pointer": null,
+      "native_id_line": null,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": false,
+        "semantic_crosswalk_review_required": false,
+        "status": "not_defined_for_missing_native_criterion",
+        "reason": "Missing native criterion is a coverage disposition, not a numeric observation."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            20
+          ],
+          "publication_printed_pages": [
+            19
+          ],
+          "publication_locator": "Table 2, 5d proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "not_in_native_instrument",
+          "analysis": "No native 5d stage cell; publication has PID planning and a justification route for no PIDs."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            20
+          ],
+          "publication_printed_pages": [
+            19
+          ],
+          "publication_locator": "Table 2, 5d mid_project column",
+          "publication_cell_state": "instrument_undefined_blank",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "instrument_undefined_and_not_in_native_instrument",
+          "analysis": "Publication middle cell is visibly blank. Instrument undefined is distinct from both native omission and document-level inapplicability; do not infer wording from early/end or 5b."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            20
+          ],
+          "publication_printed_pages": [
+            19
+          ],
+          "publication_locator": "Table 2, 5d end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": null,
+          "native_stage_line": null,
+          "classification": "not_in_native_instrument",
+          "analysis": "No native 5d stage cell; the publication checks published-dataset PIDs and linkage to metadata. The 5b deposit/PID mention is only partial conceptual overlap."
+        }
+      }
+    },
+    {
+      "id": "6a",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/5/subsections/0",
+      "native_id_line": 146,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            20,
+            21
+          ],
+          "publication_printed_pages": [
+            19,
+            20
+          ],
+          "publication_locator": "Table 2, 6a proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/0/stages/proposal_early_stage",
+          "native_stage_line": 149,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps roles/task assignment/post-project responsibility, but task examples omit acquisition, recovery and compliance responsibilities."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            20
+          ],
+          "publication_printed_pages": [
+            19
+          ],
+          "publication_locator": "Table 2, 6a mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/0/stages/mid_project",
+          "native_stage_line": 150,
+          "classification": "omitted_requirement",
+          "analysis": "Native keeps actual roles/effort, bottlenecks and onboarding, but omits explicit fulfillment monitoring, overlaps, replacements and updating RDM documentation for the team."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            20
+          ],
+          "publication_printed_pages": [
+            19
+          ],
+          "publication_locator": "Table 2, 6a end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/0/stages/end_project",
+          "native_stage_line": 151,
+          "classification": "omitted_requirement",
+          "analysis": "Native omits institutional support in the final contributor list and adequacy of responsibilities (retains resource adequacy)."
+        }
+      }
+    },
+    {
+      "id": "6b",
+      "native_present": true,
+      "native_subsection_pointer": "/data_management_plan/5/subsections/1",
+      "native_id_line": 155,
+      "publication_heading_status": "printed_id_present",
+      "future_numeric_comparison": {
+        "calibration_required": true,
+        "semantic_crosswalk_review_required": true,
+        "status": "pending_no_conversion_defined",
+        "reason": "Even retained source wording does not equate native evidence-unit 0-100 scores with criterion-level ordinal judgments."
+      },
+      "phases": {
+        "proposal_early_stage": {
+          "publication_physical_pages": [
+            21,
+            22
+          ],
+          "publication_printed_pages": [
+            20,
+            21
+          ],
+          "publication_locator": "Table 2, 6b proposal_early_stage column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/1/stages/proposal_early_stage",
+          "native_stage_line": 158,
+          "classification": "less_operational_detail",
+          "analysis": "Resource estimates and planned support remain. Native drops the illustrative quantification detail and separate acknowledgement of existing institutional infrastructure/services; generic planned support does not necessarily cover the latter."
+        },
+        "mid_project": {
+          "publication_physical_pages": [
+            21
+          ],
+          "publication_printed_pages": [
+            20
+          ],
+          "publication_locator": "Table 2, 6b mid_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/1/stages/mid_project",
+          "native_stage_line": 159,
+          "classification": "omitted_requirement",
+          "analysis": "Native drops expenditures, adjustments, software sufficiency and additional support acquired; allocation/workload/storage/training remain."
+        },
+        "end_project": {
+          "publication_physical_pages": [
+            21
+          ],
+          "publication_printed_pages": [
+            20
+          ],
+          "publication_locator": "Table 2, 6b end_project column",
+          "publication_cell_state": "defined",
+          "native_stage_pointer": "/data_management_plan/5/subsections/1/stages/end_project",
+          "native_stage_line": 160,
+          "classification": "omitted_requirement",
+          "analysis": "Native drops impact of resources on effectiveness; total spending, cost-efficiency, FAIR adequacy and support reporting remain."
+        }
+      }
+    }
+  ],
+  "phase_options_status": "Unapproved alternatives; no phase or anchor is chosen here.",
+  "phase_options": [
+    {
+      "id": "P1",
+      "name": "Initial strategy versus final outcomes",
+      "assignment": "All sampled early documents: proposal_early_stage; all late documents: end_project.",
+      "advantage": "Uses the publication combined proposal/early category for initial strategies and its end category for documented outcomes. Post-award status does not itself exclude the combined early category.",
+      "tradeoff": "The <=50% bin can contain established implementation; early anchors may under-demand evidence. Different early/end requirements prevent a common-scale improvement interpretation.",
+      "decision_needed": "Justify a common initial-strategy interpretation from externally documented version purpose, then calibrate anchors separately for the two phases."
+    },
+    {
+      "id": "P2",
+      "name": "Implementation checkpoint versus final outcomes",
+      "assignment": "All sampled early documents: mid_project; all late documents: end_project.",
+      "advantage": "Makes implementation/progress central for post-award DMPs and avoids treating every early sample as a proposal.",
+      "tradeoff": "An initial deliverable may legitimately contain plans before substantial data production; mid requirements can over-demand evidence. Also changes expectations across versions.",
+      "decision_needed": "State why all early issue dates/version purposes warrant implementation checks; retain missing implementation separately from inaccessible evidence."
+    },
+    {
+      "id": "P3",
+      "name": "Common end-state readiness lens",
+      "assignment": "Both versions: end_project, explicitly labelled readiness against end-state expectations.",
+      "advantage": "Holds criterion wording constant for a descriptive within-pair change in documented readiness.",
+      "tradeoff": "Early plans are intentionally assessed before outcomes are due; this changes the construct from stage-appropriate sufficiency to end-state readiness. It cannot be described as the framework stage-sensitive evaluation.",
+      "decision_needed": "Approve that different estimand and calibrate what counts as evidence under the same end-state lens; do not quietly merge with phase-appropriate scores."
+    },
+    {
+      "id": "P4",
+      "name": "Declared phase sensitivity analysis",
+      "assignment": "For each early document retain separate proposal_early_stage and mid_project conditions; all late documents use end_project.",
+      "advantage": "Shows whether the conclusion depends on early-phase interpretation without pretending <=50% resolves it.",
+      "tradeoff": "More human/model assessments, correlated repeat exposure and multiplicity; the primary interpretation still must be chosen before results. Mid-project 5d is instrument undefined in this condition.",
+      "decision_needed": "Freeze primary versus sensitivity condition, review exposure/order and separate records/denominators; do not choose the favorable phase after scores."
+    }
+  ],
+  "late_evidence_boundary": "Issue date >100% supports a post-project sampling bin and the end concept, but does not show that completed actions are documented in the DMP. Repositories, metadata files, ELN snapshots, compliance records and final spending may be external. A DMP-only packet can establish reporting, not actual practice; inaccessible external evidence is not absence or a negative legal finding.",
+  "before_numeric_comparison": [
+    "Freeze criterion/phase and packet boundary; preserve changed acceptance routes instead of assuming ID identity.",
+    "Calibrate phase-specific ordinal anchors outside the final cohort.",
+    "A distinct native human-instrument condition, if adopted, needs separate records and cannot replace framework reference judgments.",
+    "Develop and independently justify any native 0-100 versus human ordinal mapping on outside-cohort material; none is supplied or approved here.",
+    "Keep missing native criteria, instrument-undefined cells, NA, inaccessible evidence, and missing model output separate."
+  ],
+  "verification": {
+    "mechanical_checks": "16 unique IDs; 14 native presences; all 42 native stage JSON pointers and line numbers resolve; all four local SHA-256 values match; only mid-project 5d is marked blank/undefined.",
+    "independent_bounded_source_check": {
+      "status": "passed_no_material_correction",
+      "cells": [
+        "4a/end_project",
+        "5a/proposal_early_stage",
+        "5b/proposal_early_stage",
+        "5d/mid_project"
+      ],
+      "scope": "Second reader checked rendered primary PDF cells against actual report/native source; not a second exhaustive 16-ID review."
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "checkpoint_date": "2026-11-06",
+  "timezone": "Europe/Berlin",
+  "extends": [
+    "status.json",
+    "continuation-2026-11-06.json"
+  ],
+  "entrypoint": "scientific-preparation-2026-11-06.md",
+  "user_intent": "progress_scientific_work_while_Claude_implements_platform",
+  "platform_acceptance_review": "postponed_no_tests_run",
+  "completed": [
+    "close_prior_study_methods_and_access_limits",
+    "focused_primary_evidence_map",
+    "publication_native_semantic_crosswalk",
+    "independent_scientific_source_review",
+    "record_user_D15_choice",
+    "blank_dual_phase_calibration_materials",
+    "independent_calibration_preparation_review"
+  ],
+  "decision_D15": {
+    "user_choice": "Prepare both early-phase interpretations as separate calibration conditions; more reviewer work",
+    "scope": "calibration_preparation_only",
+    "recorded_in": "decisions.md",
+    "main_benchmark_phase_policy_approved": false
+  },
+  "calibration_preparation": {
+    "materials": "dual-phase-calibration.json",
+    "independent_review": "dual-phase-calibration-review.json",
+    "counts": {
+      "distinct_source_documents": 2,
+      "distinct_projects": 2,
+      "AD4GD_repeated_phase_conditions": 2,
+      "PathOS_proposed_end_contexts": 1,
+      "condition_rosters": 3,
+      "blank_rows_total": 48,
+      "defined_rows_total": 47,
+      "AD4GD_defined_rows": 31,
+      "instrument_undefined_rows_total": 1,
+      "entered_responses": 0,
+      "human_assessment_records": 0,
+      "model_calls": 0
+    },
+    "human_pilot": "still_deferred",
+    "reviewer_assignment": "unassigned",
+    "anchors": "draft_not_frozen"
+  },
+  "literature": {
+    "report": "related-work-evidence-map.md",
+    "closest_methods_report": "prior-study-methods.md",
+    "queries": 13,
+    "works_mapped": 7,
+    "systematic_review_or_novelty_established": false,
+    "uninspected_methods": [
+      "Vandenberk2025thesis",
+      "Frnka2025thesis",
+      "FrnkaSuchanek2026article"
+    ],
+    "unavailable_is_absent": false
+  },
+  "rubric": {
+    "report": "rubric-comparability.md",
+    "publication_IDs": 16,
+    "native_IDs": 14,
+    "exact_native_phase_pointers": 42,
+    "numeric_mapping_approved": false
+  },
+  "checks": {
+    "source_hashes_and_pointers": "passed",
+    "scientific_review_central_claims": 9,
+    "calibration_review_checks": 10,
+    "blank_response_rows": 48,
+    "defined_cells": 47,
+    "undefined_mid_5d": 1,
+    "json_and_local_links": "passed",
+    "core_proposal_experiment_and_packet_hashes": "unchanged",
+    "historical_selection": "unchanged"
+  },
+  "human_labels_created": 0,
+  "model_inference_requests": 0,
+  "external_messages_sent": 0,
+  "platform_files_changed_by_this_work": false,
+  "cohort_frozen": false,
+  "pending_user_questions": [],
+  "required_user_reading_or_rating_now": false,
+  "next_actions": [
+    "retain_both_calibration_conditions_and_resume_only_when_reviewers_ready",
+    "finalize_calibration_evidence_boundary_anchors_and_exposure_order_before_use",
+    "obtain_missing_primary_methods_through_normal_access_before_novelty_claims",
+    "review_Claude_platform_after_changes_stable",
+    "resolve_Mainz_model_and_context_profile_when_info_available"
+  ],
+  "historical_selection_sha256": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+  "artifacts_sha256": {
+    "prior-study-methods.md": "b1e81a9b5306334e05180d756bf1773baff318d6ac8bf92c9f8bae9b9b5e345d",
+    "prior-study-methods.json": "95231a0685ec4995fd26634a3ab3ba68ddc30665ef847b5cdee388e98541b893",
+    "rubric-comparability.md": "c87b82c5819709579402ab1eb006d53dcf1156db59a8d6be86ba59bef37f6e61",
+    "rubric-comparability.json": "288efc6faf9c0f7c1cad7e39fdc11e5fa0c09e602559e0aa95df5055a21da088",
+    "related-work-evidence-map.md": "e2563bea4679e7d2e299c416e9753919c5167f75baa6609018705dbf6192df8e",
+    "related-work-evidence-map.json": "f81d1ecfa4f98f952fc81be93ed2d74b9d9b28ff55c9ca6a6632dd06728c7cd1",
+    "scientific-methods-review.md": "af13b9028bc87eca813952b6ab299a195e9cbcf1db1063da24aca5e6dc3f39b0",
+    "scientific-methods-review.json": "d69363b8622276f49cc9385b1210d59b15d67dc706d7263896ec0613f4159d61",
+    "dual-phase-calibration.md": "399681c578e09e54011d64e7f304c00a011865c086df7d6241a313cc5c6bee03",
+    "dual-phase-calibration.json": "5e067492465b19ddfe6b54c22c4b95b89819e11e161c33531dcf9775c2a0e79e",
+    "dual-phase-calibration-review.md": "a84efc0895e068aec10c9aaf53576efff7b17ff5908ac3bc35897cb07e00bd7d",
+    "dual-phase-calibration-review.json": "fbefb93914bef4f542b9bea5a8b81646fba3416044b33adfddb412ab2ec0c0fa",
+    "scientific-preparation-2026-11-06.md": "08c52e560f2051a61333e636a5d048a38fac7bfe09771dbfb8c6dc7d123af8a2",
+    "decisions.md": "038ec32f44ec7e6e343571be0b664d2463212634ea54cf6386b2e5fd12ee2612",
+    "human-review-protocol-draft.md": "b0a9df847f02077c8d32b4928b15b60ad48aad5963b5522dfaa395c9d523a121",
+    "calibration-worksheet.md": "0380187d9117b67a9ce23ab09bf0bd301fb005f7fd345e337f23da5ae646610f",
+    "README.md": "d0d9819873872ce425f70cb80e54faf3c7a7b6180763ec0dfdf7582c066af0e3",
+    "status.json": "cfa73f6e31e9497835a75e6d1ccc9fe13606643027d2915fbbd873cab15e71c3"
+  }
+}

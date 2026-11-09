@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "unfilled_information_template_not_a_runnable_configuration",
+  "provider_alias": "Mainz",
+  "documentation_url": null,
+  "api_base_url": null,
+  "request_schema_reference": null,
+  "authentication_method": null,
+  "credential_environment_variable_name": null,
+  "credential_value": "DO_NOT_STORE_IN_THIS_TEMPLATE",
+  "models": [
+    {
+      "experiment_role": "M0",
+      "exact_model_id": null,
+      "checkpoint_revision": null,
+      "tokenizer_revision": null,
+      "serving_software_revision": null,
+      "quantization": null,
+      "context_tokens_limit": null,
+      "maximum_output_tokens": null,
+      "service_input_size_limit": null,
+      "actual_token_accounting_method": null,
+      "capabilities_and_accepted_parameters": null,
+      "known_provider_defaults": null,
+      "response_model_revision_field": null
+    }
+  ],
+  "generation_parameters_requested": null,
+  "generation_parameters_actually_sent": null,
+  "generation_parameters_accepted_or_rejected": null,
+  "request_id_and_usage_fields": null,
+  "rate_and_concurrency_limits": null,
+  "test_allocation_and_cost_basis": null,
+  "submission_and_retention_terms_reference": null,
+  "source_document_intended_use_confirmation": null,
+  "complete_request_context_fit_verified": false,
+  "human_pilot": "deferred",
+  "model_requests_made": 0,
+  "execution_approved_by_this_template": false
+}

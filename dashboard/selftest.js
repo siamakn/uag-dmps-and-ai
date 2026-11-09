@@ -3,15 +3,38 @@
 
    It drives the real UI through window.__APP__ and the real DOM: filters, search,
    sorting, column show/hide/reorder, selection, the coverage matrix, the export
-   formats and the round trip to the API. Results land in #testlog and in the
-   document title, so a headless browser can read them with --dump-dom.
+   formats, the paired study (assignment, evidence, validation, persistence, import,
+   export, freeze refusal) and the round trips to the API. Results land in #testlog
+   and in the document title, so a headless browser can read them with --dump-dom.
 
-       python scripts/serve.py --no-open
+   It never touches real state: serve.py only serves /selftest with a temporary state
+   dir (--test), and every dmpbench.* browser key is restored when the run ends.
+
+       python scripts/serve.py --test --no-open
        chrome --headless=new --dump-dom "http://127.0.0.1:8756/selftest"
+       chrome --headless=new --dump-dom "http://127.0.0.1:8756/selftest?phase=reload"
+     standalone:
+       python scripts/05_build_dashboard.py --selftest /tmp/st.html
+       chrome --headless=new --user-data-dir=/tmp/prof --dump-dom file:///tmp/st.html
+       chrome --headless=new --user-data-dir=/tmp/prof --dump-dom "file:///tmp/st.html?phase=reload"
 */
 (function(){
 "use strict";
-var log=[], pass=0, fail=0;
+var log=[], pass=0, fail=0, skip=0;
+function skipped(name, why){ skip++; log.push("SKIP  "+name+"  -> "+why); }
+
+/* Snapshot every dmpbench.* key now, restore it at the end. */
+var STORE0={};
+try{ for(var si=0;si<localStorage.length;si++){ var sk=localStorage.key(si);
+  if(sk.indexOf("dmpbench.")===0) STORE0[sk]=localStorage.getItem(sk); } }catch(e){}
+function restoreStore(keep){
+  var keepList=[].concat(keep||[]);
+  try{
+    var now=[]; for(var i=0;i<localStorage.length;i++) now.push(localStorage.key(i));
+    now.forEach(function(k){ if(k.indexOf("dmpbench.")===0 && !(k in STORE0) && keepList.indexOf(k)<0) localStorage.removeItem(k); });
+    Object.keys(STORE0).forEach(function(k){ if(keepList.indexOf(k)<0) localStorage.setItem(k,STORE0[k]); });
+  }catch(e){}
+}
 
 function ok(name, cond, detail){
   if(cond){ pass++; log.push("PASS  "+name); }
@@ -24,8 +47,8 @@ function eq(name, got, want){
 function flush(done){
   var el=document.getElementById("testlog");
   el.hidden=false;
-  el.textContent="SELFTEST "+pass+"/"+(pass+fail)+" passed, "+fail+" failed\n\n"+log.join("\n");
-  document.title="SELFTEST "+pass+"/"+(pass+fail)+" fail="+fail;
+  el.textContent="SELFTEST "+pass+"/"+(pass+fail)+" passed, "+fail+" failed, "+skip+" skipped\n\n"+log.join("\n");
+  document.title="SELFTEST "+pass+"/"+(pass+fail)+" fail="+fail+" skip="+skip+(done?"":" (running)");
   if(done) log.push("done");
 }
 
@@ -44,6 +67,9 @@ function firstRowCells(){
 
 window.__ONREADY__=function(){
   var A=window.__APP__, S=A.state, R=A.ROWS;
+  if(/[?&]phase=reload/.test(location.search)) return reloadPhase(A);
+  /* the historical 3 x 3 tests below run in legacy mode; the paired study has its own block */
+  A.setMode("legacy");
 
   /* ---------- data ---------- */
   ok("dataset loaded", R.length>2000, R.length+" rows");
@@ -612,29 +638,679 @@ window.__ONREADY__=function(){
   eq("clearing empties the tray", document.getElementById("t-n").textContent, "0");
   eq("empty tray shows its hint", document.querySelectorAll("#picked li.empty").length, 1);
 
-  /* ---------- API round trip ---------- */
-  var api=window.DMP_API;
-  if(!api){
-    ok("selection persists to the API (standalone build - skipped)", true);
-    return flush(true);
-  }
-  A.setSel([a.id,b.id]);
-  setTimeout(function(){
-    fetch(api+"/selection").then(function(r){ return r.json(); }).then(function(d){
-      ok("API stored the selection", d.ids && d.ids.length===2, JSON.stringify(d.ids));
-      ok("API resolved the records", d.selection && d.selection.length===2);
-      A.setSel([]);
-      setTimeout(function(){
-        fetch(api+"/selection").then(function(r){ return r.json(); }).then(function(d2){
-          eq("API cleared the selection", d2.ids.length, 0);
-          ok("save indicator reports success",
-             document.getElementById("savestate").className.indexOf("ok")>=0,
-             document.getElementById("savestate").textContent);
-          flush(true);
-        });
-      },700);
-    }).catch(function(e){ ok("API round trip",false,e.message); flush(true); });
-  },700);
+  /* ---------- paired study (sync part) ---------- */
+  pairedSync(A, pool);
+
+  /* ---------- async: legacy API, paired persistence, freeze refusal ---------- */
+  legacyApi(A,a,b)
+    .then(function(){ return pairedAsync(A); })
+    .then(function(){ return reviewTests(A); })
+    .then(function(){ return reloadSetup(A); })
+    .catch(function(e){ ok("async chain completed", false, e && e.message); })
+    .then(function(){ flush(true); });
   flush(false);
 };
+
+/* ================================================================ helpers */
+var FX=null;
+try{ FX=JSON.parse(document.getElementById("paired-fixtures").textContent); }catch(e){ FX=null; }
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+function wait(ms){ return new Promise(function(r){ setTimeout(r,ms); }); }
+function getJSON(url){ return fetch(url).then(function(r){ return r.json().then(function(d){ d.__status=r.status; return d; }); }); }
+function sendJSON(method,url,body){
+  return fetch(url,{method:method,headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+    .then(function(r){ return r.json().then(function(d){ d.__status=r.status; return d; }); });
+}
+function codes(v,pid){ return v.pairs[pid].issues.map(function(i){ return i.code; }); }
+function has(v,pid,code){ return codes(v,pid).indexOf(code)>=0; }
+function change(el,val){ el.value=val; el.dispatchEvent(new Event("change",{bubbles:true})); }
+function stub(fn){ var c=window.confirm; window.confirm=fn; return function(){ window.confirm=c; }; }
+
+/* ================================================================ legacy API */
+function legacyApi(A,a,b){
+  var api=window.DMP_API;
+  if(!api){ skipped("legacy selection persists to the API","standalone build has no API"); return Promise.resolve(); }
+  return getJSON(api+"/health").then(function(h){
+    if(h.state_dir_is_default!==false){
+      skipped("legacy API round trip","server is using the real data/ directory"); return; }
+    ok("served self-test runs on a temporary state dir", h.state_dir_is_default===false, h.state_dir);
+    A.setSel([a.id,b.id,"unknown-legacy-id"]);
+    return wait(700).then(function(){ return getJSON(api+"/selection"); }).then(function(d){
+      ok("API stored the selection", d.ids && d.ids.length===3, JSON.stringify(d.ids));
+      ok("API resolved the known records", d.selection && d.selection.length===2);
+      ok("an unknown id is kept, not dropped", d.ids.indexOf("unknown-legacy-id")>=0);
+      A.setSel([]);
+      return wait(700).then(function(){ return getJSON(api+"/selection"); });
+    }).then(function(d2){
+      eq("API cleared the selection", d2.ids.length, 0);
+      ok("save indicator reports success",
+         document.getElementById("savestate").className.indexOf("ok")>=0,
+         document.getElementById("savestate").textContent);
+    });
+  });
+}
+
+/* ================================================================ paired: sync */
+function pairedSync(A, legacyPool){
+  var PA=A.paired;
+  ok("fixtures are injected", !!(FX && FX.timing && FX.synthetic_cohort));
+  if(!FX) return;
+
+  /* --- mode separation --- */
+  A.setMode("paired");
+  ok("paired mode shows the paired tray", !document.getElementById("paired-tray").hidden);
+  ok("paired mode hides the legacy tray", document.getElementById("legacy-tray").hidden);
+  var stored=null; try{ stored=localStorage.getItem("dmpbench.mode"); }catch(e){}
+  eq("mode is remembered under its own key", stored, "paired");
+  document.querySelector('[data-mode="legacy"]').click();
+  eq("clicking Legacy switches mode", A.mode(), "legacy");
+  ok("legacy rows carry checkboxes again", !!document.querySelector("#list .row [data-pick]"));
+  document.querySelector('[data-mode="paired"]').click();
+  eq("clicking Paired switches back", A.mode(), "paired");
+  ok("paired rows carry an assignment menu", !!document.querySelector("#list .row select[data-assign]"));
+  ok("the menu is documented", !!document.querySelector("#list .row select[data-assign][data-tip]"));
+
+  /* --- timing fixtures, the same list the Python tests run --- */
+  FX.timing.forEach(function(f){
+    var t=PA.timing(f.issue,f.start,f.end,f.pre_start||"exclude");
+    var good=t.early===f.early && t.late===f.late &&
+      (f.state?t.state===f.state:t.state==="ok") &&
+      (f.n_lo===undefined || t.n_lo===f.n_lo) && (f.n_hi===undefined || t.n_hi===f.n_hi) &&
+      (f.d===undefined || t.d===f.d);
+    ok("timing: "+f.name, good, JSON.stringify(t));
+    if(f.pct_lo!==undefined){
+        ok("timing: "+f.name+" (percent shown above 100)", Math.round(10000*t.n_lo/t.d)/100===f.pct_lo);
+    }
+  });
+
+  /* --- escaping matches the Python exporter byte for byte --- */
+  eq("CSV escaping matches Python", FX.escape.map(PA.csvCell).join(","), FX.escape_expected.csv_row);
+  eq("Markdown escaping matches Python",
+     "| "+FX.escape.map(PA.mdCell).join(" | ")+" |", FX.escape_expected.md_row);
+
+  /* --- the synthetic valid cohort --- */
+  var syn=clone(FX.synthetic_cohort);
+  var v=PA.validate(syn);
+  eq("synthetic cohort: six verified pairs", v.counts.verified_pairs, 6);
+  eq("synthetic cohort: twelve distinct documents", v.counts.distinct_documents, 12);
+  ok("synthetic cohort: freezable by the rules", v.freezable===true, JSON.stringify(v.cohort));
+  ok("a second version of the same project raises no reuse issue",
+     !Object.keys(v.pairs).some(function(k){ return has(v,k,"project_reused"); }));
+
+  /* --- mutations that must fail, each on a fresh copy --- */
+  var M={};
+  var m=clone(syn); m.documents["SYN1-late"].scope="partner: University X";
+  M.partner=m; v=PA.validate(m);
+  ok("same grant, different partner scope is rejected", v.pairs["natural-sciences"].status==="rejected" && has(v,"natural-sciences","scope_mismatch"));
+
+  m=clone(syn); m.documents["SYN2-late"].files[0].sha256=m.documents["SYN2-early"].files[0].sha256;
+  M.bytes=m; v=PA.validate(m);
+  ok("repeated bytes across two versions are rejected", has(v,"engineering-and-technology","repeated_bytes"));
+
+  m=clone(syn); m.pairs[1].project.grant="SYN1"; m.documents["SYN2-early"].grant="SYN1"; m.documents["SYN2-late"].grant="SYN1";
+  M.reused=m; v=PA.validate(m);
+  ok("a project reused in another discipline is rejected in both rows",
+     has(v,"natural-sciences","project_reused") && has(v,"engineering-and-technology","project_reused"));
+
+  m=clone(syn); m.pairs[0].late=m.pairs[0].early;
+  M.tworoles=m; v=PA.validate(m);
+  ok("one document in both roles is rejected", has(v,"natural-sciences","same_document_both_roles") && has(v,"natural-sciences","document_reused"));
+
+  m=clone(syn); m.pairs[1].early=m.pairs[0].early;
+  M.twopairs=m; v=PA.validate(m);
+  ok("one document in two pairs is rejected", has(v,"engineering-and-technology","document_reused") && has(v,"natural-sciences","document_reused"));
+
+  m=clone(syn); m.documents["SYN3-late"].issue_date.value="2022-12-01"; m.documents["SYN3-late"].publication_date="2023-03-01";
+  M.deposit=m; v=PA.validate(m);
+  ok("issued before the end but deposited after it is not late", has(v,"medical-and-health-sciences","timing_fail"));
+
+  m=clone(syn); m.documents["SYN4-late"].issue_date.value="2022-12-31";
+  M.exact100=m; v=PA.validate(m);
+  ok("a late document exactly at 100% is rejected", has(v,"agricultural-sciences","timing_fail"));
+
+  m=clone(syn); m.documents["SYN5-early"].issue_date.value=null; m.documents["SYN5-early"].publication_date="2020-03-01";
+  M.noissue=m; v=PA.validate(m);
+  ok("a missing issue date stays unknown despite a full publication date",
+     has(v,"social-sciences","issue_date_missing") && v.pairs["social-sciences"].status==="pending" &&
+     v.pairs["social-sciences"].timing.early.state==="unknown");
+
+  m=clone(syn); m.documents["SYN6-early"].issue_date.value="2021-06";   /* d=1095, 50% = day 547 = 2021-07-01 */
+  m.pairs[5].project.end="2022-11-30"; m.documents["SYN6-early"].issue_date.value="2021-06";
+  M.partial=m; v=PA.validate(m);
+  ok("a partial date spanning 50% is indeterminate, not early", has(v,"humanities","timing_indeterminate"),
+     JSON.stringify(v.pairs.humanities.timing.early));
+
+  m=clone(syn); m.pairs[2].lineage.state="not_checked";
+  M.lineage=m; v=PA.validate(m);
+  ok("unverified lineage keeps a pair pending", has(v,"medical-and-health-sciences","lineage_unverified") && v.pairs["medical-and-health-sciences"].status==="pending");
+
+  m=clone(syn); m.pairs[3].cordis.branches=["natural sciences"];
+  M.disc=m; v=PA.validate(m);
+  ok("a discipline the project does not carry is rejected", has(v,"agricultural-sciences","discipline_unsupported"));
+
+  m=clone(syn); m.documents["SYN1-early"].files.push({name:"x.json",format:"json",sha256:"ab".repeat(32),analysis:false});
+  m.documents["SYN1-early"].files[0].analysis=false;
+  M.repr=m; v=PA.validate(m);
+  ok("two representations without an analysis file stay pending", has(v,"natural-sciences","representation_unchosen"));
+
+  m=clone(syn); m.pairs[0].early="ghost-document";
+  M.ghost=m; v=PA.validate(m);
+  ok("a reference to a missing document is rejected, not crashed on", has(v,"natural-sciences","document_missing"));
+
+  m=clone(syn); m.pairs[5].late=null;
+  M.incomplete=m; v=PA.validate(m);
+  ok("an incomplete cohort is not freezable", v.freezable===false && v.counts.verified_pairs===5);
+  ok("and says why", v.cohort.some(function(i){ return i.text.indexOf("5 of 6")>=0; }));
+
+  m=clone(syn); m.protocol.open_decisions[0].status="open";
+  M.decision=m; v=PA.validate(m);
+  ok("an open protocol decision blocks freezing", v.freezable===false && v.cohort.some(function(i){ return i.code==="decision_open"; }));
+
+  m=clone(syn); m.documents["SYN1-early"].issue_date.value="2019-12-15";
+  M.prestart=m; v=PA.validate(m);
+  ok("a pre-start document is not early under the proposed default", has(v,"natural-sciences","timing_fail"));
+  ok("and the unsettled pre-start policy is reported", v.cohort.some(function(i){ return i.code==="pre_start_unsettled"; }));
+  window.__PAIRED_MUTATIONS__=M;
+
+  /* --- the synthetic cohort in the real panel --- */
+  var restore=stub(function(){ return true; });
+  PA.load(clone(syn)); A.render();
+  eq("panel renders six discipline rows", document.querySelectorAll("#p-rows .prow").length, 6);
+  eq("panel counts six verified pairs", document.getElementById("p-pairs").textContent, "6");
+  eq("panel counts twelve documents", document.getElementById("p-docs").textContent, "12");
+  eq("every badge says verified", document.querySelectorAll("#p-rows .badge.b-verified").length, 6);
+  ok("the legacy duplicate-project warning is not shown in paired mode",
+     document.getElementById("paired-tray").textContent.indexOf("already in the set")<0);
+  ok("percentages above 100% are printed", /1\d\d\.\d\d%/.test(document.getElementById("p-rows").textContent));
+
+  /* --- exports and a JSON round trip through the real buttons --- */
+  document.querySelector('[data-pact="json"]').click();
+  var exported=document.getElementById("p-out").value, parsed=null;
+  try{ parsed=JSON.parse(exported); }catch(e){}
+  ok("JSON export parses and carries study and validation", !!(parsed && parsed.study && parsed.validation));
+  ok("JSON export keeps exact day counts", parsed && parsed.validation.pairs["natural-sciences"].timing.early.n_lo===152);
+  document.querySelector('[data-pact="csv"]').click();
+  var csv=document.getElementById("p-out").value.split("\n");
+  eq("CSV export: header plus six rows", csv.filter(Boolean).length, 7);
+  ok("CSV header is the shared column list", csv[0].indexOf("pair_id,discipline,grant")===0, csv[0]);
+  document.querySelector('[data-pact="md"]').click();
+  var md=document.getElementById("p-out").value.split("\n").filter(Boolean);
+  eq("Markdown export: header, rule and six rows", md.length, 8);
+
+  document.querySelector('[data-pact="empty"]').click();
+  eq("New draft empties the panel", document.getElementById("p-docs").textContent, "0");
+  document.getElementById("p-out").value=exported;
+  document.querySelector('[data-pact="load"]').click();
+  var back=PA.study();
+  ok("JSON round trip restores assignments", back.pairs.every(function(p,i){
+       return p.early===syn.pairs[i].early && p.late===syn.pairs[i].late; }));
+  ok("JSON round trip keeps provenance and unknowns",
+     back.documents["SYN1-early"].issue_date.locator==="p1" && back.pairs[0].project.original_end===null);
+  eq("JSON round trip keeps the verdict", PA.validate(back).counts.verified_pairs, 6);
+
+  /* --- malformed input never replaces the draft --- */
+  var before=JSON.stringify(PA.study());
+  document.getElementById("p-out").value="{not json";
+  document.querySelector('[data-pact="load"]').click();
+  ok("malformed JSON is refused", document.getElementById("p-msg").className.indexOf("bad")>=0);
+  eq("and the draft is unchanged", JSON.stringify(PA.study()), before);
+  var unsup=clone(syn); unsup.schema_version=99;
+  document.getElementById("p-out").value=JSON.stringify(unsup);
+  document.querySelector('[data-pact="load"]').click();
+  ok("an unsupported schema version is refused", document.getElementById("p-msg").textContent.indexOf("unsupported")>=0);
+  eq("and the draft is still unchanged", JSON.stringify(PA.study()), before);
+  var snap={schema:"dmpbench.paired-snapshot", snapshot_id:"paired-test", study:clone(syn)};
+  snap.study.status="frozen";
+  document.getElementById("p-out").value=JSON.stringify(snap);
+  document.querySelector('[data-pact="load"]').click();
+  ok("a snapshot loads as a new draft", PA.study().status==="draft" && PA.study().origin.indexOf("paired-test")>=0);
+
+  /* --- assignment through the real table --- */
+  document.querySelector('[data-pact="empty"]').click();
+  document.querySelector('[data-preset="paired"]').click();
+  var S=A.state;
+  var yrs=A.ROWS.map(function(r){ return +r.year; }).filter(Boolean);
+  ok("the paired preset spans every year", S.y0===Math.min.apply(null,yrs) && S.y1===Math.max.apply(null,yrs));
+  ok("the paired preset includes Horizon 2020", S.tiers["Horizon 2020"]===1);
+  S.q="AGRICORE"; A.render();
+  ok("registered documents appear as candidates", A.filtered().some(function(r){ return r.src==="registry"; }),
+     A.filtered().length+" hits");
+  S.q=""; A.render();
+
+  var byGrant={};
+  A.ROWS.forEach(function(r){ if(r.kind==="dmp" && r.grant && (r.disc_all||[]).length && r.proj_start)
+    (byGrant[r.grant]=byGrant[r.grant]||[]).push(r); });
+  var g=Object.keys(byGrant).filter(function(k){ return byGrant[k].length>=2; }).sort()[0];
+  var r1=byGrant[g][0], r2=byGrant[g][1], disc=r1.disc_all[0];
+  var pid=disc.toLowerCase().replace(/[^a-z0-9]+/g,"-");
+  var other=A.ROWS.filter(function(r){ return r.kind==="dmp" && r.grant && r.grant!==g && (r.disc_all||[]).indexOf(disc)>=0; })[0];
+  function rowSelect(r){ S.q=r.doi||r.title.slice(0,40); A.render(); return document.querySelector('#list select[data-assign="'+r.id+'"]'); }
+
+  var s1=rowSelect(r1);
+  ok("the candidate row renders an assignment menu", !!s1);
+  if(s1){
+    ok("the project's CORDIS branch is offered", !!s1.querySelector('option[value="add|'+pid+'|early"]'));
+    change(s1,"add|"+pid+"|early");
+    var pr=PA.study().pairs.filter(function(p){ return p.pair_id===pid; })[0];
+    eq("choosing early assigns the document", pr.early, "zenodo:"+r1.id);
+    eq("the pair takes the document's project", String(pr.project.grant), String(g));
+    ok("the CORDIS branches are recorded", (pr.cordis.branches||[]).indexOf(disc)>=0);
+    ok("the row is marked as assigned", document.querySelector('#list .row[data-id="'+r1.id+'"]').classList.contains("sel"));
+    ok("the slot shows the document", document.querySelector('#p-rows [data-slot="'+pid+'|early"]').textContent.indexOf("zenodo:"+r1.id)>=0);
+    ok("an unverified issue date is reported", PA.validate().pairs[pid].issues.some(function(i){ return i.code==="issue_date_missing"; }));
+
+    var s2=rowSelect(r2); change(s2,"add|"+pid+"|late");
+    eq("a second version of the same project fills the late slot", pr.late, "zenodo:"+r2.id);
+    ok("two versions of one project are not flagged as reuse",
+       !PA.validate().pairs[pid].issues.some(function(i){ return i.code==="project_reused"; }));
+    eq("the pair is pending, not verified", PA.validate().pairs[pid].status, "pending");
+
+    if(other){
+      var s3=rowSelect(other); change(s3,"add|"+pid+"|early");
+      eq("a different project is refused for an occupied row", pr.early, "zenodo:"+r1.id);
+      ok("and the refusal is explained", document.getElementById("p-msg").textContent.indexOf("already holds")>=0,
+         document.getElementById("p-msg").textContent);
+    } else skipped("different project refused","no second project in this discipline");
+
+    /* evidence editor */
+    S.q=""; A.render();
+    document.querySelector('[data-pinspect="'+pid+'"]').click();
+    var ed=document.querySelector('[data-editor="'+pid+'"]');
+    ok("the evidence editor opens", !!ed);
+    change(ed.querySelector('[data-k="scope"]'),"project-wide DMP");
+    eq("editing the scope updates the pair", pr.scope, "project-wide DMP");
+    ed=document.querySelector('[data-editor="'+pid+'"]');
+    change(ed.querySelector('[data-id="zenodo:'+r1.id+'"][data-k="issue_date.value"]'), r1.proj_start);
+    eq("editing the issue date updates the document", PA.study().documents["zenodo:"+r1.id].issue_date.value, r1.proj_start);
+    ok("the slot now shows an exact position", /0\.00%/.test(document.querySelector('#p-rows [data-slot="'+pid+'|early"]').textContent));
+    ed=document.querySelector('[data-editor="'+pid+'"]');
+    ed.querySelector('[data-evnew="locator"]').value="late p2 revision table";
+    ed.querySelector('[data-evnew="note"]').value="v2 revises v1";
+    document.querySelector('[data-evadd="'+pid+'"]').click();
+    eq("adding lineage evidence records it", (pr.lineage.evidence||[]).length, 1);
+    ed=document.querySelector('[data-editor="'+pid+'"]');
+    change(ed.querySelector('select[data-k="lineage.state"]'),"verified");
+    eq("the lineage state can be set", pr.lineage.state, "verified");
+    ok("verifying stamps a date", !!pr.lineage.verified_on);
+    var bare=[].filter.call(document.querySelectorAll("#paired-tray button, #paired-tray input, #paired-tray select, #paired-tray textarea"),
+      function(el){ return !el.getAttribute("data-tip"); });
+    eq("every paired-panel control is documented", bare.length, 0);
+    if(bare.length) log.push("      undocumented: "+bare.map(function(e){ return e.outerHTML.slice(0,80); }).join(" | "));
+    document.querySelector('[data-pinspect="'+pid+'"]').click();
+    ok("the editor closes", !document.querySelector('[data-editor="'+pid+'"]'));
+
+    /* removal */
+    document.querySelector('#p-rows [data-premove="'+pid+'|late"]').click();
+    eq("the × button empties the late slot", pr.late, null);
+    ok("the document's evidence is kept", !!PA.study().documents["zenodo:"+r2.id]);
+    var s4=rowSelect(r1); change(s4,"drop|"+pid+"|early");
+    eq("the menu's remove option empties the early slot", pr.early, null);
+    S.q=""; A.render();
+    document.querySelector('[data-pclear="'+pid+'"]').click();
+    eq("Clear project empties the row", PA.study().pairs.filter(function(p){ return p.pair_id===pid; })[0].project, null);
+  }
+
+  /* --- filters still work after presets, in paired mode --- */
+  document.querySelector('[data-preset="he24"]').click();
+  document.querySelector('#f-tier .chip[data-v="DFG"]').click();
+  ok("funding chips filter in paired mode", A.filtered().length>0 &&
+     every(A.filtered(), function(r){ return r.tier==="Horizon Europe" || r.tier==="DFG"; }));
+  document.querySelector('[data-preset="paired"]').click();
+
+  /* --- legacy selection attached as history --- */
+  var knownIds=legacyPool.slice(0,2).map(function(r){ return r.id; });
+  A.setMode("legacy"); A.setSel(knownIds.concat(["unknown-legacy-id"])); A.setMode("paired");
+  ok("the legacy selection keeps an unknown id", A.sel().indexOf("unknown-legacy-id")>=0);
+  document.querySelector('[data-pact="legacy"]').click();
+  var hist=PA.study().historical;
+  ok("attaching the legacy selection keeps every id", hist && hist.ids.length===3);
+  ok("the unknown id is listed as unresolved", hist && hist.unresolved.join()==="unknown-legacy-id");
+  ok("history fills no slot", PA.study().pairs.every(function(p){ return !p.early && !p.late; }));
+  document.querySelector('[data-pact="drop-legacy"]').click();
+  ok("history can be detached again", !PA.study().historical);
+  A.setMode("legacy"); A.setSel([]); A.setMode("paired");
+
+  /* --- standalone persistence: storage namespace, reload, corruption --- */
+  if(!window.DMP_API){
+    PA.load(clone(syn));
+    var raw=localStorage.getItem(PA.key), rawSel=localStorage.getItem("dmpbench.sel");
+    ok("the draft is saved under dmpbench.paired.v1", !!raw && JSON.parse(raw).study_id==="synthetic-cohort");
+    ok("the legacy selection keeps its own key", rawSel!==null && rawSel!==raw);
+    PA.load(PA.newStudy("scratch"));
+    localStorage.setItem(PA.key, JSON.stringify(syn));
+    PA.reload();
+    eq("reloading reads the stored draft back", PA.study().study_id, "synthetic-cohort");
+    localStorage.setItem(PA.key, "{corrupt");
+    PA.reload(); A.render();
+    ok("a corrupt stored draft blocks the panel", !!PA.blocked() &&
+       document.getElementById("p-blocked").textContent.indexOf("cannot be read")>=0);
+    PA.save();
+    eq("and is never overwritten by a save", localStorage.getItem(PA.key), "{corrupt");
+    document.querySelector('#p-blocked [data-pact="reset-corrupt"]').click();
+    var kept=[]; for(var i=0;i<localStorage.length;i++){ var k=localStorage.key(i); if(k.indexOf(PA.key+".corrupt-")===0) kept.push(k); }
+    ok("starting over keeps the unreadable text aside", kept.length===1 && localStorage.getItem(kept[0])==="{corrupt");
+    ok("and a fresh draft is saved", !PA.blocked() && JSON.parse(localStorage.getItem(PA.key)).schema==="dmpbench.paired-study");
+    ok("standalone hides the served-only buttons", document.querySelector('[data-pact="freeze"]').hidden===true);
+    document.querySelector('[data-pact="freeze"]').hidden=false;
+    PA.freeze();
+    ok("freezing explains that it needs serve.py", document.getElementById("p-msg").textContent.indexOf("serve.py")>=0);
+  }
+  restore();
+}
+
+/* ================================================================ paired: served */
+function pairedAsync(A){
+  var api=window.DMP_API, PA=A.paired;
+  if(!api){
+    skipped("paired API persistence","standalone build has no API (browser storage tested above)");
+    return Promise.resolve();
+  }
+  var syn=clone(FX.synthetic_cohort), restore=stub(function(){ return true; });
+  return getJSON(api+"/health").then(function(h){
+    if(h.state_dir_is_default!==false){ skipped("paired API","server uses the real data/ directory"); return; }
+    /* Python and JavaScript validators agree on the cohort and on every mutation */
+    var cases=[["synthetic",syn]].concat(Object.keys(window.__PAIRED_MUTATIONS__||{}).map(function(k){ return [k,window.__PAIRED_MUTATIONS__[k]]; }));
+    return cases.reduce(function(p,c){
+      return p.then(function(){
+        return sendJSON("POST",api+"/paired/validate",{study:c[1]}).then(function(pv){
+          var jv=PA.validate(c[1]), same=pv.counts.verified_pairs===jv.counts.verified_pairs &&
+            pv.counts.distinct_documents===jv.counts.distinct_documents && pv.freezable===jv.freezable;
+          Object.keys(jv.pairs).forEach(function(k){
+            var a=jv.pairs[k].issues.map(function(i){ return i.code+":"+i.severity; }).sort().join();
+            var b=pv.pairs[k].issues.map(function(i){ return i.code+":"+i.severity; }).sort().join();
+            if(a!==b || jv.pairs[k].status!==pv.pairs[k].status){ same=false; log.push("      "+c[0]+"/"+k+" js="+a+" py="+b); }
+          });
+          ok("Python and JS validation agree: "+c[0], same);
+        });
+      });
+    },Promise.resolve())
+    .then(function(){ PA.load(clone(syn)); return wait(600); })
+    .then(function(){ return getJSON(api+"/paired"); })
+    .then(function(d){
+      ok("the draft is saved to the paired file", d.study && d.study.study_id==="synthetic-cohort", d.file);
+      ok("the paired file is not the legacy selection", /paired_selection\.json$/.test(d.file||""));
+      ok("the server stamps source checksums", !!(d.study && d.study.sources && d.study.sources["data/dmp_dataset.json"]));
+      ok("the save indicator reports success", document.getElementById("p-save").className.indexOf("ok")>=0,
+         document.getElementById("p-save").textContent);
+      PA.load(PA.newStudy("scratch")); return wait(600);
+    })
+    .then(function(){ return PA.reload(); })
+    .then(function(){ eq("reloading reads the saved draft", PA.study().origin, "scratch");
+      var bad=clone(syn); bad.schema_version=99;
+      return sendJSON("PUT",api+"/paired",{study:bad}); })
+    .then(function(r){ eq("the server refuses an unsupported study", r.__status, 400);
+      return getJSON(api+"/paired"); })
+    .then(function(d){ eq("and keeps the previous draft", d.study.origin, "scratch");
+      return sendJSON("POST",api+"/paired/freeze",{study:syn}); })
+    .then(function(r){
+      eq("freezing without the files on disk is refused", r.ok, false);
+      ok("with a reason per missing file", (r.reasons||[]).filter(function(x){ return x.indexOf("not on disk")>=0; }).length===12,
+         (r.reasons||[]).length+" reasons");
+      PA.load(clone(syn)); return wait(400);
+    })
+    .then(function(){ return PA.freeze(); })
+    .then(function(){
+      ok("the Freeze button shows the refusal", document.getElementById("p-msg").textContent.indexOf("Not frozen")>=0);
+      return getJSON(api+"/paired/snapshots"); })
+    .then(function(d){ eq("no snapshot was written", (d.snapshots||[]).length, 0);
+      return PA.files(false); })
+    .then(function(d){
+      ok("Check files reports missing files honestly", document.getElementById("p-msg").textContent.indexOf("12 missing")>=0,
+         document.getElementById("p-msg").textContent);
+      restore();
+    });
+  });
+}
+
+/* ================================================================ real reload, two page loads */
+var MARKER="selftest-reload-marker";
+function reloadSetup(A){
+  var PA=A.paired, R=A.review, st=PA.newStudy("selftest reload marker"); st.study_id=MARKER;
+  if(!window.DMP_API && (STORE0[PA.key]!==undefined || STORE0[R.key]!==undefined)){
+    skipped("real page reload (phase 2 prepared)","this browser already holds a paired or review draft; not risking it");
+    restoreStore(); return Promise.resolve();
+  }
+  PA.load(st);
+  R.setField("rationale",RMARK);
+  return R.save().then(function(){ return wait(window.DMP_API?600:0); }).then(function(){
+    restoreStore([PA.key, R.key]);  /* keep only the two markers that phase 2 reads */
+    ok("phase-2 markers saved; load ?phase=reload to check they survive a real reload", true);
+  });
+}
+function reloadPhase(A){
+  var PA=A.paired, R=A.review, s=PA.study(), d=R.draft();
+  eq("after a real page reload the saved draft is read back", s && s.study_id, MARKER);
+  eq("and it opens in paired mode", A.mode(), "paired");
+  eq("the review draft survives a real page reload too", d && d.fields.rationale, RMARK);
+  var done=function(){ flush(true); };
+  if(!window.DMP_API){ try{ localStorage.removeItem(PA.key); localStorage.removeItem(R.key); }catch(e){}
+    ok("markers removed from browser storage", true); return done(); }
+  PA.load(PA.newStudy("empty"));
+  delete R.state().drafts[R.task().task_id];
+  R.save().then(function(){ return wait(600); }).then(function(){ ok("markers replaced on the temporary server", true); done(); });
+  flush(false);
+}
+
+
+/* ================================================================ review (pilot) */
+var RFX=null;
+try{ RFX=JSON.parse(document.getElementById("review-fixtures").textContent); }catch(e){ RFX=null; }
+var RMARK="SELFTEST REVIEW MARKER";
+function until(cond,ms){
+  var t0=Date.now();
+  return new Promise(function(res){ (function tick(){
+    var v=false; try{ v=cond(); }catch(e){}
+    if(v || Date.now()-t0>(ms||4000)) return res(!!v);
+    setTimeout(tick,40); })(); });
+}
+function rq(sel){ return document.querySelector("#review "+sel); }
+function rvClick(k){ var b=rq('[data-rv="'+k+'"]'); if(b) b.click(); return !!b; }
+function rvPick(name,val){
+  var el=rq('input[name="rv-'+name+'"][value="'+val+'"]'); if(!el) return false;
+  el.checked=true; el.dispatchEvent(new Event("change",{bubbles:true})); return true;
+}
+function rvType(field,val){
+  var el=rq('[data-rf="'+field+'"]'); if(!el) return false;
+  el.value=val; el.dispatchEvent(new Event("input",{bubbles:true}));
+  el=rq('[data-rf="'+field+'"]'); if(el) el.dispatchEvent(new Event("change",{bubbles:true}));
+  return true;
+}
+function rvSelect(field,val){ var el=rq('select[data-rf="'+field+'"]'); el.value=val; el.dispatchEvent(new Event("change",{bubbles:true})); }
+function rvEv(i,f,val){
+  var el=rq('[data-ev="'+i+'"][data-evf="'+f+'"]'); el.value=val;
+  el.dispatchEvent(new Event("input",{bubbles:true})); el.dispatchEvent(new Event("change",{bubbles:true}));
+}
+function previewJSON(){ rvClick("preview"); var p=rq("#rv-preview"); try{ return JSON.parse(p.textContent); }catch(e){ return null; } }
+function applyFix(base,sets,rehash,R){
+  var r=clone(base);
+  sets.forEach(function(s){ var o=r, p=s[0]; for(var i=0;i<p.length-1;i++) o=o[p[i]]; o[p[p.length-1]]=s[1]; });
+  if(rehash && r.provenance && r.provenance.record_content_sha256) r.provenance.record_content_sha256=R.contentHash(r);
+  return r;
+}
+
+function reviewTests(A){
+  var R=A.review, api=window.DMP_API, served=!!api, slow=served?900:80;
+  if(!R || !RFX){ ok("review mode and fixtures are present", false); return Promise.resolve(); }
+  var restore=stub(function(){ return true; });
+  var firstId=null, firstJSON=null;
+
+  /* --- parity with Python on the shared fixtures --- */
+  ok("JS SHA-256 matches the reference vectors", RFX.sha256_vectors.every(function(v){ return R.sha256(v[0])===v[1]; }));
+  eq("JS content hash of the fixture record equals the Python hash",
+     R.contentHash(RFX.base_record), RFX.base_record.provenance.record_content_sha256);
+  RFX.cases.forEach(function(c){
+    var rec=applyFix(RFX.base_record,c.set,c.rehash,R);
+    var probs=R.schemaValidate(R.schema(),rec).concat(R.pilotChecks(rec,[]));
+    ok("review validation: "+c.name, (probs.length===0)===c.valid, probs.slice(0,3).join(" | "));
+  });
+
+  /* --- the deferred pilot, untouched --- */
+  document.querySelector('[data-mode="review"]').click();
+  eq("clicking Review switches mode", A.mode(), "review");
+  ok("review mode replaces the table", document.querySelector(".shell").hidden && !document.getElementById("review").hidden);
+  var badge=rq("#rv-status");
+  ok("the pilot is shown as deferred", !!badge && /Deferred/.test(badge.textContent), badge && badge.textContent);
+  ok("deferred is not shown as overdue, failed or assessed", badge && !/overdue|failed|assessed/i.test(badge.textContent));
+  eq("deferral creates no record", R.records().length, 0);
+  eq("deferral creates no draft", R.draft(), null);
+  ok("nothing is preselected: 'not assessed yet' is checked", rq('input[name="rv-assessment"][value=""]').checked &&
+     !rq('input[name="rv-assessment"]:checked:not([value=""])'));
+  ok("the source PDF link is the full document", /17578116/.test(rq("#rv-src").getAttribute("href")));
+  ok("the framework link opens at the cell's physical page", /#page=8$/.test(rq("#rv-fw").getAttribute("href")));
+  eq("the five draft anchors are shown", rq("#rv-anchors").querySelectorAll("tr").length, 6);
+  ok("anchors are labelled as drafts", /draft/i.test(rq("#rv-anchors").parentNode.textContent));
+  ok("no AI suggestion is shown", /No AI-generated rating/.test(document.getElementById("review").textContent));
+  var p0=previewJSON();
+  ok("previewing a blank form creates no record", !p0 && /blank/.test(rq("#rv-preview").textContent));
+  rvClick("save");
+  eq("saving a blank form stores nothing", R.draft(), null);
+
+  /* --- an untouched assessment has no score --- */
+  rvPick("applicability","applicable");
+  ok("touching a field starts a draft", !!R.draft());
+  var p1=previewJSON();
+  ok("an untouched assessment has no score", p1 && p1.criteria[0].score.value===null && p1.criteria[0].score.entry_status==="not_entered",
+     p1 && JSON.stringify(p1.criteria[0].score));
+  ok("the preview leaves unanswered fields empty instead of inventing them",
+     p1 && p1.criteria[0].applicability_reason==="" && p1.criteria[0].confidence===null &&
+     p1.criteria[0].rationale==="" && p1.criteria[0].evidence.length===0);
+  ok("so an unfinished draft is not a valid record", p1 && R.schemaValidate(R.schema(),p1).length>0);
+
+  return R.save().then(function(){ return R.reload(); }).then(function(){
+    /* --- missing fields stay missing --- */
+    var d=R.draft();
+    ok("a partial draft survives a reload", d && d.fields.applicability==="applicable");
+    ok("missing reasoning stays empty, not invented", d && d.fields.rationale==="" && d.fields.evidence.length===0);
+    ok("missing items are listed", /Write your reasoning/.test(rq("#rv-problems").textContent));
+    rvClick("submit");
+    ok("an incomplete response cannot be submitted", !rq("#rv-confirm") && R.records().length===0);
+    ok("and the reason is shown", /Not submitted yet/.test(rq("#rv-msg").textContent));
+
+    /* --- explicit zero --- */
+    rvPick("assessment","0"); rvSelect("evidence_state","not_reported"); rvPick("search_completed","yes");
+    rvType("searched_sections","SYNTHETIC TEST sections 1-3");
+    return R.save();
+  }).then(function(){ return R.reload(); }).then(function(){
+    eq("an explicit zero survives save and reload", R.draft().fields.assessment, "0");
+    var p=previewJSON();
+    ok("the zero is the number 0, not empty", p && p.criteria[0].score.value===0 && p.criteria[0].score.original_value_as_entered==="0");
+    rvClick("export");
+    ok("export keeps the zero", /"assessment": "0"/.test(rq("#rv-out").textContent));
+
+    /* --- inconsistencies are explained before submission --- */
+    rvPick("assessment","2");
+    var t=rq("#rv-problems").textContent;
+    ok("a 2 without evidence is explained", /A 2 means the checklist is evidenced/.test(t) && /at least one evidence entry/.test(t), t.slice(0,160));
+    rvClick("submit");
+    ok("an inconsistent response is not submitted", !rq("#rv-confirm") && R.records().length===0);
+    rvPick("assessment","0"); rvPick("search_completed","no");
+    ok("a 0 without a completed search is explained", /completed criterion-specific search/.test(rq("#rv-problems").textContent));
+    rvPick("assessment","NA"); rvPick("applicability","not_applicable");
+    var pn=previewJSON();
+    ok("NA keeps a null score", pn && pn.criteria[0].score.value===null && pn.criteria[0].score.original_value_as_entered==="NA");
+    rvPick("assessment","uncertain"); rvPick("applicability","uncertain");
+    var pu=previewJSON();
+    ok("uncertain keeps a null score", pu && pu.criteria[0].score.value===null && pu.criteria[0].score.original_value_as_entered==="uncertain");
+
+    /* --- a complete, consistent partial response (synthetic test input) --- */
+    rvPick("assessment","1"); rvPick("applicability","applicable"); rvSelect("evidence_state","partly_evidenced");
+    rvClick("add-ev"); rvEv(0,"physical_page","5"); rvEv(0,"section","SYNTHETIC section"); rvEv(0,"note","SYNTHETIC TEST evidence note");
+    var pp=previewJSON();
+    ok("a partial score is 1, distinct from 0", pp && pp.criteria[0].score.value===1 && pp.criteria[0].score.value!==0);
+    rvType("applicability_reason","SYNTHETIC TEST reason"); rvType("rationale","SYNTHETIC TEST — not a human response");
+    rvPick("confidence","low"); rvType("confidence_reason","SYNTHETIC TEST"); rvPick("prior_familiarity","none_reported");
+    rvPick("seen_model_outputs","no"); rvPick("seen_other_labels","no"); rvPick("seen_other_version","no");
+    rvType("usability_feedback","SYNTHETIC TEST feedback"); rvType("raw_response","SYNTHETIC TEST raw wording");
+    ok("a complete response passes every check", /Complete and consistent/.test(rq("#rv-problems").textContent),
+       rq("#rv-problems").textContent.slice(0,200));
+    rvClick("submit");
+    ok("submitting asks for confirmation first", !!rq("#rv-confirm") && R.records().length===0);
+    var bare=[].filter.call(document.querySelectorAll("#review button, #review input, #review select, #review textarea"),
+      function(el){ return !el.getAttribute("data-tip"); });
+    eq("every review control is documented", bare.length, 0);
+    if(bare.length) log.push("      undocumented: "+bare.slice(0,4).map(function(e){ return e.outerHTML.slice(0,90); }).join(" | "));
+    rq("#rv-confirm-id").value="R1"; rvClick("confirm");
+    return wait(slow);
+  }).then(function(){
+    eq("a wrong reviewer ID does not submit", R.records().length, 0);
+    ok("and says why", /type R-PILOT-01/.test(rq("#rv-msg").textContent));
+    rq("#rv-confirm-id").value="R-PILOT-01"; rvClick("confirm");
+    return until(function(){ return R.records().length===1; }, 5000);
+  }).then(function(done){
+    ok("confirming submits and locks the response", done);
+    var rec=(R.records()[0]||{}).record||{};
+    firstId=rec.record_id; firstJSON=JSON.stringify(R.records()[0]);
+    ok("the submitted record satisfies the contract", R.validate(rec).length===0, R.validate(rec).join(" | "));
+    eq("its content hash is correct", rec.provenance && rec.provenance.record_content_sha256, R.contentHash(rec));
+    eq("it is a pilot record from R-PILOT-01, no benchmark reviewers needed", rec.assessor && rec.assessor.reviewer_id, "R-PILOT-01");
+    eq("the raw wording is kept beside it", (R.records()[0].raw_response||{}).text, "SYNTHETIC TEST raw wording");
+    eq("the draft is cleared after submission", R.draft(), null);
+    ok("the pilot still shows as deferred, with the response counted",
+       /Deferred/.test(rq("#rv-status").textContent) && /1 voluntary response submitted/.test(document.getElementById("review").textContent));
+    /* --- a locked record cannot be overwritten --- */
+    var again=clone(R.records()[0]); again.record.criteria[0].rationale="overwrite attempt";
+    return R.store(again).then(function(res){
+      eq("storing the same record id again is refused", res.ok, false);
+      if(served) return sendJSON("POST",api+"/review/submit",{submission:again}).then(function(r){
+        eq("the server refuses to overwrite a locked record", r.__status, 409); });
+      var st=R.storeLocal(again);
+      eq("browser storage refuses to overwrite a locked record", st.ok, false);
+    });
+  }).then(function(){ return R.reload(); }).then(function(){
+    eq("the locked record is unchanged", JSON.stringify(R.records()[0]), firstJSON);
+    /* --- corrections create a linked revision --- */
+    rq('[data-rvfix="'+firstId+'"]').click();
+    var d=R.draft();
+    ok("a correction draft names the original", d && d.supersedes_record_id===firstId && d.fields.assessment==="1");
+    rvType("rationale","SYNTHETIC TEST — corrected reasoning");
+    rvClick("submit"); rq("#rv-confirm-id").value="R-PILOT-01"; rvClick("confirm");
+    return until(function(){ return R.records().length===2; }, 5000);
+  }).then(function(done){
+    ok("the correction is stored as a second record", done);
+    var recs=R.records(), orig=recs.filter(function(s){ return s.record.record_id===firstId; })[0];
+    var fix=recs.filter(function(s){ return s.record.record_id!==firstId; })[0];
+    eq("the original record is byte-for-byte unchanged", JSON.stringify(orig), firstJSON);
+    eq("the correction links to the original", fix && fix.record.provenance.supersedes_record_id, firstId);
+    ok("the original is shown as superseded", /superseded by/.test(rq('[data-record="'+firstId+'"]').textContent) &&
+       !rq('[data-record="'+firstId+'"] [data-rvfix]'));
+    if(served) return getJSON(api+"/review").then(function(g){
+      eq("the server holds both records", (g.records||[]).length, 2);
+      return Promise.all(RFX.cases.map(function(c){
+        return sendJSON("POST",api+"/review/validate",{record:applyFix(RFX.base_record,c.set,c.rehash,R)})
+          .then(function(r){ return r.valid===c.valid; }); }));
+    }).then(function(same){ ok("Python and JS agree on every review fixture", same.every(Boolean)); });
+  }).then(function(){
+    /* --- corrupt or unsupported storage is never reset silently --- */
+    if(served){
+      var bad={schema:"dmpbench.review-state", schema_version:99, drafts:{}};
+      return sendJSON("PUT",api+"/review/state",{state:bad}).then(function(r){
+        eq("the server refuses an unsupported draft file", r.__status, 400); });
+    }
+    localStorage.setItem(R.key,"{corrupt");
+    localStorage.setItem(R.recordPrefix+"broken","{x");
+    return R.reload().then(function(){
+      ok("a corrupt draft blocks the form", !!R.blocked() && !!rq("#rv-blocked"));
+      ok("an unreadable record is reported", R.unreadable().length===1 && /Unreadable record/.test(document.getElementById("review").textContent));
+      eq("the locked records are still listed", R.records().length, 2);
+      return R.save();
+    }).then(function(saved){
+      eq("saving is refused while blocked", saved, false);
+      eq("and the corrupt text is untouched", localStorage.getItem(R.key), "{corrupt");
+      rvClick("reset-corrupt");
+      var kept=[]; for(var i=0;i<localStorage.length;i++){ var k=localStorage.key(i); if(k.indexOf(R.key+".corrupt-")===0) kept.push(k); }
+      ok("starting over keeps the unreadable draft aside", kept.length===1 && localStorage.getItem(kept[0])==="{corrupt");
+      ok("the unreadable record was not removed", localStorage.getItem(R.recordPrefix+"broken")==="{x");
+      localStorage.removeItem(R.recordPrefix+"broken");
+    });
+  }).then(function(){
+    /* --- the deferral blocks nothing else --- */
+    A.setMode("paired");
+    ok("the paired study still works beside the pilot", !!document.querySelector("#list .row select[data-assign]"));
+    A.setMode("legacy");
+    ok("the legacy selection still works", !!document.querySelector("#list .row [data-pick]"));
+    A.setMode("paired");
+    restore();
+  });
+}
+
 })();

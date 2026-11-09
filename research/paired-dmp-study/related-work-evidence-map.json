@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-06",
+  "kind": "focused_primary_source_evidence_map_not_systematic_review",
+  "entrypoint": "related-work-evidence-map.md",
+  "search": {
+    "service": "connected web search",
+    "queries": [
+      "\"data management plan\" \"large language\" evaluation human assessment benchmark",
+      "\"data management plans\" artificial intelligence review human evaluation longitudinal",
+      "\"DMP\" \"assessment\" \"LLM\" benchmark human",
+      "\"Towards a Toolbox for Automated Assessment\" DMP",
+      "\"data management plans\" \"large language models\" \"evaluation\" -site:researchgate.net -site:linkedin.com -site:reddit.com",
+      "\"data management plans\" \"longitudinal\" evaluation assessment versions",
+      "\"Evaluating Tools for Data Management Plans\" \"150\"",
+      "\"AI-Based Evaluation of Data Management Plans\" \"2025\"",
+      "\"Data management plan\" \"AI\" \"human\" assessment benchmark evaluation -site:researchgate.net -site:linkedin.com -site:facebook.com",
+      "\"Towards AI-Based Evaluation of Data Management Plans Compliance with Funder Requirements\"",
+      "\"AI-Based Evaluation\" \"Data Management Plans\" Frnka 2026 Data Intelligence",
+      "\"10.3724/2096-7004.di.2025.1132\"",
+      "\"Towards AI-Based Evaluation\" Frnka Suchánek site:direct.mit.edu OR site:sciencedirect.com OR site:publisher.sciencepress.cn OR site:di.kydstk.com"
+    ],
+    "query_count": 13,
+    "date_limit_applied": false,
+    "language_limit_applied": false,
+    "operational_reading_language": "English",
+    "systematic_database_search": false,
+    "complete_result_inventory_or_PRISMA_counts": false,
+    "selection": "Prioritize primary work evaluating DMP assessment methods; follow directly identified close studies; deduplicate article mirrors by DOI. Two seed studies delegated to companion report.",
+    "screened_out_topics": [
+      "actual project DMPs mentioning AI rather than studies evaluating DMPs",
+      "unrelated DMP acronym uses",
+      "nonprimary summaries used only as discovery leads",
+      "DMP generation or general RDM assistance as a different target",
+      "current policy announcements not empirical DMP-assessment studies"
+    ],
+    "limitations": [
+      "Search-engine indexing and failed retrieval limit coverage.",
+      "Backward/forward citation searching is incomplete.",
+      "Do not infer absence of paired-version studies from this map.",
+      "No manuscript-level novelty claim is established."
+    ]
+  },
+  "works": [
+    {
+      "id": "pham2023",
+      "authors": "Ngoc-Minh Pham; Heather Moulaison-Sandy; Bradley Wade Bishop; Hannah Gunderman",
+      "year": 2023,
+      "title": "Data Management Plans: Implications for Automated Analyses",
+      "doi": "10.5334/dsj-2023-002",
+      "primary_url": "https://datascience.codata.org/articles/10.5334/dsj-2023-002",
+      "reading_scope": "Primary HTML research questions, methods sections4.1-4.2 and results sections6.1-6.2; no independent reanalysis of repository data.",
+      "capture": {
+        "local_path": "data/paired-dmp-corpus/methods-2026-11-06/parent-dsj-2023-002.html",
+        "bytes": 416019,
+        "sha256": "3479f730d21ff03b47b03e3f461443c1e934b181efd4cfe1294d695830e1fac0"
+      },
+      "observations": [
+        {
+          "locator": "sections2,4",
+          "fact": "21 funded Belmont Forum DMPs; ocean and arctic calls."
+        },
+        {
+          "locator": "section4.1",
+          "fact": "MAXQDA word/n-gram analysis; human grouping of terms."
+        },
+        {
+          "locator": "section4.2",
+          "fact": "Manual16-criterion0/1/2 scorecard; training and discussion to agreement."
+        }
+      ],
+      "unknown_in_reading": [
+        "pre-reconciliation agreement estimate",
+        "comparability with lifecycle-specific Infra-DMP anchors"
+      ],
+      "not_the_same_target": "Text-mining coverage comparison does not establish LLM rubric judgment accuracy."
+    },
+    {
+      "id": "sharma2023",
+      "authors": "Sarika Sharma; Arlo Obregon; Zahir Shaikh; Yubing Tian; Megan Finn; Amelia Acker",
+      "year": 2023,
+      "title": "Evaluating Tools for Data Management Plans: A Comparative Study of the DART Rubric and the Belmont Scorecard",
+      "doi": "10.1007/978-3-031-28032-0_3",
+      "primary_url": "https://par.nsf.gov/servlets/purl/10546297",
+      "reading_scope": "Full-text title/introduction and methods physicalpp6-9/printed31-34; methods p8 visually inspected.",
+      "capture": {
+        "local_path": "data/paired-dmp-corpus/methods-2026-11-06/parent-nsf-10546297.pdf",
+        "bytes": 2187573,
+        "sha256": "c8a35b7b532e6abd4a4cda5a0300b0a439dd33fbd88e4c123092317c66219a27"
+      },
+      "observations": [
+        {
+          "locator": "physicalp1",
+          "fact": "iConference2023 chapter; PDF modification year2024 is not publication year."
+        },
+        {
+          "locator": "physicalp8/printed33",
+          "fact": "150 DMPs,30 per five NSF programs, award years2011-2021."
+        },
+        {
+          "locator": "physicalp8/printed33",
+          "fact": "Two coders divide75 plans each; calibration discussion; once per DART and Belmont instrument."
+        }
+      ],
+      "interpretation": "Inspected longitudinal sampling concerns award years, not verified same-project DMP versions. Scored twice means two instruments, not full same-instrument double coding.",
+      "unknown_in_reading": [
+        "independently retained same-instrument scores for every plan"
+      ],
+      "not_the_same_target": "Human instrument comparison, not LLM performance."
+    },
+    {
+      "id": "miksa2023",
+      "authors": "Tomasz Miksa et al.",
+      "year": 2023,
+      "title": "Towards a Toolbox for Automated Assessment of Machine-Actionable Data Management Plans",
+      "doi": "10.5334/dsj-2023-028",
+      "primary_url": "https://datascience.codata.org/articles/1520/files/64fee1ec4a177.pdf",
+      "reading_scope": "Primary PDFphysicalpp2-9 plus opening of discussionp10; Table1p9 visually inspected.",
+      "capture": {
+        "local_path": "data/paired-dmp-corpus/methods-2026-11-06/parent-dsj-2023-028.pdf",
+        "bytes": 966331,
+        "sha256": "07773cfcfee7dbcd24a7a5107fe2ca442e0021f8bca6fcc63b5c71bec4e74f8c"
+      },
+      "observations": [
+        {
+          "locator": "physicalpp4-9,Table1p9",
+          "fact": "Maps six maDMP automation approaches to four reviewer goals."
+        },
+        {
+          "locator": "physicalpp8-9",
+          "fact": "Expected and achieved FAIRness use different evidence."
+        },
+        {
+          "locator": "physicalp9,Table1/discussion",
+          "fact": "Narrative non-ambiguity is outside implemented method coverage."
+        }
+      ],
+      "not_the_same_target": "Methods/toolbox demonstration, not a human-versus-LLM accuracy study."
+    },
+    {
+      "id": "repo2026",
+      "year": 2026,
+      "primary_url": "https://zenodo.org/records/21401065",
+      "reading_scope": "Delegated actual presentation/API evidence inspection; see prior-study-methods.json for scope/hash/denominators.",
+      "companion": "prior-study-methods.json",
+      "role": "close AI assessment study"
+    },
+    {
+      "id": "vandenberk2025",
+      "year": 2025,
+      "primary_url": "https://documentserver.uhasselt.be/handle/1942/46881",
+      "reading_scope": "Delegated landing/cached abstract inspection and attempted PDFmethods retrieval; see companion for actual availability.",
+      "companion": "prior-study-methods.json",
+      "role": "human-in-loop assistance study"
+    },
+    {
+      "id": "frnka2025",
+      "author": "Matěj Frnka",
+      "year": 2025,
+      "title": "AI-Based Evaluation of Data Management Plans (DMPs)",
+      "primary_url": "https://dspace.cvut.cz/handle/10467/122627",
+      "reading_scope": "Institutional abstract rendered by web search; thesismethods not inspected.",
+      "live_capture": {
+        "local_path": "data/paired-dmp-corpus/methods-2026-11-06/parent-ctu-122627.html",
+        "bytes": 1113,
+        "sha256": "d925a96f7c7165b44a2e816a36c76afecba81bb7822e00dae07990ba6ae46434"
+      },
+      "live_capture_limitation": "HTTP200 JavaScript application shell only; not captured article text.",
+      "observations": [
+        {
+          "locator": "institutional English abstract",
+          "fact": "Extractive QA mapping template questions to DMP text; human-annotated resources reported."
+        }
+      ],
+      "unknown_in_reading": [
+        "annotationN/process",
+        "train-test independence",
+        "criterion sufficiency scoring",
+        "lifecycle/paired-version design"
+      ],
+      "next_action": "Retrieve primary full text through normal institution access and inspect evaluation methods."
+    },
+    {
+      "id": "frnka_suchanek2026",
+      "authors": "Matěj Frnka; Marek Suchánek",
+      "title": "Towards AI-Based Evaluation of Data Management Plans Compliance with Funder Requirements",
+      "doi": "10.3724/2096-7004.di.2025.1132",
+      "primary_url": "https://www.sciengine.com/doi/10.3724/2096-7004.di.2025.1132",
+      "registered_published": "2026-06-01",
+      "registered_published_online": "2026-06-18",
+      "reading_scope": "Publisher-registered Crossref bibliographic metadata only; no abstract supplied and full text not obtained.",
+      "metadata_capture": {
+        "local_path": "data/paired-dmp-corpus/methods-2026-11-06/parent-frnka-article-crossref.json",
+        "bytes": 5734,
+        "sha256": "ad450c9755004570f697ac75148623489e00384a5ecbce4d0a5892f94b6214d8"
+      },
+      "publisher_pdf_attempt": {
+        "url": "https://www.sciengine.com/sci-open/api/v1/open/file/pdf/9DDD84C9632C44AEBFE1BB6F3CC90A8C",
+        "status": 200,
+        "bytes": 0,
+        "pdf": false,
+        "retrieved_utc": "2026-11-06T09:49:39.289943+00:00"
+      },
+      "publication_year": 2026,
+      "methods_claims": [],
+      "relationship_to_thesis": "Common author/topic; same methods or data not assumed."
+    }
+  ],
+  "proposed_contribution": "Auditable six-project same-scope issue-date paired case study with independent human reference preparation and versioned native/configured DMP-EVA comparisons; empirical work pending.",
+  "prohibited_novelty_claims": [
+    "first automated DMP assessment",
+    "first human-versus-AI DMP study",
+    "first longitudinal DMP study",
+    "absence of any previous same-project paired study"
+  ],
+  "study_changes_approved": false,
+  "human_labels_created": 0,
+  "model_inference_requests": 0,
+  "platform_review_performed": false,
+  "high_priority_followups": [
+    "Frnka2026primary article full methods",
+    "Frnka2025primarythesis evaluation",
+    "Vandenberk2025thesis methods when normally available",
+    "backward/forward citations before novelty claims",
+    "ScienceEurope originalrubric if a fullinstrument crosswalk is required"
+  ]
+}

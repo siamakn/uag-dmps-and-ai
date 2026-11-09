@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-11-04",
+  "updated_at_utc": "2026-11-04T16:04:06.519484+00:00",
+  "status": "independent_parallel_preparation_complete_candidate_inputs_and_experiment_design_not_frozen",
+  "extends": "status.json",
+  "entrypoint": "parallel-preparation.md",
+  "platform_coordination": {
+    "user_reported_Claude_task": "claude-platform-brief.md",
+    "working_tree_changes_observed": [
+      "scripts/common.py",
+      "scripts/serve.py",
+      "scripts/paired.py",
+      "data/study-documents.json",
+      "dashboard/paired-fixtures.json"
+    ],
+    "completion_report_found": false,
+    "platform_implementation_reviewed_by_this_track": false,
+    "files_written_by_this_track": "new_experiment_input_Mainz_and_parallel_review_research_files_plus_ignored_packet_assets"
+  },
+  "human_pilot": "deferred_no_current_human_task",
+  "human_judgments_created": 0,
+  "model_requests_made": 0,
+  "external_messages_sent": 0,
+  "input_preparation": {
+    "documents": 12,
+    "physical_pages": 521,
+    "chunks": 79,
+    "engineering_budget_UTF16_units": 24000,
+    "over_budget_chunks": 0,
+    "all_extracted_words_and_line_mapping_verified": true,
+    "semantic_table_or_full_visual_fidelity_established": false,
+    "ready_for_benchmark_freeze": false
+  },
+  "experiment_design": "proposal_native_diagnostic_configured_overall_vs_criterion_fixed_model_later_fixed_prompt_model_extension",
+  "backend_profile": "unfilled_no_endpoint_or_model_assumed",
+  "independent_review": "parallel-preparation-review.md",
+  "file_sha256": {
+    "experiment-protocol-draft.md": "3d2ea9c7d69b470d2b7512119513fbe19022de0eef8a3904c431822f96b744a6",
+    "experiment-matrix.json": "5ad513c11400704dc3e8abf627d583d2340ca613a01c411a9e4024fffbf54f10",
+    "input-packets.py": "c2e7fd531792d2123d92911c715d408a5112ee53e3811843d0dad26ea4191540",
+    "input-packets-selfcheck.py": "5a55c307b22122c4b88dc25834eef4d8830cb318f7c4417c7a68a010cb0f5ebd",
+    "input-packets.md": "319b24537533d0895f8b6ba756dcc6551383bd7e0579a04d220f98f0a2d3651c",
+    "input-packets.json": "015e20eb08597303b2f2487612e2469f23bab73499f3b2599203d3e5ae333bbd",
+    "mainz-readiness.md": "6295412c33eaa60c4c20436a20c483e948ba97b873b33779f90b0e454580046f",
+    "mainz-profile-template.json": "091558ab5dd2834480eb27a2c2dfd841fb428b127565d76752450b6dc37f15e3",
+    "parallel-preparation-review.md": "035d6076ba0994b194c60c9ee141e3413979bdecd4d7f149897dd0e8e80ce37b"
+  },
+  "historical_selection_sha256": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+  "next_actions": [
+    "resolve_Mainz_documentation_model_identity_and_actual_context_limits_when_available",
+    "validate_full_document_input_policy_and_exact_configuration",
+    "review_Claude_platform_implementation_after_completion_report",
+    "defer_human_calibration_until_user_or_reviewers_ready"
+  ],
+  "optional_pending_information": "Mainz public documentation URL or available-model list; may be supplied later, not a request for credentials",
+  "preparation_blocked_by_this_information": false
+}

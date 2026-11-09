@@ -1,0 +1,21 @@
+# Version follow-up: MultiMiner and e-DIPLOMA
+
+Checked 2026-11-06 (Europe/Berlin). This bounded check does not change the cohort proposal, make a selection, or freeze the study. Detailed machine-readable evidence is in [version-followup-documents.json](version-followup-documents.json). The timing calculation is calendar days from CORDIS start to the document date divided by days from start to the current CORDIS end; the later date must be strictly above 100%. The relevant PDF date pages were rendered and visually inspected.
+
+## MultiMiner — conditional alternative, date discrepancy remains
+
+[CORDIS](https://cordis.europa.eu/project/id/101091374) currently gives grant 101091374, 2023-01-01 to 2026-06-30 (1,276 days), with two engineering and technology and two natural sciences classification paths, a tie. Both [early record 10653171](https://zenodo.org/records/10653171) and [late record 22706196](https://zenodo.org/records/22706196) share Zenodo concept 8063405 and identify project-wide Deliverable 5.4; each PDF lists all partners on page 2 and describes consortium-wide research data guidance in section 2.2 (early PDF p. 10, late PDF p. 11). The late revision history lists the early version and subsequent changes. This supports same-scope lineage, subject to independent verification.
+
+- Early PDF control table (p. 2): version 1.4, **2024-02-06**, 401/1,276 = **31.43%**. Its revision history on the same page dates v1.4 **2024-02-02**, 397/1,276 = **31.11%**. Both pass ≤50%. Zenodo publication was 2024-02-13, separately.
+- Late PDF revision history (p. 3) lists **V.19 on 2026-09-11**, a datasets-section update: 1,349/1,276 = **105.72%**. The Zenodo title and file name identify v1.9. However, the PDF control table (p. 2) still says **version 1.8, 2026-06-30**, exactly **100%**. The version labels and dates cross the eligibility boundary; the post-end revision is substantive evidence of a later update, but a reviewer must resolve whether it establishes the applicable issue date despite the stale control table. Zenodo publication was 2026-09-11, and is not by itself the issue date. Do not call this pair verified.
+- The early PDF is 637,745 bytes, SHA-256 `6487f94663fad78c10f04745d37a7059405b8625dad1df41a6d2b4382137a940`; late is 833,848 bytes, SHA-256 `993d5042991b672cb97ff8bb9e88cc2c5e10ece7ac03ca6ace41cd71c28793aa`. Both downloaded openly; their MD5s match the repository metadata. Both Zenodo API records label the licence `other-pd` (Other Public Domain; no further description). The DMP's statements about licences for project data do not automatically establish the document's licence. Check downstream reuse terms independently.
+
+## e-DIPLOMA — late timing fails
+
+[CORDIS](https://cordis.europa.eu/project/id/101061424) currently gives grant 101061424, 2022-09-01 to 2025-10-31 (1,156 days); it lists one natural sciences and one social sciences path, a tie. The [late record 21102983](https://zenodo.org/records/21102983) was published 2026-03-26, but its PDF cover gives version 4.0 **2025-10-31**, exactly **100%**; the fourth submission date on p. 4 is also 2025-10-31. The version history (p. 2) labels **2025-07-29** as the publication date of version 4.0, or **91.87%**. The cover's Ares stamp is **2026-03-26**; that administrative stamp and the Zenodo publication date do not establish a post-project DMP issue or revision. This document therefore fails the strict >100% requirement. The early lead was not fetched or checked for scope, lineage or licence.
+
+The late PDF is 1,030,933 bytes, SHA-256 `cc245f2613daa02e574dcb5c5c15283f9e507e9e6c7f8e3d095a0a99e19adcb4`. It downloaded openly and its MD5 matches Zenodo. The API says CC BY 4.0; PDF p. 3 says CC-BY. Its Zenodo record calls the deposit version 2, while the PDF cover calls the document version 4.0; these are separately labelled.
+
+## Limits
+
+Evidence PDFs and Zenodo API responses are retained only in the ignored `data/paired-dmp-corpus/followup-2026-11-06/` directory. Current CORDIS pages were consulted live, but complete extension histories and original-end sensitivity were not obtained. No human reference assessment, quality scoring, independent second check, or replacement decision was performed. Document rights and the MultiMiner boundary-crossing date discrepancy remain checks before any proposed inclusion.

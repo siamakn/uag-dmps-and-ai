@@ -1,0 +1,134 @@
+{
+  "checked": "2026-11-06 Europe/Berlin",
+  "scope": "Bounded follow-up of MultiMiner and e-DIPLOMA only; no cohort changes",
+  "calculation": "(document date - project start) / (current CORDIS end - project start), calendar days; late strictly greater than 1",
+  "projects": [
+    {
+      "grant": "101091374",
+      "acronym": "MultiMiner",
+      "cordis": "https://cordis.europa.eu/project/id/101091374",
+      "start": "2023-01-01",
+      "end": "2026-06-30",
+      "duration_days": 1276,
+      "branches": [
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "branch_counts": "2 paths each; tie",
+      "concept": "8063405",
+      "finding": "Conditional alternative: late revision history supports post-end version, but stale document control metadata creates an unresolved boundary-crossing discrepancy. Not verified or selected.",
+      "early": {
+        "record": "https://zenodo.org/records/10653171",
+        "local_pdf": "data/paired-dmp-corpus/followup-2026-11-06/10653171.pdf",
+        "filename": "D5_4_MultiMiner_Data_Management_Plan_V1_4.pdf",
+        "bytes": 637745,
+        "sha256": "6487f94663fad78c10f04745d37a7059405b8625dad1df41a6d2b4382137a940",
+        "repository_md5": "59d31da623dedf20fc56ea0fa2d73109",
+        "repository_publication": "2024-02-13",
+        "dates": [
+          {
+            "label": "document control Date, version 1.4",
+            "date": "2024-02-06",
+            "pdf_page": 2,
+            "elapsed_days": 401,
+            "percentage": 31.4263
+          },
+          {
+            "label": "revision history version 1.4",
+            "date": "2024-02-02",
+            "pdf_page": 2,
+            "elapsed_days": 397,
+            "percentage": 31.1129
+          }
+        ],
+        "access": "open",
+        "zenodo_license": "other-pd (Other Public Domain; no further description)"
+      },
+      "late": {
+        "record": "https://zenodo.org/records/22706196",
+        "local_pdf": "data/paired-dmp-corpus/followup-2026-11-06/22706196.pdf",
+        "filename": "D5_4_MultiMiner_Data_Management_Plan_V1_9_wappendix.pdf",
+        "bytes": 833848,
+        "sha256": "993d5042991b672cb97ff8bb9e88cc2c5e10ece7ac03ca6ace41cd71c28793aa",
+        "repository_md5": "9b3e67e071a4d9090f1224f1a9c4ea9b",
+        "repository_publication": "2026-09-11",
+        "dates": [
+          {
+            "label": "revision history V.19; dataset section updated; title/filename say V1.9",
+            "date": "2026-09-11",
+            "pdf_page": 3,
+            "elapsed_days": 1349,
+            "percentage": 105.721
+          },
+          {
+            "label": "document control Date, DMP version 1.8",
+            "date": "2026-06-30",
+            "pdf_page": 2,
+            "elapsed_days": 1276,
+            "percentage": 100.0
+          }
+        ],
+        "access": "open",
+        "zenodo_license": "other-pd (Other Public Domain; no further description)"
+      },
+      "scope_evidence": "Both identify grant 101091374, deliverable 5.4 and all partners on PDF pages 1–2; section 2.2 early p.10 and late p.11 describes consortium-wide research data guidance. Both API records share concept 8063405. Late revision history p.2 records v1.4 and p.3 records later changes.",
+      "missing": "Resolve whether the post-end revision history/date or stale control table establishes issue date; independently check exact sources and rights before inclusion. No original-end history obtained."
+    },
+    {
+      "grant": "101061424",
+      "acronym": "e-DIPLOMA",
+      "cordis": "https://cordis.europa.eu/project/id/101061424",
+      "start": "2022-09-01",
+      "end": "2025-10-31",
+      "duration_days": 1156,
+      "branches": [
+        "natural sciences",
+        "social sciences"
+      ],
+      "branch_counts": "1 path each; tie",
+      "concept": "10390669",
+      "finding": "Late document fails strict >100% issue-date threshold; earlier record not fetched or assessed.",
+      "late": {
+        "record": "https://zenodo.org/records/21102983",
+        "local_pdf": "data/paired-dmp-corpus/followup-2026-11-06/21102983.pdf",
+        "filename": "e-DIPLOMA_D1.3_DataManagementPlan_26_03_2026.pdf",
+        "bytes": 1030933,
+        "sha256": "cc245f2613daa02e574dcb5c5c15283f9e507e9e6c7f8e3d095a0a99e19adcb4",
+        "repository_md5": "397d8930b92bb207222887aabc63e34c",
+        "repository_publication": "2026-03-26",
+        "dates": [
+          {
+            "label": "cover version 4.0; fourth submission date p.4",
+            "date": "2025-10-31",
+            "pdf_page": 1,
+            "elapsed_days": 1156,
+            "percentage": 100.0
+          },
+          {
+            "label": "history version 4.0, labelled publication date",
+            "date": "2025-07-29",
+            "pdf_page": 2,
+            "elapsed_days": 1062,
+            "percentage": 91.8685
+          },
+          {
+            "label": "Ares stamp, not document issue date",
+            "date": "2026-03-26",
+            "pdf_page": 1,
+            "elapsed_days": 1302,
+            "percentage": 112.6298
+          }
+        ],
+        "access": "open",
+        "zenodo_license": "cc-by-4.0; PDF p.3 says CC-BY"
+      },
+      "missing": "Earlier version 10390670, its scope, lineage and licence not inspected; no original-end history obtained."
+    }
+  ],
+  "limitations": [
+    "No human verification or reference ratings; no change to proposal, selection or freeze.",
+    "CORDIS fact sheets consulted live; complete extension/amendment histories were not obtained.",
+    "Downloaded PDF MD5 agrees with Zenodo metadata; SHA-256 calculated locally. Dates visually checked on rendered source pages.",
+    "Open access alone does not settle all downstream reuse terms. MultiMiner repository public-domain label lacks further description; data-licence language within DMP concerns managed data, not necessarily the document."
+  ]
+}

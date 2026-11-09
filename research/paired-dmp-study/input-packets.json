@@ -1,0 +1,7284 @@
+{
+  "schema_version": 1,
+  "status": "candidate_only_not_frozen",
+  "proposal": "research/paired-dmp-study/cohort-proposal.json",
+  "proposal_sha256": "edf1d3eab475302156d0366f262516e61d674a553fe67366a7181aff35a735fd",
+  "pdftotext_version": "pdftotext version 26.01.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+  "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "script_sha256": "c2e7fd531792d2123d92911c715d408a5112ee53e3811843d0dad26ea4191540",
+  "command": "pdftotext -bbox-layout -enc UTF-8 <pdf> -",
+  "engineering_budget_utf16_units": 24000,
+  "budget_is_provider_context_limit": false,
+  "documents": [
+    {
+      "project": "iMagine",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/101058625/7759984.pdf",
+      "pdf_sha256": "475634f9fdd5ed0ebd320e7d153670d7bb23ae98de883c3d03a6ff21ecab4304",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101058625/7759984",
+      "page_count": 57,
+      "line_count": 2841,
+      "word_count": 13306,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 12,
+          "words": 100,
+          "utf16_units": 990,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 54,
+          "words": 123,
+          "utf16_units": 2259,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 79,
+          "words": 144,
+          "utf16_units": 2943,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 56,
+          "words": 99,
+          "utf16_units": 2076,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 33,
+          "words": 351,
+          "utf16_units": 3131,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 57,
+          "words": 181,
+          "utf16_units": 3020,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 191,
+          "utf16_units": 2430,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 200,
+          "utf16_units": 2435,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 191,
+          "utf16_units": 2392,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 42,
+          "words": 205,
+          "utf16_units": 2425,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 334,
+          "utf16_units": 3246,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 277,
+          "utf16_units": 3109,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 42,
+          "words": 240,
+          "utf16_units": 2611,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 56,
+          "words": 326,
+          "utf16_units": 3461,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 50,
+          "words": 264,
+          "utf16_units": 3097,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 49,
+          "words": 247,
+          "utf16_units": 2961,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 41,
+          "words": 239,
+          "utf16_units": 2542,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 74,
+          "words": 325,
+          "utf16_units": 4038,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 73,
+          "words": 174,
+          "utf16_units": 2984,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 62,
+          "words": 137,
+          "utf16_units": 2569,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 152,
+          "utf16_units": 2289,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 79,
+          "words": 266,
+          "utf16_units": 3647,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 61,
+          "words": 154,
+          "utf16_units": 2643,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 76,
+          "words": 212,
+          "utf16_units": 3360,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 63,
+          "words": 182,
+          "utf16_units": 2814,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 48,
+          "words": 310,
+          "utf16_units": 3372,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 53,
+          "words": 284,
+          "utf16_units": 3214,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 250,
+          "utf16_units": 2760,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 267,
+          "utf16_units": 3011,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 47,
+          "words": 241,
+          "utf16_units": 2811,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 37,
+          "words": 202,
+          "utf16_units": 2305,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 45,
+          "words": 251,
+          "utf16_units": 2785,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 49,
+          "words": 237,
+          "utf16_units": 2921,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 283,
+          "utf16_units": 3023,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 294,
+          "utf16_units": 3186,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 50,
+          "words": 267,
+          "utf16_units": 3049,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 253,
+          "utf16_units": 3083,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 255,
+          "utf16_units": 2775,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 259,
+          "utf16_units": 2981,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 236,
+          "utf16_units": 2636,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 50,
+          "words": 268,
+          "utf16_units": 2900,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 48,
+          "words": 228,
+          "utf16_units": 2817,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 41,
+          "words": 213,
+          "utf16_units": 2377,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 265,
+          "utf16_units": 2959,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 252,
+          "utf16_units": 2858,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 252,
+          "utf16_units": 3057,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 264,
+          "utf16_units": 3009,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 206,
+          "utf16_units": 2543,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 224,
+          "utf16_units": 2744,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 45,
+          "words": 227,
+          "utf16_units": 2626,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 33,
+          "words": 274,
+          "utf16_units": 2738,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 48,
+          "words": 250,
+          "utf16_units": 3020,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 46,
+          "words": 266,
+          "utf16_units": 2855,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 259,
+          "utf16_units": 3133,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 55,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 45,
+          "words": 230,
+          "utf16_units": 2552,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 56,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 45,
+          "words": 218,
+          "utf16_units": 2694,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 57,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 42,
+          "words": 207,
+          "utf16_units": 2367,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lines": 425,
+          "words": 1580,
+          "utf16_units": 21676,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "lines": 378,
+          "words": 2132,
+          "utf16_units": 23452,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "lines": 476,
+          "words": 1420,
+          "utf16_units": 21530,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "lines": 390,
+          "words": 1987,
+          "utf16_units": 23072,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "lines": 393,
+          "words": 2084,
+          "utf16_units": 23654,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "lines": 378,
+          "words": 1948,
+          "utf16_units": 22520,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56
+          ],
+          "lines": 359,
+          "words": 1948,
+          "utf16_units": 22362,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-008.txt",
+          "pages": [
+            57
+          ],
+          "lines": 42,
+          "words": 207,
+          "utf16_units": 2367,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "c379b265dc0c9bc14af75042fa9e8517dfa752c07b8313a552bca0e87a566e2f",
+        "pages.json": "6d48cdb2e12d9e5d00544780e691f33730fa070a1df5c39c2284e39bb9c5058f",
+        "pages.txt": "b181d75bfaee6cc83bf14546a403809fb8dba275daadcc92b9393285b62185ba",
+        "chunk-001.txt": "3a2c2ae701ca09cccef742e2e115c1cbb4cfa7e215a3c6eb436bd079057f1d16",
+        "chunk-002.txt": "b2fc452728d3d616018af227a0c58a12f441a4c388e0914fa62e4a91f2276d8c",
+        "chunk-003.txt": "e4859ba46895b81279ea999d4c5d7a819208600d7f8ef96f5b9a80494a39d0bc",
+        "chunk-004.txt": "27597022457016c358ee83db9c7dd93e15c28e1acd82ebb95c3e6c9850a605b8",
+        "chunk-005.txt": "b0b2cef6a469d5ea4d0739ab46bad53f7fcf05bc84d20f59bb228b4d08cb2abe",
+        "chunk-006.txt": "bb8f5c9ee820a76b98586608b9dad24893af775bac0002a60c2784d13e8f416e",
+        "chunk-007.txt": "0c8c159df468c46968fd122e243691643f9224dbe13d15e10671bca90dfa2c95",
+        "chunk-008.txt": "5f7e5e9b0deca8d955587d201b4323fd9eb83e9b0e7f6975fccae9d84fa79811"
+      }
+    },
+    {
+      "project": "iMagine",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/101058625/17055683.pdf",
+      "pdf_sha256": "5655797dbbf1392a6f7979d7521e948c5c9161d7fa6f09a046db8e8e1094fcd0",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101058625/17055683",
+      "page_count": 74,
+      "line_count": 3504,
+      "word_count": 17367,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 12,
+          "words": 99,
+          "utf16_units": 994,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 81,
+          "words": 191,
+          "utf16_units": 3530,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 5,
+          "words": 30,
+          "utf16_units": 340,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 37,
+          "words": 165,
+          "utf16_units": 6211,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 34,
+          "words": 145,
+          "utf16_units": 6456,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 22,
+          "words": 145,
+          "utf16_units": 3305,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 20,
+          "words": 202,
+          "utf16_units": 1886,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 46,
+          "words": 312,
+          "utf16_units": 3232,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 41,
+          "words": 312,
+          "utf16_units": 3282,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 44,
+          "words": 291,
+          "utf16_units": 3054,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 55,
+          "words": 309,
+          "utf16_units": 3451,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 31,
+          "words": 215,
+          "utf16_units": 2281,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 25,
+          "words": 162,
+          "utf16_units": 1722,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 43,
+          "words": 317,
+          "utf16_units": 3249,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 52,
+          "words": 220,
+          "utf16_units": 2748,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 211,
+          "utf16_units": 2643,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 242,
+          "utf16_units": 2683,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 53,
+          "words": 259,
+          "utf16_units": 3126,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 275,
+          "utf16_units": 2899,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 43,
+          "words": 382,
+          "utf16_units": 3576,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 53,
+          "words": 258,
+          "utf16_units": 3097,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 245,
+          "utf16_units": 2887,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 238,
+          "utf16_units": 2829,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 278,
+          "utf16_units": 2926,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 39,
+          "words": 232,
+          "utf16_units": 2561,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 45,
+          "words": 242,
+          "utf16_units": 2837,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 45,
+          "words": 220,
+          "utf16_units": 2659,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 46,
+          "words": 349,
+          "utf16_units": 3377,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 82,
+          "words": 222,
+          "utf16_units": 3608,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 82,
+          "words": 233,
+          "utf16_units": 3574,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 63,
+          "words": 156,
+          "utf16_units": 2635,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 56,
+          "words": 136,
+          "utf16_units": 2374,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 62,
+          "words": 184,
+          "utf16_units": 2736,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 57,
+          "words": 222,
+          "utf16_units": 2824,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 83,
+          "words": 201,
+          "utf16_units": 3564,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 80,
+          "words": 202,
+          "utf16_units": 3446,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 64,
+          "words": 217,
+          "utf16_units": 2995,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 55,
+          "words": 236,
+          "utf16_units": 3009,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 50,
+          "words": 316,
+          "utf16_units": 3289,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 238,
+          "utf16_units": 2774,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 54,
+          "words": 306,
+          "utf16_units": 3270,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 235,
+          "utf16_units": 2874,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 45,
+          "words": 226,
+          "utf16_units": 2582,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 41,
+          "words": 282,
+          "utf16_units": 3193,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 268,
+          "utf16_units": 2905,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 54,
+          "words": 256,
+          "utf16_units": 3059,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 40,
+          "words": 200,
+          "utf16_units": 2264,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 56,
+          "words": 307,
+          "utf16_units": 3336,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 46,
+          "words": 235,
+          "utf16_units": 2817,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 46,
+          "words": 247,
+          "utf16_units": 2768,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 322,
+          "utf16_units": 3325,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 43,
+          "words": 231,
+          "utf16_units": 2753,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 34,
+          "words": 167,
+          "utf16_units": 2055,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 61,
+          "words": 270,
+          "utf16_units": 3213,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 55,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 51,
+          "words": 286,
+          "utf16_units": 3104,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 56,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 250,
+          "utf16_units": 2843,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 57,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 55,
+          "words": 291,
+          "utf16_units": 3313,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 58,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 39,
+          "words": 229,
+          "utf16_units": 2606,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 59,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 55,
+          "words": 253,
+          "utf16_units": 3131,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 60,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 50,
+          "words": 210,
+          "utf16_units": 2762,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 61,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 52,
+          "words": 232,
+          "utf16_units": 2805,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 62,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 214,
+          "utf16_units": 2708,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 63,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 204,
+          "utf16_units": 2745,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 64,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 49,
+          "words": 194,
+          "utf16_units": 2597,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 65,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 54,
+          "words": 252,
+          "utf16_units": 3084,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 66,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 37,
+          "words": 307,
+          "utf16_units": 3052,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 67,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 48,
+          "words": 226,
+          "utf16_units": 2821,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 68,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 42,
+          "words": 235,
+          "utf16_units": 2560,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 69,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 52,
+          "words": 277,
+          "utf16_units": 3238,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 70,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 45,
+          "words": 231,
+          "utf16_units": 2564,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 71,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 239,
+          "utf16_units": 2917,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 72,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 47,
+          "words": 231,
+          "utf16_units": 2684,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 73,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 7,
+          "words": 37,
+          "utf16_units": 432,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 74,
+          "dimensions": {
+            "width": "595.440000",
+            "height": "841.680000"
+          },
+          "lines": 29,
+          "words": 308,
+          "utf16_units": 2917,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "lines": 211,
+          "words": 977,
+          "utf16_units": 22722,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "lines": 337,
+          "words": 2138,
+          "utf16_units": 23019,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "lines": 387,
+          "words": 2110,
+          "utf16_units": 23740,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "lines": 387,
+          "words": 1776,
+          "utf16_units": 21542,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "lines": 520,
+          "words": 1554,
+          "utf16_units": 23583,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ],
+          "lines": 386,
+          "words": 2127,
+          "utf16_units": 23946,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "lines": 374,
+          "words": 1979,
+          "utf16_units": 22531,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-008.txt",
+          "pages": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "lines": 397,
+          "words": 1965,
+          "utf16_units": 23272,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-009.txt",
+          "pages": [
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ],
+          "lines": 375,
+          "words": 1926,
+          "utf16_units": 22661,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-010.txt",
+          "pages": [
+            71,
+            72,
+            73,
+            74
+          ],
+          "lines": 130,
+          "words": 815,
+          "utf16_units": 8950,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "34779af018b1ad56d6298cb213f5a177971954074b1db13fc2a67567e217880c",
+        "pages.json": "b148bfbd30859699ba8b7b052a48ac4fde83ef3499cceb331c189c0b0d8ec5fd",
+        "pages.txt": "5258dbd83c5ca7378b5eccd7faa96f594d229727af124dac63626988d0543433",
+        "chunk-001.txt": "492f1d4aecac916bc1cab8853a873f93c0801afd0ec0be39ba981ad934fe86ea",
+        "chunk-002.txt": "f1f5deee1c9f9ecf64cadd58069ec421cdb63eed27bdde6db1cc622a3fc61127",
+        "chunk-003.txt": "cf4864be813f5c14cdf6c84ddfc5154a20ee61896b267647166ce181e40a23ff",
+        "chunk-004.txt": "5e24b6b35b3eb847904a6298cda9b71949312c24ddbf00680cb07fae525c584b",
+        "chunk-005.txt": "ce512bcd2a29497863e4b744275c635582c3a504c5c453587cf6747facba0756",
+        "chunk-006.txt": "97e2873c2d520d3628610bfe6088785b1ff6045b4988595ce65e23568715a977",
+        "chunk-007.txt": "6899d83808b793cf9da8629befc385692358f4fe6fac8d690b196a41f0ce5f40",
+        "chunk-008.txt": "fb3c7977a4261baf71eac3a6bc922785d561c723b433127489d49394a90bef8b",
+        "chunk-009.txt": "e4768c3890a4ed3f4e80587c8223a70eb4d6d34adf12363d830d924edbb0a47a",
+        "chunk-010.txt": "44233a917bc1d8594a831f7da7dd39e60c982c40bbcab4f9a6b7e52051e9b67f"
+      }
+    },
+    {
+      "project": "EGI-ACE",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/101017567/6602163.pdf",
+      "pdf_sha256": "4a0a8a2aa3ce0be13f16deaba02c811f4928528de663a8a09c0d73615f571fcc",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101017567/6602163",
+      "page_count": 54,
+      "line_count": 2447,
+      "word_count": 12891,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 21,
+          "words": 71,
+          "utf16_units": 1072,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 106,
+          "utf16_units": 1892,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 149,
+          "utf16_units": 3409,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 7,
+          "words": 63,
+          "utf16_units": 604,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 360,
+          "utf16_units": 3593,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 202,
+          "utf16_units": 2410,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 62,
+          "words": 223,
+          "utf16_units": 3053,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 60,
+          "words": 197,
+          "utf16_units": 2798,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 64,
+          "words": 232,
+          "utf16_units": 3134,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 238,
+          "utf16_units": 3087,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 243,
+          "utf16_units": 2882,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 246,
+          "utf16_units": 2695,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 218,
+          "utf16_units": 2582,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 211,
+          "utf16_units": 2544,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 226,
+          "utf16_units": 2480,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 217,
+          "utf16_units": 2573,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 286,
+          "utf16_units": 3096,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 207,
+          "utf16_units": 2317,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 157,
+          "utf16_units": 2079,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 274,
+          "utf16_units": 2998,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 211,
+          "utf16_units": 2450,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 180,
+          "utf16_units": 2370,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 229,
+          "utf16_units": 2656,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 272,
+          "utf16_units": 2860,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 54,
+          "words": 231,
+          "utf16_units": 2792,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 227,
+          "utf16_units": 2513,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 145,
+          "utf16_units": 1943,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 344,
+          "utf16_units": 3595,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 354,
+          "utf16_units": 3474,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 358,
+          "utf16_units": 3494,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 356,
+          "utf16_units": 3610,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 215,
+          "utf16_units": 2566,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 306,
+          "utf16_units": 3240,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 312,
+          "utf16_units": 3144,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 341,
+          "utf16_units": 3328,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 231,
+          "utf16_units": 2820,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 256,
+          "utf16_units": 2883,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 235,
+          "utf16_units": 2697,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 187,
+          "utf16_units": 2381,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 289,
+          "utf16_units": 3265,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 303,
+          "utf16_units": 3175,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 172,
+          "utf16_units": 2291,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 60,
+          "words": 301,
+          "utf16_units": 3482,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 244,
+          "utf16_units": 2738,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 331,
+          "utf16_units": 3637,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 52,
+          "words": 252,
+          "utf16_units": 3169,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 57,
+          "words": 343,
+          "utf16_units": 3738,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 357,
+          "utf16_units": 3374,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 251,
+          "utf16_units": 2646,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 185,
+          "utf16_units": 2511,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 251,
+          "utf16_units": 2620,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 230,
+          "utf16_units": 2480,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 189,
+          "utf16_units": 2559,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 21,
+          "words": 77,
+          "utf16_units": 1047,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lines": 371,
+          "words": 1603,
+          "utf16_units": 21965,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "lines": 379,
+          "words": 1885,
+          "utf16_units": 21939,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "lines": 399,
+          "words": 1988,
+          "utf16_units": 23035,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "lines": 332,
+          "words": 2078,
+          "utf16_units": 21922,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "lines": 371,
+          "words": 2154,
+          "utf16_units": 23693,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "lines": 349,
+          "words": 2000,
+          "utf16_units": 22429,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "lines": 246,
+          "words": 1183,
+          "utf16_units": 13863,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "bed7001d2168c74ea395b5565f749b20587dca14aceece9f0de35c71e6b34d12",
+        "pages.json": "ed37b68406c54accfd346e175e04a0cb13c59ce80fa1f67d0e22484bf23e7bda",
+        "pages.txt": "94ab12faf9cae430fb6bac7eb6f33c96dc50e615a584ea825e4c7204b8335c40",
+        "chunk-001.txt": "28bbe7a1f071ead608f53b3894bc1d824445682c39048f24baf6e66a8cf104db",
+        "chunk-002.txt": "191911077e11ee9ff209ccf86bd1f64efc7083ef0329eca6972c107bfd34a7e7",
+        "chunk-003.txt": "9445fe2fcd634e999d090430a1aa9c80fb69d58e94f1b5b86192627577d87e7f",
+        "chunk-004.txt": "b0dae5c9d042d0267892b1cd7639b254751d8de1bae739d96852779387a25dcd",
+        "chunk-005.txt": "fcb2dd16e0a86446723c81a45b3dfb4ec48092802570971db4026a737288e499",
+        "chunk-006.txt": "d9cb0fe39477f8bdcb7bcd9d59dc73670d61f4523972968e6979b92642c3c287",
+        "chunk-007.txt": "ed231d9e46a3d3d49c625656ca697b26225a768ccf78a61969828d6a8a5a8139"
+      }
+    },
+    {
+      "project": "EGI-ACE",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/101017567/19402005.pdf",
+      "pdf_sha256": "a827195d2d40780d0492d9513c2c65347bb209ab4880fc07e47f891c889906c5",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101017567/19402005",
+      "page_count": 71,
+      "line_count": 2619,
+      "word_count": 15638,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 24,
+          "words": 108,
+          "utf16_units": 1439,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 122,
+          "utf16_units": 2127,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 64,
+          "words": 153,
+          "utf16_units": 2606,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 22,
+          "words": 227,
+          "utf16_units": 2021,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 379,
+          "utf16_units": 3762,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 287,
+          "utf16_units": 2683,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 27,
+          "words": 245,
+          "utf16_units": 2423,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 19,
+          "words": 223,
+          "utf16_units": 1906,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 444,
+          "utf16_units": 3907,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 428,
+          "utf16_units": 4463,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 11,
+          "words": 97,
+          "utf16_units": 899,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 16,
+          "utf16_units": 239,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 15,
+          "words": 161,
+          "utf16_units": 1491,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 166,
+          "utf16_units": 2063,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 36,
+          "words": 152,
+          "utf16_units": 1942,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 101,
+          "utf16_units": 1851,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 54,
+          "words": 199,
+          "utf16_units": 2655,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 55,
+          "words": 196,
+          "utf16_units": 2695,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 56,
+          "words": 209,
+          "utf16_units": 2762,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 56,
+          "words": 218,
+          "utf16_units": 2819,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 221,
+          "utf16_units": 2543,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 248,
+          "utf16_units": 2710,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 302,
+          "utf16_units": 2821,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 37,
+          "words": 275,
+          "utf16_units": 2760,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 280,
+          "utf16_units": 2665,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 221,
+          "utf16_units": 2580,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 36,
+          "words": 220,
+          "utf16_units": 2362,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 168,
+          "utf16_units": 1795,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 30,
+          "words": 160,
+          "utf16_units": 1878,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 301,
+          "utf16_units": 3327,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 313,
+          "utf16_units": 2999,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 218,
+          "utf16_units": 2369,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 234,
+          "utf16_units": 2746,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 250,
+          "utf16_units": 2649,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 192,
+          "utf16_units": 2194,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 58,
+          "words": 322,
+          "utf16_units": 3899,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 37,
+          "words": 227,
+          "utf16_units": 2523,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 291,
+          "utf16_units": 2886,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 346,
+          "utf16_units": 3195,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 281,
+          "utf16_units": 2635,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 287,
+          "utf16_units": 2725,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 208,
+          "utf16_units": 2182,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 231,
+          "utf16_units": 2593,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 249,
+          "utf16_units": 2507,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 195,
+          "utf16_units": 2078,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 184,
+          "utf16_units": 2157,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 37,
+          "words": 247,
+          "utf16_units": 2589,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 31,
+          "words": 184,
+          "utf16_units": 1963,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 207,
+          "utf16_units": 2330,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 231,
+          "utf16_units": 2341,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 205,
+          "utf16_units": 2085,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 143,
+          "utf16_units": 1729,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 231,
+          "utf16_units": 2440,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 31,
+          "words": 186,
+          "utf16_units": 1953,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 55,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 256,
+          "utf16_units": 2697,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 56,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 307,
+          "utf16_units": 3151,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 57,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 322,
+          "utf16_units": 2994,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 58,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 206,
+          "utf16_units": 2028,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 59,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 176,
+          "utf16_units": 1980,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 60,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 191,
+          "utf16_units": 2128,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 61,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 187,
+          "utf16_units": 2030,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 62,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 249,
+          "utf16_units": 2554,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 63,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 261,
+          "utf16_units": 2667,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 64,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 194,
+          "utf16_units": 2108,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 65,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 164,
+          "utf16_units": 1895,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 66,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 196,
+          "utf16_units": 2092,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 67,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 186,
+          "utf16_units": 2043,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 68,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 20,
+          "words": 109,
+          "utf16_units": 1223,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 69,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 59,
+          "words": 223,
+          "utf16_units": 2933,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 70,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 199,
+          "utf16_units": 2658,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 71,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 5,
+          "words": 23,
+          "utf16_units": 273,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lines": 317,
+          "words": 2188,
+          "utf16_units": 22874,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "lines": 434,
+          "words": 1943,
+          "utf16_units": 23879,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "lines": 329,
+          "words": 2095,
+          "utf16_units": 22114,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "lines": 339,
+          "words": 2057,
+          "utf16_units": 22706,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ],
+          "lines": 324,
+          "words": 2272,
+          "utf16_units": 22958,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56
+          ],
+          "lines": 358,
+          "words": 2197,
+          "utf16_units": 23278,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "lines": 349,
+          "words": 2146,
+          "utf16_units": 22476,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-008.txt",
+          "pages": [
+            67,
+            68,
+            69,
+            70,
+            71
+          ],
+          "lines": 169,
+          "words": 740,
+          "utf16_units": 9130,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "8a537136c8eca911776d2a29fff4334a7859e6e019c5cb765549b489baf1a0c1",
+        "pages.json": "c714b8b9cd68034ef0f42b928e860ec463a5d418c3699cb6c04fe6ce4dc69d34",
+        "pages.txt": "f74f786459a63e8dde3b1616f304942831081d58b69965abc070bb1497dbb201",
+        "chunk-001.txt": "2161613c0ea9d79638c2d18efa338d329553f2c9d194a94fc6646b2cf592be75",
+        "chunk-002.txt": "4b6bdc1965e5da44482cf6f606ed0f47b6f48f52b569f01daedc92c25c53e1dc",
+        "chunk-003.txt": "bc5d84b8fa707dcb0fc22d87c9b5138f341cd4f5c550d4b64c0f568eb3adf253",
+        "chunk-004.txt": "02d79d9fd788422b5e842c1a8d59fb10ea6359b5747ea0ac24332eda9464edb4",
+        "chunk-005.txt": "bb5d0bbfb815509517d1d1303b638fa580dad1e0afe68b46050221ada3c6cb09",
+        "chunk-006.txt": "b5376c05aff6cb3430ac0c6faf2198a367a36e49773d11a92a0825fe47df5fbb",
+        "chunk-007.txt": "8c95774498fb955bc2a03ee30e556d466248f9dcd45c3cf4a0a09d9446553089",
+        "chunk-008.txt": "58f59c995e7de2bf892586cc9ae37f02d0db4c43c33c4b279febdf3dd9f67856"
+      }
+    },
+    {
+      "project": "NANOFACTS",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/952259/13847570.pdf",
+      "pdf_sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/952259/13847570",
+      "page_count": 26,
+      "line_count": 949,
+      "word_count": 8131,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 117,
+          "utf16_units": 1782,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 11,
+          "words": 83,
+          "utf16_units": 859,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 57,
+          "words": 297,
+          "utf16_units": 7450,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 12,
+          "words": 87,
+          "utf16_units": 1121,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 469,
+          "utf16_units": 4222,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 432,
+          "utf16_units": 4027,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 64,
+          "words": 280,
+          "utf16_units": 3558,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 422,
+          "utf16_units": 3852,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 430,
+          "utf16_units": 4043,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 497,
+          "utf16_units": 4644,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 614,
+          "utf16_units": 5385,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 486,
+          "utf16_units": 4295,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 56,
+          "words": 82,
+          "utf16_units": 2477,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 133,
+          "utf16_units": 2644,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 315,
+          "utf16_units": 3540,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 469,
+          "utf16_units": 4432,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 525,
+          "utf16_units": 4727,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 37,
+          "words": 342,
+          "utf16_units": 3429,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 350,
+          "utf16_units": 2977,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 563,
+          "utf16_units": 4836,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 516,
+          "utf16_units": 4607,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 20,
+          "words": 153,
+          "utf16_units": 1556,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 12,
+          "words": 85,
+          "utf16_units": 854,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 18,
+          "words": 158,
+          "utf16_units": 1520,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 19,
+          "words": 179,
+          "utf16_units": 1592,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 6,
+          "words": 47,
+          "utf16_units": 429,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "lines": 259,
+          "words": 1765,
+          "utf16_units": 23019,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "lines": 221,
+          "words": 2449,
+          "utf16_units": 22219,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "lines": 279,
+          "words": 1866,
+          "utf16_units": 21249,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "lines": 190,
+          "words": 2051,
+          "utf16_units": 18371,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "d4c242513440c860c71a685da8601d532cfcfe49328cc4383b01685ee5a8d971",
+        "pages.json": "be54204fdbdbe0304ef06170858581771ec832f8b59e7c7bc4b7c209b112e523",
+        "pages.txt": "d9d58444c7cefff7b416daa1cc6f3877f79847f4a9e2d1dfe4e67e292a1280b7",
+        "chunk-001.txt": "233707603de37116484dcfd0c0ca861001ae35f3306628a932397ba491cac723",
+        "chunk-002.txt": "98511a237d4bcff902f2e74b5c287fccb81067381a73337cb625166ffd71be77",
+        "chunk-003.txt": "dad1ced41369bdfb3366b0a0ee2becb0e9e8b566d70959ad6fb4470f9aa2788b",
+        "chunk-004.txt": "4a660c07f8fca287053a4b848e6d7bb8ae08c790af140591feec98d3351e1e4c"
+      }
+    },
+    {
+      "project": "NANOFACTS",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/952259/13857898.pdf",
+      "pdf_sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/952259/13857898",
+      "page_count": 24,
+      "line_count": 951,
+      "word_count": 8204,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 189,
+          "utf16_units": 2452,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 11,
+          "words": 83,
+          "utf16_units": 859,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 59,
+          "words": 307,
+          "utf16_units": 7788,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 10,
+          "words": 77,
+          "utf16_units": 782,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 533,
+          "utf16_units": 4750,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 531,
+          "utf16_units": 4908,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 67,
+          "words": 241,
+          "utf16_units": 3384,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 527,
+          "utf16_units": 4580,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 52,
+          "words": 493,
+          "utf16_units": 4866,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 588,
+          "utf16_units": 5410,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 632,
+          "utf16_units": 5490,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 141,
+          "utf16_units": 3041,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 55,
+          "words": 148,
+          "utf16_units": 2790,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 353,
+          "utf16_units": 3745,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 475,
+          "utf16_units": 4736,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 508,
+          "utf16_units": 4609,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 433,
+          "utf16_units": 4263,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 32,
+          "words": 428,
+          "utf16_units": 3600,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 667,
+          "utf16_units": 5749,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 332,
+          "utf16_units": 3215,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 14,
+          "words": 96,
+          "utf16_units": 968,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 15,
+          "words": 132,
+          "utf16_units": 1245,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 22,
+          "words": 200,
+          "utf16_units": 1821,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 10,
+          "words": 90,
+          "utf16_units": 806,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "lines": 215,
+          "words": 1720,
+          "utf16_units": 21539,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "lines": 263,
+          "words": 2481,
+          "utf16_units": 23730,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "lines": 295,
+          "words": 2058,
+          "utf16_units": 23184,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "lines": 178,
+          "words": 1945,
+          "utf16_units": 17404,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "5fde19e14d33fc355a6b27ae6006bdd0107edb7590ecb58773a64343ea597e74",
+        "pages.json": "66174982d29b5b69b45d16660a40067a2b8bf6f16391512e16c62b4737c5dc32",
+        "pages.txt": "79d0eff765c4cf20b3b0d4dd195588d9bee9294106543676d4994b55365f790c",
+        "chunk-001.txt": "2f6109f92f2a1fee738347a87104ec6c0f98e2893b3fd1fcd50f9cc651bd0f8c",
+        "chunk-002.txt": "3dd317fb99552a1fd27db32066e63fe4088a48face34da655fe0d1e777c038e6",
+        "chunk-003.txt": "1d51c5919d98796f065d488d0e2bfd68e71ba504f42a429efb72e73fbb9f1dcd",
+        "chunk-004.txt": "1384a2c5904d247e9865cd9559f997f9ffb3df942e8e69e7f4654fcf65a3a710"
+      }
+    },
+    {
+      "project": "AGRICORE",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.pdf",
+      "pdf_sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/816078/AGRICORE-D9.2-v1.0",
+      "page_count": 19,
+      "line_count": 826,
+      "word_count": 4902,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 13,
+          "words": 27,
+          "utf16_units": 536,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 68,
+          "utf16_units": 1414,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 352,
+          "utf16_units": 2964,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 29,
+          "words": 67,
+          "utf16_units": 1220,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 27,
+          "words": 98,
+          "utf16_units": 3449,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 515,
+          "utf16_units": 4875,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 334,
+          "utf16_units": 2976,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 450,
+          "utf16_units": 4213,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 60,
+          "words": 359,
+          "utf16_units": 3935,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 74,
+          "words": 316,
+          "utf16_units": 4340,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 185,
+          "utf16_units": 2444,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 88,
+          "words": 289,
+          "utf16_units": 4217,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 96,
+          "words": 360,
+          "utf16_units": 4633,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 62,
+          "words": 386,
+          "utf16_units": 4129,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 434,
+          "utf16_units": 4119,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 38,
+          "utf16_units": 336,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 26,
+          "words": 252,
+          "utf16_units": 2243,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 24,
+          "words": 261,
+          "utf16_units": 2286,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 25,
+          "words": 111,
+          "utf16_units": 1375,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "lines": 278,
+          "words": 1911,
+          "utf16_units": 21647,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "lines": 418,
+          "words": 1895,
+          "utf16_units": 23698,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "lines": 130,
+          "words": 1096,
+          "utf16_units": 10359,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "d052b6f5f54814830a6c6a44fd4708d57536d27d97499a583f050c94f401cd8c",
+        "pages.json": "273957edd9f3d65d5111ae837e93bbc5917b14fe57482758aa36c5d579faf470",
+        "pages.txt": "b6d31fa8527ebacdfb538cc854e84982eb4f0d7f7305128a3bbb22f6c33471e6",
+        "chunk-001.txt": "2336a68c59343a669552794146f7eb236c917137fef7557203acc894f4937d40",
+        "chunk-002.txt": "eb160ca28f2fb6d9fad503dfaec704445bacb45ef57a36ebbd5626ad01d8d52c",
+        "chunk-003.txt": "96edf0523b2ac4c89b82debd1a9f374c83ecb9fe287af1834282752fc0a7782e"
+      }
+    },
+    {
+      "project": "AGRICORE",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.pdf",
+      "pdf_sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/816078/AGRICORE-D9.3-v1.0",
+      "page_count": 34,
+      "line_count": 1729,
+      "word_count": 11155,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 14,
+          "words": 24,
+          "utf16_units": 534,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 166,
+          "utf16_units": 2256,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 345,
+          "utf16_units": 2924,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 29,
+          "words": 68,
+          "utf16_units": 1226,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 24,
+          "words": 186,
+          "utf16_units": 4116,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 33,
+          "words": 121,
+          "utf16_units": 4404,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 60,
+          "words": 485,
+          "utf16_units": 4615,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 21,
+          "words": 243,
+          "utf16_units": 2127,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 378,
+          "utf16_units": 3323,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 31,
+          "utf16_units": 314,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 479,
+          "utf16_units": 4599,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 54,
+          "words": 436,
+          "utf16_units": 4127,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 58,
+          "words": 233,
+          "utf16_units": 3176,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 67,
+          "words": 223,
+          "utf16_units": 3454,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 212,
+          "utf16_units": 3068,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 65,
+          "words": 502,
+          "utf16_units": 4978,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 67,
+          "words": 440,
+          "utf16_units": 4620,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 70,
+          "words": 531,
+          "utf16_units": 5170,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 71,
+          "words": 418,
+          "utf16_units": 4765,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 73,
+          "words": 429,
+          "utf16_units": 4695,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 64,
+          "words": 440,
+          "utf16_units": 4602,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 64,
+          "words": 453,
+          "utf16_units": 4620,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 63,
+          "words": 398,
+          "utf16_units": 4298,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 66,
+          "words": 486,
+          "utf16_units": 5019,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 68,
+          "words": 460,
+          "utf16_units": 4836,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 65,
+          "words": 447,
+          "utf16_units": 4760,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 63,
+          "words": 360,
+          "utf16_units": 3907,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 88,
+          "words": 331,
+          "utf16_units": 4500,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 69,
+          "words": 338,
+          "utf16_units": 3818,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 69,
+          "words": 433,
+          "utf16_units": 4603,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 412,
+          "utf16_units": 3925,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 26,
+          "words": 249,
+          "utf16_units": 2235,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 26,
+          "words": 283,
+          "utf16_units": 2481,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "594.960000",
+            "height": "841.920000"
+          },
+          "lines": 31,
+          "words": 115,
+          "utf16_units": 1556,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "lines": 251,
+          "words": 1638,
+          "utf16_units": 22202,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "lines": 321,
+          "words": 1992,
+          "utf16_units": 22061,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "lines": 273,
+          "words": 1891,
+          "utf16_units": 19533,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "lines": 330,
+          "words": 2206,
+          "utf16_units": 23234,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "lines": 353,
+          "words": 1936,
+          "utf16_units": 21821,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "lines": 201,
+          "words": 1492,
+          "utf16_units": 14800,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "1bc13369d6a19da57c3e3783f23aadc4f6664b73d48c993ab41e06dca542d4e8",
+        "pages.json": "cd9df718e94ce0342479d26b5bb75a74b42fa31dcaadd03c72fc8bce4286c4a9",
+        "pages.txt": "969fc9261c5e98bd774d2ef6c68ffdf95f08fd3f57beeee83838472b0eb35eb4",
+        "chunk-001.txt": "c96ca2a416a128c43724dba561f482db2c0197c3e258e4bf8198459d7af72c4c",
+        "chunk-002.txt": "171b1d57364b2c2d7f1e4faa641d0d28b0b4beecf29ee994c970473687ce25a1",
+        "chunk-003.txt": "fffb5a32e0143854ac9a950688aaf51472b7f06e673f121cdee3463624ef0f6a",
+        "chunk-004.txt": "7214b67085d46775221b663d8e546c9ddeed40111c6421311882c15b15124634",
+        "chunk-005.txt": "59f0f037c59469ea8848e2a03b4ebeeb8254e6a9a9fda26a7474ec9707267a09",
+        "chunk-006.txt": "f073b67f8f127ef5b1993bd5119ca65820a256d9bc66f1d39e92bcabae15a1ef"
+      }
+    },
+    {
+      "project": "SUSTRACK",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/101081823/14497074.pdf",
+      "pdf_sha256": "f1220cde868b34a446310f3a755e0ec600696e6db832b708cfbf39c301ef08b4",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101081823/14497074",
+      "page_count": 61,
+      "line_count": 3001,
+      "word_count": 22024,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 1,
+          "words": 9,
+          "utf16_units": 72,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 93,
+          "utf16_units": 1915,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 30,
+          "words": 328,
+          "utf16_units": 3153,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 69,
+          "words": 177,
+          "utf16_units": 2973,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 397,
+          "utf16_units": 3678,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 16,
+          "words": 58,
+          "utf16_units": 784,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 211,
+          "utf16_units": 3714,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 40,
+          "words": 143,
+          "utf16_units": 2677,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 18,
+          "words": 119,
+          "utf16_units": 2016,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 70,
+          "words": 149,
+          "utf16_units": 2950,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 371,
+          "utf16_units": 3526,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 499,
+          "utf16_units": 4396,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 454,
+          "utf16_units": 4156,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 410,
+          "utf16_units": 4142,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 578,
+          "utf16_units": 5424,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 613,
+          "utf16_units": 5389,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 587,
+          "utf16_units": 5021,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 630,
+          "utf16_units": 5518,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 602,
+          "utf16_units": 5378,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 540,
+          "utf16_units": 4982,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 546,
+          "utf16_units": 4961,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 105,
+          "words": 386,
+          "utf16_units": 5289,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 146,
+          "words": 334,
+          "utf16_units": 6092,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 113,
+          "words": 340,
+          "utf16_units": 5303,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 468,
+          "utf16_units": 4544,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 52,
+          "words": 539,
+          "utf16_units": 4982,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 508,
+          "utf16_units": 4464,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 458,
+          "utf16_units": 4252,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 537,
+          "utf16_units": 4734,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 54,
+          "words": 455,
+          "utf16_units": 4491,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 59,
+          "words": 430,
+          "utf16_units": 4389,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 100,
+          "words": 419,
+          "utf16_units": 5338,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 54,
+          "words": 442,
+          "utf16_units": 4188,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 49,
+          "words": 463,
+          "utf16_units": 4336,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 481,
+          "utf16_units": 4598,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 55,
+          "words": 310,
+          "utf16_units": 3363,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 458,
+          "utf16_units": 4551,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 69,
+          "words": 367,
+          "utf16_units": 4153,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 92,
+          "words": 318,
+          "utf16_units": 4620,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 559,
+          "utf16_units": 4933,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 515,
+          "utf16_units": 4767,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 50,
+          "words": 639,
+          "utf16_units": 5432,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 84,
+          "words": 426,
+          "utf16_units": 5058,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 87,
+          "words": 328,
+          "utf16_units": 4406,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 654,
+          "utf16_units": 5592,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 481,
+          "utf16_units": 4289,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 19,
+          "words": 226,
+          "utf16_units": 1956,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 271,
+          "utf16_units": 2839,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 236,
+          "utf16_units": 2662,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 283,
+          "utf16_units": 3014,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 348,
+          "utf16_units": 3399,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 431,
+          "utf16_units": 3843,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 20,
+          "words": 230,
+          "utf16_units": 1904,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 309,
+          "utf16_units": 3148,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 55,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 458,
+          "utf16_units": 3819,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 56,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 23,
+          "words": 107,
+          "utf16_units": 1291,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 57,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 17,
+          "words": 119,
+          "utf16_units": 1169,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 58,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 98,
+          "utf16_units": 1365,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 59,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 9,
+          "words": 24,
+          "utf16_units": 624,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 60,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 8,
+          "words": 42,
+          "utf16_units": 453,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 61,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 13,
+          "utf16_units": 202,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lines": 380,
+          "words": 1684,
+          "utf16_units": 23932,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "lines": 224,
+          "words": 2312,
+          "utf16_units": 21644,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "lines": 200,
+          "words": 2432,
+          "utf16_units": 21306,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "lines": 354,
+          "words": 1806,
+          "utf16_units": 21324,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "lines": 313,
+          "words": 2313,
+          "utf16_units": 23545,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "lines": 314,
+          "words": 2283,
+          "utf16_units": 23140,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "lines": 285,
+          "words": 2079,
+          "utf16_units": 21001,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-008.txt",
+          "pages": [
+            39,
+            40,
+            41,
+            42
+          ],
+          "lines": 237,
+          "words": 2031,
+          "utf16_units": 19752,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-009.txt",
+          "pages": [
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "lines": 287,
+          "words": 2115,
+          "utf16_units": 21301,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-010.txt",
+          "pages": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "lines": 275,
+          "words": 2108,
+          "utf16_units": 20809,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-011.txt",
+          "pages": [
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61
+          ],
+          "lines": 132,
+          "words": 861,
+          "utf16_units": 8923,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "606672f9b332a809e0217493812077dd74cfecef8c12d74f2b8b7665ccaa551b",
+        "pages.json": "d6b3f2aa595513e8c2839a5abb18f951f3964d6cb79fbfc6a487b04e5d8b8cda",
+        "pages.txt": "64f04d34db4266d713243fade81a7e1029815dfa31b77950471728c185b55583",
+        "chunk-001.txt": "7deda7c86aebb16bbae1b0e1c487952b487f5341acb76a509ddc069b0e3f56a2",
+        "chunk-002.txt": "d0e83083fb514fe8d491a38b528cddf5fb33c0bbec84f01c13bde35a9263d1b0",
+        "chunk-003.txt": "2e305b1bebccb302fbcfe830d10cec0a225cb18ba582b185cea812144d98a970",
+        "chunk-004.txt": "185c649002bda6d3800670d889428e7ac93e881900cf3fde170ca8eb01b374bf",
+        "chunk-005.txt": "aaa05b896c21410ca1f957df755b26f46484d9dc53c8ccfd13577dd966afa846",
+        "chunk-006.txt": "401ea81d426427e237e5160f73513bbfc2f379a133770face0cc5f5d7a41856a",
+        "chunk-007.txt": "cc1a23866bc9528b89e9071d9f33b7ea954a41cbf2571b5bf81a89912bad2fcc",
+        "chunk-008.txt": "1a6039447dbb68bc2de068fb69ba920315cd36b4578ba929b6c93feedef3f956",
+        "chunk-009.txt": "8e8450e8114b75d9030e0bb0c971a3eb6759e4a0b4a5cca62653f24a10b7f774",
+        "chunk-010.txt": "1a5abbb71965fcb7788725e63f8a78fb6ff29888121a6bc963e7effb1e6b66ae",
+        "chunk-011.txt": "ecb10a8cacd24879908f54dd96f038e734ef014082c640af58d4a20b9d26e85f"
+      }
+    },
+    {
+      "project": "SUSTRACK",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/101081823/19161966.pdf",
+      "pdf_sha256": "701789cbd909a8bd0f7128a6cba262dfb18bf6cd74881c4dc7520eb8637245e5",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101081823/19161966",
+      "page_count": 70,
+      "line_count": 3551,
+      "word_count": 22012,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 21,
+          "utf16_units": 226,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 59,
+          "words": 111,
+          "utf16_units": 2349,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 29,
+          "words": 318,
+          "utf16_units": 3052,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 68,
+          "words": 177,
+          "utf16_units": 2950,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 39,
+          "words": 353,
+          "utf16_units": 3525,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 23,
+          "words": 133,
+          "utf16_units": 1529,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 210,
+          "utf16_units": 3803,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 35,
+          "words": 110,
+          "utf16_units": 2124,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 19,
+          "words": 114,
+          "utf16_units": 2134,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 68,
+          "words": 147,
+          "utf16_units": 2867,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 394,
+          "utf16_units": 3812,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 381,
+          "utf16_units": 3790,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 14,
+          "words": 90,
+          "utf16_units": 999,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 448,
+          "utf16_units": 4271,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 469,
+          "utf16_units": 4420,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 388,
+          "utf16_units": 4138,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 505,
+          "utf16_units": 4766,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 18,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 53,
+          "words": 587,
+          "utf16_units": 5347,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 19,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 486,
+          "utf16_units": 4409,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 20,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 487,
+          "utf16_units": 4285,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 21,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 551,
+          "utf16_units": 5092,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 22,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 464,
+          "utf16_units": 4390,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 23,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 401,
+          "utf16_units": 4123,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 24,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 471,
+          "utf16_units": 4709,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 25,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 45,
+          "words": 439,
+          "utf16_units": 4448,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 26,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 458,
+          "utf16_units": 4457,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 27,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 121,
+          "words": 339,
+          "utf16_units": 5442,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 28,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 131,
+          "words": 290,
+          "utf16_units": 5402,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 29,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 116,
+          "words": 323,
+          "utf16_units": 5356,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 30,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 329,
+          "utf16_units": 3583,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 31,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 48,
+          "words": 449,
+          "utf16_units": 4473,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 32,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 34,
+          "words": 287,
+          "utf16_units": 2919,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 33,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 442,
+          "utf16_units": 4107,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 34,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 395,
+          "utf16_units": 3843,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 35,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 455,
+          "utf16_units": 4352,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 36,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 55,
+          "words": 379,
+          "utf16_units": 4064,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 37,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 71,
+          "words": 370,
+          "utf16_units": 4367,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 38,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 94,
+          "words": 377,
+          "utf16_units": 4982,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 39,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 44,
+          "words": 377,
+          "utf16_units": 3682,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 40,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 51,
+          "words": 458,
+          "utf16_units": 4567,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 41,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 398,
+          "utf16_units": 3936,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 42,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 56,
+          "words": 229,
+          "utf16_units": 2880,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 43,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 412,
+          "utf16_units": 4005,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 44,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 61,
+          "words": 392,
+          "utf16_units": 4244,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 45,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 91,
+          "words": 210,
+          "utf16_units": 3836,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 46,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 59,
+          "words": 143,
+          "utf16_units": 2547,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 47,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 27,
+          "words": 215,
+          "utf16_units": 2300,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 48,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 42,
+          "words": 441,
+          "utf16_units": 4262,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 49,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 383,
+          "utf16_units": 3951,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 50,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 69,
+          "words": 421,
+          "utf16_units": 4808,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 51,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 104,
+          "words": 252,
+          "utf16_units": 4352,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 52,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 47,
+          "words": 511,
+          "utf16_units": 4902,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 53,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 330,
+          "utf16_units": 3239,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 54,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 38,
+          "words": 411,
+          "utf16_units": 4044,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 55,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 36,
+          "words": 317,
+          "utf16_units": 3042,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 56,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 41,
+          "words": 226,
+          "utf16_units": 2540,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 57,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 55,
+          "words": 311,
+          "utf16_units": 3528,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 58,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 494,
+          "utf16_units": 4412,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 59,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 25,
+          "words": 182,
+          "utf16_units": 1705,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 60,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 46,
+          "words": 309,
+          "utf16_units": 3150,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 61,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 43,
+          "words": 458,
+          "utf16_units": 3821,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 62,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 23,
+          "words": 107,
+          "utf16_units": 1293,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 63,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 17,
+          "words": 119,
+          "utf16_units": 1171,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 64,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 28,
+          "words": 98,
+          "utf16_units": 1367,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 65,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 9,
+          "words": 24,
+          "utf16_units": 626,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 66,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 8,
+          "words": 42,
+          "utf16_units": 455,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 67,
+          "dimensions": {
+            "width": "841.920000",
+            "height": "595.320000"
+          },
+          "lines": 126,
+          "words": 186,
+          "utf16_units": 4440,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 68,
+          "dimensions": {
+            "width": "841.920000",
+            "height": "595.320000"
+          },
+          "lines": 132,
+          "words": 178,
+          "utf16_units": 4684,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 69,
+          "dimensions": {
+            "width": "841.920000",
+            "height": "595.320000"
+          },
+          "lines": 142,
+          "words": 217,
+          "utf16_units": 5165,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 70,
+          "dimensions": {
+            "width": "595.320000",
+            "height": "841.920000"
+          },
+          "lines": 4,
+          "words": 13,
+          "utf16_units": 204,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "lines": 322,
+          "words": 1547,
+          "utf16_units": 21692,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "lines": 256,
+          "words": 1929,
+          "utf16_units": 20159,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "lines": 229,
+          "words": 2453,
+          "utf16_units": 22945,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-004.txt",
+          "pages": [
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "lines": 222,
+          "words": 2326,
+          "utf16_units": 22762,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-005.txt",
+          "pages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "lines": 411,
+          "words": 1410,
+          "utf16_units": 20657,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-006.txt",
+          "pages": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "lines": 255,
+          "words": 2357,
+          "utf16_units": 23277,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-007.txt",
+          "pages": [
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "lines": 315,
+          "words": 1961,
+          "utf16_units": 21662,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-008.txt",
+          "pages": [
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "lines": 381,
+          "words": 1999,
+          "utf16_units": 23748,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-009.txt",
+          "pages": [
+            48,
+            49,
+            50,
+            51,
+            52
+          ],
+          "lines": 303,
+          "words": 2008,
+          "utf16_units": 22275,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-010.txt",
+          "pages": [
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "lines": 279,
+          "words": 2271,
+          "utf16_units": 22510,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-011.txt",
+          "pages": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68
+          ],
+          "lines": 432,
+          "words": 1521,
+          "utf16_units": 21007,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-012.txt",
+          "pages": [
+            69,
+            70
+          ],
+          "lines": 146,
+          "words": 230,
+          "utf16_units": 5369,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "fa0175260eaa7d3b2574ef02ba54c002b50130aa03e729480c286f8f00d66dc0",
+        "pages.json": "b5c670c5b09fa82b2453485c82801551bd1917b14dee0e2f1b4fbd6b9e759ec5",
+        "pages.txt": "ff478f77d78dce86a9618d228b05f521116aa08f75d2f5f9fd21d92e1e4e16ba",
+        "chunk-001.txt": "5ec884d65dc04362d75af9fc9f4818172a9e78ee16a66432f6b21da4e25fbd12",
+        "chunk-002.txt": "b749d3925901f8873fff3d5fd0d0d3d3228fafb01c4bd03b32fd677aa0e3a645",
+        "chunk-003.txt": "70eb2795534de6d237e9aa8b8b8b59c2d5e62ba6ba3a3f8b32fd21cc67aad026",
+        "chunk-004.txt": "4723dd1ae55eb01f512eaa19302d93dc9a5cabdf2fc31b39099c45361aaf0bac",
+        "chunk-005.txt": "0d4521da3243318c6651061279b143ec012b352379e2e3075513d3dd115c9ce3",
+        "chunk-006.txt": "75bc3122e14c9b9975e18fb9d7fc10347537768e8931140e497ba4e08786ff37",
+        "chunk-007.txt": "1abebdd26a8bb47fd147cece72824e4813ebeacdaf43929e68730d05fae9821a",
+        "chunk-008.txt": "eb40b1526db84b9cc7ddb582bda7ac50769bf16a478456512f35e64e4aa70428",
+        "chunk-009.txt": "c1b0fcc110df0ff0f23ae12596fe5de2c4850b3969003031fec45e147e9caa54",
+        "chunk-010.txt": "c0714d8cdd0b8698c63f1a348c7939b4606b135a2577219284d225afa7fd3242",
+        "chunk-011.txt": "3884c0ba82d2c65218bc8100a3e403b9349c60cb77c65817041e0208b82ec9c4",
+        "chunk-012.txt": "31f15874e790be07f55909f24cf9d76de886ef6d7895e1ab2b249af159ecf9f2"
+      }
+    },
+    {
+      "project": "RECHARGE",
+      "role": "early",
+      "pdf": "data/paired-dmp-corpus/101061233/17733866.pdf",
+      "pdf_sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101061233/17733866",
+      "page_count": 14,
+      "line_count": 834,
+      "word_count": 4127,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 10,
+          "words": 63,
+          "utf16_units": 685,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 61,
+          "words": 130,
+          "utf16_units": 2636,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 59,
+          "words": 319,
+          "utf16_units": 3731,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 60,
+          "words": 146,
+          "utf16_units": 2451,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 96,
+          "words": 368,
+          "utf16_units": 4966,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 104,
+          "words": 314,
+          "utf16_units": 4868,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 62,
+          "words": 412,
+          "utf16_units": 4245,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 35,
+          "words": 371,
+          "utf16_units": 3358,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 61,
+          "words": 369,
+          "utf16_units": 3942,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 54,
+          "words": 229,
+          "utf16_units": 2961,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 89,
+          "words": 330,
+          "utf16_units": 4559,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 80,
+          "words": 441,
+          "utf16_units": 5007,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 51,
+          "words": 524,
+          "utf16_units": 4779,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 12,
+          "words": 111,
+          "utf16_units": 1011,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "lines": 452,
+          "words": 1752,
+          "utf16_units": 23582,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "lines": 319,
+          "words": 1740,
+          "utf16_units": 19827,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            13,
+            14
+          ],
+          "lines": 63,
+          "words": 635,
+          "utf16_units": 5790,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "d21eebf1f2be08df480b0c9535a230353375e408eee19b6cfe9d6ac11fc4483f",
+        "pages.json": "e2f72c1cc5bde6b2a8b3f6d314add5269821b4a711628a7092415723b9e4b571",
+        "pages.txt": "6e885a180e2ca832e880280132cdb6cf832357d2b5b7aa0f4539f0095c5839de",
+        "chunk-001.txt": "15a212d5965e85d3e4d4d8d015bbf11c7216c2577a6044593d361403fedba274",
+        "chunk-002.txt": "f36d654bf335e3a483c04c534516b4b91216ced2584e1422939865ef86d04e59",
+        "chunk-003.txt": "3ef133df21288ddd3ef969c9c47b0d17a3bdb66b804d10addd935863cbb852e2"
+      }
+    },
+    {
+      "project": "RECHARGE",
+      "role": "late",
+      "pdf": "data/paired-dmp-corpus/101061233/18403735.pdf",
+      "pdf_sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+      "asset_dir": "data/paired-dmp-corpus/input-packets/101061233/18403735",
+      "page_count": 17,
+      "line_count": 873,
+      "word_count": 5013,
+      "pages": [
+        {
+          "page": 1,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 35,
+          "words": 117,
+          "utf16_units": 1780,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 2,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 349,
+          "utf16_units": 3628,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 3,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 49,
+          "words": 326,
+          "utf16_units": 3533,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 4,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 28,
+          "words": 48,
+          "utf16_units": 1036,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 5,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 37,
+          "words": 147,
+          "utf16_units": 6221,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 6,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 68,
+          "words": 292,
+          "utf16_units": 3769,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 7,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 38,
+          "words": 214,
+          "utf16_units": 2835,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 8,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 39,
+          "words": 336,
+          "utf16_units": 3372,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 9,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 52,
+          "words": 357,
+          "utf16_units": 3719,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 10,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 41,
+          "words": 450,
+          "utf16_units": 4092,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 11,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 38,
+          "words": 261,
+          "utf16_units": 2569,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 12,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 76,
+          "words": 319,
+          "utf16_units": 4219,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 13,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 86,
+          "words": 227,
+          "utf16_units": 4412,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 14,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 57,
+          "words": 334,
+          "utf16_units": 3973,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 15,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 103,
+          "words": 333,
+          "utf16_units": 4916,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 16,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 44,
+          "words": 547,
+          "utf16_units": 4756,
+          "over_engineering_budget": false
+        },
+        {
+          "page": 17,
+          "dimensions": {
+            "width": "596.000000",
+            "height": "842.000000"
+          },
+          "lines": 30,
+          "words": 356,
+          "utf16_units": 3179,
+          "over_engineering_budget": false
+        }
+      ],
+      "chunks": [
+        {
+          "file": "chunk-001.txt",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "lines": 307,
+          "words": 1493,
+          "utf16_units": 22802,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-002.txt",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "lines": 332,
+          "words": 1950,
+          "utf16_units": 22383,
+          "over_engineering_budget": false
+        },
+        {
+          "file": "chunk-003.txt",
+          "pages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "lines": 234,
+          "words": 1570,
+          "utf16_units": 16824,
+          "over_engineering_budget": false
+        }
+      ],
+      "files_sha256": {
+        "bbox.xml": "0dfe10730bd38606d7d75ed57a533d50fbb69bc3678640f00bf40da04ac56783",
+        "pages.json": "881589c0360323355ce9167166644798f56370a275ed881560167276bafd63c5",
+        "pages.txt": "e5d71fa463e255ac40b544e79d8342ef885e2420df3aafb0e5d85e4c57f687b7",
+        "chunk-001.txt": "655e18b1456f67cc1a44e0e8c7d6553415f6e92cbf1e123a42f41a1b6c94190c",
+        "chunk-002.txt": "2e2c55cbcb682122a75e23bfb933a7b6d70f56f6d6743369d4e386f4dbfafdd2",
+        "chunk-003.txt": "b8b7683cb2b7af9a3e6c9755f6af583532d39124cd524afda7867e7f3ef15708"
+      }
+    }
+  ]
+}

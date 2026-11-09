@@ -1,0 +1,44 @@
+{
+  "status": "proposed_calibration_only_not_part_of_twelve_document_cohort",
+  "documents": [
+    {
+      "record_id": "10839334",
+      "project": "AD4GD",
+      "purpose": "near_half_project_document",
+      "source_url": "https://zenodo.org/records/10839334",
+      "local_pdf": "data/paired-dmp-corpus/calibration/10839334.pdf",
+      "sha256": "7c3d64d506c4c5a1db61ffc8c3abad716f616ff5a0fa32d35ee0519dcd9b4d93",
+      "independent_calibration_reference_labels": "not_created",
+      "in_final_cohort": false,
+      "rights_check": "see_screening_report; do_not_infer_redistribution_permission"
+    },
+    {
+      "record_id": "17578116",
+      "project": "PathOS",
+      "purpose": "post_end_document",
+      "source_url": "https://zenodo.org/records/17578116",
+      "local_pdf": "data/paired-dmp-corpus/calibration/17578116.pdf",
+      "sha256": "732074dc327f114356c5cff1ccc7f6846d79480eabe8daa2b53951058e4e94fa",
+      "independent_calibration_reference_labels": "not_created",
+      "in_final_cohort": false,
+      "rights_check": "see_screening_report; do_not_infer_redistribution_permission"
+    }
+  ],
+  "scoring_scale": {
+    "id": "ordinal_012_calibration_v1",
+    "approval": "approved_for_calibration",
+    "values": [
+      0,
+      1,
+      2
+    ],
+    "NA_uncertainty": "separate_null_score_states"
+  },
+  "human_assessors": {
+    "pilot": "R-PILOT-01_Siamak",
+    "formal_independent_reviewers": "not_yet_assigned"
+  },
+  "model_outputs_to_reviewers": "withheld_until_reference_locked",
+  "pilot_first_document": "17578116",
+  "pilot_status": "deferred_by_user; no_current_assessment_request"
+}

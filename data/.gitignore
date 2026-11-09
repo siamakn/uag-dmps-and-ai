@@ -1,1 +1,11 @@
 cordis/
+# byte-preserving backups of local state (e.g. the legacy selection before the paired-study work)
+backups/
+# raw Zenodo version responses; re-fetchable by scripts/06_discover_versions.py
+paired-discovery/cache/
+# unreadable paired drafts set aside by the server instead of being overwritten
+paired_selection.corrupt-*.json
+*.tmp
+# human-review pilot drafts and locked responses: personal judgments, kept local (decided 2026-11-09);
+# the repository is public, so export them deliberately if they are ever to be shared
+review/

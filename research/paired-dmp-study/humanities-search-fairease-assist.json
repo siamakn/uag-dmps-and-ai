@@ -1,0 +1,67 @@
+{
+  "purpose": "Actual individual record metadata only; requested rights verification assistance for health/agriculture worker. No licence interpretation or PDF rights adjudication.",
+  "records": [
+    {
+      "title": "FAIR-EASE_D1.2_Initial Project and Data Management Plan",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "access_right": "open",
+      "access_right_category": null,
+      "publication_date": "2023-04-07",
+      "version": "1.0",
+      "id": "7808697",
+      "record_url": "https://zenodo.org/records/7808697",
+      "api_url": "https://zenodo.org/api/records/7808697",
+      "created": "2023-04-07T14:00:43.657590+00:00",
+      "updated": "2024-07-12T08:40:55.169912+00:00",
+      "files": [
+        {
+          "key": "FAIR-EASE_D1.2_Initial Project and Data Management Plan.pdf",
+          "checksum": "md5:846ea2707d6372c4b30f2980a0775f4f",
+          "self": "https://zenodo.org/api/records/7808697/files/FAIR-EASE_D1.2_Initial%20Project%20and%20Data%20Management%20Plan.pdf/content"
+        }
+      ],
+      "retrieval": {
+        "name": "7808697",
+        "url": "https://zenodo.org/api/records/7808697",
+        "resolved_url": "https://zenodo.org/api/records/7808697",
+        "content_type": "application/json",
+        "bytes": 7291,
+        "sha256": "07d93211152d9fecd4c9ea713c2cb72f1eadef4d6c7810d9eb6c5317b97d0e89",
+        "retrieved_utc": "2026-11-03T17:43:32.300516+00:00"
+      }
+    },
+    {
+      "title": "FAIR-EASE - D1.6 : Final Project and Data Management Plan",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "access_right": "open",
+      "access_right_category": null,
+      "publication_date": "2025-10-15",
+      "version": null,
+      "id": "17360548",
+      "record_url": "https://zenodo.org/records/17360548",
+      "api_url": "https://zenodo.org/api/records/17360548",
+      "created": "2025-10-15T14:35:22.013876+00:00",
+      "updated": "2025-10-15T14:35:22.312934+00:00",
+      "files": [
+        {
+          "key": "FAIR-EASE_D1.6_Final Project and Data Management Plan_VFinal.pdf",
+          "checksum": "md5:f6fae22b09ac40efb4b2f87eb3eaa3c9",
+          "self": "https://zenodo.org/api/records/17360548/files/FAIR-EASE_D1.6_Final%20Project%20and%20Data%20Management%20Plan_VFinal.pdf/content"
+        }
+      ],
+      "retrieval": {
+        "name": "17360548",
+        "url": "https://zenodo.org/api/records/17360548",
+        "resolved_url": "https://zenodo.org/api/records/17360548",
+        "content_type": "application/json",
+        "bytes": 6629,
+        "sha256": "c26a612a32c97dc3b2433a848805cdd5ebb853d25f234c236fd7bab54921268b",
+        "retrieved_utc": "2026-11-03T17:43:32.284547+00:00"
+      }
+    }
+  ]
+}

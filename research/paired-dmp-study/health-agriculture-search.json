@@ -1,0 +1,298 @@
+{
+  "updated": "2026-11-03",
+  "status": "bounded_search_with_pairs_and_rights_uncertainties",
+  "verified_pairs": 5,
+  "formula": "(issue-start).days/(end-start).days; early <= 0.5, late > 1",
+  "candidates": [
+    {
+      "project": "REFOREST",
+      "grant": "101060635",
+      "primary": "agricultural sciences",
+      "memberships": [
+        "agricultural sciences",
+        "social sciences"
+      ],
+      "start": "2022-07-01",
+      "end": "2026-06-30",
+      "early_issue": "2022-11-09",
+      "early_fraction": "131/1460",
+      "early_sha256": "b4488890807fba594b4dd552a5af01e8845cdc36a9742d3bdcc99736f10f8294",
+      "update_issue": "2024-06-13",
+      "update_fraction": "713/1460",
+      "update_sha256": "2ae256a96a0a6b844b6dc366f7b6860b86afffe5dfa785846b53c53c66135d63",
+      "strict_late_found": false
+    },
+    {
+      "project": "ASTEP",
+      "grant": "884411",
+      "primary": "agricultural sciences",
+      "memberships": [
+        "agricultural sciences",
+        "engineering and technology"
+      ],
+      "start": "2020-05-01",
+      "end": "2025-06-30",
+      "early_issue": "2020-10-30",
+      "early_fraction": "182/1886",
+      "early_sha256": "fa37f2cb2d249483dbd5f53a56f34975262fee23acf283e55babbd0224ace124",
+      "final_filename_suggests_date": "2025-06-26",
+      "final_issue_verified": false,
+      "strict_late_found": false
+    },
+    {
+      "project": "VIRTIGATION",
+      "grant": "101000570",
+      "strict_late_found": false,
+      "scope": "public summaries; full versions not retrieved"
+    },
+    {
+      "project": "BY-COVID",
+      "grant": "101046203",
+      "strict_late_found": false,
+      "scope": "project D8.2 lineage vs separate WP5 use case; dates unverified",
+      "final_issue": "2024-07-19",
+      "final_fraction": "1022/1095",
+      "final_sha256": "1404606e9c84b9d954006d47b5de3803cad092c8f315af0593c869ad3cba254c"
+    },
+    {
+      "project": "EIRENE PPP",
+      "grant": "101079789",
+      "strict_late_found": false,
+      "scope": "D9.2 PPP versus D3.1 infrastructure; unverified equivalence"
+    },
+    {
+      "project": "FLIARA",
+      "grant": "101084234",
+      "primary": "social sciences",
+      "memberships": [
+        "social sciences",
+        "medical and health sciences",
+        "natural sciences"
+      ],
+      "start": "2023-01-01",
+      "end": "2025-12-31",
+      "early_issue": "2023-06-24",
+      "early_fraction": "174/1095",
+      "early_sha256": "a1e23874815b25bf868e722f4292f15c57ef1c17a332b29ff49b97f2f87f6331",
+      "final_deposit": "2026-06-04",
+      "final_issue_verified": true,
+      "strict_late_found": false,
+      "final_submission": "2025-12-22",
+      "final_fraction": "1086/1095",
+      "final_sha256": "d9e6eb841b02675c77a2369a0212eb4680a4d1952336afd5077c7309eb4906ca"
+    },
+    {
+      "project": "FAIR-EASE",
+      "grant": "101058785",
+      "primary": "natural sciences",
+      "memberships": [
+        "natural sciences",
+        "engineering and technology",
+        "social sciences",
+        "agricultural sciences"
+      ],
+      "start": "2022-09-01",
+      "end": "2025-08-31",
+      "final_deposit": "2025-10-15",
+      "final_md5": "f6fae22b09ac40efb4b2f87eb3eaa3c9",
+      "issue_dates_verified": true,
+      "strict_late_found": true,
+      "early_issue": "2023-04-07",
+      "early_fraction": "218/1095",
+      "early_sha256": "d3991a6e03ae76c6b1291bd2b3f226f8e47b9a1d43501fda5a7613e8519e33a7",
+      "late_issue": "2025-10-08",
+      "late_fraction": "1133/1095",
+      "late_sha256": "b4a7eef492a9fa944f9c94358f05ddfe45c22738894cc63e8ce875aad657eeca",
+      "rights": "both Zenodo API metadata CC BY 4.0 and open, but both PDFs say consortium consent needed for use, duplication or communication; applicability unresolved",
+      "early_api_sha256": "07d93211152d9fecd4c9ea713c2cb72f1eadef4d6c7810d9eb6c5317b97d0e89",
+      "late_api_sha256": "c26a612a32c97dc3b2433a848805cdd5ebb853d25f234c236fd7bab54921268b",
+      "current_cordis_sha256": "a686c0f4cd6a4a2145332aa695f0fe627ee8d2a18001bb4a688b2b8c72834101"
+    },
+    {
+      "project": "EURAKNOS",
+      "grant": "817863",
+      "primary": "agricultural sciences",
+      "strict_late_found": false,
+      "files": "not listed in local inventory"
+    },
+    {
+      "project": "XpanDH",
+      "grant": "101095594",
+      "primary": "medical and health sciences",
+      "memberships": [
+        "medical and health sciences",
+        "natural sciences"
+      ],
+      "start": "2023-01-01",
+      "end": "2024-12-31",
+      "early_cover_date": "2023-09-06",
+      "early_fraction": "248/730",
+      "early_sha256": "45d1340f992d399d3c8daf6e352f0c4eac437b77b00ea4ff0726185a323d0e27",
+      "update_issue": "2024-12-30",
+      "update_fraction": "729/730",
+      "strict_late_found": false,
+      "update_sha256": "f0f757919f0fe6a22b2f1c85deefb07da6c225817ff709fc00e56011f1356422"
+    },
+    {
+      "project": "ECRAID-Prime",
+      "grant": "101046109",
+      "start": "2021-12-01",
+      "end": "2026-11-30",
+      "older_partner_duration": "2021\u20132024",
+      "strict_late_found": false,
+      "note": "current end in future as of search date"
+    },
+    {
+      "project": "SciLake",
+      "grant": "101058573",
+      "primary": "natural sciences",
+      "memberships": [
+        "natural sciences",
+        "medical and health sciences"
+      ],
+      "end": "2026-03-31",
+      "strict_late_found": false,
+      "note": "bounded project-site search only"
+    },
+    {
+      "project": "NANOFACTS",
+      "grant": "952259",
+      "primary": "engineering and technology",
+      "memberships": [
+        "engineering and technology",
+        "medical and health sciences"
+      ],
+      "start": "2021-01-01",
+      "end": "2024-06-30",
+      "early_filename_date": "2021-06-19",
+      "late_filename_date": "2024-09-29",
+      "early_issue_verified": true,
+      "late_issue_verified": true,
+      "strict_late_found": true,
+      "early_record_cc0": true,
+      "note": "eligible with original and extended end",
+      "early_issue": "2021-06-30",
+      "early_fraction": "180/1276",
+      "early_sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+      "late_issue": "2024-09-29",
+      "late_fraction": "1367/1276",
+      "late_sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea",
+      "same_scope": "late document p5 explicitly updates project first DMP",
+      "rights": "both Zenodo metadata CC0; PDF notices authorise reproduction with acknowledgement",
+      "original_duration": "36 months",
+      "revised_duration": "42 months"
+    },
+    {
+      "project": "CYLCOMED",
+      "grant": "101095542",
+      "primary": "natural sciences",
+      "memberships": [
+        "natural sciences"
+      ],
+      "start": "2022-12-01",
+      "end": "2025-11-30",
+      "early_issue": "2023-05-31",
+      "early_fraction": "181/1095",
+      "early_direct_retrieval": "404, web-indexed PDF only",
+      "late_issue": "2025-12-08",
+      "late_fraction": "1103/1095",
+      "late_sha256": "ceed146b1bbcf7bd6407520a2955e6b095f69f6ef6086f6742ca665538fe3db3",
+      "late_conflicting_submission_date": "2025-11-30",
+      "strict_late_found": true,
+      "licence": "public designation, copyright notice, open licence unverified"
+    },
+    {
+      "project": "RECAP",
+      "grant": "693171",
+      "primary": "tie social/engineering under current visible paths; policy needed",
+      "memberships": [
+        "social sciences",
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "start": "2016-05-01",
+      "end": "2018-10-31",
+      "early_issue": "2017-04-25",
+      "early_fraction": "359/913",
+      "early_sha256": "bd787e664cad99ce2035d1d6aa4833fc49d42c9010100fce8b7597decdc830c0",
+      "late_issue": "2018-12-03",
+      "late_fraction": "946/913",
+      "late_sha256": "43d21a1e86931b24484b7ddb032a5c205d733c4bc4fbe2ed9e49b37a01ef1663",
+      "late_conflicting_actual_delivery": "2018-10-31",
+      "strict_late_found": true,
+      "rights": "both documents allow reproduction with source acknowledgment",
+      "current_cordis_sha256": "3a005d625b145ddfce8ce1b377f07343079b0bd78362f33c19dea52bf8401534",
+      "agriculture_eligible": false,
+      "note": "cached web/local dataset stale; fresh CORDIS omits agriculture"
+    },
+    {
+      "project": "AGRICORE",
+      "grant": "816078",
+      "primary": "agricultural/natural tie in fresh CORDIS",
+      "memberships": [
+        "agricultural sciences",
+        "natural sciences"
+      ],
+      "current_cordis_sha256": "0c1251f6abfb55568f044bdf2385898c71910bf8421e0ac21b3ca35306e7b98b",
+      "start": "2019-09-01",
+      "end": "2024-06-30",
+      "original_end": "2023-08-31",
+      "early_issue": "2020-02-28",
+      "early_fraction": "180/1764",
+      "early_sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+      "late_issue": "2024-08-31",
+      "late_fraction": "1826/1764",
+      "late_sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+      "strict_late_found": true,
+      "rights": "public PDFs, explicit document licence not identified",
+      "review": "independent review confirmed dates, lineage, and current branch membership"
+    },
+    {
+      "project": "EO4AGRI",
+      "grant": "821940",
+      "primary": "engineering and technology",
+      "memberships": [
+        "engineering and technology",
+        "medical and health sciences",
+        "agricultural sciences"
+      ],
+      "current_cordis_sha256": "8d98167581969a32f2342ef6f3d86f91330bb4998d4b0c944c3e12662d9f7fc7",
+      "start": "2018-11-01",
+      "end": "2020-10-31",
+      "early_issue": "2019-04-29",
+      "early_fraction": "179/730",
+      "early_sha256": "022d91f6d6d4a8f1d6fc0499b13b6e2f055737b69493a8228c677248370394f7",
+      "late_issue": "2020-11-02",
+      "late_fraction": "732/730",
+      "late_sha256": "af3593764bcf8c358413cd2b60718b0ae15380e8404d3b6da4d98f12106d9a61",
+      "strict_late_found": true,
+      "rights": "Zenodo API CC BY 4.0/open vs PDF p3 external disclosure consent notice"
+    },
+    {
+      "project": "FERTIMANURE",
+      "grant": "862849",
+      "primary": "agricultural sciences",
+      "memberships": [
+        "agricultural sciences",
+        "engineering and technology",
+        "social sciences"
+      ],
+      "current_cordis_sha256": "59a5ea0d9d2ffce0caea7fd80930a5f3cfe36a6c355f4d8a330c15552911be4f",
+      "start": "2020-01-01",
+      "end": "2024-06-30",
+      "original_duration_months": 48,
+      "revised_duration_months": 54,
+      "early_issue": "2020-06-30",
+      "early_fraction": "181/1642",
+      "early_sha256": "44af8ae7aded87b254ede1074688f8ca9d11426104df79770b55da6060fda499",
+      "late_reviewed_revision": "2024-10-18",
+      "late_fraction": "1752/1642",
+      "late_sha256": "658eec21dc6f42b81607ededfc6b371c6dbf17bef0a8017190cfeefdf783cdbe",
+      "late_actual_submission": "2024-06-30",
+      "strict_late_found": "reviewed revision, date basis to independently assess",
+      "rights": "public downloadable; intended internal use stated, document-specific licence not found; use links"
+    }
+  ],
+  "zenodo_versions_api": "HTTP 403 for records 20543721, 13981358, 16411304, 17866885, 14045488 with size=25; no pagination assessed",
+  "verified_pairs_qualification": "NANOFACTS, FAIR-EASE, EO4AGRI, AGRICORE and RECAP timing/lineage supported; RECAP current classification excludes agriculture; FAIR-EASE and EO4AGRI rights conflicts; AGRICORE licence unidentified; FERTIMANURE reviewed revision after end with earlier actual submission, needs assessment"
+}

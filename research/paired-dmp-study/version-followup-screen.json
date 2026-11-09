@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "kind": "publication_only_followup_triage_not_pair_selection",
+  "source_hashes": {
+    "data/dmp_dataset.json": "eff880577cf054431ae07d68d6978983d4518557640864797101b9269601f3d4",
+    "data/paired-discovery/versions.json": "344d6802c3b7a6d5467451399f04d831af23979ff4eba64100a8038483db1f31"
+  },
+  "version_discovery_generated": "2026-11-04T16:43:17+00:00",
+  "saved_version_leads": 226,
+  "EU_grant_concept_families_screened": 163,
+  "candidate_families": 10,
+  "with_cached_CORDIS_branch": 6,
+  "limitations": [
+    "Publication dates are discovery aids, not DMP issue dates.",
+    "Cached project ends and branches are not latest-authority checks.",
+    "Missing or partial dates are not assigned a point date.",
+    "Different concepts and external revisions remain outside this screen.",
+    "No PDF, accessibility, licence, scope or lineage verification is performed.",
+    "The original six-pair proposal and all selections remain untouched."
+  ],
+  "incomplete_date_cases": [
+    {
+      "grant": "101061645",
+      "concept": "10400965",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "13706071",
+        "10400966",
+        "18952670"
+      ]
+    },
+    {
+      "grant": "101079789",
+      "concept": "13970362",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "17866885"
+      ]
+    },
+    {
+      "grant": "101156861",
+      "concept": "15051601",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "17311563"
+      ]
+    },
+    {
+      "grant": "101134861",
+      "concept": "20591900",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "20591901",
+        "20592691"
+      ]
+    },
+    {
+      "grant": "951393",
+      "concept": "5742319",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "11915239"
+      ]
+    },
+    {
+      "grant": "945218",
+      "concept": "5772434",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "19881248"
+      ]
+    },
+    {
+      "grant": "101079203",
+      "concept": "8135049",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "18389904"
+      ]
+    },
+    {
+      "grant": "101083377",
+      "concept": "8249535",
+      "reason": "non_full_publication_dates",
+      "ids": [
+        "14413943"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "grant": "101090280",
+      "acronym": "D1-Glia",
+      "tier": "Horizon Europe",
+      "concept": "10844551",
+      "cached_branches": [
+        "medical and health sciences"
+      ],
+      "cached_start": "2023-04-01",
+      "cached_end": "2025-03-31",
+      "publication_early_leads": [
+        {
+          "id": "11091859",
+          "date": "2024-03-19",
+          "title": "Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/11091859",
+          "publication_elapsed_days": 353,
+          "cached_duration_days": 730
+        },
+        {
+          "id": "10844552",
+          "date": "2024-03-20",
+          "title": "Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/10844552",
+          "publication_elapsed_days": 354,
+          "cached_duration_days": 730
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "15392557",
+          "date": "2025-05-12",
+          "title": "Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/15392557",
+          "publication_elapsed_days": 772,
+          "cached_duration_days": 730
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101091374",
+      "acronym": "MultiMiner",
+      "tier": "Horizon Europe",
+      "concept": "8063405",
+      "cached_branches": [
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "cached_start": "2023-01-01",
+      "cached_end": "2026-06-30",
+      "publication_early_leads": [
+        {
+          "id": "8063406",
+          "date": "2023-06-21",
+          "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.3",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/8063406",
+          "publication_elapsed_days": 171,
+          "cached_duration_days": 1276
+        },
+        {
+          "id": "10653171",
+          "date": "2024-02-13",
+          "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.4",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/10653171",
+          "publication_elapsed_days": 408,
+          "cached_duration_days": 1276
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "22706196",
+          "date": "2026-09-11",
+          "title": "MultiMiner Project Deliverable No 5.4 - Data Management Plan V1.9",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/22706196",
+          "publication_elapsed_days": 1349,
+          "cached_duration_days": 1276
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101079125",
+      "acronym": "TWEET-IE",
+      "tier": "Horizon Europe",
+      "concept": "10061048",
+      "cached_branches": [
+        "engineering and technology"
+      ],
+      "cached_start": "2022-11-01",
+      "cached_end": "2025-10-31",
+      "publication_early_leads": [
+        {
+          "id": "10061049",
+          "date": "2023-11-01",
+          "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/10061049",
+          "publication_elapsed_days": 365,
+          "cached_duration_days": 1095
+        },
+        {
+          "id": "14022681",
+          "date": "2024-03-31",
+          "title": "TWEET-IE Deliverable 6.3: Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/14022681",
+          "publication_elapsed_days": 516,
+          "cached_duration_days": 1095
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "17361082",
+          "date": "2025-12-31",
+          "title": "TWEET-IE Deliverable 6.4: Data Management Plan - Final assessment",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/17361082",
+          "publication_elapsed_days": 1156,
+          "cached_duration_days": 1095
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101061424",
+      "acronym": "e-DIPLOMA",
+      "tier": "Horizon Europe",
+      "concept": "10390669",
+      "cached_branches": [
+        "natural sciences",
+        "social sciences"
+      ],
+      "cached_start": "2022-09-01",
+      "cached_end": "2025-10-31",
+      "publication_early_leads": [
+        {
+          "id": "10390670",
+          "date": "2023-11-27",
+          "title": "e-DIPLOMA - Deliverable 1.3: Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/10390670",
+          "publication_elapsed_days": 452,
+          "cached_duration_days": 1156
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "21102983",
+          "date": "2026-03-26",
+          "title": "e-DIPLOMA - Deliverable 1.3: Data Management Plan v2",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/21102983",
+          "publication_elapsed_days": 1302,
+          "cached_duration_days": 1156
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101067043",
+      "acronym": "FORWARD",
+      "tier": "Horizon Europe",
+      "concept": "10721796",
+      "cached_branches": [],
+      "cached_start": "2023-09-01",
+      "cached_end": "2025-08-31",
+      "publication_early_leads": [
+        {
+          "id": "10721797",
+          "date": "2024-02-28",
+          "title": "FORWARD Project - Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/10721797",
+          "publication_elapsed_days": 180,
+          "cached_duration_days": 730
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "17396704",
+          "date": "2025-10-20",
+          "title": "FORWARD Project - Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/17396704",
+          "publication_elapsed_days": 780,
+          "cached_duration_days": 730
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101058393",
+      "acronym": "WorldFAIR",
+      "tier": "Horizon Europe",
+      "concept": "7383972",
+      "cached_branches": [],
+      "cached_start": "2022-06-01",
+      "cached_end": "2024-05-31",
+      "publication_early_leads": [
+        {
+          "id": "7383973",
+          "date": "2022-11-30",
+          "title": "WorldFAIR Project (D1.2) Data Management Plan (Living document)",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/7383973",
+          "publication_elapsed_days": 182,
+          "cached_duration_days": 730
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "13376270",
+          "date": "2024-07-30",
+          "title": "WorldFAIR Project (D1.2) Data Management Plan (Living document)",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/13376270",
+          "publication_elapsed_days": 790,
+          "cached_duration_days": 730
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101112800",
+      "acronym": "eDNAqua-plan",
+      "tier": "Horizon Europe",
+      "concept": "14967741",
+      "cached_branches": [],
+      "cached_start": "2023-09-01",
+      "cached_end": "2026-08-31",
+      "publication_early_leads": [
+        {
+          "id": "14967742",
+          "date": "2024-01-15",
+          "title": "eDNAqua-Plan Deliverable 2: Data Privacy and Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/14967742",
+          "publication_elapsed_days": 136,
+          "cached_duration_days": 1095
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "22813801",
+          "date": "2026-09-17",
+          "title": "eDNAqua-Plan Deliverable 2: Data Privacy and Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/22813801",
+          "publication_elapsed_days": 1112,
+          "cached_duration_days": 1095
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "857641",
+      "acronym": "ExPaNDS",
+      "tier": "Horizon 2020",
+      "concept": "3672925",
+      "cached_branches": [
+        "natural sciences",
+        "social sciences"
+      ],
+      "cached_start": "2019-09-01",
+      "cached_end": "2023-02-28",
+      "publication_early_leads": [
+        {
+          "id": "3672926",
+          "date": "2020-02-14",
+          "title": "D1.10 ExPaNDS Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/3672926",
+          "publication_elapsed_days": 166,
+          "cached_duration_days": 1276
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "7646655",
+          "date": "2023-03-15",
+          "title": "ExPaNDS Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/7646655",
+          "publication_elapsed_days": 1291,
+          "cached_duration_days": 1276
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "101036401",
+      "acronym": "SteamBioAfrica",
+      "tier": "Horizon 2020",
+      "concept": "13871825",
+      "cached_branches": [
+        "engineering and technology",
+        "social sciences"
+      ],
+      "cached_start": "2021-09-01",
+      "cached_end": "2024-08-31",
+      "publication_early_leads": [
+        {
+          "id": "13871826",
+          "date": "2022-03-31",
+          "title": "D12.1 Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/13871826",
+          "publication_elapsed_days": 211,
+          "cached_duration_days": 1095
+        },
+        {
+          "id": "13879550",
+          "date": "2022-06-06",
+          "title": "D12.1 Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/13879550",
+          "publication_elapsed_days": 278,
+          "cached_duration_days": 1095
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "13879565",
+          "date": "2024-09-17",
+          "title": "D12.1 Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/13879565",
+          "publication_elapsed_days": 1112,
+          "cached_duration_days": 1095
+        }
+      ],
+      "eligibility": "not_established"
+    },
+    {
+      "grant": "857650",
+      "acronym": "EOSC-Pillar",
+      "tier": "Horizon 2020",
+      "concept": "3786325",
+      "cached_branches": [],
+      "cached_start": "2019-07-01",
+      "cached_end": "2022-12-31",
+      "publication_early_leads": [
+        {
+          "id": "3786326",
+          "date": "2020-02-10",
+          "title": "EOSC-Pillar D1.2 Data Management Plan",
+          "origin": "absent_from_dataset",
+          "url": "https://zenodo.org/records/3786326",
+          "publication_elapsed_days": 224,
+          "cached_duration_days": 1279
+        }
+      ],
+      "publication_late_leads": [
+        {
+          "id": "7602586",
+          "date": "2023-01-24",
+          "title": "EOSC-Pillar D1.2 Data Management Plan",
+          "origin": "in_dataset",
+          "url": "https://zenodo.org/records/7602586",
+          "publication_elapsed_days": 1303,
+          "cached_duration_days": 1279
+        }
+      ],
+      "eligibility": "not_established"
+    }
+  ]
+}

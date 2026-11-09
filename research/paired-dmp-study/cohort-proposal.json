@@ -1,0 +1,1093 @@
+{
+  "schema_version": 1,
+  "proposal_id": "paired-dmp-proposal-v1-2026-11-04",
+  "prepared_date": "2026-11-04",
+  "timezone": "Europe/Berlin",
+  "status": "six_pair_proposal_not_frozen_for_benchmark_execution",
+  "selection_basis": "purposive_metadata_based_verified_same_scope_version_pairs; no_quality_scores",
+  "coverage": {
+    "projects": 6,
+    "documents": 12,
+    "disciplines": 6
+  },
+  "protocol": {
+    "date_basis": "document_version_dates_with_original_source_labels_retained",
+    "early_fraction_max_inclusive": 0.5,
+    "late_fraction_min_exclusive": 1.0,
+    "pre_start_documents": "none_selected; policy_not_material_to_this_proposal",
+    "project_end": "latest_authoritative_CORDIS_snapshot_including_extensions",
+    "discipline": "any_documented_current_CORDIS_branch; one_slot_per_project; dominance_and_ties_reported",
+    "representation": "PDF; machine_actionable_format_preference_not_required_for_eligibility",
+    "scientific_scope": "six_project_paired_pilot_not_representative_discipline_sample"
+  },
+  "review": {
+    "document_identity_timing_and_provenance": "independent_agent_checks",
+    "report": "research/paired-dmp-study/pair-review.md",
+    "human_quality_assessments": "not_performed",
+    "human_protocol": "not_yet_finalized"
+  },
+  "software": {
+    "repository": "https://github.com/usadellab/dmp-eva",
+    "working_commit": "b80b43de820d46440d982eb99b2b3da8f4c2f818",
+    "refresh_before_campaign_freeze": true
+  },
+  "source_rights": "original_terms_preserved; source_PDFs_not_relicensed_by_repository; public_manifest_links_only",
+  "unresolved_before_model_execution": [
+    "human_reference_protocol_and_labels",
+    "actual_model_provider_configuration",
+    "confirm_intended_model_submission_terms_for_AGRICORE; blanket_reuse_licence_not_identified"
+  ],
+  "reserves": [
+    {
+      "project": "FAIR-EASE",
+      "slot": "agricultural sciences",
+      "status": "provisional_rights_conflict",
+      "user_action": "user_will_seek_clarification_using_rights-clarification.md",
+      "external_message_sent": false
+    },
+    {
+      "project": "FERTIMANURE",
+      "slot": "agricultural sciences",
+      "status": "additional_lead_not_independently_reviewed_in_core"
+    },
+    {
+      "project": "RECAP",
+      "status": "excluded_from_agriculture_current_CORDIS_membership_not_supported"
+    }
+  ],
+  "input_sha256": {
+    "pair-review.json": "d1e61e8391c284bfc978bb2501126a5466baa4a338bdc53c8872e047a3945461",
+    "data/dmp_dataset.json": "eff880577cf054431ae07d68d6978983d4518557640864797101b9269601f3d4"
+  },
+  "historical_selection_sha256": "a4a54dba18af7d8a28c1b60e4c317921c7768573735adcd7d44eafa66007edeb",
+  "pairs": [
+    {
+      "project": "iMagine",
+      "grant": "101058625",
+      "proposed_slot": "natural sciences",
+      "local_dominant_branch": "natural sciences",
+      "live_CORDIS_branches": [
+        "natural sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-09-01",
+      "latest_authoritative_end": "2025-08-31",
+      "duration_days": 1095,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/101058625",
+        "sha256": "35f420d6b056792ad79ea62a35da44710c6c582f8bc0f73eca59d2b0dcf46bfc",
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-101058625.html"
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p7 expressly builds upon and updates D1.2; both project-wide, eight use cases.",
+      "date_evidence_clarity": "document_cover_and_delivery_dates",
+      "licence_evidence": "CC BY 4.0 in early physical p2 and late physical p3",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "7759984",
+        "record_url": "https://zenodo.org/records/7759984",
+        "bytes": 481463,
+        "sha256": "475634f9fdd5ed0ebd320e7d153670d7bb23ae98de883c3d03a6ff21ecab4304",
+        "document_dates": [
+          {
+            "date": "2023-02-28",
+            "label": "unlabelled dated cover; also due date",
+            "physical_pdf_page": 1,
+            "numerator_days": 180,
+            "fraction": 0.1643835616438356,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-03-09",
+            "label": "Actual delivery date, version 1.0",
+            "physical_pdf_page": 2,
+            "numerator_days": 189,
+            "fraction": 0.1726027397260274,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.1643835616438356,
+          0.1726027397260274
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101058625/7759984.pdf",
+        "bibliographic_snapshot": {
+          "title": "iMagine D1.2 Data Management Plan",
+          "doi": "10.5281/zenodo.7759984",
+          "creators": [
+            "Mandy Y.Lin"
+          ],
+          "publication_date": "2023-03-22",
+          "files": [
+            {
+              "name": "D1.2 Data Management Plan.pdf",
+              "ext": "pdf",
+              "size": 481463
+            }
+          ],
+          "funding_tier": "Horizon Europe",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "D1.2 Data Management Plan.pdf",
+        "source_file_url": "https://zenodo.org/records/7759984/files/D1.2%20Data%20Management%20Plan.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "late": {
+        "record_id": "17055683",
+        "record_url": "https://zenodo.org/records/17055683",
+        "bytes": 1003166,
+        "sha256": "5655797dbbf1392a6f7979d7521e948c5c9161d7fa6f09a046db8e8e1094fcd0",
+        "document_dates": [
+          {
+            "date": "2025-09-05",
+            "label": "dated cover and Actual delivery date, version 1.0",
+            "physical_pdf_page": 1,
+            "numerator_days": 1100,
+            "fraction": 1.004566210045662,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.004566210045662,
+          1.004566210045662
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101058625/17055683.pdf",
+        "bibliographic_snapshot": {
+          "title": "iMagine D1.4 Final Data Management Plan",
+          "doi": "10.5281/zenodo.17055683",
+          "creators": [
+            "Andrea, Anzanello",
+            "Krijger, Tjerk",
+            "Schaap, Dick",
+            "Leluschko, Carolin",
+            "Irisson, Jean-Olivier",
+            "Walker, Madeleine"
+          ],
+          "publication_date": "2025-09-05",
+          "files": [
+            {
+              "name": "iMagine_D1.4_V1_Public_Under EC Review.pdf",
+              "ext": "pdf",
+              "size": 1003166
+            }
+          ],
+          "funding_tier": "Horizon Europe",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "iMagine_D1.4_V1_Public_Under EC Review.pdf",
+        "source_file_url": "https://zenodo.org/records/17055683/files/iMagine_D1.4_V1_Public_Under%20EC%20Review.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "uncertainties": [
+        "iMagine late is only5days after current CORDIS end; new authoritative end evidence could change qualification."
+      ],
+      "proposed_slot_membership_supported": true,
+      "current_classification": {
+        "paths": [
+          [
+            "natural sciences",
+            "earth and related environmental sciences",
+            "environmental sciences",
+            "pollution"
+          ],
+          [
+            "natural sciences",
+            "earth and related environmental sciences",
+            "atmospheric sciences",
+            "climatology",
+            "climatic changes"
+          ],
+          [
+            "natural sciences",
+            "computer and information sciences",
+            "artificial intelligence",
+            "computational intelligence"
+          ]
+        ],
+        "branch_path_counts": {
+          "natural sciences": 3
+        },
+        "dominant_branches": [
+          "natural sciences"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    },
+    {
+      "project": "EGI-ACE",
+      "grant": "101017567",
+      "proposed_slot": "engineering and technology",
+      "local_dominant_branch": "natural sciences",
+      "live_CORDIS_branches": [
+        "engineering and technology",
+        "natural sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2021-01-01",
+      "latest_authoritative_end": "2023-06-30",
+      "duration_days": 910,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/101017567",
+        "sha256": "b669c165bc72a533dd7c2c9ed638c997894e5a8f6e294fe1c29c2a932c2c8a2a",
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-101017567.html"
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p4 expressly updates D1.2; project research-data scope in both.",
+      "date_evidence_clarity": "explicit_issue_log",
+      "licence_evidence": "CC BY 4.0 in both physical p2",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "6602163",
+        "record_url": "https://zenodo.org/records/6602163",
+        "bytes": 513551,
+        "sha256": "4a0a8a2aa3ce0be13f16deaba02c811f4928528de663a8a09c0d73615f571fcc",
+        "document_dates": [
+          {
+            "date": "2021-08-04",
+            "label": "Document Log, Issue 1, Final version addressing review comments",
+            "physical_pdf_page": 2,
+            "numerator_days": 215,
+            "fraction": 0.23626373626373626,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.23626373626373626,
+          0.23626373626373626
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101017567/6602163.pdf",
+        "bibliographic_snapshot": {
+          "title": "EGI-ACE D1.2 Data management plan",
+          "doi": "10.5281/zenodo.6602163",
+          "creators": [
+            "Małgorzata Krakowian",
+            "Sergio Andreozzi",
+            "Alessandro Paolini",
+            "Andrea Manzi",
+            "Enol Fernandez",
+            "Hien Bui"
+          ],
+          "publication_date": "2021-08-04",
+          "files": [
+            {
+              "name": "EGI-ACE D1.2 V1 Public Final.pdf",
+              "ext": "pdf",
+              "size": 513551
+            }
+          ],
+          "funding_tier": "Horizon 2020",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "EGI-ACE D1.2 V1 Public Final.pdf",
+        "source_file_url": "https://zenodo.org/records/6602163/files/EGI-ACE%20D1.2%20V1%20Public%20Final.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "late": {
+        "record_id": "19402005",
+        "record_url": "https://zenodo.org/records/19402005",
+        "bytes": 776995,
+        "sha256": "a827195d2d40780d0492d9513c2c65347bb209ab4880fc07e47f891c889906c5",
+        "document_dates": [
+          {
+            "date": "2023-11-08",
+            "label": "Document Log, Issue v1.1, appendix added following final review",
+            "physical_pdf_page": 2,
+            "numerator_days": 1041,
+            "fraction": 1.1439560439560439,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.1439560439560439,
+          1.1439560439560439
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101017567/19402005.pdf",
+        "bibliographic_snapshot": {
+          "title": "EGI-ACE D1.5 Data Management Plan",
+          "doi": "10.5281/zenodo.19402005",
+          "creators": [
+            "Sjomara Specht",
+            "Malgorzata Krakowian",
+            "Baptiste Grenier"
+          ],
+          "publication_date": "2023-11-17",
+          "files": [
+            {
+              "name": "EGI-ACE D1.5 V1.1-Public-Approved by the EC.pdf",
+              "ext": "pdf",
+              "size": 776995
+            }
+          ],
+          "funding_tier": "Horizon 2020",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "EGI-ACE D1.5 V1.1-Public-Approved by the EC.pdf",
+        "source_file_url": "https://zenodo.org/records/19402005/files/EGI-ACE%20D1.5%20V1.1-Public-Approved%20by%20the%20EC.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "uncertainties": [],
+      "proposed_slot_membership_supported": true,
+      "current_classification": {
+        "paths": [
+          [
+            "engineering and technology",
+            "electrical engineering, electronic engineering, information engineering",
+            "electronic engineering",
+            "computer hardware",
+            "computer processors"
+          ],
+          [
+            "natural sciences",
+            "physical sciences",
+            "astronomy",
+            "observational astronomy",
+            "gravitational waves"
+          ],
+          [
+            "natural sciences",
+            "computer and information sciences",
+            "data science",
+            "data processing"
+          ],
+          [
+            "natural sciences",
+            "physical sciences",
+            "theoretical physics",
+            "particle physics",
+            "higgs bosons"
+          ]
+        ],
+        "branch_path_counts": {
+          "engineering and technology": 1,
+          "natural sciences": 3
+        },
+        "dominant_branches": [
+          "natural sciences"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    },
+    {
+      "project": "NANOFACTS",
+      "grant": "952259",
+      "proposed_slot": "medical and health sciences",
+      "local_dominant_branch": "engineering and technology",
+      "live_CORDIS_branches": [
+        "engineering and technology",
+        "medical and health sciences"
+      ],
+      "project_start": "2021-01-01",
+      "latest_authoritative_end": "2024-06-30",
+      "duration_days": 1276,
+      "date_evidence_clarity": "explicit_issue_footers_and_revision_dates",
+      "uncertainties": [
+        "Early explicit footer issue30Jun2021 differs from early revision and later first-issued narrative19Jun2021. All retained date choices are early.",
+        "Early cover36months and late cover42months corroborate duration change. Original end31Dec2023 inferred from start+36months, not independent amendment-register proof."
+      ],
+      "one_slot_only": true,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/952259",
+        "sha256": "90d9496e2b837d492bd81652a046af48f3f9a1df897079a1f52631ff985e57d1",
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-952259.html"
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Early physicalp5 describes first project-wide DMP; late physicalp5 explicitly identifies first version and updates project data-management practices across consortium.",
+      "licence_evidence": "Both cached full Zenodo API metadata declare CC0; both PDF legal notices authorize reproduction provided source acknowledged. Preserve both; attribution retained.",
+      "threshold_check": "passes_for_all_retained_document_issue_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "proposed_slot_membership_supported": true,
+      "early": {
+        "record_id": "13847570",
+        "record_url": "https://zenodo.org/records/13847570",
+        "bytes": 408860,
+        "sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+        "md5": "4c30f697f3fedaa4bb22080a835fbd93",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2021-06-19",
+            "label": "Revision v1.5 date on early cover; late physicalp5 narrative says first version issued on this date",
+            "physical_pdf_page": 1,
+            "numerator_days": 169,
+            "fraction": 0.13244514106583072,
+            "threshold_pass": true
+          },
+          {
+            "date": "2021-06-30",
+            "label": "Explicit issue date in repeated early footer; first occurrence physicalp2",
+            "physical_pdf_page": 2,
+            "numerator_days": 180,
+            "fraction": 0.14106583072100312,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.13244514106583072,
+          0.14106583072100312
+        ],
+        "metadata_license_id": "cc-zero",
+        "metadata_publication_date": "2024-09-27",
+        "metadata_sha256": "7fef19632b15d559022f02facdcd1272457c33c83b62e1f8081c24646e9a792a",
+        "preferred_explicit_issue_date": "2021-06-30",
+        "preferred_issue_rationale": "Formal repeated issue-date footer; conflicting earlier revision/retrospective-issued statement retained and passes same bin.",
+        "local_pdf": "data/paired-dmp-corpus/952259/13847570.pdf",
+        "bibliographic_snapshot": {
+          "title": "D1.2 Data Management Plan (DMP)",
+          "doi": "10.5281/zenodo.13847570",
+          "creators": [
+            "Knežević, Nikola",
+            "Radonic, Vasa",
+            "Gadjanski, Ivana",
+            "Janković, Nikolina"
+          ],
+          "publication_date": "2024-09-27",
+          "files": [
+            {
+              "name": "D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf",
+              "size": 408860,
+              "source_file_url": "https://zenodo.org/api/records/13847570/files/D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf/content"
+            }
+          ],
+          "source": "cached_full_Zenodo_record",
+          "source_sha256": "7fef19632b15d559022f02facdcd1272457c33c83b62e1f8081c24646e9a792a"
+        },
+        "metadata_snapshot_local": "data/paired-dmp-corpus/sources/zenodo-13847570.json",
+        "metadata_snapshot_sha256": "7fef19632b15d559022f02facdcd1272457c33c83b62e1f8081c24646e9a792a",
+        "source_filename": "D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf",
+        "source_file_url": "https://zenodo.org/api/records/13847570/files/D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf/content",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "late": {
+        "record_id": "13857898",
+        "record_url": "https://zenodo.org/records/13857898",
+        "bytes": 442267,
+        "sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea",
+        "md5": "7994dc4459a724aead3c06f682cd831d",
+        "repository_checksum_matches": true,
+        "document_dates": [
+          {
+            "date": "2024-09-29",
+            "label": "Explicit issue-date footer and revision v2.3 date",
+            "physical_pdf_page": 1,
+            "numerator_days": 1367,
+            "fraction": 1.0713166144200628,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.0713166144200628,
+          1.0713166144200628
+        ],
+        "metadata_license_id": "cc-zero",
+        "metadata_publication_date": "2024-09-29",
+        "metadata_sha256": "7d13ee2b2ca3bc90687daf960f79dcf2e5abd9538e48177585c65d393699697c",
+        "local_pdf": "data/paired-dmp-corpus/952259/13857898.pdf",
+        "bibliographic_snapshot": {
+          "title": "Data Management Plan (DMP)v2",
+          "doi": "10.5281/zenodo.13857898",
+          "creators": [
+            "Knežević, Nikola",
+            "Radonić, Vasa"
+          ],
+          "publication_date": "2024-09-29",
+          "files": [
+            {
+              "name": "D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf",
+              "size": 442267,
+              "source_file_url": "https://zenodo.org/api/records/13857898/files/D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf/content"
+            }
+          ],
+          "source": "cached_full_Zenodo_record",
+          "source_sha256": "7d13ee2b2ca3bc90687daf960f79dcf2e5abd9538e48177585c65d393699697c"
+        },
+        "metadata_snapshot_local": "data/paired-dmp-corpus/sources/zenodo-13857898.json",
+        "metadata_snapshot_sha256": "7d13ee2b2ca3bc90687daf960f79dcf2e5abd9538e48177585c65d393699697c",
+        "source_filename": "D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf",
+        "source_file_url": "https://zenodo.org/api/records/13857898/files/D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf/content",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "extension_sensitivity": {
+        "early_cover_duration_months": 36,
+        "late_cover_duration_months": 42,
+        "inferred_original_end": "2023-12-31",
+        "inferred_original_duration_days": 1094,
+        "inferred_original_end_is_independently_authoritative": false,
+        "early_fraction_interval_original": [
+          0.15447897623400367,
+          0.16453382084095064
+        ],
+        "late_fraction_original": 1.2495429616087752,
+        "qualification_changes": false
+      },
+      "classification_paths_current": [
+        [
+          "engineering and technology",
+          "electrical engineering, electronic engineering, information engineering",
+          "electronic engineering",
+          "sensors",
+          "biosensors"
+        ],
+        [
+          "engineering and technology",
+          "environmental biotechnology",
+          "biosensing"
+        ],
+        [
+          "medical and health sciences",
+          "clinical medicine",
+          "oncology"
+        ],
+        [
+          "engineering and technology",
+          "nanotechnology",
+          "nano-materials"
+        ],
+        [
+          "medical and health sciences",
+          "basic medicine",
+          "pharmacology and pharmacy"
+        ]
+      ],
+      "current_classification": {
+        "paths": [
+          [
+            "engineering and technology",
+            "electrical engineering, electronic engineering, information engineering",
+            "electronic engineering",
+            "sensors",
+            "biosensors"
+          ],
+          [
+            "engineering and technology",
+            "environmental biotechnology",
+            "biosensing"
+          ],
+          [
+            "medical and health sciences",
+            "clinical medicine",
+            "oncology"
+          ],
+          [
+            "engineering and technology",
+            "nanotechnology",
+            "nano-materials"
+          ],
+          [
+            "medical and health sciences",
+            "basic medicine",
+            "pharmacology and pharmacy"
+          ]
+        ],
+        "branch_path_counts": {
+          "engineering and technology": 3,
+          "medical and health sciences": 2
+        },
+        "dominant_branches": [
+          "engineering and technology"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    },
+    {
+      "project": "AGRICORE",
+      "grant": "816078",
+      "proposed_slot": "agricultural sciences",
+      "local_dominant_branch": null,
+      "dominant_branch_status": "absent_from_local_dataset; current_CORDIS_one_natural_and_one_agricultural_path_no_unique_dominant",
+      "live_CORDIS_branches": [
+        "natural sciences",
+        "agricultural sciences"
+      ],
+      "classification_paths_current": [
+        [
+          "natural sciences",
+          "biological sciences",
+          "ecology",
+          "ecosystems"
+        ],
+        [
+          "agricultural sciences",
+          "agriculture, forestry, and fisheries",
+          "agriculture"
+        ]
+      ],
+      "one_slot_only": true,
+      "project_start": "2019-09-01",
+      "latest_authoritative_end": "2024-06-30",
+      "duration_days": 1764,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/816078",
+        "sha256": "0c1251f6abfb55568f044bdf2385898c71910bf8421e0ac21b3ca35306e7b98b",
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-816078.html"
+      },
+      "historical_extensions_status": "both_PDFs_print_original_end_2023-08-31; current_CORDIS_end_2024-06-30; full_amendment_register_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physicalp2 versionhistory initialversionfromD9.2; physicalp3 andp7 explicitly final project-wide DMP based on initialD9.2; earlyp3 andp6 same consortium/project-data scope.",
+      "date_evidence_clarity": "version_history_dates; early_v1.0_label_Final_draft_version; late_v1.0_label_Final_version",
+      "licence_evidence": "Both covers label dissemination Public; exact project-hosted PDFs downloaded by source worker. No explicit blanket document reuse licence found in full text; latep2 disclaimer concerns contributor originality/referencing, not a document reuse grant or consent prohibition.",
+      "blanket_reuse_licence": null,
+      "public_access_criterion_met": true,
+      "model_upload_permission_inferred": false,
+      "redistribution_permission_inferred": false,
+      "threshold_check": "passes_early_and_strict_post_end_using_document_version_dates",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen; unknown_blanket_reuse_terms_preserved",
+      "proposed_slot_membership_supported": true,
+      "uncertainties": [
+        "No local dominant branch exists; current CORDIS paths tie natural/agricultural; agricultural assignment permitted under D08.",
+        "Early finaldraft revision28Feb2020 and Aresreceipt29Feb2020 are separate labelled dates, not proof that receipt is issue. Both lie in early window.",
+        "Both PDFs retain original projectend31Aug2023, whereas latest CORDIS end30Jun2024 governs under D09.",
+        "Unknown blanket document licence is not an extra exclusion under public-download inclusion criterion; no permission for model submission or public redistribution is inferred."
+      ],
+      "early": {
+        "record_id": null,
+        "document_id": "AGRICORE-D9.2-v1.0",
+        "title": "D9.2 Data Management Plan",
+        "document_version": "D9.2 v1.0",
+        "source_file_url": "https://agricore-project.eu/wp-content/uploads/2021/06/D9.2-1.pdf",
+        "record_url": null,
+        "bytes": 698672,
+        "sha256": "83a0aaa24f920828fc564ad3154d0c87ce8015ea5126426f53cd6d3e466e5f88",
+        "document_dates": [
+          {
+            "date": "2020-02-28",
+            "label": "Version History Date, v1.0 Final draft version",
+            "physical_pdf_page": 2,
+            "numerator_days": 180,
+            "fraction": 0.10204081632653061,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.10204081632653061,
+          0.10204081632653061
+        ],
+        "dissemination_label": "Public, physicalp1",
+        "metadata_license_id": null,
+        "blanket_reuse_licence_found": false,
+        "public_download_verified_by_source_worker": true,
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "original_date_string": "28/02/2020",
+        "other_date_fields": [
+          {
+            "date": "2020-02-29",
+            "label": "Ares receipt on physicalp1",
+            "used_as_selected_revision_issue_date": false,
+            "numerator_days": 181,
+            "fraction": 0.10260770975056689
+          }
+        ],
+        "source_date_interval_days": [
+          180,
+          181
+        ],
+        "source_date_fraction_interval": [
+          0.10204081632653061,
+          0.10260770975056689
+        ],
+        "local_pdf": "data/paired-dmp-corpus/816078/AGRICORE-D9.2-v1.0.pdf",
+        "bibliographic_snapshot": {}
+      },
+      "late": {
+        "record_id": null,
+        "document_id": "AGRICORE-D9.3-v1.0",
+        "title": "D9.3 Final Data Management Plan",
+        "document_version": "D9.3 v1.0",
+        "source_file_url": "https://agricore-project.eu/wp-content/uploads/2025/03/D9.3-Final-Data-Management-Plan.pdf",
+        "record_url": null,
+        "bytes": 807671,
+        "sha256": "b4081e3a26704a53d9ce00f99586e0284f92fbc8a2eabc5887de71e7c8d663aa",
+        "document_dates": [
+          {
+            "date": "2024-08-31",
+            "label": "Version History Date, v1.0 Final version; original string31-ago-2024",
+            "physical_pdf_page": 2,
+            "numerator_days": 1826,
+            "fraction": 1.0351473922902494,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.0351473922902494,
+          1.0351473922902494
+        ],
+        "dissemination_label": "Public, physicalp1",
+        "metadata_license_id": null,
+        "blanket_reuse_licence_found": false,
+        "public_download_verified_by_source_worker": true,
+        "retrieved_date": "2026-11-03",
+        "retrieved_utc": null,
+        "original_date_string": "31-ago-2024",
+        "local_pdf": "data/paired-dmp-corpus/816078/AGRICORE-D9.3-v1.0.pdf",
+        "bibliographic_snapshot": {}
+      },
+      "extension_sensitivity": {
+        "original_end_printed_in_both_PDFs": "2023-08-31",
+        "current_CORDIS_end": "2024-06-30",
+        "original_duration_days": 1460,
+        "current_duration_days": 1764,
+        "early_fraction_original": 0.1232876712328767,
+        "late_fraction_original": 1.2506849315068493,
+        "qualification_changes": false,
+        "amendment_document_not_inspected": true
+      },
+      "current_classification": {
+        "paths": [
+          [
+            "natural sciences",
+            "biological sciences",
+            "ecology",
+            "ecosystems"
+          ],
+          [
+            "agricultural sciences",
+            "agriculture, forestry, and fisheries",
+            "agriculture"
+          ]
+        ],
+        "branch_path_counts": {
+          "natural sciences": 1,
+          "agricultural sciences": 1
+        },
+        "dominant_branches": [
+          "agricultural sciences",
+          "natural sciences"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    },
+    {
+      "project": "SUSTRACK",
+      "grant": "101081823",
+      "proposed_slot": "social sciences",
+      "local_dominant_branch": "social sciences",
+      "live_CORDIS_branches": [
+        "natural sciences",
+        "social sciences"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-11-01",
+      "latest_authoritative_end": "2025-10-31",
+      "duration_days": 1095,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/101081823",
+        "sha256": "5ca59b1aa5d9dcfde96711fb1a45f76e9997cfa31acb68f7a2b8b4a020f0b2cd",
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-101081823.html"
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Late physical p12 expressly describes updates since D7.1/M6; same project, WP7 and task T7.4.",
+      "date_evidence_clarity": "dated_revision_and_submission",
+      "licence_evidence": "CC BY 4.0 in both freshly retrieved Zenodo record pages",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "14497074",
+        "record_url": "https://zenodo.org/records/14497074",
+        "bytes": 960776,
+        "sha256": "f1220cde868b34a446310f3a755e0ec600696e6db832b708cfbf39c301ef08b4",
+        "document_dates": [
+          {
+            "date": "2023-04-27",
+            "label": "Document Revision History version 6.0, Final version",
+            "physical_pdf_page": 2,
+            "numerator_days": 177,
+            "fraction": 0.16164383561643836,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-04-29",
+            "label": "Submission date, version V6.0",
+            "physical_pdf_page": 2,
+            "numerator_days": 179,
+            "fraction": 0.1634703196347032,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.16164383561643836,
+          0.1634703196347032
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101081823/14497074.pdf",
+        "bibliographic_snapshot": {
+          "title": "Data Management Plan",
+          "doi": "10.5281/zenodo.14497074",
+          "creators": [
+            "Mester, Gábor",
+            "Miskuf, Robert"
+          ],
+          "publication_date": "2024-05-01",
+          "files": [
+            {
+              "name": "SUSTRACK_D7.1_Data_Management_Plan_Final.pdf",
+              "ext": "pdf",
+              "size": 960776
+            }
+          ],
+          "funding_tier": "Horizon Europe",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "SUSTRACK_D7.1_Data_Management_Plan_Final.pdf",
+        "source_file_url": "https://zenodo.org/records/14497074/files/SUSTRACK_D7.1_Data_Management_Plan_Final.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "late": {
+        "record_id": "19161966",
+        "record_url": "https://zenodo.org/records/19161966",
+        "bytes": 1340985,
+        "sha256": "701789cbd909a8bd0f7128a6cba262dfb18bf6cd74881c4dc7520eb8637245e5",
+        "document_dates": [
+          {
+            "date": "2026-02-06",
+            "label": "Document Revision History version 3.0 Revised version submission, agreeing with Submission date",
+            "physical_pdf_page": 2,
+            "numerator_days": 1193,
+            "fraction": 1.089497716894977,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.089497716894977,
+          1.089497716894977
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101081823/19161966.pdf",
+        "bibliographic_snapshot": {
+          "title": "Data Management Plan (V2)",
+          "doi": "10.5281/zenodo.19161966",
+          "creators": [
+            "Mester, Gábor",
+            "Miškuf, Róbert"
+          ],
+          "publication_date": "2026-03-09",
+          "files": [
+            {
+              "name": "D7.2 – DATA MANAGEMENT PLAN (V2).pdf",
+              "ext": "pdf",
+              "size": 1340985
+            }
+          ],
+          "funding_tier": "Horizon Europe",
+          "source": "local_derived_dataset_snapshot"
+        },
+        "source_filename": "D7.2 – DATA MANAGEMENT PLAN (V2).pdf",
+        "source_file_url": "https://zenodo.org/records/19161966/files/D7.2%20%E2%80%93%20DATA%20MANAGEMENT%20PLAN%20%28V2%29.pdf?download=1",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "uncertainties": [],
+      "proposed_slot_membership_supported": true,
+      "current_classification": {
+        "paths": [
+          [
+            "natural sciences",
+            "earth and related environmental sciences",
+            "environmental sciences"
+          ],
+          [
+            "social sciences",
+            "economics and business",
+            "business and management",
+            "business models"
+          ],
+          [
+            "social sciences",
+            "economics and business",
+            "economics",
+            "bioeconomy"
+          ],
+          [
+            "social sciences",
+            "economics and business",
+            "economics",
+            "sustainable economy"
+          ]
+        ],
+        "branch_path_counts": {
+          "natural sciences": 1,
+          "social sciences": 3
+        },
+        "dominant_branches": [
+          "social sciences"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    },
+    {
+      "project": "RECHARGE",
+      "grant": "101061233",
+      "proposed_slot": "humanities",
+      "local_dominant_branch": "medical and health sciences",
+      "live_CORDIS_branches": [
+        "medical and health sciences",
+        "humanities"
+      ],
+      "one_slot_only": true,
+      "project_start": "2022-10-01",
+      "latest_authoritative_end": "2025-09-30",
+      "duration_days": 1095,
+      "end_evidence": {
+        "url": "https://cordis.europa.eu/project/id/101061233",
+        "sha256": "2b33a760f4b0d47e6256ea3e52c825629c65ffb75cc0670ddd930c7f0cffde14",
+        "date_and_membership_checked": true,
+        "local_path": "data/paired-dmp-corpus/sources/cordis-101061233.html"
+      },
+      "historical_extensions_status": "current_end_verified_complete_history_not_reviewed",
+      "lineage_check": "supported",
+      "lineage_evidence": "Same project D6.1 and scope; final physical p2 expressly final update, preserving v1.1/v1.2 history; common Zenodo concept 17733865.",
+      "date_evidence_clarity": "submission_version_dates_and_dated_cover",
+      "licence_evidence": "CC BY 4.0 in both cached full Zenodo API metadata",
+      "threshold_check": "passes_for_all_retained_document_date_choices",
+      "eligibility_status": "supported_candidate_not_selected_or_frozen",
+      "early": {
+        "record_id": "17733866",
+        "record_url": "https://zenodo.org/records/17733866",
+        "bytes": 236054,
+        "sha256": "9556e4b789668a2ff5bb7957ebe6f58e4d8c86bc3445e5805646709f567870fb",
+        "document_dates": [
+          {
+            "date": "2023-03-29",
+            "label": "Submission date in deliverable description",
+            "physical_pdf_page": 2,
+            "numerator_days": 179,
+            "fraction": 0.1634703196347032,
+            "threshold_pass": true
+          },
+          {
+            "date": "2023-03-31",
+            "label": "Revisions table V1.0 Submission version",
+            "physical_pdf_page": 5,
+            "numerator_days": 181,
+            "fraction": 0.16529680365296803,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          0.1634703196347032,
+          0.16529680365296803
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101061233/17733866.pdf",
+        "bibliographic_snapshot": {
+          "title": "RECHARGE: Data Management Plan",
+          "doi": "10.5281/zenodo.17733866",
+          "creators": [
+            "Rossetti, Ilaria",
+            "Mania, Joanna"
+          ],
+          "publication_date": "2025-11-27",
+          "files": [
+            {
+              "name": "RECHARGE-DMP_v1.pdf",
+              "size": 236054,
+              "source_file_url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content"
+            }
+          ],
+          "source": "cached_full_Zenodo_record",
+          "source_sha256": "17018c771a594e6624d936beb4ceae573498d088080f1fcdb3dae52e625454fc"
+        },
+        "metadata_snapshot_local": "data/paired-dmp-corpus/sources/zenodo-17733866.json",
+        "metadata_snapshot_sha256": "17018c771a594e6624d936beb4ceae573498d088080f1fcdb3dae52e625454fc",
+        "source_filename": "RECHARGE-DMP_v1.pdf",
+        "source_file_url": "https://zenodo.org/api/records/17733866/files/RECHARGE-DMP_v1.pdf/content",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "late": {
+        "record_id": "18403735",
+        "record_url": "https://zenodo.org/records/18403735",
+        "bytes": 1114561,
+        "sha256": "bbbcd8847d7514ae1492acb560dad187c6ddb1cf25807db681688cb252abf1ce",
+        "document_dates": [
+          {
+            "date": "2026-02-02",
+            "label": "Date on cover, version 2.0",
+            "physical_pdf_page": 1,
+            "numerator_days": 1220,
+            "fraction": 1.1141552511415524,
+            "threshold_pass": true
+          }
+        ],
+        "fraction_interval": [
+          1.1141552511415524,
+          1.1141552511415524
+        ],
+        "local_pdf": "data/paired-dmp-corpus/101061233/18403735.pdf",
+        "bibliographic_snapshot": {
+          "title": "RECHARGE: Data Management Plan (final update)",
+          "doi": "10.5281/zenodo.18403735",
+          "creators": [
+            "Mania, Joanna",
+            "de Mooij, Emma",
+            "Hussey, Úna",
+            "Rossetti, Ilaria"
+          ],
+          "publication_date": "2026-01-28",
+          "files": [
+            {
+              "name": "D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf",
+              "size": 1114561,
+              "source_file_url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content"
+            }
+          ],
+          "source": "cached_full_Zenodo_record",
+          "source_sha256": "199fd3bd6112a58953c1adfe7f2bb7ee695b2507913f1602122d5af0f4d51ce3"
+        },
+        "metadata_snapshot_local": "data/paired-dmp-corpus/sources/zenodo-18403735.json",
+        "metadata_snapshot_sha256": "199fd3bd6112a58953c1adfe7f2bb7ee695b2507913f1602122d5af0f4d51ce3",
+        "source_filename": "D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf",
+        "source_file_url": "https://zenodo.org/api/records/18403735/files/D6.1_REVISED_RECHARGE-DMP_v2.0.docx.pdf/content",
+        "source_url_note": "full_record_file_link_or_standard_path_from_observed_record_filename"
+      },
+      "uncertainties": [
+        "Early header 29Mar vs V1.0 revision-table31Mar is retained as same-bin interval.",
+        "Final dated cover2Feb2026 occurs after repository publication/creation/update28Jan2026. Actual release chronology not resolved; cover date evidence retained without replacing it by publication.",
+        "Initial p2 unrelated ENHANCED/D6.2 template header does not erase otherwise consistent cover/grant/body/D6.1 identity."
+      ],
+      "repository_version_list": {
+        "concept": "17733865",
+        "reported_total": 3,
+        "ids": [
+          "18403735",
+          "17801415",
+          "17733866"
+        ]
+      },
+      "proposed_slot_membership_supported": true,
+      "current_classification": {
+        "paths": [
+          [
+            "medical and health sciences",
+            "health sciences",
+            "public health",
+            "epidemiology",
+            "pandemics"
+          ],
+          [
+            "humanities",
+            "other humanities",
+            "library sciences",
+            "knowledge organization"
+          ]
+        ],
+        "branch_path_counts": {
+          "medical and health sciences": 1,
+          "humanities": 1
+        },
+        "dominant_branches": [
+          "humanities",
+          "medical and health sciences"
+        ],
+        "dominance_rule": "most_frequent_top_level_branch_among_current_leaf_paths; ties_retained"
+      }
+    }
+  ]
+}

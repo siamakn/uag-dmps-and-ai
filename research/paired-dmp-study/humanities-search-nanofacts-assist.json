@@ -1,0 +1,216 @@
+{
+  "purpose": "Cross-route retrieval assistance requested by health/agriculture worker; medical candidate owned by their report, not a second humanities assignment.",
+  "updated_utc": "2026-11-03T17:39:17.965206+00:00",
+  "sources": [
+    {
+      "name": "13847570",
+      "url": "https://zenodo.org/api/records/13847570",
+      "resolved_url": "https://zenodo.org/api/records/13847570",
+      "content_type": "application/json",
+      "bytes": 5328,
+      "sha256": "7fef19632b15d559022f02facdcd1272457c33c83b62e1f8081c24646e9a792a",
+      "retrieved_utc": "2026-11-03T17:38:15.521575+00:00"
+    },
+    {
+      "name": "13857898",
+      "url": "https://zenodo.org/api/records/13857898",
+      "resolved_url": "https://zenodo.org/api/records/13857898",
+      "content_type": "application/json",
+      "bytes": 4756,
+      "sha256": "7d13ee2b2ca3bc90687daf960f79dcf2e5abd9538e48177585c65d393699697c",
+      "retrieved_utc": "2026-11-03T17:38:15.565288+00:00"
+    },
+    {
+      "name": "13847570-f0",
+      "url": "https://zenodo.org/api/records/13847570/files/D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/13847570/files/D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 408860,
+      "sha256": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+      "retrieved_utc": "2026-11-03T17:38:25.163595+00:00"
+    },
+    {
+      "name": "13857898-f0",
+      "url": "https://zenodo.org/api/records/13857898/files/D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf/content",
+      "resolved_url": "https://zenodo.org/api/records/13857898/files/D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf/content",
+      "content_type": "application/octet-stream",
+      "bytes": 442267,
+      "sha256": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea",
+      "retrieved_utc": "2026-11-03T17:38:24.865766+00:00"
+    }
+  ],
+  "documents": [
+    {
+      "id": "13847570",
+      "record_url": "https://zenodo.org/records/13847570",
+      "metadata": {
+        "title": "D1.2 Data Management Plan (DMP)",
+        "doi": "10.5281/zenodo.13847570",
+        "publication_date": "2024-09-27",
+        "description": "<p>This deliverable constitutes the Data Management Plan (DMP) of the NANOFACTS project. It is the first version of DMP, describing data management life cycle for all research and publication data. This deliverable is introducing ways to produce, collect, process, save, exchange, share, and publish research data in line with the EC &ldquo;Guidelines on FAIR Data Management in Horizon 2020&rdquo;.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Kne\u017eevi\u0107, Nikola",
+            "affiliation": "BioSense Institute",
+            "orcid": "0000-0002-1563-7763"
+          },
+          {
+            "name": "Radonic, Vasa",
+            "affiliation": null
+          },
+          {
+            "name": "Gadjanski, Ivana",
+            "affiliation": null
+          },
+          {
+            "name": "Jankovi\u0107, Nikolina",
+            "affiliation": null
+          }
+        ],
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-zero"
+        },
+        "grants": [
+          {
+            "code": "952259",
+            "internal_id": "10.13039/501100000780::952259",
+            "funder": {
+              "name": "European Commission",
+              "doi": "10.13039/501100000780",
+              "acronym": "EC"
+            },
+            "title": "Networking Activities for Nanotechnology-Facilitated Cancer Theranostics",
+            "acronym": "NANOFACTS",
+            "program": "H2020-EU.4.b.",
+            "url": "https://cordis.europa.eu/projects/952259"
+          }
+        ],
+        "communities": [
+          {
+            "id": "eu"
+          },
+          {
+            "id": "nanofacts"
+          }
+        ],
+        "relations": {
+          "version": [
+            {
+              "index": 0,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13847569"
+              }
+            }
+          ]
+        }
+      },
+      "created": "2024-09-27T10:16:57.572242+00:00",
+      "updated": "2024-09-27T12:29:56.659016+00:00",
+      "files": [
+        {
+          "name": "D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf",
+          "url": "https://zenodo.org/api/records/13847570/files/D1.2_Data_Management_plan(DMP)_v1.5_NK_19.06.2021.pdf/content",
+          "checksum": "md5:4c30f697f3fedaa4bb22080a835fbd93"
+        }
+      ],
+      "local_pdf": "/tmp/humanities-search/13847570-f0.pdf"
+    },
+    {
+      "id": "13857898",
+      "record_url": "https://zenodo.org/records/13857898",
+      "metadata": {
+        "title": "Data Management Plan (DMP)v2",
+        "doi": "10.5281/zenodo.13857898",
+        "publication_date": "2024-09-29",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Kne\u017eevi\u0107, Nikola",
+            "affiliation": null
+          },
+          {
+            "name": "Radoni\u0107, Vasa",
+            "affiliation": null
+          }
+        ],
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-zero"
+        },
+        "grants": [
+          {
+            "code": "952259",
+            "internal_id": "10.13039/501100000780::952259",
+            "funder": {
+              "name": "European Commission",
+              "doi": "10.13039/501100000780",
+              "acronym": "EC"
+            },
+            "title": "Networking Activities for Nanotechnology-Facilitated Cancer Theranostics",
+            "acronym": "NANOFACTS",
+            "program": "H2020-EU.4.b.",
+            "url": "https://cordis.europa.eu/projects/952259"
+          }
+        ],
+        "communities": [
+          {
+            "id": "eu"
+          },
+          {
+            "id": "nanofacts"
+          }
+        ],
+        "relations": {
+          "version": [
+            {
+              "index": 0,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13857897"
+              }
+            }
+          ]
+        }
+      },
+      "created": "2024-09-29T19:06:39.275327+00:00",
+      "updated": "2024-09-29T19:06:39.544956+00:00",
+      "files": [
+        {
+          "name": "D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf",
+          "url": "https://zenodo.org/api/records/13857898/files/D1.4_Data_Management_Plan_(DMP)_v2.3_NK_29.09.2024.pdf/content",
+          "checksum": "md5:7994dc4459a724aead3c06f682cd831d"
+        }
+      ],
+      "local_pdf": "/tmp/humanities-search/13857898-f0.pdf"
+    }
+  ],
+  "project_dates_and_classification": "Delegated to health/agriculture worker; not independently checked in this assistance.",
+  "findings": {
+    "early_record": "13847570",
+    "early_explicit_issue_date": "2021-06-30",
+    "early_issue_source": "Physicalp2 / printedp1 footer, repeated subsequent pages, visually inspected",
+    "early_revision_log": "Physicalp1 v1.5 dated19June2021; Ares stamp30June2021; late narrativep5 says first issued19June2021. Preserve two date choices, both early under expected2021start.",
+    "late_record": "13857898",
+    "late_explicit_issue_date": "2024-09-29",
+    "late_issue_source": "Physical/printedp1 footer, matches v2.3 proof-reading log, visually inspected",
+    "late_scope_source": "Physicalp5 says first DMP issued19June2021 and second deliverable updates all project data, entire consortium processes. Visually inspected.",
+    "original_duration_in_early_cover": "36months from2021-01-01",
+    "revised_duration_in_late_cover": "42months from2021-01-01",
+    "rights": "Repository metadata cc-zero for both. PDF legal notice\u00a9NANOFACTSConsortium2021/2024, reproduction authorised provided source acknowledged. Preserve both statements.",
+    "pdf_sha256": {
+      "13847570": "a91d74c33cd1078f40e98262b5c8e77a5c8c34b64bcae93ce9793e63ce0ba892",
+      "13857898": "717de7b70110d2d3c8f497b4445bf531eda848bf5995b55f29a655682caa1dea"
+    }
+  }
+}
