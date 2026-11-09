@@ -92,6 +92,7 @@ disk are skipped, so re-running is cheap.
 | `06_discover_versions.py` | paired study: groups plans by grant, walks Zenodo version chains, registers external documents | `data/paired-discovery/`, `data/study-documents.json` |
 | `07_fetch_study_files.py` | paired study: checks, fetches and hashes only the selected files | `data/paired-dmp-corpus/` |
 | `paired.py` | paired-study schema, timing, validation, export, freeze (module + CLI) | `data/paired-snapshots/` |
+| `review.py` | human-review pilot task, record validation, append-only record storage (module + CLI) | `data/review/` |
 | `serve.py` | runs the dashboard locally with a small JSON API | serves `/`, writes `data/selection.json` and `data/paired_selection.json` |
 
 ### Dashboard
@@ -134,6 +135,14 @@ Features:
   matrix, duplicate-project warning and challenging slot only appear in legacy mode.
 - Paired storage is separate: `data/paired_selection.json` served, `dmpbench.paired.v1` standalone.
   A corrupt or unsupported draft blocks the panel instead of being overwritten.
+- **Review (pilot)** mode (third header button): the human-review pilot form PILOT-01 (PathOS D3.5
+  v2.0, criterion 1b, End-Project cell), shown as **deferred**, blank, with no preselected score and
+  no AI suggestion. Save draft / Preview / Submit (typed reviewer-ID confirmation) / Export, and
+  "Start a correction", which creates a new record linked by `supersedes_record_id`; locked records
+  are never rewritten. Records follow `research/paired-dmp-study/human-review-record.schema.json`,
+  validated by `scripts/review.py` and a JavaScript copy. Storage: `data/review/` served
+  (`review_state.json` for drafts, `records/<id>.json` created once), `dmpbench.review.v1*` standalone.
+  See `research/paired-dmp-study/claude-human-review-results.md`.
 
 ### Test suite
 
@@ -152,11 +161,15 @@ Three layers, all stdlib / headless Chrome. Results recorded in
 - `scripts/test_paired.py` — unittest for timing, validation, exports, freeze immutability,
   legacy import and the server endpoints, all against temporary directories. It asserts that
   `data/selection.json` is byte-identical afterwards.
+- `scripts/test_review.py` — unittest for the review module: the shared fixtures (31 record cases),
+  the blank deferred task, locked-record immutability, corrections, unreadable files, corrupt draft
+  files and the review endpoints, all in temporary directories.
 - `dashboard/paired-fixtures.json` — the timing cases, escaping expectations and synthetic cohort
   both suites share, so the Python and JavaScript rules cannot drift apart unnoticed.
 
 ```bash
 python scripts/test_paired.py
+python scripts/test_review.py
 python scripts/serve.py --test --no-open --port 8790          # temporary state dir
 chrome --headless=new --dump-dom "http://127.0.0.1:8790/selftest"
 chrome --headless=new --dump-dom "http://127.0.0.1:8790/selftest?phase=reload"
@@ -360,11 +373,15 @@ a query to step 01, since a wider net pulls in more literature.
   user decide.
 - **`dashboard/dashboard.html` is generated.** Never edit it. Edit `dashboard/template.html` and
   run `python scripts/05_build_dashboard.py`. The template has four placeholders —
-  `__BOOT__`, `__DATA__`, `__PAIRED__`, `__COUNT__` — filled differently by the standalone build
-  and by `serve.py`. Both must keep working.
+  `__BOOT__`, `__DATA__`, `__PAIRED__`, `__REVIEW__`, `__COUNT__` — filled differently by the
+  standalone build and by `serve.py`. Both must keep working.
 - **Paired-study rules live twice**: `scripts/paired.py` (timing, validate, exports) and their
   JavaScript mirror in the template. Change both, and extend `dashboard/paired-fixtures.json`;
-  the served suite fails if the two validators disagree.
+  the served suite fails if the two validators disagree. The same holds for review records:
+  `scripts/review.py` (schema subset, pilot checks, content hash) and the template's copy, pinned by
+  `dashboard/review-fixtures.json` (regenerate with `python scripts/test_review.py --write-fixtures`).
+- **Never prefill human judgments.** The review form must start "not assessed"; no agent or tool
+  output may appear in it, and a submitted record is never edited — corrections are new records.
 - **Never run the self-test against real state.** Use `serve.py --test` (or `--state-dir`), and a
   throwaway `--user-data-dir` for the standalone build.
 - **Every new control needs a `data-tip`.** The test suite fails otherwise, by design.
@@ -405,6 +422,8 @@ dashboard/template.html     the single source for both builds
 dashboard/dashboard.html    generated standalone build
 dashboard/selftest.js       the browser suite (test builds only)
 dashboard/paired-fixtures.json   shared timing/escaping fixtures and synthetic cohort
+data/review/           review drafts and locked pilot records, when served (git-ignored; personal judgments)
+dashboard/review-fixtures.json   shared review-record validation fixtures (synthetic)
 research/paired-dmp-study/  the paired-study research record and handoffs
 ```
 
@@ -427,6 +446,11 @@ POST /api/paired/validate {"study": {...}} -> Python validation result
 POST /api/paired/files    {"study": {...}, "download": false} -> checksums of selected files
 POST /api/paired/freeze   {"study": {...}} -> immutable data/paired-snapshots/<id>.json, or 422 + reasons
 GET  /api/paired/snapshots  frozen snapshots and whether their content hash still matches
+GET  /api/review          review drafts + locked records (+ unreadable files); 409 if the draft file is corrupt
+PUT  /api/review/state    {"state": {...}, "replace_corrupt": false} -> data/review/review_state.json
+POST /api/review/submit   {"submission": {"record", "raw_response"}} -> data/review/records/<id>.json, once
+POST /api/review/validate {"record": {...}} -> {"valid", "problems"}; no write
+GET  /api/review/source/<artifact_id>  the task's source PDFs (whitelisted artifacts only)
 ```
 
 `--state-dir DIR` moves `selection.json`, `paired_selection.json` and `paired-snapshots/` to DIR;

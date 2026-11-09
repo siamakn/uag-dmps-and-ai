@@ -33,6 +33,14 @@ Endpoints
     POST /api/paired/freeze     {"study": {...}} -> immutable data/paired-snapshots/<id>.json
     GET  /api/paired/snapshots  the frozen snapshots on disk
 
+  human-review pilot (separate storage under <state-dir>/review/)
+    GET  /api/review            review drafts + locked records; 409 if the draft file is corrupt
+    PUT  /api/review/state      {"state": {...}} -> review/review_state.json (drafts only)
+    POST /api/review/submit     {"submission": {"record", "raw_response"}} -> review/records/<id>.json
+                                (created once, never rewritten; 409 if the id exists)
+    POST /api/review/validate   {"record": {...}} -> schema + pilot checks, no write
+    GET  /api/review/source/<artifact_id>   a task's source PDF (whitelisted artifacts only)
+
 --state-dir DIR keeps selection.json, paired_selection.json and paired-snapshots/ in DIR
 instead of data/. /selftest refuses to run against the real data/ directory, because the
 harness saves and clears selections; use --test (a fresh temporary state dir) instead.
@@ -54,6 +62,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import paired  # noqa: E402
+import review  # noqa: E402
 
 UI_PORT = 8756
 API_PORT = 8757
@@ -92,11 +101,13 @@ def load_state(api_base):
     count = "{:,}".format(len(payload)).replace(",", " ")
 
     pboot = common.boot_json(paired_boot())
+    rboot = common.boot_json(review.boot())
 
     def fill(boot_block):
         return (tpl.replace("__BOOT__", boot_block)
                    .replace("__DATA__", "null")
                    .replace("__PAIRED__", pboot)
+                   .replace("__REVIEW__", rboot)
                    .replace("__COUNT__", count))
 
     html = fill(boot)
@@ -292,6 +303,22 @@ class Handler(BaseHTTPRequestHandler):
             if err:
                 return self._json({"error": err, "corrupt": True, "file": PATHS["paired"]}, 409)
             return self._json({"study": study, "file": PATHS["paired"]})
+        if path == "/api/review":
+            state, err = review.read_state(PATHS["state"])
+            subs, bad = review.list_records(PATHS["state"])
+            body = {"state": state, "records": subs, "unreadable": bad,
+                    "dir": review.paths(PATHS["state"])["dir"]}
+            if err:
+                body.update(error=err, corrupt=True)
+                return self._json(body, 409)
+            return self._json(body)
+        if path.startswith("/api/review/source/"):
+            from urllib.parse import unquote
+            full = review.servable_artifact(unquote(path[len("/api/review/source/"):]))
+            if not full:
+                return self._json({"error": "no such source artifact"}, 404)
+            with open(full, "rb") as f:
+                return self._send(200, f.read(), "application/pdf")
         if path == "/api/paired/snapshots":
             return self._json({"snapshots": list_snapshots()})
         if path == "/api/dmps":
@@ -325,6 +352,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         path = self.path.split("?")[0].rstrip("/")
+        if path.startswith("/api/review"):
+            return self._review_post(path)
         if path.startswith("/api/paired"):
             return self._paired_post(path)
         if path != "/api/selection":
@@ -338,6 +367,28 @@ class Handler(BaseHTTPRequestHandler):
             return self._json({"error": "bad request: %s" % e}, 400)
         doc = write_selection(ids)
         return self._json({"ok": True, "count": doc["count"], "file": PATHS["selection"]})
+
+    def _review_post(self, path):
+        try:
+            body = self._body()
+            if not isinstance(body, dict):
+                raise ValueError("expected a JSON object")
+        except Exception as e:
+            return self._json({"error": "bad request: %s" % e}, 400)
+        if path == "/api/review/state":
+            code, res = review.write_state(PATHS["state"], body.get("state"), bool(body.get("replace_corrupt")))
+            return self._json(res, code)
+        if path == "/api/review/submit":
+            code, res = review.submit(PATHS["state"], body.get("submission"))
+            return self._json(res, code)
+        if path == "/api/review/validate":
+            rec = body.get("record")
+            if not isinstance(rec, dict):
+                return self._json({"error": "expected {\"record\": {...}}"}, 400)
+            existing = {s["record"]["record_id"] for s in review.list_records(PATHS["state"])[0]}
+            problems = review.validate_record(rec, existing)
+            return self._json({"valid": not problems, "problems": problems})
+        return self._json({"error": "not found"}, 404)
 
     def _paired_post(self, path):
         try:

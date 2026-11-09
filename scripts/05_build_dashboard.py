@@ -8,8 +8,9 @@ data/selection.json instead of to browser storage, run scripts/serve.py.
     python scripts/05_build_dashboard.py --selftest OUT.html   # standalone test build
 
 The paired-study boot block (empty draft, the cohort proposal as an unverified draft,
-the study-document registry and source checksums) is embedded the same way, so the
-standalone page carries the same study fields and validation as the served one.
+the study-document registry and source checksums) and the review boot block (the
+PILOT-01 task and the human-review record schema) are embedded the same way, so the
+standalone page carries the same fields and validation as the served one.
 --selftest writes a separate file with the test harness injected; it never touches
 dashboard/dashboard.html.
 """
@@ -21,6 +22,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import paired  # noqa: E402
+import review  # noqa: E402
 
 
 def build(selftest=False):
@@ -28,13 +30,15 @@ def build(selftest=False):
     blob = common.boot_json(payload)
     pboot = common.boot_json({"empty": paired.new_study(), "proposal": paired.proposal_to_study(),
                               "registry": paired.registry_rows(), "sources": paired.source_hashes()})
+    rboot = common.boot_json(review.boot())
     tpl_path = os.path.join(common.DASHBOARD, "template.html")
     html = open(tpl_path, encoding="utf-8").read()
     html = (html.replace("__BOOT__", common.selftest_block() if selftest else "")
                 .replace("__DATA__", blob)
                 .replace("__PAIRED__", pboot)
+                .replace("__REVIEW__", rboot)
                 .replace("__COUNT__", "{:,}".format(len(payload)).replace(",", " ")))
-    for token in ("__BOOT__", "__DATA__", "__PAIRED__", "__COUNT__"):
+    for token in ("__BOOT__", "__DATA__", "__PAIRED__", "__REVIEW__", "__COUNT__"):
         assert token not in html, "template placeholder %s was not filled" % token
     return html, len(payload)
 

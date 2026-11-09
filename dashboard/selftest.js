@@ -28,10 +28,11 @@ var STORE0={};
 try{ for(var si=0;si<localStorage.length;si++){ var sk=localStorage.key(si);
   if(sk.indexOf("dmpbench.")===0) STORE0[sk]=localStorage.getItem(sk); } }catch(e){}
 function restoreStore(keep){
+  var keepList=[].concat(keep||[]);
   try{
     var now=[]; for(var i=0;i<localStorage.length;i++) now.push(localStorage.key(i));
-    now.forEach(function(k){ if(k.indexOf("dmpbench.")===0 && !(k in STORE0) && k!==keep) localStorage.removeItem(k); });
-    Object.keys(STORE0).forEach(function(k){ if(k!==keep) localStorage.setItem(k,STORE0[k]); });
+    now.forEach(function(k){ if(k.indexOf("dmpbench.")===0 && !(k in STORE0) && keepList.indexOf(k)<0) localStorage.removeItem(k); });
+    Object.keys(STORE0).forEach(function(k){ if(keepList.indexOf(k)<0) localStorage.setItem(k,STORE0[k]); });
   }catch(e){}
 }
 
@@ -643,6 +644,7 @@ window.__ONREADY__=function(){
   /* ---------- async: legacy API, paired persistence, freeze refusal ---------- */
   legacyApi(A,a,b)
     .then(function(){ return pairedAsync(A); })
+    .then(function(){ return reviewTests(A); })
     .then(function(){ return reloadSetup(A); })
     .catch(function(e){ ok("async chain completed", false, e && e.message); })
     .then(function(){ flush(true); });
@@ -1063,25 +1065,252 @@ function pairedAsync(A){
 /* ================================================================ real reload, two page loads */
 var MARKER="selftest-reload-marker";
 function reloadSetup(A){
-  var PA=A.paired, st=PA.newStudy("selftest reload marker"); st.study_id=MARKER;
-  if(!window.DMP_API && STORE0[PA.key]!==undefined){
-    skipped("real page reload (phase 2 prepared)","this browser already holds a paired draft; not risking it");
+  var PA=A.paired, R=A.review, st=PA.newStudy("selftest reload marker"); st.study_id=MARKER;
+  if(!window.DMP_API && (STORE0[PA.key]!==undefined || STORE0[R.key]!==undefined)){
+    skipped("real page reload (phase 2 prepared)","this browser already holds a paired or review draft; not risking it");
     restoreStore(); return Promise.resolve();
   }
   PA.load(st);
-  return wait(window.DMP_API?600:0).then(function(){
-    restoreStore(PA.key);  /* restore everything except the marker draft that phase 2 reads */
-    ok("phase-2 marker saved; load ?phase=reload to check it survives a real reload", true);
+  R.setField("rationale",RMARK);
+  return R.save().then(function(){ return wait(window.DMP_API?600:0); }).then(function(){
+    restoreStore([PA.key, R.key]);  /* keep only the two markers that phase 2 reads */
+    ok("phase-2 markers saved; load ?phase=reload to check they survive a real reload", true);
   });
 }
 function reloadPhase(A){
-  var PA=A.paired, s=PA.study();
+  var PA=A.paired, R=A.review, s=PA.study(), d=R.draft();
   eq("after a real page reload the saved draft is read back", s && s.study_id, MARKER);
   eq("and it opens in paired mode", A.mode(), "paired");
+  eq("the review draft survives a real page reload too", d && d.fields.rationale, RMARK);
   var done=function(){ flush(true); };
-  if(!window.DMP_API){ try{ localStorage.removeItem(PA.key); }catch(e){} ok("marker removed from browser storage", true); return done(); }
-  PA.load(PA.newStudy("empty")); wait(600).then(function(){ ok("marker replaced on the temporary server", true); done(); });
+  if(!window.DMP_API){ try{ localStorage.removeItem(PA.key); localStorage.removeItem(R.key); }catch(e){}
+    ok("markers removed from browser storage", true); return done(); }
+  PA.load(PA.newStudy("empty"));
+  delete R.state().drafts[R.task().task_id];
+  R.save().then(function(){ return wait(600); }).then(function(){ ok("markers replaced on the temporary server", true); done(); });
   flush(false);
+}
+
+
+/* ================================================================ review (pilot) */
+var RFX=null;
+try{ RFX=JSON.parse(document.getElementById("review-fixtures").textContent); }catch(e){ RFX=null; }
+var RMARK="SELFTEST REVIEW MARKER";
+function until(cond,ms){
+  var t0=Date.now();
+  return new Promise(function(res){ (function tick(){
+    var v=false; try{ v=cond(); }catch(e){}
+    if(v || Date.now()-t0>(ms||4000)) return res(!!v);
+    setTimeout(tick,40); })(); });
+}
+function rq(sel){ return document.querySelector("#review "+sel); }
+function rvClick(k){ var b=rq('[data-rv="'+k+'"]'); if(b) b.click(); return !!b; }
+function rvPick(name,val){
+  var el=rq('input[name="rv-'+name+'"][value="'+val+'"]'); if(!el) return false;
+  el.checked=true; el.dispatchEvent(new Event("change",{bubbles:true})); return true;
+}
+function rvType(field,val){
+  var el=rq('[data-rf="'+field+'"]'); if(!el) return false;
+  el.value=val; el.dispatchEvent(new Event("input",{bubbles:true}));
+  el=rq('[data-rf="'+field+'"]'); if(el) el.dispatchEvent(new Event("change",{bubbles:true}));
+  return true;
+}
+function rvSelect(field,val){ var el=rq('select[data-rf="'+field+'"]'); el.value=val; el.dispatchEvent(new Event("change",{bubbles:true})); }
+function rvEv(i,f,val){
+  var el=rq('[data-ev="'+i+'"][data-evf="'+f+'"]'); el.value=val;
+  el.dispatchEvent(new Event("input",{bubbles:true})); el.dispatchEvent(new Event("change",{bubbles:true}));
+}
+function previewJSON(){ rvClick("preview"); var p=rq("#rv-preview"); try{ return JSON.parse(p.textContent); }catch(e){ return null; } }
+function applyFix(base,sets,rehash,R){
+  var r=clone(base);
+  sets.forEach(function(s){ var o=r, p=s[0]; for(var i=0;i<p.length-1;i++) o=o[p[i]]; o[p[p.length-1]]=s[1]; });
+  if(rehash && r.provenance && r.provenance.record_content_sha256) r.provenance.record_content_sha256=R.contentHash(r);
+  return r;
+}
+
+function reviewTests(A){
+  var R=A.review, api=window.DMP_API, served=!!api, slow=served?900:80;
+  if(!R || !RFX){ ok("review mode and fixtures are present", false); return Promise.resolve(); }
+  var restore=stub(function(){ return true; });
+  var firstId=null, firstJSON=null;
+
+  /* --- parity with Python on the shared fixtures --- */
+  ok("JS SHA-256 matches the reference vectors", RFX.sha256_vectors.every(function(v){ return R.sha256(v[0])===v[1]; }));
+  eq("JS content hash of the fixture record equals the Python hash",
+     R.contentHash(RFX.base_record), RFX.base_record.provenance.record_content_sha256);
+  RFX.cases.forEach(function(c){
+    var rec=applyFix(RFX.base_record,c.set,c.rehash,R);
+    var probs=R.schemaValidate(R.schema(),rec).concat(R.pilotChecks(rec,[]));
+    ok("review validation: "+c.name, (probs.length===0)===c.valid, probs.slice(0,3).join(" | "));
+  });
+
+  /* --- the deferred pilot, untouched --- */
+  document.querySelector('[data-mode="review"]').click();
+  eq("clicking Review switches mode", A.mode(), "review");
+  ok("review mode replaces the table", document.querySelector(".shell").hidden && !document.getElementById("review").hidden);
+  var badge=rq("#rv-status");
+  ok("the pilot is shown as deferred", !!badge && /Deferred/.test(badge.textContent), badge && badge.textContent);
+  ok("deferred is not shown as overdue, failed or assessed", badge && !/overdue|failed|assessed/i.test(badge.textContent));
+  eq("deferral creates no record", R.records().length, 0);
+  eq("deferral creates no draft", R.draft(), null);
+  ok("nothing is preselected: 'not assessed yet' is checked", rq('input[name="rv-assessment"][value=""]').checked &&
+     !rq('input[name="rv-assessment"]:checked:not([value=""])'));
+  ok("the source PDF link is the full document", /17578116/.test(rq("#rv-src").getAttribute("href")));
+  ok("the framework link opens at the cell's physical page", /#page=8$/.test(rq("#rv-fw").getAttribute("href")));
+  eq("the five draft anchors are shown", rq("#rv-anchors").querySelectorAll("tr").length, 6);
+  ok("anchors are labelled as drafts", /draft/i.test(rq("#rv-anchors").parentNode.textContent));
+  ok("no AI suggestion is shown", /No AI-generated rating/.test(document.getElementById("review").textContent));
+  var p0=previewJSON();
+  ok("previewing a blank form creates no record", !p0 && /blank/.test(rq("#rv-preview").textContent));
+  rvClick("save");
+  eq("saving a blank form stores nothing", R.draft(), null);
+
+  /* --- an untouched assessment has no score --- */
+  rvPick("applicability","applicable");
+  ok("touching a field starts a draft", !!R.draft());
+  var p1=previewJSON();
+  ok("an untouched assessment has no score", p1 && p1.criteria[0].score.value===null && p1.criteria[0].score.entry_status==="not_entered",
+     p1 && JSON.stringify(p1.criteria[0].score));
+  ok("the preview leaves unanswered fields empty instead of inventing them",
+     p1 && p1.criteria[0].applicability_reason==="" && p1.criteria[0].confidence===null &&
+     p1.criteria[0].rationale==="" && p1.criteria[0].evidence.length===0);
+  ok("so an unfinished draft is not a valid record", p1 && R.schemaValidate(R.schema(),p1).length>0);
+
+  return R.save().then(function(){ return R.reload(); }).then(function(){
+    /* --- missing fields stay missing --- */
+    var d=R.draft();
+    ok("a partial draft survives a reload", d && d.fields.applicability==="applicable");
+    ok("missing reasoning stays empty, not invented", d && d.fields.rationale==="" && d.fields.evidence.length===0);
+    ok("missing items are listed", /Write your reasoning/.test(rq("#rv-problems").textContent));
+    rvClick("submit");
+    ok("an incomplete response cannot be submitted", !rq("#rv-confirm") && R.records().length===0);
+    ok("and the reason is shown", /Not submitted yet/.test(rq("#rv-msg").textContent));
+
+    /* --- explicit zero --- */
+    rvPick("assessment","0"); rvSelect("evidence_state","not_reported"); rvPick("search_completed","yes");
+    rvType("searched_sections","SYNTHETIC TEST sections 1-3");
+    return R.save();
+  }).then(function(){ return R.reload(); }).then(function(){
+    eq("an explicit zero survives save and reload", R.draft().fields.assessment, "0");
+    var p=previewJSON();
+    ok("the zero is the number 0, not empty", p && p.criteria[0].score.value===0 && p.criteria[0].score.original_value_as_entered==="0");
+    rvClick("export");
+    ok("export keeps the zero", /"assessment": "0"/.test(rq("#rv-out").textContent));
+
+    /* --- inconsistencies are explained before submission --- */
+    rvPick("assessment","2");
+    var t=rq("#rv-problems").textContent;
+    ok("a 2 without evidence is explained", /A 2 means the checklist is evidenced/.test(t) && /at least one evidence entry/.test(t), t.slice(0,160));
+    rvClick("submit");
+    ok("an inconsistent response is not submitted", !rq("#rv-confirm") && R.records().length===0);
+    rvPick("assessment","0"); rvPick("search_completed","no");
+    ok("a 0 without a completed search is explained", /completed criterion-specific search/.test(rq("#rv-problems").textContent));
+    rvPick("assessment","NA"); rvPick("applicability","not_applicable");
+    var pn=previewJSON();
+    ok("NA keeps a null score", pn && pn.criteria[0].score.value===null && pn.criteria[0].score.original_value_as_entered==="NA");
+    rvPick("assessment","uncertain"); rvPick("applicability","uncertain");
+    var pu=previewJSON();
+    ok("uncertain keeps a null score", pu && pu.criteria[0].score.value===null && pu.criteria[0].score.original_value_as_entered==="uncertain");
+
+    /* --- a complete, consistent partial response (synthetic test input) --- */
+    rvPick("assessment","1"); rvPick("applicability","applicable"); rvSelect("evidence_state","partly_evidenced");
+    rvClick("add-ev"); rvEv(0,"physical_page","5"); rvEv(0,"section","SYNTHETIC section"); rvEv(0,"note","SYNTHETIC TEST evidence note");
+    var pp=previewJSON();
+    ok("a partial score is 1, distinct from 0", pp && pp.criteria[0].score.value===1 && pp.criteria[0].score.value!==0);
+    rvType("applicability_reason","SYNTHETIC TEST reason"); rvType("rationale","SYNTHETIC TEST — not a human response");
+    rvPick("confidence","low"); rvType("confidence_reason","SYNTHETIC TEST"); rvPick("prior_familiarity","none_reported");
+    rvPick("seen_model_outputs","no"); rvPick("seen_other_labels","no"); rvPick("seen_other_version","no");
+    rvType("usability_feedback","SYNTHETIC TEST feedback"); rvType("raw_response","SYNTHETIC TEST raw wording");
+    ok("a complete response passes every check", /Complete and consistent/.test(rq("#rv-problems").textContent),
+       rq("#rv-problems").textContent.slice(0,200));
+    rvClick("submit");
+    ok("submitting asks for confirmation first", !!rq("#rv-confirm") && R.records().length===0);
+    var bare=[].filter.call(document.querySelectorAll("#review button, #review input, #review select, #review textarea"),
+      function(el){ return !el.getAttribute("data-tip"); });
+    eq("every review control is documented", bare.length, 0);
+    if(bare.length) log.push("      undocumented: "+bare.slice(0,4).map(function(e){ return e.outerHTML.slice(0,90); }).join(" | "));
+    rq("#rv-confirm-id").value="R1"; rvClick("confirm");
+    return wait(slow);
+  }).then(function(){
+    eq("a wrong reviewer ID does not submit", R.records().length, 0);
+    ok("and says why", /type R-PILOT-01/.test(rq("#rv-msg").textContent));
+    rq("#rv-confirm-id").value="R-PILOT-01"; rvClick("confirm");
+    return until(function(){ return R.records().length===1; }, 5000);
+  }).then(function(done){
+    ok("confirming submits and locks the response", done);
+    var rec=(R.records()[0]||{}).record||{};
+    firstId=rec.record_id; firstJSON=JSON.stringify(R.records()[0]);
+    ok("the submitted record satisfies the contract", R.validate(rec).length===0, R.validate(rec).join(" | "));
+    eq("its content hash is correct", rec.provenance && rec.provenance.record_content_sha256, R.contentHash(rec));
+    eq("it is a pilot record from R-PILOT-01, no benchmark reviewers needed", rec.assessor && rec.assessor.reviewer_id, "R-PILOT-01");
+    eq("the raw wording is kept beside it", (R.records()[0].raw_response||{}).text, "SYNTHETIC TEST raw wording");
+    eq("the draft is cleared after submission", R.draft(), null);
+    ok("the pilot still shows as deferred, with the response counted",
+       /Deferred/.test(rq("#rv-status").textContent) && /1 voluntary response submitted/.test(document.getElementById("review").textContent));
+    /* --- a locked record cannot be overwritten --- */
+    var again=clone(R.records()[0]); again.record.criteria[0].rationale="overwrite attempt";
+    return R.store(again).then(function(res){
+      eq("storing the same record id again is refused", res.ok, false);
+      if(served) return sendJSON("POST",api+"/review/submit",{submission:again}).then(function(r){
+        eq("the server refuses to overwrite a locked record", r.__status, 409); });
+      var st=R.storeLocal(again);
+      eq("browser storage refuses to overwrite a locked record", st.ok, false);
+    });
+  }).then(function(){ return R.reload(); }).then(function(){
+    eq("the locked record is unchanged", JSON.stringify(R.records()[0]), firstJSON);
+    /* --- corrections create a linked revision --- */
+    rq('[data-rvfix="'+firstId+'"]').click();
+    var d=R.draft();
+    ok("a correction draft names the original", d && d.supersedes_record_id===firstId && d.fields.assessment==="1");
+    rvType("rationale","SYNTHETIC TEST — corrected reasoning");
+    rvClick("submit"); rq("#rv-confirm-id").value="R-PILOT-01"; rvClick("confirm");
+    return until(function(){ return R.records().length===2; }, 5000);
+  }).then(function(done){
+    ok("the correction is stored as a second record", done);
+    var recs=R.records(), orig=recs.filter(function(s){ return s.record.record_id===firstId; })[0];
+    var fix=recs.filter(function(s){ return s.record.record_id!==firstId; })[0];
+    eq("the original record is byte-for-byte unchanged", JSON.stringify(orig), firstJSON);
+    eq("the correction links to the original", fix && fix.record.provenance.supersedes_record_id, firstId);
+    ok("the original is shown as superseded", /superseded by/.test(rq('[data-record="'+firstId+'"]').textContent) &&
+       !rq('[data-record="'+firstId+'"] [data-rvfix]'));
+    if(served) return getJSON(api+"/review").then(function(g){
+      eq("the server holds both records", (g.records||[]).length, 2);
+      return Promise.all(RFX.cases.map(function(c){
+        return sendJSON("POST",api+"/review/validate",{record:applyFix(RFX.base_record,c.set,c.rehash,R)})
+          .then(function(r){ return r.valid===c.valid; }); }));
+    }).then(function(same){ ok("Python and JS agree on every review fixture", same.every(Boolean)); });
+  }).then(function(){
+    /* --- corrupt or unsupported storage is never reset silently --- */
+    if(served){
+      var bad={schema:"dmpbench.review-state", schema_version:99, drafts:{}};
+      return sendJSON("PUT",api+"/review/state",{state:bad}).then(function(r){
+        eq("the server refuses an unsupported draft file", r.__status, 400); });
+    }
+    localStorage.setItem(R.key,"{corrupt");
+    localStorage.setItem(R.recordPrefix+"broken","{x");
+    return R.reload().then(function(){
+      ok("a corrupt draft blocks the form", !!R.blocked() && !!rq("#rv-blocked"));
+      ok("an unreadable record is reported", R.unreadable().length===1 && /Unreadable record/.test(document.getElementById("review").textContent));
+      eq("the locked records are still listed", R.records().length, 2);
+      return R.save();
+    }).then(function(saved){
+      eq("saving is refused while blocked", saved, false);
+      eq("and the corrupt text is untouched", localStorage.getItem(R.key), "{corrupt");
+      rvClick("reset-corrupt");
+      var kept=[]; for(var i=0;i<localStorage.length;i++){ var k=localStorage.key(i); if(k.indexOf(R.key+".corrupt-")===0) kept.push(k); }
+      ok("starting over keeps the unreadable draft aside", kept.length===1 && localStorage.getItem(kept[0])==="{corrupt");
+      ok("the unreadable record was not removed", localStorage.getItem(R.recordPrefix+"broken")==="{x");
+      localStorage.removeItem(R.recordPrefix+"broken");
+    });
+  }).then(function(){
+    /* --- the deferral blocks nothing else --- */
+    A.setMode("paired");
+    ok("the paired study still works beside the pilot", !!document.querySelector("#list .row select[data-assign]"));
+    A.setMode("legacy");
+    ok("the legacy selection still works", !!document.querySelector("#list .row [data-pick]"));
+    A.setMode("paired");
+    restore();
+  });
 }
 
 })();

@@ -290,6 +290,49 @@ select.assign{width:100%; padding:3px 5px; font-size:11.5px}
 #p-blocked .note{color:var(--alert); background:var(--alert-soft)}
 #p-msg{white-space:pre-wrap}
 .legacy-flag{font-size:11px; color:var(--ink-3); margin:-4px 0 8px}
+
+/* ---------- review (pilot) ---------- */
+.shell[hidden],.stats[hidden],#review[hidden]{display:none}
+#review{max-width:1180px; margin:0 auto; padding:14px 18px 60px; display:grid; gap:14px}
+#review .panel{padding:14px 16px}
+#review h2{font-family:Archivo,sans-serif; font-size:15px; margin:0 0 4px}
+#review h3{font-family:Archivo,sans-serif; font-size:12.5px; margin:14px 0 6px; color:var(--ink)}
+#review p{margin:0 0 6px; max-width:90ch; color:var(--ink-2); font-size:12.5px}
+.rv-status{display:flex; gap:10px; align-items:flex-start; flex-wrap:wrap}
+.rv-badge{font-size:11px; font-weight:600; padding:3px 9px; border-radius:99px; background:var(--surface-3); color:var(--ink-2); white-space:nowrap}
+.rv-badge.def{background:var(--accent-soft); color:var(--accent-ink)}
+.rv-badge.sub{background:var(--good-soft); color:var(--good)}
+.rv-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px}
+@media (max-width:900px){ .rv-grid{grid-template-columns:1fr} }
+.rv-facts{display:grid; grid-template-columns:auto minmax(0,1fr); gap:3px 12px; font-size:12px; margin:6px 0 0}
+.rv-facts dt{color:var(--ink-3)} .rv-facts dd{margin:0; overflow-wrap:anywhere}
+table.rv-anchors{width:100%; border-collapse:collapse; font-size:12px; margin-top:6px}
+table.rv-anchors th,table.rv-anchors td{border-top:1px solid var(--line); padding:5px 6px; text-align:left; vertical-align:top}
+table.rv-anchors th{color:var(--ink-3); font-size:10.5px; text-transform:uppercase; letter-spacing:.06em}
+.rv-form fieldset{border:1px solid var(--line); border-radius:6px; padding:9px 11px 10px; margin:0 0 10px}
+.rv-form legend{font-size:12px; font-weight:600; color:var(--ink); padding:0 4px}
+.rv-form .opts{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12.5px}
+.rv-form .opts label{display:inline-flex; gap:5px; align-items:center; cursor:pointer}
+.rv-form .opts input{accent-color:var(--accent)}
+.rv-form .help{font-size:11px; color:var(--ink-3); margin-top:4px}
+.rv-form input[type=text],.rv-form input[type=number],.rv-form select,.rv-form textarea{
+  width:100%; padding:5px 8px; border:1px solid var(--line-2); border-radius:5px; background:var(--surface);
+  color:var(--ink); font-family:inherit; font-size:12.5px; margin-top:4px}
+.rv-form textarea{height:64px; resize:vertical}
+.rv-ev{display:grid; grid-template-columns:70px 80px minmax(0,1fr) minmax(0,1.3fr) minmax(0,1.3fr) 20px; gap:6px; align-items:end; margin-top:6px}
+.rv-ev label{font-size:10.5px; color:var(--ink-3)}
+@media (max-width:900px){ .rv-ev{grid-template-columns:1fr 1fr} }
+.rv-problems{font-size:12px; color:var(--warn); background:var(--warn-soft); border-radius:6px; padding:8px 10px; margin:8px 0}
+.rv-problems ul{margin:4px 0 0; padding-left:18px}
+.rv-problems.ok{color:var(--good); background:var(--good-soft)}
+.rv-actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.rv-confirm{border:1px solid var(--accent); border-radius:6px; padding:10px; margin-top:10px; background:var(--accent-soft); font-size:12.5px}
+.rv-confirm input{max-width:220px}
+#rv-preview,#rv-out{white-space:pre-wrap; font-family:"IBM Plex Mono",monospace; font-size:10.5px; background:var(--surface-2);
+  border:1px solid var(--line); border-radius:6px; padding:8px; max-height:340px; overflow:auto; margin-top:8px}
+.rv-records{list-style:none; margin:6px 0 0; padding:0; display:grid; gap:6px}
+.rv-records li{border:1px solid var(--line); border-radius:6px; padding:7px 9px; font-size:12px; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.rv-records .id{font-family:"IBM Plex Mono",monospace; font-size:11.5px}
 @media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
 </style>
 
@@ -303,6 +346,7 @@ select.assign{width:100%; padding:3px 5px; font-size:11.5px}
   <div class="mode" role="group" aria-label="Which study">
     <button type="button" data-mode="paired" aria-pressed="false" data-tip="The active design: six projects, one per discipline, each with two versions of the same DMP (issued at or before 50% and after 100% of the project run).">Paired study</button>
     <button type="button" data-mode="legacy" aria-pressed="false" data-tip="The historical 3 x 3 selection kept in data/selection.json. Still readable and editable; it gives nothing to the paired study.">Legacy 3×3</button>
+    <button type="button" data-mode="review" aria-pressed="false" data-tip="Human-review pilot form (PILOT-01). The pilot is deferred: nothing is needed now, and the form stays blank until someone chooses to use it.">Review (pilot)</button>
   </div>
   <div class="stats">
     <div class="stat hit" data-tip="DMP records passing the current filters."><b id="s-hits">0</b><span>matching</span></div>
@@ -401,6 +445,13 @@ select.assign{width:100%; padding:3px 5px; font-size:11.5px}
         writes an immutable snapshot to <code>data/paired-snapshots/</code>.</li>
       </ul>
 
+      <h3>Review (pilot)</h3>
+      <p>The third mode holds the human-review pilot form (PILOT-01: PathOS D3.5 v2.0, criterion 1b,
+      End-Project cell). The pilot is <b>deferred</b>: nothing is needed now and the form stays blank. If someone
+      uses it, the draft is saved as entered, and a submission is checked, confirmed with the reviewer ID, then
+      locked; later changes become a linked correction. Served, it lives in <code>data/review/</code>; standalone,
+      in this browser.</p>
+
       <h3>Legacy 3 &times; 3 selection (historical)</h3>
       <p>The earlier design picked <b>10</b>: nine filling a 3 &times; 3 discipline &times; lifecycle matrix,
       plus one challenging case. It stays available under <em>Legacy 3×3</em>, saved in
@@ -496,6 +547,8 @@ select.assign{width:100%; padding:3px 5px; font-size:11.5px}
   </aside>
 </div>
 
+<section id="review" hidden aria-label="Human-review pilot"></section>
+
 <pre id="testlog" hidden></pre>
 
 <div class="foot">
@@ -509,6 +562,7 @@ select.assign{width:100%; padding:3px 5px; font-size:11.5px}
 __BOOT__
 <script id="data" type="application/json">__DATA__</script>
 <script id="paired-boot" type="application/json">__PAIRED__</script>
+<script id="review-boot" type="application/json">__REVIEW__</script>
 <script>
 (function(){
 "use strict";
@@ -1302,7 +1356,7 @@ var STATUS_TIP={
   rejected:"A hard failure: wrong timing, a reused project or document, repeated bytes, a scope mismatch or a contradiction."
 };
 var mode="paired";
-try{ var m0=localStorage.getItem(MODEKEY); if(m0==="legacy"||m0==="paired") mode=m0; }catch(e){}
+try{ var m0=localStorage.getItem(MODEKEY); if(m0==="legacy"||m0==="paired"||m0==="review") mode=m0; }catch(e){}
 var P={study:null, blocked:null, open:{}, saveTimer:null, last:null};
 
 function clone(o){ return JSON.parse(JSON.stringify(o)); }
@@ -1854,8 +1908,12 @@ function renderPaired(){
 function applyMode(){
   document.querySelectorAll("[data-mode]").forEach(function(b){
     b.setAttribute("aria-pressed", b.getAttribute("data-mode")===mode?"true":"false"); });
+  var rv = mode==="review";
+  document.querySelector(".shell").hidden = rv;
+  document.querySelector(".stats").hidden = rv;
+  document.getElementById("review").hidden = !rv;
   document.getElementById("paired-tray").hidden = mode!=="paired";
-  document.getElementById("legacy-tray").hidden = mode==="paired";
+  document.getElementById("legacy-tray").hidden = mode!=="legacy";
   document.getElementById("stat-sel").hidden = mode==="paired";
   document.getElementById("stat-pairs").hidden = mode!=="paired";
   COL_TIP.pick = mode==="paired"
@@ -1863,10 +1921,10 @@ function applyMode(){
     : "Tick to add this DMP to the legacy selection.";
 }
 function setMode(m){
-  if(m!=="paired" && m!=="legacy") return false;
+  if(m!=="paired" && m!=="legacy" && m!=="review") return false;
   mode=m;
   try{ localStorage.setItem(MODEKEY,m); }catch(e){}
-  applyMode(); render(); return true;
+  applyMode(); render(); renderReview(); return true;
 }
 
 /* ---------- actions ---------- */
@@ -2012,6 +2070,656 @@ var PAPI={
   serverValidate:function(s){ return postJSON("/paired/validate",{study:s||P.study}); }
 };
 
+/* ================================================================ human-review pilot
+   scripts/review.py is the Python side. The record contract is the research schema
+   (research/paired-dmp-study/human-review-record.schema.json), embedded in #review-boot and
+   applied by schemaValidate below; dashboard/review-fixtures.json pins this copy to Python.
+   Nothing here creates a score: an untouched form is "not assessed", and only a human
+   submission produces a record. */
+var RBOOT={};
+try{ RBOOT=JSON.parse(document.getElementById("review-boot").textContent)||{}; }catch(e){ RBOOT={}; }
+var RKEY="dmpbench.review.v1", RREC=RKEY+".record.";
+var RV={task:(RBOOT.tasks||[])[0]||null, state:null, records:[], unreadable:[], blocked:null,
+        dirty:false, confirm:false, preview:"", exported:"", msg:["",""]};
+
+/* ---------- SHA-256 (pure JS, so file:// pages hash the same way as the server) ---------- */
+var SHA_K=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+  0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+  0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+  0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+  0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+  0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+  0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+  0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+function ror(x,n){ return (x>>>n)|(x<<(32-n)); }
+function sha256hex(str){
+  var bytes=new TextEncoder().encode(str), l=bytes.length;
+  var n=((l+9+63)>>6)<<6, m=new Uint8Array(n); m.set(bytes); m[l]=0x80;
+  var dv=new DataView(m.buffer); dv.setUint32(n-8,Math.floor(l/0x20000000)); dv.setUint32(n-4,(l<<3)>>>0);
+  var H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19], w=new Array(64);
+  for(var off=0;off<n;off+=64){
+    var i;
+    for(i=0;i<16;i++) w[i]=dv.getUint32(off+i*4);
+    for(i=16;i<64;i++){
+      var s0=ror(w[i-15],7)^ror(w[i-15],18)^(w[i-15]>>>3), s1=ror(w[i-2],17)^ror(w[i-2],19)^(w[i-2]>>>10);
+      w[i]=(w[i-16]+s0+w[i-7]+s1)>>>0;
+    }
+    var a=H[0],b=H[1],c=H[2],d=H[3],e=H[4],f=H[5],g=H[6],h=H[7];
+    for(i=0;i<64;i++){
+      var t1=(h+(ror(e,6)^ror(e,11)^ror(e,25))+((e&f)^(~e&g))+SHA_K[i]+w[i])>>>0;
+      var t2=((ror(a,2)^ror(a,13)^ror(a,22))+((a&b)^(a&c)^(b&c)))>>>0;
+      h=g; g=f; f=e; e=(d+t1)>>>0; d=c; c=b; b=a; a=(t1+t2)>>>0;
+    }
+    H[0]=(H[0]+a)>>>0; H[1]=(H[1]+b)>>>0; H[2]=(H[2]+c)>>>0; H[3]=(H[3]+d)>>>0;
+    H[4]=(H[4]+e)>>>0; H[5]=(H[5]+f)>>>0; H[6]=(H[6]+g)>>>0; H[7]=(H[7]+h)>>>0;
+  }
+  return H.map(function(x){ return ("00000000"+x.toString(16)).slice(-8); }).join("");
+}
+function contentHash(rec){
+  var r=clone(rec); r.provenance=r.provenance||{}; r.provenance.record_content_sha256=null;
+  return sha256hex(canonicalJSON(r));
+}
+
+/* ---------- JSON-Schema subset (mirror of review.py:schema_validate) ---------- */
+var DATE_TIME=/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$/;
+function isType(x,t){
+  if(t==="null") return x===null;
+  if(t==="boolean") return typeof x==="boolean";
+  if(t==="integer") return typeof x==="number" && Number.isInteger(x);
+  if(t==="number") return typeof x==="number";
+  if(t==="string") return typeof x==="string";
+  if(t==="array") return Array.isArray(x);
+  if(t==="object") return x!==null && typeof x==="object" && !Array.isArray(x);
+  return false;
+}
+function same(a,b){
+  if(a!==null && b!==null && typeof a==="object" && typeof b==="object")
+    return JSON.stringify(sortKeys(a))===JSON.stringify(sortKeys(b));
+  return a===b;
+}
+function schemaValidate(schema,inst){
+  var root=schema, errs=[];
+  function subErrs(s,x,p){ var before=errs.length; v(s,x,p); return errs.splice(before); }
+  function v(s,x,p){
+    if(s===true || !s || !Object.keys(s).length) return;
+    if(s.$ref){
+      var t=root; s.$ref.slice(2).split("/").forEach(function(k){ t=t[k]; }); v(t,x,p);
+    }
+    (s.allOf||[]).forEach(function(sub){ v(sub,x,p); });
+    if(s.anyOf && !s.anyOf.some(function(sub){ return !subErrs(sub,x,p).length; }))
+      errs.push(p+": matches none of the allowed alternatives");
+    if(s["if"]){
+      if(!subErrs(s["if"],x,p).length){ if(s.then) v(s.then,x,p); }
+      else if(s["else"]) v(s["else"],x,p);
+    }
+    if("const" in s && !same(x,s["const"])) errs.push(p+": must be "+JSON.stringify(s["const"]));
+    if(s["enum"] && !s["enum"].some(function(e){ return same(x,e); }))
+      errs.push(p+": "+JSON.stringify(x)+" is not one of "+JSON.stringify(s["enum"]));
+    if(s.type){
+      var types=Array.isArray(s.type)?s.type:[s.type];
+      if(!types.some(function(t){ return isType(x,t); })){
+        errs.push(p+": expected "+types.join("/")+", got "+String(JSON.stringify(x)).slice(0,60)); return; }
+    }
+    if(isType(x,"object")){
+      (s.required||[]).forEach(function(k){ if(!(k in x)) errs.push(p+": missing required field "+k); });
+      var props=s.properties||{};
+      Object.keys(x).forEach(function(k){
+        if(k in props) v(props[k],x[k],p+"."+k);
+        else if(s.additionalProperties===false) errs.push(p+": unexpected field "+k);
+      });
+    }
+    if(Array.isArray(x)){
+      if("minItems" in s && x.length<s.minItems) errs.push(p+": needs at least "+s.minItems+" item(s)");
+      if("maxItems" in s && x.length>s.maxItems) errs.push(p+": allows at most "+s.maxItems+" item(s)");
+      if(s.uniqueItems){ var seen={}, dup=false;
+        x.forEach(function(i){ var k=JSON.stringify(sortKeys(i)); if(seen[k]) dup=true; seen[k]=1; });
+        if(dup) errs.push(p+": items must be unique"); }
+      if(s.items) x.forEach(function(item,i){ v(s.items,item,p+"["+i+"]"); });
+    }
+    if(typeof x==="string"){
+      if("minLength" in s && x.length<s.minLength) errs.push(p+(s.minLength===1?": must not be empty":": too short"));
+      if(s.pattern && !new RegExp(s.pattern).test(x)) errs.push(p+": does not match "+s.pattern);
+      if(s.format==="date-time" && !DATE_TIME.test(x)) errs.push(p+": not an RFC 3339 date-time");
+    }
+    if(typeof x==="number"){
+      if("minimum" in s && x<s.minimum) errs.push(p+": below "+s.minimum);
+      if("maximum" in s && x>s.maximum) errs.push(p+": above "+s.maximum);
+    }
+  }
+  v(schema,inst,"$");
+  return errs;
+}
+/* mirror of review.py:pilot_checks */
+function pilotChecks(rec,existing){
+  var out=[], ins=rec.instrument||{}, rows=(rec.criteria||[]).map(function(c){ return c.criterion_id; });
+  var scope=rec.assessment_scope||{}, ids={};
+  if(rec.record_kind!=="pilot_calibration") out.push("this review mode only accepts pilot_calibration records");
+  if(rows.filter(function(r,i){ return rows.indexOf(r)!==i; }).length) out.push("a criterion appears twice");
+  if(rows.some(function(r){ return (ins.criterion_ids||[]).indexOf(r)<0; })) out.push("a criterion row is not in the declared instrument");
+  if((scope.assessed_criterion_ids||[]).slice().sort().join()!==rows.slice().sort().join())
+    out.push("assessment_scope.assessed_criterion_ids must list exactly the criterion rows");
+  if(scope.scope==="single_criterion_pilot" && rows.length!==1) out.push("a single-criterion pilot has exactly one criterion row");
+  (rec.artifacts||[]).forEach(function(a){ ids[a.artifact_id]=1; });
+  var doc=rec.document||{}, ctx=rec.assessment_context||{};
+  var refs=(doc.source_document_artifact_ids||[]).concat([ctx.packet_artifact_id,ctx.canonical_full_text_artifact_id,ins.rubric_artifact_id]);
+  (rec.criteria||[]).forEach(function(c){
+    refs.push((c.score||{}).anchors_artifact_id);
+    (c.evidence||[]).forEach(function(l){
+      refs.push(l.artifact_id);
+      if(l.text_start!=null && (l.text_end_exclusive==null || l.text_end_exclusive<l.text_start || !l.offset_units))
+        out.push("a text offset needs an end at or after its start and named units");
+    });
+  });
+  refs.forEach(function(r){ if(r!=null && !ids[r]) out.push("artifact "+r+" is referenced but not listed in artifacts"); });
+  if(rec.record_status==="submitted_locked") (rec.criteria||[]).forEach(function(c){
+    if((c.score||{}).entry_status==="not_entered")
+      out.push("criterion "+c.criterion_id+": a submitted record needs an explicit choice (a score, NA, uncertain or withheld); 'not entered' only exists in drafts");
+  });
+  var prov=rec.provenance||{};
+  if(prov.record_content_sha256 && prov.record_content_sha256!==contentHash(rec)) out.push("record_content_sha256 does not match the record content");
+  if(rec.record_status==="submitted_locked" && !prov.record_content_sha256) out.push("a locked record needs record_content_sha256");
+  if(prov.supersedes_record_id!=null && (existing||[]).indexOf(prov.supersedes_record_id)<0)
+    out.push("supersedes_record_id "+prov.supersedes_record_id+" does not name a stored record");
+  if(prov.supersedes_record_id!=null && prov.supersedes_record_id===rec.record_id) out.push("a record cannot supersede itself");
+  return out;
+}
+function recordIds(){ return RV.records.map(function(s){ return s.record.record_id; }); }
+function validateRecord(rec){ return schemaValidate(RBOOT.schema,rec).concat(pilotChecks(rec,recordIds())); }
+
+/* ---------- drafts ---------- */
+var BLANK={applicability:null, applicability_reason:"", evidence_state:null, assessment:null, evidence:[],
+  search_completed:null, searched_sections:"", rationale:"", confidence:null, confidence_reason:"",
+  uncertainties:"", prior_familiarity:null, prior_familiarity_note:"", seen_model_outputs:null,
+  seen_other_labels:null, seen_other_version:null, usability_feedback:"", raw_response:""};
+var SEARCH_UNSURE="Reviewer was unsure whether the criterion-specific search was complete.";
+function emptyState(){ return {schema:RBOOT.state_schema, schema_version:RBOOT.version, updated:null, drafts:{}}; }
+function curDraft(){ return RV.task && RV.state ? (RV.state.drafts||{})[RV.task.task_id]||null : null; }
+function ensureDraft(){
+  var d=curDraft();
+  if(!d){ d={draft_id:"draft-"+Date.now(), task_id:RV.task.task_id, created:nowIso(), updated:null,
+             supersedes_record_id:null, fields:clone(BLANK)}; RV.state.drafts[RV.task.task_id]=d; }
+  return d;
+}
+function checkReviewState(o){
+  if(!o || typeof o!=="object" || Array.isArray(o)) return "not a JSON object";
+  if(o.schema!==RBOOT.state_schema) return "not a review-state file (schema is "+JSON.stringify(o.schema)+")";
+  if(o.schema_version!==RBOOT.version) return "unsupported schema_version "+JSON.stringify(o.schema_version)+" (this page reads "+RBOOT.version+")";
+  if(!o.drafts || typeof o.drafts!=="object") return "drafts must be an object";
+  return null;
+}
+var AS_LABEL={"0":"0 — not evidenced","1":"1 — partial","2":"2 — sufficient","NA":"NA — does not apply",
+              "uncertain":"Uncertain","withheld":"Withheld (cannot score)"};
+function scoreOf(a){
+  if(a==="0"||a==="1"||a==="2") return {value:+a, entry_status:"human_entered", original:a};
+  if(a==="NA"||a==="uncertain") return {value:null, entry_status:"human_entered", original:a};
+  if(a==="withheld") return {value:null, entry_status:"withheld", original:"withheld"};
+  return {value:null, entry_status:"not_entered", original:null};
+}
+
+/* Human-facing reasons a draft cannot be submitted yet (consistency + required fields). */
+function explain(f){
+  var p=[], a=f.assessment, ev=(f.evidence||[]), st=f.evidence_state, ap=f.applicability, t=String;
+  if(!a) p.push("Choose an assessment: 0, 1, 2, NA, uncertain, or withhold. Nothing is chosen for you.");
+  if(!ap) p.push("Say whether criterion 1b applies to this document.");
+  if(!t(f.applicability_reason||"").trim()) p.push("Give a short reason for the applicability answer.");
+  if(!st) p.push("Say what the document shows for the End-Project checklist (evidenced, partly, not reported, …).");
+  if(!f.search_completed) p.push("Say whether your criterion-specific search was complete.");
+  if(!t(f.rationale||"").trim()) p.push("Write your reasoning.");
+  if(!f.confidence) p.push("Choose a confidence level (or 'prefer not to say').");
+  if(!t(f.confidence_reason||"").trim()) p.push("Say briefly why you chose that confidence; the record format needs it.");
+  if(!f.prior_familiarity) p.push("Say whether you knew this document before the pilot.");
+  if(!f.seen_model_outputs || !f.seen_other_labels || !f.seen_other_version)
+    p.push("Answer the three 'before submitting, did you see…' questions.");
+  ev.forEach(function(e,i){
+    if(!t(e.note||"").trim()) p.push("Evidence entry "+(i+1)+" needs a short note on what it shows.");
+    if(e.physical_page==null && !t(e.section||"").trim()) p.push("Evidence entry "+(i+1)+" needs a page or a section.");
+    if(e.physical_page!=null && !(Number.isInteger(e.physical_page) && e.physical_page>=1 && e.physical_page<=(RV.task.document.pages||9999)))
+      p.push("Evidence entry "+(i+1)+": the physical page must be a whole number from 1 to "+(RV.task.document.pages||"the last page")+".");
+  });
+  if(a==="2"){
+    if(ap && ap!=="applicable") p.push("A 2 needs the criterion to apply; you said it "+(ap==="not_applicable"?"does not apply":"may not apply")+".");
+    if(st && st!=="evidenced") p.push("A 2 means the checklist is evidenced, but the evidence answer says otherwise. Change one of them.");
+    if(!ev.length) p.push("A 2 needs at least one evidence entry (page or section).");
+  }
+  if(a==="1"){
+    if(ap && ap!=="applicable") p.push("A 1 needs the criterion to apply.");
+    if(st && st!=="partly_evidenced") p.push("A 1 means partly evidenced, but the evidence answer says otherwise. Change one of them.");
+    if(!ev.length) p.push("A 1 needs at least one evidence entry showing what is there.");
+  }
+  if(a==="0"){
+    if(ap && ap!=="applicable") p.push("A 0 needs the criterion to apply; if it does not apply, choose NA.");
+    if(st && st!=="not_reported") p.push("A 0 means nothing relevant was found, but the evidence answer says otherwise.");
+    if(f.search_completed && f.search_completed!=="yes") p.push("A 0 needs a completed criterion-specific search. If the search was incomplete, choose uncertain instead.");
+    if(!t(f.searched_sections||"").trim()) p.push("A 0 needs a note of what you searched (sections, pages, terms).");
+  }
+  if(a==="NA" && ap && ap!=="not_applicable") p.push("NA means the criterion does not apply, but the applicability answer says otherwise.");
+  if(a==="uncertain" && ap!=="uncertain" && st!=="uncertain")
+    p.push("You chose uncertain: mark applicability or the evidence answer as unsure too, so the record says where the uncertainty is.");
+  if((a==="0"||a==="1"||a==="2") && (st==="unreadable"||st==="unavailable_in_packet"||st==="uncertain"||st==="instrument_undefined"))
+    p.push("A numeric score cannot go with '"+st.replace(/_/g," ")+"'. Choose uncertain or withhold, or change the evidence answer.");
+  if((st==="evidenced"||st==="partly_evidenced") && !ev.length) p.push("You said the document shows evidence; add at least one evidence entry.");
+  return p;
+}
+
+/* Build the record the schema describes from the task template and the human's fields. */
+function buildRecord(task,d,opt){
+  opt=opt||{}; var t=task.record_template, f=d.fields, c=t.criterion, sc=scoreOf(f.assessment);
+  var src=t.document.source_document_artifact_ids[0];
+  var unc=String(f.uncertainties||"").split("\n").map(function(x){ return x.trim(); }).filter(Boolean);
+  if(f.search_completed==="uncertain") unc.push(SEARCH_UNSURE);
+  var dev=[];
+  if(f.seen_model_outputs==="yes") dev.push("Reviewer reported seeing model or tool output for this document before submitting.");
+  if(f.seen_other_labels==="yes") dev.push("Reviewer reported seeing another reviewer's assessment before submitting.");
+  if(f.seen_other_version==="yes") dev.push("Reviewer reported seeing another version of this DMP before submitting.");
+  var ctx=clone(t.assessment_context);
+  ctx.other_version_shown_before_submission=f.seen_other_version==="yes";
+  ctx.other_reviewer_labels_seen_before_submission=f.seen_other_labels==="yes";
+  ctx.model_outputs_seen_before_submission=f.seen_model_outputs==="yes";
+  ctx.independence_deviations=dev;
+  var rec={
+    schema_version:t.schema_version, record_id:opt.record_id||"PREVIEW-NOT-SUBMITTED", study_id:t.study_id,
+    campaign_id:t.campaign_id, cohort_manifest_ref:t.cohort_manifest_ref, protocol_id:t.protocol_id,
+    protocol_version:t.protocol_version, protocol_approval:t.protocol_approval, record_kind:t.record_kind,
+    record_status:opt.status||"draft", created_at:d.created, submitted_at:opt.submitted_at||null,
+    assessor:{reviewer_id:task.reviewer_role, role:"human_reviewer", expertise_and_conflicts_private_ref:null,
+              prior_familiarity:f.prior_familiarity, prior_familiarity_note:f.prior_familiarity_note||""},
+    document:clone(t.document), instrument:clone(t.instrument), assessment_context:ctx,
+    comparison_context:clone(t.comparison_context), artifacts:clone(t.artifacts),
+    criteria:[{
+      criterion_id:c.criterion_id, assessment_phase:c.assessment_phase, rubric_cell_locator:c.rubric_cell_locator,
+      native_crosswalk_status:c.native_crosswalk_status, applicability:f.applicability,
+      applicability_reason:f.applicability_reason||"", evidence_state:f.evidence_state,
+      score:{value:sc.value, scale_id:c.score_scale_id, scale_version:c.score_scale_version,
+             anchors_artifact_id:c.anchors_artifact_id, original_value_as_entered:sc.original,
+             entry_context:c.entry_context, entry_status:sc.entry_status},
+      confidence:f.confidence, confidence_reason:f.confidence_reason||"",
+      evidence:(f.evidence||[]).map(function(e){ return {artifact_id:src,
+        physical_page_1based:e.physical_page==null?null:e.physical_page, printed_page_label:e.printed_page||null,
+        section_or_table:e.section||null, json_pointer:null, text_start:null, text_end_exclusive:null,
+        offset_units:null, excerpt:e.excerpt||null, note:e.note||""}; }),
+      absence_search_scope:f.searched_sections||"", rationale:f.rationale||"", uncertainties:unc,
+      relevant_packet_search_completed:f.search_completed==="yes"
+    }],
+    provenance:{supersedes_record_id:d.supersedes_record_id||null, original_independent_record_ids:[],
+                adjudication_reason:null, unresolved_criterion_ids:[], adjudication_meeting_at:null,
+                reviewer_confirmation_ref:opt.confirmation||null, record_content_sha256:null},
+    overall_comments:f.usability_feedback||"", assessment_scope:clone(t.assessment_scope)
+  };
+  if(opt.status==="submitted_locked") rec.provenance.record_content_sha256=contentHash(rec);
+  return rec;
+}
+function draftFromRecord(sub){
+  var r=sub.record, c=r.criteria[0], s=c.score, ctx=r.assessment_context;
+  var a=s.entry_status==="withheld"?"withheld":(s.value!=null?String(s.value):(s.original_value_as_entered||null));
+  var unc=(c.uncertainties||[]).filter(function(x){ return x!==SEARCH_UNSURE; });
+  var sure=(c.uncertainties||[]).indexOf(SEARCH_UNSURE)>=0;
+  var yn=function(b){ return b?"yes":"no"; };
+  return {draft_id:"draft-"+Date.now(), task_id:RV.task.task_id, created:nowIso(), updated:null,
+    supersedes_record_id:r.record_id,
+    fields:{applicability:c.applicability, applicability_reason:c.applicability_reason, evidence_state:c.evidence_state,
+      assessment:a, evidence:(c.evidence||[]).map(function(e){ return {physical_page:e.physical_page_1based,
+        printed_page:e.printed_page_label||"", section:e.section_or_table||"", excerpt:e.excerpt||"", note:e.note}; }),
+      search_completed:c.relevant_packet_search_completed?"yes":(sure?"uncertain":"no"),
+      searched_sections:c.absence_search_scope, rationale:c.rationale, confidence:c.confidence,
+      confidence_reason:c.confidence_reason, uncertainties:unc.join("\n"),
+      prior_familiarity:r.assessor.prior_familiarity, prior_familiarity_note:r.assessor.prior_familiarity_note,
+      seen_model_outputs:yn(ctx.model_outputs_seen_before_submission),
+      seen_other_labels:yn(ctx.other_reviewer_labels_seen_before_submission),
+      seen_other_version:yn(ctx.other_version_shown_before_submission),
+      usability_feedback:r.overall_comments, raw_response:((sub.raw_response||{}).text)||""}};
+}
+
+/* ---------- persistence: <state>/review/ when served, dmpbench.review.v1* in this browser ---------- */
+function rMsg(txt,cls){ RV.msg=[txt,cls||""]; var el=document.getElementById("rv-msg"); if(el){ el.textContent=txt; el.className="savestate "+(cls||""); } }
+function localRecords(){
+  var subs=[], bad=[];
+  try{
+    for(var i=0;i<localStorage.length;i++){
+      var k=localStorage.key(i); if(k.indexOf(RREC)!==0) continue;
+      var raw=localStorage.getItem(k), o=null;
+      try{ o=JSON.parse(raw); }catch(e){ bad.push({file:k, error:"not valid JSON ("+e.message+")"}); continue; }
+      if(!o || o.schema!==RBOOT.submission_schema || o.schema_version!==RBOOT.version || !o.record){
+        bad.push({file:k, error:"unsupported submission format"}); continue; }
+      subs.push(o);
+    }
+  }catch(e){}
+  subs.sort(function(a,b){ return String(a.record.submitted_at).localeCompare(String(b.record.submitted_at)); });
+  return {records:subs, unreadable:bad};
+}
+function rLoad(){
+  if(!RV.task || !RBOOT.schema){ RV.blocked={reason:"this page was built without the review block; rebuild it"}; return Promise.resolve(); }
+  if(!API){
+    var raw=null; try{ raw=localStorage.getItem(RKEY); }catch(e){}
+    var lr=localRecords(); RV.records=lr.records; RV.unreadable=lr.unreadable;
+    if(raw==null){ RV.state=emptyState(); RV.blocked=null; return Promise.resolve(); }
+    var o=null, why=null;
+    try{ o=JSON.parse(raw); }catch(e){ why="the saved review draft is not valid JSON ("+e.message+")"; }
+    if(!why) why=checkReviewState(o);
+    if(why){ RV.state=null; RV.blocked={reason:why+"; the stored text is untouched", raw:raw}; return Promise.resolve(); }
+    RV.state=o; RV.blocked=null; return Promise.resolve();
+  }
+  return fetch(API+"/review").then(function(r){ return r.json().then(function(d){ return {status:r.status,d:d}; }); })
+    .then(function(x){
+      RV.records=x.d.records||[]; RV.unreadable=x.d.unreadable||[];
+      if(x.status===409){ RV.state=null; RV.blocked={reason:x.d.error}; return; }
+      RV.state=x.d.state||emptyState(); RV.blocked=null;
+    })
+    .catch(function(e){ RV.state=null; RV.blocked={reason:"could not load review data: "+e.message}; });
+}
+function rSave(replaceCorrupt){
+  if(!RV.state){ rMsg("Nothing to save: the review draft file could not be read.","bad"); return Promise.resolve(false); }
+  var d=curDraft(); if(d) d.updated=nowIso();
+  if(!API){
+    try{ localStorage.setItem(RKEY, JSON.stringify(RV.state)); RV.dirty=false; rMsg("Draft saved in this browser ("+RKEY+").","ok"); return Promise.resolve(true); }
+    catch(e){ rMsg("Could not save in browser storage: "+e.message,"bad"); return Promise.resolve(false); }
+  }
+  return fetch(API+"/review/state",{method:"PUT",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({state:RV.state, replace_corrupt:!!replaceCorrupt})})
+    .then(function(r){ return r.json().then(function(b){ return {ok:r.ok,status:r.status,b:b}; }); })
+    .then(function(x){
+      if(x.ok){ RV.dirty=false; RV.blocked=null; rMsg("Draft saved to "+String(x.b.file).split(/[\\/]/).slice(-3).join("/")+
+                (x.b.kept_corrupt_file?" (the unreadable file was kept as "+x.b.kept_corrupt_file+")":""),"ok"); return true; }
+      if(x.status===409){ RV.blocked={reason:x.b.error}; renderReview(); }
+      rMsg("Draft not saved: "+(x.b.error||x.status),"bad"); return false;
+    })
+    .catch(function(){ rMsg("Could not save — is serve.py still running?","bad"); return false; });
+}
+function storeLocalRecord(sub){
+  var key=RREC+sub.record.record_id;
+  try{
+    if(localStorage.getItem(key)!==null) return {ok:false, error:"record "+sub.record.record_id+" is already stored and locked; a correction needs a new record"};
+    localStorage.setItem(key, JSON.stringify(sub)); return {ok:true};
+  }catch(e){ return {ok:false, error:"browser storage refused the record: "+e.message}; }
+}
+function rStore(sub){
+  var problems=validateRecord(sub.record);
+  if(recordIds().indexOf(sub.record.record_id)>=0) return Promise.resolve({ok:false, error:"record "+sub.record.record_id+" is already stored and locked"});
+  if(problems.length) return Promise.resolve({ok:false, error:"the record does not satisfy the contract", problems:problems});
+  if(!API) return Promise.resolve(storeLocalRecord(sub));
+  return fetch(API+"/review/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({submission:sub})})
+    .then(function(r){ return r.json().then(function(b){ b.ok=r.ok; b.status=r.status; return b; }); });
+}
+function rResetCorrupt(){
+  if(!API){
+    var key=RKEY+".corrupt-"+Date.now();
+    try{ localStorage.setItem(key, RV.blocked && RV.blocked.raw!=null ? RV.blocked.raw : ""); }catch(e){ rMsg("Could not keep the unreadable draft: "+e.message,"bad"); return Promise.resolve(); }
+    RV.blocked=null; RV.state=emptyState(); rSave(); rMsg("The unreadable draft was kept in browser storage as "+key+".","ok"); renderReview();
+    return Promise.resolve();
+  }
+  RV.state=emptyState();
+  return rSave(true).then(function(){ renderReview(); });
+}
+
+/* ---------- submit / correct / export ---------- */
+function newRecordId(){
+  var base=RV.task.task_id+"-"+RV.task.criterion_id+"-"+nowIso().replace(/[-:]/g,"").replace("+0000","Z"), id=base, n=2;
+  while(recordIds().indexOf(id)>=0){ id=base+"-"+n; n++; }
+  return id;
+}
+function rStartSubmit(){
+  var d=curDraft();
+  if(!d){ rMsg("The form is blank, so there is nothing to submit.","bad"); renderReview(); return false; }
+  var p=explain(d.fields);
+  if(p.length){ RV.confirm=false; rMsg("Not submitted yet: "+p.length+" thing"+(p.length>1?"s":"")+" to resolve first (listed above the buttons).","bad"); renderReview(); return false; }
+  RV.confirm=true; renderReview();
+  var inp=document.getElementById("rv-confirm-id"); if(inp) inp.focus();
+  return true;
+}
+function rConfirm(typed){
+  var d=curDraft(); if(!d || !RV.confirm) return Promise.resolve(false);
+  if(String(typed||"").trim()!==RV.task.reviewer_role){
+    rMsg("Not submitted: type "+RV.task.reviewer_role+" exactly to confirm this is your own response.","bad"); return Promise.resolve(false); }
+  var at=nowIso();
+  var rec=buildRecord(RV.task,d,{status:"submitted_locked", submitted_at:at, record_id:newRecordId(),
+    confirmation:"Reviewer typed '"+RV.task.reviewer_role+"' in the review-mode confirmation box at "+at});
+  var sub={schema:RBOOT.submission_schema, schema_version:RBOOT.version, stored_at:at, record:rec,
+           raw_response:{text:d.fields.raw_response||"", captured_in:"dashboard Review (pilot) mode"}};
+  return rStore(sub).then(function(res){
+    if(!res || !res.ok){
+      rMsg("Not submitted: "+((res&&res.error)||"unknown error")+((res&&res.problems)?" — "+res.problems.join("; "):""),"bad");
+      return false; }
+    delete RV.state.drafts[RV.task.task_id]; RV.confirm=false; RV.preview="";
+    return rSave().then(function(){ return rLoad(); }).then(function(){
+      renderReview(); rMsg("Submitted and locked as "+rec.record_id+". Changes from now on become a linked correction.","ok"); return true; });
+  });
+}
+function rCorrect(id){
+  var sub=RV.records.filter(function(s){ return s.record.record_id===id; })[0]; if(!sub) return false;
+  if(curDraft() && !window.confirm("Replace the current unsubmitted draft with a correction of "+id+"?")) return false;
+  RV.state.drafts[RV.task.task_id]=draftFromRecord(sub); RV.dirty=true; RV.confirm=false;
+  renderReview(); rMsg("Correction draft started from "+id+". The original stays locked; submitting creates a new linked record.","ok");
+  return true;
+}
+function rExport(){
+  return canonicalJSON({task_id:RV.task.task_id, exported_at:nowIso(), pilot_status:RV.task.status,
+    draft:curDraft()?{note:"unsubmitted draft — not an assessment record", draft:curDraft()}:null,
+    records:RV.records});
+}
+function rAction(k,el){
+  if(k==="reset-corrupt") return rResetCorrupt();
+  if(RV.blocked || !RV.state){ rMsg("The review draft could not be read; see the message above.","bad"); return; }
+  if(k==="save"){ if(!curDraft()){ rMsg("The form is blank; there is no draft to save.",""); return; } return rSave(); }
+  if(k==="preview"){
+    var d=curDraft();
+    RV.preview=d?canonicalJSON(buildRecord(RV.task,d,{status:"draft"})):"The form is blank: no record would be created.";
+    renderReview(); return;
+  }
+  if(k==="submit") return rStartSubmit();
+  if(k==="confirm") return rConfirm((document.getElementById("rv-confirm-id")||{}).value);
+  if(k==="cancel"){ RV.confirm=false; renderReview(); return; }
+  if(k==="export"){ RV.exported=rExport(); renderReview(); return; }
+  if(k==="clear"){
+    if(!curDraft()) return;
+    if(!window.confirm("Discard the unsubmitted draft? Submitted records are not affected.")) return;
+    delete RV.state.drafts[RV.task.task_id]; RV.confirm=false; RV.preview=""; return rSave().then(renderReview);
+  }
+}
+
+/* ---------- rendering ---------- */
+function radios(name,opts,cur,tip){
+  return '<div class="opts" role="radiogroup">'+opts.map(function(o){
+    return '<label><input type="radio" name="rv-'+name+'" data-rf="'+name+'" value="'+esc(o[0])+'"'+
+      ((cur===o[0]||(cur==null&&o[0]===""))?' checked':'')+' data-tip="'+esc(o[2]||tip)+'"> '+esc(o[1])+'</label>'; }).join("")+'</div>';
+}
+function textIn(name,val,tip,area,ph){
+  return area?'<textarea data-rf="'+name+'" data-tip="'+esc(tip)+'" placeholder="'+esc(ph||"")+'">'+esc(val||"")+'</textarea>'
+             :'<input type="text" data-rf="'+name+'" value="'+esc(val||"")+'" data-tip="'+esc(tip)+'" placeholder="'+esc(ph||"")+'">';
+}
+function srcHref(aid,page){
+  var a=RV.task.record_template.artifacts.filter(function(x){ return x.artifact_id===aid; })[0];
+  if(!a) return "#";
+  var h=API?API+"/review/source/"+encodeURIComponent(aid):"../"+a.path_or_uri;
+  return h+(page?"#page="+page:"");
+}
+function formHTML(f){
+  var ev=(f.evidence||[]).map(function(e,i){
+    return '<div class="rv-ev" data-evrow="'+i+'">'+
+      '<label>Physical page<input type="number" min="1" step="1" data-ev="'+i+'" data-evf="physical_page" value="'+esc(e.physical_page==null?"":e.physical_page)+'" data-tip="Page number of the PDF file (1 = first page), not the printed page label."></label>'+
+      '<label>Printed page<input type="text" data-ev="'+i+'" data-evf="printed_page" value="'+esc(e.printed_page||"")+'" data-tip="The page number printed on the page, if any."></label>'+
+      '<label>Section / table<input type="text" data-ev="'+i+'" data-evf="section" value="'+esc(e.section||"")+'" data-tip="Section heading, table or annex where the evidence is."></label>'+
+      '<label>Short excerpt (optional)<input type="text" data-ev="'+i+'" data-evf="excerpt" value="'+esc(e.excerpt||"")+'" data-tip="A few words copied from the page, if helpful. Optional."></label>'+
+      '<label>What it shows<input type="text" data-ev="'+i+'" data-evf="note" value="'+esc(e.note||"")+'" data-tip="One line on what this passage shows for the End-Project checklist. Required for each entry."></label>'+
+      '<button class="evx" type="button" data-rvevdrop="'+i+'" aria-label="Remove evidence entry '+(i+1)+'" data-tip="Remove this evidence entry.">×</button></div>';
+  }).join("");
+  var yn=[["yes","Yes"],["no","No"]];
+  return '<div class="rv-form">'+
+    '<fieldset><legend>Assessment for criterion '+esc(RV.task.criterion_id)+' (End-Project cell)</legend>'+
+      radios("assessment",[["","Not assessed yet","Leave it here until you have made a judgment. Nothing is preselected."],
+        ["0","0 — not evidenced","Applies, and a completed criterion-specific search found nothing relevant."],
+        ["1","1 — partial","Applies; relevant but incomplete or unclear evidence."],
+        ["2","2 — sufficient","Applies; both End-Project checklist items are sufficiently supported."],
+        ["NA","NA — does not apply","The criterion does not apply here. No numeric score is recorded."],
+        ["uncertain","Uncertain","You cannot judge yet. No numeric score is recorded."],
+        ["withheld","Withhold","You deliberately decline to score. No numeric score is recorded."]],f.assessment,"")+
+    '</fieldset>'+
+    '<fieldset><legend>Does the criterion apply to this document?</legend>'+
+      radios("applicability",[["applicable","Applies"],["not_applicable","Does not apply"],["uncertain","Unsure"]],f.applicability,"Applicability is recorded separately from the score.")+
+      textIn("applicability_reason",f.applicability_reason,"A short reason. NA needs a criterion-specific reason.",false,"why it applies or not")+
+    '</fieldset>'+
+    '<fieldset><legend>What does the document show for the End-Project checklist?</legend>'+
+      '<select data-rf="evidence_state" data-tip="Your reading of the evidence, recorded separately from the score.">'+
+      [["","Choose…"],["evidenced","Evidenced"],["partly_evidenced","Partly evidenced"],["not_reported","Not reported"],
+       ["unreadable","Unreadable"],["unavailable_in_packet","Not in the review packet"],["uncertain","Unsure"],
+       ["instrument_undefined","Not defined for this phase"]].map(function(o){
+         return '<option value="'+o[0]+'"'+((f.evidence_state||"")===o[0]?' selected':'')+'>'+o[1]+'</option>'; }).join("")+'</select>'+
+      '<div class="help">Evidence entries (pages or sections you relied on):</div>'+ev+
+      '<div class="rv-actions"><button class="btn" type="button" data-rv="add-ev" data-tip="Add a page or section you relied on.">Add evidence</button></div>'+
+    '</fieldset>'+
+    '<fieldset><legend>Your search</legend>'+
+      '<div class="help">Was your criterion-specific search complete?</div>'+
+      radios("search_completed",[["yes","Yes"],["no","No"],["uncertain","Unsure"]],f.search_completed,"An incomplete search is not evidence of absence.")+
+      textIn("searched_sections",f.searched_sections,"Which sections, pages or terms you checked. Required for a 0.",true,"e.g. sections 3-5, annex B; terms: metadata, archive")+
+    '</fieldset>'+
+    '<fieldset><legend>Reasoning and confidence</legend>'+
+      textIn("rationale",f.rationale,"Your reasoning in a few sentences.",true,"why this assessment")+
+      radios("confidence",[["low","Low"],["medium","Medium"],["high","High"],["not_stated","Prefer not to say"]],f.confidence,"How sure you are. Confidence never replaces evidence.")+
+      textIn("confidence_reason",f.confidence_reason,"Why this confidence. The record format needs a short reason.",false,"why this confidence")+
+      textIn("uncertainties",f.uncertainties,"Other uncertainties, one per line.",true,"one per line (optional)")+
+    '</fieldset>'+
+    '<fieldset><legend>Before this pilot, did you know this document?</legend>'+
+      radios("prior_familiarity",[["none_reported","No"],["familiar","Yes"],["uncertain","Unsure"]],f.prior_familiarity,"Prior familiarity is recorded, not penalised.")+
+      textIn("prior_familiarity_note",f.prior_familiarity_note,"Optional note on how you knew it.",false,"optional")+
+    '</fieldset>'+
+    '<fieldset><legend>Before submitting, did you see…</legend>'+
+      '<div class="help">any model or tool output for this document?</div>'+radios("seen_model_outputs",yn,f.seen_model_outputs,"Recorded as part of reviewer independence.")+
+      '<div class="help">another reviewer\'s assessment of it?</div>'+radios("seen_other_labels",yn,f.seen_other_labels,"Recorded as part of reviewer independence.")+
+      '<div class="help">another version of this PathOS DMP?</div>'+radios("seen_other_version",yn,f.seen_other_version,"Recorded as part of reviewer independence.")+
+    '</fieldset>'+
+    '<fieldset><legend>About the form and the rubric</legend>'+
+      textIn("usability_feedback",f.usability_feedback,"Anything unclear or awkward about this form or the rubric wording.",true,"optional")+
+      '<div class="help">Your response in your own words (optional, kept verbatim next to the structured fields):</div>'+
+      textIn("raw_response",f.raw_response,"Free text, stored exactly as written alongside the record.",true,"optional")+
+    '</fieldset></div>';
+}
+function recordsHTML(){
+  if(!RV.records.length && !RV.unreadable.length) return '<p>No pilot response has been submitted. That is expected: the pilot is deferred.</p>';
+  var by={}; RV.records.forEach(function(s){ var p=s.record.provenance.supersedes_record_id; if(p) by[p]=s.record.record_id; });
+  return '<ul class="rv-records">'+RV.records.map(function(s){
+    var r=s.record, c=r.criteria[0], id=r.record_id;
+    return '<li data-record="'+esc(id)+'"><span class="id">'+esc(id)+'</span>'+
+      '<span>'+esc(AS_LABEL[c.score.original_value_as_entered]||c.score.original_value_as_entered||"—")+'</span>'+
+      '<span class="rv-badge">locked '+esc(r.submitted_at)+'</span>'+
+      (r.provenance.supersedes_record_id?'<span>corrects '+esc(r.provenance.supersedes_record_id)+'</span>':'')+
+      (by[id]?'<span class="rv-badge">superseded by '+esc(by[id])+'</span>':
+        '<button class="btn" type="button" data-rvfix="'+esc(id)+'" data-tip="Start a correction. The original stays locked; the correction becomes a new record that names it.">Start a correction</button>')+
+      '</li>'; }).join("")+'</ul>'+
+    RV.unreadable.map(function(b){ return '<div class="rv-problems">Unreadable record '+esc(b.file)+': '+esc(b.error)+'. It has not been changed or removed.</div>'; }).join("");
+}
+function renderReview(){
+  var root=document.getElementById("review"); if(!root || mode!=="review") return;
+  if(!RV.task){ root.innerHTML='<div class="panel">No review task is built into this page.</div>'; return; }
+  var t=RV.task, d=curDraft(), f=d?d.fields:BLANK, subs=RV.records.length;
+  var src=t.record_template.artifacts[0], fw=t.record_template.artifacts[1];
+  var problems=d?explain(f):[];
+  var h='<div class="panel"><div class="rv-status"><div style="flex:1;min-width:260px"><h2>'+esc(t.title)+'</h2>'+
+    '<p>'+esc(t.status_text)+'</p>'+
+    '<p>Reviewer role <b>'+esc(t.reviewer_role)+'</b> ('+esc(t.reviewer_name)+'). Formal benchmark reviewers: '+esc(t.formal_reviewers)+
+    '. A pilot response is one reviewer\'s calibration input, not a reference label.</p></div>'+
+    '<div><span class="rv-badge def" id="rv-status" data-tip="The pilot was deferred by the user. Deferred is not overdue, failed or assessed.">Deferred — nothing needed now</span>'+
+    (subs?'<div style="margin-top:6px"><span class="rv-badge sub" data-tip="Submitted voluntary pilot responses. They stay locked.">'+subs+' voluntary response'+(subs>1?'s':'')+' submitted</span></div>':'')+
+    '</div></div></div>';
+  if(RV.blocked){
+    root.innerHTML=h+'<div class="panel"><div class="rv-problems" id="rv-blocked">The saved review draft cannot be read: '+esc(RV.blocked.reason)+
+      '. Nothing has been overwritten.<div class="rv-actions"><button class="btn" type="button" data-rv="reset-corrupt" data-tip="Keep the unreadable draft aside and start an empty one. Submitted records are not touched.">Start a new draft, keep the unreadable one</button></div></div>'+
+      '<h3>Submitted records</h3>'+recordsHTML()+'<div id="rv-msg" class="savestate '+esc(RV.msg[1])+'">'+esc(RV.msg[0])+'</div></div>';
+    return;
+  }
+  h+='<div class="rv-grid"><div class="panel"><h3 style="margin-top:0">Source document</h3>'+
+    '<p><a id="rv-src" href="'+esc(srcHref(src.artifact_id))+'" target="_blank" rel="noopener" data-tip="Open the full source PDF. Use the whole document, not a shortened extraction.">Open the full PDF ('+esc(t.document.pages)+' pages)</a> · '+
+    '<a href="'+esc(t.document.source_url)+'" target="_blank" rel="noopener" data-tip="The public Zenodo record of this version.">public record ↗</a></p>'+
+    '<dl class="rv-facts"><dt>Document</dt><dd>'+esc(t.document.title)+'</dd><dt>Version</dt><dd>'+esc(t.document.version)+'</dd>'+
+    '<dt>Issue date</dt><dd>'+esc(t.document.issue_date)+'</dd><dt>Project</dt><dd>'+esc(t.document.project)+' ('+esc(t.document.grant)+'), '+
+    esc(t.document.project_start)+' → '+esc(t.document.project_end)+'</dd><dt>SHA-256</dt><dd class="mono" title="'+esc(src.sha256)+'">'+esc(src.sha256.slice(0,24))+'…</dd>'+
+    '<dt>In the cohort?</dt><dd>No — outside the six projects, used only for calibration</dd></dl>'+
+    '<h3>Rubric cell</h3><p><a id="rv-fw" href="'+esc(srcHref(fw.artifact_id,t.framework_page))+'" target="_blank" rel="noopener" data-tip="Open the evaluation framework at the physical page of this cell.">Open the framework at physical page '+esc(t.framework_page)+'</a> · '+
+    '<a href="'+esc(t.framework.url)+'" target="_blank" rel="noopener" data-tip="The framework publication.">publication ↗</a></p>'+
+    '<p>'+esc(t.rubric_cell)+'. '+esc(t.criterion_note)+'</p><p>'+esc(t.phase_text)+'</p></div>'+
+    '<div class="panel"><h3 style="margin-top:0">Scale and draft anchors</h3>'+
+    '<p>Base scale <b>0 / 1 / 2</b> (approved for calibration), with NA and uncertain as separate states that carry no number. '+
+    'The anchors below are '+esc(t.anchors_status)+'.</p>'+
+    '<table class="rv-anchors" id="rv-anchors"><tr><th>Response</th><th>Draft interpretation for this pilot</th></tr>'+
+    t.anchors.map(function(a){ return '<tr><td><b>'+esc(a.response)+'</b></td><td>'+esc(a.interpretation)+'</td></tr>'; }).join("")+'</table>'+
+    '<p style="margin-top:8px">'+esc(t.no_suggestions)+'</p></div></div>';
+  h+='<div class="panel"><h3 style="margin-top:0">Optional pilot response'+(d&&d.supersedes_record_id?' — correction of '+esc(d.supersedes_record_id):'')+'</h3>'+
+    '<p>'+(d?'Draft '+(d.updated?'saved '+esc(d.updated):'not saved yet')+(RV.dirty?' · unsaved changes':''):'The form is blank. Filling it in is optional.')+'</p>'+
+    formHTML(f)+
+    (d?'<div class="rv-problems'+(problems.length?'':' ok')+'" id="rv-problems">'+(problems.length?
+       'Before this can be submitted:<ul>'+problems.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join("")+'</ul>':
+       'Complete and consistent. Submitting locks it.')+'</div>':'')+
+    '<div class="rv-actions">'+
+      '<button class="btn" type="button" data-rv="save" data-tip="Save the draft as it is, including empty fields. Saving never submits.">Save draft</button>'+
+      '<button class="btn" type="button" data-rv="preview" data-tip="Show the record that would be submitted. Nothing is saved or submitted.">Preview response</button>'+
+      '<button class="btn pri" type="button" data-rv="submit" data-tip="Check the response, then ask you to confirm. A submitted response is locked.">Submit pilot response</button>'+
+      '<button class="btn" type="button" data-rv="export" data-tip="Show the draft and all submitted records as JSON, to copy.">Export</button>'+
+      (d?'<button class="btn" type="button" data-rv="clear" data-tip="Discard the unsubmitted draft after confirming. Submitted records are not affected.">Discard draft</button>':'')+
+    '</div>'+
+    (RV.confirm?'<div class="rv-confirm" id="rv-confirm">Submitting locks this response; later changes become a linked correction. '+
+      'Type <b>'+esc(t.reviewer_role)+'</b> to confirm it is your own response.<br>'+
+      '<input type="text" id="rv-confirm-id" autocomplete="off" aria-label="Type your reviewer ID to confirm" data-tip="Type your reviewer ID exactly.">'+
+      '<div class="rv-actions"><button class="btn pri" type="button" data-rv="confirm" data-tip="Lock and store the response.">Lock and submit</button>'+
+      '<button class="btn" type="button" data-rv="cancel" data-tip="Go back to the form without submitting.">Cancel</button></div></div>':'')+
+    '<div id="rv-msg" class="savestate '+esc(RV.msg[1])+'">'+esc(RV.msg[0])+'</div>'+
+    (RV.preview?'<div id="rv-preview">'+esc(RV.preview)+'</div>':'')+
+    (RV.exported?'<div id="rv-out">'+esc(RV.exported)+'</div>':'')+
+    '</div>';
+  h+='<div class="panel"><h3 style="margin-top:0">Submitted records</h3>'+recordsHTML()+'</div>';
+  root.innerHTML=h;
+}
+function refreshProblems(){
+  var d=curDraft(), box=document.getElementById("rv-problems");
+  if(!d){ renderReview(); return; }
+  if(!box){ renderReview(); return; }
+  var p=explain(d.fields);
+  box.className="rv-problems"+(p.length?"":" ok");
+  box.innerHTML=p.length?'Before this can be submitted:<ul>'+p.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join("")+'</ul>':'Complete and consistent. Submitting locks it.';
+}
+function rSetField(k,v){
+  if(RV.blocked || !RV.state) return false;
+  var d=ensureDraft(); d.fields[k]=v; RV.dirty=true; return true;
+}
+function wireReview(){
+  var root=document.getElementById("review");
+  function onEdit(e){
+    var t=e.target;
+    if(t.hasAttribute("data-rf")){
+      var k=t.getAttribute("data-rf"), had=!!curDraft(), v=t.value;
+      if(t.type==="radio"){ if(!t.checked) return; v=v===""?null:v; }
+      else if(t.tagName==="SELECT") v=v===""?null:v;
+      rSetField(k,v);
+      if(!had || e.type==="change") { if(!had) renderReview(); else refreshProblems(); }
+      return;
+    }
+    if(t.hasAttribute("data-ev")){
+      var d=curDraft(); if(!d) return;
+      var row=d.fields.evidence[+t.getAttribute("data-ev")], f=t.getAttribute("data-evf");
+      if(!row) return;
+      if(f==="physical_page"){ var n=t.value.trim(); row[f]=n===""?null:(/^\d+$/.test(n)?parseInt(n,10):NaN); }
+      else row[f]=t.value;
+      RV.dirty=true; if(e.type==="change") refreshProblems();
+    }
+  }
+  root.addEventListener("input",onEdit);
+  root.addEventListener("change",onEdit);
+  root.addEventListener("click",function(e){
+    var b;
+    if((b=e.target.closest("[data-rv]"))){
+      var k=b.getAttribute("data-rv");
+      if(k==="add-ev"){ var d=ensureDraft(); d.fields.evidence.push({physical_page:null,printed_page:"",section:"",excerpt:"",note:""}); RV.dirty=true; renderReview(); return; }
+      return rAction(k,b);
+    }
+    if((b=e.target.closest("[data-rvevdrop]"))){ var dd=curDraft(); if(dd){ dd.fields.evidence.splice(+b.getAttribute("data-rvevdrop"),1); RV.dirty=true; renderReview(); } return; }
+    if((b=e.target.closest("[data-rvfix]"))) return rCorrect(b.getAttribute("data-rvfix"));
+  });
+}
+var RAPI={
+  task:function(){ return RV.task; }, state:function(){ return RV.state; }, draft:curDraft,
+  records:function(){ return RV.records; }, unreadable:function(){ return RV.unreadable; }, blocked:function(){ return RV.blocked; },
+  setField:rSetField, explain:explain, buildRecord:buildRecord, validate:validateRecord, schemaValidate:schemaValidate,
+  pilotChecks:pilotChecks, sha256:sha256hex, contentHash:contentHash, reload:function(){ return rLoad().then(renderReview); },
+  save:rSave, submit:rStartSubmit, confirm:rConfirm, correct:rCorrect, store:rStore, storeLocal:storeLocalRecord,
+  exportAs:rExport, key:RKEY, recordPrefix:RREC, schema:function(){ return RBOOT.schema; }
+};
+
 /* ---------------- boot ---------------- */
 function fail(msg){ document.getElementById("list").innerHTML='<div class="empty">'+esc(msg)+'</div>'; }
 function init(){
@@ -2022,7 +2730,7 @@ function init(){
   /* unknown legacy ids are kept, not silently dropped: they show as a tray note */
   buildYears();
   if(mode==="paired") applyPresetState("paired");
-  buildChips(); buildSort(); buildCols(); wire(); wirePaired(); bindTips(); applyMode(); render();
+  buildChips(); buildSort(); buildCols(); wire(); wirePaired(); wireReview(); bindTips(); applyMode(); render(); renderReview();
   if(API) setSaveState("selection saved to data/selection.json","ok");
   window.__APP__={ROWS:ROWS,state:state,colState:colState,ALLCOLS:ALLCOLS,COLDEF:COLDEF,
                   sel:function(){return sel;}, setSel:function(v){ sel=v; save(); render(); },
@@ -2031,14 +2739,14 @@ function init(){
                   applyPreset:applyPreset, visibleCols:visibleCols, buildChips:buildChips,
                   showTip:showTip, hideTip:hideTip,
                   mode:function(){ return mode; }, setMode:setMode, pool:pool, REG:REG,
-                  paired:PAPI,
+                  paired:PAPI, review:RAPI,
                   ready:true};
   if(window.__ONREADY__) window.__ONREADY__();
 }
 function boot(){
   var embedded=null;
   try{ embedded=JSON.parse(document.getElementById("data").textContent); }catch(e){}
-  if(embedded && embedded.length){ ROWS=embedded; localLoad(); pLoad().then(init); return; }
+  if(embedded && embedded.length){ ROWS=embedded; localLoad(); pLoad().then(rLoad).then(init); return; }
   if(!API){ fail("No dataset in this page and no local API configured. Rebuild with scripts/05_build_dashboard.py, or start scripts/serve.py."); return; }
   fail("Loading the dataset from the local server…");
   fetch(API+"/dmps")
@@ -2051,6 +2759,7 @@ function boot(){
         .catch(function(){ localLoad(); });
     })
     .then(pLoad)
+    .then(rLoad)
     .then(init)
     .catch(function(e){ fail("Could not reach the local server: "+e.message+
       ". Start it with: python scripts/serve.py"); });

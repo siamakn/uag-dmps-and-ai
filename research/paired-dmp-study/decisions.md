@@ -72,6 +72,16 @@ no pair is verified.
 | --- | --- | --- |
 | D20 | The user approves the selection protocol as a whole: documented issue-date timing (early `2n <= d`, late `n > d`, no publication-date fallback), D08, D09 and D16–D19. | `scripts/paired.py:default_protocol` now carries `approved: true`, approver Siamak Nakhaie, 2026-11-09, with the approval scope recorded. The approval covers **selection only**, not the experiment protocol (rubric phase mapping, score anchors, model configuration, repetitions). Freezing still needs all six pairs verified by a person. |
 
+## Review-mode and tool decisions (2026-11-09)
+
+| ID | User decision | Operational consequence |
+| --- | --- | --- |
+| D21 | Keep `human-review-record.schema.json` as it is for the pilot. | The review form keeps asking for a confidence reason even with "prefer not to say", and stores an "unsure" search answer as `false` plus the uncertainty note "Reviewer was unsure whether the criterion-specific search was complete." Revisit after real pilot feedback. |
+| D22 | Leave `dmp-eva-improvement-brief.md` for now. | No DMP-EVA changes, forks or upstream issues. The native, unchanged tool remains the baseline (D05/D06). |
+
+Pilot responses submitted through the dashboard stay local: `data/review/` is git-ignored because
+the repository is public.
+
 ## Proposals to settle after feasibility
 
 - Apply recency primarily to the later version; permit an older early version, explicitly recorded. Do not silently impose 2024+ on both.

@@ -31,6 +31,7 @@ input-packet and Mainz readiness materials.
 | `verification-checklist.md` / `.py` | Per-pair reading list for the person who verifies the six proposal pairs; nothing marked verified |
 | `lead-shortlist.md` / `.json`, `lead-triage.py` | Reserve pairs screened from Zenodo version chains (18 concepts); nothing registered or selected |
 | `claude-platform-results.md` | What the platform implementation built, test commands and results, backups, limits and decisions still needed |
+| `claude-human-review-results.md` | What the review-mode implementation built (pilot support only; pilot still deferred), tests and the rules left for benchmark mode |
 | `claude-human-review-brief.md` | Minimal review-mode pilot implementation handoff for Claude |
 | `cohort-proposal.md` / `.json` | Concrete six-project/twelve-document proposal, source links, dates, hashes and caveats |
 | `pair-review.md` / `.json` | Independent verification of current memberships, version lineage, dates and exact source bytes |

@@ -157,3 +157,20 @@ python scripts/test_paired.py                        # unit tests, temporary dir
 - **07** touches only files selected in a study (or the cohort proposal), downloads into the
   git-ignored `data/paired-dmp-corpus/`, and reports a checksum mismatch instead of replacing it.
 
+## Human-review pilot (`review.py`)
+
+Supports the dashboard's *Review (pilot)* mode. `pilot_task()` builds the blank PILOT-01 form
+(PathOS D3.5 v2.0, criterion 1b, End-Project cell) from `research/paired-dmp-study/pilot-template.json`
+and the draft anchors in `pilot-start.md`. `schema_validate()` applies the human-review record schema
+with a small stdlib implementation of the keywords it uses, `pilot_checks()` adds the cross-field rules,
+and `submit()` stores a locked record once (O_EXCL); a correction is a new record naming the original.
+
+```bash
+python scripts/review.py task                 # print the PILOT-01 fixture
+python scripts/review.py validate FILE.json   # check a record or submission
+python scripts/review.py list                 # locked records in data/review/records/
+python scripts/test_review.py                 # tests, temporary directories only
+```
+
+The pilot is deferred; none of this creates a score. Only a person submitting the form does.
+

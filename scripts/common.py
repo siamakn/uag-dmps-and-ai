@@ -197,8 +197,13 @@ def selftest_block():
     builds (/selftest, or 05_build_dashboard.py --selftest), never the shipped page."""
     js = open(os.path.join(DASHBOARD, "selftest.js"), encoding="utf-8").read()
     assert "</script" not in js, "selftest.js must not contain a closing script tag"
-    fx_path = os.path.join(DASHBOARD, "paired-fixtures.json")
-    fx = json.load(open(fx_path, encoding="utf-8")) if os.path.exists(fx_path) else {}
+    def fixture(name):
+        path = os.path.join(DASHBOARD, name)
+        if not os.path.exists(path):
+            return {}
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
     nl = chr(10)
-    return (nl + '<script id="paired-fixtures" type="application/json">' + boot_json(fx) +
-            "</script>" + nl + "<script>" + nl + js + nl + "</script>")
+    return (nl + '<script id="paired-fixtures" type="application/json">' + boot_json(fixture("paired-fixtures.json")) +
+            "</script>" + nl + '<script id="review-fixtures" type="application/json">' +
+            boot_json(fixture("review-fixtures.json")) + "</script>" + nl + "<script>" + nl + js + nl + "</script>")
