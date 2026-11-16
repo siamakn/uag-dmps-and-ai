@@ -344,7 +344,7 @@ table.rv-anchors th{color:var(--ink-3); font-size:10.5px; text-transform:upperca
   <button class="btn" id="railtoggle" type="button" data-tip="Show or hide the filter rail. Only appears on narrow screens.">Filters</button>
   <button class="btn" id="guidebtn" type="button" aria-expanded="false" data-tip="A short guide to the pool, the paired study and the historical 3 x 3 selection.">Guide</button>
   <div class="mode" role="group" aria-label="Which study">
-    <button type="button" data-mode="paired" aria-pressed="false" data-tip="The active design: six projects, one per discipline, each with two versions of the same DMP (issued at or before 50% and after 100% of the project run).">Paired study</button>
+    <button type="button" data-mode="paired" aria-pressed="false" data-tip="The active design: six projects, one per discipline, each with two versions of the same DMP (one issued at or before 50% of the project run, and the final one at 90% or later).">Paired study</button>
     <button type="button" data-mode="legacy" aria-pressed="false" data-tip="The historical 3 x 3 selection kept in data/selection.json. Still readable and editable; it gives nothing to the paired study.">Legacy 3×3</button>
     <button type="button" data-mode="review" aria-pressed="false" data-tip="Human-review pilot form (PILOT-01). The pilot is deferred: nothing is needed now, and the form stays blank until someone chooses to use it.">Review (pilot)</button>
   </div>
@@ -429,8 +429,8 @@ table.rv-anchors th{color:var(--ink-3); font-size:10.5px; text-transform:upperca
       <ul>
         <li><b>Timing uses the issue date printed in the document</b>, never the repository publication date.
         With <code>n</code> = issue date &minus; project start and <code>d</code> = project end &minus; start, in
-        whole days: early is <code>2n &le; d</code> (&le;&nbsp;50&nbsp;%), late is <code>n &gt; d</code>
-        (strictly after the end). A date exactly at the end is 100&nbsp;% and is <em>not</em> late. Partial dates
+        whole days: early is <code>2n &le; d</code> (&le;&nbsp;50&nbsp;%), late is <code>10n &ge; 9d</code>
+        (the project's final DMP, issued at 90&nbsp;% of the run or later). Partial dates
         stay intervals and are indeterminate when they straddle a threshold.</li>
         <li>Project end is the latest authoritative date including extensions (D09); a project may fill any
         discipline it carries in CORDIS, but only one row (D08).</li>
@@ -612,7 +612,7 @@ var FMT_TIP = {
 var STAGE_TIP = {
   early:"Published in the first 34% of the project run.",
   mid:"Published between 34% and 70% of the project run.",
-  late:"Published after 70% of the run, including anything after the project ended. Not the paired study's rule: that needs an issue date strictly after the project end.",
+  late:"Published after 70% of the run, including anything after the project ended. Not the paired study's rule: that needs the final DMP, with an issue date at 90% of the run or later.",
   unknown:"No CORDIS project dates, so the position cannot be computed."
 };
 var FLAG_TIP = {
@@ -1405,7 +1405,7 @@ function pTiming(issue,start,end,pre){
   var lo=pi.lo-ps.lo, hi=pi.hi-ps.lo, lower=(pre||"exclude")==="exclude"?0:null;
   out.state="ok"; out.n_lo=lo; out.n_hi=hi; out.precision=pi.precision;
   out.early=verdict((lower===null || lo>=lower) && 2*hi<=d, (lower!==null && hi<lower) || 2*lo>d);
-  out.late=verdict(lo>d, hi<=d);
+  out.late=verdict(10*lo>=9*d, 10*hi<9*d);   /* D23: late = 90% of the run or later */
   return out;
 }
 function pct(n,d){ return (n==null || !d) ? null : Math.round(10000*n/d)/100; }
@@ -1468,7 +1468,7 @@ function pValidate(study){
       else if(t.state==="unknown") iss.push(issue("timing_unknown","pending",role+" timing: "+t.reason,role));
       else {
         var v=t[role];
-        if(v==="no") iss.push(issue("timing_fail","hard",role+" document is at "+fmtPct(t)+", outside "+(role==="early"?"<= 50%":"> 100%"),role));
+        if(v==="no") iss.push(issue("timing_fail","hard",role+" document is at "+fmtPct(t)+", outside "+(role==="early"?"<= 50%":">= 90%"),role));
         else if(v==="indeterminate") iss.push(issue("timing_indeterminate","pending",role+" date precision ("+t.precision+") straddles the threshold",role));
         var alts=doc.alt_dates||[];
         for(var k=0;k<alts.length;k++){
@@ -1814,7 +1814,7 @@ function editorHTML(p){
 /* ---------- rendering ---------- */
 function timingTip(t,role){
   return "n = "+t.n_lo+(t.n_hi!==t.n_lo?"–"+t.n_hi:"")+" days after start, d = "+t.d+" days. "+
-    (role==="early"?"Early needs 2n <= d.":"Late needs n > d.")+" Verdict: "+t[role]+".";
+    (role==="early"?"Early needs 2n <= d.":"Late needs 10n >= 9d (90% or later).")+" Verdict: "+t[role]+".";
 }
 function slotHTML(p,role,r){
   var did=p[role], doc=did?(P.study.documents[did]||null):null, t=(r.timing||{})[role];

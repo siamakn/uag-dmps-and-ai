@@ -55,7 +55,7 @@ def main():
                 numerator = (datetime.date.fromisoformat(item['date']) - start).days
                 require(numerator == item['numerator_days'], 'Stored day count mismatch')
                 require(abs(numerator / duration - item['fraction']) < 1e-12, 'Stored fraction mismatch')
-                require(0 <= 2 * numerator <= duration if role == 'early' else numerator > duration,
+                require(0 <= 2 * numerator <= duration if role == 'early' else 10 * numerator >= 9 * duration,  # D23
                         'Source-labelled document date fails role threshold: ' + pair['project'])
     selection = ROOT / 'data/selection.json'
     require(hashlib.sha256(selection.read_bytes()).hexdigest() == manifest['historical_selection_sha256'],

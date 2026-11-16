@@ -82,6 +82,21 @@ no pair is verified.
 Pilot responses submitted through the dashboard stay local: `data/review/` is git-ignored because
 the repository is public.
 
+## Late rule and cohort swaps (2026-11-16)
+
+Asked interactively by Claude after checking 14 possible replacement projects (see
+`reserve-check-2026-11-16.md`); answered by the user.
+
+| ID | User decision | Operational consequence |
+| --- | --- | --- |
+| D23 | "Late" means the project's **final DMP, issued at 90% of the project run or later** ("ca. 100%", as in the UAG minutes), no longer "strictly after the project end". This replaces the late half of D01. The user preferred 95% but chose 90% so that BY-COVID (94.4%) qualifies. | `scripts/paired.py` and the dashboard use `10*n >= 9*d`. The early rule (`2n <= d`), the issue-date basis and the no-publication-fallback rule are unchanged. The approved protocol (D20) is amended by the same approver. Final DMPs are usually delivered at or just before the project end, which is why the strict rule excluded most single-discipline projects. |
+| D24 | Replace three pairs: engineering EGI-ACE → **ColdSpark**, medical NANOFACTS → **BY-COVID**, agricultural AGRICORE → **ASTEP**. iMagine, SUSTRACK and RECHARGE stay. | `cohort-proposal.json` is now v2 (`paired-dmp-proposal-v2-2026-11-16`); v1 is kept as `cohort-proposal-v1-2026-11-04.json`. The replaced projects stay as reserves (they pass the strict rule). The new pairs were read by one agent and are not independently rechecked or verified by a person. |
+
+Effect: every slot except humanities is now the project's main or only CORDIS discipline, and all
+twelve documents have an open licence on their repository record (AGRICORE's missing licence is gone).
+Remaining notes: RECHARGE ties humanities/medical; ASTEP ties agricultural/engineering and its PDF says
+"all rights reserved" while its Zenodo record says CC BY 4.0; BY-COVID's final DMP is at 94.4%.
+
 ## Proposals to settle after feasibility
 
 - Apply recency primarily to the later version; permit an older early version, explicitly recorded. Do not silently impose 2024+ on both.

@@ -4,7 +4,10 @@
 [`research/paired-dmp-study/README.md`](research/paired-dmp-study/README.md) and its
 decision/status files first for the current research task. The user now requests six
 distinct projects across all six disciplines, each with two same-scope DMP versions
-(twelve documents), using documented issue dates at ≤50% and >100% of project duration.
+(twelve documents), using documented issue dates: early at ≤50% of project duration, late = the
+project's final DMP at ≥90% (changed from >100% on 2026-11-16, decision D23; three pairs were
+swapped the same day, D24: the proposal is now iMagine, ColdSpark, BY-COVID, ASTEP, SUSTRACK,
+RECHARGE).
 This supersedes the historical selection design below, while repository conventions
 remain applicable. `data/selection.json` currently exists and must be preserved; it is
 a historical twelve-project shortlist, not six verified pairs. A new six-pair

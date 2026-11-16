@@ -760,13 +760,16 @@ function pairedSync(A, legacyPool){
   M.twopairs=m; v=PA.validate(m);
   ok("one document in two pairs is rejected", has(v,"engineering-and-technology","document_reused") && has(v,"natural-sciences","document_reused"));
 
-  m=clone(syn); m.documents["SYN3-late"].issue_date.value="2022-12-01"; m.documents["SYN3-late"].publication_date="2023-03-01";
+  m=clone(syn); m.documents["SYN3-late"].issue_date.value="2022-06-01"; m.documents["SYN3-late"].publication_date="2023-03-01";
   M.deposit=m; v=PA.validate(m);
-  ok("issued before the end but deposited after it is not late", has(v,"medical-and-health-sciences","timing_fail"));
+  ok("issued mid-project but deposited after the end is not late", has(v,"medical-and-health-sciences","timing_fail"));
 
   m=clone(syn); m.documents["SYN4-late"].issue_date.value="2022-12-31";
   M.exact100=m; v=PA.validate(m);
-  ok("a late document exactly at 100% is rejected", has(v,"agricultural-sciences","timing_fail"));
+  ok("a final DMP issued exactly at project end counts as late", v.pairs["agricultural-sciences"].status==="verified");
+  m=clone(syn); m.documents["SYN4-late"].issue_date.value="2022-09-12";   /* d=1095: 90% is n=986 = 2022-09-13 */
+  M.below90=m; v=PA.validate(m);
+  ok("a late document one day short of 90% is rejected", has(v,"agricultural-sciences","timing_fail"));
 
   m=clone(syn); m.documents["SYN5-early"].issue_date.value=null; m.documents["SYN5-early"].publication_date="2020-03-01";
   M.noissue=m; v=PA.validate(m);
@@ -872,7 +875,7 @@ function pairedSync(A, legacyPool){
   var yrs=A.ROWS.map(function(r){ return +r.year; }).filter(Boolean);
   ok("the paired preset spans every year", S.y0===Math.min.apply(null,yrs) && S.y1===Math.max.apply(null,yrs));
   ok("the paired preset includes Horizon 2020", S.tiers["Horizon 2020"]===1);
-  S.q="AGRICORE"; A.render();
+  S.q="RECHARGE"; A.render();
   ok("registered documents appear as candidates", A.filtered().some(function(r){ return r.src==="registry"; }),
      A.filtered().length+" hits");
   S.q=""; A.render();

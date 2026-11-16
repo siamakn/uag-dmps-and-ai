@@ -116,7 +116,7 @@ def main():
                 L.append("- Record: %s" % doc["record_url"])
             L.append("- Chosen issue date: **%s** — %s — %s → **%s** of the run (rule: %s)" % (
                 iss["value"], iss["label"], iss["locator"] or "no locator",
-                paired._fmt_pct(t), "early ≤ 50%" if role == "early" else "late > 100%"))
+                paired._fmt_pct(t), "early ≤ 50%" if role == "early" else "late = final DMP at ≥ 90%"))
             page = int(re.search(r"\d+", iss["locator"]).group()) if re.search(r"\d+", iss["locator"] or "") else None
             for line in hits(page_text(f["local_path"], page), iss["value"]):
                 L.append("  - text on that page: `%s`" % line.replace("`", "'"))

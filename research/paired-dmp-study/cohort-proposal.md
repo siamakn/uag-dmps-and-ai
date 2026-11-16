@@ -1,5 +1,33 @@
 # Proposed six-project paired DMP set
 
+**Version 2, 2026-11-16** (decisions D23 and D24). Three pairs were replaced and the late rule changed.
+"Late" now means the project's final DMP, issued at 90% of the project run or later. The version 1
+text of 2026-11-04 follows unchanged below, for the record; its JSON is
+`cohort-proposal-v1-2026-11-04.json`.
+
+| Assigned discipline | Project / programme | Earlier document date | Earlier position | Final document date | Final position |
+| --- | --- | --- | --- | --- | --- |
+| natural sciences | iMagine / Horizon Europe | [2023-03-09](https://zenodo.org/records/7759984) | 17.26% | [2025-09-05](https://zenodo.org/records/17055683) | 100.46% |
+| engineering and technology | ColdSpark / Horizon Europe | [2022-11-30](https://zenodo.org/records/14178018) | 14.24% | [2025-11-29](https://zenodo.org/records/19845992) | 99.92% |
+| medical and health sciences | BY-COVID / Horizon Europe | [2022-03-30](https://zenodo.org/records/6884816) | 16.44% | [2024-07-31](https://zenodo.org/records/13981358) | 94.43% |
+| agricultural sciences | ASTEP / Horizon 2020 | [2020-10-31](https://zenodo.org/records/5772790) | 9.70% | [2025-07-24](https://zenodo.org/records/16411304) | 101.27% |
+| social sciences | SUSTRACK / Horizon Europe | [2023-04-29](https://zenodo.org/records/14497074) | 16.35% | [2026-02-06](https://zenodo.org/records/19161966) | 108.95% |
+| humanities | RECHARGE / Horizon Europe | [2023-03-29](https://zenodo.org/records/17733866) | 16.35% | [2026-02-02](https://zenodo.org/records/18403735) | 111.42% |
+
+- ColdSpark (engineering only), BY-COVID (medical only) and ASTEP (agricultural, tied with engineering)
+  replace EGI-ACE, NANOFACTS and AGRICORE, which remain reserves.
+- Every slot except humanities is now the project's main or only CORDIS discipline. RECHARGE still ties
+  humanities and medical.
+- All twelve documents carry an open licence on their Zenodo record (CC BY 4.0). ASTEP's PDFs also say
+  "all rights reserved"; that conflict is recorded.
+- The three new pairs were read by one agent and are not independently rechecked. No pair is verified
+  by a person. Positions use the issue date chosen by the D16 hierarchy.
+- Evidence for the swaps: `reserve-check-2026-11-16.md`; script: `apply-swaps-2026-11-16.py`.
+
+---
+
+## Version 1 (2026-11-04), superseded
+
 Prepared 2026-11-04. **Six proposed pairs, twelve exact PDF files.** Identity, timing and current CORDIS membership have been independently checked. This is a reviewable proposal, not a completed human reference dataset or an executed benchmark.
 
 The [canonical manifest](cohort-proposal.json) retains exact files/hashes, source-date labels, discrepancies, source URLs, project extensions and current discipline paths. Percentages below use document version dates, never repository deposits. Ranges retain competing version-related date statements.
