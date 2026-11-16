@@ -1,5 +1,5 @@
 {
- "note": "Shared timing fixtures. scripts/test_paired.py runs them against scripts/paired.py:timing and the dashboard self-test runs the same list against the JavaScript mirror. Project 2022-01-01..2022-12-31 is d=364 days, so 50% is n=182 (2022-07-02) and 100% is n=364 (2022-12-31).",
+ "note": "Shared timing fixtures. scripts/test_paired.py runs them against scripts/paired.py:timing and the dashboard self-test runs the same list against the JavaScript mirror. Project 2022-01-01..2022-12-31 is d=364 days, so 50% is n=182 (2022-07-02) and 100% is n=364 (2022-12-31). Late is 10n >= 9d (D23), so the late threshold is n=328 (2022-11-25).",
  "timing": [
   {
    "name": "exactly 0% is early",
@@ -35,12 +35,12 @@
    "d": 364
   },
   {
-   "name": "exactly 100% is not late",
+   "name": "exactly 100% is late (final DMP at project end)",
    "issue": "2022-12-31",
    "start": "2022-01-01",
    "end": "2022-12-31",
    "early": "no",
-   "late": "no",
+   "late": "yes",
    "n_lo": 364,
    "n_hi": 364,
    "d": 364
@@ -91,12 +91,12 @@
    "d": 364
   },
   {
-   "name": "month precision spanning the end is indeterminate for late",
+   "name": "month precision wholly inside the last 10% is late",
    "issue": "2022-12",
    "start": "2022-01-01",
    "end": "2022-12-30",
    "early": "no",
-   "late": "indeterminate",
+   "late": "yes",
    "n_lo": 334,
    "n_hi": 364,
    "d": 363
@@ -113,7 +113,7 @@
    "d": 364
   },
   {
-   "name": "pre-start date is not early under the proposed default",
+   "name": "pre-start date is not early",
    "issue": "2021-12-31",
    "start": "2022-01-01",
    "end": "2022-12-31",
@@ -190,6 +190,50 @@
    "n_lo": 2,
    "n_hi": 2,
    "d": 7
+  },
+  {
+   "name": "exactly at the 90% threshold is late",
+   "issue": "2022-11-25",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "yes",
+   "n_lo": 328,
+   "n_hi": 328,
+   "d": 364
+  },
+  {
+   "name": "one day before the 90% threshold is not late",
+   "issue": "2022-11-24",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "no",
+   "n_lo": 327,
+   "n_hi": 327,
+   "d": 364
+  },
+  {
+   "name": "month precision spanning the 90% threshold is indeterminate for late",
+   "issue": "2022-11",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "indeterminate",
+   "n_lo": 304,
+   "n_hi": 333,
+   "d": 364
+  },
+  {
+   "name": "between 50% and 90% is neither early nor late",
+   "issue": "2022-09-01",
+   "start": "2022-01-01",
+   "end": "2022-12-31",
+   "early": "no",
+   "late": "no",
+   "n_lo": 243,
+   "n_hi": 243,
+   "d": 364
   }
  ],
  "escape": [

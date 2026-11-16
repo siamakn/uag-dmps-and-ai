@@ -113,9 +113,15 @@ class Validation(unittest.TestCase):
 
     def test_deposited_after_end_is_not_late(self):
         def f(s):
-            s["documents"]["SYN3-late"]["issue_date"]["value"] = "2022-12-01"
+            s["documents"]["SYN3-late"]["issue_date"]["value"] = "2022-06-01"   # 80% of the run
             s["documents"]["SYN3-late"]["publication_date"] = "2023-06-01"
         self.assertIn("timing_fail", codes(self.mutate(f), "medical-and-health-sciences"))
+
+    def test_final_dmp_at_or_just_before_the_end_is_late(self):
+        # D23: late is 10n >= 9d. d = 1095, so the threshold is n = 986 (2022-09-13).
+        for date, want in (("2022-12-31", "yes"), ("2022-09-13", "yes"), ("2022-09-12", "no")):
+            v = self.mutate(lambda s: s["documents"]["SYN4-late"]["issue_date"].update(value=date))
+            self.assertEqual(v["pairs"]["agricultural-sciences"]["timing"]["late"]["late"], want, date)
 
     def test_missing_issue_date_does_not_fall_back(self):
         def f(s):
@@ -137,7 +143,7 @@ class Validation(unittest.TestCase):
 
     def test_alternative_date_flipping_verdict(self):
         def f(s):
-            s["documents"]["SYN1-late"]["alt_dates"] = [{"value": "2022-12-20", "label": "cover", "locator": "p1"}]
+            s["documents"]["SYN1-late"]["alt_dates"] = [{"value": "2022-06-01", "label": "cover", "locator": "p1"}]
         self.assertIn("alt_date_conflict", codes(self.mutate(f), "natural-sciences"))
 
     def test_unsupported_discipline(self):
@@ -173,12 +179,15 @@ class Validation(unittest.TestCase):
 
     def test_registry_invents_no_ids(self):
         reg = paired.load_registry()
-        by = {d["doc_id"]: d for d in reg["documents"]}
-        self.assertEqual(set(by), {"AGRICORE-D9.2-v1.0", "AGRICORE-D9.3-v1.0", "zenodo:17733866"})
-        self.assertIsNone(by["AGRICORE-D9.2-v1.0"]["record_id"])
-        self.assertTrue(all(d["files"][0]["sha256"] for d in reg["documents"]))
         ids = {r["id"] for r in common.load_dataset()}
-        self.assertFalse(ids & {"17733866"}, "registry documents must be absent from the dataset")
+        self.assertTrue(reg["documents"], "the registry should hold the proposal documents the dataset lacks")
+        for d in reg["documents"]:
+            self.assertTrue(d["files"][0]["sha256"])
+            if d["record_id"] is None:
+                self.assertFalse(d["doc_id"].startswith("zenodo:"), "no Zenodo id may be invented")
+            else:
+                self.assertEqual(d["doc_id"], "zenodo:" + d["record_id"])
+                self.assertNotIn(d["record_id"], ids, "registry documents must be absent from the dataset")
 
 
 class Exports(unittest.TestCase):

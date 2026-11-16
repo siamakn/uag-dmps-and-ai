@@ -288,6 +288,14 @@ timing, D08, D09, D16–D19). The approval is recorded in `scripts/paired.py:def
 its scope: selection only, not the experiment protocol. On the proposal draft the cohort now
 reports a single remaining blocker: `0 of 6 pairs verified`.
 
+**2026-11-16: late rule changed (D23) and three pairs swapped (D24).** "Late" is now the project's
+final DMP issued at 90% of the run or later (`10*n >= 9*d` in `paired.py` and the dashboard), replacing
+"strictly after the end". ColdSpark, BY-COVID and ASTEP replace EGI-ACE, NANOFACTS and AGRICORE; the
+proposal is v2. Positions: iMagine 17.26% / 100.46%, ColdSpark 14.24% / 99.92%, BY-COVID 16.44% /
+94.43%, ASTEP 9.70% / 101.27%, SUSTRACK 16.35% / 108.95%, RECHARGE 16.35% / 111.42%. Earlier sections
+of this file describe the rule and cohort as they were before this change. Details:
+`reserve-check-2026-11-16.md`.
+
 ## 8. Limitations
 
 - **Verification is manual by design.** The platform records evidence; it cannot read PDFs. No

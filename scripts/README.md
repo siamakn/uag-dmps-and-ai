@@ -146,7 +146,7 @@ python scripts/test_paired.py                        # unit tests, temporary dir
 ```
 
 - **`paired.py`** is the authoritative Python side: the study schema, exact integer timing
-  (`2n <= d` early, `n > d` late; partial dates kept as intervals), validation, CSV/Markdown/JSON
+  (`2n <= d` early, `10n >= 9d` late, i.e. the final DMP at 90% of the run or later; partial dates kept as intervals), validation, CSV/Markdown/JSON
   export, and `freeze`, which re-hashes every selected file and writes an immutable
   `data/paired-snapshots/<id>.json` (created with O_EXCL; a later edit makes a new snapshot).
 - **06** groups every actual plan by grant with no publication-date window, then asks Zenodo for

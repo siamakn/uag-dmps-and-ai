@@ -2,7 +2,7 @@
 
 The paired study asks for six EU projects, one per broad EuroSciVoc discipline, each
 contributing two versions of the same DMP: one issued at or before half the project
-run, one issued after the project ended. This module is the authoritative Python
+run, and the final one, issued at 90% of the run or later. This module is the authoritative Python
 side of that design. The dashboard carries a JavaScript mirror of `timing` and
 `validate`; `dashboard/paired-fixtures.json` pins both to the same expected results.
 
@@ -78,6 +78,8 @@ def default_protocol():
         "approved": True,
         "approved_by": "Siamak Nakhaie",
         "approved_on": "2026-11-09",
+        "amended": "2026-11-16 by Siamak Nakhaie (D23): late changed from 'after the project end' to "
+                   "'final DMP at 90% of the project or later', following the UAG minutes' 'ca. 100%'",
         "approval_scope": "selection protocol only: issue-date timing, D08, D09, D16-D19; not the "
                           "experiment protocol (rubric phases, score anchors, model runs)",
         "approval_decision": "D20",
@@ -85,7 +87,8 @@ def default_protocol():
         "timing_basis": "documented DMP issue date; repository publication dates kept separately",
         "publication_date_fallback": False,
         "early_rule": "2*n <= d, i.e. fraction <= 0.50 (confirmed D01)",
-        "late_rule": "n > d, i.e. fraction > 1, strict (confirmed D01)",
+        "late_rule": "the project's final DMP version, issued at 10*n >= 9*d, i.e. fraction >= 0.90 "
+                     "(D23, 2026-11-16; replaces the strict n > d of D01)",
         "early_lower_bound": {"rule": "n >= 0", "status": "confirmed", "decision": "D19"},
         "pre_start_policy": {"value": "exclude", "status": "confirmed", "decision": "D19"},
         "project_end": {"rule": "latest authoritative end date including extensions; original dates "
@@ -194,11 +197,14 @@ def _verdict(all_pass, none_pass):
     return "yes" if all_pass else ("no" if none_pass else "indeterminate")
 
 
+LATE_NUM, LATE_DEN = 9, 10   # D23: late means issued at 90% of the project run or later
+
+
 def timing(issue, start, end, pre_start="exclude"):
     """Exact position of an issue date in a project run.
 
     n = issue - start and d = end - start, both whole days. Early is 2*n <= d (and n >= 0
-    unless pre-start documents are allowed); late is n > d. A partial issue date gives an
+    unless pre-start documents are allowed); late is 10*n >= 9*d (D23). A partial issue date gives an
     interval [n_lo, n_hi]: a verdict is 'yes' only if every possible day passes, 'no' if
     none does, otherwise 'indeterminate'. Percentages are for display only.
     """
@@ -232,7 +238,7 @@ def timing(issue, start, end, pre_start="exclude"):
     early_none = (lower is not None and n_hi < lower) or 2 * n_lo > d
     out.update(state="ok", n_lo=n_lo, n_hi=n_hi, precision=pi["precision"],
                early=_verdict(early_all, early_none),
-               late=_verdict(n_lo > d, n_hi <= d))
+               late=_verdict(LATE_DEN * n_lo >= LATE_NUM * d, LATE_DEN * n_hi < LATE_NUM * d))
     return out
 
 
@@ -349,7 +355,7 @@ def validate(study):
             else:
                 verdict = t[role]
                 if verdict == "no":
-                    rule = "<= 50%" if role == "early" else "> 100%"
+                    rule = "<= 50%" if role == "early" else ">= 90%"
                     issues.append(_issue("timing_fail", "hard",
                                          "%s document is at %s, outside %s" % (
                                              role, _fmt_pct(t), rule), role))
